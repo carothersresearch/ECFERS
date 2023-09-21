@@ -1,0 +1,4 @@
+src/versioned_packages/
+src/kinetic_estimator/DLKcat/trained_model/
+src/kinetic_estimator/KM_prediction_function/trained_model/
+__pycache__/
