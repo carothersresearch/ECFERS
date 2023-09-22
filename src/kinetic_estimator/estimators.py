@@ -8,7 +8,6 @@ from src.kinetic_estimator.KM_prediction_function.metabolite_preprocessing impor
 from src.kinetic_estimator.KM_prediction_function.GNN_functions import calculate_gnn_representations
 from src.kinetic_estimator.KM_prediction_function.enzyme_representations import calcualte_esm1b_vectors
 
-
 import torch
 import requests
 from rdkit import Chem
@@ -17,6 +16,8 @@ from collections import defaultdict
 import xgboost as xgb
 import esm
 import shutil
+import warnings
+warnings.filterwarnings("ignore")
 
 path = os.getcwd()+'/src/kinetic_estimator'
 

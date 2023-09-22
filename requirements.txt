@@ -3,3 +3,4 @@ xlrd==1.2.0
 openpyxl==3.0.0
 notebook==6.3.0
 overrides==7.4.0
+numpy==1.23.5

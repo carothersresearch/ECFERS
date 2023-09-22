@@ -1,8 +1,8 @@
 import os
 import sys
 
-sys.path.insert(1,os.path.abspath(os.getcwd()+'/src/versioned_packages/numpy/1.20.0'))
-sys.path.insert(1,os.path.abspath(os.getcwd()+'/src/versioned_packages/pandas/1.1.3'))
+# sys.path.insert(1,os.path.abspath(os.getcwd()+'/src/versioned_packages/numpy/1.20.0'))
+# sys.path.insert(1,os.path.abspath(os.getcwd()+'/src/versioned_packages/pandas/1.1.3'))
 
 import numpy as np
 import pandas as pd
