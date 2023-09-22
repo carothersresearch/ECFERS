@@ -13,7 +13,7 @@ from os.path import join
 import warnings
 warnings.filterwarnings("ignore")
 
-CURRENT_DIR = os.getcwd()
+CURRENT_DIR = os.getcwd()+"/src/kinetic_estimator/KM_prediction_function"
 
 df_metabolites = pd.read_pickle(join(CURRENT_DIR, "trained_model/all_substrates.pkl"))
 

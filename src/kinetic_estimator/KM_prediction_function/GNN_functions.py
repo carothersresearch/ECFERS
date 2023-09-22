@@ -17,7 +17,7 @@ from os.path import join
 import warnings
 warnings.filterwarnings("ignore")
 
-CURRENT_DIR = os.getcwd()
+CURRENT_DIR = os.getcwd()+"/src/kinetic_estimator/KM_prediction_function"
 metabolite_dir = join(CURRENT_DIR, "trained_model/temp_met")
 
 def calculate_gnn_representations(df_met):

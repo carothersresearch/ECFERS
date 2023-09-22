@@ -1,28 +1,22 @@
 import numpy as np
 import pandas as pd
-import shutil
 import pickle
 import torch
-import esm
 import os
-from os.path import join
 
 
-CURRENT_DIR = os.getcwd()
+CURRENT_DIR = os.getcwd()+"/src/kinetic_estimator/KM_prediction_function"
 
-def calcualte_esm1b_vectors(enzyme_list):
+def calcualte_esm1b_vectors(model, batch_converter, enzyme_list):
 	#creating model input:
 	df_enzyme = preprocess_enzymes(enzyme_list)
 	model_input = [(df_enzyme["ID"][ind], df_enzyme["model_input"][ind]) for ind in df_enzyme.index]
 	seqs = [model_input[i][1] for i in range(len(model_input))]
-	#loading ESM-1b model:
-	print(".....2(a) Loading ESM-1b model.")
-	model, alphabet = esm.pretrained.esm1b_t33_650M_UR50S()
-	batch_converter = alphabet.get_batch_converter()
+	
+
 	#convert input into batches:
 	
 	#Calculate ESM-1b representations
-	print(".....2(b) Calculating enzyme representations.")
 	df_enzyme["enzyme rep"] = ""
 
 	for ind in df_enzyme.index:
