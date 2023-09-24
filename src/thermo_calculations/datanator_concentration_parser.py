@@ -1,6 +1,8 @@
 import requests
 import json
 
+# something like this to get physiologically relevant metabolite concentrations 
+
 url = 'https://api.datanator.info/metabolites/concentration_only/?inchi_key='
 inchi_key = 'VZCYOOQTPOCHFL-OWOJBTEDSA-N'
 
