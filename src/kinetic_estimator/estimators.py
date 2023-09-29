@@ -10,6 +10,7 @@ from src.kinetic_estimator.KM_prediction_function.enzyme_representations import 
 
 import torch
 import requests
+import json
 from rdkit import Chem
 import numpy as np
 from collections import defaultdict
@@ -49,11 +50,29 @@ class BaseEstimator:
                 smiles = None
             else:
                 smiles = req.content.splitlines()[0].decode()
-
         except:
             raise LookupError("Could not get SMILES string for "+name+"from PubChem. Please provide SMILES string instead of species name manually.")
         return smiles
     
+    def _get_AAseq(self, uniprot):
+        AAseq = None
+        if uniprot is str:
+            uniprot_url = 'https://rest.uniprot.org/uniprotkb/'+uniprot+'.json'
+            try:
+                response = requests.get(uniprot_url)
+                # Check if the request was successful (status code 200)
+                if response.status_code == 200:
+                    # Parse the JSON data from the response
+                    data = json.loads(response.text)
+                    AAseq = data['sequence']['value']
+                else:
+                    print(f"Failed to retrieve data. Status code: {response.status_code}")
+            except requests.exceptions.RequestException as e:
+                print(f"Request failed: {e}")
+            except json.JSONDecodeError as e:
+                print(f"JSON parsing failed: {e}")
+        return AAseq
+
     def estimate(self, substrates:list, enzymes:list) -> list:
         """
         Writes rate of chemical reaction. This function should always be overriden.
@@ -149,8 +168,13 @@ class DLKcat(BaseEstimator):
         for s, e in zip(substrates, enzymes):
             try:
                 smiles = self._get_smiles(s)
-            except:
-                raise LookupError("Could not get SMILES string for "+s+"from PubChem. Please provide SMILES string instead of species name manually.")
+            except Exception as ex:
+                raise ex
+            
+            try:
+                seq = self._get_AAseq(e)
+            except Exception as ex:
+                raise ex
         
             radius=2
             ngram=3
@@ -159,7 +183,7 @@ class DLKcat(BaseEstimator):
             i_jbond_dict = self._create_ijbonddict(mol)
             fingerprints = self._extract_fingerprints(atoms, i_jbond_dict, radius)
             adjacency = self._create_adjacency(mol)
-            words = self._split_sequence(e,ngram)
+            words = self._split_sequence(seq,ngram)
 
             fingerprints = torch.LongTensor(fingerprints).to(self._device)
             adjacency = torch.FloatTensor(adjacency).to(self._device)
@@ -259,7 +283,7 @@ class DLKcat(BaseEstimator):
 class KM_prediction(BaseEstimator):
     name = 'KM_prediction'
     parameter = ['Km']
-    inputs = ['species', 'enzyme sequence']
+    inputs = ['species', 'enzyme sequence'] # or uniprot, ideally handle both 
 
     def __init__(self, pretrained_state = 'xgboost_model_new_KM_esm1b.dat') -> None:
         super().__init__()
@@ -280,6 +304,7 @@ class KM_prediction(BaseEstimator):
     @overrides
     def estimate(self, substrates: list, enzymes:list ) -> list:
         smiles = list(map(self._get_smiles, substrates))
+        seqs = list(map(self._get_AAseq, enzymes))
 
         #creating input matrices for all substrates:
         df_met = metabolite_preprocessing(metabolite_list = smiles)
@@ -287,7 +312,7 @@ class KM_prediction(BaseEstimator):
         #remove temporary metabolite directory:
         shutil.rmtree(path+"/KM_prediction_function/trained_model/temp_met")
 
-        df_enzyme = calcualte_esm1b_vectors(self._enzyme_model, self._batch_converter, enzyme_list = enzymes)
+        df_enzyme = calcualte_esm1b_vectors(self._enzyme_model, self._batch_converter, enzyme_list = seqs)
 
         fingerprints = np.array(list(df_met["GNN rep"]))
         ESM1b = np.array(list(df_enzyme["enzyme rep"]))
