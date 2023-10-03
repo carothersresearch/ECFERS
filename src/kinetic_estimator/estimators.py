@@ -18,89 +18,121 @@ import xgboost as xgb
 import esm
 import shutil
 import warnings
+import re
+import pandas as pd
+
 warnings.filterwarnings("ignore")
 
 path = os.getcwd()+'/src/kinetic_estimator'
 
 class BaseEstimator:
     """
-    
+    Example of an estimator class. Specifc estimators should inherent BaseEstimator and override main functions.
     
     """
-    name = 'DLKcat'
-    parameter = ['kcat']
-    inputs = ['species', 'enzyme sequence']
+    name = 'name of estimator'
+    parameter = ['parameter(s) capable of estimating']
+    _pubchem_cache = {} # probably bettter ways of doing this but it works
+    _uniprot_cache = {}
+
+    def _preprocess_inputs(self):
+        """
+        Makes sure inputs are in an acceptable format for estimator. This function should always be overriden.
+        """
+        pass
 
     def _load_model(self):
         """
         Writes rate of chemical reaction. This function should always be overriden.
-
-        Returns
-        -------
-        str
         """
         pass
 
-        # One method to obtain SMILES by PubChem API using the website
+    def estimate(self, substrates:list, enzymes:list):
+        """
+        Method for calculating kinetic paramenter with the specfic estimator. This function should always be overriden.
+        """
+        pass
+
+    # Generally useful methods:
+
+    # One method to obtain SMILES by PubChem API using the website
     def _get_smiles(self, name):
-        try :
-            url = 'https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/%s/property/CanonicalSMILES/TXT' % name
-            req = requests.get(url)
-            if req.status_code != 200:
-                smiles = None
-            else:
-                smiles = req.content.splitlines()[0].decode()
-        except:
-            raise LookupError("Could not get SMILES string for "+name+"from PubChem. Please provide SMILES string instead of species name manually.")
-        return smiles
+        if name not in self._pubchem_cache:
+            try :
+                pubchem_url = 'https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/%s/property/CanonicalSMILES/TXT' % name
+                response = requests.get(pubchem_url)
+                if response.status_code == 200:
+                    # Parse the data from the response
+                    smiles = response.content.splitlines()[0].decode()
+                    self._pubchem_cache[name] = smiles
+                else:
+                    print(f"Failed to retrieve data. Status code: {response.status_code}")
+                    self._pubchem_cache[name] = None
+            except Exception as e:
+                print(f"Request failed: {e}")
+                print("Could not get SMILES for "+name+"from PubChem. Returning 'None'")
+                self._pubchem_cache[name] = None
+        return self._pubchem_cache[name]
     
-    def _get_AAseq(self, uniprot):
-        AAseq = None
-        if uniprot is str:
-            uniprot_url = 'https://rest.uniprot.org/uniprotkb/'+uniprot+'.json'
+    # One method to obtain sequences by UniProt API using the website
+    def _get_AAseq(self, EC:str, organism = 'Escherichia coli'):
+        if EC+'_'+organism not in self._uniprot_cache:
             try:
+                uniprot_url = 'https://rest.uniprot.org/uniprotkb/search?fields=sequence,protein_name&format=json&query=organism_name:"'+organism+'"+AND+ec:'+EC
                 response = requests.get(uniprot_url)
                 # Check if the request was successful (status code 200)
                 if response.status_code == 200:
                     # Parse the JSON data from the response
                     data = json.loads(response.text)
-                    AAseq = data['sequence']['value']
+                    AAseq = data['results'][0]['sequence']['value']
+                    self._pubchem_cache[EC+'_'+organism] = AAseq
                 else:
                     print(f"Failed to retrieve data. Status code: {response.status_code}")
-            except requests.exceptions.RequestException as e:
+                    self._pubchem_cache[EC+'_'+organism] = None
+            except Exception as e:
                 print(f"Request failed: {e}")
-            except json.JSONDecodeError as e:
-                print(f"JSON parsing failed: {e}")
-        return AAseq
-
-    def estimate(self, substrates:list, enzymes:list) -> list:
-        """
-        Writes rate of chemical reaction. This function should always be overriden.
-
-        Returns
-        -------
-        str
-        """
-        pass
+                print("Could not get sequence string for enzyme:"+EC+" organism: "+organism+"from Uniprot. Returning 'None'")
+                self._pubchem_cache[EC+'_'+organism] = None
+        return self._pubchem_cache[EC+'_'+organism]
+    
+    def _check_str_is_prot(self, string:str) -> bool:
+        return re.compile('^[acdefghiklmnpqrstvwy]*$', re.I).search(string) is not None
+    
+    def _check_str_is_smiles(self, string:str) -> bool:
+        m = Chem.MolFromSmiles(string,sanitize=False)
+        if m is None:
+            return False
+        else:
+            try:
+                Chem.SanitizeMol(m)
+            except:
+                print('Species string "%s" is in SMILES format but has invalid chemistry' % string)
+                return False 
+        return True
 
 class Estimator:
     """
-    _summary_
+    Main Estimator class. Loads any other BaseEstimator.
 
     Parameters
     ----------
     estimator : str
-        _description_
+        Name of the avaiable estimator to load
     parameter : str
-        _description_
+        Kinetic parameter to estimate. Should match the capabilites of the estimator.
+    pretrained_state : str
+        Path to pretrained model. Defaults to the orgiinal pre-trained model for each estimator
     """
-    def __init__(self, estimator:str, parameter:str):
+    def __init__(self, estimator:str, parameter:str, pretrained_state = None):
         self.estimator = None
         self.estimator_dict = {}
         [self.addEstimator(e) for e in ESTIMATORS]
         if estimator in [e.name for e in ESTIMATORS]:
             if parameter in self.estimator_dict[estimator].parameter:
-                self.estimator = self.estimator_dict[estimator]()
+                if pretrained_state:
+                    self.estimator = self.estimator_dict[estimator](pretrained_state) # load user trained model
+                else:
+                    self.estimator = self.estimator_dict[estimator]() # defaults to original pre-trained model
             else:
                 raise KeyError("Estimator " + estimator + " cannot be used to estimate " + parameter)
         else:
@@ -115,27 +147,50 @@ class Estimator:
         """
         self.estimator_dict[new_estimator.name] = new_estimator
     
-    def estimate(self, substrates:list, enzymes:list) -> float:
-        return self.estimator.estimate(substrates, enzymes)
+    def estimate(self, substrates:list, enzymes:list, *args) -> float:
+        #self.estimate.__doc__ = self.estimator.estimate.__doc__ # it would be nice to get this docstring from the child 
+        return self.estimator.estimate(substrates, enzymes, *args)
 
 class ENKIE(BaseEstimator):
     name = 'ENKIE'
     parameter = ['kcat','Km']
     """
-    
-    
+    Currently not supported.
     """
     def __init__(self) -> None:
         pass
 
 class DLKcat(BaseEstimator):
+    """
+    DLKcat estimator based on 'https://github.com/SysBioChalmers/DLKcat'
+
+    Capable of predicting kcats from substrate SMILES and enzymes sequence
+
+    Loads pre-trained models from /DLKcat/trained_model/
+
+    For training your own model, use original repo.
+
+    Parameters
+    ----------
+    pretrained_state : str
+        Path to pretrained model. Defaults to 'default_pretrained_model'
+    """
     name = 'DLKcat'
     parameter = ['kcat']
-    inputs = ['species', 'enzyme sequence']
 
     def __init__(self, pretrained_state = 'default_pretrained_model') -> None:
         super().__init__()
         self._load_model(pretrained_state)
+
+    @overrides
+    def _preprocess_inputs(self, substrate:str, enzyme:str, organism:str):
+        if not self._check_str_is_smiles(substrate):
+            substrate = self._get_smiles(substrate)
+
+        if not self._check_str_is_prot(enzyme):
+            enzyme = self._get_AAseq(enzyme, organism)
+
+        return substrate, enzyme
 
     @overrides
     def _load_model(self, pretrained_state=None):
@@ -163,34 +218,62 @@ class DLKcat(BaseEstimator):
             except:
                 raise FileNotFoundError("No file named "+pretrained_state+" in "+path+"/DLKcat/trained_model/")
     @overrides
-    def estimate(self, substrates: list, enzymes:list) -> list:
+    def estimate(self, substrates: list, enzymes:list, organisms = None, full_report = False): 
+        """
+        Estimate kcat based on SMILES and protein sequence. If substrate is not SMILES, we will try to fetch if from PubChem. If enzymes is not a protein sequence
+        we will try to fetch if from UniProt based on EC number and organism. 
+
+        Parameters
+        ----------
+        substrates : list
+            list of SMILES, or species names
+        enzymes : list
+            list of protein sequences, or EC numbers. If EC numbers, 'organims' must be specified, defaults to 'Escherichia coli'
+        organisms : list, optional
+            list of organisms names
+        full_report : flag to return estimates, or also the process SMILES and protein sequences
+
+        Returns
+        -------
+        list
+            list of estimated predictions, if full_report is False
+        dict
+            dict of inputs, processed inputs, and estimates, if full_report is True
+        """
         kcats = []
-        for s, e in zip(substrates, enzymes):
-            try:
-                smiles = self._get_smiles(s)
-            except Exception as ex:
-                raise ex
-            
-            try:
-                seq = self._get_AAseq(e)
-            except Exception as ex:
-                raise ex
-        
-            radius=2
-            ngram=3
-            mol = Chem.AddHs(Chem.MolFromSmiles(smiles))
-            atoms = self._create_atoms(mol)
-            i_jbond_dict = self._create_ijbonddict(mol)
-            fingerprints = self._extract_fingerprints(atoms, i_jbond_dict, radius)
-            adjacency = self._create_adjacency(mol)
-            words = self._split_sequence(seq,ngram)
+        if len(substrates) != len(enzymes): raise Exception('Mismatch in the number of substrates and enzymes')
+        if not organisms: organisms = ['Escherichia coli']*len(enzymes)
+        all_smiles = []
+        all_seq = []
+        for s, e, o in zip(substrates, enzymes, organisms):
+            smiles, seq = self._preprocess_inputs(s,e,o)
 
-            fingerprints = torch.LongTensor(fingerprints).to(self._device)
-            adjacency = torch.FloatTensor(adjacency).to(self._device)
-            words = torch.LongTensor(words).to(self._device)
+            if (smiles is not None) and (seq is not None):
+                try:
+                    radius=2
+                    ngram=3
+                    mol = Chem.AddHs(Chem.MolFromSmiles(smiles))
+                    atoms = self._create_atoms(mol)
+                    i_jbond_dict = self._create_ijbonddict(mol)
+                    fingerprints = self._extract_fingerprints(atoms, i_jbond_dict, radius)
+                    adjacency = self._create_adjacency(mol)
+                    words = self._split_sequence(seq,ngram)
 
-            kcats.append(2**self.model.forward([fingerprints, adjacency, words]).item())
-        return kcats
+                    fingerprints = torch.LongTensor(fingerprints).to(self._device)
+                    adjacency = torch.FloatTensor(adjacency).to(self._device)
+                    words = torch.LongTensor(words).to(self._device)
+
+                    kcats.append(2**self.model.forward([fingerprints, adjacency, words]).item())
+                except:
+                    kcats.append(None)
+            else:
+                kcats.append(None)
+            all_smiles.append(smiles)
+            all_seq.append(seq)
+        if full_report:
+            return {'substrates':substrates,'SMILES':all_smiles, 'enzyme':enzymes,'seqs':all_seq,'kcats':kcats}
+        else: 
+            return kcats
     
     def _create_atoms(self, mol):
         """Create a list of atom (e.g., hydrogen and oxygen) IDs
@@ -281,13 +364,36 @@ class DLKcat(BaseEstimator):
         return np.array(words)
 
 class KM_prediction(BaseEstimator):
+    """
+    KM_prediction estimator based on 'https://github.com/AlexanderKroll/KM_prediction_function/'
+
+    Capable of predicting Km from substrate SMILES and enzymes sequence
+
+    Loads pre-trained models from /KM_prediction_function/trained_model/
+
+    For training your own model, use original repo.
+    
+    Parameters
+    ----------
+    pretrained_state : str
+        Path to pretrained model. Defaults to 'xgboost_model_new_KM_esm1b'
+    """
     name = 'KM_prediction'
     parameter = ['Km']
-    inputs = ['species', 'enzyme sequence'] # or uniprot, ideally handle both 
 
     def __init__(self, pretrained_state = 'xgboost_model_new_KM_esm1b.dat') -> None:
         super().__init__()
         self._load_model(pretrained_state)
+
+    @overrides
+    def _preprocess_inputs(self, substrate:str, enzyme:str, organism:str):
+        if not self._check_str_is_smiles(substrate):
+            substrate = self._get_smiles(substrate)
+
+        if not self._check_str_is_prot(enzyme):
+            enzyme = self._get_AAseq(enzyme, organism)
+
+        return substrate, enzyme
 
     @overrides
     def _load_model(self, pretrained_state=None):
@@ -302,23 +408,69 @@ class KM_prediction(BaseEstimator):
             raise FileNotFoundError("No file named "+pretrained_state+" in "+path+"/KM_prediction_function/trained_model/")
 
     @overrides
-    def estimate(self, substrates: list, enzymes:list ) -> list:
-        smiles = list(map(self._get_smiles, substrates))
-        seqs = list(map(self._get_AAseq, enzymes))
+    def estimate(self, substrates: list, enzymes:list, organisms=None, full_report = False):
+        """
+        Estimate kcat based on SMILES and protein sequence. If substrate is not SMILES, we will try to fetch if from PubChem. If enzymes is not a protein sequence
+        we will try to fetch if from UniProt based on EC number and organism. 
+
+        Parameters
+        ----------
+        substrates : list
+            list of SMILES, or species names
+        enzymes : list
+            list of protein sequences, or EC numbers. If EC numbers, 'organims' must be specified, defaults to 'Escherichia coli'
+        organisms : list, optional
+            list of organisms names
+        full_report : flag to return estimates, or also the process SMILES and protein sequences
+
+        Returns
+        -------
+        list
+            list of estimated predictions, if full_report is False
+        dict
+            dict of inputs, processed inputs, and estimates, if full_report is True
+        """
+                
+        if len(substrates) != len(enzymes): raise 'Mismatch in the number of substrates and enzymes'
+        if not organisms: organisms = ['Escherichia coli']*len(enzymes)
+        processed_inputs = list(map(self._preprocess_inputs, substrates, enzymes, organisms))
+        smiles = [i[0] for i in processed_inputs]
+        seqs = [i[1] for i in processed_inputs]
+
+        # get all the Nones out
+        indexes = []
+        for i,(S,s) in enumerate(zip(smiles, seqs)):
+            if (S is not None) and (s is not None):
+                indexes.append(i)
 
         #creating input matrices for all substrates:
-        df_met = metabolite_preprocessing(metabolite_list = smiles)
+        df_met = metabolite_preprocessing(metabolite_list = [smiles[i] for i in indexes])
         df_met = calculate_gnn_representations(df_met)
         #remove temporary metabolite directory:
         shutil.rmtree(path+"/KM_prediction_function/trained_model/temp_met")
 
-        df_enzyme = calcualte_esm1b_vectors(self._enzyme_model, self._batch_converter, enzyme_list = seqs)
+        df_enzyme = calcualte_esm1b_vectors(self._enzyme_model, self._batch_converter, enzyme_list = [seqs[i] for i in indexes])
 
         fingerprints = np.array(list(df_met["GNN rep"]))
         ESM1b = np.array(list(df_enzyme["enzyme rep"]))
+
+        print(len(fingerprints))
+        print(len([smiles[i] for i in indexes]))
+
+        print(len(ESM1b))
+        print(len([seqs[i] for i in indexes]))
+
         X = np.concatenate([fingerprints, ESM1b], axis = 1)
-        dX = xgb.DMatrix(X)
-        
-        return list(10**self.model.predict(dX))
+        Kms = list(10**self.model.predict(xgb.DMatrix(X)))
+
+        # put them back in order
+        all_kms = [None]*len(enzymes)
+        for k,i in enumerate(indexes):
+            all_kms[i] = Kms[k]
+
+        if full_report:
+            return {'substrates':substrates,'SMILES':smiles, 'enzyme':enzymes,'seqs':seqs,'Km':all_kms}
+        else: 
+            return all_kms
 
 ESTIMATORS = [ENKIE, DLKcat, KM_prediction]

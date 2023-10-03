@@ -19,27 +19,28 @@ df_metabolites = pd.read_pickle(join(CURRENT_DIR, "trained_model/all_substrates.
 
 def metabolite_preprocessing(metabolite_list):
 	#removing duplicated entries and creating a pandas DataFrame with all metabolites
-	df_met = pd.DataFrame(data = {"metabolite" : list(set(metabolite_list))})
-	df_met["type"], df_met["ID"] = np.nan, np.nan
+	#df_met = pd.DataFrame(data = {"metabolite" : list(set(metabolite_list))})
+    df_met = pd.DataFrame(data = {"metabolite" : metabolite_list})
+    df_met["type"], df_met["ID"] = np.nan, np.nan
 
 	#each metabolite should be either a KEGG ID, InChI string, or a SMILES:
-	for ind in df_met.index:
-		df_met["ID"][ind] = "metabolite_" + str(ind)
-		met = df_met["metabolite"][ind]
-		if is_KEGG_ID(met):
-			df_met["type"][ind] = "KEGG"
-		elif is_InChI(met):
-			df_met["type"][ind] = "InChI"
-		elif is_SMILES(met):
-			df_met["type"][ind] = "SMILES"
-		else:
-			df_met["type"][ind] = "invalid"
-			print(".......Metabolite string '%s' could be neither classified as a valid KEGG ID, InChI string or SMILES string" % met)
+    for ind in df_met.index:
+        df_met["ID"][ind] = "metabolite_" + str(ind)
+        met = df_met["metabolite"][ind]
+        if is_KEGG_ID(met):
+            df_met["type"][ind] = "KEGG"
+        elif is_InChI(met):
+            df_met["type"][ind] = "InChI"
+        elif is_SMILES(met):
+            df_met["type"][ind] = "SMILES"
+        else:
+            df_met["type"][ind] = "invalid"
+            print(".......Metabolite string '%s' could be neither classified as a valid KEGG ID, InChI string or SMILES string" % met)
 
-	df_met = calculate_atom_and_bond_feature_vectors(df_met)
-	N_max = np.max(df_met["number_atoms"].loc[df_met["successfull"]]) + 1
-	calculate_input_matrices(df_met = df_met, N_max = N_max)
-	return(df_met)
+    df_met = calculate_atom_and_bond_feature_vectors(df_met)
+    N_max = np.max(df_met["number_atoms"].loc[df_met["successfull"]]) + 1
+    calculate_input_matrices(df_met = df_met, N_max = N_max)
+    return(df_met)
 
 def metabolite_preprocessing_ecfp(metabolite_list):
 	#removing duplicated entries and creating a pandas DataFrame with all metabolites

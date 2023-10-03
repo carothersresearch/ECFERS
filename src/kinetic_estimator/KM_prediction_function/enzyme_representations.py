@@ -29,7 +29,8 @@ def calcualte_esm1b_vectors(model, batch_converter, enzyme_list):
 
 
 def preprocess_enzymes(enzyme_list):
-	df_enzyme = pd.DataFrame(data = {"amino acid sequence" : list(set(enzyme_list))})
+	# df_enzyme = pd.DataFrame(data = {"amino acid sequence" : list(set(enzyme_list))})
+	df_enzyme = pd.DataFrame(data = {"amino acid sequence" : enzyme_list})
 	df_enzyme["ID"] = ["protein_" + str(ind) for ind in df_enzyme.index]
 	#if length of sequence is longer than 1020 amino acids, we crop it:
 	df_enzyme["model_input"] = [seq[:1022] for seq in df_enzyme["amino acid sequence"]]
