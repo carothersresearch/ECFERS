@@ -2,9 +2,9 @@ import pandas as pd
 import itertools
 import tellurium as te
 
-from odbm.utils import extractParams, fmt
+from src.odbm.utils import extractParams, fmt
 
-from odbm.mechanisms import *
+from src.odbm.mechanisms import *
 
 
 class ModelBuilder:

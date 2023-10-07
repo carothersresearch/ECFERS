@@ -2,7 +2,7 @@
 import pandas as pd
 import numpy as np
 import tellurium as te
-from odbm.odbm_main import ModelBuilder
+from src.odbm.odbm_main import ModelBuilder
 import matplotlib.pyplot as plt
 
 def rxn_plot(model:ModelBuilder, sim, rxn_idx, figsize = None, titles = None):

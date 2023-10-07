@@ -19,7 +19,7 @@ import esm
 import shutil
 import warnings
 import re
-import pandas as pd
+import pickle
 
 warnings.filterwarnings("ignore")
 
@@ -138,6 +138,28 @@ class Estimator:
         else:
             raise KeyError("No estimator named " + estimator + " found. Available estimators are: " + [e.name for e in ESTIMATORS])
         
+        self._load_caches()
+
+    def _load_caches(self):
+        # try loading caches
+        try:
+            with open(path+'/pubchem_cache.pickle', 'rb') as handle:
+                self.estimator._pubchem_cach = pickle.load(handle)
+        except:
+            self.estimator._pubchem_cach = {}
+        try:
+            with open(path+'/uniprot_cache.pickle', 'rb') as handle:
+                self.estimator._uniprot_cache = pickle.load(handle)
+        except:
+            self.estimator._uniprot_cache = {}
+    
+    def _dump_caches(self):
+        with open(path+'/pubchem_cache.pickle', 'wb') as handle:
+            pickle.dump(self.estimator._pubchem_cache, handle, protocol=pickle.HIGHEST_PROTOCOL)
+
+        with open(path+'/uniprot_cache.pickle', 'wb') as handle:
+            pickle.dump(self.estimator._uniprot_cache, handle, protocol=pickle.HIGHEST_PROTOCOL)
+
     def addEstimator(self, new_estimator:BaseEstimator):
         """Adds a new Mechanism to the internal mechanism dictionary 
 
@@ -149,8 +171,10 @@ class Estimator:
     
     def estimate(self, substrates:list, enzymes:list, *args) -> float:
         #self.estimate.__doc__ = self.estimator.estimate.__doc__ # it would be nice to get this docstring from the child 
-        return self.estimator.estimate(substrates, enzymes, *args)
-
+        estimates = self.estimator.estimate(substrates, enzymes, *args)
+        self._dump_caches()
+        return estimates
+    
 class ENKIE(BaseEstimator):
     name = 'ENKIE'
     parameter = ['kcat','Km']
