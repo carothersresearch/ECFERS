@@ -1,6 +1,6 @@
-
 from symbolicSBML import SBMLModel, Parameters
 from parameter_balancer import Balancer, ParameterData
+from src.thermo_calculations.equilibrium_constants import keq_from_ec
 import numpy as np
 
 
@@ -27,8 +27,13 @@ class RRBalancer():
 
     default_data = ParameterData([], [], [], [], [])
 
-    def __init__(self, rr)
-        self.rr = rr
+    def __init__(self, ModelBuilder=None, rr=None)
+        if ModelBuilder and not rr:
+            self.model = ModelBuilder
+            self.rr = te.loada(self.model.compile())
+        if rr and not ModelBuilder:
+            self.rr = rr
+
         self._get_metabolites()
         self._get_reactions()
         self._get_stoichiometry()
@@ -66,11 +71,22 @@ class RRBalancer():
         return
 
     def add_thermodynamics(self, keqs=None):
-
         if keqs:
-            #add them
+            #add them to the Parameters Dataframe
+            pass
         else:
-        # get equilibrium data w eQuilibrator
+            keqs = []
+            for i, row in self.model.rxns.iterrows():
+                keq = keq_from_ec(row['EC'])
+                if len(keq) == 1:
+                    keqs.append(Parameters.keq, None, row['Label'], keq[0]['value'], keq[0]['error'])
+        return keqs
+    
+    def add_concentrations(self, c=None):
+        if c:
+            pass
+        else:
+            pass
 
 data = [
     (Parameters.c, 'G6P', None, 10.0, 1.0),
