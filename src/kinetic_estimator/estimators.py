@@ -85,15 +85,15 @@ class BaseEstimator:
                     # Parse the JSON data from the response
                     data = json.loads(response.text)
                     AAseq = data['results'][0]['sequence']['value']
-                    self._pubchem_cache[EC+'_'+organism] = AAseq
+                    self._uniprot_cache[EC+'_'+organism] = AAseq
                 else:
                     print(f"Failed to retrieve data. Status code: {response.status_code}")
-                    self._pubchem_cache[EC+'_'+organism] = None
+                    self._uniprot_cache[EC+'_'+organism] = None
             except Exception as e:
                 print(f"Request failed: {e}")
                 print("Could not get sequence string for enzyme:"+EC+" organism: "+organism+"from Uniprot. Returning 'None'")
-                self._pubchem_cache[EC+'_'+organism] = None
-        return self._pubchem_cache[EC+'_'+organism]
+                self._uniprot_cache[EC+'_'+organism] = None
+        return self._uniprot_cache[EC+'_'+organism]
     
     def _check_str_is_prot(self, string:str) -> bool:
         return re.compile('^[acdefghiklmnpqrstvwy]*$', re.I).search(string) is not None

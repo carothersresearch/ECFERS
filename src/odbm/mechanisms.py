@@ -30,7 +30,7 @@ class Mechanism(EnforceOverrides):
     Methods
     -------
     writeEquation():
-        Writes chemical equations in form of 'S + C + E → E + P'
+        Writes chemical equations in form of 'S + E → E + P'
 
     writeRate():
         Writes rate of chemical reaction. This function should always be overriden.
@@ -51,8 +51,10 @@ class Mechanism(EnforceOverrides):
             self.enzyme = rxn['Enzyme']
             self.substrates = rxn['Substrate']
             self.products = rxn['Product']
-            self.cofactors = rxn['Cofactor']
-            self.params = rxn['Parameters']
+            #self.cofactors = rxn['Cofactor'] # this is going to be removed. maybe we will add activators/inhibitors
+            self.params = rxn['Parameters'] # this is going to be two (or more?) columns
+            self.kcats = rxn['kcat']
+            self.kms =  rxns['Km']
             self.label = rxn['Label']
 
         except:
@@ -79,13 +81,13 @@ class Mechanism(EnforceOverrides):
         if not np.all([np.any([re.match(p,P) for P in self.params]) for p in self.required_params]):
             raise InputError("No "+' or '.join(self.required_params)+" found in parameters for reaction "+self.label)
 
-        # cofactor
-        if str(self.cofactors) != 'nan':
-            self.cofactors = self.cofactors.split(';')
-        else:
-            self.cofactors = []
-        if len(self.cofactors) != self.nC and np.isnan(self.nC) == False:
-            raise InputError(str(len(self.cofactors))+' cofactor(s) found for a '+ str(self.nC) + ' cofactor mechanism in reaction '+self.label)
+        # # cofactor
+        # if str(self.cofactors) != 'nan':
+        #     self.cofactors = self.cofactors.split(';')
+        # else:
+        #     self.cofactors = []
+        # if len(self.cofactors) != self.nC and np.isnan(self.nC) == False:
+        #     raise InputError(str(len(self.cofactors))+' cofactor(s) found for a '+ str(self.nC) + ' cofactor mechanism in reaction '+self.label)
 
         # enzyme
         if str(self.enzyme) != 'nan':
@@ -110,7 +112,10 @@ class Mechanism(EnforceOverrides):
     
     @final
     def _formatInput(self):
-        #calls fmt function in utils to format input strings to be antimony compatible 
+        #calls fmt function in utils to format input strings to be antimony compatible
+
+        # if using kegg ids probably not needed!
+
         self.products = list(map(fmt, self.products))
         self.substrates = list(map(fmt, self.substrates))
         self.enzyme = list(map(fmt, self.enzyme))
@@ -118,14 +123,14 @@ class Mechanism(EnforceOverrides):
 
     def writeEquation(self) -> str:
         """
-        Writes chemical equations in form of S + C + E → E + P 
+        Writes chemical equations in form of S + E → E + P
 
         Returns: 
         -------
         rxn_str (str) reaction equation in string format
         """
         
-        allS = ' + '.join([*self.substrates,*self.cofactors])
+        allS = ' + '.join(self.substrates)
         allE = ' + '.join(self.enzyme)
         allP = ' + '.join(self.products)
 
@@ -164,7 +169,21 @@ class MichaelisMenten(Mechanism):
         kcat,Km = [p+'_'+self.label for p in self.relevent_params]
 
         return self.label +' = '+ kcat + '*'+E+'*'+S[0]+'/('+Km+' + '+S[0]+')'
-    
+
+class ModularRateLaw(Mechanism):
+    namr = 'MRL'
+    required_params = ['kcat','Km']
+    nS = np.nan                        # number of required substrates 
+    nP = np.nan                        # number of required products 
+    nE = 1
+
+    def numerator(self) -> str:
+        allS = '*'.join(self.substrates)
+        allP = '*'.join(self.products)
+
+        allKmS = self.kms[s] for s in self.substrates
+
+        
 class OrderedBisubstrateBiproduct(Mechanism):
     # ordered bisubstrate-biproduct
     # must have two substrates and two products
@@ -197,11 +216,11 @@ class MassAction(Mechanism):
     @overrides
     def writeRate(self) -> str:
         S = self.substrates
-        pow = self.stoich
+        power = self.stoich
 
         k, = [p+'_'+self.label if '$' not in p else p.replace('$','_') for p in self.relevent_params]
 
-        allS = '*'.join([s+'^'+c if len(c)>0 else s for s,c in zip(S,pow)])
+        allS = '*'.join([s+'^'+c if len(c)>0 else s for s,c in zip(S,power)])
         allE = '*'.join(self.enzyme)
         if len(allE)>0: allE='*'+allE
         if len(allS)>0: allS ='*'+allS+allE
