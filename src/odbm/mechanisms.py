@@ -54,7 +54,7 @@ class Mechanism(EnforceOverrides):
             #self.cofactors = rxn['Cofactor'] # this is going to be removed. maybe we will add activators/inhibitors
             self.params = rxn['Parameters'] # this is going to be two (or more?) columns
             self.kcats = rxn['kcat']
-            self.kms =  rxns['Km']
+            self.kms =  rxn['Km'] # make sure these end up as dictionaries
             self.label = rxn['Label']
 
         except:
@@ -76,10 +76,12 @@ class Mechanism(EnforceOverrides):
         """
         # params
         self.params = extractParams(self.params)
-        self.relevent_params = sum([[P for P in self.params if re.match(p,P) ] for p in self.required_params],[])
+        if self.required_params:
 
-        if not np.all([np.any([re.match(p,P) for P in self.params]) for p in self.required_params]):
-            raise InputError("No "+' or '.join(self.required_params)+" found in parameters for reaction "+self.label)
+            self.relevent_params = sum([[P for P in self.params if re.match(p,P) ] for p in self.required_params],[])
+
+            if not np.all([np.any([re.match(p,P) for P in self.params]) for p in self.required_params]):
+                raise InputError("No "+' or '.join(self.required_params)+" found in parameters for reaction "+self.label)
 
         # # cofactor
         # if str(self.cofactors) != 'nan':
@@ -119,7 +121,7 @@ class Mechanism(EnforceOverrides):
         self.products = list(map(fmt, self.products))
         self.substrates = list(map(fmt, self.substrates))
         self.enzyme = list(map(fmt, self.enzyme))
-        self.cofactors = list(map(fmt, self.cofactors))
+        #self.cofactors = list(map(fmt, self.cofactors))
 
     def writeEquation(self) -> str:
         """
@@ -171,8 +173,11 @@ class MichaelisMenten(Mechanism):
         return self.label +' = '+ kcat + '*'+E+'*'+S[0]+'/('+Km+' + '+S[0]+')'
 
 class ModularRateLaw(Mechanism):
+    """
+    Based on: https://academic.oup.com/bioinformatics/article/26/12/1528/281177#393582847
+    """
     namr = 'MRL'
-    required_params = ['kcat','Km']
+    required_params = None # could check some other ways but skipping check for now
     nS = np.nan                        # number of required substrates 
     nP = np.nan                        # number of required products 
     nE = 1
@@ -181,9 +186,28 @@ class ModularRateLaw(Mechanism):
         allS = '*'.join(self.substrates)
         allP = '*'.join(self.products)
 
-        allKmS = self.kms[s] for s in self.substrates
+        allKmS = '*'.join(['Km_'+s+'_'+self.label for s in self.substrates])
+        allKmP = '*'.join(['Km_'+p+'_'+self.label for p in self.products])
 
-        
+        kcatF = 'kcatF_' + self.label
+        kcatR = 'kcatR_' + self.label
+
+        return '('+kcatF+'*('+ allS +')/('+ allKmS +') - '+ kcatR +'*('+ allP +')/('+ allKmP +'))'
+    
+    def denominator(self) -> str:
+        allKmS = ['Km_'+s+'_'+self.label for s in self.substrates]
+        allKmP = ['Km_'+p+'_'+self.label for p in self.products]
+        allS = '*'.join(['(1+'+s+'/'+Km+')' for s, Km in zip(self.substrates, allKmS)])
+        allP = '*'.join(['(1+'+p+'/'+Km+')' for p, Km in zip(self.products, allKmP)])
+        return '('+ allS + ' + '+ allP + ' -1)'
+    
+    @overrides
+    def writeRate(self) -> str:
+        u = self.enzyme[0]
+        T = self.numerator()
+        D = self.denominator()
+        return self.label +' = '+ u + ' * ' + T + '/' + D
+
 class OrderedBisubstrateBiproduct(Mechanism):
     # ordered bisubstrate-biproduct
     # must have two substrates and two products
@@ -444,7 +468,7 @@ class HillCofactor(Modifier):
 
 
 
-MECHANISMS = [  MichaelisMenten, OrderedBisubstrateBiproduct, MassAction, simplifiedOBB, ConstantRate, Exponential,
+MECHANISMS = [  MichaelisMenten, ModularRateLaw, OrderedBisubstrateBiproduct, MassAction, simplifiedOBB, ConstantRate, Exponential,
                         MonoMassAction, TX_MM,
                         LinearCofactor, HillCofactor, ProductInhibition, SimpleProductInhibition
                     ]
