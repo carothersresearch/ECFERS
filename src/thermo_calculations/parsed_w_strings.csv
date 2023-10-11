@@ -1,6 +1,0 @@
-,EC,KEGG Rid,R string,Keq
-0,6.1.1.14,R03654,ATP + 1.5 O2 + Glycine + TRNA(Gly) <=> H+ + Diphosphate + 2 CO2 and bound residues + AMP + compound 38021 + Glycyl-tRNA(Gly),440391682.63073426
-1,4.1.1.31,R00345,compound 41600 + Oxaloacetate <=> AHKZTVQIVOEVFO-UHFFFAOYSA-N + CO2 + Phosphoenolpyruvate,8.730133459842129e-08
-2,2.7.1.30,R00847,ATP + Glycerol <=> ADP + Glycerol 3-phosphate,830.2705171814601
-3,6.1.1.4,R03657,ATP + 7.5 O2 + L-Leucine + TRNA(Leu) <=> H+ + 4 AHKZTVQIVOEVFO-UHFFFAOYSA-N + Diphosphate + 6 CO2 and bound residues + AMP + compound 38021 + L-Leucyl-tRNA(Leu),453471582.05495095
-4,6.1.1.-,,,

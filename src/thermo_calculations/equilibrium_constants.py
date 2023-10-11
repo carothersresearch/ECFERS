@@ -19,7 +19,7 @@ def keq_from_ec(ec_string):
     try:
         for r in ECs[ec_string]:
             try:
-                rxn = Reaction({cc.get_compound("kegg:"+species[1]):species[0] for species in RXNs[r]}) # could make this faster by reusing compounds
+                rxn = Reaction({cc.get_compound("kegg:"+species[1]):species[0] for species in RXNs[r]})
                 if not rxn.is_balanced():
                     rxn = cc.balance_by_oxidation(rxn)
                 keqs.append({'value':np.exp((-cc.standard_dg_prime(rxn)/cc.RT).value).magnitude,'error':np.exp((-cc.standard_dg_prime(rxn)/cc.RT).error).magnitude})
