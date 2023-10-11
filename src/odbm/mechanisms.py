@@ -176,7 +176,7 @@ class ModularRateLaw(Mechanism):
     """
     Based on: https://academic.oup.com/bioinformatics/article/26/12/1528/281177#393582847
     """
-    namr = 'MRL'
+    name = 'MRL'
     required_params = None # could check some other ways but skipping check for now
     nS = np.nan                        # number of required substrates 
     nP = np.nan                        # number of required products 

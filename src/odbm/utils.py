@@ -45,7 +45,7 @@ def formatSpecies(x, find, replace):
     return x
 
 FIND = ['-',',','+',' ']
-REPLACE = ['_','_','_plus','']
+REPLACE = ['_','_','plus','']
 fmt = lambda x: formatSpecies(x, FIND, REPLACE)
 
 def getStoich(sp):

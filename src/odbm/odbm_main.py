@@ -6,6 +6,7 @@ from src.odbm.utils import extractParams, fmt
 
 from src.odbm.mechanisms import *
 
+from src.parameter_balancing.balancer import RRBalancer
 
 class ModelBuilder:
     """
@@ -277,8 +278,17 @@ class ModelBuilder:
             self.s_str += self.writeParameters(sp['Parameters'], sp['Label'], required = False)
 
         for _, rxn in self.rxns.iterrows():
-            self.p_str += self.writeParameters(rxn['Parameters'], rxn['Label'])
+            # self.p_str += self.writeParameters(rxn['Parameters'], rxn['Label'])
             self.r_str += self.writeReaction(rxn) + '\n'
+
+        # hack for now to get parameters
+        flag = True
+        while flag:
+            try:
+                te.loada(self.s_str + self.p_str + self.r_str)
+                flag = False
+            except Exception as e:
+                self.p_str += str(e).split("'")[1] +'= 1 ; \n'
 
         return self.s_str + self.p_str + self.r_str
 
@@ -339,6 +349,13 @@ class ModelBuilder:
         """
         r = self.get_reaction(id)
         return list(map(fmt, r['Product'].split(';')))
+
+    def balance(self, thermodynamics = True):
+        self.balancer = RRBalancer(self)
+        if thermodynamics: self.balancer.add_thermodynamics()
+        blanced_parameters = self.balancer.balance(data = list(self.balancer.data.values()))
+        # TODO: update parameters in antimony 
+        return balanced_parameters
 
 class ModelHandler:
     def __init__(self, model) -> None:
