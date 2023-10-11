@@ -5,7 +5,6 @@ import numpy as np
 import tellurium as te
 
 class RRBalancer():
-
     # Priors are linear scale here and will be converted inside.
     default_priors = {
         # Base quantities
@@ -28,6 +27,17 @@ class RRBalancer():
     default_data = ParameterData([], [], [], [], [])
 
     def __init__(self, ModelBuilder=None, rr=None):
+        """
+        Parameter balancing object capable of extracting and updating paramteres from RoadRunner models.
+        If provided a ModelBuilder, also capable of fetching equilibrium constants, and species concentrations (TODO).
+
+        Parameters
+        ----------
+        ModelBuilder : ModelBuilder, optional
+            ModelBuilder containing all model information, by default None
+        rr : RoadRunner, optional
+            roadrunner model, by default None
+        """
         if ModelBuilder and not rr:
             self.model = ModelBuilder
             self.rr = te.loada(self.model.compile())
@@ -45,7 +55,26 @@ class RRBalancer():
         self.structure = SBMLModel.from_structure(self.metabolites, self.reactions, self.stoichiometry)
         self.balanced_parameters = None
 
-    def balance(self, priors = default_priors, data = default_data, T = 300, R = 8.314 / 1000.):
+    def balance(self, priors = default_priors, data = default_data, T = 300., R = 8.314 / 1000.):
+        """
+        Balance the input data, incorporating the model structure and the priors, using Balancer from parameter_balancer
+
+        Parameters
+        ----------
+        priors : dict, optional
+            Priors for kinetic and thermodynamic parameters, by default uses default_priors based on median of available data
+        data : list or ParameterData, optional
+            Data for kinetic and thermodynamic parameters, by default uses no data
+        T : float, optional
+            temperature in Kelvin, by default 300
+        R : float, optional
+            gas constant in J/mmol/K, by default 8.314/1000.
+
+        Returns
+        -------
+        DataFrame
+            Pandas dataframe containing balanced parameters 
+        """
         if type(data) is not type(ParameterData): data = ParameterData(*zip(*data))
         self.balanced_parameters = Balancer(priors, data, self.structure, T=T, R=R, augment=True).balance(sparse=False).to_frame(mean=True)
         return self.balanced_parameters
@@ -63,6 +92,11 @@ class RRBalancer():
         return
 
     def _parse_parameters(self):
+        """
+        Get all paramters from RoadRunner and prepare them for parameter balancing.
+        Currently best integrated with ModularRateLaws with Km(s) and kcatF/R. 
+        Curently defaults to the same std for all parameters...
+        """
         p_ids = self.rr.model.getGlobalParameterIds() # Kms, kcats, and other
         p_values = self.rr.model.getGlobalParameterValues()
 
@@ -81,6 +115,19 @@ class RRBalancer():
         return
 
     def update_parameters(self, update_with = 'median'):
+        """
+        Update the parameters in RoadRunner with the balanced parameter values
+
+        Parameters
+        ----------
+        update_with : str, optional
+            Which values to get from the posterior distirbution, by default 'median'. Could also sample form the distribution (TODO)
+
+        Raises
+        ------
+        Exception
+            in case parameters have not been balanced
+        """
         if self.balanced_parameters is None:
             raise Exception('Must balance parameters first')
         else:
