@@ -48,14 +48,19 @@ class Mechanism(EnforceOverrides):
     def __init__(self,rxn: pd.DataFrame):
 
         try:
-            self.enzyme = rxn['Enzyme']
-            self.substrates = rxn['Substrate']
-            self.products = rxn['Product']
+            self.enzyme = 'EC'+rxn['EC'].replace('.','')
+            self.substrates = rxn['Substrates']
+            self.products = rxn['Products']
             #self.cofactors = rxn['Cofactor'] # this is going to be removed. maybe we will add activators/inhibitors
-            self.params = rxn['Parameters'] # this is going to be two (or more?) columns
-            self.kcats = rxn['kcat']
-            self.kms =  rxn['Km'] # make sure these end up as dictionaries
-            self.label = rxn['Label']
+            try:
+                self.params = rxn['Parameters'] # this is going to be two (or more?) columns
+            except:
+                self.params = rxn['Km'] + '; ' + rxn['Kcat']
+            try:
+                self.label = rxn['Reaction ID']
+            except:
+                self.label = rxn['Label']
+            self.EC = rxn['EC']
 
         except:
             raise KeyError("Missing Reaction fields")

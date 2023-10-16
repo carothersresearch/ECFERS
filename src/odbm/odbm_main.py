@@ -200,7 +200,10 @@ class ModelBuilder:
         Returns:
             str: reaction definition
         """        
-        m = rxn['Mechanism'].split(';')
+        try:
+            m = rxn['Mechanism'].split(';')
+        except:
+            m = ['MRL'] # defalt to modular rate law
 
         try:
             M = self.mech_dict[m[0].strip()](rxn)
@@ -262,6 +265,7 @@ class ModelBuilder:
         str
             Antimony model string
         """
+        
         self.s_str = '# Initialize concentrations \n'
         self.p_str = '\n# Initialize parameters \n'
         self.r_str = '# Define specified reactions \n'
@@ -278,17 +282,21 @@ class ModelBuilder:
             self.s_str += self.writeParameters(sp['Parameters'], sp['Label'], required = False)
 
         for _, rxn in self.rxns.iterrows():
-            # self.p_str += self.writeParameters(rxn['Parameters'], rxn['Label'])
+            try:
+                parameters = rxn['Parameters']
+            except:
+                parameters = rxn['Km'] + '; ' + rxn['Kcat']
+            self.p_str += self.writeParameters(parameters, rxn['Label'])
             self.r_str += self.writeReaction(rxn) + '\n'
 
-        # hack for now to get parameters
-        flag = True
-        while flag:
-            try:
-                te.loada(self.s_str + self.p_str + self.r_str)
-                flag = False
-            except Exception as e:
-                self.p_str += str(e).split("'")[1] +'= 1 ; \n'
+        ## hack for now to get parameters
+        # flag = True
+        # while flag:
+        #     try:
+        #         te.loada(self.s_str + self.p_str + self.r_str)
+        #         flag = False
+        #     except Exception as e:
+        #         self.p_str += str(e).split("'")[1] +'= 1 ; \n'
 
         return self.s_str + self.p_str + self.r_str
 
@@ -353,7 +361,7 @@ class ModelBuilder:
     def balance(self, thermodynamics = True):
         self.balancer = RRBalancer(self)
         if thermodynamics: self.balancer.add_thermodynamics()
-        blanced_parameters = self.balancer.balance(data = list(self.balancer.data.values()))
+        balanced_parameters = self.balancer.balance(data = list(self.balancer.data.values()))
         # TODO: update parameters in antimony 
         return balanced_parameters
 
