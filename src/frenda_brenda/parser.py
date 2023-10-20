@@ -12,19 +12,19 @@ from equilibrator_api import ComponentContribution
 from itertools import filterfalse
 
 # MAKE SURE THESE FILE PATHS ARE UPDATED AND THAT THE FILES EXIST IN THE REPO
-path = os.getcwd()+'/BRENDA-FRENDA'
+path = os.getcwd()
 
-with gzip.open(path+"/kegg_enzymes.json.gz", "r") as f:
+with gzip.open(path+"../thermo_calculations/kegg_enzymes.json.gz", "r") as f:
         ECs = {e['EC']:e['reaction_ids'] for e in json.load(f)}
 
-with gzip.open(path+"/kegg_reactions.json.gz", "r") as f:
+with gzip.open(path+"../thermo_calculations/kegg_reactions.json.gz", "r") as f:
         RXNs = {r['RID']:r['reaction'] for r in json.load(f)}
 
-reaction = pd.read_csv(path+'/ExampleFiles/Reaction.csv')
-sbp = pd.read_csv(path+'/ExampleFiles/SpeciesBaseMechanisms.csv')
-kcats = pd.read_csv(path+'/full_report_kcats.csv')
-kms = pd.read_csv(path+'/full_report_kms.csv')
-dataFile = path+'/brenda_download.txt'
+reaction = pd.read_csv(path+'/Files/Reaction.csv')
+sbp = pd.read_csv(path+'/Files/SpeciesBaseMechanisms.csv')
+kcats = pd.read_csv(path+'../kinetic_estimator/full_report_kcats.csv') #GET THIS FROM WHERE?
+kms = pd.read_csv(path+'../kinetic_estimator/full_report_kms.csv') #GET THIS FROM WHERE?
+dataFile = path+'/Files/brenda_download.txt'
 
 brenda = BRENDA(dataFile)
 cc = ComponentContribution()
