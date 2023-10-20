@@ -14,16 +14,16 @@ from itertools import filterfalse
 # MAKE SURE THESE FILE PATHS ARE UPDATED AND THAT THE FILES EXIST IN THE REPO
 path = os.getcwd()
 
-with gzip.open(path+"../thermo_calculations/kegg_enzymes.json.gz", "r") as f:
+with gzip.open(path+"/../thermo_calculations/kegg_enzymes.json.gz", "r") as f:
         ECs = {e['EC']:e['reaction_ids'] for e in json.load(f)}
 
-with gzip.open(path+"../thermo_calculations/kegg_reactions.json.gz", "r") as f:
+with gzip.open(path+"/../thermo_calculations/kegg_reactions.json.gz", "r") as f:
         RXNs = {r['RID']:r['reaction'] for r in json.load(f)}
 
 reaction = pd.read_csv(path+'/Files/Reaction.csv')
 sbp = pd.read_csv(path+'/Files/SpeciesBaseMechanisms.csv')
-kcats = pd.read_csv(path+'../kinetic_estimator/full_report_kcats.csv') #GET THIS FROM WHERE?
-kms = pd.read_csv(path+'../kinetic_estimator/full_report_kms.csv') #GET THIS FROM WHERE?
+kcats = pd.read_csv(path+'/../kinetic_estimator/full_report_kcats.csv') #GET THIS FROM WHERE?
+kms = pd.read_csv(path+'/../kinetic_estimator/full_report_kms.csv') #GET THIS FROM WHERE?
 dataFile = path+'/Files/brenda_download.txt'
 
 brenda = BRENDA(dataFile)
@@ -324,26 +324,13 @@ def iterate(reaction_df, sbp_df):
 
 # THIS NEEDS CHANGED TO BE UPDATED FOR CURRENT PRACTICES
 def main():
-    filename1 = sys.argv[1]
-    filename2 = sys.argv[2]
-    dataFile = sys.argv[3]
-    # filtoption = sys.argv[4]
-
     print('this is running')
 
-    # This reads in Reaction.csv as df and SpeciesBaseMechanisms.csv as df2
-    df = pd.read_csv(filename1)
-    df2 = pd.read_csv(filename2)
-
-    # df, df2 = rmBlanks(df, df2)
-
-    brenda = BRENDA(dataFile)
-
-    parsedRXNs, parsedSBM = iterate(df, df2)
+    parsedRXNs, parsedSBM = iterate(reaction, sbp)
 
     # Edits the parsed Reaction.csv in place
-    parsedRXNs.to_csv(filename1, index=False)
-    parsedSBM.to_csv(filename2, index=False)
+    parsedRXNs.to_csv(path+'/Files/Reaction.csv', index=False)
+    parsedSBM.to_csv(path+'/Files/SpeciesBaseMechanisms.csv', index=False)
 
 if __name__ == '__main__':
     main()
