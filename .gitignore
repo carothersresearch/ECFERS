@@ -1,4 +1,5 @@
 src/versioned_packages/
 src/kinetic_estimator/DLKcat/trained_model/
 src/kinetic_estimator/KM_prediction_function/trained_model/
+src/frenda_brenda/Files/brenda_download.txt
 __pycache__/
