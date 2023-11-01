@@ -1,4 +1,5 @@
 import numpy as np
+from scipy.optimize import minimize
 
 def updateRRParameters(rr, new_parameters: dict):
 
@@ -62,3 +63,18 @@ def lossFunction(transformed_results, data_to_fit, method = 'MAE', method_option
 
 def fit(rr, parameters, data_to_fit, method):
     pass
+
+class rrfit_function:
+    def __init__(self, rr, data, parameters, loss):
+        self.rr = rr
+        self.data = data
+        self.parameters = parameters
+        self.loss = loss
+        
+    def fittness(self, x):
+        param_dict =  self.parameters.update(x) # parameter class returns dict of parameters and values
+        runRR(self.rr, param_dict, )
+        return
+    
+    def get_bounds(self):
+        return self.parameters.get_bounds() # parameter class returns array wuth min and max bound
