@@ -2,7 +2,6 @@ import os
 from overrides import EnforceOverrides, overrides, final
 import pickle
 
-import enkie
 import src.kinetic_estimator.DLKcat.model as DLKcat_model
 from src.kinetic_estimator.KM_prediction_function.metabolite_preprocessing import metabolite_preprocessing
 from src.kinetic_estimator.KM_prediction_function.GNN_functions import calculate_gnn_representations

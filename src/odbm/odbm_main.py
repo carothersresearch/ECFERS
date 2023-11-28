@@ -6,7 +6,7 @@ from src.odbm.utils import extractParams, fmt
 
 from src.odbm.mechanisms import *
 
-from src.parameter_balancing.balancer import RRBalancer
+# from src.parameter_balancing.balancer import RRBalancer
 
 class ModelBuilder:
     """
