@@ -3,10 +3,10 @@ FROM mcr.microsoft.com/devcontainers/anaconda:0-3
 RUN apt-get update 
 
 # Update environment
-COPY environment.yml .
-
 RUN conda install -n base conda-libmamba-solver
 RUN conda config --set solver libmamba
+
+COPY environment.yml .
 RUN conda env create -f environment.yml
 RUN echo "source activate myenv" > ~/.bashrc
 ENV PATH /opt/conda/envs/myenv/bin:$PATH
