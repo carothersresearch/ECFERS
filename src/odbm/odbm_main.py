@@ -89,7 +89,7 @@ class ModelBuilder:
         args.pop('self')
                 # maybe check inputs??
 
-        if not self.species['Label'].str.contains(Label).any(): #if this species does not already exist
+        if not self.species['Label'].str.contains(Label).any(): # if this species does not already exist
             self.species = self.species.append(args,ignore_index = True) 
         else:
             raise('This species already exists in dataframe.')
@@ -176,10 +176,17 @@ class ModelBuilder:
         Returns:
             str: initialized species
         """        
-        label = fmt(species['Label'])
+        if species['Type'] == 'Enzyme':
+            label = 'EC'+species['EC'].replace('.','')
+        else:
+            label = fmt(species['Label'])
         species['Label'] = label
+        relative = species['Relative']
         
-        s_str = (label +'=' + str(species['StartingConc']) + '; \n')
+        if not pd.isnull(relative):
+            s_str = (label +'= ' + relative + '*'+str(species['StartingConc']) + '; \n')
+        else:
+            s_str = (label +'=' + str(species['StartingConc']) + '; \n')
         
         if not pd.isnull(species['Conc']):
                 funs = species['Conc'].split(';')
@@ -223,8 +230,6 @@ class ModelBuilder:
 
     def writeParameters(self, parameters, label, required = True):
         """Write string for parameter initialization
-
-
         Args:
             parameters
             label
@@ -255,7 +260,23 @@ class ModelBuilder:
 
         if len(p_str)>0:p_str =p_str+'\n'
         return p_str
+    
+    def writeVariable(self, variable, value = 1):
+        """Write string for variable initialization
+        Args:
+            variable, unique string
+            value, default 1
 
+        Returns:
+            str: initialized variable
+        """
+        v_str = ''
+        if not pd.isnull(variable):
+            if variable not in self.v_str:
+                v_str += (variable +'=' + str(value) + '; \n')
+
+        return v_str
+    
     def compile(self) -> str:
         """
         Iterates through all species and reactions and generates an Antimony string
@@ -268,6 +289,7 @@ class ModelBuilder:
         
         self.s_str = '# Initialize concentrations \n'
         self.p_str = '\n# Initialize parameters \n'
+        self.v_str = '\n# Initialize variables \n'
         self.r_str = '# Define specified reactions \n'
 
         S = self.species.copy()
@@ -280,14 +302,21 @@ class ModelBuilder:
         for _, sp in self.species.iterrows():
             self.s_str += self.writeSpecies(sp)
             self.s_str += self.writeParameters(sp['Parameters'], sp['Label'], required = False)
+            self.v_str += self.writeVariable(sp['Relative'])
 
         for _, rxn in self.rxns.iterrows():
             try:
                 parameters = rxn['Parameters']
             except:
-                parameters = rxn['Km'] + '; ' + rxn['Kcat']
+                ki = ';' + rxn['Ki'] if not pd.isnull(rxn['Ki']) else ''
+                parameters = rxn['Km'] + '; ' + rxn['Kcat'] + ki
             self.p_str += self.writeParameters(parameters, rxn['Label'])
             self.r_str += self.writeReaction(rxn) + '\n'
+
+            if not pd.isnull(rxn['Ki']):
+                for i in rxn['Inhibitors'].split(';'): 
+                    var = 'Gi_'+i+'_'+rxn['Label']
+                    self.v_str += self.writeVariable(var, value = 0.5)
 
         ## hack for now to get parameters
         # flag = True
@@ -298,7 +327,7 @@ class ModelBuilder:
         #     except Exception as e:
         #         self.p_str += str(e).split("'")[1] +'= 1 ; \n'
 
-        return self.s_str + self.p_str + self.r_str
+        return self.s_str + self.p_str + self.v_str + self.r_str
 
     def saveModel(self, filename:str):
         """

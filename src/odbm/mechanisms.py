@@ -51,15 +51,17 @@ class Mechanism(EnforceOverrides):
             self.enzyme = 'EC'+rxn['EC'].replace('.','')
             self.substrates = rxn['Substrates']
             self.products = rxn['Products']
+            self.inhibitors = rxn['Inhibitors']
             #self.cofactors = rxn['Cofactor'] # this is going to be removed. maybe we will add activators/inhibitors
-            try:
-                self.params = rxn['Parameters'] # this is going to be two (or more?) columns
-            except:
-                self.params = rxn['Km'] + '; ' + rxn['Kcat']
-            try:
-                self.label = rxn['Reaction ID']
-            except:
-                self.label = rxn['Label']
+            # try:
+            #     self.params = rxn['Parameters'] # this is going to be two (or more?) columns
+            # except:
+            self.params = rxn['Km'] + '; ' + rxn['Kcat']
+            # try:
+            #     self.label = rxn['Reaction ID'] # it was confusing to have Reaction ID and Label. sticking with just label
+            # except:
+            self.Ki = rxn['Ki']
+            self.label = rxn['Label']
             self.EC = rxn['EC']
 
         except:
@@ -117,6 +119,12 @@ class Mechanism(EnforceOverrides):
         if (not np.isnan(self.nP)) and (len(self.products) != self.nP):
             raise InputError(str(len(self.products))+' product(s) ('+str(self.products)+') found for a '+ str(self.nP) + ' product mechanism in reaction '+self.label)
     
+        # inhibitors
+        if str(self.inhibitors) != 'nan':
+            self.inhibitors = self.inhibitors.split(';')
+        else:
+            self.inhibitors = []
+
     @final
     def _formatInput(self):
         #calls fmt function in utils to format input strings to be antimony compatible
@@ -125,6 +133,7 @@ class Mechanism(EnforceOverrides):
 
         self.products = list(map(fmt, self.products))
         self.substrates = list(map(fmt, self.substrates))
+        self.inhibitors = list(map(fmt, self.inhibitors)) if not pd.isnull(self.Ki) else self.inhibitors
         self.enzyme = list(map(fmt, self.enzyme))
         #self.cofactors = list(map(fmt, self.cofactors))
 
@@ -185,6 +194,7 @@ class ModularRateLaw(Mechanism):
     required_params = None # could check some other ways but skipping check for now
     nS = np.nan                        # number of required substrates 
     nP = np.nan                        # number of required products 
+    nI = np.nan                        # number of required inhibitors
     nE = 1
 
     def numerator(self) -> str:
@@ -194,8 +204,8 @@ class ModularRateLaw(Mechanism):
         allKmS = '*'.join(['Km_'+s+'_'+self.label for s in self.substrates])
         allKmP = '*'.join(['Km_'+p+'_'+self.label for p in self.products])
 
-        kcatF = 'kcatF_' + self.label
-        kcatR = 'kcatR_' + self.label
+        kcatF = 'Kcat_F_' + self.label
+        kcatR = 'Kcat_R_' + self.label
 
         return '('+kcatF+'*('+ allS +')/('+ allKmS +') - '+ kcatR +'*('+ allP +')/('+ allKmP +'))'
     
@@ -206,12 +216,33 @@ class ModularRateLaw(Mechanism):
         allP = '*'.join(['(1+'+p+'/'+Km+')' for p, Km in zip(self.products, allKmP)])
         return '('+ allS + ' + '+ allP + ' -1)'
     
+    def inhibition_nc(self) -> str: # only activity
+        allKi = ['Ki_'+i+'_'+self.label for i in self.inhibitors] 
+        allGi = ['Gi_'+i+'_'+self.label for i in self.inhibitors] # degree of competition (1 = full c, 0 = full nc)
+        fr = '*'.join(['(1-'+Gi+')/(1+'+i+'/'+Ki+')' for i, Ki, Gi in zip(self.inhibitors, allKi, allGi)])
+        return fr
+    
+    def inhibition_c(self) -> str: # only binding
+        allKi = ['Ki_'+i+'_'+self.label for i in self.inhibitors] 
+        allGi = ['Gi_'+i+'_'+self.label for i in self.inhibitors] # degree of competition (1 = full c, 0 = full nc)
+        dreg = '+'.join(['('+i+'*'+Gi+'/'+Ki+')' for i, Ki, Gi in zip(self.inhibitors, allKi, allGi)])
+        return dreg
+    
     @overrides
     def writeRate(self) -> str:
         u = self.enzyme[0]
         T = self.numerator()
         D = self.denominator()
-        return self.label +' = '+ u + ' * ' + T + '/' + D
+
+        if len(self.inhibitors)>0:
+            fr = self.inhibition_nc()
+            Dreg = self.inhibition_c()
+            rate = self.label +' = '+ u + ' * ' + fr + ' * ' + T + '/(' + D + ' + ' + Dreg + ')'
+
+        else:
+            rate = self.label +' = '+ u + ' * ' + T + '/' + D
+
+        return rate
 
 class OrderedBisubstrateBiproduct(Mechanism):
     # ordered bisubstrate-biproduct

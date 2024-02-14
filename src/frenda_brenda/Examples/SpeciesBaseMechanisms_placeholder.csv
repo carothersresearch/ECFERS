@@ -1,0 +1,29 @@
+Label,EC,Type,StartingConc,Conc,Mechanisms,Parameters,Relative
+Glucose-6-phosphate isomerase,5.3.1.9,Enzyme,2.5,,,,rel0
+6-phosphofructokinase,2.7.1.11,Enzyme,3,,,,rel0
+Fructose-bisphosphatase,3.1.3.11,Enzyme,6.5,,,,rel0
+Fructose-bisphosphate aldolase,4.1.2.13,Enzyme,20,,,,rel0
+Triose-phosphate isomerase,5.3.1.1,Enzyme,8,,,,rel0
+Phosphopyruvate hydratase,5.4.2.11,Enzyme,23.5,,,,rel0
+"Pyruvate, water dikinase",4.2.1.11,Enzyme,37.5,,,,rel0
+Pyruvate kinase,2.7.9.2,Enzyme,30,,,,rel0
+Pyruvate kinase,2.7.1.40,Enzyme,18,,,,rel0
+Pyruvate dehydrogenase (acetyl-transferring),2.7.1.40,Enzyme,19,,,,rel0
+Aconitate hydratase,2.3.3.16,Enzyme,29.5,,,,rel0
+Aconitate hydratase,4.2.1.3,Enzyme,89,,,,rel0
+Oxoglutarate dehydrogenase (succinyl-transferring),4.2.1.3,Enzyme,1.5,,,,rel0
+Succinate-coa ligase (adp-forming),1.2.4.2,Enzyme,78.5,,,,rel0
+Succinate dehydrogenase,6.2.1.5,Enzyme,28,,,,rel0
+Fumarate hydratase,6.2.1.5,Enzyme,50,,,,rel0
+"Phosphogluconate dehydrogenase (nadp+-dependent, decarboxylating)",1.3.5.1,Enzyme,9,,,,rel0
+Ribulose-phosphate 3-epimerase,4.2.1.2,Enzyme,25.5,,,,rel0
+Ribose-5-phosphate isomerase,1.1.1.37,Enzyme,34.5,,,,rel0
+Transaldolase,1.1.1.44,Enzyme,25,,,,rel0
+3-oxoacyl-[acyl-carrier-protein] reductase,5.1.3.1,Enzyme,2.5,,,,rel0
+Enoyl-[acyl-carrier-protein] reductase (nadh),5.3.1.6,Enzyme,5.5,,,,rel0
+Beta-ketoacyl-[acyl-carrier-protein] synthase iii,2.2.1.1,Enzyme,41,,,,rel0
+[acyl-carrier-protein] s-malonyltransferase,2.2.1.2,Enzyme,32.5,,,,rel0
+Beta-ketoacyl-[acyl-carrier-protein] synthase i,1.1.1.100,Enzyme,5,,,,rel0
+Biotin carboxylase,1.3.1.9,Enzyme,27,,,,
+3-hydroxyacyl-[acyl-carrier-protein] dehydratase,2.3.1.180,Enzyme,9.5,,,,
+Glycogen phosphorylase,2.3.1.39,Enzyme,6.5,,,,
