@@ -1,0 +1,6 @@
+,formate,THF,"5,10-CH2-THF",NADP,NAD,NADPH,NADH,ATP,Glycine,AMP,Biotin,Malate,Pyruvate,Serine,PLP,Mg-Act,HCT,HCO3,acetyl-CoA,Kan,KOH,glyA,sds,pyc,fdh_sn,fdh_cm,mod1,pyc_ctrl,pyc_aa,neg
+empty,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,10
+mal,,,,,,,,,,,,1,,,,,,,,,,,,,,,,,,10
+pyr,,,,,,,,,,,,,1,,,,,,,,,,,,,,,,,10
+ser,,,,,,,,,,,,,,1,,,,,,,,,,,,,,,,10
+gly,,,,,,,,,1,,,,,,,,,,,,,,,,,,,,,10
