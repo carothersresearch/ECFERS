@@ -13,9 +13,8 @@ with gzip.open(path+"/kegg_enzymes.json.gz", "r") as f:
 with gzip.open(path+"/kegg_reactions.json.gz", "r") as f:
         RXNs = {r['RID']:r['reaction'] for r in json.load(f)}
 
-cc = ComponentContribution()
-
 def keq_from_ec(ec_string):
+    cc = ComponentContribution()
     keqs = []
     try:
         for r in ECs[ec_string]:
@@ -48,6 +47,7 @@ def keq_from_ec(ec_string):
     return keqs
 
 def keq_from_kegg(reaction_kegg):
+    cc = ComponentContribution()
     try:
         with open(os.getcwd()+'/src/thermo_calculations/thermo_cache.pickle', 'rb') as handle:
             thermo_cache = pickle.load(handle)
@@ -74,6 +74,19 @@ def keq_from_kegg(reaction_kegg):
         except Exception as e:
                 print(e)
                 keq = None
+    return keq
+
+def keq_from_kegg_cache(reaction_kegg):
+    try:
+        with open(os.getcwd()+'/src/thermo_calculations/thermo_cache.pickle', 'rb') as handle:
+            thermo_cache = pickle.load(handle)
+    except:
+        thermo_cache = {}
+    
+    if reaction_kegg in thermo_cache:
+        return thermo_cache[reaction_kegg]
+    else:
+        keq = None
     return keq
 
 # sp = [c.inchi_key for c in list(rxn.sparse_with_phases.keys())]
