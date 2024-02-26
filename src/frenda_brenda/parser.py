@@ -3,6 +3,7 @@ import json
 import os
 import sys
 import math
+import re
 
 import numpy as np
 import pandas as pd
@@ -59,6 +60,24 @@ def get_substrates_and_products(EC):
     df = df.applymap(lambda x: '; '.join(x) if isinstance(x, list) else x)
 
     return df
+
+def get_inhibitors(enzyme):
+    enzyme_df = kis[kis['enzyme'] == enzyme]
+
+    # Extract substrates and Km for the given enzyme
+    substrates_list = enzyme_df['substrates'].str.split(', ').explode().tolist()
+    km_list = enzyme_df['Km'].tolist()
+
+    # Combine substrates and Km in the desired format (substrate: Km)
+    substrates_km_formatted = [f"{substrate}_KI: {km}" for substrate, km in zip(substrates_list, km_list)]
+
+    # Join the formatted strings with semicolons
+    substrates_km_str = "; ".join(substrates_km_formatted)
+
+    # Create a list with substrates separated by semicolons
+    substrates_str = "; ".join(substrates_list)
+
+    return substrates_str, substrates_km_str
 
 def get_parameters(rxn, species):
 
@@ -203,6 +222,8 @@ def assemble(ID, species):
 
     kegg_params = get_parameters_KEGG(get_parameters(rxn, species))
 
+    inhibitor_names, KI_values = get_inhibitors(ID)
+
     km_dict = {}
     kcat_dict = {}
     for entry in kegg_params:
@@ -230,6 +251,9 @@ def assemble(ID, species):
 
     sub_prod['Km'] = sub_prod['Km'].apply('; '.join)
     sub_prod['Kcat'] = sub_prod['Kcat'].apply('; '.join)
+
+    sub_prod['Inhibitors'] = inhibitor_names
+    sub_prod['KI'] = KI_values
 
     return sub_prod
 
@@ -305,6 +329,7 @@ def iterate(reaction_df, sbp_df):
         extracted_df['EC'] = row['EC']
         extracted_df['Species'] = row['Species']
         extracted_df['Label'] = row['Label']
+        extracted_df['Reaction'] = 'MRL'
 
         expanded_dfs.append(extracted_df)
 
@@ -322,11 +347,27 @@ def iterate(reaction_df, sbp_df):
 
     return expanded_df, sbp_df
 
+def extract_unique_values(column):
+    values = column.str.split(';')
+    values = [re.findall(r'(C\d+)', v) for sublist in values for v in sublist]
+    unique_values = set([item for sublist in values for item in sublist])
+    return unique_values
+
 # THIS NEEDS CHANGED TO BE UPDATED FOR CURRENT PRACTICES
 def main():
     print('this is running')
 
     parsedRXNs, parsedSBM = iterate(reaction, sbp)
+
+    unique_substrates = extract_unique_values(parsedRXNs['Substrates'])
+    unique_products = extract_unique_values(parsedRXNs['Products'])
+    unique_compounds = list(unique_substrates.union(unique_products))
+
+    # Create a DataFrame for unique compounds
+    compounds_df = pd.DataFrame({'Label': unique_compounds, 'Type': 'Metabolite'})
+
+    # Concatenate with the existing SpeciesBaseMechanism DataFrame
+    parsedSBM = pd.concat([parsedSBM, compounds_df], ignore_index=True)
 
     # Edits the parsed Reaction.csv in place
     parsedRXNs.to_csv(path+'/Files/Reaction.csv', index=False)
