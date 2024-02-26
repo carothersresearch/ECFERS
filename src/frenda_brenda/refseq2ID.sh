@@ -16,7 +16,7 @@ output_file1="Files/Reaction.csv"
 output_file2="Files/SpeciesBaseMechanisms.csv"
 
 # Add header line to the output files
-echo "Accession Number,EC,Species,Label,Enzyme,Reaction ID,Substrates,Products,Km,Kcat" > "$output_file1"
+echo "Accession Number,EC,Species,Label,Enzyme,Reaction ID,Mechanism,Substrates,Products,Km,Kcat,Inhibitors,KI" > "$output_file1"
 echo "Label,EC,Type,StartingConc,Conc,Mechanisms,Parameters" > "$output_file2"
 
 for index in "${!values1[@]}"; do
