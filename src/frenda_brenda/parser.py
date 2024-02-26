@@ -25,6 +25,7 @@ reaction = pd.read_csv(path+'/Files/Reaction.csv')
 sbp = pd.read_csv(path+'/Files/SpeciesBaseMechanisms.csv')
 kcats = pd.read_csv(path+'/../kinetic_estimator/full_report_kcats.csv') #GET THIS FROM WHERE?
 kms = pd.read_csv(path+'/../kinetic_estimator/full_report_kms.csv') #GET THIS FROM WHERE?
+kis = pd.read_csv(path+'/../kinetic_estimator/full_report_kis.csv') #GET THIS FROM WHERE?
 dataFile = path+'/Files/brenda_download.txt'
 
 brenda = BRENDA(dataFile)
@@ -329,7 +330,7 @@ def iterate(reaction_df, sbp_df):
         extracted_df['EC'] = row['EC']
         extracted_df['Species'] = row['Species']
         extracted_df['Label'] = row['Label']
-        extracted_df['Reaction'] = 'MRL'
+        extracted_df['Mechanism'] = 'MRL'
 
         expanded_dfs.append(extracted_df)
 
