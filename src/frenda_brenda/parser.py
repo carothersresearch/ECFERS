@@ -26,6 +26,7 @@ sbp = pd.read_csv(path+'/Files/SpeciesBaseMechanisms.csv')
 kcats = pd.read_csv(path+'/../kinetic_estimator/full_report_kcats.csv') #GET THIS FROM WHERE?
 kms = pd.read_csv(path+'/../kinetic_estimator/full_report_kms.csv') #GET THIS FROM WHERE?
 kis = pd.read_csv(path+'/../kinetic_estimator/full_report_kis.csv') #GET THIS FROM WHERE?
+metabconc_ref = pd.read_csv(path+'/Files/Metabolite_Concentrations.csv')
 dataFile = path+'/Files/brenda_download.txt'
 
 brenda = BRENDA(dataFile)
@@ -354,6 +355,18 @@ def extract_unique_values(column):
     unique_values = set([item for sublist in values for item in sublist])
     return unique_values
 
+def assign_metab_concs(sbm_df, metabconc_ref):
+    for index, row in sbm_df.iterrows():
+        if row['Type'] == 'Metabolite':
+            matching_row = metabconc_ref[metabconc_ref['KEGG'] == row['Label']]
+            if not matching_row.empty:
+                # Update 'StartingConc' in sbp with the concentration from mconc
+                sbm_df.at[index, 'StartingConc'] = matching_row['Concentration'].iloc[0]
+            else:
+                # If no matching row is found in mconc, set 'StartingConc' to 0.001
+                sbm_df.at[index, 'StartingConc'] = 0.001
+    return sbm_df
+
 # THIS NEEDS CHANGED TO BE UPDATED FOR CURRENT PRACTICES
 def main():
     print('this is running')
@@ -369,6 +382,8 @@ def main():
 
     # Concatenate with the existing SpeciesBaseMechanism DataFrame
     parsedSBM = pd.concat([parsedSBM, compounds_df], ignore_index=True)
+
+    parsedSBM = assign_metab_concs(parsedSBM, metabconc_ref)
 
     # Edits the parsed Reaction.csv in place
     parsedRXNs.to_csv(path+'/Files/Reaction.csv', index=False)
