@@ -178,15 +178,17 @@ class ModelBuilder:
         """        
         if species['Type'] == 'Enzyme':
             label = 'EC'+species['EC'].replace('.','')
+            present = 'p_'+label+'*'
         else:
             label = fmt(species['Label'])
+            present = ''
         species['Label'] = label
         relative = species['Relative']
         
         if not pd.isnull(relative):
-            s_str = (label +'= ' + relative + '*'+str(species['StartingConc']) + '; \n')
+            s_str = (label +'= ' + present + relative + '*'+str(species['StartingConc']) + '*dilution_factor; \n')
         else:
-            s_str = (label +'=' + str(species['StartingConc']) + '; \n')
+            s_str = (label +'=' + present + str(species['StartingConc']) + '*dilution_factor; \n')
         
         if not pd.isnull(species['Conc']):
                 funs = species['Conc'].split(';')
@@ -303,17 +305,20 @@ class ModelBuilder:
             self.s_str += self.writeSpecies(sp)
             self.s_str += self.writeParameters(sp['Parameters'], sp['Label'], required = False)
             self.v_str += self.writeVariable(sp['Relative'])
+            if sp['Type'] == 'Enzyme':
+                self.v_str += self.writeVariable('p_'+'EC'+sp['EC'].replace('.',''))
+        self.v_str += self.writeVariable('dilution_factor')
 
         for _, rxn in self.rxns.iterrows():
             try:
                 parameters = rxn['Parameters']
             except:
-                ki = ';' + rxn['Ki'] if not pd.isnull(rxn['Ki']) else ''
+                ki = ';' + rxn['KI'] if not pd.isnull(rxn['KI']) else ''
                 parameters = rxn['Km'] + '; ' + rxn['Kcat'] + ki
             self.p_str += self.writeParameters(parameters, rxn['Label'])
             self.r_str += self.writeReaction(rxn) + '\n'
 
-            if not pd.isnull(rxn['Ki']):
+            if not pd.isnull(rxn['KI']):
                 for i in rxn['Inhibitors'].split(';'): 
                     var = 'Gi_'+i+'_'+rxn['Label']
                     self.v_str += self.writeVariable(var, value = 0.5)

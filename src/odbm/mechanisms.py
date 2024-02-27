@@ -60,7 +60,7 @@ class Mechanism(EnforceOverrides):
             # try:
             #     self.label = rxn['Reaction ID'] # it was confusing to have Reaction ID and Label. sticking with just label
             # except:
-            self.Ki = rxn['Ki']
+            self.Ki = rxn['KI']
             self.label = rxn['Label']
             self.EC = rxn['EC']
 
