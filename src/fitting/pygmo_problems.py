@@ -243,6 +243,12 @@ class SBMLGlobalFit_Multi:
         self.metadata = metadata
         self.variables = variables # dict of labels and values
 
+        r = te.loadSBMLModel(self.model)
+        self.species_labels = np.array(r.getFullStoichiometryMatrix().rownames)
+        self.cols = {s:[np.where(self.species_labels==m)[0][0] for m in self.metadata['measurement_labels']] for s in self.metadata['sample_labels']}
+        self.rows = {s: [np.where(np.linspace(0, self.metadata['timepoints'][s][-1], 1000)[:,0] < (t+0.1))[0][-1] for t in self.metadata['timepoints'][s]] for s in self.metadata['sample_labels']}
+
+
     def fitness(self, x):
         if self.scale: x = self._unscale(x)
         obj = self._simulate(x)
@@ -263,13 +269,14 @@ class SBMLGlobalFit_Multi:
             r = te.loadSBMLModel(self.model)
             r.saveState('/mmfs1/gscratch/cheme/dalba/repos/ECFERS/models/binaries/model_state_'+id+'.b')
 
-        # update parameters
+        # update parameters. this can be done once for all samples
         for label, value in zip(self.parameter_labels,x):
             r[label] = value
             
         # this part we have to do for each sample!
-        
+        avg_res = []
         for sample in self.metadata['sample_labels']:
+            r.reset() # set concentrations back to t = 0. parameters are kept the same
 
             # set any variable
             for label, value in self.variables[sample].items():
@@ -279,15 +286,14 @@ class SBMLGlobalFit_Multi:
             except:
                 results = self.data[sample]*(-np.inf)
 
-            self._residual(results, self.data[sample], r)
-    
-    def _residual(self,results,data,r):
-        cols = self.settings['fit_to_cols']
-        rows = self.settings['fit_to_rows']
+            avg_res.append(self._residual(results, self.data[sample], sample))
         
-        [np.where(species_labels==m)[0][0] for m in self.metadata['measurement_labels']]
-        [np.where(r.simulate(0, 28800, 1000)[:,0] < t)[0][-1] for t in lambda x: self.metadata['timepoints'][x]]
-
+        return np.mean(avg_res)
+    
+    def _residual(self,results,data,sample):
+        cols = self.cols[sample]
+        rows = self.rows[sample]
+        
         error = (data[:,cols][rows,:]-results[:,cols][rows,:])
         RMSE = np.sqrt(np.nansum(error**2, axis=0)/len(rows))
         NRMSE = RMSE/(np.nanmax(data[:,cols][rows,:], axis=0) - np.nanmin(data[:,cols][rows,:], axis=0) + 1e6)
