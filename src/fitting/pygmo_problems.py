@@ -235,6 +235,7 @@ class SBMLGlobalFit_Multi:
 
     def __init__(self, model, data, parameter_labels, lower_bounds, upper_bounds, metadata, variables = {}, scale = False):
         self.model = model
+        self.path_to_models = model[:model.find('/models')]
         self.parameter_labels = parameter_labels # only the ones that are going to be fitted
         self.upperb = upper_bounds
         self.lowerb = lower_bounds
@@ -245,8 +246,20 @@ class SBMLGlobalFit_Multi:
 
         r = te.loadSBMLModel(self.model)
         self.species_labels = np.array(r.getFullStoichiometryMatrix().rownames)
-        self.cols = {s:[np.where(self.species_labels==m)[0][0] for m in self.metadata['measurement_labels']] for s in self.metadata['sample_labels']}
-        self.rows = {s: [np.where(np.linspace(0, self.metadata['timepoints'][s][-1], 1000)[:,0] < (t+0.1))[0][-1] for t in self.metadata['timepoints'][s]] for s in self.metadata['sample_labels']}
+        self.cols = {}
+        self.rows = {}
+        self.data_cols = {}
+        for s in self.metadata['sample_labels']:
+            measurements = []
+            self.data_cols[s] = []
+            for i,m in enumerate(self.metadata['measurement_labels']):
+                try:    # model may not contain measurement species
+                    measurements.append(np.where(self.species_labels==m)[0][0])
+                    self.data_cols[s].append(i)
+                except:
+                    pass
+            self.cols[s] = measurements
+            self.rows[s] = [np.where(np.linspace(0, self.metadata['timepoints'][s][-1], 1000) < (t+0.1))[0][-1] for t in self.metadata['timepoints'][s]]
 
 
     def fitness(self, x):
@@ -258,16 +271,20 @@ class SBMLGlobalFit_Multi:
         from roadrunner import Config, RoadRunner
         Config.setValue(Config.ROADRUNNER_DISABLE_PYTHON_DYNAMIC_PROPERTIES, False)
         Config.setValue(Config.LOADSBMLOPTIONS_RECOMPILE, False) 
-        Config.setValue(Config.LLJIT_OPTIMIZATION_LEVEL, 4)
+        # Config.setValue(Config.LLJIT_OPTIMIZATION_LEVEL, 4)
 
         id = str(os.getpid())
         try:
             r = RoadRunner()
-            r.loadState('/mmfs1/gscratch/cheme/dalba/repos/ECFERS/models/binaries/model_state_'+id+'.b')
+            r.loadState(self.path_to_models+'/models/binaries/model_state_'+id+'.b')
         except Exception as e:
             print(e)
             r = te.loadSBMLModel(self.model)
-            r.saveState('/mmfs1/gscratch/cheme/dalba/repos/ECFERS/models/binaries/model_state_'+id+'.b')
+            try:
+                r.saveState(self.path_to_models+'/models/binaries/model_state_'+id+'.b')
+            except Exception as e:
+                print('Could not save state')
+                print(e)
 
         # update parameters. this can be done once for all samples
         for label, value in zip(self.parameter_labels,x):
@@ -276,11 +293,16 @@ class SBMLGlobalFit_Multi:
         # this part we have to do for each sample!
         avg_res = []
         for sample in self.metadata['sample_labels']:
-            r.reset() # set concentrations back to t = 0. parameters are kept the same
+            r.reset() # set concentrations back to t = 0 ("init"). parameters are kept the same
 
             # set any variable
             for label, value in self.variables[sample].items():
-                r[label] = value
+                if not np.isnan(value): 
+                    try:
+                        r[label] = value # we might need new assignment rules for heterologous enzymes
+                    except Exception as e:
+                        print('Could not set variable', label, 'to', value)
+                        print(e) 
             try:
                 results = r.simulate(0,self.metadata['timepoints'][sample][-1],1000)[:,1:].__array__()
             except:
@@ -293,10 +315,11 @@ class SBMLGlobalFit_Multi:
     def _residual(self,results,data,sample):
         cols = self.cols[sample]
         rows = self.rows[sample]
-        
-        error = (data[:,cols][rows,:]-results[:,cols][rows,:])
+        dcols = self.data_cols[sample]
+
+        error = (data[:,dcols]-results[:,cols][rows,:])
         RMSE = np.sqrt(np.nansum(error**2, axis=0)/len(rows))
-        NRMSE = RMSE/(np.nanmax(data[:,cols][rows,:], axis=0) - np.nanmin(data[:,cols][rows,:], axis=0) + 1e6)
+        NRMSE = RMSE/(np.nanmax(data[:,dcols], axis=0) - np.nanmin(data[:,dcols], axis=0) + 1e6)
         return np.nansum(NRMSE)
     
     def _unscale(self, x):
