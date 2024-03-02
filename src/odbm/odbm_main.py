@@ -301,7 +301,7 @@ class ModelBuilder:
                 for m in mechanisms:
                         self.applyMechanism(m,s)
 
-        for _, sp in self.species.iterrows():
+        for _, sp in S.iterrows():
             self.s_str += self.writeSpecies(sp)
             self.s_str += self.writeParameters(sp['Parameters'], sp['Label'], required = False)
             self.v_str += self.writeVariable(sp['Relative'])
@@ -313,15 +313,20 @@ class ModelBuilder:
             try:
                 parameters = rxn['Parameters']
             except:
-                ki = ';' + rxn['KI'] if not pd.isnull(rxn['KI']) else ''
+                try:
+                    kis = ';'.join([I for I in np.unique(rxn['KI'].split(';')) if np.all([i not in I for i in ['D','G']])])
+                except:
+                    kis = np.nan
+                ki = ';' + kis if not pd.isnull(kis) else ''
                 parameters = rxn['Km'] + '; ' + rxn['Kcat'] + ki
             self.p_str += self.writeParameters(parameters, rxn['Label'])
             self.r_str += self.writeReaction(rxn) + '\n'
 
             if not pd.isnull(rxn['KI']):
-                for i in rxn['Inhibitors'].split(';'): 
-                    var = 'Gi_'+i+'_'+rxn['Label']
-                    self.v_str += self.writeVariable(var, value = 0.5)
+                for i in rxn['Inhibitors'].split(';'):
+                    if np.all([j not in i for j in ['D','G']]): 
+                        var = 'Gi_'+i+'_'+rxn['Label']
+                        self.v_str += self.writeVariable(var, value = 0.5)
 
         ## hack for now to get parameters
         # flag = True
