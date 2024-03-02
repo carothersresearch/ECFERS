@@ -328,15 +328,6 @@ class ModelBuilder:
                         var = 'Gi_'+i+'_'+rxn['Label']
                         self.v_str += self.writeVariable(var, value = 0.5)
 
-        ## hack for now to get parameters
-        # flag = True
-        # while flag:
-        #     try:
-        #         te.loada(self.s_str + self.p_str + self.r_str)
-        #         flag = False
-        #     except Exception as e:
-        #         self.p_str += str(e).split("'")[1] +'= 1 ; \n'
-
         return self.s_str + self.p_str + self.v_str + self.r_str
 
     def saveModel(self, filename:str):

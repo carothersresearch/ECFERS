@@ -51,207 +51,207 @@
       <species id="EC43119" compartment="default_compartment" initialAmount="2" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="EC34111" compartment="default_compartment" initialAmount="4" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="EC63413" compartment="default_compartment" initialAmount="4" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C12214" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00111" compartment="default_compartment" initialAmount="0.37" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00345" compartment="default_compartment" initialAmount="3.8" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00005" compartment="default_compartment" initialAmount="0.12" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00020" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00390" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C01172" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00201" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C05747" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C05760" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C04688" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00122" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C05378" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C05223" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C05749" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00013" compartment="default_compartment" initialAmount="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C05345" compartment="default_compartment" initialAmount="3.8" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C05381" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00103" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C05746" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00322" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C05259" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00002" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00229" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00136" compartment="default_compartment" initialAmount="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C05748" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00347" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C16470" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00249" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00369" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C03069" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00236" compartment="default_compartment" initialAmount="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00011" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00026" compartment="default_compartment" initialAmount="0.44" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C16219" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C04633" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00081" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C03344" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C03356" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C16389" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00035" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00447" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00008" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C05270" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C16339" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00003" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C16335" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00118" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00044" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C05764" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C03735" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C06157" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C13378" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C05274" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C05755" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00577" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C16169" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C16334" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00279" compartment="default_compartment" initialAmount="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00042" compartment="default_compartment" initialAmount="7.1692" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C01832" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C16338" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C04419" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C05752" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00668" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00001" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C03785" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00286" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00085" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00022" compartment="default_compartment" initialAmount="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C05269" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00197" compartment="default_compartment" initialAmount="1.5" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C02232" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C05754" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C05265" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C01094" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00531" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C16254" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00112" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C04246" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00100" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00490" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C16220" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00685" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C05758" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C01097" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00068" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C05763" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00015" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C01944" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00006" compartment="default_compartment" initialAmount="0.0021" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C07118" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C16173" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00173" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C01271" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C04620" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C05761" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00010" compartment="default_compartment" initialAmount="1.4" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00620" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C12215" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00199" compartment="default_compartment" initialAmount="0.5" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00158" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C16331" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C05753" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C16330" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00091" compartment="default_compartment" initialAmount="0.23" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00009" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C05759" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00149" compartment="default_compartment" initialAmount="1.7" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00311" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00693" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C05757" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C03939" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C05261" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C05756" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00075" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C04619" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C01209" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C16255" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00131" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C05751" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00104" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C01171" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C05263" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C05745" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00354" compartment="default_compartment" initialAmount="15" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C05382" compartment="default_compartment" initialAmount="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C05762" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C05125" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00288" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00083" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C02593" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00063" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00512" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C16466" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00206" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00231" compartment="default_compartment" initialAmount="0.5" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C15972" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00399" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00080" compartment="default_compartment" initialAmount="0.0001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C05267" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00361" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00264" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C06250" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00004" compartment="default_compartment" initialAmount="0.083" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00417" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C05750" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00527" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00024" compartment="default_compartment" initialAmount="0.61" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00036" compartment="default_compartment" initialAmount="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00631" compartment="default_compartment" initialAmount="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00117" compartment="default_compartment" initialAmount="0.5" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00092" compartment="default_compartment" initialAmount="5" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00718" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C16471" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00040" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00154" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C04618" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00454" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00074" compartment="default_compartment" initialAmount="0.18" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C16376" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C04309" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C05744" compartment="default_compartment" initialAmount="0.001" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00097" compartment="default_compartment" initialAmount="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00109" compartment="default_compartment" initialAmount="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C16832" compartment="default_compartment" initialAmount="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C16237" compartment="default_compartment" initialAmount="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C02972" compartment="default_compartment" initialAmount="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C02051" compartment="default_compartment" initialAmount="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C15973" compartment="default_compartment" initialAmount="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00037" compartment="default_compartment" initialAmount="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00101" compartment="default_compartment" initialAmount="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00014" compartment="default_compartment" initialAmount="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00143" compartment="default_compartment" initialAmount="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00579" compartment="default_compartment" initialAmount="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00248" compartment="default_compartment" initialAmount="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00065" compartment="default_compartment" initialAmount="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C01217" compartment="default_compartment" initialAmount="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C04377" compartment="default_compartment" initialAmount="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C01650" compartment="default_compartment" initialAmount="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C02553" compartment="default_compartment" initialAmount="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C16636" compartment="default_compartment" initialAmount="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C06481" compartment="default_compartment" initialAmount="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C01642" compartment="default_compartment" initialAmount="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C02412" compartment="default_compartment" initialAmount="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C12214" compartment="default_compartment" initialAmount="0.000733157196322425" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00111" compartment="default_compartment" initialAmount="3.28539964138786" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00345" compartment="default_compartment" initialAmount="3.79564688965537" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00005" compartment="default_compartment" initialAmount="0.12208614955602" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00020" compartment="default_compartment" initialAmount="0.000998913684575531" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00390" compartment="default_compartment" initialAmount="0.00170686156253809" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C01172" compartment="default_compartment" initialAmount="0.0378241460749548" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00201" compartment="default_compartment" initialAmount="0.00100025149981373" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C05747" compartment="default_compartment" initialAmount="0.00114136323677934" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C05760" compartment="default_compartment" initialAmount="0.000568579135245778" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C04688" compartment="default_compartment" initialAmount="0.00114136323677934" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00122" compartment="default_compartment" initialAmount="1.18392324615974" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C05378" compartment="default_compartment" initialAmount="0.415543748242848" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C05223" compartment="default_compartment" initialAmount="0.00132257472937421" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C05749" compartment="default_compartment" initialAmount="0.00132233788494275" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00013" compartment="default_compartment" initialAmount="1.53259478684039e-07" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C05345" compartment="default_compartment" initialAmount="0.734525628434736" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C05381" compartment="default_compartment" initialAmount="0.00296267313169737" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00103" compartment="default_compartment" initialAmount="0.851463733980907" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C05746" compartment="default_compartment" initialAmount="0.000967482898600671" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00322" compartment="default_compartment" initialAmount="0.00195759350548706" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C05259" compartment="default_compartment" initialAmount="0.000537668007894892" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00002" compartment="default_compartment" initialAmount="6.24442913117488e-07" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00229" compartment="default_compartment" initialAmount="0.00213637565818434" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00136" compartment="default_compartment" initialAmount="0.000731165996472406" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C05748" compartment="default_compartment" initialAmount="0.000568577500075432" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00347" compartment="default_compartment" initialAmount="0.000999923701603005" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C16470" compartment="default_compartment" initialAmount="0.00143099415616456" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00249" compartment="default_compartment" initialAmount="0.000999923690342193" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00369" compartment="default_compartment" initialAmount="2.20293109538374" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C03069" compartment="default_compartment" initialAmount="0.00143099415616457" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00236" compartment="default_compartment" initialAmount="0.000346558983050466" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00011" compartment="default_compartment" initialAmount="0.0144949427213161" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00026" compartment="default_compartment" initialAmount="0.4301616929395" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C16219" compartment="default_compartment" initialAmount="0.000962870131054791" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C04633" compartment="default_compartment" initialAmount="0.00114136323677934" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00081" compartment="default_compartment" initialAmount="0.00104093791246071" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C03344" compartment="default_compartment" initialAmount="0.000537668007894892" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C03356" compartment="default_compartment" initialAmount="0.000608630237822164" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C16389" compartment="default_compartment" initialAmount="0.000537668007894892" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00035" compartment="default_compartment" initialAmount="0.000999748500186268" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00447" compartment="default_compartment" initialAmount="0.353573871457424" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00008" compartment="default_compartment" initialAmount="0.00200046187251136" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C05270" compartment="default_compartment" initialAmount="0.00146233199210511" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C16339" compartment="default_compartment" initialAmount="0.00146233199210511" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00003" compartment="default_compartment" initialAmount="4.49074087812339e-06" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C16335" compartment="default_compartment" initialAmount="0.00146233199210511" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00118" compartment="default_compartment" initialAmount="1.77185572475622" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00044" compartment="default_compartment" initialAmount="0.00100025149981373" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C05764" compartment="default_compartment" initialAmount="0.00133554436143033" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C03735" compartment="default_compartment" initialAmount="0.000990073032532573" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C06157" compartment="default_compartment" initialAmount="1.36079544666225e-05" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C13378" compartment="default_compartment" initialAmount="5.43287499736693e-05" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C05274" compartment="default_compartment" initialAmount="0.00146233199210511" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C05755" compartment="default_compartment" initialAmount="0.00132257472937421" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00577" compartment="default_compartment" initialAmount="0.00101580821773685" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C16169" compartment="default_compartment" initialAmount="0.00146233199210511" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C16334" compartment="default_compartment" initialAmount="0.000537668007894892" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00279" compartment="default_compartment" initialAmount="1.31982155524197" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00042" compartment="default_compartment" initialAmount="7.16768620990822" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C01832" compartment="default_compartment" initialAmount="0.00146233199210511" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C16338" compartment="default_compartment" initialAmount="0.000537668007894892" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C04419" compartment="default_compartment" initialAmount="7.60422713781731e-06" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C05752" compartment="default_compartment" initialAmount="0.00154099065015183" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00668" compartment="default_compartment" initialAmount="0.164414183666881" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00001" compartment="default_compartment" initialAmount="1.05696440485918" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C03785" compartment="default_compartment" initialAmount="0.000999981373401215" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00286" compartment="default_compartment" initialAmount="0.00100025149981373" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00085" compartment="default_compartment" initialAmount="0.734627781680491" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00022" compartment="default_compartment" initialAmount="0.00453587082186524" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C05269" compartment="default_compartment" initialAmount="0.000268834003527594" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00197" compartment="default_compartment" initialAmount="1.49965344101695" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C02232" compartment="default_compartment" initialAmount="0.063887726261913" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C05754" compartment="default_compartment" initialAmount="0.000568579135245778" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C05265" compartment="default_compartment" initialAmount="0.000537668007894892" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C01094" compartment="default_compartment" initialAmount="0.000984191782263152" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00531" compartment="default_compartment" initialAmount="0.000967425161367286" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C16254" compartment="default_compartment" initialAmount="0.00298907574338307" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00112" compartment="default_compartment" initialAmount="0.000959062087539288" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C04246" compartment="default_compartment" initialAmount="0.000568579135245778" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00100" compartment="default_compartment" initialAmount="0.00146233199210511" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00490" compartment="default_compartment" initialAmount="0.00103257483863271" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C16220" compartment="default_compartment" initialAmount="0.00113280186132931" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00685" compartment="default_compartment" initialAmount="0.000956327533711753" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C05758" compartment="default_compartment" initialAmount="0.000568579135245778" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C01097" compartment="default_compartment" initialAmount="0.00100001862659878" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00068" compartment="default_compartment" initialAmount="0.000103828582029692" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C05763" compartment="default_compartment" initialAmount="0.000568783646185559" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00015" compartment="default_compartment" initialAmount="0.000959062087539288" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C01944" compartment="default_compartment" initialAmount="0.00146233199210511" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00006" compartment="default_compartment" initialAmount="1.38504439804597e-05" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C07118" compartment="default_compartment" initialAmount="0.000569005843835434" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C16173" compartment="default_compartment" initialAmount="0.00146233199210511" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00173" compartment="default_compartment" initialAmount="0.00133544836804175" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C01271" compartment="default_compartment" initialAmount="0.00113944099151474" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C04620" compartment="default_compartment" initialAmount="0.000447236479517482" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C05761" compartment="default_compartment" initialAmount="0.00132257472937421" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00010" compartment="default_compartment" initialAmount="1.44845072311303" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00620" compartment="default_compartment" initialAmount="0.26219405736912" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C12215" compartment="default_compartment" initialAmount="0.00126684280367758" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00199" compartment="default_compartment" initialAmount="0.985319343363033" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00158" compartment="default_compartment" initialAmount="0.000709982121425005" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C16331" compartment="default_compartment" initialAmount="0.00146233199210511" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C05753" compartment="default_compartment" initialAmount="6.07230518045527e-07" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C16330" compartment="default_compartment" initialAmount="0.000537668007894892" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00091" compartment="default_compartment" initialAmount="0.173805760452743" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00009" compartment="default_compartment" initialAmount="0.0192952812386359" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C05759" compartment="default_compartment" initialAmount="0.000967482898600671" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00149" compartment="default_compartment" initialAmount="0.517781848132483" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00311" compartment="default_compartment" initialAmount="0.000689611849864552" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00693" compartment="default_compartment" initialAmount="0.000568783106731763" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C05757" compartment="default_compartment" initialAmount="0.00114136323677934" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C03939" compartment="default_compartment" initialAmount="0.000785529888232908" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C05261" compartment="default_compartment" initialAmount="0.000537668007894892" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C05756" compartment="default_compartment" initialAmount="0.000967482898600671" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00075" compartment="default_compartment" initialAmount="0.00104093791246071" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C04619" compartment="default_compartment" initialAmount="0.00214072272781327" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C01209" compartment="default_compartment" initialAmount="8.30343799308695e-06" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C16255" compartment="default_compartment" initialAmount="0.000879158935040033" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00131" compartment="default_compartment" initialAmount="0.00100025149981373" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C05751" compartment="default_compartment" initialAmount="0.00102259730675333" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00104" compartment="default_compartment" initialAmount="0.000959062087539288" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C01171" compartment="default_compartment" initialAmount="0.00100992696746743" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C05263" compartment="default_compartment" initialAmount="0.000537668007894892" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C05745" compartment="default_compartment" initialAmount="0.00132257472937421" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00354" compartment="default_compartment" initialAmount="11.2485393070956" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C05382" compartment="default_compartment" initialAmount="0.569563776379548" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C05762" compartment="default_compartment" initialAmount="0.000967482898600671" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C05125" compartment="default_compartment" initialAmount="0.000879169536299266" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00288" compartment="default_compartment" initialAmount="0.00100447992420312" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00083" compartment="default_compartment" initialAmount="0.00203258176263254" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C02593" compartment="default_compartment" initialAmount="0.00146233199210511" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00063" compartment="default_compartment" initialAmount="0.00104093791246071" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00512" compartment="default_compartment" initialAmount="0.00143099415616457" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C16466" compartment="default_compartment" initialAmount="0.000569005843835434" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00206" compartment="default_compartment" initialAmount="0.000999748500186268" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00231" compartment="default_compartment" initialAmount="0.948128122430454" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C15972" compartment="default_compartment" initialAmount="0.000104811585595858" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00399" compartment="default_compartment" initialAmount="0.000293138437461914" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00080" compartment="default_compartment" initialAmount="0.0043223815429547" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C05267" compartment="default_compartment" initialAmount="0.000537668007894892" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00361" compartment="default_compartment" initialAmount="0.000999748500186268" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00264" compartment="default_compartment" initialAmount="0.000537688203377073" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C06250" compartment="default_compartment" initialAmount="0.00199239577286218" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00004" compartment="default_compartment" initialAmount="0.083995509259122" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00417" compartment="default_compartment" initialAmount="0.00160040602871044" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C05750" compartment="default_compartment" initialAmount="0.000956930220227861" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00527" compartment="default_compartment" initialAmount="0.00102879854004632" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00024" compartment="default_compartment" initialAmount="0.553826832100215" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00036" compartment="default_compartment" initialAmount="1.76727032878277e-06" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00631" compartment="default_compartment" initialAmount="0.0547767541823124" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00117" compartment="default_compartment" initialAmount="1.02356293806715" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00092" compartment="default_compartment" initialAmount="3.94259027363803" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00718" compartment="default_compartment" initialAmount="0.0521621621351374" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C16471" compartment="default_compartment" initialAmount="0.000569005843835434" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00040" compartment="default_compartment" initialAmount="0.00146238809501992" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00154" compartment="default_compartment" initialAmount="0.00100007630965781" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C04618" compartment="default_compartment" initialAmount="0.00113638786608133" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00454" compartment="default_compartment" initialAmount="0.000999748500186268" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00074" compartment="default_compartment" initialAmount="0.125219745707863" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C16376" compartment="default_compartment" initialAmount="0.000537668007894891" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C04309" compartment="default_compartment" initialAmount="0.00139136976217783" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C05744" compartment="default_compartment" initialAmount="0.000933403149508327" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00014" compartment="default_compartment" initialAmount="0.00757043471543277" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00037" compartment="default_compartment" initialAmount="0.001550156046157" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00051" compartment="default_compartment" initialAmount="0.000983371704456023" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00065" compartment="default_compartment" initialAmount="1.46048668805532e-05" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00097" compartment="default_compartment" initialAmount="0.00199695355806421" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00101" compartment="default_compartment" initialAmount="0.00139074653714654" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00109" compartment="default_compartment" initialAmount="0.00199375751505195" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00143" compartment="default_compartment" initialAmount="0.000609253462853455" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00161" compartment="default_compartment" initialAmount="0.00199375665356183" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00188" compartment="default_compartment" initialAmount="6.24248494804407e-06" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00248" compartment="default_compartment" initialAmount="0.000744598869826401" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00445" compartment="default_compartment" initialAmount="0.00139155359496349" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00579" compartment="default_compartment" initialAmount="0.0012554011301736" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00669" compartment="default_compartment" initialAmount="0.00101662829554398" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C01217" compartment="default_compartment" initialAmount="0.00176739783855208" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C01242" compartment="default_compartment" initialAmount="0.000263538338861851" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C01419" compartment="default_compartment" initialAmount="3.04644193579401e-06" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C01642" compartment="default_compartment" initialAmount="0.000999999348134871" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C01650" compartment="default_compartment" initialAmount="0.00100000000022063" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C02051" compartment="default_compartment" initialAmount="0.000748633417395245" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C02218" compartment="default_compartment" initialAmount="3.35699241797191e-05" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C02412" compartment="default_compartment" initialAmount="0.00100000065186513" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C02553" compartment="default_compartment" initialAmount="0.000999999999779375" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C02972" compartment="default_compartment" initialAmount="0.0019878282437429" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C03090" compartment="default_compartment" initialAmount="0.00100431790535556" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C03479" compartment="default_compartment" initialAmount="0.00060844640503651" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C03508" compartment="default_compartment" initialAmount="0.000570062942705984" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C03838" compartment="default_compartment" initialAmount="0.000995682094644436" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C04377" compartment="default_compartment" initialAmount="0.00023260216144792" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C05167" compartment="default_compartment" initialAmount="6.24334643816733e-06" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C05726" compartment="default_compartment" initialAmount="0.00199695355806421" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C05729" compartment="default_compartment" initialAmount="3.04644193579401e-06" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C06481" compartment="default_compartment" initialAmount="0.000999999999779375" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C15973" compartment="default_compartment" initialAmount="0.00101334578151443" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C16237" compartment="default_compartment" initialAmount="0.000744598869826401" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C16636" compartment="default_compartment" initialAmount="0.00100000000022063" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C16832" compartment="default_compartment" initialAmount="0.0012554011301736" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="EC1442" compartment="default_compartment" initialAmount="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C01242" compartment="default_compartment" initialAmount="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C01419" compartment="default_compartment" initialAmount="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C05729" compartment="default_compartment" initialAmount="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C05726" compartment="default_compartment" initialAmount="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C03508" compartment="default_compartment" initialAmount="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C03479" compartment="default_compartment" initialAmount="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00445" compartment="default_compartment" initialAmount="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00669" compartment="default_compartment" initialAmount="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00051" compartment="default_compartment" initialAmount="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C02218" compartment="default_compartment" initialAmount="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C05167" compartment="default_compartment" initialAmount="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00161" compartment="default_compartment" initialAmount="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00188" compartment="default_compartment" initialAmount="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C03090" compartment="default_compartment" initialAmount="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C03838" compartment="default_compartment" initialAmount="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
     </listOfSpecies>
     <listOfParameters>
       <parameter id="ECNAN0001" value="96.5" constant="true"/>
@@ -577,6 +577,43 @@
       <parameter id="v207" value="1" constant="true"/>
       <parameter id="C01231" value="0.001" constant="true"/>
       <parameter id="v208" value="1" constant="true"/>
+      <parameter id="v209" value="1" constant="true"/>
+      <parameter id="v210" value="1" constant="true"/>
+      <parameter id="v211" value="1" constant="true"/>
+      <parameter id="v212" value="1" constant="true"/>
+      <parameter id="v213" value="1" constant="true"/>
+      <parameter id="v214" value="1" constant="true"/>
+      <parameter id="v215" value="1" constant="true"/>
+      <parameter id="v216" value="1" constant="true"/>
+      <parameter id="v217" value="1" constant="true"/>
+      <parameter id="v218" value="1" constant="true"/>
+      <parameter id="v219" value="1" constant="true"/>
+      <parameter id="v220" value="1" constant="true"/>
+      <parameter id="v221" value="1" constant="true"/>
+      <parameter id="v222" value="1" constant="true"/>
+      <parameter id="v223" value="1" constant="true"/>
+      <parameter id="v224" value="1" constant="true"/>
+      <parameter id="v225" value="1" constant="true"/>
+      <parameter id="v226" value="1" constant="true"/>
+      <parameter id="v227" value="1" constant="true"/>
+      <parameter id="v228" value="1" constant="true"/>
+      <parameter id="v229" value="1" constant="true"/>
+      <parameter id="v230" value="1" constant="true"/>
+      <parameter id="v231" value="1" constant="true"/>
+      <parameter id="v232" value="1" constant="true"/>
+      <parameter id="v233" value="1" constant="true"/>
+      <parameter id="v234" value="1" constant="true"/>
+      <parameter id="v235" value="1" constant="true"/>
+      <parameter id="v236" value="1" constant="true"/>
+      <parameter id="v237" value="1" constant="true"/>
+      <parameter id="v238" value="1" constant="true"/>
+      <parameter id="v239" value="1" constant="true"/>
+      <parameter id="v240" value="1" constant="true"/>
+      <parameter id="v241" value="1" constant="true"/>
+      <parameter id="v242" value="1" constant="true"/>
+      <parameter id="v243" value="1" constant="true"/>
+      <parameter id="v244" value="1" constant="true"/>
+      <parameter id="v245" value="1" constant="true"/>
       <parameter id="Km_C00085_R1" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00092_R1" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_F_R1" value="49.0133030926351" constant="true"/>
@@ -2540,2715 +2577,7 @@
       <parameter id="Gi_C00665_R142" value="0.5" constant="true"/>
       <parameter id="Gi_C01182_R142" value="0.5" constant="true"/>
     </listOfParameters>
-    <listOfInitialAssignments>
-      <initialAssignment symbol="EC5319">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_EC5319 </ci>
-            <ci> rel0 </ci>
-            <cn> 2.5 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="EC27111">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_EC27111 </ci>
-            <ci> rel0 </ci>
-            <cn type="integer"> 3 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="EC31311">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_EC31311 </ci>
-            <ci> rel0 </ci>
-            <cn> 6.5 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="EC41213">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_EC41213 </ci>
-            <ci> rel0 </ci>
-            <cn type="integer"> 20 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="EC5311">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_EC5311 </ci>
-            <ci> rel0 </ci>
-            <cn type="integer"> 8 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="EC2723">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_EC2723 </ci>
-            <ci> rel0 </ci>
-            <cn> 45.5 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="EC42111">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_EC42111 </ci>
-            <ci> rel0 </ci>
-            <cn> 37.5 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="EC2792">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_EC2792 </ci>
-            <ci> rel0 </ci>
-            <cn type="integer"> 30 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="EC27140">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_EC27140 </ci>
-            <ci> rel0 </ci>
-            <cn type="integer"> 19 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="EC1241">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_EC1241 </ci>
-            <ci> rel0 </ci>
-            <cn type="integer"> 51 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="EC4213">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_EC4213 </ci>
-            <ci> rel0 </ci>
-            <cn> 1.5 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="EC1242">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_EC1242 </ci>
-            <ci> rel0 </ci>
-            <cn> 78.5 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="EC6215">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_EC6215 </ci>
-            <ci> rel0 </ci>
-            <cn type="integer"> 50 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="EC1351">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_EC1351 </ci>
-            <ci> rel0 </ci>
-            <cn type="integer"> 9 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="EC4212">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_EC4212 </ci>
-            <ci> rel0 </ci>
-            <cn> 25.5 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="EC11137">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_EC11137 </ci>
-            <ci> rel0 </ci>
-            <cn> 34.5 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="EC11144">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_EC11144 </ci>
-            <ci> rel0 </ci>
-            <cn type="integer"> 25 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="EC5131">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_EC5131 </ci>
-            <ci> rel0 </ci>
-            <cn> 2.5 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="EC5316">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_EC5316 </ci>
-            <ci> rel0 </ci>
-            <cn> 5.5 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="EC2211">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_EC2211 </ci>
-            <ci> rel0 </ci>
-            <cn type="integer"> 41 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="EC2212">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_EC2212 </ci>
-            <ci> rel0 </ci>
-            <cn> 32.5 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="EC111100">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_EC111100 </ci>
-            <ci> rel0 </ci>
-            <cn type="integer"> 5 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="EC1319">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_EC1319 </ci>
-            <ci> rel0 </ci>
-            <cn type="integer"> 27 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="EC231180">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_EC231180 </ci>
-            <ci> rel0 </ci>
-            <cn> 9.5 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="EC23139">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_EC23139 </ci>
-            <ci> rel0 </ci>
-            <cn> 6.5 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="EC23141">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_EC23141 </ci>
-            <ci> rel0 </ci>
-            <cn> 15.5 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="EC23116">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_EC23116 </ci>
-            <ci> rel0 </ci>
-            <cn> 0.5 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="EC6213">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_EC6213 </ci>
-            <ci> rel0 </ci>
-            <cn type="integer"> 3 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="EC6412">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_EC6412 </ci>
-            <ci> rel0 </ci>
-            <cn> 2.5 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="EC63414">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_EC63414 </ci>
-            <ci> rel0 </ci>
-            <cn> 16.5 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="EC42159">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_EC42159 </ci>
-            <ci> rel0 </ci>
-            <cn type="integer"> 9 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="EC2411">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_EC2411 </ci>
-            <ci> rel0 </ci>
-            <cn type="integer"> 5 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="EC5422">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_EC5422 </ci>
-            <ci> rel0 </ci>
-            <cn type="integer"> 10 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="EC1814">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_EC1814 </ci>
-            <ci> rel0 </ci>
-            <cn type="integer"> 14 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="EC2121">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_EC2121 </ci>
-            <ci> rel0 </ci>
-            <cn> 15.5 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="EC61111">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_EC61111 </ci>
-            <ci> rel0 </ci>
-            <cn type="integer"> 2 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="EC61114">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_EC61114 </ci>
-            <ci> rel0 </ci>
-            <cn> 15.5 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="EC34112">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_EC34112 </ci>
-            <ci> rel0 </ci>
-            <cn type="integer"> 4 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="EC23129">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_EC23129 </ci>
-            <ci> rel0 </ci>
-            <cn> 15.5 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="EC21210">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_EC21210 </ci>
-            <ci> rel0 </ci>
-            <cn type="integer"> 7 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="EC341123">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_EC341123 </ci>
-            <ci> rel0 </ci>
-            <cn type="integer"> 4 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="EC6323">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_EC6323 </ci>
-            <ci> rel0 </ci>
-            <cn> 15.5 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="EC43117">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_EC43117 </ci>
-            <ci> rel0 </ci>
-            <cn type="integer"> 4 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="EC43119">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_EC43119 </ci>
-            <ci> rel0 </ci>
-            <cn type="integer"> 2 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="EC34111">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_EC34111 </ci>
-            <ci> rel0 </ci>
-            <cn type="integer"> 4 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="EC63413">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_EC63413 </ci>
-            <ci> rel0 </ci>
-            <cn type="integer"> 4 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C12214">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v1 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00111">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v2 </ci>
-            <cn> 0.37 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00345">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v3 </ci>
-            <cn> 3.8 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00005">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v4 </ci>
-            <cn> 0.12 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00020">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v5 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00390">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v6 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C01172">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v7 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00201">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v8 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C05747">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v9 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C05760">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v10 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C04688">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v11 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00122">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v12 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C05378">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v13 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C05223">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v14 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C05749">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v15 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00013">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v16 </ci>
-            <cn type="integer"> 0 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C05345">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v17 </ci>
-            <cn> 3.8 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C05381">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v18 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00103">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v19 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C05746">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v20 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00322">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v21 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C05259">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v22 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00002">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v23 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00229">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v24 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00136">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v25 </ci>
-            <cn type="integer"> 0 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C05748">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v26 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00347">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v27 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C16470">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v28 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00249">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v29 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00369">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v30 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C03069">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v31 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00236">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v32 </ci>
-            <cn type="integer"> 0 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00011">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v33 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00026">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v34 </ci>
-            <cn> 0.44 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C16219">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v35 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C04633">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v36 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00081">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v37 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C03344">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v38 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C03356">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v39 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C16389">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v40 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00035">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v41 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00447">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v42 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00008">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v43 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C05270">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v44 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C16339">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v45 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00003">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v46 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C16335">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v47 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00118">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v48 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00044">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v49 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C05764">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v50 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C03735">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v51 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C06157">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v52 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C13378">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v53 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C05274">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v54 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C05755">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v55 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00577">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v56 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C16169">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v57 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C16334">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v58 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00279">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v59 </ci>
-            <cn type="integer"> 0 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00042">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v60 </ci>
-            <cn> 7.1692 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C01832">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v61 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C16338">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v62 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C04419">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v63 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C05752">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v64 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00668">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v65 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00001">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v66 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C03785">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v67 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00286">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v68 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00085">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v69 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00022">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v70 </ci>
-            <cn type="integer"> 0 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C05269">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v71 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00197">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v72 </ci>
-            <cn> 1.5 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C02232">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v73 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C05754">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v74 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C05265">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v75 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C01094">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v76 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00531">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v77 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C16254">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v78 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00112">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v79 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C04246">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v80 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00100">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v81 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00490">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v82 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C16220">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v83 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00685">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v84 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C05758">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v85 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C01097">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v86 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00068">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v87 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C05763">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v88 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00015">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v89 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C01944">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v90 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00006">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v91 </ci>
-            <cn> 0.0021 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C07118">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v92 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C16173">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v93 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00173">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v94 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C01271">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v95 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C04620">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v96 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C05761">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v97 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00010">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v98 </ci>
-            <cn> 1.4 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00620">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v99 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C12215">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v100 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00199">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v101 </ci>
-            <cn> 0.5 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00158">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v102 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C16331">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v103 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C05753">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v104 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C16330">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v105 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00091">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v106 </ci>
-            <cn> 0.23 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00009">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v107 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C05759">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v108 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00149">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v109 </ci>
-            <cn> 1.7 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00311">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v110 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00693">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v111 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C05757">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v112 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C03939">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v113 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C05261">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v114 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C05756">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v115 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00075">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v116 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C04619">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v117 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C01209">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v118 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C16255">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v119 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00131">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v120 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C05751">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v121 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00104">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v122 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C01171">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v123 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C05263">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v124 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C05745">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v125 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00354">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v126 </ci>
-            <cn type="integer"> 15 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C05382">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v127 </ci>
-            <cn type="integer"> 0 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C05762">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v128 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C05125">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v129 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00288">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v130 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00083">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v131 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C02593">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v132 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00063">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v133 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00512">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v134 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C16466">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v135 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00206">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v136 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00231">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v137 </ci>
-            <cn> 0.5 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C15972">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v138 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00399">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v139 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00080">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v140 </ci>
-            <cn> 0.0001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C05267">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v141 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00361">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v142 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00264">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v143 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C06250">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v144 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00004">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v145 </ci>
-            <cn> 0.083 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00417">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v146 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C05750">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v147 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00527">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v148 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00024">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v149 </ci>
-            <cn> 0.61 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00036">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v150 </ci>
-            <cn type="integer"> 0 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00631">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v151 </ci>
-            <cn type="integer"> 0 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00117">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v152 </ci>
-            <cn> 0.5 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00092">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v153 </ci>
-            <cn type="integer"> 5 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00718">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v154 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C16471">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v155 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00040">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v156 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00154">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v157 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C04618">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v158 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00454">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v159 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00074">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v160 </ci>
-            <cn> 0.18 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C16376">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v161 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C04309">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v162 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C05744">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v163 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="ECNAN0001">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_ECNAN0001 </ci>
-            <ci> rel0 </ci>
-            <cn> 96.5 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="ECNAN0002">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_ECNAN0002 </ci>
-            <ci> rel0 </ci>
-            <cn type="integer"> 54 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="EC54211">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_EC54211 </ci>
-            <ci> rel0 </ci>
-            <cn> 23.5 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="EC23316">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_EC23316 </ci>
-            <ci> rel0 </ci>
-            <cn> 29.5 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="ECNAN0003">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_ECNAN0003 </ci>
-            <ci> rel0 </ci>
-            <cn> 47.5 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="ECNAN0004">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_ECNAN0004 </ci>
-            <ci> rel0 </ci>
-            <cn type="integer"> 20 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="ECNAN0005">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_ECNAN0005 </ci>
-            <ci> rel0 </ci>
-            <cn> 12.5 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="ECNAN0006">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_ECNAN0006 </ci>
-            <ci> rel0 </ci>
-            <cn> 18.5 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="ECNAN0007">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_ECNAN0007 </ci>
-            <ci> rel0 </ci>
-            <cn> 18.5 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="ECNAN0008">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_ECNAN0008 </ci>
-            <ci> rel0 </ci>
-            <cn> 1.5 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="ECNAN0009">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_ECNAN0009 </ci>
-            <ci> rel0 </ci>
-            <cn> 6.5 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00988">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v164 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C13199">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v165 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00665">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v166 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00736">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v167 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C01478">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v168 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C02086">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v169 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C06232">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v170 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C11215">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v171 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C20679">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v172 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00284">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v173 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00127">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v174 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C01159">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v175 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C18713">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v176 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00451">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v177 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00742">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v178 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C16487">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v179 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00209">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v180 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00025">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v181 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00041">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v182 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00302">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v183 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00389">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v184 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C01401">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v185 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C05625">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v186 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00048">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v187 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00168">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v188 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00712">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v189 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00383">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v190 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C02575">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v191 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C04284">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v192 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00552">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v193 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00704">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v194 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00741">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v195 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C02441">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v196 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C11592">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v197 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C01112">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v198 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C02426">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v199 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C07182">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v200 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C11165">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v201 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C03444">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v202 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00120">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v203 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C01213">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v204 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C05682">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v205 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C00363">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v206 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C01182">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v207 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="C01231">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> v208 </ci>
-            <cn> 0.001 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-    </listOfInitialAssignments>
+    <listOfInitialAssignments/>
     <listOfReactions>
       <reaction id="R1" reversible="true">
         <listOfReactants>
@@ -5261,9 +2590,9 @@
         </listOfProducts>
         <listOfModifiers>
           <modifierSpeciesReference species="C00345"/>
+          <modifierSpeciesReference species="C00199"/>
           <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00117"/>
-          <modifierSpeciesReference species="C00199"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -5447,9 +2776,9 @@
         </listOfProducts>
         <listOfModifiers>
           <modifierSpeciesReference species="C00345"/>
+          <modifierSpeciesReference species="C00199"/>
           <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00117"/>
-          <modifierSpeciesReference species="C00199"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -5633,9 +2962,9 @@
         </listOfProducts>
         <listOfModifiers>
           <modifierSpeciesReference species="C00345"/>
+          <modifierSpeciesReference species="C00199"/>
           <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00117"/>
-          <modifierSpeciesReference species="C00199"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -5819,9 +3148,9 @@
         </listOfProducts>
         <listOfModifiers>
           <modifierSpeciesReference species="C00345"/>
+          <modifierSpeciesReference species="C00199"/>
           <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00117"/>
-          <modifierSpeciesReference species="C00199"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -6006,13 +3335,13 @@
           <speciesReference species="C00354" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00197"/>
-          <modifierSpeciesReference species="C00236"/>
-          <modifierSpeciesReference species="C00044"/>
-          <modifierSpeciesReference species="C00074"/>
-          <modifierSpeciesReference species="C00631"/>
           <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C00009"/>
+          <modifierSpeciesReference species="C00197"/>
+          <modifierSpeciesReference species="C00074"/>
+          <modifierSpeciesReference species="C00631"/>
+          <modifierSpeciesReference species="C00236"/>
+          <modifierSpeciesReference species="C00044"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -6440,13 +3769,13 @@
           <speciesReference species="C05378" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00197"/>
-          <modifierSpeciesReference species="C00236"/>
-          <modifierSpeciesReference species="C00044"/>
-          <modifierSpeciesReference species="C00074"/>
-          <modifierSpeciesReference species="C00631"/>
           <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C00009"/>
+          <modifierSpeciesReference species="C00197"/>
+          <modifierSpeciesReference species="C00074"/>
+          <modifierSpeciesReference species="C00631"/>
+          <modifierSpeciesReference species="C00236"/>
+          <modifierSpeciesReference species="C00044"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -6874,15 +4203,15 @@
           <speciesReference species="C00354" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00197"/>
-          <modifierSpeciesReference species="C00236"/>
-          <modifierSpeciesReference species="C00008"/>
-          <modifierSpeciesReference species="C00002"/>
-          <modifierSpeciesReference species="C00044"/>
-          <modifierSpeciesReference species="C00074"/>
-          <modifierSpeciesReference species="C00631"/>
           <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C00009"/>
+          <modifierSpeciesReference species="C00197"/>
+          <modifierSpeciesReference species="C00074"/>
+          <modifierSpeciesReference species="C00002"/>
+          <modifierSpeciesReference species="C00631"/>
+          <modifierSpeciesReference species="C00236"/>
+          <modifierSpeciesReference species="C00008"/>
+          <modifierSpeciesReference species="C00044"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -7310,15 +4639,15 @@
           <speciesReference species="C00354" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00197"/>
-          <modifierSpeciesReference species="C00236"/>
-          <modifierSpeciesReference species="C00008"/>
-          <modifierSpeciesReference species="C00002"/>
-          <modifierSpeciesReference species="C00044"/>
-          <modifierSpeciesReference species="C00074"/>
-          <modifierSpeciesReference species="C00631"/>
           <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C00009"/>
+          <modifierSpeciesReference species="C00197"/>
+          <modifierSpeciesReference species="C00074"/>
+          <modifierSpeciesReference species="C00002"/>
+          <modifierSpeciesReference species="C00631"/>
+          <modifierSpeciesReference species="C00236"/>
+          <modifierSpeciesReference species="C00008"/>
+          <modifierSpeciesReference species="C00044"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -7746,15 +5075,15 @@
           <speciesReference species="C00354" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00197"/>
-          <modifierSpeciesReference species="C00236"/>
-          <modifierSpeciesReference species="C00008"/>
-          <modifierSpeciesReference species="C00002"/>
-          <modifierSpeciesReference species="C00044"/>
-          <modifierSpeciesReference species="C00074"/>
-          <modifierSpeciesReference species="C00631"/>
           <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C00009"/>
+          <modifierSpeciesReference species="C00197"/>
+          <modifierSpeciesReference species="C00074"/>
+          <modifierSpeciesReference species="C00002"/>
+          <modifierSpeciesReference species="C00631"/>
+          <modifierSpeciesReference species="C00236"/>
+          <modifierSpeciesReference species="C00008"/>
+          <modifierSpeciesReference species="C00044"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -8182,13 +5511,13 @@
           <speciesReference species="C00447" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00197"/>
-          <modifierSpeciesReference species="C00236"/>
-          <modifierSpeciesReference species="C00044"/>
-          <modifierSpeciesReference species="C00074"/>
-          <modifierSpeciesReference species="C00631"/>
           <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C00009"/>
+          <modifierSpeciesReference species="C00197"/>
+          <modifierSpeciesReference species="C00074"/>
+          <modifierSpeciesReference species="C00631"/>
+          <modifierSpeciesReference species="C00236"/>
+          <modifierSpeciesReference species="C00044"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -8616,13 +5945,13 @@
           <speciesReference species="C03785" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00197"/>
-          <modifierSpeciesReference species="C00236"/>
-          <modifierSpeciesReference species="C00044"/>
-          <modifierSpeciesReference species="C00074"/>
-          <modifierSpeciesReference species="C00631"/>
           <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C00009"/>
+          <modifierSpeciesReference species="C00197"/>
+          <modifierSpeciesReference species="C00074"/>
+          <modifierSpeciesReference species="C00631"/>
+          <modifierSpeciesReference species="C00236"/>
+          <modifierSpeciesReference species="C00044"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -9050,15 +6379,15 @@
           <speciesReference species="C03785" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00197"/>
-          <modifierSpeciesReference species="C00236"/>
-          <modifierSpeciesReference species="C00008"/>
-          <modifierSpeciesReference species="C00002"/>
-          <modifierSpeciesReference species="C00044"/>
-          <modifierSpeciesReference species="C00074"/>
-          <modifierSpeciesReference species="C00631"/>
           <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C00009"/>
+          <modifierSpeciesReference species="C00197"/>
+          <modifierSpeciesReference species="C00074"/>
+          <modifierSpeciesReference species="C00002"/>
+          <modifierSpeciesReference species="C00631"/>
+          <modifierSpeciesReference species="C00236"/>
+          <modifierSpeciesReference species="C00008"/>
+          <modifierSpeciesReference species="C00044"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -9486,15 +6815,15 @@
           <speciesReference species="C03785" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00197"/>
-          <modifierSpeciesReference species="C00236"/>
-          <modifierSpeciesReference species="C00008"/>
-          <modifierSpeciesReference species="C00002"/>
-          <modifierSpeciesReference species="C00044"/>
-          <modifierSpeciesReference species="C00074"/>
-          <modifierSpeciesReference species="C00631"/>
           <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C00009"/>
+          <modifierSpeciesReference species="C00197"/>
+          <modifierSpeciesReference species="C00074"/>
+          <modifierSpeciesReference species="C00002"/>
+          <modifierSpeciesReference species="C00631"/>
+          <modifierSpeciesReference species="C00236"/>
+          <modifierSpeciesReference species="C00008"/>
+          <modifierSpeciesReference species="C00044"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -9922,15 +7251,15 @@
           <speciesReference species="C03785" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00197"/>
-          <modifierSpeciesReference species="C00236"/>
-          <modifierSpeciesReference species="C00008"/>
-          <modifierSpeciesReference species="C00002"/>
-          <modifierSpeciesReference species="C00044"/>
-          <modifierSpeciesReference species="C00074"/>
-          <modifierSpeciesReference species="C00631"/>
           <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C00009"/>
+          <modifierSpeciesReference species="C00197"/>
+          <modifierSpeciesReference species="C00074"/>
+          <modifierSpeciesReference species="C00002"/>
+          <modifierSpeciesReference species="C00631"/>
+          <modifierSpeciesReference species="C00236"/>
+          <modifierSpeciesReference species="C00008"/>
+          <modifierSpeciesReference species="C00044"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -10360,9 +7689,9 @@
         <listOfModifiers>
           <modifierSpeciesReference species="C00020"/>
           <modifierSpeciesReference species="C01172"/>
-          <modifierSpeciesReference species="C00008"/>
-          <modifierSpeciesReference species="C00002"/>
           <modifierSpeciesReference species="C00074"/>
+          <modifierSpeciesReference species="C00002"/>
+          <modifierSpeciesReference species="C00008"/>
           <modifierSpeciesReference species="C00097"/>
         </listOfModifiers>
         <kineticLaw>
@@ -10880,9 +8209,9 @@
         <listOfModifiers>
           <modifierSpeciesReference species="C00020"/>
           <modifierSpeciesReference species="C01172"/>
-          <modifierSpeciesReference species="C00008"/>
-          <modifierSpeciesReference species="C00002"/>
           <modifierSpeciesReference species="C00074"/>
+          <modifierSpeciesReference species="C00002"/>
+          <modifierSpeciesReference species="C00008"/>
           <modifierSpeciesReference species="C00097"/>
         </listOfModifiers>
         <kineticLaw>
@@ -11400,9 +8729,9 @@
         <listOfModifiers>
           <modifierSpeciesReference species="C00020"/>
           <modifierSpeciesReference species="C01172"/>
-          <modifierSpeciesReference species="C00008"/>
-          <modifierSpeciesReference species="C00002"/>
           <modifierSpeciesReference species="C00074"/>
+          <modifierSpeciesReference species="C00002"/>
+          <modifierSpeciesReference species="C00008"/>
           <modifierSpeciesReference species="C00097"/>
         </listOfModifiers>
         <kineticLaw>
@@ -12736,14 +10065,14 @@
           <speciesReference species="C00111" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
+          <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C00197"/>
           <modifierSpeciesReference species="C01172"/>
-          <modifierSpeciesReference species="C05345"/>
-          <modifierSpeciesReference species="C00002"/>
           <modifierSpeciesReference species="C00042"/>
+          <modifierSpeciesReference species="C05345"/>
           <modifierSpeciesReference species="C00074"/>
+          <modifierSpeciesReference species="C00002"/>
           <modifierSpeciesReference species="C00631"/>
-          <modifierSpeciesReference species="C00158"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -13352,9 +10681,9 @@
           <speciesReference species="C00074" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00013"/>
           <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C00009"/>
+          <modifierSpeciesReference species="C00013"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -13645,9 +10974,9 @@
           <speciesReference species="C04309" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00013"/>
           <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C00009"/>
+          <modifierSpeciesReference species="C00013"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -13941,9 +11270,9 @@
           <speciesReference species="C00074" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
+          <modifierSpeciesReference species="C00036"/>
           <modifierSpeciesReference species="C00026"/>
           <modifierSpeciesReference species="C00008"/>
-          <modifierSpeciesReference species="C00036"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -14306,12 +11635,12 @@
           <speciesReference species="C00074" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
+          <modifierSpeciesReference species="C00158"/>
+          <modifierSpeciesReference species="C00009"/>
           <modifierSpeciesReference species="C00122"/>
+          <modifierSpeciesReference species="C00091"/>
           <modifierSpeciesReference species="C00026"/>
           <modifierSpeciesReference species="C00044"/>
-          <modifierSpeciesReference species="C00158"/>
-          <modifierSpeciesReference species="C00091"/>
-          <modifierSpeciesReference species="C00009"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -14855,13 +12184,13 @@
           <speciesReference species="C00074" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
+          <modifierSpeciesReference species="C00158"/>
+          <modifierSpeciesReference species="C00009"/>
           <modifierSpeciesReference species="C00122"/>
+          <modifierSpeciesReference species="C00091"/>
+          <modifierSpeciesReference species="C00002"/>
           <modifierSpeciesReference species="C00026"/>
           <modifierSpeciesReference species="C00008"/>
-          <modifierSpeciesReference species="C00002"/>
-          <modifierSpeciesReference species="C00158"/>
-          <modifierSpeciesReference species="C00091"/>
-          <modifierSpeciesReference species="C00009"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -15405,14 +12734,14 @@
           <speciesReference species="C00112" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
+          <modifierSpeciesReference species="C00158"/>
+          <modifierSpeciesReference species="C00009"/>
           <modifierSpeciesReference species="C00122"/>
+          <modifierSpeciesReference species="C00091"/>
+          <modifierSpeciesReference species="C00002"/>
           <modifierSpeciesReference species="C00026"/>
           <modifierSpeciesReference species="C00008"/>
-          <modifierSpeciesReference species="C00002"/>
           <modifierSpeciesReference species="C00044"/>
-          <modifierSpeciesReference species="C00158"/>
-          <modifierSpeciesReference species="C00091"/>
-          <modifierSpeciesReference species="C00009"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -15956,14 +13285,14 @@
           <speciesReference species="C00074" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
+          <modifierSpeciesReference species="C00158"/>
+          <modifierSpeciesReference species="C00009"/>
           <modifierSpeciesReference species="C00122"/>
+          <modifierSpeciesReference species="C00091"/>
+          <modifierSpeciesReference species="C00002"/>
           <modifierSpeciesReference species="C00026"/>
           <modifierSpeciesReference species="C00008"/>
-          <modifierSpeciesReference species="C00002"/>
           <modifierSpeciesReference species="C00044"/>
-          <modifierSpeciesReference species="C00158"/>
-          <modifierSpeciesReference species="C00091"/>
-          <modifierSpeciesReference species="C00009"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -16507,14 +13836,14 @@
           <speciesReference species="C00104" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
+          <modifierSpeciesReference species="C00158"/>
+          <modifierSpeciesReference species="C00009"/>
           <modifierSpeciesReference species="C00122"/>
+          <modifierSpeciesReference species="C00091"/>
+          <modifierSpeciesReference species="C00002"/>
           <modifierSpeciesReference species="C00026"/>
           <modifierSpeciesReference species="C00008"/>
-          <modifierSpeciesReference species="C00002"/>
           <modifierSpeciesReference species="C00044"/>
-          <modifierSpeciesReference species="C00158"/>
-          <modifierSpeciesReference species="C00091"/>
-          <modifierSpeciesReference species="C00009"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -17058,14 +14387,14 @@
           <speciesReference species="C00206" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
+          <modifierSpeciesReference species="C00158"/>
+          <modifierSpeciesReference species="C00009"/>
           <modifierSpeciesReference species="C00122"/>
+          <modifierSpeciesReference species="C00091"/>
+          <modifierSpeciesReference species="C00002"/>
           <modifierSpeciesReference species="C00026"/>
           <modifierSpeciesReference species="C00008"/>
-          <modifierSpeciesReference species="C00002"/>
           <modifierSpeciesReference species="C00044"/>
-          <modifierSpeciesReference species="C00158"/>
-          <modifierSpeciesReference species="C00091"/>
-          <modifierSpeciesReference species="C00009"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -17609,14 +14938,14 @@
           <speciesReference species="C00361" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
+          <modifierSpeciesReference species="C00158"/>
+          <modifierSpeciesReference species="C00009"/>
           <modifierSpeciesReference species="C00122"/>
+          <modifierSpeciesReference species="C00091"/>
+          <modifierSpeciesReference species="C00002"/>
           <modifierSpeciesReference species="C00026"/>
           <modifierSpeciesReference species="C00008"/>
-          <modifierSpeciesReference species="C00002"/>
           <modifierSpeciesReference species="C00044"/>
-          <modifierSpeciesReference species="C00158"/>
-          <modifierSpeciesReference species="C00091"/>
-          <modifierSpeciesReference species="C00009"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -18160,14 +15489,14 @@
           <speciesReference species="C00454" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
+          <modifierSpeciesReference species="C00158"/>
+          <modifierSpeciesReference species="C00009"/>
           <modifierSpeciesReference species="C00122"/>
+          <modifierSpeciesReference species="C00091"/>
+          <modifierSpeciesReference species="C00002"/>
           <modifierSpeciesReference species="C00026"/>
           <modifierSpeciesReference species="C00008"/>
-          <modifierSpeciesReference species="C00002"/>
           <modifierSpeciesReference species="C00044"/>
-          <modifierSpeciesReference species="C00158"/>
-          <modifierSpeciesReference species="C00091"/>
-          <modifierSpeciesReference species="C00009"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -21634,8 +18963,8 @@
           <speciesReference species="C00122" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00002"/>
           <modifierSpeciesReference species="C00158"/>
+          <modifierSpeciesReference species="C00002"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -30780,8 +28109,8 @@
         </listOfProducts>
         <listOfModifiers>
           <modifierSpeciesReference species="C00010"/>
-          <modifierSpeciesReference species="C00083"/>
           <modifierSpeciesReference species="C00091"/>
+          <modifierSpeciesReference species="C00083"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">

@@ -264,7 +264,8 @@ class SBMLGlobalFit_Multi:
 
     def fitness(self, x):
         if self.scale: x = self._unscale(x)
-        obj = self._simulate(x)
+        res_dict = self._simulate(x)
+        obj = np.nanmean([self._residual(results, self.data[sample], sample) for sample, results in res_dict.items()])
         return [obj]
             
     def _simulate(self, x):
@@ -291,7 +292,7 @@ class SBMLGlobalFit_Multi:
             r[label] = value
             
         # this part we have to do for each sample!
-        avg_res = []
+        res = {}
         for sample in self.metadata['sample_labels']:
             r.reset() # set concentrations back to t = 0 ("init"). parameters are kept the same
 
@@ -307,11 +308,9 @@ class SBMLGlobalFit_Multi:
                 results = r.simulate(0,self.metadata['timepoints'][sample][-1],1000)[:,1:].__array__()
             except:
                 results = self.data[sample]*(-np.inf)
-
-            avg_res.append(self._residual(results, self.data[sample], sample))
-        
-        return np.mean(avg_res)
-    
+            res[sample] = results
+        return res
+                
     def _residual(self,results,data,sample):
         cols = self.cols[sample]
         rows = self.rows[sample]
