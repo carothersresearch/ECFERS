@@ -2,6 +2,7 @@ import os
 import tellurium as te
 import numpy as np
 import pygmo as pg
+from copy import deepcopy
 
 class SBMLGlobalFit:
 
@@ -272,40 +273,52 @@ class SBMLGlobalFit_Multi:
         from roadrunner import Config, RoadRunner
         Config.setValue(Config.ROADRUNNER_DISABLE_PYTHON_DYNAMIC_PROPERTIES, False)
         Config.setValue(Config.LOADSBMLOPTIONS_RECOMPILE, False) 
-        # Config.setValue(Config.LLJIT_OPTIMIZATION_LEVEL, 4)
+        Config.setValue(Config.LLJIT_OPTIMIZATION_LEVEL, 4)
 
         id = str(os.getpid())
         try:
-            r = RoadRunner()
-            r.loadState(self.path_to_models+'/models/binaries/model_state_'+id+'.b')
+            with open(self.path_to_models+'/models/binaries/model_state_'+id+'.b', 'rb') as f:
+                r = RoadRunner()
+                r.loadStateS(f.read())
         except Exception as e:
             print(e)
             r = te.loadSBMLModel(self.model)
             try:
-                r.saveState(self.path_to_models+'/models/binaries/model_state_'+id+'.b')
+                with open(self.path_to_models+'/models/binaries/model_state_'+id+'.b', 'wb') as f:
+                    f.write(r.saveStateS())
             except Exception as e:
                 print('Could not save state')
                 print(e)
 
         # update parameters. this can be done once for all samples
         for label, value in zip(self.parameter_labels,x):
-            r[label] = value
+            r['init('+label+')'] = value
             
         # this part we have to do for each sample!
         res = {}
         for sample in self.metadata['sample_labels']:
-            r.reset() # set concentrations back to t = 0 ("init"). parameters are kept the same
+            r2 = deepcopy(r)
 
             # set any variable
             for label, value in self.variables[sample].items():
-                if not np.isnan(value): 
-                    try:
-                        r[label] = value # we might need new assignment rules for heterologous enzymes
-                    except Exception as e:
-                        print('Could not set variable', label, 'to', value)
-                        print(e) 
+                if not np.isnan(value):
+                    if label not in self.species_labels:
+                        try:
+                            r2['init('+label+')'] = value # we might need new assignment rules for heterologous enzymes
+                        except Exception as e:
+                            print('Could not set variable', label, 'to', value)
+                            print(e) 
+                    else:
+                        try:
+                            r2.removeInitialAssignment(label) 
+                            r2['init('+label+')'] = value
+                        except:
+                            print('Could not set initial assignment', label, 'to', value)
+                            print(e)
+                            pass
+
             try:
-                results = r.simulate(0,self.metadata['timepoints'][sample][-1],1000)[:,1:].__array__()
+                results = r2.simulate(0,self.metadata['timepoints'][sample][-1],1000)[:,1:].__array__()
             except:
                 results = self.data[sample]*(-np.inf)
             res[sample] = results
