@@ -311,8 +311,8 @@ class SBMLGlobalFit_Multi:
                     else:
                         try:
                             r2.removeInitialAssignment(label) 
-                            r2['init('+label+')'] = value
-                        except:
+                            r2['init(['+label+'])'] = value
+                        except Exception as e:
                             print('Could not set initial assignment', label, 'to', value)
                             print(e)
                             pass
@@ -328,8 +328,12 @@ class SBMLGlobalFit_Multi:
         cols = self.cols[sample]
         rows = self.rows[sample]
         dcols = self.data_cols[sample]
+        
+        if data.shape == results.shape:
+            error = (data[:,dcols]-results[:,dcols])
+        else:
+            error = (data[:,dcols]-results[:,cols][rows,:])
 
-        error = (data[:,dcols]-results[:,cols][rows,:])
         RMSE = np.sqrt(np.nansum(error**2, axis=0)/len(rows))
         NRMSE = RMSE/(np.nanmax(data[:,dcols], axis=0) - np.nanmin(data[:,dcols], axis=0) + 1e6)
         return np.nansum(NRMSE)

@@ -662,7 +662,7 @@
       <parameter id="Ki_C00236_R5" value="0.088793821632862" constant="true"/>
       <parameter id="Ki_C00631_R5" value="0.216910928487778" constant="true"/>
       <parameter id="Ki_C00988_R5" value="0.21598145365715" constant="true"/>
-      <parameter id="Ki_C13199_R5" value="NaN" constant="true"/>
+      <parameter id="Ki_C13199_R5" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00008_R6" value="0.068868771" constant="true"/>
       <parameter id="Km_C05378_R6" value="0.123040177" constant="true"/>
       <parameter id="Km_C00002_R6" value="0.073803619" constant="true"/>
@@ -679,7 +679,7 @@
       <parameter id="Ki_C00236_R6" value="0.088793821632862" constant="true"/>
       <parameter id="Ki_C00631_R6" value="0.216910928487778" constant="true"/>
       <parameter id="Ki_C00988_R6" value="0.21598145365715" constant="true"/>
-      <parameter id="Ki_C13199_R6" value="NaN" constant="true"/>
+      <parameter id="Ki_C13199_R6" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00112_R7" value="0.0586504" constant="true"/>
       <parameter id="Km_C00354_R7" value="0.123040177" constant="true"/>
       <parameter id="Km_C00063_R7" value="11" constant="true"/>
@@ -696,7 +696,7 @@
       <parameter id="Ki_C00236_R7" value="0.088793821632862" constant="true"/>
       <parameter id="Ki_C00631_R7" value="0.216910928487778" constant="true"/>
       <parameter id="Ki_C00988_R7" value="0.21598145365715" constant="true"/>
-      <parameter id="Ki_C13199_R7" value="NaN" constant="true"/>
+      <parameter id="Ki_C13199_R7" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00015_R8" value="0.147311985" constant="true"/>
       <parameter id="Km_C00354_R8" value="0.123040177" constant="true"/>
       <parameter id="Km_C00075_R8" value="5.1" constant="true"/>
@@ -713,7 +713,7 @@
       <parameter id="Ki_C00236_R8" value="0.088793821632862" constant="true"/>
       <parameter id="Ki_C00631_R8" value="0.216910928487778" constant="true"/>
       <parameter id="Ki_C00988_R8" value="0.21598145365715" constant="true"/>
-      <parameter id="Ki_C13199_R8" value="NaN" constant="true"/>
+      <parameter id="Ki_C13199_R8" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00104_R9" value="0.077306546" constant="true"/>
       <parameter id="Km_C00354_R9" value="0.123040177" constant="true"/>
       <parameter id="Km_C00081_R9" value="2.2" constant="true"/>
@@ -730,7 +730,7 @@
       <parameter id="Ki_C00236_R9" value="0.088793821632862" constant="true"/>
       <parameter id="Ki_C00631_R9" value="0.216910928487778" constant="true"/>
       <parameter id="Ki_C00988_R9" value="0.21598145365715" constant="true"/>
-      <parameter id="Ki_C13199_R9" value="NaN" constant="true"/>
+      <parameter id="Ki_C13199_R9" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00008_R10" value="0.068868771" constant="true"/>
       <parameter id="Km_C00447_R10" value="0.107532084" constant="true"/>
       <parameter id="Km_C00002_R10" value="0.073803619" constant="true"/>
@@ -747,7 +747,7 @@
       <parameter id="Ki_C00236_R10" value="0.088793821632862" constant="true"/>
       <parameter id="Ki_C00631_R10" value="0.216910928487778" constant="true"/>
       <parameter id="Ki_C00988_R10" value="0.21598145365715" constant="true"/>
-      <parameter id="Ki_C13199_R10" value="NaN" constant="true"/>
+      <parameter id="Ki_C13199_R10" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00008_R11" value="0.068868771" constant="true"/>
       <parameter id="Km_C03785_R11" value="0.123040177" constant="true"/>
       <parameter id="Km_C00002_R11" value="0.073803619" constant="true"/>
@@ -764,7 +764,7 @@
       <parameter id="Ki_C00236_R11" value="0.088793821632862" constant="true"/>
       <parameter id="Ki_C00631_R11" value="0.216910928487778" constant="true"/>
       <parameter id="Ki_C00988_R11" value="0.21598145365715" constant="true"/>
-      <parameter id="Ki_C13199_R11" value="NaN" constant="true"/>
+      <parameter id="Ki_C13199_R11" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00112_R12" value="0.0586504" constant="true"/>
       <parameter id="Km_C03785_R12" value="0.123040177" constant="true"/>
       <parameter id="Km_C00063_R12" value="11" constant="true"/>
@@ -781,7 +781,7 @@
       <parameter id="Ki_C00236_R12" value="0.088793821632862" constant="true"/>
       <parameter id="Ki_C00631_R12" value="0.216910928487778" constant="true"/>
       <parameter id="Ki_C00988_R12" value="0.21598145365715" constant="true"/>
-      <parameter id="Ki_C13199_R12" value="NaN" constant="true"/>
+      <parameter id="Ki_C13199_R12" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00015_R13" value="0.147311985" constant="true"/>
       <parameter id="Km_C03785_R13" value="0.123040177" constant="true"/>
       <parameter id="Km_C00075_R13" value="5.1" constant="true"/>
@@ -798,7 +798,7 @@
       <parameter id="Ki_C00236_R13" value="0.088793821632862" constant="true"/>
       <parameter id="Ki_C00631_R13" value="0.216910928487778" constant="true"/>
       <parameter id="Ki_C00988_R13" value="0.21598145365715" constant="true"/>
-      <parameter id="Ki_C13199_R13" value="NaN" constant="true"/>
+      <parameter id="Ki_C13199_R13" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00104_R14" value="0.077306546" constant="true"/>
       <parameter id="Km_C03785_R14" value="0.123040177" constant="true"/>
       <parameter id="Km_C00081_R14" value="2.2" constant="true"/>
@@ -815,7 +815,7 @@
       <parameter id="Ki_C00236_R14" value="0.088793821632862" constant="true"/>
       <parameter id="Ki_C00631_R14" value="0.216910928487778" constant="true"/>
       <parameter id="Ki_C00988_R14" value="0.21598145365715" constant="true"/>
-      <parameter id="Ki_C13199_R14" value="NaN" constant="true"/>
+      <parameter id="Ki_C13199_R14" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00009_R15" value="0.320538223" constant="true"/>
       <parameter id="Km_C00085_R15" value="0.137154579" constant="true"/>
       <parameter id="Km_C00001_R15" value="0.495092779" constant="true"/>
@@ -834,7 +834,7 @@
       <parameter id="Ki_C01478_R15" value="0.280292689800262" constant="true"/>
       <parameter id="Ki_C02086_R15" value="0.154976174235344" constant="true"/>
       <parameter id="Ki_C06232_R15" value="0.131328985095024" constant="true"/>
-      <parameter id="Ki_C11215_R15" value="NaN" constant="true"/>
+      <parameter id="Ki_C11215_R15" value="2.51391634996029" constant="true"/>
       <parameter id="Ki_C20679_R15" value="0.130976006388664" constant="true"/>
       <parameter id="Km_C00009_R16" value="0.320538223" constant="true"/>
       <parameter id="Km_C05345_R16" value="0.137154579" constant="true"/>
@@ -854,7 +854,7 @@
       <parameter id="Ki_C01478_R16" value="0.280292689800262" constant="true"/>
       <parameter id="Ki_C02086_R16" value="0.154976174235344" constant="true"/>
       <parameter id="Ki_C06232_R16" value="0.131328985095024" constant="true"/>
-      <parameter id="Ki_C11215_R16" value="NaN" constant="true"/>
+      <parameter id="Ki_C11215_R16" value="2.51391634996029" constant="true"/>
       <parameter id="Ki_C20679_R16" value="0.130976006388664" constant="true"/>
       <parameter id="Km_C00009_R17" value="0.320538223" constant="true"/>
       <parameter id="Km_C05382_R17" value="0.01538996" constant="true"/>
@@ -874,7 +874,7 @@
       <parameter id="Ki_C01478_R17" value="0.280292689800262" constant="true"/>
       <parameter id="Ki_C02086_R17" value="0.154976174235344" constant="true"/>
       <parameter id="Ki_C06232_R17" value="0.131328985095024" constant="true"/>
-      <parameter id="Ki_C11215_R17" value="NaN" constant="true"/>
+      <parameter id="Ki_C11215_R17" value="2.51391634996029" constant="true"/>
       <parameter id="Ki_C20679_R17" value="0.130976006388664" constant="true"/>
       <parameter id="Km_C00111_R18" value="0.219039723" constant="true"/>
       <parameter id="Km_C00118_R18" value="0.376360387" constant="true"/>
@@ -928,7 +928,7 @@
       <parameter id="Ki_C01172_R22" value="1.29947483539581" constant="true"/>
       <parameter id="Ki_C01478_R22" value="2.07509994506836" constant="true"/>
       <parameter id="Ki_C05345_R22" value="1.26580858230591" constant="true"/>
-      <parameter id="Ki_C11215_R22" value="NaN" constant="true"/>
+      <parameter id="Ki_C11215_R22" value="2.51391634996029" constant="true"/>
       <parameter id="Ki_C18713_R22" value="1.38710331916809" constant="true"/>
       <parameter id="Km_C00008_R23" value="0.098627448" constant="true"/>
       <parameter id="Km_C00236_R23" value="0.186507493" constant="true"/>
@@ -948,7 +948,7 @@
       <parameter id="Ki_C00451_R24" value="0.397851556539536" constant="true"/>
       <parameter id="Ki_C00742_R24" value="13.9371461868286" constant="true"/>
       <parameter id="Ki_C00988_R24" value="0.734626114368439" constant="true"/>
-      <parameter id="Ki_C16487_R24" value="NaN" constant="true"/>
+      <parameter id="Ki_C16487_R24" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00001_R25" value="5.651566505" constant="true"/>
       <parameter id="Km_C04309_R25" value="0.453891814" constant="true"/>
       <parameter id="Km_C03356_R25" value="0.439569116" constant="true"/>
@@ -960,7 +960,7 @@
       <parameter id="Ki_C00451_R25" value="0.397851556539536" constant="true"/>
       <parameter id="Ki_C00742_R25" value="13.9371461868286" constant="true"/>
       <parameter id="Ki_C00988_R25" value="0.734626114368439" constant="true"/>
-      <parameter id="Ki_C16487_R25" value="NaN" constant="true"/>
+      <parameter id="Ki_C16487_R25" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00009_R26" value="1.4596771" constant="true"/>
       <parameter id="Km_C00020_R26" value="0.023508446" constant="true"/>
       <parameter id="Km_C00074_R26" value="0.141774222" constant="true"/>
@@ -976,7 +976,7 @@
       <parameter id="Ki_C00074_R26" value="0.141774222254753" constant="true"/>
       <parameter id="Ki_C00209_R26" value="0.194728702306747" constant="true"/>
       <parameter id="Ki_C00742_R26" value="0.482464641332626" constant="true"/>
-      <parameter id="Ki_C16487_R26" value="NaN" constant="true"/>
+      <parameter id="Ki_C16487_R26" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00008_R27" value="0.051032659" constant="true"/>
       <parameter id="Km_C00074_R27" value="0.144000247" constant="true"/>
       <parameter id="Km_C00002_R27" value="0.044206705" constant="true"/>
@@ -1125,9 +1125,9 @@
       <parameter id="Ki_C01401_R33" value="1.00119662284851" constant="true"/>
       <parameter id="Ki_C05625_R33" value="0.0313110388815403" constant="true"/>
       <parameter id="Km_C00074_R34" value="0.144000247" constant="true"/>
-      <parameter id="Km_C00454_R34" value="NaN" constant="true"/>
+      <parameter id="Km_C00454_R34" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00022_R34" value="0.87643075" constant="true"/>
-      <parameter id="Km_C00201_R34" value="NaN" constant="true"/>
+      <parameter id="Km_C00201_R34" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_F_R34" value="11.49611796" constant="true"/>
       <parameter id="Kcat_R_R34" value="5.425748579" constant="true"/>
       <parameter id="Ki_C00002_R34" value="0.0442067049443721" constant="true"/>
@@ -1239,7 +1239,7 @@
       <parameter id="Kcat_R_R55" value="3.85867268933333" constant="true"/>
       <parameter id="Ki_C00036_R55" value="0.114508405327797" constant="true"/>
       <parameter id="Km_C00011_R56" value="0.496151149" constant="true"/>
-      <parameter id="Km_C06157_R56" value="NaN" constant="true"/>
+      <parameter id="Km_C06157_R56" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00322_R56" value="0.131888092" constant="true"/>
       <parameter id="Km_C15972_R56" value="0.020010605" constant="true"/>
       <parameter id="Kcat_F_R56" value="3.4668274095" constant="true"/>
@@ -1313,7 +1313,7 @@
       <parameter id="Ki_C00209_R65" value="0.177507534623146" constant="true"/>
       <parameter id="Ki_C00741_R65" value="0.211944282054901" constant="true"/>
       <parameter id="Ki_C02441_R65" value="0.0952632129192352" constant="true"/>
-      <parameter id="Ki_C11592_R65" value="NaN" constant="true"/>
+      <parameter id="Ki_C11592_R65" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00005_R66" value="0.01731511" constant="true"/>
       <parameter id="Km_C00011_R66" value="0.468339205" constant="true"/>
       <parameter id="Km_C00080_R66" value="1.165087342" constant="true"/>
@@ -1364,14 +1364,14 @@
       <parameter id="Kcat_R_R72" value="5.172712832" constant="true"/>
       <parameter id="Ki_C00704_R72" value="0.188270762562752" constant="true"/>
       <parameter id="Km_C00118_R73" value="0.189899758" constant="true"/>
-      <parameter id="Km_C13378_R73" value="NaN" constant="true"/>
+      <parameter id="Km_C13378_R73" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00068_R73" value="0.038001269" constant="true"/>
       <parameter id="Km_C00231_R73" value="0.16" constant="true"/>
       <parameter id="Kcat_F_R73" value="5.4421156075" constant="true"/>
       <parameter id="Kcat_R_R73" value="7.597125547" constant="true"/>
       <parameter id="Ki_C00704_R73" value="0.188270762562752" constant="true"/>
       <parameter id="Km_C00117_R74" value="1.4" constant="true"/>
-      <parameter id="Km_C13378_R74" value="NaN" constant="true"/>
+      <parameter id="Km_C13378_R74" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00068_R74" value="0.038001269" constant="true"/>
       <parameter id="Km_C05382_R74" value="4" constant="true"/>
       <parameter id="Kcat_F_R74" value="5.27956943" constant="true"/>
@@ -1399,57 +1399,57 @@
       <parameter id="Ki_C07182_R76" value="0.169961854815483" constant="true"/>
       <parameter id="Km_C00005_R77" value="0.01" constant="true"/>
       <parameter id="Km_C00080_R77" value="1.980178118" constant="true"/>
-      <parameter id="Km_C00685_R77" value="NaN" constant="true"/>
+      <parameter id="Km_C00685_R77" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00006_R77" value="0.064330414" constant="true"/>
-      <parameter id="Km_C01271_R77" value="NaN" constant="true"/>
+      <parameter id="Km_C01271_R77" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_F_R77" value="0.049053546" constant="true"/>
       <parameter id="Kcat_R_R77" value="0.59" constant="true"/>
       <parameter id="Km_C00005_R78" value="0.01" constant="true"/>
       <parameter id="Km_C00080_R78" value="1.980178118" constant="true"/>
-      <parameter id="Km_C05744_R78" value="NaN" constant="true"/>
+      <parameter id="Km_C05744_R78" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00006_R78" value="0.064330414" constant="true"/>
-      <parameter id="Km_C04618_R78" value="NaN" constant="true"/>
+      <parameter id="Km_C04618_R78" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_F_R78" value="0.049053546" constant="true"/>
       <parameter id="Kcat_R_R78" value="0.59" constant="true"/>
       <parameter id="Km_C00005_R79" value="0.01" constant="true"/>
-      <parameter id="Km_C05753_R79" value="NaN" constant="true"/>
+      <parameter id="Km_C05753_R79" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00006_R79" value="0.064330414" constant="true"/>
-      <parameter id="Km_C04619_R79" value="NaN" constant="true"/>
+      <parameter id="Km_C04619_R79" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_F_R79" value="0.049053546" constant="true"/>
       <parameter id="Kcat_R_R79" value="0.59" constant="true"/>
       <parameter id="Km_C00005_R80" value="0.01" constant="true"/>
       <parameter id="Km_C00080_R80" value="1.980178118" constant="true"/>
-      <parameter id="Km_C05750_R80" value="NaN" constant="true"/>
+      <parameter id="Km_C05750_R80" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00006_R80" value="0.064330414" constant="true"/>
-      <parameter id="Km_C04620_R80" value="NaN" constant="true"/>
+      <parameter id="Km_C04620_R80" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_F_R80" value="0.049053546" constant="true"/>
       <parameter id="Kcat_R_R80" value="0.59" constant="true"/>
       <parameter id="Km_C00005_R81" value="0.01" constant="true"/>
       <parameter id="Km_C00080_R81" value="1.980178118" constant="true"/>
-      <parameter id="Km_C05762_R81" value="NaN" constant="true"/>
+      <parameter id="Km_C05762_R81" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00006_R81" value="0.064330414" constant="true"/>
-      <parameter id="Km_C04633_R81" value="NaN" constant="true"/>
+      <parameter id="Km_C04633_R81" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_F_R81" value="0.049053546" constant="true"/>
       <parameter id="Kcat_R_R81" value="0.59" constant="true"/>
       <parameter id="Km_C00005_R82" value="0.01" constant="true"/>
       <parameter id="Km_C00080_R82" value="1.980178118" constant="true"/>
-      <parameter id="Km_C05759_R82" value="NaN" constant="true"/>
+      <parameter id="Km_C05759_R82" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00006_R82" value="0.064330414" constant="true"/>
-      <parameter id="Km_C04688_R82" value="NaN" constant="true"/>
+      <parameter id="Km_C04688_R82" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_F_R82" value="0.049053546" constant="true"/>
       <parameter id="Kcat_R_R82" value="0.59" constant="true"/>
       <parameter id="Km_C00005_R83" value="0.01" constant="true"/>
       <parameter id="Km_C00080_R83" value="1.980178118" constant="true"/>
-      <parameter id="Km_C05746_R83" value="NaN" constant="true"/>
+      <parameter id="Km_C05746_R83" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00006_R83" value="0.064330414" constant="true"/>
-      <parameter id="Km_C05747_R83" value="NaN" constant="true"/>
+      <parameter id="Km_C05747_R83" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_F_R83" value="0.049053546" constant="true"/>
       <parameter id="Kcat_R_R83" value="0.59" constant="true"/>
       <parameter id="Km_C00005_R84" value="0.01" constant="true"/>
       <parameter id="Km_C00080_R84" value="1.980178118" constant="true"/>
-      <parameter id="Km_C05756_R84" value="NaN" constant="true"/>
+      <parameter id="Km_C05756_R84" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00006_R84" value="0.064330414" constant="true"/>
-      <parameter id="Km_C05757_R84" value="NaN" constant="true"/>
+      <parameter id="Km_C05757_R84" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_F_R84" value="0.049053546" constant="true"/>
       <parameter id="Kcat_R_R84" value="0.59" constant="true"/>
       <parameter id="Km_C00006_R85" value="0.064330414" constant="true"/>
@@ -1461,209 +1461,209 @@
       <parameter id="Kcat_R_R85" value="0.026386561" constant="true"/>
       <parameter id="Km_C00004_R86" value="0.01" constant="true"/>
       <parameter id="Km_C00080_R86" value="2.896291494" constant="true"/>
-      <parameter id="Km_C00693_R86" value="NaN" constant="true"/>
+      <parameter id="Km_C00693_R86" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00003_R86" value="0.076126106" constant="true"/>
-      <parameter id="Km_C00173_R86" value="NaN" constant="true"/>
+      <parameter id="Km_C00173_R86" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_F_R86" value="1.488236809" constant="true"/>
       <parameter id="Kcat_R_R86" value="0.832269092" constant="true"/>
       <parameter id="Km_C00004_R87" value="0.01" constant="true"/>
       <parameter id="Km_C00080_R87" value="2.896291494" constant="true"/>
-      <parameter id="Km_C05758_R87" value="NaN" constant="true"/>
+      <parameter id="Km_C05758_R87" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00003_R87" value="0.076126106" constant="true"/>
-      <parameter id="Km_C05223_R87" value="NaN" constant="true"/>
+      <parameter id="Km_C05223_R87" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_F_R87" value="1.488236809" constant="true"/>
       <parameter id="Kcat_R_R87" value="0.832269092" constant="true"/>
       <parameter id="Km_C00004_R88" value="0.01" constant="true"/>
       <parameter id="Km_C00080_R88" value="2.896291494" constant="true"/>
-      <parameter id="Km_C05748_R88" value="NaN" constant="true"/>
+      <parameter id="Km_C05748_R88" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00003_R88" value="0.076126106" constant="true"/>
-      <parameter id="Km_C05749_R88" value="NaN" constant="true"/>
+      <parameter id="Km_C05749_R88" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_F_R88" value="1.488236809" constant="true"/>
       <parameter id="Kcat_R_R88" value="0.832269092" constant="true"/>
       <parameter id="Km_C00004_R89" value="0.01" constant="true"/>
       <parameter id="Km_C00080_R89" value="2.896291494" constant="true"/>
-      <parameter id="Km_C05751_R89" value="NaN" constant="true"/>
+      <parameter id="Km_C05751_R89" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00003_R89" value="0.076126106" constant="true"/>
       <parameter id="Km_C05752_R89" value="0.02" constant="true"/>
       <parameter id="Kcat_F_R89" value="1.488236809" constant="true"/>
       <parameter id="Kcat_R_R89" value="0.832269092" constant="true"/>
       <parameter id="Km_C00004_R90" value="0.01" constant="true"/>
       <parameter id="Km_C00080_R90" value="2.896291494" constant="true"/>
-      <parameter id="Km_C05754_R90" value="NaN" constant="true"/>
+      <parameter id="Km_C05754_R90" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00003_R90" value="0.076126106" constant="true"/>
-      <parameter id="Km_C05755_R90" value="NaN" constant="true"/>
+      <parameter id="Km_C05755_R90" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_F_R90" value="1.488236809" constant="true"/>
       <parameter id="Kcat_R_R90" value="0.832269092" constant="true"/>
       <parameter id="Km_C00004_R91" value="0.01" constant="true"/>
       <parameter id="Km_C00080_R91" value="2.896291494" constant="true"/>
-      <parameter id="Km_C05760_R91" value="NaN" constant="true"/>
+      <parameter id="Km_C05760_R91" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00003_R91" value="0.076126106" constant="true"/>
-      <parameter id="Km_C05761_R91" value="NaN" constant="true"/>
+      <parameter id="Km_C05761_R91" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_F_R91" value="1.488236809" constant="true"/>
       <parameter id="Kcat_R_R91" value="0.832269092" constant="true"/>
       <parameter id="Km_C00004_R92" value="0.01" constant="true"/>
       <parameter id="Km_C00080_R92" value="2.896291494" constant="true"/>
-      <parameter id="Km_C05763_R92" value="NaN" constant="true"/>
+      <parameter id="Km_C05763_R92" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00003_R92" value="0.076126106" constant="true"/>
-      <parameter id="Km_C05764_R92" value="NaN" constant="true"/>
+      <parameter id="Km_C05764_R92" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_F_R92" value="1.488236809" constant="true"/>
       <parameter id="Kcat_R_R92" value="0.832269092" constant="true"/>
       <parameter id="Km_C00004_R93" value="0.01" constant="true"/>
       <parameter id="Km_C00080_R93" value="2.896291494" constant="true"/>
-      <parameter id="Km_C04246_R93" value="NaN" constant="true"/>
+      <parameter id="Km_C04246_R93" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00003_R93" value="0.076126106" constant="true"/>
-      <parameter id="Km_C05745_R93" value="NaN" constant="true"/>
+      <parameter id="Km_C05745_R93" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_F_R93" value="1.488236809" constant="true"/>
       <parameter id="Kcat_R_R93" value="0.832269092" constant="true"/>
       <parameter id="Km_C00010_R94" value="0.064401604" constant="true"/>
-      <parameter id="Km_C03939_R94" value="NaN" constant="true"/>
+      <parameter id="Km_C03939_R94" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00024_R94" value="0.0425" constant="true"/>
-      <parameter id="Km_C00229_R94" value="NaN" constant="true"/>
+      <parameter id="Km_C00229_R94" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_F_R94" value="18.53948396" constant="true"/>
       <parameter id="Kcat_R_R94" value="26.2929435" constant="true"/>
-      <parameter id="Ki_C00173_R94" value="NaN" constant="true"/>
-      <parameter id="Ki_C11165_R94" value="NaN" constant="true"/>
+      <parameter id="Ki_C00173_R94" value="2.51391634996029" constant="true"/>
+      <parameter id="Ki_C11165_R94" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00011_R95" value="0.434365362" constant="true"/>
-      <parameter id="Km_C00229_R95" value="NaN" constant="true"/>
-      <parameter id="Km_C05744_R95" value="NaN" constant="true"/>
+      <parameter id="Km_C00229_R95" value="2.51391634996029" constant="true"/>
+      <parameter id="Km_C05744_R95" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C01209_R95" value="0.005" constant="true"/>
-      <parameter id="Km_C03939_R95" value="NaN" constant="true"/>
-      <parameter id="Kcat_F_R95" value="NaN" constant="true"/>
+      <parameter id="Km_C03939_R95" value="2.51391634996029" constant="true"/>
+      <parameter id="Kcat_F_R95" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_R_R95" value="35.38314654" constant="true"/>
-      <parameter id="Ki_C00173_R95" value="NaN" constant="true"/>
-      <parameter id="Ki_C11165_R95" value="NaN" constant="true"/>
+      <parameter id="Ki_C00173_R95" value="2.51391634996029" constant="true"/>
+      <parameter id="Ki_C11165_R95" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00011_R96" value="0.434365362" constant="true"/>
-      <parameter id="Km_C00229_R96" value="NaN" constant="true"/>
-      <parameter id="Km_C05759_R96" value="NaN" constant="true"/>
+      <parameter id="Km_C00229_R96" value="2.51391634996029" constant="true"/>
+      <parameter id="Km_C05759_R96" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C01209_R96" value="0.005" constant="true"/>
-      <parameter id="Km_C05223_R96" value="NaN" constant="true"/>
-      <parameter id="Kcat_F_R96" value="NaN" constant="true"/>
+      <parameter id="Km_C05223_R96" value="2.51391634996029" constant="true"/>
+      <parameter id="Kcat_F_R96" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_R_R96" value="35.38314654" constant="true"/>
-      <parameter id="Ki_C00173_R96" value="NaN" constant="true"/>
-      <parameter id="Ki_C11165_R96" value="NaN" constant="true"/>
+      <parameter id="Ki_C00173_R96" value="2.51391634996029" constant="true"/>
+      <parameter id="Ki_C11165_R96" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00011_R97" value="0.434365362" constant="true"/>
-      <parameter id="Km_C00229_R97" value="NaN" constant="true"/>
-      <parameter id="Km_C05746_R97" value="NaN" constant="true"/>
+      <parameter id="Km_C00229_R97" value="2.51391634996029" constant="true"/>
+      <parameter id="Km_C05746_R97" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C01209_R97" value="0.005" constant="true"/>
-      <parameter id="Km_C05745_R97" value="NaN" constant="true"/>
-      <parameter id="Kcat_F_R97" value="NaN" constant="true"/>
+      <parameter id="Km_C05745_R97" value="2.51391634996029" constant="true"/>
+      <parameter id="Kcat_F_R97" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_R_R97" value="35.38314654" constant="true"/>
-      <parameter id="Ki_C00173_R97" value="NaN" constant="true"/>
-      <parameter id="Ki_C11165_R97" value="NaN" constant="true"/>
+      <parameter id="Ki_C00173_R97" value="2.51391634996029" constant="true"/>
+      <parameter id="Ki_C11165_R97" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00011_R98" value="0.434365362" constant="true"/>
-      <parameter id="Km_C00229_R98" value="NaN" constant="true"/>
-      <parameter id="Km_C05750_R98" value="NaN" constant="true"/>
+      <parameter id="Km_C00229_R98" value="2.51391634996029" constant="true"/>
+      <parameter id="Km_C05750_R98" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C01209_R98" value="0.005" constant="true"/>
-      <parameter id="Km_C05749_R98" value="NaN" constant="true"/>
-      <parameter id="Kcat_F_R98" value="NaN" constant="true"/>
+      <parameter id="Km_C05749_R98" value="2.51391634996029" constant="true"/>
+      <parameter id="Kcat_F_R98" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_R_R98" value="35.38314654" constant="true"/>
-      <parameter id="Ki_C00173_R98" value="NaN" constant="true"/>
-      <parameter id="Ki_C11165_R98" value="NaN" constant="true"/>
+      <parameter id="Ki_C00173_R98" value="2.51391634996029" constant="true"/>
+      <parameter id="Ki_C11165_R98" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00011_R99" value="0.434365362" constant="true"/>
-      <parameter id="Km_C00229_R99" value="NaN" constant="true"/>
-      <parameter id="Km_C05753_R99" value="NaN" constant="true"/>
+      <parameter id="Km_C00229_R99" value="2.51391634996029" constant="true"/>
+      <parameter id="Km_C05753_R99" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C01209_R99" value="0.005" constant="true"/>
-      <parameter id="Km_C05752_R99" value="NaN" constant="true"/>
-      <parameter id="Kcat_F_R99" value="NaN" constant="true"/>
+      <parameter id="Km_C05752_R99" value="2.51391634996029" constant="true"/>
+      <parameter id="Kcat_F_R99" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_R_R99" value="35.38314654" constant="true"/>
-      <parameter id="Ki_C00173_R99" value="NaN" constant="true"/>
-      <parameter id="Ki_C11165_R99" value="NaN" constant="true"/>
+      <parameter id="Ki_C00173_R99" value="2.51391634996029" constant="true"/>
+      <parameter id="Ki_C11165_R99" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00011_R100" value="0.434365362" constant="true"/>
-      <parameter id="Km_C00229_R100" value="NaN" constant="true"/>
-      <parameter id="Km_C05756_R100" value="NaN" constant="true"/>
+      <parameter id="Km_C00229_R100" value="2.51391634996029" constant="true"/>
+      <parameter id="Km_C05756_R100" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C01209_R100" value="0.005" constant="true"/>
-      <parameter id="Km_C05755_R100" value="NaN" constant="true"/>
-      <parameter id="Kcat_F_R100" value="NaN" constant="true"/>
+      <parameter id="Km_C05755_R100" value="2.51391634996029" constant="true"/>
+      <parameter id="Kcat_F_R100" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_R_R100" value="35.38314654" constant="true"/>
-      <parameter id="Ki_C00173_R100" value="NaN" constant="true"/>
-      <parameter id="Ki_C11165_R100" value="NaN" constant="true"/>
+      <parameter id="Ki_C00173_R100" value="2.51391634996029" constant="true"/>
+      <parameter id="Ki_C11165_R100" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00011_R101" value="0.434365362" constant="true"/>
-      <parameter id="Km_C00229_R101" value="NaN" constant="true"/>
-      <parameter id="Km_C05762_R101" value="NaN" constant="true"/>
+      <parameter id="Km_C00229_R101" value="2.51391634996029" constant="true"/>
+      <parameter id="Km_C05762_R101" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C01209_R101" value="0.005" constant="true"/>
-      <parameter id="Km_C05761_R101" value="NaN" constant="true"/>
-      <parameter id="Kcat_F_R101" value="NaN" constant="true"/>
+      <parameter id="Km_C05761_R101" value="2.51391634996029" constant="true"/>
+      <parameter id="Kcat_F_R101" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_R_R101" value="35.38314654" constant="true"/>
-      <parameter id="Ki_C00173_R101" value="NaN" constant="true"/>
-      <parameter id="Ki_C11165_R101" value="NaN" constant="true"/>
+      <parameter id="Ki_C00173_R101" value="2.51391634996029" constant="true"/>
+      <parameter id="Ki_C11165_R101" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00010_R102" value="0.065542154" constant="true"/>
-      <parameter id="Km_C01209_R102" value="NaN" constant="true"/>
+      <parameter id="Km_C01209_R102" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00083_R102" value="0.0297" constant="true"/>
       <parameter id="Km_C00229_R102" value="0.351" constant="true"/>
       <parameter id="Kcat_F_R102" value="1050.000235" constant="true"/>
       <parameter id="Kcat_R_R102" value="9.578607456" constant="true"/>
       <parameter id="Ki_C00010_R102" value="0.0655421540141105" constant="true"/>
       <parameter id="Ki_C00024_R102" value="0.0718286335468292" constant="true"/>
-      <parameter id="Ki_C01209_R102" value="NaN" constant="true"/>
+      <parameter id="Ki_C01209_R102" value="2.51391634996029" constant="true"/>
       <parameter id="Ki_C02441_R102" value="0.116065539419651" constant="true"/>
       <parameter id="Ki_C03444_R102" value="0.0342750921845436" constant="true"/>
       <parameter id="Km_C00011_R103" value="0.139709994" constant="true"/>
-      <parameter id="Km_C00229_R103" value="NaN" constant="true"/>
-      <parameter id="Km_C00685_R103" value="NaN" constant="true"/>
-      <parameter id="Km_C00173_R103" value="NaN" constant="true"/>
+      <parameter id="Km_C00229_R103" value="2.51391634996029" constant="true"/>
+      <parameter id="Km_C00685_R103" value="2.51391634996029" constant="true"/>
+      <parameter id="Km_C00173_R103" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C01209_R103" value="0.0115" constant="true"/>
       <parameter id="Kcat_F_R103" value="0.011" constant="true"/>
       <parameter id="Kcat_R_R103" value="3.630524813" constant="true"/>
       <parameter id="Km_C00011_R104" value="0.139709994" constant="true"/>
-      <parameter id="Km_C00229_R104" value="NaN" constant="true"/>
-      <parameter id="Km_C05744_R104" value="NaN" constant="true"/>
+      <parameter id="Km_C00229_R104" value="2.51391634996029" constant="true"/>
+      <parameter id="Km_C05744_R104" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C01209_R104" value="0.0115" constant="true"/>
       <parameter id="Km_C03939_R104" value="0.0142" constant="true"/>
       <parameter id="Kcat_F_R104" value="0.0145" constant="true"/>
       <parameter id="Kcat_R_R104" value="3.630524813" constant="true"/>
       <parameter id="Km_C00011_R105" value="0.139709994" constant="true"/>
-      <parameter id="Km_C00229_R105" value="NaN" constant="true"/>
-      <parameter id="Km_C05759_R105" value="NaN" constant="true"/>
+      <parameter id="Km_C00229_R105" value="2.51391634996029" constant="true"/>
+      <parameter id="Km_C05759_R105" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C01209_R105" value="0.0115" constant="true"/>
-      <parameter id="Km_C05223_R105" value="NaN" constant="true"/>
+      <parameter id="Km_C05223_R105" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_F_R105" value="0.011" constant="true"/>
       <parameter id="Kcat_R_R105" value="3.630524813" constant="true"/>
       <parameter id="Km_C00011_R106" value="0.139709994" constant="true"/>
-      <parameter id="Km_C00229_R106" value="NaN" constant="true"/>
-      <parameter id="Km_C05746_R106" value="NaN" constant="true"/>
+      <parameter id="Km_C00229_R106" value="2.51391634996029" constant="true"/>
+      <parameter id="Km_C05746_R106" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C01209_R106" value="0.0115" constant="true"/>
-      <parameter id="Km_C05745_R106" value="NaN" constant="true"/>
+      <parameter id="Km_C05745_R106" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_F_R106" value="0.011" constant="true"/>
       <parameter id="Kcat_R_R106" value="3.630524813" constant="true"/>
       <parameter id="Km_C00011_R107" value="0.139709994" constant="true"/>
-      <parameter id="Km_C00229_R107" value="NaN" constant="true"/>
-      <parameter id="Km_C05750_R107" value="NaN" constant="true"/>
+      <parameter id="Km_C00229_R107" value="2.51391634996029" constant="true"/>
+      <parameter id="Km_C05750_R107" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C01209_R107" value="0.0115" constant="true"/>
-      <parameter id="Km_C05749_R107" value="NaN" constant="true"/>
+      <parameter id="Km_C05749_R107" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_F_R107" value="0.011" constant="true"/>
       <parameter id="Kcat_R_R107" value="3.630524813" constant="true"/>
       <parameter id="Km_C00011_R108" value="0.139709994" constant="true"/>
-      <parameter id="Km_C00229_R108" value="NaN" constant="true"/>
-      <parameter id="Km_C05753_R108" value="NaN" constant="true"/>
+      <parameter id="Km_C00229_R108" value="2.51391634996029" constant="true"/>
+      <parameter id="Km_C05753_R108" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C01209_R108" value="0.0115" constant="true"/>
-      <parameter id="Km_C05752_R108" value="NaN" constant="true"/>
+      <parameter id="Km_C05752_R108" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_F_R108" value="0.011" constant="true"/>
       <parameter id="Kcat_R_R108" value="3.630524813" constant="true"/>
       <parameter id="Km_C00011_R109" value="0.139709994" constant="true"/>
-      <parameter id="Km_C00229_R109" value="NaN" constant="true"/>
-      <parameter id="Km_C05756_R109" value="NaN" constant="true"/>
+      <parameter id="Km_C00229_R109" value="2.51391634996029" constant="true"/>
+      <parameter id="Km_C05756_R109" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C01209_R109" value="0.0115" constant="true"/>
-      <parameter id="Km_C05755_R109" value="NaN" constant="true"/>
+      <parameter id="Km_C05755_R109" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_F_R109" value="0.011" constant="true"/>
       <parameter id="Kcat_R_R109" value="3.630524813" constant="true"/>
       <parameter id="Km_C00011_R110" value="0.139709994" constant="true"/>
-      <parameter id="Km_C00229_R110" value="NaN" constant="true"/>
-      <parameter id="Km_C05762_R110" value="NaN" constant="true"/>
+      <parameter id="Km_C00229_R110" value="2.51391634996029" constant="true"/>
+      <parameter id="Km_C05762_R110" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C01209_R110" value="0.0115" constant="true"/>
-      <parameter id="Km_C05761_R110" value="NaN" constant="true"/>
+      <parameter id="Km_C05761_R110" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_F_R110" value="0.011" constant="true"/>
       <parameter id="Kcat_R_R110" value="3.630524813" constant="true"/>
       <parameter id="Km_C00011_R111" value="0.139709994" constant="true"/>
-      <parameter id="Km_C00229_R111" value="NaN" constant="true"/>
+      <parameter id="Km_C00229_R111" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C16219_R111" value="0.009703225" constant="true"/>
       <parameter id="Km_C01209_R111" value="0.0115" constant="true"/>
-      <parameter id="Km_C05764_R111" value="NaN" constant="true"/>
+      <parameter id="Km_C05764_R111" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_F_R111" value="0.011" constant="true"/>
       <parameter id="Kcat_R_R111" value="2.1648983915" constant="true"/>
       <parameter id="Km_C00010_R112" value="0.044450667" constant="true"/>
-      <parameter id="Km_C00264_R112" value="NaN" constant="true"/>
+      <parameter id="Km_C00264_R112" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00024_R112" value="0.036175136" constant="true"/>
-      <parameter id="Km_C00040_R112" value="NaN" constant="true"/>
+      <parameter id="Km_C00040_R112" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_F_R112" value="7.497544007" constant="true"/>
       <parameter id="Kcat_R_R112" value="12.3577679" constant="true"/>
       <parameter id="Km_C00010_R113" value="0.044450667" constant="true"/>
@@ -1721,53 +1721,53 @@
       <parameter id="Kcat_F_R121" value="9.211452298" constant="true"/>
       <parameter id="Kcat_R_R121" value="9.3911043135" constant="true"/>
       <parameter id="Km_C00010_R122" value="0.044450667" constant="true"/>
-      <parameter id="Km_C16330_R122" value="NaN" constant="true"/>
+      <parameter id="Km_C16330_R122" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00024_R122" value="0.036175136" constant="true"/>
-      <parameter id="Km_C16331_R122" value="NaN" constant="true"/>
+      <parameter id="Km_C16331_R122" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_F_R122" value="7.497544007" constant="true"/>
       <parameter id="Kcat_R_R122" value="12.3577679" constant="true"/>
       <parameter id="Km_C00010_R123" value="0.044450667" constant="true"/>
-      <parameter id="Km_C16334_R123" value="NaN" constant="true"/>
+      <parameter id="Km_C16334_R123" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00024_R123" value="0.036175136" constant="true"/>
-      <parameter id="Km_C16335_R123" value="NaN" constant="true"/>
+      <parameter id="Km_C16335_R123" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_F_R123" value="7.497544007" constant="true"/>
       <parameter id="Kcat_R_R123" value="12.3577679" constant="true"/>
       <parameter id="Km_C00010_R124" value="0.044450667" constant="true"/>
-      <parameter id="Km_C16338_R124" value="NaN" constant="true"/>
+      <parameter id="Km_C16338_R124" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00024_R124" value="0.036175136" constant="true"/>
-      <parameter id="Km_C16339_R124" value="NaN" constant="true"/>
+      <parameter id="Km_C16339_R124" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_F_R124" value="7.497544007" constant="true"/>
       <parameter id="Kcat_R_R124" value="12.3577679" constant="true"/>
       <parameter id="Km_C00010_R125" value="0.044450667" constant="true"/>
-      <parameter id="Km_C16376_R125" value="NaN" constant="true"/>
+      <parameter id="Km_C16376_R125" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00024_R125" value="0.036175136" constant="true"/>
-      <parameter id="Km_C16169_R125" value="NaN" constant="true"/>
+      <parameter id="Km_C16169_R125" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_F_R125" value="7.497544007" constant="true"/>
       <parameter id="Kcat_R_R125" value="12.3577679" constant="true"/>
       <parameter id="Km_C00010_R126" value="0.044450667" constant="true"/>
-      <parameter id="Km_C16389_R126" value="NaN" constant="true"/>
+      <parameter id="Km_C16389_R126" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00024_R126" value="0.036175136" constant="true"/>
-      <parameter id="Km_C16173_R126" value="NaN" constant="true"/>
+      <parameter id="Km_C16173_R126" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_F_R126" value="7.497544007" constant="true"/>
       <parameter id="Kcat_R_R126" value="12.3577679" constant="true"/>
       <parameter id="Km_C00024_R127" value="0.036175136" constant="true"/>
-      <parameter id="Km_C16470_R127" value="NaN" constant="true"/>
+      <parameter id="Km_C16470_R127" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00010_R127" value="0.044450667" constant="true"/>
-      <parameter id="Km_C16466_R127" value="NaN" constant="true"/>
+      <parameter id="Km_C16466_R127" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_F_R127" value="12.3577679" constant="true"/>
       <parameter id="Kcat_R_R127" value="7.497544007" constant="true"/>
       <parameter id="Km_C00024_R128" value="0.036175136" constant="true"/>
       <parameter id="Km_C03069_R128" value="0.039707839" constant="true"/>
       <parameter id="Km_C00010_R128" value="0.044450667" constant="true"/>
-      <parameter id="Km_C16471_R128" value="NaN" constant="true"/>
+      <parameter id="Km_C16471_R128" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_F_R128" value="12.3577679" constant="true"/>
       <parameter id="Kcat_R_R128" value="8.045255425" constant="true"/>
       <parameter id="Km_C00013_R129" value="0.053889301" constant="true"/>
       <parameter id="Km_C00020_R129" value="0.02481401" constant="true"/>
-      <parameter id="Km_C00040_R129" value="NaN" constant="true"/>
+      <parameter id="Km_C00040_R129" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00002_R129" value="0.022231769" constant="true"/>
       <parameter id="Km_C00010_R129" value="0.0406666666666667" constant="true"/>
-      <parameter id="Km_C00347_R129" value="NaN" constant="true"/>
+      <parameter id="Km_C00347_R129" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_F_R129" value="3.7013905375" constant="true"/>
       <parameter id="Kcat_R_R129" value="2.0163144405" constant="true"/>
       <parameter id="Km_C00013_R130" value="0.053889301" constant="true"/>
@@ -1787,14 +1787,14 @@
       <parameter id="Kcat_F_R131" value="0.267050868333333" constant="true"/>
       <parameter id="Kcat_R_R131" value="0.210573099333333" constant="true"/>
       <parameter id="Km_C00083_R132" value="0.1" constant="true"/>
-      <parameter id="Km_C06250_R132" value="NaN" constant="true"/>
+      <parameter id="Km_C06250_R132" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00024_R132" value="0.023739677" constant="true"/>
-      <parameter id="Km_C04419_R132" value="NaN" constant="true"/>
+      <parameter id="Km_C04419_R132" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_F_R132" value="0.501296359" constant="true"/>
       <parameter id="Kcat_R_R132" value="0.167004759" constant="true"/>
       <parameter id="Km_C00008_R133" value="0.028477727" constant="true"/>
       <parameter id="Km_C00009_R133" value="0.98047787" constant="true"/>
-      <parameter id="Km_C04419_R133" value="NaN" constant="true"/>
+      <parameter id="Km_C04419_R133" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00002_R133" value="0.043465339" constant="true"/>
       <parameter id="Km_C00288_R133" value="29.2664333333333" constant="true"/>
       <parameter id="Km_C06250_R133" value="0.16" constant="true"/>
@@ -1807,19 +1807,19 @@
       <parameter id="Ki_C01213_R133" value="0.0297006405889987" constant="true"/>
       <parameter id="Ki_C05682_R133" value="0.393312603235245" constant="true"/>
       <parameter id="Km_C00001_R136" value="1.233488917" constant="true"/>
-      <parameter id="Km_C05751_R136" value="NaN" constant="true"/>
-      <parameter id="Km_C04620_R136" value="NaN" constant="true"/>
-      <parameter id="Kcat_F_R136" value="NaN" constant="true"/>
+      <parameter id="Km_C05751_R136" value="2.51391634996029" constant="true"/>
+      <parameter id="Km_C04620_R136" value="2.51391634996029" constant="true"/>
+      <parameter id="Kcat_F_R136" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_R_R136" value="2.636789227" constant="true"/>
       <parameter id="Km_C00103_R137" value="24.5" constant="true"/>
-      <parameter id="Km_C00718_R137" value="NaN" constant="true"/>
+      <parameter id="Km_C00718_R137" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00009_R137" value="0.964813828" constant="true"/>
       <parameter id="Kcat_F_R137" value="3.29200599" constant="true"/>
       <parameter id="Kcat_R_R137" value="24.68616551" constant="true"/>
       <parameter id="Km_C00103_R138" value="24.5" constant="true"/>
-      <parameter id="Km_C00718_R138" value="NaN" constant="true"/>
+      <parameter id="Km_C00718_R138" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00009_R138" value="0.964813828" constant="true"/>
-      <parameter id="Km_C00369_R138" value="NaN" constant="true"/>
+      <parameter id="Km_C00369_R138" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_F_R138" value="3.29200599" constant="true"/>
       <parameter id="Kcat_R_R138" value="24.68616551" constant="true"/>
       <parameter id="Km_C00092_R139" value="0.569383681" constant="true"/>
@@ -1879,9 +1879,9 @@
       <parameter id="Kcat_R_R143" value="162.925253545662" constant="true"/>
       <parameter id="Km_C00004_R144" value="0.0213936530053615" constant="true"/>
       <parameter id="Km_C00080_R144" value="0.22504885494709" constant="true"/>
-      <parameter id="Km_C02051_R144" value="NaN" constant="true"/>
+      <parameter id="Km_C02051_R144" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00003_R144" value="0.0897657573223114" constant="true"/>
-      <parameter id="Km_C02972_R144" value="NaN" constant="true"/>
+      <parameter id="Km_C02972_R144" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_F_R144" value="117.916230435425" constant="true"/>
       <parameter id="Kcat_R_R144" value="278.580807218154" constant="true"/>
       <parameter id="Km_C00004_R145" value="0.0213936530053615" constant="true"/>
@@ -1951,7 +1951,7 @@
       <parameter id="Kcat_R_R152" value="0.709798937237832" constant="true"/>
       <parameter id="Km_C00013_R153" value="0.0075017297640442" constant="true"/>
       <parameter id="Km_C00020_R153" value="0.0014681605389341" constant="true"/>
-      <parameter id="Km_C02553_R153" value="NaN" constant="true"/>
+      <parameter id="Km_C02553_R153" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00002_R153" value="0.0010396140860393" constant="true"/>
       <parameter id="Km_C00065_R153" value="0.0173594113439321" constant="true"/>
       <parameter id="Km_C01650_R153" value="0.2" constant="true"/>
@@ -1959,7 +1959,7 @@
       <parameter id="Kcat_R_R153" value="49.2347477563135" constant="true"/>
       <parameter id="Km_C00013_R154" value="0.0075017297640442" constant="true"/>
       <parameter id="Km_C00020_R154" value="0.0014681605389341" constant="true"/>
-      <parameter id="Km_C06481_R154" value="NaN" constant="true"/>
+      <parameter id="Km_C06481_R154" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00002_R154" value="0.0010396140860393" constant="true"/>
       <parameter id="Km_C00065_R154" value="0.0173594113439321" constant="true"/>
       <parameter id="Km_C16636_R154" value="0.0031003365293145" constant="true"/>
@@ -1967,16 +1967,16 @@
       <parameter id="Kcat_R_R154" value="49.2347477563135" constant="true"/>
       <parameter id="Km_C00013_R155" value="0.0583701133728027" constant="true"/>
       <parameter id="Km_C00020_R155" value="0.016059648245573" constant="true"/>
-      <parameter id="Km_C02412_R155" value="NaN" constant="true"/>
+      <parameter id="Km_C02412_R155" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00002_R155" value="0.0173203721642494" constant="true"/>
       <parameter id="Km_C00037_R155" value="0.10986565798521" constant="true"/>
       <parameter id="Km_C01642_R155" value="0.0046" constant="true"/>
       <parameter id="Kcat_F_R155" value="7.7915478479031" constant="true"/>
       <parameter id="Kcat_R_R155" value="6.47786301215985" constant="true"/>
       <parameter id="Km_C00011_R156" value="1.16979587078094" constant="true"/>
-      <parameter id="Km_C01242_R156" value="NaN" constant="true"/>
+      <parameter id="Km_C01242_R156" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00037_R156" value="3.03230452537537" constant="true"/>
-      <parameter id="Km_C02051_R156" value="NaN" constant="true"/>
+      <parameter id="Km_C02051_R156" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_F_R156" value="2.63166278256923" constant="true"/>
       <parameter id="Kcat_R_R156" value="4.81835078633125" constant="true"/>
       <parameter id="Km_C00004_R157" value="0.0555423498153686" constant="true"/>
@@ -1996,9 +1996,9 @@
       <parameter id="Kcat_F_R158" value="6.25465187368478" constant="true"/>
       <parameter id="Kcat_R_R158" value="0.312186784853966" constant="true"/>
       <parameter id="Km_C00037_R159" value="0.432252526283264" constant="true"/>
-      <parameter id="Km_C05726_R159" value="NaN" constant="true"/>
+      <parameter id="Km_C05726_R159" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00001_R159" value="0.510772526264191" constant="true"/>
-      <parameter id="Km_C05729_R159" value="NaN" constant="true"/>
+      <parameter id="Km_C05729_R159" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_F_R159" value="2.12697549279377" constant="true"/>
       <parameter id="Kcat_R_R159" value="0.519310700198723" constant="true"/>
       <parameter id="Km_C00010_R160" value="0.0683331489562988" constant="true"/>
@@ -2009,9 +2009,9 @@
       <parameter id="Kcat_R_R160" value="6.89236611677524" constant="true"/>
       <parameter id="Km_C00014_R161" value="2.28812408447266" constant="true"/>
       <parameter id="Km_C00143_R161" value="0.0092" constant="true"/>
-      <parameter id="Km_C02972_R161" value="NaN" constant="true"/>
+      <parameter id="Km_C02972_R161" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00101_R161" value="0.0629024133086204" constant="true"/>
-      <parameter id="Km_C01242_R161" value="NaN" constant="true"/>
+      <parameter id="Km_C01242_R161" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_F_R161" value="23.354984594814" constant="true"/>
       <parameter id="Kcat_R_R161" value="32.6715438353705" constant="true"/>
       <parameter id="Km_C00004_R162" value="0.0514274351298809" constant="true"/>
@@ -2036,9 +2036,9 @@
       <parameter id="Kcat_F_R164" value="14.2561298242837" constant="true"/>
       <parameter id="Kcat_R_R164" value="0.642091769856968" constant="true"/>
       <parameter id="Km_C00037_R165" value="0.841594934463501" constant="true"/>
-      <parameter id="Km_C05726_R165" value="NaN" constant="true"/>
+      <parameter id="Km_C05726_R165" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00001_R165" value="0.535009860992432" constant="true"/>
-      <parameter id="Km_C05729_R165" value="NaN" constant="true"/>
+      <parameter id="Km_C05729_R165" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_F_R165" value="1.49204668873989" constant="true"/>
       <parameter id="Kcat_R_R165" value="1.02711345969404" constant="true"/>
       <parameter id="Km_C00008_R167" value="0.188931837677956" constant="true"/>
@@ -2060,9 +2060,9 @@
       <parameter id="Kcat_F_R169" value="3.54728232602962" constant="true"/>
       <parameter id="Kcat_R_R169" value="1.10709271979996" constant="true"/>
       <parameter id="Km_C00014_R170" value="2.32181453704834" constant="true"/>
-      <parameter id="Km_C00161_R170" value="NaN" constant="true"/>
-      <parameter id="Km_C05167_R170" value="NaN" constant="true"/>
-      <parameter id="Kcat_F_R170" value="NaN" constant="true"/>
+      <parameter id="Km_C00161_R170" value="2.51391634996029" constant="true"/>
+      <parameter id="Km_C05167_R170" value="2.51391634996029" constant="true"/>
+      <parameter id="Kcat_F_R170" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_R_R170" value="17.8617916438848" constant="true"/>
       <parameter id="Km_C00014_R171" value="2.32181453704834" constant="true"/>
       <parameter id="Km_C00022_R171" value="0.786924958229065" constant="true"/>
@@ -2081,9 +2081,9 @@
       <parameter id="Kcat_F_R173" value="1.59419048749578" constant="true"/>
       <parameter id="Kcat_R_R173" value="5.38060490898605" constant="true"/>
       <parameter id="Km_C00014_R174" value="10.3847188949585" constant="true"/>
-      <parameter id="Km_C00161_R174" value="NaN" constant="true"/>
-      <parameter id="Km_C05167_R174" value="NaN" constant="true"/>
-      <parameter id="Kcat_F_R174" value="NaN" constant="true"/>
+      <parameter id="Km_C00161_R174" value="2.51391634996029" constant="true"/>
+      <parameter id="Km_C05167_R174" value="2.51391634996029" constant="true"/>
+      <parameter id="Kcat_F_R174" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_R_R174" value="7.54456737469361" constant="true"/>
       <parameter id="Km_C00037_R175" value="0.388481706380844" constant="true"/>
       <parameter id="Km_C00097_R175" value="0.172149553894997" constant="true"/>
@@ -2092,9 +2092,9 @@
       <parameter id="Kcat_F_R175" value="4.01489477867776" constant="true"/>
       <parameter id="Kcat_R_R175" value="0.112565879619329" constant="true"/>
       <parameter id="Km_C00037_R176" value="0.388481706380844" constant="true"/>
-      <parameter id="Km_C05726_R176" value="NaN" constant="true"/>
+      <parameter id="Km_C05726_R176" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00001_R176" value="0.38191682100296" constant="true"/>
-      <parameter id="Km_C05729_R176" value="NaN" constant="true"/>
+      <parameter id="Km_C05729_R176" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_F_R176" value="1.495343079177" constant="true"/>
       <parameter id="Kcat_R_R176" value="0.194365287372137" constant="true"/>
       <parameter id="Km_C00008_R177" value="0.0317241661250591" constant="true"/>
@@ -5667,9 +5667,9 @@
           <speciesReference species="C00085" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00345"/>
-          <modifierSpeciesReference species="C00199"/>
           <modifierSpeciesReference species="C00074"/>
+          <modifierSpeciesReference species="C00199"/>
+          <modifierSpeciesReference species="C00345"/>
           <modifierSpeciesReference species="C00117"/>
         </listOfModifiers>
         <kineticLaw>
@@ -5853,9 +5853,9 @@
           <speciesReference species="C05345" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00345"/>
-          <modifierSpeciesReference species="C00199"/>
           <modifierSpeciesReference species="C00074"/>
+          <modifierSpeciesReference species="C00199"/>
+          <modifierSpeciesReference species="C00345"/>
           <modifierSpeciesReference species="C00117"/>
         </listOfModifiers>
         <kineticLaw>
@@ -6039,9 +6039,9 @@
           <speciesReference species="C05345" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00345"/>
-          <modifierSpeciesReference species="C00199"/>
           <modifierSpeciesReference species="C00074"/>
+          <modifierSpeciesReference species="C00199"/>
+          <modifierSpeciesReference species="C00345"/>
           <modifierSpeciesReference species="C00117"/>
         </listOfModifiers>
         <kineticLaw>
@@ -6225,9 +6225,9 @@
           <speciesReference species="C01172" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00345"/>
-          <modifierSpeciesReference species="C00199"/>
           <modifierSpeciesReference species="C00074"/>
+          <modifierSpeciesReference species="C00199"/>
+          <modifierSpeciesReference species="C00345"/>
           <modifierSpeciesReference species="C00117"/>
         </listOfModifiers>
         <kineticLaw>
@@ -6413,13 +6413,13 @@
           <speciesReference species="C00354" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00197"/>
-          <modifierSpeciesReference species="C00236"/>
-          <modifierSpeciesReference species="C00044"/>
+          <modifierSpeciesReference species="C00631"/>
+          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C00009"/>
-          <modifierSpeciesReference species="C00074"/>
-          <modifierSpeciesReference species="C00631"/>
+          <modifierSpeciesReference species="C00236"/>
+          <modifierSpeciesReference species="C00197"/>
+          <modifierSpeciesReference species="C00044"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -6847,13 +6847,13 @@
           <speciesReference species="C05378" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00197"/>
-          <modifierSpeciesReference species="C00236"/>
-          <modifierSpeciesReference species="C00044"/>
+          <modifierSpeciesReference species="C00631"/>
+          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C00009"/>
-          <modifierSpeciesReference species="C00074"/>
-          <modifierSpeciesReference species="C00631"/>
+          <modifierSpeciesReference species="C00236"/>
+          <modifierSpeciesReference species="C00197"/>
+          <modifierSpeciesReference species="C00044"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -7281,15 +7281,15 @@
           <speciesReference species="C00354" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00008"/>
-          <modifierSpeciesReference species="C00197"/>
-          <modifierSpeciesReference species="C00236"/>
-          <modifierSpeciesReference species="C00044"/>
-          <modifierSpeciesReference species="C00002"/>
+          <modifierSpeciesReference species="C00631"/>
+          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C00009"/>
-          <modifierSpeciesReference species="C00074"/>
-          <modifierSpeciesReference species="C00631"/>
+          <modifierSpeciesReference species="C00236"/>
+          <modifierSpeciesReference species="C00197"/>
+          <modifierSpeciesReference species="C00002"/>
+          <modifierSpeciesReference species="C00008"/>
+          <modifierSpeciesReference species="C00044"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -7717,15 +7717,15 @@
           <speciesReference species="C00354" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00008"/>
-          <modifierSpeciesReference species="C00197"/>
-          <modifierSpeciesReference species="C00236"/>
-          <modifierSpeciesReference species="C00044"/>
-          <modifierSpeciesReference species="C00002"/>
+          <modifierSpeciesReference species="C00631"/>
+          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C00009"/>
-          <modifierSpeciesReference species="C00074"/>
-          <modifierSpeciesReference species="C00631"/>
+          <modifierSpeciesReference species="C00236"/>
+          <modifierSpeciesReference species="C00197"/>
+          <modifierSpeciesReference species="C00002"/>
+          <modifierSpeciesReference species="C00008"/>
+          <modifierSpeciesReference species="C00044"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -8153,15 +8153,15 @@
           <speciesReference species="C00354" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00008"/>
-          <modifierSpeciesReference species="C00197"/>
-          <modifierSpeciesReference species="C00236"/>
-          <modifierSpeciesReference species="C00044"/>
-          <modifierSpeciesReference species="C00002"/>
+          <modifierSpeciesReference species="C00631"/>
+          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C00009"/>
-          <modifierSpeciesReference species="C00074"/>
-          <modifierSpeciesReference species="C00631"/>
+          <modifierSpeciesReference species="C00236"/>
+          <modifierSpeciesReference species="C00197"/>
+          <modifierSpeciesReference species="C00002"/>
+          <modifierSpeciesReference species="C00008"/>
+          <modifierSpeciesReference species="C00044"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -8589,13 +8589,13 @@
           <speciesReference species="C00447" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00197"/>
-          <modifierSpeciesReference species="C00236"/>
-          <modifierSpeciesReference species="C00044"/>
+          <modifierSpeciesReference species="C00631"/>
+          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C00009"/>
-          <modifierSpeciesReference species="C00074"/>
-          <modifierSpeciesReference species="C00631"/>
+          <modifierSpeciesReference species="C00236"/>
+          <modifierSpeciesReference species="C00197"/>
+          <modifierSpeciesReference species="C00044"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -9023,13 +9023,13 @@
           <speciesReference species="C03785" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00197"/>
-          <modifierSpeciesReference species="C00236"/>
-          <modifierSpeciesReference species="C00044"/>
+          <modifierSpeciesReference species="C00631"/>
+          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C00009"/>
-          <modifierSpeciesReference species="C00074"/>
-          <modifierSpeciesReference species="C00631"/>
+          <modifierSpeciesReference species="C00236"/>
+          <modifierSpeciesReference species="C00197"/>
+          <modifierSpeciesReference species="C00044"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -9457,15 +9457,15 @@
           <speciesReference species="C03785" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00008"/>
-          <modifierSpeciesReference species="C00197"/>
-          <modifierSpeciesReference species="C00236"/>
-          <modifierSpeciesReference species="C00044"/>
-          <modifierSpeciesReference species="C00002"/>
+          <modifierSpeciesReference species="C00631"/>
+          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C00009"/>
-          <modifierSpeciesReference species="C00074"/>
-          <modifierSpeciesReference species="C00631"/>
+          <modifierSpeciesReference species="C00236"/>
+          <modifierSpeciesReference species="C00197"/>
+          <modifierSpeciesReference species="C00002"/>
+          <modifierSpeciesReference species="C00008"/>
+          <modifierSpeciesReference species="C00044"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -9893,15 +9893,15 @@
           <speciesReference species="C03785" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00008"/>
-          <modifierSpeciesReference species="C00197"/>
-          <modifierSpeciesReference species="C00236"/>
-          <modifierSpeciesReference species="C00044"/>
-          <modifierSpeciesReference species="C00002"/>
+          <modifierSpeciesReference species="C00631"/>
+          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C00009"/>
-          <modifierSpeciesReference species="C00074"/>
-          <modifierSpeciesReference species="C00631"/>
+          <modifierSpeciesReference species="C00236"/>
+          <modifierSpeciesReference species="C00197"/>
+          <modifierSpeciesReference species="C00002"/>
+          <modifierSpeciesReference species="C00008"/>
+          <modifierSpeciesReference species="C00044"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -10329,15 +10329,15 @@
           <speciesReference species="C03785" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00008"/>
-          <modifierSpeciesReference species="C00197"/>
-          <modifierSpeciesReference species="C00236"/>
-          <modifierSpeciesReference species="C00044"/>
-          <modifierSpeciesReference species="C00002"/>
+          <modifierSpeciesReference species="C00631"/>
+          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C00009"/>
-          <modifierSpeciesReference species="C00074"/>
-          <modifierSpeciesReference species="C00631"/>
+          <modifierSpeciesReference species="C00236"/>
+          <modifierSpeciesReference species="C00197"/>
+          <modifierSpeciesReference species="C00002"/>
+          <modifierSpeciesReference species="C00008"/>
+          <modifierSpeciesReference species="C00044"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -10765,11 +10765,11 @@
           <speciesReference species="C00085" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00008"/>
-          <modifierSpeciesReference species="C00002"/>
-          <modifierSpeciesReference species="C01172"/>
-          <modifierSpeciesReference species="C00020"/>
           <modifierSpeciesReference species="C00074"/>
+          <modifierSpeciesReference species="C00020"/>
+          <modifierSpeciesReference species="C01172"/>
+          <modifierSpeciesReference species="C00002"/>
+          <modifierSpeciesReference species="C00008"/>
           <modifierSpeciesReference species="C00097"/>
         </listOfModifiers>
         <kineticLaw>
@@ -11285,11 +11285,11 @@
           <speciesReference species="C05345" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00008"/>
-          <modifierSpeciesReference species="C00002"/>
-          <modifierSpeciesReference species="C01172"/>
-          <modifierSpeciesReference species="C00020"/>
           <modifierSpeciesReference species="C00074"/>
+          <modifierSpeciesReference species="C00020"/>
+          <modifierSpeciesReference species="C01172"/>
+          <modifierSpeciesReference species="C00002"/>
+          <modifierSpeciesReference species="C00008"/>
           <modifierSpeciesReference species="C00097"/>
         </listOfModifiers>
         <kineticLaw>
@@ -11805,11 +11805,11 @@
           <speciesReference species="C05382" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00008"/>
-          <modifierSpeciesReference species="C00002"/>
-          <modifierSpeciesReference species="C01172"/>
-          <modifierSpeciesReference species="C00020"/>
           <modifierSpeciesReference species="C00074"/>
+          <modifierSpeciesReference species="C00020"/>
+          <modifierSpeciesReference species="C01172"/>
+          <modifierSpeciesReference species="C00002"/>
+          <modifierSpeciesReference species="C00008"/>
           <modifierSpeciesReference species="C00097"/>
         </listOfModifiers>
         <kineticLaw>
@@ -12324,8 +12324,8 @@
           <speciesReference species="C00118" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00345"/>
           <modifierSpeciesReference species="C00074"/>
+          <modifierSpeciesReference species="C00345"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -12529,8 +12529,8 @@
           <speciesReference species="C00118" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00345"/>
           <modifierSpeciesReference species="C00074"/>
+          <modifierSpeciesReference species="C00345"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -12734,8 +12734,8 @@
           <speciesReference species="C00279" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00345"/>
           <modifierSpeciesReference species="C00074"/>
+          <modifierSpeciesReference species="C00345"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -12939,8 +12939,8 @@
           <speciesReference species="C00577" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00345"/>
           <modifierSpeciesReference species="C00074"/>
+          <modifierSpeciesReference species="C00345"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -13143,14 +13143,14 @@
           <speciesReference species="C00111" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00197"/>
-          <modifierSpeciesReference species="C00002"/>
-          <modifierSpeciesReference species="C00158"/>
-          <modifierSpeciesReference species="C05345"/>
-          <modifierSpeciesReference species="C01172"/>
-          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00631"/>
+          <modifierSpeciesReference species="C00074"/>
+          <modifierSpeciesReference species="C00158"/>
+          <modifierSpeciesReference species="C01172"/>
+          <modifierSpeciesReference species="C00197"/>
           <modifierSpeciesReference species="C00042"/>
+          <modifierSpeciesReference species="C00002"/>
+          <modifierSpeciesReference species="C05345"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -13760,8 +13760,8 @@
         </listOfProducts>
         <listOfModifiers>
           <modifierSpeciesReference species="C00158"/>
-          <modifierSpeciesReference species="C00013"/>
           <modifierSpeciesReference species="C00009"/>
+          <modifierSpeciesReference species="C00013"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -14053,8 +14053,8 @@
         </listOfProducts>
         <listOfModifiers>
           <modifierSpeciesReference species="C00158"/>
-          <modifierSpeciesReference species="C00013"/>
           <modifierSpeciesReference species="C00009"/>
+          <modifierSpeciesReference species="C00013"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -14348,9 +14348,9 @@
           <speciesReference species="C00074" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00008"/>
-          <modifierSpeciesReference species="C00026"/>
           <modifierSpeciesReference species="C00036"/>
+          <modifierSpeciesReference species="C00026"/>
+          <modifierSpeciesReference species="C00008"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -14713,12 +14713,12 @@
           <speciesReference species="C00074" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
+          <modifierSpeciesReference species="C00122"/>
+          <modifierSpeciesReference species="C00158"/>
+          <modifierSpeciesReference species="C00091"/>
+          <modifierSpeciesReference species="C00009"/>
           <modifierSpeciesReference species="C00026"/>
           <modifierSpeciesReference species="C00044"/>
-          <modifierSpeciesReference species="C00158"/>
-          <modifierSpeciesReference species="C00009"/>
-          <modifierSpeciesReference species="C00122"/>
-          <modifierSpeciesReference species="C00091"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -15262,13 +15262,13 @@
           <speciesReference species="C00074" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00008"/>
+          <modifierSpeciesReference species="C00122"/>
+          <modifierSpeciesReference species="C00158"/>
+          <modifierSpeciesReference species="C00091"/>
+          <modifierSpeciesReference species="C00009"/>
           <modifierSpeciesReference species="C00026"/>
           <modifierSpeciesReference species="C00002"/>
-          <modifierSpeciesReference species="C00158"/>
-          <modifierSpeciesReference species="C00009"/>
-          <modifierSpeciesReference species="C00122"/>
-          <modifierSpeciesReference species="C00091"/>
+          <modifierSpeciesReference species="C00008"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -15812,14 +15812,14 @@
           <speciesReference species="C00112" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00008"/>
-          <modifierSpeciesReference species="C00026"/>
-          <modifierSpeciesReference species="C00044"/>
-          <modifierSpeciesReference species="C00002"/>
-          <modifierSpeciesReference species="C00158"/>
-          <modifierSpeciesReference species="C00009"/>
           <modifierSpeciesReference species="C00122"/>
+          <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C00091"/>
+          <modifierSpeciesReference species="C00009"/>
+          <modifierSpeciesReference species="C00026"/>
+          <modifierSpeciesReference species="C00002"/>
+          <modifierSpeciesReference species="C00008"/>
+          <modifierSpeciesReference species="C00044"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -16363,14 +16363,14 @@
           <speciesReference species="C00074" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00008"/>
-          <modifierSpeciesReference species="C00026"/>
-          <modifierSpeciesReference species="C00044"/>
-          <modifierSpeciesReference species="C00002"/>
-          <modifierSpeciesReference species="C00158"/>
-          <modifierSpeciesReference species="C00009"/>
           <modifierSpeciesReference species="C00122"/>
+          <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C00091"/>
+          <modifierSpeciesReference species="C00009"/>
+          <modifierSpeciesReference species="C00026"/>
+          <modifierSpeciesReference species="C00002"/>
+          <modifierSpeciesReference species="C00008"/>
+          <modifierSpeciesReference species="C00044"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -16914,14 +16914,14 @@
           <speciesReference species="C00104" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00008"/>
-          <modifierSpeciesReference species="C00026"/>
-          <modifierSpeciesReference species="C00044"/>
-          <modifierSpeciesReference species="C00002"/>
-          <modifierSpeciesReference species="C00158"/>
-          <modifierSpeciesReference species="C00009"/>
           <modifierSpeciesReference species="C00122"/>
+          <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C00091"/>
+          <modifierSpeciesReference species="C00009"/>
+          <modifierSpeciesReference species="C00026"/>
+          <modifierSpeciesReference species="C00002"/>
+          <modifierSpeciesReference species="C00008"/>
+          <modifierSpeciesReference species="C00044"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -17465,14 +17465,14 @@
           <speciesReference species="C00206" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00008"/>
-          <modifierSpeciesReference species="C00026"/>
-          <modifierSpeciesReference species="C00044"/>
-          <modifierSpeciesReference species="C00002"/>
-          <modifierSpeciesReference species="C00158"/>
-          <modifierSpeciesReference species="C00009"/>
           <modifierSpeciesReference species="C00122"/>
+          <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C00091"/>
+          <modifierSpeciesReference species="C00009"/>
+          <modifierSpeciesReference species="C00026"/>
+          <modifierSpeciesReference species="C00002"/>
+          <modifierSpeciesReference species="C00008"/>
+          <modifierSpeciesReference species="C00044"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -18016,14 +18016,14 @@
           <speciesReference species="C00361" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00008"/>
-          <modifierSpeciesReference species="C00026"/>
-          <modifierSpeciesReference species="C00044"/>
-          <modifierSpeciesReference species="C00002"/>
-          <modifierSpeciesReference species="C00158"/>
-          <modifierSpeciesReference species="C00009"/>
           <modifierSpeciesReference species="C00122"/>
+          <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C00091"/>
+          <modifierSpeciesReference species="C00009"/>
+          <modifierSpeciesReference species="C00026"/>
+          <modifierSpeciesReference species="C00002"/>
+          <modifierSpeciesReference species="C00008"/>
+          <modifierSpeciesReference species="C00044"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -18567,14 +18567,14 @@
           <speciesReference species="C00454" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00008"/>
-          <modifierSpeciesReference species="C00026"/>
-          <modifierSpeciesReference species="C00044"/>
-          <modifierSpeciesReference species="C00002"/>
-          <modifierSpeciesReference species="C00158"/>
-          <modifierSpeciesReference species="C00009"/>
           <modifierSpeciesReference species="C00122"/>
+          <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C00091"/>
+          <modifierSpeciesReference species="C00009"/>
+          <modifierSpeciesReference species="C00026"/>
+          <modifierSpeciesReference species="C00002"/>
+          <modifierSpeciesReference species="C00008"/>
+          <modifierSpeciesReference species="C00044"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -19118,9 +19118,9 @@
           <speciesReference species="C16255" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00109"/>
-          <modifierSpeciesReference species="C00024"/>
           <modifierSpeciesReference species="C00004"/>
+          <modifierSpeciesReference species="C00024"/>
+          <modifierSpeciesReference species="C00109"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -19432,9 +19432,9 @@
           <speciesReference species="C05125" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00109"/>
-          <modifierSpeciesReference species="C00024"/>
           <modifierSpeciesReference species="C00004"/>
+          <modifierSpeciesReference species="C00024"/>
+          <modifierSpeciesReference species="C00109"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -20094,10 +20094,10 @@
           <speciesReference species="C16255" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00109"/>
-          <modifierSpeciesReference species="C00022"/>
-          <modifierSpeciesReference species="C00024"/>
           <modifierSpeciesReference species="C00004"/>
+          <modifierSpeciesReference species="C00024"/>
+          <modifierSpeciesReference species="C00022"/>
+          <modifierSpeciesReference species="C00109"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -22041,8 +22041,8 @@
           <speciesReference species="C00122" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00002"/>
           <modifierSpeciesReference species="C00158"/>
+          <modifierSpeciesReference species="C00002"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -22277,9 +22277,9 @@
           <speciesReference species="C00080" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00002"/>
-          <modifierSpeciesReference species="C00010"/>
           <modifierSpeciesReference species="C00024"/>
+          <modifierSpeciesReference species="C00010"/>
+          <modifierSpeciesReference species="C00002"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -31186,9 +31186,9 @@
           <speciesReference species="C04419" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
+          <modifierSpeciesReference species="C00010"/>
           <modifierSpeciesReference species="C00083"/>
           <modifierSpeciesReference species="C00091"/>
-          <modifierSpeciesReference species="C00010"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -31758,9 +31758,9 @@
           <speciesReference species="C00092" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00044"/>
-          <modifierSpeciesReference species="C00010"/>
           <modifierSpeciesReference species="C00024"/>
+          <modifierSpeciesReference species="C00010"/>
+          <modifierSpeciesReference species="C00044"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -32059,9 +32059,9 @@
           <speciesReference species="C00668" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00044"/>
-          <modifierSpeciesReference species="C00010"/>
           <modifierSpeciesReference species="C00024"/>
+          <modifierSpeciesReference species="C00010"/>
+          <modifierSpeciesReference species="C00044"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -32360,9 +32360,9 @@
           <speciesReference species="C00117" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00044"/>
-          <modifierSpeciesReference species="C00010"/>
           <modifierSpeciesReference species="C00024"/>
+          <modifierSpeciesReference species="C00010"/>
+          <modifierSpeciesReference species="C00044"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -32661,9 +32661,9 @@
           <speciesReference species="C03735" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00044"/>
-          <modifierSpeciesReference species="C00010"/>
           <modifierSpeciesReference species="C00024"/>
+          <modifierSpeciesReference species="C00010"/>
+          <modifierSpeciesReference species="C00044"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
