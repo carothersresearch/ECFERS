@@ -4,6 +4,23 @@ import numpy as np
 import pygmo as pg
 from copy import deepcopy
 
+class TimeoutError(Exception):
+    pass
+
+import signal
+import time
+class timeout:
+    def __init__(self, seconds=1, error_message='Timeout'):
+        self.seconds = seconds
+        self.error_message = error_message
+    def handle_timeout(self, signum, frame):
+        raise TimeoutError(self.error_message)
+    def __enter__(self):
+        signal.signal(signal.SIGALRM, self.handle_timeout)
+        signal.alarm(self.seconds)
+    def __exit__(self, type, value, traceback):
+        signal.alarm(0)
+
 class SBMLGlobalFit:
 
     def __init__(self, model, data, parameter_labels, lower_bounds, upper_bounds, settings, variables = {}, scale = False):
@@ -244,9 +261,11 @@ class SBMLGlobalFit_Multi:
         self.data = data
         self.metadata = metadata
         self.variables = variables # dict of labels and values
+        self.cvode_timepoints = 1000
 
         r = te.loadSBMLModel(self.model)
         self.species_labels = np.array(r.getFullStoichiometryMatrix().rownames)
+        self.global_parameter_labels = np.array(r.getGlobalParameterIds())
         self.cols = {}
         self.rows = {}
         self.data_cols = {}
@@ -260,7 +279,7 @@ class SBMLGlobalFit_Multi:
                 except:
                     pass
             self.cols[s] = measurements
-            self.rows[s] = [np.where(np.linspace(0, self.metadata['timepoints'][s][-1], 1000) < (t+0.1))[0][-1] for t in self.metadata['timepoints'][s]]
+            self.rows[s] = [np.where(np.linspace(0, self.metadata['timepoints'][s][-1], self.cvode_timepoints) < (t+0.1))[0][-1] for t in self.metadata['timepoints'][s]]
 
 
     def fitness(self, x):
@@ -275,54 +294,48 @@ class SBMLGlobalFit_Multi:
         Config.setValue(Config.LOADSBMLOPTIONS_RECOMPILE, False) 
         Config.setValue(Config.LLJIT_OPTIMIZATION_LEVEL, 4)
 
+        # load model
         id = str(os.getpid())
-        try:
+        if os.path.isfile(self.path_to_models+'/models/binaries/model_state_'+id+'.b'):
             with open(self.path_to_models+'/models/binaries/model_state_'+id+'.b', 'rb') as f:
                 r = RoadRunner()
                 r.loadStateS(f.read())
-        except Exception as e:
-            print(e)
+        else:
             r = te.loadSBMLModel(self.model)
-            try:
-                with open(self.path_to_models+'/models/binaries/model_state_'+id+'.b', 'wb') as f:
-                    f.write(r.saveStateS())
-            except Exception as e:
-                print('Could not save state')
-                print(e)
+            r.integrator.absolute_tolerance = 1e-8
+            r.integrator.relative_tolerance = 1e-8
+            r.integrator.maximum_num_steps = 2000
+            with open(self.path_to_models+'/models/binaries/model_state_'+id+'.b', 'wb') as f:
+                f.write(r.saveStateS())
+       
+        # set new parameters
+        for l, v in zip(self.parameter_labels,x):
+            if 'v' not in l:
+                r.setValue('init('+l+')',v)
+            else:
+                r.setValue('init('+l+')',v*1000)
 
-        # update parameters. this can be done once for all samples
-        for label, value in zip(self.parameter_labels,x):
-            r['init('+label+')'] = value
-            
-        # this part we have to do for each sample!
-        res = {}
+        # set variables and simulate
+        results = {sample:self.data[sample]*(-np.inf) for sample in self.metadata['sample_labels']}
+        rb = r.saveStateS()
         for sample in self.metadata['sample_labels']:
-            r2 = deepcopy(r)
-
+            r2 = RoadRunner()
+            r2.loadStateS(rb)
             # set any variable
             for label, value in self.variables[sample].items():
                 if not np.isnan(value):
                     if label not in self.species_labels:
-                        try:
-                            r2['init('+label+')'] = value # we might need new assignment rules for heterologous enzymes
-                        except Exception as e:
-                            print('Could not set variable', label, 'to', value)
-                            print(e) 
+                        r2.setValue('init('+label+')', value) # we might need new assignment rules for heterologous enzymes
                     else:
-                        try:
-                            r2.removeInitialAssignment(label) 
-                            r2['init(['+label+'])'] = value
-                        except Exception as e:
-                            print('Could not set initial assignment', label, 'to', value)
-                            print(e)
-                            pass
-
+                        # r2.removeInitialAssignment(label) theres some bug here? it seems to also mess up with over valuesS
+                        r2.setValue('['+label+']', value)
             try:
-                results = r2.simulate(0,self.metadata['timepoints'][sample][-1],1000)[:,1:].__array__()
-            except:
-                results = self.data[sample]*(-np.inf)
-            res[sample] = results
-        return res
+                with timeout(seconds=2):
+                    results[sample] = r2.simulate(0,self.metadata['timepoints'][sample][-1],self.cvode_timepoints)[:,1:].__array__()
+            except Exception as e:
+                print(e)
+                break # stop if any fail
+        return results
                 
     def _residual(self,results,data,sample):
         cols = self.cols[sample]
@@ -335,7 +348,7 @@ class SBMLGlobalFit_Multi:
             error = (data[:,dcols]-results[:,cols][rows,:])
 
         RMSE = np.sqrt(np.nansum(error**2, axis=0)/len(rows))
-        NRMSE = RMSE/(np.nanmax(data[:,dcols], axis=0) - np.nanmin(data[:,dcols], axis=0) + 1e6)
+        NRMSE = RMSE/(np.nanmax(data[:,dcols], axis=0) - np.nanmin(data[:,dcols], axis=0) + 1e-6)
         return np.nansum(NRMSE)
     
     def _unscale(self, x):

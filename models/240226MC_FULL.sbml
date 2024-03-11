@@ -45,12 +45,13 @@
       <species id="EC34112" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="EC23129" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="EC21210" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="EC341123" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="EC6323" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="EC43117" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="EC43119" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="EC34111" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="EC63413" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="EC1442" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="EC341123" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="C12214" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="C00111" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="C00345" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
@@ -251,61 +252,38 @@
       <species id="C16237" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="C16636" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="C16832" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="EC1442" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
     </listOfSpecies>
     <listOfParameters>
-      <parameter id="ECNAN0001" constant="true"/>
-      <parameter id="p_ECNAN0001" value="1" constant="true"/>
+      <parameter id="p_EC5319" value="1" constant="true"/>
       <parameter id="rel0" value="1" constant="true"/>
       <parameter id="dilution_factor" value="1" constant="true"/>
-      <parameter id="p_EC5319" value="1" constant="true"/>
       <parameter id="p_EC27111" value="1" constant="true"/>
       <parameter id="p_EC31311" value="1" constant="true"/>
       <parameter id="p_EC41213" value="1" constant="true"/>
       <parameter id="p_EC5311" value="1" constant="true"/>
-      <parameter id="ECNAN0002" constant="true"/>
-      <parameter id="p_ECNAN0002" value="1" constant="true"/>
       <parameter id="p_EC2723" value="1" constant="true"/>
-      <parameter id="EC54211" constant="true"/>
-      <parameter id="p_EC54211" value="1" constant="true"/>
       <parameter id="p_EC42111" value="1" constant="true"/>
       <parameter id="p_EC2792" value="1" constant="true"/>
       <parameter id="p_EC27140" value="1" constant="true"/>
       <parameter id="p_EC1241" value="1" constant="true"/>
-      <parameter id="EC23316" constant="true"/>
-      <parameter id="p_EC23316" value="1" constant="true"/>
       <parameter id="p_EC4213" value="1" constant="true"/>
-      <parameter id="ECNAN0003" constant="true"/>
-      <parameter id="p_ECNAN0003" value="1" constant="true"/>
       <parameter id="p_EC1242" value="1" constant="true"/>
       <parameter id="p_EC6215" value="1" constant="true"/>
-      <parameter id="ECNAN0004" constant="true"/>
-      <parameter id="p_ECNAN0004" value="1" constant="true"/>
       <parameter id="p_EC1351" value="1" constant="true"/>
       <parameter id="p_EC4212" value="1" constant="true"/>
       <parameter id="p_EC11137" value="1" constant="true"/>
-      <parameter id="ECNAN0005" constant="true"/>
-      <parameter id="p_ECNAN0005" value="1" constant="true"/>
       <parameter id="p_EC11144" value="1" constant="true"/>
       <parameter id="p_EC5131" value="1" constant="true"/>
       <parameter id="p_EC5316" value="1" constant="true"/>
       <parameter id="p_EC2211" value="1" constant="true"/>
       <parameter id="p_EC2212" value="1" constant="true"/>
       <parameter id="p_EC111100" value="1" constant="true"/>
-      <parameter id="ECNAN0006" constant="true"/>
-      <parameter id="p_ECNAN0006" value="1" constant="true"/>
       <parameter id="p_EC1319" value="1" constant="true"/>
-      <parameter id="ECNAN0007" constant="true"/>
-      <parameter id="p_ECNAN0007" value="1" constant="true"/>
       <parameter id="p_EC231180" value="1" constant="true"/>
       <parameter id="p_EC23139" value="1" constant="true"/>
-      <parameter id="ECNAN0008" constant="true"/>
-      <parameter id="p_ECNAN0008" value="1" constant="true"/>
       <parameter id="p_EC23141" value="1" constant="true"/>
       <parameter id="p_EC23116" value="1" constant="true"/>
       <parameter id="p_EC6213" value="1" constant="true"/>
-      <parameter id="ECNAN0009" constant="true"/>
-      <parameter id="p_ECNAN0009" value="1" constant="true"/>
       <parameter id="p_EC6412" value="1" constant="true"/>
       <parameter id="p_EC63414" value="1" constant="true"/>
       <parameter id="p_EC42159" value="1" constant="true"/>
@@ -318,12 +296,13 @@
       <parameter id="p_EC34112" value="1" constant="true"/>
       <parameter id="p_EC23129" value="1" constant="true"/>
       <parameter id="p_EC21210" value="1" constant="true"/>
-      <parameter id="p_EC341123" value="1" constant="true"/>
       <parameter id="p_EC6323" value="1" constant="true"/>
       <parameter id="p_EC43117" value="1" constant="true"/>
       <parameter id="p_EC43119" value="1" constant="true"/>
       <parameter id="p_EC34111" value="1" constant="true"/>
       <parameter id="p_EC63413" value="1" constant="true"/>
+      <parameter id="p_EC1442" value="1" constant="true"/>
+      <parameter id="p_EC341123" value="1" constant="true"/>
       <parameter id="v1" value="1" constant="true"/>
       <parameter id="v2" value="1" constant="true"/>
       <parameter id="v3" value="1" constant="true"/>
@@ -2672,7 +2651,7 @@
             <times/>
             <ci> p_EC27140 </ci>
             <ci> rel0 </ci>
-            <cn type="integer"> 19 </cn>
+            <cn type="integer"> 18 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -2694,7 +2673,7 @@
             <times/>
             <ci> p_EC4213 </ci>
             <ci> rel0 </ci>
-            <cn> 1.5 </cn>
+            <cn type="integer"> 89 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -2716,7 +2695,7 @@
             <times/>
             <ci> p_EC6215 </ci>
             <ci> rel0 </ci>
-            <cn type="integer"> 50 </cn>
+            <cn type="integer"> 28 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -2892,7 +2871,7 @@
             <times/>
             <ci> p_EC6412 </ci>
             <ci> rel0 </ci>
-            <cn> 2.5 </cn>
+            <cn> 4.5 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3018,17 +2997,6 @@
           </apply>
         </math>
       </initialAssignment>
-      <initialAssignment symbol="EC341123">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_EC341123 </ci>
-            <ci> rel0 </ci>
-            <cn type="integer"> 4 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
       <initialAssignment symbol="EC6323">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
@@ -3080,6 +3048,28 @@
             <ci> p_EC63413 </ci>
             <ci> rel0 </ci>
             <cn type="integer"> 4 </cn>
+            <ci> dilution_factor </ci>
+          </apply>
+        </math>
+      </initialAssignment>
+      <initialAssignment symbol="EC1442">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> p_EC1442 </ci>
+            <ci> rel0 </ci>
+            <cn type="integer"> 13 </cn>
+            <ci> dilution_factor </ci>
+          </apply>
+        </math>
+      </initialAssignment>
+      <initialAssignment symbol="EC341123">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> p_EC341123 </ci>
+            <ci> rel0 </ci>
+            <cn> 5.5 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3239,7 +3229,7 @@
           <apply>
             <times/>
             <ci> v16 </ci>
-            <cn type="integer"> 0 </cn>
+            <cn> 0.01 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3329,7 +3319,7 @@
           <apply>
             <times/>
             <ci> v25 </ci>
-            <cn type="integer"> 0 </cn>
+            <cn> 0.01 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3399,7 +3389,7 @@
           <apply>
             <times/>
             <ci> v32 </ci>
-            <cn type="integer"> 0 </cn>
+            <cn> 0.01 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3669,7 +3659,7 @@
           <apply>
             <times/>
             <ci> v59 </ci>
-            <cn type="integer"> 0 </cn>
+            <cn> 0.01 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3779,7 +3769,7 @@
           <apply>
             <times/>
             <ci> v70 </ci>
-            <cn type="integer"> 0 </cn>
+            <cn> 0.01 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4349,7 +4339,7 @@
           <apply>
             <times/>
             <ci> v127 </ci>
-            <cn type="integer"> 0 </cn>
+            <cn> 0.01 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4579,7 +4569,7 @@
           <apply>
             <times/>
             <ci> v150 </ci>
-            <cn type="integer"> 0 </cn>
+            <cn> 0.01 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4589,7 +4579,7 @@
           <apply>
             <times/>
             <ci> v151 </ci>
-            <cn type="integer"> 0 </cn>
+            <cn> 0.01 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -5084,127 +5074,6 @@
           </apply>
         </math>
       </initialAssignment>
-      <initialAssignment symbol="ECNAN0001">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_ECNAN0001 </ci>
-            <ci> rel0 </ci>
-            <cn> 96.5 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="ECNAN0002">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_ECNAN0002 </ci>
-            <ci> rel0 </ci>
-            <cn type="integer"> 54 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="EC54211">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_EC54211 </ci>
-            <ci> rel0 </ci>
-            <cn> 23.5 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="EC23316">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_EC23316 </ci>
-            <ci> rel0 </ci>
-            <cn> 29.5 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="ECNAN0003">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_ECNAN0003 </ci>
-            <ci> rel0 </ci>
-            <cn> 47.5 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="ECNAN0004">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_ECNAN0004 </ci>
-            <ci> rel0 </ci>
-            <cn type="integer"> 20 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="ECNAN0005">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_ECNAN0005 </ci>
-            <ci> rel0 </ci>
-            <cn> 12.5 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="ECNAN0006">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_ECNAN0006 </ci>
-            <ci> rel0 </ci>
-            <cn> 18.5 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="ECNAN0007">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_ECNAN0007 </ci>
-            <ci> rel0 </ci>
-            <cn> 18.5 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="ECNAN0008">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_ECNAN0008 </ci>
-            <ci> rel0 </ci>
-            <cn> 1.5 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="ECNAN0009">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> p_ECNAN0009 </ci>
-            <ci> rel0 </ci>
-            <cn> 6.5 </cn>
-            <ci> dilution_factor </ci>
-          </apply>
-        </math>
-      </initialAssignment>
       <initialAssignment symbol="C00988">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
@@ -5667,9 +5536,9 @@
           <speciesReference species="C00085" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00199"/>
           <modifierSpeciesReference species="C00345"/>
+          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00117"/>
         </listOfModifiers>
         <kineticLaw>
@@ -5853,9 +5722,9 @@
           <speciesReference species="C05345" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00199"/>
           <modifierSpeciesReference species="C00345"/>
+          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00117"/>
         </listOfModifiers>
         <kineticLaw>
@@ -6039,9 +5908,9 @@
           <speciesReference species="C05345" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00199"/>
           <modifierSpeciesReference species="C00345"/>
+          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00117"/>
         </listOfModifiers>
         <kineticLaw>
@@ -6225,9 +6094,9 @@
           <speciesReference species="C01172" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00199"/>
           <modifierSpeciesReference species="C00345"/>
+          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00117"/>
         </listOfModifiers>
         <kineticLaw>
@@ -6413,13 +6282,13 @@
           <speciesReference species="C00354" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00631"/>
-          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C00009"/>
+          <modifierSpeciesReference species="C00631"/>
           <modifierSpeciesReference species="C00236"/>
-          <modifierSpeciesReference species="C00197"/>
+          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00044"/>
+          <modifierSpeciesReference species="C00197"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -6847,13 +6716,13 @@
           <speciesReference species="C05378" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00631"/>
-          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C00009"/>
+          <modifierSpeciesReference species="C00631"/>
           <modifierSpeciesReference species="C00236"/>
-          <modifierSpeciesReference species="C00197"/>
+          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00044"/>
+          <modifierSpeciesReference species="C00197"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -7281,15 +7150,15 @@
           <speciesReference species="C00354" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00631"/>
-          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C00009"/>
-          <modifierSpeciesReference species="C00236"/>
-          <modifierSpeciesReference species="C00197"/>
+          <modifierSpeciesReference species="C00631"/>
           <modifierSpeciesReference species="C00002"/>
+          <modifierSpeciesReference species="C00236"/>
+          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00008"/>
           <modifierSpeciesReference species="C00044"/>
+          <modifierSpeciesReference species="C00197"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -7717,15 +7586,15 @@
           <speciesReference species="C00354" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00631"/>
-          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C00009"/>
-          <modifierSpeciesReference species="C00236"/>
-          <modifierSpeciesReference species="C00197"/>
+          <modifierSpeciesReference species="C00631"/>
           <modifierSpeciesReference species="C00002"/>
+          <modifierSpeciesReference species="C00236"/>
+          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00008"/>
           <modifierSpeciesReference species="C00044"/>
+          <modifierSpeciesReference species="C00197"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -8153,15 +8022,15 @@
           <speciesReference species="C00354" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00631"/>
-          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C00009"/>
-          <modifierSpeciesReference species="C00236"/>
-          <modifierSpeciesReference species="C00197"/>
+          <modifierSpeciesReference species="C00631"/>
           <modifierSpeciesReference species="C00002"/>
+          <modifierSpeciesReference species="C00236"/>
+          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00008"/>
           <modifierSpeciesReference species="C00044"/>
+          <modifierSpeciesReference species="C00197"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -8589,13 +8458,13 @@
           <speciesReference species="C00447" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00631"/>
-          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C00009"/>
+          <modifierSpeciesReference species="C00631"/>
           <modifierSpeciesReference species="C00236"/>
-          <modifierSpeciesReference species="C00197"/>
+          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00044"/>
+          <modifierSpeciesReference species="C00197"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -9023,13 +8892,13 @@
           <speciesReference species="C03785" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00631"/>
-          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C00009"/>
+          <modifierSpeciesReference species="C00631"/>
           <modifierSpeciesReference species="C00236"/>
-          <modifierSpeciesReference species="C00197"/>
+          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00044"/>
+          <modifierSpeciesReference species="C00197"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -9457,15 +9326,15 @@
           <speciesReference species="C03785" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00631"/>
-          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C00009"/>
-          <modifierSpeciesReference species="C00236"/>
-          <modifierSpeciesReference species="C00197"/>
+          <modifierSpeciesReference species="C00631"/>
           <modifierSpeciesReference species="C00002"/>
+          <modifierSpeciesReference species="C00236"/>
+          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00008"/>
           <modifierSpeciesReference species="C00044"/>
+          <modifierSpeciesReference species="C00197"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -9893,15 +9762,15 @@
           <speciesReference species="C03785" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00631"/>
-          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C00009"/>
-          <modifierSpeciesReference species="C00236"/>
-          <modifierSpeciesReference species="C00197"/>
+          <modifierSpeciesReference species="C00631"/>
           <modifierSpeciesReference species="C00002"/>
+          <modifierSpeciesReference species="C00236"/>
+          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00008"/>
           <modifierSpeciesReference species="C00044"/>
+          <modifierSpeciesReference species="C00197"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -10329,15 +10198,15 @@
           <speciesReference species="C03785" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00631"/>
-          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C00009"/>
-          <modifierSpeciesReference species="C00236"/>
-          <modifierSpeciesReference species="C00197"/>
+          <modifierSpeciesReference species="C00631"/>
           <modifierSpeciesReference species="C00002"/>
+          <modifierSpeciesReference species="C00236"/>
+          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00008"/>
           <modifierSpeciesReference species="C00044"/>
+          <modifierSpeciesReference species="C00197"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -10765,12 +10634,12 @@
           <speciesReference species="C00085" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00074"/>
-          <modifierSpeciesReference species="C00020"/>
           <modifierSpeciesReference species="C01172"/>
-          <modifierSpeciesReference species="C00002"/>
-          <modifierSpeciesReference species="C00008"/>
           <modifierSpeciesReference species="C00097"/>
+          <modifierSpeciesReference species="C00002"/>
+          <modifierSpeciesReference species="C00020"/>
+          <modifierSpeciesReference species="C00074"/>
+          <modifierSpeciesReference species="C00008"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -11285,12 +11154,12 @@
           <speciesReference species="C05345" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00074"/>
-          <modifierSpeciesReference species="C00020"/>
           <modifierSpeciesReference species="C01172"/>
-          <modifierSpeciesReference species="C00002"/>
-          <modifierSpeciesReference species="C00008"/>
           <modifierSpeciesReference species="C00097"/>
+          <modifierSpeciesReference species="C00002"/>
+          <modifierSpeciesReference species="C00020"/>
+          <modifierSpeciesReference species="C00074"/>
+          <modifierSpeciesReference species="C00008"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -11805,12 +11674,12 @@
           <speciesReference species="C05382" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00074"/>
-          <modifierSpeciesReference species="C00020"/>
           <modifierSpeciesReference species="C01172"/>
-          <modifierSpeciesReference species="C00002"/>
-          <modifierSpeciesReference species="C00008"/>
           <modifierSpeciesReference species="C00097"/>
+          <modifierSpeciesReference species="C00002"/>
+          <modifierSpeciesReference species="C00020"/>
+          <modifierSpeciesReference species="C00074"/>
+          <modifierSpeciesReference species="C00008"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -12324,8 +12193,8 @@
           <speciesReference species="C00118" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00345"/>
+          <modifierSpeciesReference species="C00074"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -12529,8 +12398,8 @@
           <speciesReference species="C00118" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00345"/>
+          <modifierSpeciesReference species="C00074"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -12734,8 +12603,8 @@
           <speciesReference species="C00279" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00345"/>
+          <modifierSpeciesReference species="C00074"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -12939,8 +12808,8 @@
           <speciesReference species="C00577" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00345"/>
+          <modifierSpeciesReference species="C00074"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -13143,14 +13012,14 @@
           <speciesReference species="C00111" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00631"/>
-          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C01172"/>
-          <modifierSpeciesReference species="C00197"/>
-          <modifierSpeciesReference species="C00042"/>
-          <modifierSpeciesReference species="C00002"/>
           <modifierSpeciesReference species="C05345"/>
+          <modifierSpeciesReference species="C00631"/>
+          <modifierSpeciesReference species="C00002"/>
+          <modifierSpeciesReference species="C00074"/>
+          <modifierSpeciesReference species="C00042"/>
+          <modifierSpeciesReference species="C00197"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -14348,9 +14217,9 @@
           <speciesReference species="C00074" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00036"/>
           <modifierSpeciesReference species="C00026"/>
           <modifierSpeciesReference species="C00008"/>
+          <modifierSpeciesReference species="C00036"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -14713,10 +14582,10 @@
           <speciesReference species="C00074" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00122"/>
           <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C00091"/>
           <modifierSpeciesReference species="C00009"/>
+          <modifierSpeciesReference species="C00122"/>
           <modifierSpeciesReference species="C00026"/>
           <modifierSpeciesReference species="C00044"/>
         </listOfModifiers>
@@ -15262,12 +15131,12 @@
           <speciesReference species="C00074" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00122"/>
           <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C00091"/>
           <modifierSpeciesReference species="C00009"/>
-          <modifierSpeciesReference species="C00026"/>
+          <modifierSpeciesReference species="C00122"/>
           <modifierSpeciesReference species="C00002"/>
+          <modifierSpeciesReference species="C00026"/>
           <modifierSpeciesReference species="C00008"/>
         </listOfModifiers>
         <kineticLaw>
@@ -15812,12 +15681,12 @@
           <speciesReference species="C00112" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00122"/>
           <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C00091"/>
           <modifierSpeciesReference species="C00009"/>
-          <modifierSpeciesReference species="C00026"/>
+          <modifierSpeciesReference species="C00122"/>
           <modifierSpeciesReference species="C00002"/>
+          <modifierSpeciesReference species="C00026"/>
           <modifierSpeciesReference species="C00008"/>
           <modifierSpeciesReference species="C00044"/>
         </listOfModifiers>
@@ -16363,12 +16232,12 @@
           <speciesReference species="C00074" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00122"/>
           <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C00091"/>
           <modifierSpeciesReference species="C00009"/>
-          <modifierSpeciesReference species="C00026"/>
+          <modifierSpeciesReference species="C00122"/>
           <modifierSpeciesReference species="C00002"/>
+          <modifierSpeciesReference species="C00026"/>
           <modifierSpeciesReference species="C00008"/>
           <modifierSpeciesReference species="C00044"/>
         </listOfModifiers>
@@ -16914,12 +16783,12 @@
           <speciesReference species="C00104" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00122"/>
           <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C00091"/>
           <modifierSpeciesReference species="C00009"/>
-          <modifierSpeciesReference species="C00026"/>
+          <modifierSpeciesReference species="C00122"/>
           <modifierSpeciesReference species="C00002"/>
+          <modifierSpeciesReference species="C00026"/>
           <modifierSpeciesReference species="C00008"/>
           <modifierSpeciesReference species="C00044"/>
         </listOfModifiers>
@@ -17465,12 +17334,12 @@
           <speciesReference species="C00206" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00122"/>
           <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C00091"/>
           <modifierSpeciesReference species="C00009"/>
-          <modifierSpeciesReference species="C00026"/>
+          <modifierSpeciesReference species="C00122"/>
           <modifierSpeciesReference species="C00002"/>
+          <modifierSpeciesReference species="C00026"/>
           <modifierSpeciesReference species="C00008"/>
           <modifierSpeciesReference species="C00044"/>
         </listOfModifiers>
@@ -18016,12 +17885,12 @@
           <speciesReference species="C00361" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00122"/>
           <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C00091"/>
           <modifierSpeciesReference species="C00009"/>
-          <modifierSpeciesReference species="C00026"/>
+          <modifierSpeciesReference species="C00122"/>
           <modifierSpeciesReference species="C00002"/>
+          <modifierSpeciesReference species="C00026"/>
           <modifierSpeciesReference species="C00008"/>
           <modifierSpeciesReference species="C00044"/>
         </listOfModifiers>
@@ -18567,12 +18436,12 @@
           <speciesReference species="C00454" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00122"/>
           <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C00091"/>
           <modifierSpeciesReference species="C00009"/>
-          <modifierSpeciesReference species="C00026"/>
+          <modifierSpeciesReference species="C00122"/>
           <modifierSpeciesReference species="C00002"/>
+          <modifierSpeciesReference species="C00026"/>
           <modifierSpeciesReference species="C00008"/>
           <modifierSpeciesReference species="C00044"/>
         </listOfModifiers>
@@ -19119,8 +18988,8 @@
         </listOfProducts>
         <listOfModifiers>
           <modifierSpeciesReference species="C00004"/>
-          <modifierSpeciesReference species="C00024"/>
           <modifierSpeciesReference species="C00109"/>
+          <modifierSpeciesReference species="C00024"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -19433,8 +19302,8 @@
         </listOfProducts>
         <listOfModifiers>
           <modifierSpeciesReference species="C00004"/>
-          <modifierSpeciesReference species="C00024"/>
           <modifierSpeciesReference species="C00109"/>
+          <modifierSpeciesReference species="C00024"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -20095,9 +19964,9 @@
         </listOfProducts>
         <listOfModifiers>
           <modifierSpeciesReference species="C00004"/>
+          <modifierSpeciesReference species="C00109"/>
           <modifierSpeciesReference species="C00024"/>
           <modifierSpeciesReference species="C00022"/>
-          <modifierSpeciesReference species="C00109"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -22277,9 +22146,9 @@
           <speciesReference species="C00080" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00024"/>
           <modifierSpeciesReference species="C00010"/>
           <modifierSpeciesReference species="C00002"/>
+          <modifierSpeciesReference species="C00024"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -31186,8 +31055,8 @@
           <speciesReference species="C04419" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00010"/>
           <modifierSpeciesReference species="C00083"/>
+          <modifierSpeciesReference species="C00010"/>
           <modifierSpeciesReference species="C00091"/>
         </listOfModifiers>
         <kineticLaw>
@@ -31758,8 +31627,8 @@
           <speciesReference species="C00092" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00024"/>
           <modifierSpeciesReference species="C00010"/>
+          <modifierSpeciesReference species="C00024"/>
           <modifierSpeciesReference species="C00044"/>
         </listOfModifiers>
         <kineticLaw>
@@ -32059,8 +31928,8 @@
           <speciesReference species="C00668" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00024"/>
           <modifierSpeciesReference species="C00010"/>
+          <modifierSpeciesReference species="C00024"/>
           <modifierSpeciesReference species="C00044"/>
         </listOfModifiers>
         <kineticLaw>
@@ -32360,8 +32229,8 @@
           <speciesReference species="C00117" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00024"/>
           <modifierSpeciesReference species="C00010"/>
+          <modifierSpeciesReference species="C00024"/>
           <modifierSpeciesReference species="C00044"/>
         </listOfModifiers>
         <kineticLaw>
@@ -32661,8 +32530,8 @@
           <speciesReference species="C03735" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00024"/>
           <modifierSpeciesReference species="C00010"/>
+          <modifierSpeciesReference species="C00024"/>
           <modifierSpeciesReference species="C00044"/>
         </listOfModifiers>
         <kineticLaw>
