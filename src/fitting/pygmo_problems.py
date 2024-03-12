@@ -330,11 +330,10 @@ class SBMLGlobalFit_Multi:
                         # r2.removeInitialAssignment(label) theres some bug here? it seems to also mess up with over valuesS
                         r2.setValue('['+label+']', value)
             try:
-                with timeout(seconds=2):
-                    results[sample] = r2.simulate(0,self.metadata['timepoints'][sample][-1],self.cvode_timepoints)[:,1:].__array__()
+                results[sample] = r2.simulate(0,self.metadata['timepoints'][sample][-1],self.cvode_timepoints)[:,1:].__array__()
             except Exception as e:
                 print(e)
-                break # stop if any fail
+                # break # stop if any fail
         return results
                 
     def _residual(self,results,data,sample):
