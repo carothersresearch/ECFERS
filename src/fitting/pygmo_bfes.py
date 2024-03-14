@@ -1,63 +1,42 @@
 import pygmo as pg
+from src.fitting.pygmo_problems import *
 
-def get_partition(n_items: int, rank: int, size: int)-> tuple[int, int]: 
-    """
-    Compute the partition
-
-    Returns (start, end) of partition
-    """
-    chunk_size = n_items // size
-    if n_items % size:
-        chunk_size += 1
-    start = rank * chunk_size
-    if rank + 1 == size:
-        end = n_items
-    else:
-        end = start + chunk_size
-    return (start, end)
-
-def _ipy_bfe_func(dv_file_path, prob, rank, size):
+def _ipy_bfe_func(all_dvs, prob):
     # The function that will be invoked
     # by the individual processes/nodes of mp/ipy bfe.
     import pickle
 
-    # read the dvs from file
-    with open(dv_file_path, 'rb') as file:
-        all_dvs = pickle.loads(file.read())
-    
-    # pick dvs based on engine rank
-    n_items = all_dvs.shape[0]
-    start, end = get_partition(n_items, rank, size)
-    dvs = all_dvs[start:end,:]
-
-    return pickle.dumps(list(map(prob.fitness, dvs)))
+    n_items = len(all_dvs.shape)
+    if n_items > 1:
+        fs = list(map(prob.fitness, all_dvs))
+    else:
+        fs = prob.fitness(all_dvs)
+    return pickle.dumps(fs)
 
 class pickleless_bfe(pg.ipyparallel_bfe):
-    def __init__(self, client_kwargs, view_kwargs, temp_dv_path, prob):
+    def __init__(self, client_kwargs, view_kwargs, prob):
         self.client_kwargs = client_kwargs
         self.view_kwargs = view_kwargs
-        self.temp_dv_path = temp_dv_path
-        self.client_size = None
         self.prob = prob
         super().__init__()
 
     def init_view(self,client_args=[], client_kwargs={}, view_args=[], view_kwargs={}):
+        self.client_kwargs = client_kwargs
+        self.view_kwargs = view_kwargs
         with pg.ipyparallel_bfe._view_lock:
             if pg.ipyparallel_bfe._view is None:
                 # Create the new view.
-                from ipyparallel import Client
-                rc = Client(*client_args, **client_kwargs)
-                self.client_size = len(rc.ids)
+                from ipyparallel import Client, Reference
+                rc = Client(*client_args, **self.client_kwargs)
                 rc[:].use_cloudpickle()
-                pg.ipyparallel_bfe._view = rc.broadcast_view(*view_args, **view_kwargs)
-                pg.ipyparallel_bfe._view.scatter("rank", rc.ids, flatten=True)
-                pg.ipyparallel_bfe._view.push({"prob": self.prob}, block = True) # does this not work?
+                pg.ipyparallel_bfe._view = rc.broadcast_view(*view_args, **self.view_kwargs)
+                pg.ipyparallel_bfe._view.push({"prob": self.prob}, block = True)
+                pg.ipyparallel_bfe._view.apply_sync(lambda x: x.extract(SBMLGlobalFit_Multi_Fly)._setup_rr(), Reference("prob"))
 
     def __call__(self, prob, dvs):
         import ipyparallel as ipp
         import pickle
         import numpy as np
-        from itertools import chain
 
         # Fetch the dimension and the fitness
         # dimension of the problem.
@@ -72,20 +51,18 @@ class pickleless_bfe(pg.ipyparallel_bfe):
         # each.
         dvs.shape = (ndvs, ndim)
 
-        # Save dvs in a binary file
-        with open(self.temp_dv_path+'/dvs.b', 'wb') as file:
-            file.write(pickle.dumps(dvs))
+        pg.ipyparallel_bfe._view.scatter("all_dvs", dvs, block = True)
 
         with pg.ipyparallel_bfe._view_lock:
             if pg.ipyparallel_bfe._view is None:
                 pg.ipyparallel_bfe._view = self.init_view(self.client_kwargs, self.view_kwargs)
 
-            ar = pg.ipyparallel_bfe._view.apply(_ipy_bfe_func, self.temp_dv_path+'/dvs.b', ipp.Reference("prob"), ipp.Reference("rank"), self.client_size)
+            ar = pg.ipyparallel_bfe._view.apply(_ipy_bfe_func, ipp.Reference("all_dvs"), ipp.Reference("prob"))
             ret = ipp.AsyncMapResult(pg.ipyparallel_bfe._view.client, ar._children, ipp.client.map.Map())
             
         # Build the vector of fitness vectors as a 2D numpy array.
-        fvs = np.array([pickle.loads(fv) for fv in ret.get()])
+        fvs = np.array(sum([pickle.loads(fv) for fv in ret.get()],[]))
         # Reshape it so that it is 1D.
-        # fvs.shape = (ndvs*nf,)
+        fvs.shape = (ndvs*nf,)
 
         return fvs
