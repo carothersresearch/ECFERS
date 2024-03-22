@@ -1,22 +1,52 @@
 import pygmo as pg
 from src.fitting.pygmo_problems import *
+from src.fitting.fastnumpyio import save, load
 
-def _ipy_bfe_func(all_dvs, prob):
+def get_partition(n_items: int, rank: int, size: int)-> tuple[int, int]: 
+    """
+    Compute the partition
+
+    Returns (start, end) of partition
+    """
+    chunk_size = n_items // size
+    if n_items % size:
+        chunk_size += 1
+    start = rank * chunk_size
+    if rank + 1 == size:
+        end = n_items
+    else:
+        end = start + chunk_size
+    return (start, end)
+
+def _ipy_bfe_func(dv_path, prob, rank, size):
     # The function that will be invoked
     # by the individual processes/nodes of mp/ipy bfe.
     import pickle
 
-    n_items = len(all_dvs.shape)
-    if n_items > 1:
-        fs = list(map(prob.fitness, all_dvs))
-    else:
-        fs = prob.fitness(all_dvs)
-    return pickle.dumps(fs)
+    all_dvs = load(dv_path)
+
+    # pick dvs based on engine rank
+    n_items = all_dvs.shape[0]
+    start, end = get_partition(n_items, rank, size)
+    dvs = all_dvs[start:end,:]
+
+    return pickle.dumps(list(map(prob.fitness, dvs)))
+
+def _ipy_bfe_func2(dv_path, prob, rank):
+    # The function that will be invoked
+    # by the individual processes/nodes of mp/ipy bfe.
+    import pickle
+
+    dvs = load(dv_path+'/dvs_'+str(rank)+'.b')
+
+    return pickle.dumps(list(map(prob.fitness, dvs)))
 
 class pickleless_bfe(pg.ipyparallel_bfe):
-    def __init__(self, client_kwargs, view_kwargs, prob):
+    def __init__(self, client_kwargs, view_kwargs, temp_dv_path, prob):
         self.client_kwargs = client_kwargs
         self.view_kwargs = view_kwargs
+        self.temp_dv_path = temp_dv_path
+        self.client_size = None
         self.prob = prob
         super().__init__()
 
@@ -30,6 +60,9 @@ class pickleless_bfe(pg.ipyparallel_bfe):
                 rc = Client(*client_args, **self.client_kwargs)
                 rc[:].use_cloudpickle()
                 pg.ipyparallel_bfe._view = rc.broadcast_view(*view_args, **self.view_kwargs)
+                pg.ipyparallel_bfe._view.is_coalescing = True
+                self.client_size = len(rc.ids)
+                pg.ipyparallel_bfe._view.scatter("rank", rc.ids, flatten=True)
                 pg.ipyparallel_bfe._view.push({"prob": self.prob}, block = True)
                 pg.ipyparallel_bfe._view.apply_sync(lambda x: x.extract(SBMLGlobalFit_Multi_Fly)._setup_rr(), Reference("prob"))
 
@@ -51,13 +84,15 @@ class pickleless_bfe(pg.ipyparallel_bfe):
         # each.
         dvs.shape = (ndvs, ndim)
 
-        pg.ipyparallel_bfe._view.scatter("all_dvs", dvs, block = True)
+        # Save dvs in a binary file
+        for i in range(self.client_size):
+            # pick dvs based on engine rank
+            start, end = get_partition(ndvs, i, self.client_size)
+            save(self.temp_dv_path+'/dvs_'+str(i)+'.b', dvs[start:end,:])
 
         with pg.ipyparallel_bfe._view_lock:
-            if pg.ipyparallel_bfe._view is None:
-                pg.ipyparallel_bfe._view = self.init_view(self.client_kwargs, self.view_kwargs)
 
-            ar = pg.ipyparallel_bfe._view.apply(_ipy_bfe_func, ipp.Reference("all_dvs"), ipp.Reference("prob"))
+            ar = pg.ipyparallel_bfe._view.apply(_ipy_bfe_func2, self.temp_dv_path, ipp.Reference("prob"), ipp.Reference("rank"))
             ret = ipp.AsyncMapResult(pg.ipyparallel_bfe._view.client, ar._children, ipp.client.map.Map())
             
         # Build the vector of fitness vectors as a 2D numpy array.

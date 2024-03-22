@@ -352,8 +352,8 @@ class SBMLGlobalFit_Multi:
     
     def _unscale(self, x):
         unscaled = self.lowerb + (self.upperb - self.lowerb) * x
-        unscaled[unscaled<0] = self.lowerb[unscaled<0]
-        unscaled[unscaled>1] = self.lowerb[unscaled>1]
+        # unscaled[unscaled<0] = self.lowerb[unscaled<0]
+        # unscaled[unscaled>1] = self.lowerb[unscaled>1]
         return unscaled
     
     def _scale(self, x):
@@ -473,8 +473,8 @@ class SBMLGlobalFit_Multi_Fly:
     
     def _unscale(self, x):
         unscaled = self.lowerb + (self.upperb - self.lowerb) * x
-        unscaled[unscaled<0] = self.lowerb[unscaled<0]
-        unscaled[unscaled>1] = self.lowerb[unscaled>1]
+        # unscaled[unscaled<0] = self.lowerb[unscaled<0]
+        # unscaled[unscaled>1] = self.lowerb[unscaled>1]
         return unscaled
     
     def _scale(self, x):
