@@ -797,7 +797,6 @@
       <parameter id="Ki_C13199_R14" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00009_R15" value="0.320538223" constant="true"/>
       <parameter id="Km_C00085_R15" value="0.137154579" constant="true"/>
-      <parameter id="Km_C00001_R15" value="0.495092779" constant="true"/>
       <parameter id="Km_C00354_R15" value="0.035" constant="true"/>
       <parameter id="Kcat_F_R15" value="1.4600096685" constant="true"/>
       <parameter id="Kcat_R_R15" value="0.289105657" constant="true"/>
@@ -817,7 +816,6 @@
       <parameter id="Ki_C20679_R15" value="0.130976006388664" constant="true"/>
       <parameter id="Km_C00009_R16" value="0.320538223" constant="true"/>
       <parameter id="Km_C05345_R16" value="0.137154579" constant="true"/>
-      <parameter id="Km_C00001_R16" value="0.495092779" constant="true"/>
       <parameter id="Km_C05378_R16" value="0.002" constant="true"/>
       <parameter id="Kcat_F_R16" value="1.4600096685" constant="true"/>
       <parameter id="Kcat_R_R16" value="0.289105657" constant="true"/>
@@ -837,7 +835,6 @@
       <parameter id="Ki_C20679_R16" value="0.130976006388664" constant="true"/>
       <parameter id="Km_C00009_R17" value="0.320538223" constant="true"/>
       <parameter id="Km_C05382_R17" value="0.01538996" constant="true"/>
-      <parameter id="Km_C00001_R17" value="0.495092779" constant="true"/>
       <parameter id="Km_C00447_R17" value="0.011786909" constant="true"/>
       <parameter id="Kcat_F_R17" value="1.859233876" constant="true"/>
       <parameter id="Kcat_R_R17" value="0.5713370975" constant="true"/>
@@ -916,7 +913,6 @@
       <parameter id="Kcat_F_R23" value="46.06537572" constant="true"/>
       <parameter id="Kcat_R_R23" value="21.028835975" constant="true"/>
       <parameter id="Ki_C00002_R23" value="0.0990124642848968" constant="true"/>
-      <parameter id="Km_C00001_R24" value="5.651566505" constant="true"/>
       <parameter id="Km_C00074_R24" value="0.453958184" constant="true"/>
       <parameter id="Km_C00631_R24" value="0.84220314" constant="true"/>
       <parameter id="Kcat_F_R24" value="9.247853892" constant="true"/>
@@ -928,7 +924,6 @@
       <parameter id="Ki_C00742_R24" value="13.9371461868286" constant="true"/>
       <parameter id="Ki_C00988_R24" value="0.734626114368439" constant="true"/>
       <parameter id="Ki_C16487_R24" value="2.51391634996029" constant="true"/>
-      <parameter id="Km_C00001_R25" value="5.651566505" constant="true"/>
       <parameter id="Km_C04309_R25" value="0.453891814" constant="true"/>
       <parameter id="Km_C03356_R25" value="0.439569116" constant="true"/>
       <parameter id="Kcat_F_R25" value="4.081638296" constant="true"/>
@@ -943,7 +938,6 @@
       <parameter id="Km_C00009_R26" value="1.4596771" constant="true"/>
       <parameter id="Km_C00020_R26" value="0.023508446" constant="true"/>
       <parameter id="Km_C00074_R26" value="0.141774222" constant="true"/>
-      <parameter id="Km_C00001_R26" value="0.2813887" constant="true"/>
       <parameter id="Km_C00002_R26" value="0.021786314" constant="true"/>
       <parameter id="Km_C00022_R26" value="0.083" constant="true"/>
       <parameter id="Kcat_F_R26" value="4.47077620566667" constant="true"/>
@@ -1140,7 +1134,7 @@
       <parameter id="Km_C00011_R44" value="0.413209707" constant="true"/>
       <parameter id="Km_C05125_R44" value="0.008422038" constant="true"/>
       <parameter id="Km_C00022_R44" value="0.38795" constant="true"/>
-      <parameter id="Km_C00068_R44" value="0.00158" constant="true"/>
+      <parameter id="Km_C00068_R44" value="0.01158" constant="true"/>
       <parameter id="Kcat_F_R44" value="20.805219948" constant="true"/>
       <parameter id="Kcat_R_R44" value="3.9121252725" constant="true"/>
       <parameter id="Ki_C00004_R44" value="0.02965634688735" constant="true"/>
@@ -1153,7 +1147,6 @@
       <parameter id="Km_C00004_R45" value="0.029656347" constant="true"/>
       <parameter id="Km_C00011_R45" value="0.413209707" constant="true"/>
       <parameter id="Km_C00024_R45" value="0.036603667" constant="true"/>
-      <parameter id="Km_C00080_R45" value="0.307893664" constant="true"/>
       <parameter id="Km_C00003_R45" value="0.064532936" constant="true"/>
       <parameter id="Km_C00010_R45" value="0.040530939" constant="true"/>
       <parameter id="Km_C00022_R45" value="0.38795" constant="true"/>
@@ -1166,7 +1159,7 @@
       <parameter id="Ki_C00109_R45" value="0.309865117073059" constant="true"/>
       <parameter id="Ki_C00168_R45" value="0.26067179441452" constant="true"/>
       <parameter id="Ki_C00712_R45" value="0.0425865836441516" constant="true"/>
-      <parameter id="Km_C00068_R46" value="0.00158" constant="true"/>
+      <parameter id="Km_C00068_R46" value="0.01158" constant="true"/>
       <parameter id="Km_C16255_R46" value="0.302165031" constant="true"/>
       <parameter id="Km_C05125_R46" value="0.008422038" constant="true"/>
       <parameter id="Km_C15972_R46" value="0.014058916" constant="true"/>
@@ -1183,12 +1176,10 @@
       <parameter id="Km_C00158_R47" value="1.662616611" constant="true"/>
       <parameter id="Kcat_F_R47" value="6.538237947" constant="true"/>
       <parameter id="Kcat_R_R47" value="5.557925254" constant="true"/>
-      <parameter id="Km_C00001_R48" value="2.687092781" constant="true"/>
       <parameter id="Km_C00417_R48" value="0.037" constant="true"/>
       <parameter id="Km_C00158_R48" value="1.662616611" constant="true"/>
       <parameter id="Kcat_F_R48" value="6.538237947" constant="true"/>
       <parameter id="Kcat_R_R48" value="34.6181535445" constant="true"/>
-      <parameter id="Km_C00001_R49" value="2.687092781" constant="true"/>
       <parameter id="Km_C00417_R49" value="0.037" constant="true"/>
       <parameter id="Km_C00311_R49" value="0.339520901" constant="true"/>
       <parameter id="Kcat_F_R49" value="5.557925254" constant="true"/>
@@ -1209,7 +1200,6 @@
       <parameter id="Ki_C00036_R54" value="0.114508405327797" constant="true"/>
       <parameter id="Km_C00004_R55" value="0.035209294" constant="true"/>
       <parameter id="Km_C00011_R55" value="0.496151149" constant="true"/>
-      <parameter id="Km_C00080_R55" value="0.608380556" constant="true"/>
       <parameter id="Km_C00527_R55" value="0.052975662" constant="true"/>
       <parameter id="Km_C00003_R55" value="0.127414092" constant="true"/>
       <parameter id="Km_C00010_R55" value="0.066362962" constant="true"/>
@@ -1233,7 +1223,6 @@
       <parameter id="Ki_C00036_R57" value="0.114508405327797" constant="true"/>
       <parameter id="Km_C00004_R58" value="0.035209294" constant="true"/>
       <parameter id="Km_C00011_R58" value="0.496151149" constant="true"/>
-      <parameter id="Km_C00080_R58" value="0.608380556" constant="true"/>
       <parameter id="Km_C00091_R58" value="0.053117804" constant="true"/>
       <parameter id="Km_C00003_R58" value="0.127414092" constant="true"/>
       <parameter id="Km_C00010_R58" value="0.066362962" constant="true"/>
@@ -1268,7 +1257,6 @@
       <parameter id="Ki_C00399_R63" value="0.0120034804567694" constant="true"/>
       <parameter id="Ki_C02575_R63" value="0.0184869691729545" constant="true"/>
       <parameter id="Ki_C04284_R63" value="0.0107848597690463" constant="true"/>
-      <parameter id="Km_C00001_R64" value="6.656438828" constant="true"/>
       <parameter id="Km_C00122_R64" value="0.910608768" constant="true"/>
       <parameter id="Km_C00149_R64" value="0.705444444444444" constant="true"/>
       <parameter id="Kcat_F_R64" value="1" constant="true"/>
@@ -1280,7 +1268,6 @@
       <parameter id="Ki_C20679_R64" value="1.3221447467804" constant="true"/>
       <parameter id="Km_C00004_R65" value="0.061" constant="true"/>
       <parameter id="Km_C00036_R65" value="0.0445" constant="true"/>
-      <parameter id="Km_C00080_R65" value="1.627506971" constant="true"/>
       <parameter id="Km_C00003_R65" value="0.105280019" constant="true"/>
       <parameter id="Km_C00149_R65" value="2.6" constant="true"/>
       <parameter id="Kcat_F_R65" value="3.007160006" constant="true"/>
@@ -1295,7 +1282,6 @@
       <parameter id="Ki_C11592_R65" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00005_R66" value="0.01731511" constant="true"/>
       <parameter id="Km_C00011_R66" value="0.468339205" constant="true"/>
-      <parameter id="Km_C00080_R66" value="1.165087342" constant="true"/>
       <parameter id="Km_C00199_R66" value="0.077537887" constant="true"/>
       <parameter id="Km_C00006_R66" value="0.049" constant="true"/>
       <parameter id="Km_C00345_R66" value="0.093" constant="true"/>
@@ -1377,14 +1363,12 @@
       <parameter id="Ki_C02426_R76" value="0.760540366172791" constant="true"/>
       <parameter id="Ki_C07182_R76" value="0.169961854815483" constant="true"/>
       <parameter id="Km_C00005_R77" value="0.01" constant="true"/>
-      <parameter id="Km_C00080_R77" value="1.980178118" constant="true"/>
       <parameter id="Km_C00685_R77" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00006_R77" value="0.064330414" constant="true"/>
       <parameter id="Km_C01271_R77" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_F_R77" value="0.049053546" constant="true"/>
       <parameter id="Kcat_R_R77" value="0.59" constant="true"/>
       <parameter id="Km_C00005_R78" value="0.01" constant="true"/>
-      <parameter id="Km_C00080_R78" value="1.980178118" constant="true"/>
       <parameter id="Km_C05744_R78" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00006_R78" value="0.064330414" constant="true"/>
       <parameter id="Km_C04618_R78" value="2.51391634996029" constant="true"/>
@@ -1397,35 +1381,30 @@
       <parameter id="Kcat_F_R79" value="0.049053546" constant="true"/>
       <parameter id="Kcat_R_R79" value="0.59" constant="true"/>
       <parameter id="Km_C00005_R80" value="0.01" constant="true"/>
-      <parameter id="Km_C00080_R80" value="1.980178118" constant="true"/>
       <parameter id="Km_C05750_R80" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00006_R80" value="0.064330414" constant="true"/>
       <parameter id="Km_C04620_R80" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_F_R80" value="0.049053546" constant="true"/>
       <parameter id="Kcat_R_R80" value="0.59" constant="true"/>
       <parameter id="Km_C00005_R81" value="0.01" constant="true"/>
-      <parameter id="Km_C00080_R81" value="1.980178118" constant="true"/>
       <parameter id="Km_C05762_R81" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00006_R81" value="0.064330414" constant="true"/>
       <parameter id="Km_C04633_R81" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_F_R81" value="0.049053546" constant="true"/>
       <parameter id="Kcat_R_R81" value="0.59" constant="true"/>
       <parameter id="Km_C00005_R82" value="0.01" constant="true"/>
-      <parameter id="Km_C00080_R82" value="1.980178118" constant="true"/>
       <parameter id="Km_C05759_R82" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00006_R82" value="0.064330414" constant="true"/>
       <parameter id="Km_C04688_R82" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_F_R82" value="0.049053546" constant="true"/>
       <parameter id="Kcat_R_R82" value="0.59" constant="true"/>
       <parameter id="Km_C00005_R83" value="0.01" constant="true"/>
-      <parameter id="Km_C00080_R83" value="1.980178118" constant="true"/>
       <parameter id="Km_C05746_R83" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00006_R83" value="0.064330414" constant="true"/>
       <parameter id="Km_C05747_R83" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_F_R83" value="0.049053546" constant="true"/>
       <parameter id="Kcat_R_R83" value="0.59" constant="true"/>
       <parameter id="Km_C00005_R84" value="0.01" constant="true"/>
-      <parameter id="Km_C00080_R84" value="1.980178118" constant="true"/>
       <parameter id="Km_C05756_R84" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00006_R84" value="0.064330414" constant="true"/>
       <parameter id="Km_C05757_R84" value="2.51391634996029" constant="true"/>
@@ -1434,61 +1413,52 @@
       <parameter id="Km_C00006_R85" value="0.064330414" constant="true"/>
       <parameter id="Km_C16220_R85" value="0.055316702" constant="true"/>
       <parameter id="Km_C00005_R85" value="0.01" constant="true"/>
-      <parameter id="Km_C00080_R85" value="1.980178118" constant="true"/>
       <parameter id="Km_C16219_R85" value="0.045529477" constant="true"/>
       <parameter id="Kcat_F_R85" value="0.329154582" constant="true"/>
       <parameter id="Kcat_R_R85" value="0.026386561" constant="true"/>
       <parameter id="Km_C00004_R86" value="0.01" constant="true"/>
-      <parameter id="Km_C00080_R86" value="2.896291494" constant="true"/>
       <parameter id="Km_C00693_R86" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00003_R86" value="0.076126106" constant="true"/>
       <parameter id="Km_C00173_R86" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_F_R86" value="1.488236809" constant="true"/>
       <parameter id="Kcat_R_R86" value="0.832269092" constant="true"/>
       <parameter id="Km_C00004_R87" value="0.01" constant="true"/>
-      <parameter id="Km_C00080_R87" value="2.896291494" constant="true"/>
       <parameter id="Km_C05758_R87" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00003_R87" value="0.076126106" constant="true"/>
       <parameter id="Km_C05223_R87" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_F_R87" value="1.488236809" constant="true"/>
       <parameter id="Kcat_R_R87" value="0.832269092" constant="true"/>
       <parameter id="Km_C00004_R88" value="0.01" constant="true"/>
-      <parameter id="Km_C00080_R88" value="2.896291494" constant="true"/>
       <parameter id="Km_C05748_R88" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00003_R88" value="0.076126106" constant="true"/>
       <parameter id="Km_C05749_R88" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_F_R88" value="1.488236809" constant="true"/>
       <parameter id="Kcat_R_R88" value="0.832269092" constant="true"/>
       <parameter id="Km_C00004_R89" value="0.01" constant="true"/>
-      <parameter id="Km_C00080_R89" value="2.896291494" constant="true"/>
       <parameter id="Km_C05751_R89" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00003_R89" value="0.076126106" constant="true"/>
       <parameter id="Km_C05752_R89" value="0.02" constant="true"/>
       <parameter id="Kcat_F_R89" value="1.488236809" constant="true"/>
       <parameter id="Kcat_R_R89" value="0.832269092" constant="true"/>
       <parameter id="Km_C00004_R90" value="0.01" constant="true"/>
-      <parameter id="Km_C00080_R90" value="2.896291494" constant="true"/>
       <parameter id="Km_C05754_R90" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00003_R90" value="0.076126106" constant="true"/>
       <parameter id="Km_C05755_R90" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_F_R90" value="1.488236809" constant="true"/>
       <parameter id="Kcat_R_R90" value="0.832269092" constant="true"/>
       <parameter id="Km_C00004_R91" value="0.01" constant="true"/>
-      <parameter id="Km_C00080_R91" value="2.896291494" constant="true"/>
       <parameter id="Km_C05760_R91" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00003_R91" value="0.076126106" constant="true"/>
       <parameter id="Km_C05761_R91" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_F_R91" value="1.488236809" constant="true"/>
       <parameter id="Kcat_R_R91" value="0.832269092" constant="true"/>
       <parameter id="Km_C00004_R92" value="0.01" constant="true"/>
-      <parameter id="Km_C00080_R92" value="2.896291494" constant="true"/>
       <parameter id="Km_C05763_R92" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00003_R92" value="0.076126106" constant="true"/>
       <parameter id="Km_C05764_R92" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_F_R92" value="1.488236809" constant="true"/>
       <parameter id="Kcat_R_R92" value="0.832269092" constant="true"/>
       <parameter id="Km_C00004_R93" value="0.01" constant="true"/>
-      <parameter id="Km_C00080_R93" value="2.896291494" constant="true"/>
       <parameter id="Km_C04246_R93" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00003_R93" value="0.076126106" constant="true"/>
       <parameter id="Km_C05745_R93" value="2.51391634996029" constant="true"/>
@@ -1785,7 +1755,6 @@
       <parameter id="Ki_C00120_R133" value="0.0673775225877761" constant="true"/>
       <parameter id="Ki_C01213_R133" value="0.0297006405889987" constant="true"/>
       <parameter id="Ki_C05682_R133" value="0.393312603235245" constant="true"/>
-      <parameter id="Km_C00001_R136" value="1.233488917" constant="true"/>
       <parameter id="Km_C05751_R136" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C04620_R136" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_F_R136" value="2.51391634996029" constant="true"/>
@@ -1850,21 +1819,18 @@
       <parameter id="Ki_C01231_R142" value="0.134398281574249" constant="true"/>
       <parameter id="Ki_C03444_R142" value="0.0576398856937885" constant="true"/>
       <parameter id="Km_C00004_R143" value="0.0213936530053615" constant="true"/>
-      <parameter id="Km_C00080_R143" value="0.22504885494709" constant="true"/>
       <parameter id="Km_C16237_R143" value="0.0637666806578636" constant="true"/>
       <parameter id="Km_C00003_R143" value="0.0897657573223114" constant="true"/>
       <parameter id="Km_C16832_R143" value="0.118229039013386" constant="true"/>
       <parameter id="Kcat_F_R143" value="82.215055564256" constant="true"/>
       <parameter id="Kcat_R_R143" value="162.925253545662" constant="true"/>
       <parameter id="Km_C00004_R144" value="0.0213936530053615" constant="true"/>
-      <parameter id="Km_C00080_R144" value="0.22504885494709" constant="true"/>
       <parameter id="Km_C02051_R144" value="2.51391634996029" constant="true"/>
       <parameter id="Km_C00003_R144" value="0.0897657573223114" constant="true"/>
       <parameter id="Km_C02972_R144" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_F_R144" value="117.916230435425" constant="true"/>
       <parameter id="Kcat_R_R144" value="278.580807218154" constant="true"/>
       <parameter id="Km_C00004_R145" value="0.0213936530053615" constant="true"/>
-      <parameter id="Km_C00080_R145" value="0.22504885494709" constant="true"/>
       <parameter id="Km_C15972_R145" value="0.056440994143486" constant="true"/>
       <parameter id="Km_C00003_R145" value="0.0897657573223114" constant="true"/>
       <parameter id="Km_C15973_R145" value="0.0702609121799469" constant="true"/>
@@ -1873,7 +1839,6 @@
       <parameter id="Km_C00004_R146" value="0.0213936530053615" constant="true"/>
       <parameter id="Km_C00011_R146" value="0.555787563323975" constant="true"/>
       <parameter id="Km_C00024_R146" value="0.0261338166892528" constant="true"/>
-      <parameter id="Km_C00080_R146" value="0.22504885494709" constant="true"/>
       <parameter id="Km_C00003_R146" value="0.0897657573223114" constant="true"/>
       <parameter id="Km_C00010_R146" value="0.0302705187350511" constant="true"/>
       <parameter id="Km_C00022_R146" value="0.393333333333333" constant="true"/>
@@ -1882,7 +1847,6 @@
       <parameter id="Km_C00004_R147" value="0.0213936530053615" constant="true"/>
       <parameter id="Km_C00011_R147" value="0.555787563323975" constant="true"/>
       <parameter id="Km_C00014_R147" value="0.673851370811462" constant="true"/>
-      <parameter id="Km_C00080_R147" value="0.22504885494709" constant="true"/>
       <parameter id="Km_C00143_R147" value="0.0198761150240898" constant="true"/>
       <parameter id="Km_C00003_R147" value="0.0897657573223114" constant="true"/>
       <parameter id="Km_C00037_R147" value="0.678076088428497" constant="true"/>
@@ -1890,7 +1854,6 @@
       <parameter id="Kcat_F_R147" value="97.0754972190456" constant="true"/>
       <parameter id="Kcat_R_R147" value="292.699911311206" constant="true"/>
       <parameter id="Km_C00004_R148" value="0.0213936530053615" constant="true"/>
-      <parameter id="Km_C00080_R148" value="0.22504885494709" constant="true"/>
       <parameter id="Km_C00248_R148" value="0.415237724781036" constant="true"/>
       <parameter id="Km_C00003_R148" value="0.0897657573223114" constant="true"/>
       <parameter id="Km_C00579_R148" value="0.128333333333333" constant="true"/>
@@ -1898,7 +1861,6 @@
       <parameter id="Kcat_R_R148" value="280.423266420979" constant="true"/>
       <parameter id="Km_C00004_R149" value="0.0213936530053615" constant="true"/>
       <parameter id="Km_C00011_R149" value="0.555787563323975" constant="true"/>
-      <parameter id="Km_C00080_R149" value="0.22504885494709" constant="true"/>
       <parameter id="Km_C00527_R149" value="0.0202776081860065" constant="true"/>
       <parameter id="Km_C00003_R149" value="0.0897657573223114" constant="true"/>
       <parameter id="Km_C00010_R149" value="0.0302705187350511" constant="true"/>
@@ -1907,7 +1869,6 @@
       <parameter id="Kcat_R_R149" value="267.366557142305" constant="true"/>
       <parameter id="Km_C00004_R150" value="0.0213936530053615" constant="true"/>
       <parameter id="Km_C00011_R150" value="0.555787563323975" constant="true"/>
-      <parameter id="Km_C00080_R150" value="0.22504885494709" constant="true"/>
       <parameter id="Km_C00091_R150" value="0.0204137731343507" constant="true"/>
       <parameter id="Km_C00003_R150" value="0.0897657573223114" constant="true"/>
       <parameter id="Km_C00010_R150" value="0.0302705187350511" constant="true"/>
@@ -1916,12 +1877,10 @@
       <parameter id="Kcat_R_R150" value="266.911556559778" constant="true"/>
       <parameter id="Km_C00065_R151" value="0.680456936359406" constant="true"/>
       <parameter id="Km_C00101_R151" value="0.0484347641468048" constant="true"/>
-      <parameter id="Km_C00001_R151" value="1.74380612373352" constant="true"/>
       <parameter id="Km_C00037_R151" value="1.0842102766037" constant="true"/>
       <parameter id="Km_C00143_R151" value="0.0312942266464233" constant="true"/>
       <parameter id="Kcat_F_R151" value="0.721411978076931" constant="true"/>
       <parameter id="Kcat_R_R151" value="1.13282652746905" constant="true"/>
-      <parameter id="Km_C00001_R152" value="1.74380612373352" constant="true"/>
       <parameter id="Km_C00037_R152" value="1.0842102766037" constant="true"/>
       <parameter id="Km_C04377_R152" value="0.0325908549129962" constant="true"/>
       <parameter id="Km_C00065_R152" value="0.680456936359406" constant="true"/>
@@ -1929,17 +1888,17 @@
       <parameter id="Kcat_F_R152" value="0.918723922509542" constant="true"/>
       <parameter id="Kcat_R_R152" value="0.709798937237832" constant="true"/>
       <parameter id="Km_C00013_R153" value="0.0075017297640442" constant="true"/>
-      <parameter id="Km_C00020_R153" value="0.0014681605389341" constant="true"/>
+      <parameter id="Km_C00020_R153" value="0.0114681605389341" constant="true"/>
       <parameter id="Km_C02553_R153" value="2.51391634996029" constant="true"/>
-      <parameter id="Km_C00002_R153" value="0.0010396140860393" constant="true"/>
+      <parameter id="Km_C00002_R153" value="0.0110396140860393" constant="true"/>
       <parameter id="Km_C00065_R153" value="0.0173594113439321" constant="true"/>
       <parameter id="Km_C01650_R153" value="0.2" constant="true"/>
       <parameter id="Kcat_F_R153" value="41.8933310283957" constant="true"/>
       <parameter id="Kcat_R_R153" value="49.2347477563135" constant="true"/>
       <parameter id="Km_C00013_R154" value="0.0075017297640442" constant="true"/>
-      <parameter id="Km_C00020_R154" value="0.0014681605389341" constant="true"/>
+      <parameter id="Km_C00020_R154" value="0.0114681605389341" constant="true"/>
       <parameter id="Km_C06481_R154" value="2.51391634996029" constant="true"/>
-      <parameter id="Km_C00002_R154" value="0.0010396140860393" constant="true"/>
+      <parameter id="Km_C00002_R154" value="0.0110396140860393" constant="true"/>
       <parameter id="Km_C00065_R154" value="0.0173594113439321" constant="true"/>
       <parameter id="Km_C16636_R154" value="0.0031003365293145" constant="true"/>
       <parameter id="Kcat_F_R154" value="32.9734345241984" constant="true"/>
@@ -1961,7 +1920,6 @@
       <parameter id="Km_C00004_R157" value="0.0555423498153686" constant="true"/>
       <parameter id="Km_C00011_R157" value="1.16979587078094" constant="true"/>
       <parameter id="Km_C00014_R157" value="4.61771154403687" constant="true"/>
-      <parameter id="Km_C00080_R157" value="1.92628216743469" constant="true"/>
       <parameter id="Km_C00143_R157" value="0.049179408699274" constant="true"/>
       <parameter id="Km_C00003_R157" value="0.143204286694527" constant="true"/>
       <parameter id="Km_C00037_R157" value="3.03230452537537" constant="true"/>
@@ -1970,13 +1928,11 @@
       <parameter id="Kcat_R_R157" value="7.39589959697732" constant="true"/>
       <parameter id="Km_C00037_R158" value="0.432252526283264" constant="true"/>
       <parameter id="Km_C00097_R158" value="0.0781389474868774" constant="true"/>
-      <parameter id="Km_C00001_R158" value="0.510772526264191" constant="true"/>
       <parameter id="Km_C01419_R158" value="0.247555747628212" constant="true"/>
       <parameter id="Kcat_F_R158" value="6.25465187368478" constant="true"/>
       <parameter id="Kcat_R_R158" value="0.312186784853966" constant="true"/>
       <parameter id="Km_C00037_R159" value="0.432252526283264" constant="true"/>
       <parameter id="Km_C05726_R159" value="2.51391634996029" constant="true"/>
-      <parameter id="Km_C00001_R159" value="0.510772526264191" constant="true"/>
       <parameter id="Km_C05729_R159" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_F_R159" value="2.12697549279377" constant="true"/>
       <parameter id="Kcat_R_R159" value="0.519310700198723" constant="true"/>
@@ -1996,27 +1952,23 @@
       <parameter id="Km_C00004_R162" value="0.0514274351298809" constant="true"/>
       <parameter id="Km_C00011_R162" value="1.10870754718781" constant="true"/>
       <parameter id="Km_C00014_R162" value="2.28812408447266" constant="true"/>
-      <parameter id="Km_C00080_R162" value="0.996665477752686" constant="true"/>
       <parameter id="Km_C00143_R162" value="0.0092" constant="true"/>
       <parameter id="Km_C00003_R162" value="0.126247987151146" constant="true"/>
       <parameter id="Km_C00037_R162" value="1.45769023895264" constant="true"/>
       <parameter id="Km_C00101_R162" value="0.0629024133086204" constant="true"/>
       <parameter id="Kcat_F_R162" value="15.9354374905009" constant="true"/>
       <parameter id="Kcat_R_R162" value="43.1343551516971" constant="true"/>
-      <parameter id="Km_C00001_R163" value="0.944258809089661" constant="true"/>
       <parameter id="Km_C00445_R163" value="0.0690556466579437" constant="true"/>
       <parameter id="Km_C03479_R163" value="0.0623933747410774" constant="true"/>
       <parameter id="Kcat_F_R163" value="21.6081210274458" constant="true"/>
       <parameter id="Kcat_R_R163" value="10.3084306536358" constant="true"/>
       <parameter id="Km_C00037_R164" value="0.841594934463501" constant="true"/>
       <parameter id="Km_C00097_R164" value="0.224477678537369" constant="true"/>
-      <parameter id="Km_C00001_R164" value="0.535009860992432" constant="true"/>
       <parameter id="Km_C01419_R164" value="0.625408589839935" constant="true"/>
       <parameter id="Kcat_F_R164" value="14.2561298242837" constant="true"/>
       <parameter id="Kcat_R_R164" value="0.642091769856968" constant="true"/>
       <parameter id="Km_C00037_R165" value="0.841594934463501" constant="true"/>
       <parameter id="Km_C05726_R165" value="2.51391634996029" constant="true"/>
-      <parameter id="Km_C00001_R165" value="0.535009860992432" constant="true"/>
       <parameter id="Km_C05729_R165" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_F_R165" value="1.49204668873989" constant="true"/>
       <parameter id="Kcat_R_R165" value="1.02711345969404" constant="true"/>
@@ -2033,7 +1985,6 @@
       <parameter id="Km_C00065_R168" value="0.995956301689148" constant="true"/>
       <parameter id="Kcat_F_R168" value="3.54728232602962" constant="true"/>
       <parameter id="Kcat_R_R168" value="16.0040880467034" constant="true"/>
-      <parameter id="Km_C00001_R169" value="1.24328315258026" constant="true"/>
       <parameter id="Km_C02218_R169" value="1.60348200798035" constant="true"/>
       <parameter id="Km_C00065_R169" value="0.995956301689148" constant="true"/>
       <parameter id="Kcat_F_R169" value="3.54728232602962" constant="true"/>
@@ -2045,7 +1996,6 @@
       <parameter id="Kcat_R_R170" value="17.8617916438848" constant="true"/>
       <parameter id="Km_C00014_R171" value="2.32181453704834" constant="true"/>
       <parameter id="Km_C00022_R171" value="0.786924958229065" constant="true"/>
-      <parameter id="Km_C00001_R171" value="1.24328315258026" constant="true"/>
       <parameter id="Km_C02218_R171" value="1.60348200798035" constant="true"/>
       <parameter id="Kcat_F_R171" value="1.10709271979996" constant="true"/>
       <parameter id="Kcat_R_R171" value="16.0040880467034" constant="true"/>
@@ -2066,13 +2016,11 @@
       <parameter id="Kcat_R_R174" value="7.54456737469361" constant="true"/>
       <parameter id="Km_C00037_R175" value="0.388481706380844" constant="true"/>
       <parameter id="Km_C00097_R175" value="0.172149553894997" constant="true"/>
-      <parameter id="Km_C00001_R175" value="0.38191682100296" constant="true"/>
       <parameter id="Km_C01419_R175" value="0.210018634796142" constant="true"/>
       <parameter id="Kcat_F_R175" value="4.01489477867776" constant="true"/>
       <parameter id="Kcat_R_R175" value="0.112565879619329" constant="true"/>
       <parameter id="Km_C00037_R176" value="0.388481706380844" constant="true"/>
       <parameter id="Km_C05726_R176" value="2.51391634996029" constant="true"/>
-      <parameter id="Km_C00001_R176" value="0.38191682100296" constant="true"/>
       <parameter id="Km_C05729_R176" value="2.51391634996029" constant="true"/>
       <parameter id="Kcat_F_R176" value="1.495343079177" constant="true"/>
       <parameter id="Kcat_R_R176" value="0.194365287372137" constant="true"/>
@@ -3079,7 +3027,7 @@
           <apply>
             <times/>
             <ci> v1 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3119,7 +3067,7 @@
           <apply>
             <times/>
             <ci> v5 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3129,7 +3077,7 @@
           <apply>
             <times/>
             <ci> v6 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3139,7 +3087,7 @@
           <apply>
             <times/>
             <ci> v7 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3149,7 +3097,7 @@
           <apply>
             <times/>
             <ci> v8 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3159,7 +3107,7 @@
           <apply>
             <times/>
             <ci> v9 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3169,7 +3117,7 @@
           <apply>
             <times/>
             <ci> v10 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3179,7 +3127,7 @@
           <apply>
             <times/>
             <ci> v11 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3189,7 +3137,7 @@
           <apply>
             <times/>
             <ci> v12 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3199,7 +3147,7 @@
           <apply>
             <times/>
             <ci> v13 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3209,7 +3157,7 @@
           <apply>
             <times/>
             <ci> v14 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3219,7 +3167,7 @@
           <apply>
             <times/>
             <ci> v15 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3249,7 +3197,7 @@
           <apply>
             <times/>
             <ci> v18 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3259,7 +3207,7 @@
           <apply>
             <times/>
             <ci> v19 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3269,7 +3217,7 @@
           <apply>
             <times/>
             <ci> v20 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3279,7 +3227,7 @@
           <apply>
             <times/>
             <ci> v21 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3289,7 +3237,7 @@
           <apply>
             <times/>
             <ci> v22 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3299,7 +3247,7 @@
           <apply>
             <times/>
             <ci> v23 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3309,7 +3257,7 @@
           <apply>
             <times/>
             <ci> v24 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3329,7 +3277,7 @@
           <apply>
             <times/>
             <ci> v26 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3339,7 +3287,7 @@
           <apply>
             <times/>
             <ci> v27 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3349,7 +3297,7 @@
           <apply>
             <times/>
             <ci> v28 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3359,7 +3307,7 @@
           <apply>
             <times/>
             <ci> v29 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3369,7 +3317,7 @@
           <apply>
             <times/>
             <ci> v30 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3379,7 +3327,7 @@
           <apply>
             <times/>
             <ci> v31 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3399,7 +3347,7 @@
           <apply>
             <times/>
             <ci> v33 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3419,7 +3367,7 @@
           <apply>
             <times/>
             <ci> v35 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3429,7 +3377,7 @@
           <apply>
             <times/>
             <ci> v36 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3439,7 +3387,7 @@
           <apply>
             <times/>
             <ci> v37 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3449,7 +3397,7 @@
           <apply>
             <times/>
             <ci> v38 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3459,7 +3407,7 @@
           <apply>
             <times/>
             <ci> v39 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3469,7 +3417,7 @@
           <apply>
             <times/>
             <ci> v40 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3479,7 +3427,7 @@
           <apply>
             <times/>
             <ci> v41 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3489,7 +3437,7 @@
           <apply>
             <times/>
             <ci> v42 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3499,7 +3447,7 @@
           <apply>
             <times/>
             <ci> v43 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3509,7 +3457,7 @@
           <apply>
             <times/>
             <ci> v44 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3519,7 +3467,7 @@
           <apply>
             <times/>
             <ci> v45 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3529,7 +3477,7 @@
           <apply>
             <times/>
             <ci> v46 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3539,7 +3487,7 @@
           <apply>
             <times/>
             <ci> v47 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3549,7 +3497,7 @@
           <apply>
             <times/>
             <ci> v48 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3559,7 +3507,7 @@
           <apply>
             <times/>
             <ci> v49 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3569,7 +3517,7 @@
           <apply>
             <times/>
             <ci> v50 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3579,7 +3527,7 @@
           <apply>
             <times/>
             <ci> v51 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3589,7 +3537,7 @@
           <apply>
             <times/>
             <ci> v52 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3599,7 +3547,7 @@
           <apply>
             <times/>
             <ci> v53 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3609,7 +3557,7 @@
           <apply>
             <times/>
             <ci> v54 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3619,7 +3567,7 @@
           <apply>
             <times/>
             <ci> v55 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3629,7 +3577,7 @@
           <apply>
             <times/>
             <ci> v56 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3639,7 +3587,7 @@
           <apply>
             <times/>
             <ci> v57 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3649,7 +3597,7 @@
           <apply>
             <times/>
             <ci> v58 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3679,7 +3627,7 @@
           <apply>
             <times/>
             <ci> v61 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3689,7 +3637,7 @@
           <apply>
             <times/>
             <ci> v62 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3699,7 +3647,7 @@
           <apply>
             <times/>
             <ci> v63 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3709,7 +3657,7 @@
           <apply>
             <times/>
             <ci> v64 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3719,7 +3667,7 @@
           <apply>
             <times/>
             <ci> v65 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3729,7 +3677,7 @@
           <apply>
             <times/>
             <ci> v66 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3739,7 +3687,7 @@
           <apply>
             <times/>
             <ci> v67 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3749,7 +3697,7 @@
           <apply>
             <times/>
             <ci> v68 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3759,7 +3707,7 @@
           <apply>
             <times/>
             <ci> v69 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3779,7 +3727,7 @@
           <apply>
             <times/>
             <ci> v71 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3799,7 +3747,7 @@
           <apply>
             <times/>
             <ci> v73 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3809,7 +3757,7 @@
           <apply>
             <times/>
             <ci> v74 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3819,7 +3767,7 @@
           <apply>
             <times/>
             <ci> v75 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3829,7 +3777,7 @@
           <apply>
             <times/>
             <ci> v76 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3839,7 +3787,7 @@
           <apply>
             <times/>
             <ci> v77 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3849,7 +3797,7 @@
           <apply>
             <times/>
             <ci> v78 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3859,7 +3807,7 @@
           <apply>
             <times/>
             <ci> v79 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3869,7 +3817,7 @@
           <apply>
             <times/>
             <ci> v80 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3879,7 +3827,7 @@
           <apply>
             <times/>
             <ci> v81 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3889,7 +3837,7 @@
           <apply>
             <times/>
             <ci> v82 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3899,7 +3847,7 @@
           <apply>
             <times/>
             <ci> v83 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3909,7 +3857,7 @@
           <apply>
             <times/>
             <ci> v84 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3919,7 +3867,7 @@
           <apply>
             <times/>
             <ci> v85 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3929,7 +3877,7 @@
           <apply>
             <times/>
             <ci> v86 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3939,7 +3887,7 @@
           <apply>
             <times/>
             <ci> v87 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3949,7 +3897,7 @@
           <apply>
             <times/>
             <ci> v88 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3959,7 +3907,7 @@
           <apply>
             <times/>
             <ci> v89 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3969,7 +3917,7 @@
           <apply>
             <times/>
             <ci> v90 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3989,7 +3937,7 @@
           <apply>
             <times/>
             <ci> v92 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3999,7 +3947,7 @@
           <apply>
             <times/>
             <ci> v93 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4009,7 +3957,7 @@
           <apply>
             <times/>
             <ci> v94 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4019,7 +3967,7 @@
           <apply>
             <times/>
             <ci> v95 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4029,7 +3977,7 @@
           <apply>
             <times/>
             <ci> v96 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4039,7 +3987,7 @@
           <apply>
             <times/>
             <ci> v97 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4059,7 +4007,7 @@
           <apply>
             <times/>
             <ci> v99 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4069,7 +4017,7 @@
           <apply>
             <times/>
             <ci> v100 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4089,7 +4037,7 @@
           <apply>
             <times/>
             <ci> v102 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4099,7 +4047,7 @@
           <apply>
             <times/>
             <ci> v103 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4109,7 +4057,7 @@
           <apply>
             <times/>
             <ci> v104 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4119,7 +4067,7 @@
           <apply>
             <times/>
             <ci> v105 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4139,7 +4087,7 @@
           <apply>
             <times/>
             <ci> v107 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4149,7 +4097,7 @@
           <apply>
             <times/>
             <ci> v108 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4169,7 +4117,7 @@
           <apply>
             <times/>
             <ci> v110 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4179,7 +4127,7 @@
           <apply>
             <times/>
             <ci> v111 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4189,7 +4137,7 @@
           <apply>
             <times/>
             <ci> v112 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4199,7 +4147,7 @@
           <apply>
             <times/>
             <ci> v113 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4209,7 +4157,7 @@
           <apply>
             <times/>
             <ci> v114 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4219,7 +4167,7 @@
           <apply>
             <times/>
             <ci> v115 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4229,7 +4177,7 @@
           <apply>
             <times/>
             <ci> v116 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4239,7 +4187,7 @@
           <apply>
             <times/>
             <ci> v117 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4249,7 +4197,7 @@
           <apply>
             <times/>
             <ci> v118 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4259,7 +4207,7 @@
           <apply>
             <times/>
             <ci> v119 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4269,7 +4217,7 @@
           <apply>
             <times/>
             <ci> v120 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4279,7 +4227,7 @@
           <apply>
             <times/>
             <ci> v121 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4289,7 +4237,7 @@
           <apply>
             <times/>
             <ci> v122 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4299,7 +4247,7 @@
           <apply>
             <times/>
             <ci> v123 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4309,7 +4257,7 @@
           <apply>
             <times/>
             <ci> v124 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4319,7 +4267,7 @@
           <apply>
             <times/>
             <ci> v125 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4349,7 +4297,7 @@
           <apply>
             <times/>
             <ci> v128 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4359,7 +4307,7 @@
           <apply>
             <times/>
             <ci> v129 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4369,7 +4317,7 @@
           <apply>
             <times/>
             <ci> v130 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4379,7 +4327,7 @@
           <apply>
             <times/>
             <ci> v131 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4389,7 +4337,7 @@
           <apply>
             <times/>
             <ci> v132 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4399,7 +4347,7 @@
           <apply>
             <times/>
             <ci> v133 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4409,7 +4357,7 @@
           <apply>
             <times/>
             <ci> v134 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4419,7 +4367,7 @@
           <apply>
             <times/>
             <ci> v135 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4429,7 +4377,7 @@
           <apply>
             <times/>
             <ci> v136 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4449,7 +4397,7 @@
           <apply>
             <times/>
             <ci> v138 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4459,7 +4407,7 @@
           <apply>
             <times/>
             <ci> v139 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4479,7 +4427,7 @@
           <apply>
             <times/>
             <ci> v141 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4489,7 +4437,7 @@
           <apply>
             <times/>
             <ci> v142 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4499,7 +4447,7 @@
           <apply>
             <times/>
             <ci> v143 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4509,7 +4457,7 @@
           <apply>
             <times/>
             <ci> v144 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4529,7 +4477,7 @@
           <apply>
             <times/>
             <ci> v146 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4539,7 +4487,7 @@
           <apply>
             <times/>
             <ci> v147 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4549,7 +4497,7 @@
           <apply>
             <times/>
             <ci> v148 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4609,7 +4557,7 @@
           <apply>
             <times/>
             <ci> v154 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4619,7 +4567,7 @@
           <apply>
             <times/>
             <ci> v155 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4629,7 +4577,7 @@
           <apply>
             <times/>
             <ci> v156 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4639,7 +4587,7 @@
           <apply>
             <times/>
             <ci> v157 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4649,7 +4597,7 @@
           <apply>
             <times/>
             <ci> v158 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4659,7 +4607,7 @@
           <apply>
             <times/>
             <ci> v159 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4679,7 +4627,7 @@
           <apply>
             <times/>
             <ci> v161 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4689,7 +4637,7 @@
           <apply>
             <times/>
             <ci> v162 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4699,7 +4647,7 @@
           <apply>
             <times/>
             <ci> v163 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4709,7 +4657,7 @@
           <apply>
             <times/>
             <ci> v209 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4719,7 +4667,7 @@
           <apply>
             <times/>
             <ci> v210 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4729,7 +4677,7 @@
           <apply>
             <times/>
             <ci> v211 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4739,7 +4687,7 @@
           <apply>
             <times/>
             <ci> v212 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4749,7 +4697,7 @@
           <apply>
             <times/>
             <ci> v213 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4759,7 +4707,7 @@
           <apply>
             <times/>
             <ci> v214 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4769,7 +4717,7 @@
           <apply>
             <times/>
             <ci> v215 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4779,7 +4727,7 @@
           <apply>
             <times/>
             <ci> v216 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4789,7 +4737,7 @@
           <apply>
             <times/>
             <ci> v217 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4799,7 +4747,7 @@
           <apply>
             <times/>
             <ci> v218 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4809,7 +4757,7 @@
           <apply>
             <times/>
             <ci> v219 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4819,7 +4767,7 @@
           <apply>
             <times/>
             <ci> v220 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4829,7 +4777,7 @@
           <apply>
             <times/>
             <ci> v221 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4839,7 +4787,7 @@
           <apply>
             <times/>
             <ci> v222 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4849,7 +4797,7 @@
           <apply>
             <times/>
             <ci> v223 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4859,7 +4807,7 @@
           <apply>
             <times/>
             <ci> v224 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4869,7 +4817,7 @@
           <apply>
             <times/>
             <ci> v225 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4879,7 +4827,7 @@
           <apply>
             <times/>
             <ci> v226 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4889,7 +4837,7 @@
           <apply>
             <times/>
             <ci> v227 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4899,7 +4847,7 @@
           <apply>
             <times/>
             <ci> v228 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4909,7 +4857,7 @@
           <apply>
             <times/>
             <ci> v229 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4919,7 +4867,7 @@
           <apply>
             <times/>
             <ci> v230 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4929,7 +4877,7 @@
           <apply>
             <times/>
             <ci> v231 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4939,7 +4887,7 @@
           <apply>
             <times/>
             <ci> v232 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4949,7 +4897,7 @@
           <apply>
             <times/>
             <ci> v233 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4959,7 +4907,7 @@
           <apply>
             <times/>
             <ci> v234 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4969,7 +4917,7 @@
           <apply>
             <times/>
             <ci> v235 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4979,7 +4927,7 @@
           <apply>
             <times/>
             <ci> v236 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4989,7 +4937,7 @@
           <apply>
             <times/>
             <ci> v237 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -4999,7 +4947,7 @@
           <apply>
             <times/>
             <ci> v238 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -5009,7 +4957,7 @@
           <apply>
             <times/>
             <ci> v239 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -5019,7 +4967,7 @@
           <apply>
             <times/>
             <ci> v240 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -5029,7 +4977,7 @@
           <apply>
             <times/>
             <ci> v241 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -5039,7 +4987,7 @@
           <apply>
             <times/>
             <ci> v242 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -5049,7 +4997,7 @@
           <apply>
             <times/>
             <ci> v243 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -5059,7 +5007,7 @@
           <apply>
             <times/>
             <ci> v244 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -5069,7 +5017,7 @@
           <apply>
             <times/>
             <ci> v245 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -5079,7 +5027,7 @@
           <apply>
             <times/>
             <ci> v164 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -5089,7 +5037,7 @@
           <apply>
             <times/>
             <ci> v165 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -5099,7 +5047,7 @@
           <apply>
             <times/>
             <ci> v166 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -5109,7 +5057,7 @@
           <apply>
             <times/>
             <ci> v167 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -5119,7 +5067,7 @@
           <apply>
             <times/>
             <ci> v168 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -5129,7 +5077,7 @@
           <apply>
             <times/>
             <ci> v169 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -5139,7 +5087,7 @@
           <apply>
             <times/>
             <ci> v170 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -5149,7 +5097,7 @@
           <apply>
             <times/>
             <ci> v171 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -5159,7 +5107,7 @@
           <apply>
             <times/>
             <ci> v172 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -5169,7 +5117,7 @@
           <apply>
             <times/>
             <ci> v173 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -5179,7 +5127,7 @@
           <apply>
             <times/>
             <ci> v174 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -5189,7 +5137,7 @@
           <apply>
             <times/>
             <ci> v175 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -5199,7 +5147,7 @@
           <apply>
             <times/>
             <ci> v176 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -5209,7 +5157,7 @@
           <apply>
             <times/>
             <ci> v177 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -5219,7 +5167,7 @@
           <apply>
             <times/>
             <ci> v178 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -5229,7 +5177,7 @@
           <apply>
             <times/>
             <ci> v179 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -5239,7 +5187,7 @@
           <apply>
             <times/>
             <ci> v180 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -5249,7 +5197,7 @@
           <apply>
             <times/>
             <ci> v181 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -5259,7 +5207,7 @@
           <apply>
             <times/>
             <ci> v182 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -5269,7 +5217,7 @@
           <apply>
             <times/>
             <ci> v183 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -5279,7 +5227,7 @@
           <apply>
             <times/>
             <ci> v184 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -5289,7 +5237,7 @@
           <apply>
             <times/>
             <ci> v185 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -5299,7 +5247,7 @@
           <apply>
             <times/>
             <ci> v186 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -5309,7 +5257,7 @@
           <apply>
             <times/>
             <ci> v187 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -5319,7 +5267,7 @@
           <apply>
             <times/>
             <ci> v188 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -5329,7 +5277,7 @@
           <apply>
             <times/>
             <ci> v189 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -5339,7 +5287,7 @@
           <apply>
             <times/>
             <ci> v190 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -5349,7 +5297,7 @@
           <apply>
             <times/>
             <ci> v191 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -5359,7 +5307,7 @@
           <apply>
             <times/>
             <ci> v192 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -5369,7 +5317,7 @@
           <apply>
             <times/>
             <ci> v193 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -5379,7 +5327,7 @@
           <apply>
             <times/>
             <ci> v194 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -5389,7 +5337,7 @@
           <apply>
             <times/>
             <ci> v195 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -5399,7 +5347,7 @@
           <apply>
             <times/>
             <ci> v196 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -5409,7 +5357,7 @@
           <apply>
             <times/>
             <ci> v197 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -5419,7 +5367,7 @@
           <apply>
             <times/>
             <ci> v198 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -5429,7 +5377,7 @@
           <apply>
             <times/>
             <ci> v199 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -5439,7 +5387,7 @@
           <apply>
             <times/>
             <ci> v200 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -5449,7 +5397,7 @@
           <apply>
             <times/>
             <ci> v201 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -5459,7 +5407,7 @@
           <apply>
             <times/>
             <ci> v202 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -5469,7 +5417,7 @@
           <apply>
             <times/>
             <ci> v203 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -5479,7 +5427,7 @@
           <apply>
             <times/>
             <ci> v204 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -5489,7 +5437,7 @@
           <apply>
             <times/>
             <ci> v205 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -5499,7 +5447,7 @@
           <apply>
             <times/>
             <ci> v206 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -5509,7 +5457,7 @@
           <apply>
             <times/>
             <ci> v207 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -5519,7 +5467,7 @@
           <apply>
             <times/>
             <ci> v208 </ci>
-            <cn> 0.001 </cn>
+            <cn> 0.011 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -5536,10 +5484,10 @@
           <speciesReference species="C00085" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00199"/>
           <modifierSpeciesReference species="C00345"/>
-          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00117"/>
+          <modifierSpeciesReference species="C00199"/>
+          <modifierSpeciesReference species="C00074"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -5722,10 +5670,10 @@
           <speciesReference species="C05345" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00199"/>
           <modifierSpeciesReference species="C00345"/>
-          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00117"/>
+          <modifierSpeciesReference species="C00199"/>
+          <modifierSpeciesReference species="C00074"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -5908,10 +5856,10 @@
           <speciesReference species="C05345" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00199"/>
           <modifierSpeciesReference species="C00345"/>
-          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00117"/>
+          <modifierSpeciesReference species="C00199"/>
+          <modifierSpeciesReference species="C00074"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -6094,10 +6042,10 @@
           <speciesReference species="C01172" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00199"/>
           <modifierSpeciesReference species="C00345"/>
-          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00117"/>
+          <modifierSpeciesReference species="C00199"/>
+          <modifierSpeciesReference species="C00074"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -6284,10 +6232,10 @@
         <listOfModifiers>
           <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C00009"/>
+          <modifierSpeciesReference species="C00044"/>
           <modifierSpeciesReference species="C00631"/>
           <modifierSpeciesReference species="C00236"/>
           <modifierSpeciesReference species="C00074"/>
-          <modifierSpeciesReference species="C00044"/>
           <modifierSpeciesReference species="C00197"/>
         </listOfModifiers>
         <kineticLaw>
@@ -6718,10 +6666,10 @@
         <listOfModifiers>
           <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C00009"/>
+          <modifierSpeciesReference species="C00044"/>
           <modifierSpeciesReference species="C00631"/>
           <modifierSpeciesReference species="C00236"/>
           <modifierSpeciesReference species="C00074"/>
-          <modifierSpeciesReference species="C00044"/>
           <modifierSpeciesReference species="C00197"/>
         </listOfModifiers>
         <kineticLaw>
@@ -7152,13 +7100,13 @@
         <listOfModifiers>
           <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C00009"/>
-          <modifierSpeciesReference species="C00631"/>
-          <modifierSpeciesReference species="C00002"/>
-          <modifierSpeciesReference species="C00236"/>
-          <modifierSpeciesReference species="C00074"/>
-          <modifierSpeciesReference species="C00008"/>
           <modifierSpeciesReference species="C00044"/>
+          <modifierSpeciesReference species="C00631"/>
+          <modifierSpeciesReference species="C00236"/>
+          <modifierSpeciesReference species="C00008"/>
+          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00197"/>
+          <modifierSpeciesReference species="C00002"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -7588,13 +7536,13 @@
         <listOfModifiers>
           <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C00009"/>
-          <modifierSpeciesReference species="C00631"/>
-          <modifierSpeciesReference species="C00002"/>
-          <modifierSpeciesReference species="C00236"/>
-          <modifierSpeciesReference species="C00074"/>
-          <modifierSpeciesReference species="C00008"/>
           <modifierSpeciesReference species="C00044"/>
+          <modifierSpeciesReference species="C00631"/>
+          <modifierSpeciesReference species="C00236"/>
+          <modifierSpeciesReference species="C00008"/>
+          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00197"/>
+          <modifierSpeciesReference species="C00002"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -8024,13 +7972,13 @@
         <listOfModifiers>
           <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C00009"/>
-          <modifierSpeciesReference species="C00631"/>
-          <modifierSpeciesReference species="C00002"/>
-          <modifierSpeciesReference species="C00236"/>
-          <modifierSpeciesReference species="C00074"/>
-          <modifierSpeciesReference species="C00008"/>
           <modifierSpeciesReference species="C00044"/>
+          <modifierSpeciesReference species="C00631"/>
+          <modifierSpeciesReference species="C00236"/>
+          <modifierSpeciesReference species="C00008"/>
+          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00197"/>
+          <modifierSpeciesReference species="C00002"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -8460,10 +8408,10 @@
         <listOfModifiers>
           <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C00009"/>
+          <modifierSpeciesReference species="C00044"/>
           <modifierSpeciesReference species="C00631"/>
           <modifierSpeciesReference species="C00236"/>
           <modifierSpeciesReference species="C00074"/>
-          <modifierSpeciesReference species="C00044"/>
           <modifierSpeciesReference species="C00197"/>
         </listOfModifiers>
         <kineticLaw>
@@ -8894,10 +8842,10 @@
         <listOfModifiers>
           <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C00009"/>
+          <modifierSpeciesReference species="C00044"/>
           <modifierSpeciesReference species="C00631"/>
           <modifierSpeciesReference species="C00236"/>
           <modifierSpeciesReference species="C00074"/>
-          <modifierSpeciesReference species="C00044"/>
           <modifierSpeciesReference species="C00197"/>
         </listOfModifiers>
         <kineticLaw>
@@ -9328,13 +9276,13 @@
         <listOfModifiers>
           <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C00009"/>
-          <modifierSpeciesReference species="C00631"/>
-          <modifierSpeciesReference species="C00002"/>
-          <modifierSpeciesReference species="C00236"/>
-          <modifierSpeciesReference species="C00074"/>
-          <modifierSpeciesReference species="C00008"/>
           <modifierSpeciesReference species="C00044"/>
+          <modifierSpeciesReference species="C00631"/>
+          <modifierSpeciesReference species="C00236"/>
+          <modifierSpeciesReference species="C00008"/>
+          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00197"/>
+          <modifierSpeciesReference species="C00002"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -9764,13 +9712,13 @@
         <listOfModifiers>
           <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C00009"/>
-          <modifierSpeciesReference species="C00631"/>
-          <modifierSpeciesReference species="C00002"/>
-          <modifierSpeciesReference species="C00236"/>
-          <modifierSpeciesReference species="C00074"/>
-          <modifierSpeciesReference species="C00008"/>
           <modifierSpeciesReference species="C00044"/>
+          <modifierSpeciesReference species="C00631"/>
+          <modifierSpeciesReference species="C00236"/>
+          <modifierSpeciesReference species="C00008"/>
+          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00197"/>
+          <modifierSpeciesReference species="C00002"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -10200,13 +10148,13 @@
         <listOfModifiers>
           <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C00009"/>
-          <modifierSpeciesReference species="C00631"/>
-          <modifierSpeciesReference species="C00002"/>
-          <modifierSpeciesReference species="C00236"/>
-          <modifierSpeciesReference species="C00074"/>
-          <modifierSpeciesReference species="C00008"/>
           <modifierSpeciesReference species="C00044"/>
+          <modifierSpeciesReference species="C00631"/>
+          <modifierSpeciesReference species="C00236"/>
+          <modifierSpeciesReference species="C00008"/>
+          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00197"/>
+          <modifierSpeciesReference species="C00002"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -10634,12 +10582,12 @@
           <speciesReference species="C00085" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
+          <modifierSpeciesReference species="C00020"/>
           <modifierSpeciesReference species="C01172"/>
+          <modifierSpeciesReference species="C00008"/>
+          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00097"/>
           <modifierSpeciesReference species="C00002"/>
-          <modifierSpeciesReference species="C00020"/>
-          <modifierSpeciesReference species="C00074"/>
-          <modifierSpeciesReference species="C00008"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -10935,14 +10883,9 @@
                     <apply>
                       <times/>
                       <ci> Kcat_F_R15 </ci>
-                      <ci> C00001 </ci>
                       <ci> C00354 </ci>
                     </apply>
-                    <apply>
-                      <times/>
-                      <ci> Km_C00001_R15 </ci>
-                      <ci> Km_C00354_R15 </ci>
-                    </apply>
+                    <ci> Km_C00354_R15 </ci>
                   </apply>
                   <apply>
                     <divide/>
@@ -10966,26 +10909,11 @@
                   <minus/>
                   <apply>
                     <plus/>
+                    <cn type="integer"> 1 </cn>
                     <apply>
-                      <times/>
-                      <apply>
-                        <plus/>
-                        <cn type="integer"> 1 </cn>
-                        <apply>
-                          <divide/>
-                          <ci> C00001 </ci>
-                          <ci> Km_C00001_R15 </ci>
-                        </apply>
-                      </apply>
-                      <apply>
-                        <plus/>
-                        <cn type="integer"> 1 </cn>
-                        <apply>
-                          <divide/>
-                          <ci> C00354 </ci>
-                          <ci> Km_C00354_R15 </ci>
-                        </apply>
-                      </apply>
+                      <divide/>
+                      <ci> C00354 </ci>
+                      <ci> Km_C00354_R15 </ci>
                     </apply>
                     <apply>
                       <times/>
@@ -11154,12 +11082,12 @@
           <speciesReference species="C05345" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
+          <modifierSpeciesReference species="C00020"/>
           <modifierSpeciesReference species="C01172"/>
+          <modifierSpeciesReference species="C00008"/>
+          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00097"/>
           <modifierSpeciesReference species="C00002"/>
-          <modifierSpeciesReference species="C00020"/>
-          <modifierSpeciesReference species="C00074"/>
-          <modifierSpeciesReference species="C00008"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -11455,14 +11383,9 @@
                     <apply>
                       <times/>
                       <ci> Kcat_F_R16 </ci>
-                      <ci> C00001 </ci>
                       <ci> C05378 </ci>
                     </apply>
-                    <apply>
-                      <times/>
-                      <ci> Km_C00001_R16 </ci>
-                      <ci> Km_C05378_R16 </ci>
-                    </apply>
+                    <ci> Km_C05378_R16 </ci>
                   </apply>
                   <apply>
                     <divide/>
@@ -11486,26 +11409,11 @@
                   <minus/>
                   <apply>
                     <plus/>
+                    <cn type="integer"> 1 </cn>
                     <apply>
-                      <times/>
-                      <apply>
-                        <plus/>
-                        <cn type="integer"> 1 </cn>
-                        <apply>
-                          <divide/>
-                          <ci> C00001 </ci>
-                          <ci> Km_C00001_R16 </ci>
-                        </apply>
-                      </apply>
-                      <apply>
-                        <plus/>
-                        <cn type="integer"> 1 </cn>
-                        <apply>
-                          <divide/>
-                          <ci> C05378 </ci>
-                          <ci> Km_C05378_R16 </ci>
-                        </apply>
-                      </apply>
+                      <divide/>
+                      <ci> C05378 </ci>
+                      <ci> Km_C05378_R16 </ci>
                     </apply>
                     <apply>
                       <times/>
@@ -11674,12 +11582,12 @@
           <speciesReference species="C05382" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
+          <modifierSpeciesReference species="C00020"/>
           <modifierSpeciesReference species="C01172"/>
+          <modifierSpeciesReference species="C00008"/>
+          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00097"/>
           <modifierSpeciesReference species="C00002"/>
-          <modifierSpeciesReference species="C00020"/>
-          <modifierSpeciesReference species="C00074"/>
-          <modifierSpeciesReference species="C00008"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -11975,14 +11883,9 @@
                     <apply>
                       <times/>
                       <ci> Kcat_F_R17 </ci>
-                      <ci> C00001 </ci>
                       <ci> C00447 </ci>
                     </apply>
-                    <apply>
-                      <times/>
-                      <ci> Km_C00001_R17 </ci>
-                      <ci> Km_C00447_R17 </ci>
-                    </apply>
+                    <ci> Km_C00447_R17 </ci>
                   </apply>
                   <apply>
                     <divide/>
@@ -12006,26 +11909,11 @@
                   <minus/>
                   <apply>
                     <plus/>
+                    <cn type="integer"> 1 </cn>
                     <apply>
-                      <times/>
-                      <apply>
-                        <plus/>
-                        <cn type="integer"> 1 </cn>
-                        <apply>
-                          <divide/>
-                          <ci> C00001 </ci>
-                          <ci> Km_C00001_R17 </ci>
-                        </apply>
-                      </apply>
-                      <apply>
-                        <plus/>
-                        <cn type="integer"> 1 </cn>
-                        <apply>
-                          <divide/>
-                          <ci> C00447 </ci>
-                          <ci> Km_C00447_R17 </ci>
-                        </apply>
-                      </apply>
+                      <divide/>
+                      <ci> C00447 </ci>
+                      <ci> Km_C00447_R17 </ci>
                     </apply>
                     <apply>
                       <times/>
@@ -13012,14 +12900,14 @@
           <speciesReference species="C00111" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C01172"/>
+          <modifierSpeciesReference species="C00158"/>
           <modifierSpeciesReference species="C05345"/>
           <modifierSpeciesReference species="C00631"/>
-          <modifierSpeciesReference species="C00002"/>
-          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00042"/>
+          <modifierSpeciesReference species="C00074"/>
           <modifierSpeciesReference species="C00197"/>
+          <modifierSpeciesReference species="C00002"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -13795,14 +13683,9 @@
                     <apply>
                       <times/>
                       <ci> Kcat_R_R24 </ci>
-                      <ci> C00001 </ci>
                       <ci> C00074 </ci>
                     </apply>
-                    <apply>
-                      <times/>
-                      <ci> Km_C00001_R24 </ci>
-                      <ci> Km_C00074_R24 </ci>
-                    </apply>
+                    <ci> Km_C00074_R24 </ci>
                   </apply>
                 </apply>
               </apply>
@@ -13818,26 +13701,11 @@
                       <ci> C00631 </ci>
                       <ci> Km_C00631_R24 </ci>
                     </apply>
+                    <cn type="integer"> 1 </cn>
                     <apply>
-                      <times/>
-                      <apply>
-                        <plus/>
-                        <cn type="integer"> 1 </cn>
-                        <apply>
-                          <divide/>
-                          <ci> C00001 </ci>
-                          <ci> Km_C00001_R24 </ci>
-                        </apply>
-                      </apply>
-                      <apply>
-                        <plus/>
-                        <cn type="integer"> 1 </cn>
-                        <apply>
-                          <divide/>
-                          <ci> C00074 </ci>
-                          <ci> Km_C00074_R24 </ci>
-                        </apply>
-                      </apply>
+                      <divide/>
+                      <ci> C00074 </ci>
+                      <ci> Km_C00074_R24 </ci>
                     </apply>
                   </apply>
                   <cn type="integer"> 1 </cn>
@@ -14088,14 +13956,9 @@
                     <apply>
                       <times/>
                       <ci> Kcat_R_R25 </ci>
-                      <ci> C00001 </ci>
                       <ci> C04309 </ci>
                     </apply>
-                    <apply>
-                      <times/>
-                      <ci> Km_C00001_R25 </ci>
-                      <ci> Km_C04309_R25 </ci>
-                    </apply>
+                    <ci> Km_C04309_R25 </ci>
                   </apply>
                 </apply>
               </apply>
@@ -14111,26 +13974,11 @@
                       <ci> C03356 </ci>
                       <ci> Km_C03356_R25 </ci>
                     </apply>
+                    <cn type="integer"> 1 </cn>
                     <apply>
-                      <times/>
-                      <apply>
-                        <plus/>
-                        <cn type="integer"> 1 </cn>
-                        <apply>
-                          <divide/>
-                          <ci> C00001 </ci>
-                          <ci> Km_C00001_R25 </ci>
-                        </apply>
-                      </apply>
-                      <apply>
-                        <plus/>
-                        <cn type="integer"> 1 </cn>
-                        <apply>
-                          <divide/>
-                          <ci> C04309 </ci>
-                          <ci> Km_C04309_R25 </ci>
-                        </apply>
-                      </apply>
+                      <divide/>
+                      <ci> C04309 </ci>
+                      <ci> Km_C04309_R25 </ci>
                     </apply>
                   </apply>
                   <cn type="integer"> 1 </cn>
@@ -14217,9 +14065,9 @@
           <speciesReference species="C00074" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
+          <modifierSpeciesReference species="C00036"/>
           <modifierSpeciesReference species="C00026"/>
           <modifierSpeciesReference species="C00008"/>
-          <modifierSpeciesReference species="C00036"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -14395,13 +14243,11 @@
                     <apply>
                       <times/>
                       <ci> Kcat_F_R26 </ci>
-                      <ci> C00001 </ci>
                       <ci> C00002 </ci>
                       <ci> C00022 </ci>
                     </apply>
                     <apply>
                       <times/>
-                      <ci> Km_C00001_R26 </ci>
                       <ci> Km_C00002_R26 </ci>
                       <ci> Km_C00022_R26 </ci>
                     </apply>
@@ -14432,15 +14278,6 @@
                     <plus/>
                     <apply>
                       <times/>
-                      <apply>
-                        <plus/>
-                        <cn type="integer"> 1 </cn>
-                        <apply>
-                          <divide/>
-                          <ci> C00001 </ci>
-                          <ci> Km_C00001_R26 </ci>
-                        </apply>
-                      </apply>
                       <apply>
                         <plus/>
                         <cn type="integer"> 1 </cn>
@@ -14586,8 +14423,8 @@
           <modifierSpeciesReference species="C00091"/>
           <modifierSpeciesReference species="C00009"/>
           <modifierSpeciesReference species="C00122"/>
-          <modifierSpeciesReference species="C00026"/>
           <modifierSpeciesReference species="C00044"/>
+          <modifierSpeciesReference species="C00026"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -15135,9 +14972,9 @@
           <modifierSpeciesReference species="C00091"/>
           <modifierSpeciesReference species="C00009"/>
           <modifierSpeciesReference species="C00122"/>
-          <modifierSpeciesReference species="C00002"/>
           <modifierSpeciesReference species="C00026"/>
           <modifierSpeciesReference species="C00008"/>
+          <modifierSpeciesReference species="C00002"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -15685,10 +15522,10 @@
           <modifierSpeciesReference species="C00091"/>
           <modifierSpeciesReference species="C00009"/>
           <modifierSpeciesReference species="C00122"/>
-          <modifierSpeciesReference species="C00002"/>
+          <modifierSpeciesReference species="C00044"/>
           <modifierSpeciesReference species="C00026"/>
           <modifierSpeciesReference species="C00008"/>
-          <modifierSpeciesReference species="C00044"/>
+          <modifierSpeciesReference species="C00002"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -16236,10 +16073,10 @@
           <modifierSpeciesReference species="C00091"/>
           <modifierSpeciesReference species="C00009"/>
           <modifierSpeciesReference species="C00122"/>
-          <modifierSpeciesReference species="C00002"/>
+          <modifierSpeciesReference species="C00044"/>
           <modifierSpeciesReference species="C00026"/>
           <modifierSpeciesReference species="C00008"/>
-          <modifierSpeciesReference species="C00044"/>
+          <modifierSpeciesReference species="C00002"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -16787,10 +16624,10 @@
           <modifierSpeciesReference species="C00091"/>
           <modifierSpeciesReference species="C00009"/>
           <modifierSpeciesReference species="C00122"/>
-          <modifierSpeciesReference species="C00002"/>
+          <modifierSpeciesReference species="C00044"/>
           <modifierSpeciesReference species="C00026"/>
           <modifierSpeciesReference species="C00008"/>
-          <modifierSpeciesReference species="C00044"/>
+          <modifierSpeciesReference species="C00002"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -17338,10 +17175,10 @@
           <modifierSpeciesReference species="C00091"/>
           <modifierSpeciesReference species="C00009"/>
           <modifierSpeciesReference species="C00122"/>
-          <modifierSpeciesReference species="C00002"/>
+          <modifierSpeciesReference species="C00044"/>
           <modifierSpeciesReference species="C00026"/>
           <modifierSpeciesReference species="C00008"/>
-          <modifierSpeciesReference species="C00044"/>
+          <modifierSpeciesReference species="C00002"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -17889,10 +17726,10 @@
           <modifierSpeciesReference species="C00091"/>
           <modifierSpeciesReference species="C00009"/>
           <modifierSpeciesReference species="C00122"/>
-          <modifierSpeciesReference species="C00002"/>
+          <modifierSpeciesReference species="C00044"/>
           <modifierSpeciesReference species="C00026"/>
           <modifierSpeciesReference species="C00008"/>
-          <modifierSpeciesReference species="C00044"/>
+          <modifierSpeciesReference species="C00002"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -18440,10 +18277,10 @@
           <modifierSpeciesReference species="C00091"/>
           <modifierSpeciesReference species="C00009"/>
           <modifierSpeciesReference species="C00122"/>
-          <modifierSpeciesReference species="C00002"/>
+          <modifierSpeciesReference species="C00044"/>
           <modifierSpeciesReference species="C00026"/>
           <modifierSpeciesReference species="C00008"/>
-          <modifierSpeciesReference species="C00044"/>
+          <modifierSpeciesReference species="C00002"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -18988,8 +18825,8 @@
         </listOfProducts>
         <listOfModifiers>
           <modifierSpeciesReference species="C00004"/>
-          <modifierSpeciesReference species="C00109"/>
           <modifierSpeciesReference species="C00024"/>
+          <modifierSpeciesReference species="C00109"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -19302,8 +19139,8 @@
         </listOfProducts>
         <listOfModifiers>
           <modifierSpeciesReference species="C00004"/>
-          <modifierSpeciesReference species="C00109"/>
           <modifierSpeciesReference species="C00024"/>
+          <modifierSpeciesReference species="C00109"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -19793,14 +19630,12 @@
                       <ci> C00004 </ci>
                       <ci> C00011 </ci>
                       <ci> C00024 </ci>
-                      <ci> C00080 </ci>
                     </apply>
                     <apply>
                       <times/>
                       <ci> Km_C00004_R45 </ci>
                       <ci> Km_C00011_R45 </ci>
                       <ci> Km_C00024_R45 </ci>
-                      <ci> Km_C00080_R45 </ci>
                     </apply>
                   </apply>
                 </apply>
@@ -19868,15 +19703,6 @@
                           <divide/>
                           <ci> C00024 </ci>
                           <ci> Km_C00024_R45 </ci>
-                        </apply>
-                      </apply>
-                      <apply>
-                        <plus/>
-                        <cn type="integer"> 1 </cn>
-                        <apply>
-                          <divide/>
-                          <ci> C00080 </ci>
-                          <ci> Km_C00080_R45 </ci>
                         </apply>
                       </apply>
                     </apply>
@@ -19964,8 +19790,8 @@
         </listOfProducts>
         <listOfModifiers>
           <modifierSpeciesReference species="C00004"/>
-          <modifierSpeciesReference species="C00109"/>
           <modifierSpeciesReference species="C00024"/>
+          <modifierSpeciesReference species="C00109"/>
           <modifierSpeciesReference species="C00022"/>
         </listOfModifiers>
         <kineticLaw>
@@ -20360,14 +20186,9 @@
                     <apply>
                       <times/>
                       <ci> Kcat_R_R48 </ci>
-                      <ci> C00001 </ci>
                       <ci> C00417 </ci>
                     </apply>
-                    <apply>
-                      <times/>
-                      <ci> Km_C00001_R48 </ci>
-                      <ci> Km_C00417_R48 </ci>
-                    </apply>
+                    <ci> Km_C00417_R48 </ci>
                   </apply>
                 </apply>
               </apply>
@@ -20381,26 +20202,11 @@
                     <ci> C00158 </ci>
                     <ci> Km_C00158_R48 </ci>
                   </apply>
+                  <cn type="integer"> 1 </cn>
                   <apply>
-                    <times/>
-                    <apply>
-                      <plus/>
-                      <cn type="integer"> 1 </cn>
-                      <apply>
-                        <divide/>
-                        <ci> C00001 </ci>
-                        <ci> Km_C00001_R48 </ci>
-                      </apply>
-                    </apply>
-                    <apply>
-                      <plus/>
-                      <cn type="integer"> 1 </cn>
-                      <apply>
-                        <divide/>
-                        <ci> C00417 </ci>
-                        <ci> Km_C00417_R48 </ci>
-                      </apply>
-                    </apply>
+                    <divide/>
+                    <ci> C00417 </ci>
+                    <ci> Km_C00417_R48 </ci>
                   </apply>
                 </apply>
                 <cn type="integer"> 1 </cn>
@@ -20442,14 +20248,9 @@
                     <apply>
                       <times/>
                       <ci> Kcat_R_R49 </ci>
-                      <ci> C00001 </ci>
                       <ci> C00417 </ci>
                     </apply>
-                    <apply>
-                      <times/>
-                      <ci> Km_C00001_R49 </ci>
-                      <ci> Km_C00417_R49 </ci>
-                    </apply>
+                    <ci> Km_C00417_R49 </ci>
                   </apply>
                 </apply>
               </apply>
@@ -20463,26 +20264,11 @@
                     <ci> C00311 </ci>
                     <ci> Km_C00311_R49 </ci>
                   </apply>
+                  <cn type="integer"> 1 </cn>
                   <apply>
-                    <times/>
-                    <apply>
-                      <plus/>
-                      <cn type="integer"> 1 </cn>
-                      <apply>
-                        <divide/>
-                        <ci> C00001 </ci>
-                        <ci> Km_C00001_R49 </ci>
-                      </apply>
-                    </apply>
-                    <apply>
-                      <plus/>
-                      <cn type="integer"> 1 </cn>
-                      <apply>
-                        <divide/>
-                        <ci> C00417 </ci>
-                        <ci> Km_C00417_R49 </ci>
-                      </apply>
-                    </apply>
+                    <divide/>
+                    <ci> C00417 </ci>
+                    <ci> Km_C00417_R49 </ci>
                   </apply>
                 </apply>
                 <cn type="integer"> 1 </cn>
@@ -20836,14 +20622,12 @@
                       <ci> Kcat_R_R55 </ci>
                       <ci> C00004 </ci>
                       <ci> C00011 </ci>
-                      <ci> C00080 </ci>
                       <ci> C00527 </ci>
                     </apply>
                     <apply>
                       <times/>
                       <ci> Km_C00004_R55 </ci>
                       <ci> Km_C00011_R55 </ci>
-                      <ci> Km_C00080_R55 </ci>
                       <ci> Km_C00527_R55 </ci>
                     </apply>
                   </apply>
@@ -20903,15 +20687,6 @@
                           <divide/>
                           <ci> C00011 </ci>
                           <ci> Km_C00011_R55 </ci>
-                        </apply>
-                      </apply>
-                      <apply>
-                        <plus/>
-                        <cn type="integer"> 1 </cn>
-                        <apply>
-                          <divide/>
-                          <ci> C00080 </ci>
-                          <ci> Km_C00080_R55 </ci>
                         </apply>
                       </apply>
                       <apply>
@@ -21286,14 +21061,12 @@
                       <ci> Kcat_R_R58 </ci>
                       <ci> C00004 </ci>
                       <ci> C00011 </ci>
-                      <ci> C00080 </ci>
                       <ci> C00091 </ci>
                     </apply>
                     <apply>
                       <times/>
                       <ci> Km_C00004_R58 </ci>
                       <ci> Km_C00011_R58 </ci>
-                      <ci> Km_C00080_R58 </ci>
                       <ci> Km_C00091_R58 </ci>
                     </apply>
                   </apply>
@@ -21353,15 +21126,6 @@
                           <divide/>
                           <ci> C00011 </ci>
                           <ci> Km_C00011_R58 </ci>
-                        </apply>
-                      </apply>
-                      <apply>
-                        <plus/>
-                        <cn type="integer"> 1 </cn>
-                        <apply>
-                          <divide/>
-                          <ci> C00080 </ci>
-                          <ci> Km_C00080_R58 </ci>
                         </apply>
                       </apply>
                       <apply>
@@ -22036,14 +21800,9 @@
                     <apply>
                       <times/>
                       <ci> Kcat_R_R64 </ci>
-                      <ci> C00001 </ci>
                       <ci> C00122 </ci>
                     </apply>
-                    <apply>
-                      <times/>
-                      <ci> Km_C00001_R64 </ci>
-                      <ci> Km_C00122_R64 </ci>
-                    </apply>
+                    <ci> Km_C00122_R64 </ci>
                   </apply>
                 </apply>
               </apply>
@@ -22059,26 +21818,11 @@
                       <ci> C00149 </ci>
                       <ci> Km_C00149_R64 </ci>
                     </apply>
+                    <cn type="integer"> 1 </cn>
                     <apply>
-                      <times/>
-                      <apply>
-                        <plus/>
-                        <cn type="integer"> 1 </cn>
-                        <apply>
-                          <divide/>
-                          <ci> C00001 </ci>
-                          <ci> Km_C00001_R64 </ci>
-                        </apply>
-                      </apply>
-                      <apply>
-                        <plus/>
-                        <cn type="integer"> 1 </cn>
-                        <apply>
-                          <divide/>
-                          <ci> C00122 </ci>
-                          <ci> Km_C00122_R64 </ci>
-                        </apply>
-                      </apply>
+                      <divide/>
+                      <ci> C00122 </ci>
+                      <ci> Km_C00122_R64 </ci>
                     </apply>
                   </apply>
                   <cn type="integer"> 1 </cn>
@@ -22146,9 +21890,9 @@
           <speciesReference species="C00080" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
+          <modifierSpeciesReference species="C00024"/>
           <modifierSpeciesReference species="C00010"/>
           <modifierSpeciesReference species="C00002"/>
-          <modifierSpeciesReference species="C00024"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -22340,13 +22084,11 @@
                       <ci> Kcat_R_R65 </ci>
                       <ci> C00004 </ci>
                       <ci> C00036 </ci>
-                      <ci> C00080 </ci>
                     </apply>
                     <apply>
                       <times/>
                       <ci> Km_C00004_R65 </ci>
                       <ci> Km_C00036_R65 </ci>
-                      <ci> Km_C00080_R65 </ci>
                     </apply>
                   </apply>
                 </apply>
@@ -22396,15 +22138,6 @@
                           <divide/>
                           <ci> C00036 </ci>
                           <ci> Km_C00036_R65 </ci>
-                        </apply>
-                      </apply>
-                      <apply>
-                        <plus/>
-                        <cn type="integer"> 1 </cn>
-                        <apply>
-                          <divide/>
-                          <ci> C00080 </ci>
-                          <ci> Km_C00080_R65 </ci>
                         </apply>
                       </apply>
                     </apply>
@@ -22594,14 +22327,12 @@
                       <ci> Kcat_R_R66 </ci>
                       <ci> C00005 </ci>
                       <ci> C00011 </ci>
-                      <ci> C00080 </ci>
                       <ci> C00199 </ci>
                     </apply>
                     <apply>
                       <times/>
                       <ci> Km_C00005_R66 </ci>
                       <ci> Km_C00011_R66 </ci>
-                      <ci> Km_C00080_R66 </ci>
                       <ci> Km_C00199_R66 </ci>
                     </apply>
                   </apply>
@@ -22652,15 +22383,6 @@
                           <divide/>
                           <ci> C00011 </ci>
                           <ci> Km_C00011_R66 </ci>
-                        </apply>
-                      </apply>
-                      <apply>
-                        <plus/>
-                        <cn type="integer"> 1 </cn>
-                        <apply>
-                          <divide/>
-                          <ci> C00080 </ci>
-                          <ci> Km_C00080_R66 </ci>
                         </apply>
                       </apply>
                       <apply>
@@ -24195,13 +23917,11 @@
                       <times/>
                       <ci> Kcat_R_R77 </ci>
                       <ci> C00005 </ci>
-                      <ci> C00080 </ci>
                       <ci> C00685 </ci>
                     </apply>
                     <apply>
                       <times/>
                       <ci> Km_C00005_R77 </ci>
-                      <ci> Km_C00080_R77 </ci>
                       <ci> Km_C00685_R77 </ci>
                     </apply>
                   </apply>
@@ -24241,15 +23961,6 @@
                         <divide/>
                         <ci> C00005 </ci>
                         <ci> Km_C00005_R77 </ci>
-                      </apply>
-                    </apply>
-                    <apply>
-                      <plus/>
-                      <cn type="integer"> 1 </cn>
-                      <apply>
-                        <divide/>
-                        <ci> C00080 </ci>
-                        <ci> Km_C00080_R77 </ci>
                       </apply>
                     </apply>
                     <apply>
@@ -24310,13 +24021,11 @@
                       <times/>
                       <ci> Kcat_R_R78 </ci>
                       <ci> C00005 </ci>
-                      <ci> C00080 </ci>
                       <ci> C05744 </ci>
                     </apply>
                     <apply>
                       <times/>
                       <ci> Km_C00005_R78 </ci>
-                      <ci> Km_C00080_R78 </ci>
                       <ci> Km_C05744_R78 </ci>
                     </apply>
                   </apply>
@@ -24356,15 +24065,6 @@
                         <divide/>
                         <ci> C00005 </ci>
                         <ci> Km_C00005_R78 </ci>
-                      </apply>
-                    </apply>
-                    <apply>
-                      <plus/>
-                      <cn type="integer"> 1 </cn>
-                      <apply>
-                        <divide/>
-                        <ci> C00080 </ci>
-                        <ci> Km_C00080_R78 </ci>
                       </apply>
                     </apply>
                     <apply>
@@ -24528,13 +24228,11 @@
                       <times/>
                       <ci> Kcat_R_R80 </ci>
                       <ci> C00005 </ci>
-                      <ci> C00080 </ci>
                       <ci> C05750 </ci>
                     </apply>
                     <apply>
                       <times/>
                       <ci> Km_C00005_R80 </ci>
-                      <ci> Km_C00080_R80 </ci>
                       <ci> Km_C05750_R80 </ci>
                     </apply>
                   </apply>
@@ -24574,15 +24272,6 @@
                         <divide/>
                         <ci> C00005 </ci>
                         <ci> Km_C00005_R80 </ci>
-                      </apply>
-                    </apply>
-                    <apply>
-                      <plus/>
-                      <cn type="integer"> 1 </cn>
-                      <apply>
-                        <divide/>
-                        <ci> C00080 </ci>
-                        <ci> Km_C00080_R80 </ci>
                       </apply>
                     </apply>
                     <apply>
@@ -24643,13 +24332,11 @@
                       <times/>
                       <ci> Kcat_R_R81 </ci>
                       <ci> C00005 </ci>
-                      <ci> C00080 </ci>
                       <ci> C05762 </ci>
                     </apply>
                     <apply>
                       <times/>
                       <ci> Km_C00005_R81 </ci>
-                      <ci> Km_C00080_R81 </ci>
                       <ci> Km_C05762_R81 </ci>
                     </apply>
                   </apply>
@@ -24689,15 +24376,6 @@
                         <divide/>
                         <ci> C00005 </ci>
                         <ci> Km_C00005_R81 </ci>
-                      </apply>
-                    </apply>
-                    <apply>
-                      <plus/>
-                      <cn type="integer"> 1 </cn>
-                      <apply>
-                        <divide/>
-                        <ci> C00080 </ci>
-                        <ci> Km_C00080_R81 </ci>
                       </apply>
                     </apply>
                     <apply>
@@ -24758,13 +24436,11 @@
                       <times/>
                       <ci> Kcat_R_R82 </ci>
                       <ci> C00005 </ci>
-                      <ci> C00080 </ci>
                       <ci> C05759 </ci>
                     </apply>
                     <apply>
                       <times/>
                       <ci> Km_C00005_R82 </ci>
-                      <ci> Km_C00080_R82 </ci>
                       <ci> Km_C05759_R82 </ci>
                     </apply>
                   </apply>
@@ -24804,15 +24480,6 @@
                         <divide/>
                         <ci> C00005 </ci>
                         <ci> Km_C00005_R82 </ci>
-                      </apply>
-                    </apply>
-                    <apply>
-                      <plus/>
-                      <cn type="integer"> 1 </cn>
-                      <apply>
-                        <divide/>
-                        <ci> C00080 </ci>
-                        <ci> Km_C00080_R82 </ci>
                       </apply>
                     </apply>
                     <apply>
@@ -24873,13 +24540,11 @@
                       <times/>
                       <ci> Kcat_R_R83 </ci>
                       <ci> C00005 </ci>
-                      <ci> C00080 </ci>
                       <ci> C05746 </ci>
                     </apply>
                     <apply>
                       <times/>
                       <ci> Km_C00005_R83 </ci>
-                      <ci> Km_C00080_R83 </ci>
                       <ci> Km_C05746_R83 </ci>
                     </apply>
                   </apply>
@@ -24919,15 +24584,6 @@
                         <divide/>
                         <ci> C00005 </ci>
                         <ci> Km_C00005_R83 </ci>
-                      </apply>
-                    </apply>
-                    <apply>
-                      <plus/>
-                      <cn type="integer"> 1 </cn>
-                      <apply>
-                        <divide/>
-                        <ci> C00080 </ci>
-                        <ci> Km_C00080_R83 </ci>
                       </apply>
                     </apply>
                     <apply>
@@ -24988,13 +24644,11 @@
                       <times/>
                       <ci> Kcat_R_R84 </ci>
                       <ci> C00005 </ci>
-                      <ci> C00080 </ci>
                       <ci> C05756 </ci>
                     </apply>
                     <apply>
                       <times/>
                       <ci> Km_C00005_R84 </ci>
-                      <ci> Km_C00080_R84 </ci>
                       <ci> Km_C05756_R84 </ci>
                     </apply>
                   </apply>
@@ -25041,15 +24695,6 @@
                       <cn type="integer"> 1 </cn>
                       <apply>
                         <divide/>
-                        <ci> C00080 </ci>
-                        <ci> Km_C00080_R84 </ci>
-                      </apply>
-                    </apply>
-                    <apply>
-                      <plus/>
-                      <cn type="integer"> 1 </cn>
-                      <apply>
-                        <divide/>
                         <ci> C05756 </ci>
                         <ci> Km_C05756_R84 </ci>
                       </apply>
@@ -25089,13 +24734,11 @@
                       <times/>
                       <ci> Kcat_F_R85 </ci>
                       <ci> C00005 </ci>
-                      <ci> C00080 </ci>
                       <ci> C16219 </ci>
                     </apply>
                     <apply>
                       <times/>
                       <ci> Km_C00005_R85 </ci>
-                      <ci> Km_C00080_R85 </ci>
                       <ci> Km_C16219_R85 </ci>
                     </apply>
                   </apply>
@@ -25128,15 +24771,6 @@
                         <divide/>
                         <ci> C00005 </ci>
                         <ci> Km_C00005_R85 </ci>
-                      </apply>
-                    </apply>
-                    <apply>
-                      <plus/>
-                      <cn type="integer"> 1 </cn>
-                      <apply>
-                        <divide/>
-                        <ci> C00080 </ci>
-                        <ci> Km_C00080_R85 </ci>
                       </apply>
                     </apply>
                     <apply>
@@ -25218,13 +24852,11 @@
                       <times/>
                       <ci> Kcat_R_R86 </ci>
                       <ci> C00004 </ci>
-                      <ci> C00080 </ci>
                       <ci> C00693 </ci>
                     </apply>
                     <apply>
                       <times/>
                       <ci> Km_C00004_R86 </ci>
-                      <ci> Km_C00080_R86 </ci>
                       <ci> Km_C00693_R86 </ci>
                     </apply>
                   </apply>
@@ -25264,15 +24896,6 @@
                         <divide/>
                         <ci> C00004 </ci>
                         <ci> Km_C00004_R86 </ci>
-                      </apply>
-                    </apply>
-                    <apply>
-                      <plus/>
-                      <cn type="integer"> 1 </cn>
-                      <apply>
-                        <divide/>
-                        <ci> C00080 </ci>
-                        <ci> Km_C00080_R86 </ci>
                       </apply>
                     </apply>
                     <apply>
@@ -25333,13 +24956,11 @@
                       <times/>
                       <ci> Kcat_R_R87 </ci>
                       <ci> C00004 </ci>
-                      <ci> C00080 </ci>
                       <ci> C05758 </ci>
                     </apply>
                     <apply>
                       <times/>
                       <ci> Km_C00004_R87 </ci>
-                      <ci> Km_C00080_R87 </ci>
                       <ci> Km_C05758_R87 </ci>
                     </apply>
                   </apply>
@@ -25379,15 +25000,6 @@
                         <divide/>
                         <ci> C00004 </ci>
                         <ci> Km_C00004_R87 </ci>
-                      </apply>
-                    </apply>
-                    <apply>
-                      <plus/>
-                      <cn type="integer"> 1 </cn>
-                      <apply>
-                        <divide/>
-                        <ci> C00080 </ci>
-                        <ci> Km_C00080_R87 </ci>
                       </apply>
                     </apply>
                     <apply>
@@ -25448,13 +25060,11 @@
                       <times/>
                       <ci> Kcat_R_R88 </ci>
                       <ci> C00004 </ci>
-                      <ci> C00080 </ci>
                       <ci> C05748 </ci>
                     </apply>
                     <apply>
                       <times/>
                       <ci> Km_C00004_R88 </ci>
-                      <ci> Km_C00080_R88 </ci>
                       <ci> Km_C05748_R88 </ci>
                     </apply>
                   </apply>
@@ -25494,15 +25104,6 @@
                         <divide/>
                         <ci> C00004 </ci>
                         <ci> Km_C00004_R88 </ci>
-                      </apply>
-                    </apply>
-                    <apply>
-                      <plus/>
-                      <cn type="integer"> 1 </cn>
-                      <apply>
-                        <divide/>
-                        <ci> C00080 </ci>
-                        <ci> Km_C00080_R88 </ci>
                       </apply>
                     </apply>
                     <apply>
@@ -25563,13 +25164,11 @@
                       <times/>
                       <ci> Kcat_R_R89 </ci>
                       <ci> C00004 </ci>
-                      <ci> C00080 </ci>
                       <ci> C05751 </ci>
                     </apply>
                     <apply>
                       <times/>
                       <ci> Km_C00004_R89 </ci>
-                      <ci> Km_C00080_R89 </ci>
                       <ci> Km_C05751_R89 </ci>
                     </apply>
                   </apply>
@@ -25609,15 +25208,6 @@
                         <divide/>
                         <ci> C00004 </ci>
                         <ci> Km_C00004_R89 </ci>
-                      </apply>
-                    </apply>
-                    <apply>
-                      <plus/>
-                      <cn type="integer"> 1 </cn>
-                      <apply>
-                        <divide/>
-                        <ci> C00080 </ci>
-                        <ci> Km_C00080_R89 </ci>
                       </apply>
                     </apply>
                     <apply>
@@ -25678,13 +25268,11 @@
                       <times/>
                       <ci> Kcat_R_R90 </ci>
                       <ci> C00004 </ci>
-                      <ci> C00080 </ci>
                       <ci> C05754 </ci>
                     </apply>
                     <apply>
                       <times/>
                       <ci> Km_C00004_R90 </ci>
-                      <ci> Km_C00080_R90 </ci>
                       <ci> Km_C05754_R90 </ci>
                     </apply>
                   </apply>
@@ -25724,15 +25312,6 @@
                         <divide/>
                         <ci> C00004 </ci>
                         <ci> Km_C00004_R90 </ci>
-                      </apply>
-                    </apply>
-                    <apply>
-                      <plus/>
-                      <cn type="integer"> 1 </cn>
-                      <apply>
-                        <divide/>
-                        <ci> C00080 </ci>
-                        <ci> Km_C00080_R90 </ci>
                       </apply>
                     </apply>
                     <apply>
@@ -25793,13 +25372,11 @@
                       <times/>
                       <ci> Kcat_R_R91 </ci>
                       <ci> C00004 </ci>
-                      <ci> C00080 </ci>
                       <ci> C05760 </ci>
                     </apply>
                     <apply>
                       <times/>
                       <ci> Km_C00004_R91 </ci>
-                      <ci> Km_C00080_R91 </ci>
                       <ci> Km_C05760_R91 </ci>
                     </apply>
                   </apply>
@@ -25839,15 +25416,6 @@
                         <divide/>
                         <ci> C00004 </ci>
                         <ci> Km_C00004_R91 </ci>
-                      </apply>
-                    </apply>
-                    <apply>
-                      <plus/>
-                      <cn type="integer"> 1 </cn>
-                      <apply>
-                        <divide/>
-                        <ci> C00080 </ci>
-                        <ci> Km_C00080_R91 </ci>
                       </apply>
                     </apply>
                     <apply>
@@ -25908,13 +25476,11 @@
                       <times/>
                       <ci> Kcat_R_R92 </ci>
                       <ci> C00004 </ci>
-                      <ci> C00080 </ci>
                       <ci> C05763 </ci>
                     </apply>
                     <apply>
                       <times/>
                       <ci> Km_C00004_R92 </ci>
-                      <ci> Km_C00080_R92 </ci>
                       <ci> Km_C05763_R92 </ci>
                     </apply>
                   </apply>
@@ -25954,15 +25520,6 @@
                         <divide/>
                         <ci> C00004 </ci>
                         <ci> Km_C00004_R92 </ci>
-                      </apply>
-                    </apply>
-                    <apply>
-                      <plus/>
-                      <cn type="integer"> 1 </cn>
-                      <apply>
-                        <divide/>
-                        <ci> C00080 </ci>
-                        <ci> Km_C00080_R92 </ci>
                       </apply>
                     </apply>
                     <apply>
@@ -26023,13 +25580,11 @@
                       <times/>
                       <ci> Kcat_R_R93 </ci>
                       <ci> C00004 </ci>
-                      <ci> C00080 </ci>
                       <ci> C04246 </ci>
                     </apply>
                     <apply>
                       <times/>
                       <ci> Km_C00004_R93 </ci>
-                      <ci> Km_C00080_R93 </ci>
                       <ci> Km_C04246_R93 </ci>
                     </apply>
                   </apply>
@@ -26069,15 +25624,6 @@
                         <divide/>
                         <ci> C00004 </ci>
                         <ci> Km_C00004_R93 </ci>
-                      </apply>
-                    </apply>
-                    <apply>
-                      <plus/>
-                      <cn type="integer"> 1 </cn>
-                      <apply>
-                        <divide/>
-                        <ci> C00080 </ci>
-                        <ci> Km_C00080_R93 </ci>
                       </apply>
                     </apply>
                     <apply>
@@ -31056,8 +30602,8 @@
         </listOfProducts>
         <listOfModifiers>
           <modifierSpeciesReference species="C00083"/>
-          <modifierSpeciesReference species="C00010"/>
           <modifierSpeciesReference species="C00091"/>
+          <modifierSpeciesReference species="C00010"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -31383,14 +30929,9 @@
                     <apply>
                       <times/>
                       <ci> Kcat_R_R136 </ci>
-                      <ci> C00001 </ci>
                       <ci> C05751 </ci>
                     </apply>
-                    <apply>
-                      <times/>
-                      <ci> Km_C00001_R136 </ci>
-                      <ci> Km_C05751_R136 </ci>
-                    </apply>
+                    <ci> Km_C05751_R136 </ci>
                   </apply>
                 </apply>
               </apply>
@@ -31404,26 +30945,11 @@
                     <ci> C04620 </ci>
                     <ci> Km_C04620_R136 </ci>
                   </apply>
+                  <cn type="integer"> 1 </cn>
                   <apply>
-                    <times/>
-                    <apply>
-                      <plus/>
-                      <cn type="integer"> 1 </cn>
-                      <apply>
-                        <divide/>
-                        <ci> C00001 </ci>
-                        <ci> Km_C00001_R136 </ci>
-                      </apply>
-                    </apply>
-                    <apply>
-                      <plus/>
-                      <cn type="integer"> 1 </cn>
-                      <apply>
-                        <divide/>
-                        <ci> C05751 </ci>
-                        <ci> Km_C05751_R136 </ci>
-                      </apply>
-                    </apply>
+                    <divide/>
+                    <ci> C05751 </ci>
+                    <ci> Km_C05751_R136 </ci>
                   </apply>
                 </apply>
                 <cn type="integer"> 1 </cn>
@@ -31627,9 +31153,9 @@
           <speciesReference species="C00092" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00010"/>
-          <modifierSpeciesReference species="C00024"/>
           <modifierSpeciesReference species="C00044"/>
+          <modifierSpeciesReference species="C00024"/>
+          <modifierSpeciesReference species="C00010"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -31928,9 +31454,9 @@
           <speciesReference species="C00668" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00010"/>
-          <modifierSpeciesReference species="C00024"/>
           <modifierSpeciesReference species="C00044"/>
+          <modifierSpeciesReference species="C00024"/>
+          <modifierSpeciesReference species="C00010"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -32229,9 +31755,9 @@
           <speciesReference species="C00117" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00010"/>
-          <modifierSpeciesReference species="C00024"/>
           <modifierSpeciesReference species="C00044"/>
+          <modifierSpeciesReference species="C00024"/>
+          <modifierSpeciesReference species="C00010"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -32530,9 +32056,9 @@
           <speciesReference species="C03735" stoichiometry="1" constant="true"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="C00010"/>
-          <modifierSpeciesReference species="C00024"/>
           <modifierSpeciesReference species="C00044"/>
+          <modifierSpeciesReference species="C00024"/>
+          <modifierSpeciesReference species="C00010"/>
         </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -32862,13 +32388,11 @@
                       <times/>
                       <ci> Kcat_R_R143 </ci>
                       <ci> C00004 </ci>
-                      <ci> C00080 </ci>
                       <ci> C16237 </ci>
                     </apply>
                     <apply>
                       <times/>
                       <ci> Km_C00004_R143 </ci>
-                      <ci> Km_C00080_R143 </ci>
                       <ci> Km_C16237_R143 </ci>
                     </apply>
                   </apply>
@@ -32908,15 +32432,6 @@
                         <divide/>
                         <ci> C00004 </ci>
                         <ci> Km_C00004_R143 </ci>
-                      </apply>
-                    </apply>
-                    <apply>
-                      <plus/>
-                      <cn type="integer"> 1 </cn>
-                      <apply>
-                        <divide/>
-                        <ci> C00080 </ci>
-                        <ci> Km_C00080_R143 </ci>
                       </apply>
                     </apply>
                     <apply>
@@ -32977,13 +32492,11 @@
                       <times/>
                       <ci> Kcat_R_R144 </ci>
                       <ci> C00004 </ci>
-                      <ci> C00080 </ci>
                       <ci> C02051 </ci>
                     </apply>
                     <apply>
                       <times/>
                       <ci> Km_C00004_R144 </ci>
-                      <ci> Km_C00080_R144 </ci>
                       <ci> Km_C02051_R144 </ci>
                     </apply>
                   </apply>
@@ -33023,15 +32536,6 @@
                         <divide/>
                         <ci> C00004 </ci>
                         <ci> Km_C00004_R144 </ci>
-                      </apply>
-                    </apply>
-                    <apply>
-                      <plus/>
-                      <cn type="integer"> 1 </cn>
-                      <apply>
-                        <divide/>
-                        <ci> C00080 </ci>
-                        <ci> Km_C00080_R144 </ci>
                       </apply>
                     </apply>
                     <apply>
@@ -33092,13 +32596,11 @@
                       <times/>
                       <ci> Kcat_R_R145 </ci>
                       <ci> C00004 </ci>
-                      <ci> C00080 </ci>
                       <ci> C15972 </ci>
                     </apply>
                     <apply>
                       <times/>
                       <ci> Km_C00004_R145 </ci>
-                      <ci> Km_C00080_R145 </ci>
                       <ci> Km_C15972_R145 </ci>
                     </apply>
                   </apply>
@@ -33138,15 +32640,6 @@
                         <divide/>
                         <ci> C00004 </ci>
                         <ci> Km_C00004_R145 </ci>
-                      </apply>
-                    </apply>
-                    <apply>
-                      <plus/>
-                      <cn type="integer"> 1 </cn>
-                      <apply>
-                        <divide/>
-                        <ci> C00080 </ci>
-                        <ci> Km_C00080_R145 </ci>
                       </apply>
                     </apply>
                     <apply>
@@ -33213,14 +32706,12 @@
                       <ci> C00004 </ci>
                       <ci> C00011 </ci>
                       <ci> C00024 </ci>
-                      <ci> C00080 </ci>
                     </apply>
                     <apply>
                       <times/>
                       <ci> Km_C00004_R146 </ci>
                       <ci> Km_C00011_R146 </ci>
                       <ci> Km_C00024_R146 </ci>
-                      <ci> Km_C00080_R146 </ci>
                     </apply>
                   </apply>
                 </apply>
@@ -33288,15 +32779,6 @@
                         <ci> Km_C00024_R146 </ci>
                       </apply>
                     </apply>
-                    <apply>
-                      <plus/>
-                      <cn type="integer"> 1 </cn>
-                      <apply>
-                        <divide/>
-                        <ci> C00080 </ci>
-                        <ci> Km_C00080_R146 </ci>
-                      </apply>
-                    </apply>
                   </apply>
                 </apply>
                 <cn type="integer"> 1 </cn>
@@ -33353,7 +32835,6 @@
                       <ci> C00004 </ci>
                       <ci> C00011 </ci>
                       <ci> C00014 </ci>
-                      <ci> C00080 </ci>
                       <ci> C00143 </ci>
                     </apply>
                     <apply>
@@ -33361,7 +32842,6 @@
                       <ci> Km_C00004_R147 </ci>
                       <ci> Km_C00011_R147 </ci>
                       <ci> Km_C00014_R147 </ci>
-                      <ci> Km_C00080_R147 </ci>
                       <ci> Km_C00143_R147 </ci>
                     </apply>
                   </apply>
@@ -33435,15 +32915,6 @@
                       <cn type="integer"> 1 </cn>
                       <apply>
                         <divide/>
-                        <ci> C00080 </ci>
-                        <ci> Km_C00080_R147 </ci>
-                      </apply>
-                    </apply>
-                    <apply>
-                      <plus/>
-                      <cn type="integer"> 1 </cn>
-                      <apply>
-                        <divide/>
                         <ci> C00143 </ci>
                         <ci> Km_C00143_R147 </ci>
                       </apply>
@@ -33497,13 +32968,11 @@
                       <times/>
                       <ci> Kcat_R_R148 </ci>
                       <ci> C00004 </ci>
-                      <ci> C00080 </ci>
                       <ci> C00248 </ci>
                     </apply>
                     <apply>
                       <times/>
                       <ci> Km_C00004_R148 </ci>
-                      <ci> Km_C00080_R148 </ci>
                       <ci> Km_C00248_R148 </ci>
                     </apply>
                   </apply>
@@ -33543,15 +33012,6 @@
                         <divide/>
                         <ci> C00004 </ci>
                         <ci> Km_C00004_R148 </ci>
-                      </apply>
-                    </apply>
-                    <apply>
-                      <plus/>
-                      <cn type="integer"> 1 </cn>
-                      <apply>
-                        <divide/>
-                        <ci> C00080 </ci>
-                        <ci> Km_C00080_R148 </ci>
                       </apply>
                     </apply>
                     <apply>
@@ -33617,14 +33077,12 @@
                       <ci> Kcat_R_R149 </ci>
                       <ci> C00004 </ci>
                       <ci> C00011 </ci>
-                      <ci> C00080 </ci>
                       <ci> C00527 </ci>
                     </apply>
                     <apply>
                       <times/>
                       <ci> Km_C00004_R149 </ci>
                       <ci> Km_C00011_R149 </ci>
-                      <ci> Km_C00080_R149 </ci>
                       <ci> Km_C00527_R149 </ci>
                     </apply>
                   </apply>
@@ -33682,15 +33140,6 @@
                         <divide/>
                         <ci> C00011 </ci>
                         <ci> Km_C00011_R149 </ci>
-                      </apply>
-                    </apply>
-                    <apply>
-                      <plus/>
-                      <cn type="integer"> 1 </cn>
-                      <apply>
-                        <divide/>
-                        <ci> C00080 </ci>
-                        <ci> Km_C00080_R149 </ci>
                       </apply>
                     </apply>
                     <apply>
@@ -33756,14 +33205,12 @@
                       <ci> Kcat_R_R150 </ci>
                       <ci> C00004 </ci>
                       <ci> C00011 </ci>
-                      <ci> C00080 </ci>
                       <ci> C00091 </ci>
                     </apply>
                     <apply>
                       <times/>
                       <ci> Km_C00004_R150 </ci>
                       <ci> Km_C00011_R150 </ci>
-                      <ci> Km_C00080_R150 </ci>
                       <ci> Km_C00091_R150 </ci>
                     </apply>
                   </apply>
@@ -33828,15 +33275,6 @@
                       <cn type="integer"> 1 </cn>
                       <apply>
                         <divide/>
-                        <ci> C00080 </ci>
-                        <ci> Km_C00080_R150 </ci>
-                      </apply>
-                    </apply>
-                    <apply>
-                      <plus/>
-                      <cn type="integer"> 1 </cn>
-                      <apply>
-                        <divide/>
                         <ci> C00091 </ci>
                         <ci> Km_C00091_R150 </ci>
                       </apply>
@@ -33875,13 +33313,11 @@
                     <apply>
                       <times/>
                       <ci> Kcat_F_R151 </ci>
-                      <ci> C00001 </ci>
                       <ci> C00037 </ci>
                       <ci> C00143 </ci>
                     </apply>
                     <apply>
                       <times/>
-                      <ci> Km_C00001_R151 </ci>
                       <ci> Km_C00037_R151 </ci>
                       <ci> Km_C00143_R151 </ci>
                     </apply>
@@ -33908,15 +33344,6 @@
                   <plus/>
                   <apply>
                     <times/>
-                    <apply>
-                      <plus/>
-                      <cn type="integer"> 1 </cn>
-                      <apply>
-                        <divide/>
-                        <ci> C00001 </ci>
-                        <ci> Km_C00001_R151 </ci>
-                      </apply>
-                    </apply>
                     <apply>
                       <plus/>
                       <cn type="integer"> 1 </cn>
@@ -34004,13 +33431,11 @@
                     <apply>
                       <times/>
                       <ci> Kcat_R_R152 </ci>
-                      <ci> C00001 </ci>
                       <ci> C00037 </ci>
                       <ci> C04377 </ci>
                     </apply>
                     <apply>
                       <times/>
-                      <ci> Km_C00001_R152 </ci>
                       <ci> Km_C00037_R152 </ci>
                       <ci> Km_C04377_R152 </ci>
                     </apply>
@@ -34044,15 +33469,6 @@
                   </apply>
                   <apply>
                     <times/>
-                    <apply>
-                      <plus/>
-                      <cn type="integer"> 1 </cn>
-                      <apply>
-                        <divide/>
-                        <ci> C00001 </ci>
-                        <ci> Km_C00001_R152 </ci>
-                      </apply>
-                    </apply>
                     <apply>
                       <plus/>
                       <cn type="integer"> 1 </cn>
@@ -34611,7 +34027,6 @@
                       <ci> C00004 </ci>
                       <ci> C00011 </ci>
                       <ci> C00014 </ci>
-                      <ci> C00080 </ci>
                       <ci> C00143 </ci>
                     </apply>
                     <apply>
@@ -34619,7 +34034,6 @@
                       <ci> Km_C00004_R157 </ci>
                       <ci> Km_C00011_R157 </ci>
                       <ci> Km_C00014_R157 </ci>
-                      <ci> Km_C00080_R157 </ci>
                       <ci> Km_C00143_R157 </ci>
                     </apply>
                   </apply>
@@ -34693,15 +34107,6 @@
                       <cn type="integer"> 1 </cn>
                       <apply>
                         <divide/>
-                        <ci> C00080 </ci>
-                        <ci> Km_C00080_R157 </ci>
-                      </apply>
-                    </apply>
-                    <apply>
-                      <plus/>
-                      <cn type="integer"> 1 </cn>
-                      <apply>
-                        <divide/>
                         <ci> C00143 </ci>
                         <ci> Km_C00143_R157 </ci>
                       </apply>
@@ -34739,14 +34144,9 @@
                     <apply>
                       <times/>
                       <ci> Kcat_F_R158 </ci>
-                      <ci> C00001 </ci>
                       <ci> C01419 </ci>
                     </apply>
-                    <apply>
-                      <times/>
-                      <ci> Km_C00001_R158 </ci>
-                      <ci> Km_C01419_R158 </ci>
-                    </apply>
+                    <ci> Km_C01419_R158 </ci>
                   </apply>
                   <apply>
                     <divide/>
@@ -34768,26 +34168,11 @@
                 <minus/>
                 <apply>
                   <plus/>
+                  <cn type="integer"> 1 </cn>
                   <apply>
-                    <times/>
-                    <apply>
-                      <plus/>
-                      <cn type="integer"> 1 </cn>
-                      <apply>
-                        <divide/>
-                        <ci> C00001 </ci>
-                        <ci> Km_C00001_R158 </ci>
-                      </apply>
-                    </apply>
-                    <apply>
-                      <plus/>
-                      <cn type="integer"> 1 </cn>
-                      <apply>
-                        <divide/>
-                        <ci> C01419 </ci>
-                        <ci> Km_C01419_R158 </ci>
-                      </apply>
-                    </apply>
+                    <divide/>
+                    <ci> C01419 </ci>
+                    <ci> Km_C01419_R158 </ci>
                   </apply>
                   <apply>
                     <times/>
@@ -34842,14 +34227,9 @@
                     <apply>
                       <times/>
                       <ci> Kcat_F_R159 </ci>
-                      <ci> C00001 </ci>
                       <ci> C05729 </ci>
                     </apply>
-                    <apply>
-                      <times/>
-                      <ci> Km_C00001_R159 </ci>
-                      <ci> Km_C05729_R159 </ci>
-                    </apply>
+                    <ci> Km_C05729_R159 </ci>
                   </apply>
                   <apply>
                     <divide/>
@@ -34871,26 +34251,11 @@
                 <minus/>
                 <apply>
                   <plus/>
+                  <cn type="integer"> 1 </cn>
                   <apply>
-                    <times/>
-                    <apply>
-                      <plus/>
-                      <cn type="integer"> 1 </cn>
-                      <apply>
-                        <divide/>
-                        <ci> C00001 </ci>
-                        <ci> Km_C00001_R159 </ci>
-                      </apply>
-                    </apply>
-                    <apply>
-                      <plus/>
-                      <cn type="integer"> 1 </cn>
-                      <apply>
-                        <divide/>
-                        <ci> C05729 </ci>
-                        <ci> Km_C05729_R159 </ci>
-                      </apply>
-                    </apply>
+                    <divide/>
+                    <ci> C05729 </ci>
+                    <ci> Km_C05729_R159 </ci>
                   </apply>
                   <apply>
                     <times/>
@@ -35186,7 +34551,6 @@
                       <ci> C00004 </ci>
                       <ci> C00011 </ci>
                       <ci> C00014 </ci>
-                      <ci> C00080 </ci>
                       <ci> C00143 </ci>
                     </apply>
                     <apply>
@@ -35194,7 +34558,6 @@
                       <ci> Km_C00004_R162 </ci>
                       <ci> Km_C00011_R162 </ci>
                       <ci> Km_C00014_R162 </ci>
-                      <ci> Km_C00080_R162 </ci>
                       <ci> Km_C00143_R162 </ci>
                     </apply>
                   </apply>
@@ -35268,15 +34631,6 @@
                       <cn type="integer"> 1 </cn>
                       <apply>
                         <divide/>
-                        <ci> C00080 </ci>
-                        <ci> Km_C00080_R162 </ci>
-                      </apply>
-                    </apply>
-                    <apply>
-                      <plus/>
-                      <cn type="integer"> 1 </cn>
-                      <apply>
-                        <divide/>
                         <ci> C00143 </ci>
                         <ci> Km_C00143_R162 </ci>
                       </apply>
@@ -35322,14 +34676,9 @@
                     <apply>
                       <times/>
                       <ci> Kcat_R_R163 </ci>
-                      <ci> C00001 </ci>
                       <ci> C00445 </ci>
                     </apply>
-                    <apply>
-                      <times/>
-                      <ci> Km_C00001_R163 </ci>
-                      <ci> Km_C00445_R163 </ci>
-                    </apply>
+                    <ci> Km_C00445_R163 </ci>
                   </apply>
                 </apply>
               </apply>
@@ -35343,26 +34692,11 @@
                     <ci> C03479 </ci>
                     <ci> Km_C03479_R163 </ci>
                   </apply>
+                  <cn type="integer"> 1 </cn>
                   <apply>
-                    <times/>
-                    <apply>
-                      <plus/>
-                      <cn type="integer"> 1 </cn>
-                      <apply>
-                        <divide/>
-                        <ci> C00001 </ci>
-                        <ci> Km_C00001_R163 </ci>
-                      </apply>
-                    </apply>
-                    <apply>
-                      <plus/>
-                      <cn type="integer"> 1 </cn>
-                      <apply>
-                        <divide/>
-                        <ci> C00445 </ci>
-                        <ci> Km_C00445_R163 </ci>
-                      </apply>
-                    </apply>
+                    <divide/>
+                    <ci> C00445 </ci>
+                    <ci> Km_C00445_R163 </ci>
                   </apply>
                 </apply>
                 <cn type="integer"> 1 </cn>
@@ -35396,14 +34730,9 @@
                     <apply>
                       <times/>
                       <ci> Kcat_F_R164 </ci>
-                      <ci> C00001 </ci>
                       <ci> C01419 </ci>
                     </apply>
-                    <apply>
-                      <times/>
-                      <ci> Km_C00001_R164 </ci>
-                      <ci> Km_C01419_R164 </ci>
-                    </apply>
+                    <ci> Km_C01419_R164 </ci>
                   </apply>
                   <apply>
                     <divide/>
@@ -35425,26 +34754,11 @@
                 <minus/>
                 <apply>
                   <plus/>
+                  <cn type="integer"> 1 </cn>
                   <apply>
-                    <times/>
-                    <apply>
-                      <plus/>
-                      <cn type="integer"> 1 </cn>
-                      <apply>
-                        <divide/>
-                        <ci> C00001 </ci>
-                        <ci> Km_C00001_R164 </ci>
-                      </apply>
-                    </apply>
-                    <apply>
-                      <plus/>
-                      <cn type="integer"> 1 </cn>
-                      <apply>
-                        <divide/>
-                        <ci> C01419 </ci>
-                        <ci> Km_C01419_R164 </ci>
-                      </apply>
-                    </apply>
+                    <divide/>
+                    <ci> C01419 </ci>
+                    <ci> Km_C01419_R164 </ci>
                   </apply>
                   <apply>
                     <times/>
@@ -35499,14 +34813,9 @@
                     <apply>
                       <times/>
                       <ci> Kcat_F_R165 </ci>
-                      <ci> C00001 </ci>
                       <ci> C05729 </ci>
                     </apply>
-                    <apply>
-                      <times/>
-                      <ci> Km_C00001_R165 </ci>
-                      <ci> Km_C05729_R165 </ci>
-                    </apply>
+                    <ci> Km_C05729_R165 </ci>
                   </apply>
                   <apply>
                     <divide/>
@@ -35528,26 +34837,11 @@
                 <minus/>
                 <apply>
                   <plus/>
+                  <cn type="integer"> 1 </cn>
                   <apply>
-                    <times/>
-                    <apply>
-                      <plus/>
-                      <cn type="integer"> 1 </cn>
-                      <apply>
-                        <divide/>
-                        <ci> C00001 </ci>
-                        <ci> Km_C00001_R165 </ci>
-                      </apply>
-                    </apply>
-                    <apply>
-                      <plus/>
-                      <cn type="integer"> 1 </cn>
-                      <apply>
-                        <divide/>
-                        <ci> C05729 </ci>
-                        <ci> Km_C05729_R165 </ci>
-                      </apply>
-                    </apply>
+                    <divide/>
+                    <ci> C05729 </ci>
+                    <ci> Km_C05729_R165 </ci>
                   </apply>
                   <apply>
                     <times/>
@@ -35819,14 +35113,9 @@
                     <apply>
                       <times/>
                       <ci> Kcat_R_R169 </ci>
-                      <ci> C00001 </ci>
                       <ci> C02218 </ci>
                     </apply>
-                    <apply>
-                      <times/>
-                      <ci> Km_C00001_R169 </ci>
-                      <ci> Km_C02218_R169 </ci>
-                    </apply>
+                    <ci> Km_C02218_R169 </ci>
                   </apply>
                 </apply>
               </apply>
@@ -35840,26 +35129,11 @@
                     <ci> C00065 </ci>
                     <ci> Km_C00065_R169 </ci>
                   </apply>
+                  <cn type="integer"> 1 </cn>
                   <apply>
-                    <times/>
-                    <apply>
-                      <plus/>
-                      <cn type="integer"> 1 </cn>
-                      <apply>
-                        <divide/>
-                        <ci> C00001 </ci>
-                        <ci> Km_C00001_R169 </ci>
-                      </apply>
-                    </apply>
-                    <apply>
-                      <plus/>
-                      <cn type="integer"> 1 </cn>
-                      <apply>
-                        <divide/>
-                        <ci> C02218 </ci>
-                        <ci> Km_C02218_R169 </ci>
-                      </apply>
-                    </apply>
+                    <divide/>
+                    <ci> C02218 </ci>
+                    <ci> Km_C02218_R169 </ci>
                   </apply>
                 </apply>
                 <cn type="integer"> 1 </cn>
@@ -35975,14 +35249,9 @@
                     <apply>
                       <times/>
                       <ci> Kcat_F_R171 </ci>
-                      <ci> C00001 </ci>
                       <ci> C02218 </ci>
                     </apply>
-                    <apply>
-                      <times/>
-                      <ci> Km_C00001_R171 </ci>
-                      <ci> Km_C02218_R171 </ci>
-                    </apply>
+                    <ci> Km_C02218_R171 </ci>
                   </apply>
                   <apply>
                     <divide/>
@@ -36004,26 +35273,11 @@
                 <minus/>
                 <apply>
                   <plus/>
+                  <cn type="integer"> 1 </cn>
                   <apply>
-                    <times/>
-                    <apply>
-                      <plus/>
-                      <cn type="integer"> 1 </cn>
-                      <apply>
-                        <divide/>
-                        <ci> C00001 </ci>
-                        <ci> Km_C00001_R171 </ci>
-                      </apply>
-                    </apply>
-                    <apply>
-                      <plus/>
-                      <cn type="integer"> 1 </cn>
-                      <apply>
-                        <divide/>
-                        <ci> C02218 </ci>
-                        <ci> Km_C02218_R171 </ci>
-                      </apply>
-                    </apply>
+                    <divide/>
+                    <ci> C02218 </ci>
+                    <ci> Km_C02218_R171 </ci>
                   </apply>
                   <apply>
                     <times/>
@@ -36324,14 +35578,9 @@
                     <apply>
                       <times/>
                       <ci> Kcat_F_R175 </ci>
-                      <ci> C00001 </ci>
                       <ci> C01419 </ci>
                     </apply>
-                    <apply>
-                      <times/>
-                      <ci> Km_C00001_R175 </ci>
-                      <ci> Km_C01419_R175 </ci>
-                    </apply>
+                    <ci> Km_C01419_R175 </ci>
                   </apply>
                   <apply>
                     <divide/>
@@ -36353,26 +35602,11 @@
                 <minus/>
                 <apply>
                   <plus/>
+                  <cn type="integer"> 1 </cn>
                   <apply>
-                    <times/>
-                    <apply>
-                      <plus/>
-                      <cn type="integer"> 1 </cn>
-                      <apply>
-                        <divide/>
-                        <ci> C00001 </ci>
-                        <ci> Km_C00001_R175 </ci>
-                      </apply>
-                    </apply>
-                    <apply>
-                      <plus/>
-                      <cn type="integer"> 1 </cn>
-                      <apply>
-                        <divide/>
-                        <ci> C01419 </ci>
-                        <ci> Km_C01419_R175 </ci>
-                      </apply>
-                    </apply>
+                    <divide/>
+                    <ci> C01419 </ci>
+                    <ci> Km_C01419_R175 </ci>
                   </apply>
                   <apply>
                     <times/>
@@ -36427,14 +35661,9 @@
                     <apply>
                       <times/>
                       <ci> Kcat_F_R176 </ci>
-                      <ci> C00001 </ci>
                       <ci> C05729 </ci>
                     </apply>
-                    <apply>
-                      <times/>
-                      <ci> Km_C00001_R176 </ci>
-                      <ci> Km_C05729_R176 </ci>
-                    </apply>
+                    <ci> Km_C05729_R176 </ci>
                   </apply>
                   <apply>
                     <divide/>
@@ -36456,26 +35685,11 @@
                 <minus/>
                 <apply>
                   <plus/>
+                  <cn type="integer"> 1 </cn>
                   <apply>
-                    <times/>
-                    <apply>
-                      <plus/>
-                      <cn type="integer"> 1 </cn>
-                      <apply>
-                        <divide/>
-                        <ci> C00001 </ci>
-                        <ci> Km_C00001_R176 </ci>
-                      </apply>
-                    </apply>
-                    <apply>
-                      <plus/>
-                      <cn type="integer"> 1 </cn>
-                      <apply>
-                        <divide/>
-                        <ci> C05729 </ci>
-                        <ci> Km_C05729_R176 </ci>
-                      </apply>
-                    </apply>
+                    <divide/>
+                    <ci> C05729 </ci>
+                    <ci> Km_C05729_R176 </ci>
                   </apply>
                   <apply>
                     <times/>
