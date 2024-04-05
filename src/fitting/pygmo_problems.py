@@ -407,7 +407,7 @@ class SBMLGlobalFit_Multi_Fly:
     def fitness(self, x):
         if self.scale: x = self._unscale(x)
         res_dict = self._simulate(x)
-        obj = np.nanmean([self._residual(results, self.data[sample], sample) for sample, results in res_dict.items()])
+        obj = np.nansum([self._residual(results, self.data[sample], sample) for sample, results in res_dict.items()])
         return [obj]
     
     def _setup_rr(self): # run on engine

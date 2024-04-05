@@ -60,7 +60,7 @@ class pickleless_bfe(pg.ipyparallel_bfe):
                 rc = Client(*client_args, **self.client_kwargs)
                 rc[:].use_cloudpickle()
                 pg.ipyparallel_bfe._view = rc.broadcast_view(*view_args, **self.view_kwargs)
-                pg.ipyparallel_bfe._view.is_coalescing = True
+                pg.ipyparallel_bfe._view.is_coalescing = False
                 self.client_size = len(rc.ids)
                 pg.ipyparallel_bfe._view.scatter("rank", rc.ids, flatten=True)
                 pg.ipyparallel_bfe._view.push({"prob": self.prob}, block = True)
@@ -93,10 +93,10 @@ class pickleless_bfe(pg.ipyparallel_bfe):
         with pg.ipyparallel_bfe._view_lock:
 
             ar = pg.ipyparallel_bfe._view.apply(_ipy_bfe_func2, self.temp_dv_path, ipp.Reference("prob"), ipp.Reference("rank"))
-            ret = ipp.AsyncMapResult(pg.ipyparallel_bfe._view.client, ar._children, ipp.client.map.Map())
+            # ret = ipp.AsyncMapResult(pg.ipyparallel_bfe._view.client, ar._children, ipp.client.map.Map())
             
         # Build the vector of fitness vectors as a 2D numpy array.
-        fvs = np.array(sum([pickle.loads(fv) for fv in ret.get()],[]))
+        fvs = np.array(sum([pickle.loads(fv) for fv in ar.get()],[]))
         # Reshape it so that it is 1D.
         fvs.shape = (ndvs*nf,)
 
