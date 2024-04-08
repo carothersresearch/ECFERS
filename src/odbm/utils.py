@@ -16,6 +16,8 @@ def extractParams(param_str):
     mystr = param_str.split(';')
     for s in mystr:
         k,v = s.split(':')
+        if 'KI' in k:
+            k = k.split('_')[1].replace('I','i')+'_'+k.split('_')[0]
         mydict[k.strip()] = v.strip()
     return mydict
 

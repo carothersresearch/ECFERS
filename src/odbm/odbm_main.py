@@ -178,15 +178,17 @@ class ModelBuilder:
         """        
         if species['Type'] == 'Enzyme':
             label = 'EC'+species['EC'].replace('.','')
+            present = 'p_'+label+'*'
         else:
             label = fmt(species['Label'])
+            present = ''
         species['Label'] = label
         relative = species['Relative']
         
         if not pd.isnull(relative):
-            s_str = (label +'= ' + relative + '*'+str(species['StartingConc']) + '; \n')
+            s_str = (label +'= ' + present + relative + '*'+str(species['StartingConc']) + '*dilution_factor; \n')
         else:
-            s_str = (label +'=' + str(species['StartingConc']) + '; \n')
+            s_str = (label +'=' + present + str(species['StartingConc']) + '*dilution_factor; \n')
         
         if not pd.isnull(species['Conc']):
                 funs = species['Conc'].split(';')
@@ -299,33 +301,32 @@ class ModelBuilder:
                 for m in mechanisms:
                         self.applyMechanism(m,s)
 
-        for _, sp in self.species.iterrows():
+        for _, sp in S.iterrows():
             self.s_str += self.writeSpecies(sp)
             self.s_str += self.writeParameters(sp['Parameters'], sp['Label'], required = False)
             self.v_str += self.writeVariable(sp['Relative'])
+            if sp['Type'] == 'Enzyme':
+                self.v_str += self.writeVariable('p_'+'EC'+sp['EC'].replace('.',''))
+        self.v_str += self.writeVariable('dilution_factor')
 
         for _, rxn in self.rxns.iterrows():
             try:
                 parameters = rxn['Parameters']
             except:
-                ki = ';' + rxn['Ki'] if not pd.isnull(rxn['Ki']) else ''
+                try:
+                    kis = ';'.join([I for I in np.unique(rxn['KI'].split(';')) if np.all([i not in I for i in ['D','G']])])
+                except:
+                    kis = np.nan
+                ki = ';' + kis if not pd.isnull(kis) else ''
                 parameters = rxn['Km'] + '; ' + rxn['Kcat'] + ki
             self.p_str += self.writeParameters(parameters, rxn['Label'])
             self.r_str += self.writeReaction(rxn) + '\n'
 
-            if not pd.isnull(rxn['Ki']):
-                for i in rxn['Inhibitors'].split(';'): 
-                    var = 'Gi_'+i+'_'+rxn['Label']
-                    self.v_str += self.writeVariable(var, value = 0.5)
-
-        ## hack for now to get parameters
-        # flag = True
-        # while flag:
-        #     try:
-        #         te.loada(self.s_str + self.p_str + self.r_str)
-        #         flag = False
-        #     except Exception as e:
-        #         self.p_str += str(e).split("'")[1] +'= 1 ; \n'
+            if not pd.isnull(rxn['KI']):
+                for i in rxn['Inhibitors'].split(';'):
+                    if np.all([j not in i for j in ['D','G']]): 
+                        var = 'Gi_'+i+'_'+rxn['Label']
+                        self.v_str += self.writeVariable(var, value = 0.5)
 
         return self.s_str + self.p_str + self.v_str + self.r_str
 

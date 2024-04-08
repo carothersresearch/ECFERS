@@ -52,6 +52,10 @@ class Mechanism(EnforceOverrides):
             self.substrates = rxn['Substrates']
             self.products = rxn['Products']
             self.inhibitors = rxn['Inhibitors']
+            try:
+                self.inhibitors = ';'.join([I for I in np.unique(self.inhibitors.split(';')) if np.all([i not in I for i in ['D','G']])])
+            except:
+                self.inhibitors = 'nan'
             #self.cofactors = rxn['Cofactor'] # this is going to be removed. maybe we will add activators/inhibitors
             # try:
             #     self.params = rxn['Parameters'] # this is going to be two (or more?) columns
@@ -60,7 +64,12 @@ class Mechanism(EnforceOverrides):
             # try:
             #     self.label = rxn['Reaction ID'] # it was confusing to have Reaction ID and Label. sticking with just label
             # except:
-            self.Ki = rxn['Ki']
+            self.Ki = rxn['KI']
+            try:
+                self.Ki = ';'.join([I for I in np.unique(self.Ki.split(';')) if np.all([i not in I for i in ['D','G']])])
+            except:
+                self.Ki = np.nan
+
             self.label = rxn['Label']
             self.EC = rxn['EC']
 

@@ -29,7 +29,7 @@
       <species id="EC231180" compartment="default_compartment" initialAmount="9.5" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="EC23139" compartment="default_compartment" initialAmount="6.5" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="C00092" compartment="default_compartment" initialAmount="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00085" compartment="default_compartment" initialAmount="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00085" compartment="default_compartment" initialAmount="888" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="C00668" compartment="default_compartment" initialAmount="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="C05345" compartment="default_compartment" initialAmount="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="C01172" compartment="default_compartment" initialAmount="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
