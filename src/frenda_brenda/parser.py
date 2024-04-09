@@ -21,13 +21,15 @@ with gzip.open(path+"/../thermo_calculations/kegg_enzymes.json.gz", "r") as f:
 with gzip.open(path+"/../thermo_calculations/kegg_reactions.json.gz", "r") as f:
         RXNs = {r['RID']:r['reaction'] for r in json.load(f)}
 
-reaction = pd.read_csv(path+'/Files/Reaction.csv')
-sbp = pd.read_csv(path+'/Files/SpeciesBaseMechanisms.csv')
+reaction_og = pd.read_csv(path+'/Files/Reaction.csv')
+sbm_og = pd.read_csv(path+'/Files/SpeciesBaseMechanisms.csv')
+inac = pd.read_csv(path+'/Files/Inaccessible_IDs.csv')
 kcats = pd.read_csv(path+'/../kinetic_estimator/full_report_kcats.csv') #GET THIS FROM WHERE?
 kms = pd.read_csv(path+'/../kinetic_estimator/full_report_kms.csv') #GET THIS FROM WHERE?
 kis = pd.read_csv(path+'/../kinetic_estimator/full_report_kis.csv') #GET THIS FROM WHERE?
 metabconc_ref = pd.read_csv(path+'/Files/Metabolite_Concentrations.csv')
 dataFile = path+'/Files/brenda_download.txt'
+
 
 brenda = BRENDA(dataFile)
 cc = ComponentContribution()
@@ -35,6 +37,46 @@ compound_dict = {}
 
 class ECIndexError(Exception):
     pass
+
+def manualEC(sbm, reaction, inac):
+    inac = inac.dropna()
+    # Appending data to sbm DataFrame
+    sbm_rows = []
+    for index, row in inac.iterrows():
+        sbm_row = pd.DataFrame({'Label': row['Accession Number'],
+                                'EC': row['EC'],
+                                'Type': 'Enzyme',
+                                'StartingConc': row['Conc'],
+                                'Conc': np.nan,
+                                'Mechanisms': np.nan,
+                                'Parameters': np.nan}, index=[0])
+        sbm_rows.append(sbm_row)
+
+    if sbm_rows:
+        sbm = pd.concat([sbm] + sbm_rows, ignore_index=True)
+
+    # Appending data to reaction DataFrame
+    reaction_rows = []
+    for index, row in inac.iterrows():
+        reaction_row = pd.DataFrame({'Accession Number': row['Accession Number'],
+                                     'EC': row['EC'],
+                                     'Species': np.nan,
+                                     'Label': np.nan,
+                                     'Enzyme': np.nan,
+                                     'Reaction ID': np.nan,
+                                     'Mechanism': np.nan,
+                                     'Substrates': np.nan,
+                                     'Products': np.nan,
+                                     'Km': np.nan,
+                                     'Kcat': np.nan,
+                                     'Inhibitors': np.nan,
+                                     'KI': np.nan}, index=[0])
+        reaction_rows.append(reaction_row)
+
+    if reaction_rows:
+        reaction = pd.concat([reaction] + reaction_rows, ignore_index=True)
+
+    return sbm, reaction
 
 def get_enzyme_name(reaction):
     return reaction.name
@@ -175,9 +217,11 @@ def grab_KM_prediction(EC, substrate):
     condition = (kms['enzyme'] == EC) & (kms['substrates'] == substrate)
     matching_indices = kms.index[condition]
 
-    i = matching_indices[0]
-    km = kms.loc[i, 'Km']
-
+    try:
+        i = matching_indices[0]
+        km = kms.loc[i, 'Km']
+    except IndexError:
+        print('EC ID ', EC ,' does not have corresponding kinetic parameters. Please use the kinetic estimator to find these values.')
     return km
 
 def grab_Kcat_prediction(EC, substrate):
@@ -307,7 +351,7 @@ def calculate_kcat_F_and_kcat_R(df):
     return df
 
 # Function that iterates through Reaction.csv and pulls the relevant data for each EC using prior functions
-def iterate(reaction_df, sbp_df):
+def iterate(reaction_df, sbm_df):
     expanded_dfs = []
     for index, row in reaction_df.iterrows():
         ec = row['EC']
@@ -324,7 +368,7 @@ def iterate(reaction_df, sbp_df):
             print('Could not index EC ', ec)
             continue
 
-        sbp_df.iloc[index,0] = get_enzyme_name(brenda.reactions.get_by_id(ec))
+        sbm_df.iloc[index,0] = get_enzyme_name(brenda.reactions.get_by_id(ec))
 
         # Add the 'Accession Number', 'EC', 'Species', and 'Label' from the original row to the extracted data
         extracted_df['Accession Number'] = row['Accession Number']
@@ -347,7 +391,7 @@ def iterate(reaction_df, sbp_df):
     for index, row in expanded_df.iterrows():
         expanded_df.iloc[index, 3] = f'R{index+1}'
 
-    return expanded_df, sbp_df
+    return expanded_df, sbm_df
 
 def extract_unique_values(column):
     values = column.str.split(';')
@@ -355,34 +399,195 @@ def extract_unique_values(column):
     unique_values = set([item for sublist in values for item in sublist])
     return unique_values
 
+# Define a function to calculate the average excluding NaN values
+def calculate_average(series):
+    non_nan_values = series.dropna()
+    if non_nan_values.empty:
+        return np.nan
+    else:
+        return non_nan_values.mean()
+
+def fillna_kcat(df):
+    # Splitting 'Kcat' values into 'Kcat_F_temp' and 'Kcat_R_temp' columns
+    df[['Kcat_F_temp', 'Kcat_R_temp']] = df['Kcat'].str.extract(r'Kcat_F: (.*?);.*Kcat_R: (.*?)$')
+
+    # Convert 'Kcat_F_temp' and 'Kcat_R_temp' columns to float
+    df['Kcat_F_temp'] = pd.to_numeric(df['Kcat_F_temp'], errors='coerce')
+    df['Kcat_R_temp'] = pd.to_numeric(df['Kcat_R_temp'], errors='coerce')
+
+    # Calculate the overall average of 'Kcat_F_temp' and 'Kcat_R_temp'
+    average_kcat_f = calculate_average(df['Kcat_F_temp'])
+    average_kcat_r = calculate_average(df['Kcat_R_temp'])
+
+    # Replace 'nan' values in 'Kcat' with overall averages
+    df['Kcat'] = df['Kcat'].str.replace('nan', f'{average_kcat_f}')
+
+    # Drop temporary columns 'Kcat_F_temp' and 'Kcat_R_temp'
+    df.drop(columns=['Kcat_F_temp', 'Kcat_R_temp'], inplace=True)
+
+    return df
+
+def fix_nan_Km(df):
+    def replace_nan_with_avg(row):
+        km_values = row['Km'].split('; ')
+        non_nan_values = []
+        for km_value in km_values:
+            compound_id, value = km_value.split(': ')
+            if value != 'nan':
+                non_nan_values.append(float(value))
+        avg_value = np.mean(non_nan_values)
+        fixed_km_values = []
+        for km_value in km_values:
+            compound_id, value = km_value.split(': ')
+            if value == 'nan':
+                fixed_km_values.append(f"{compound_id}: {avg_value}")
+            else:
+                fixed_km_values.append(km_value)
+        return '; '.join(fixed_km_values)
+
+    df['Km'] = df.apply(replace_nan_with_avg, axis=1)
+    return df
+
+def fix_nan_KI(reaction):
+    def replace_nan_with_avg(row, avg_value):
+        if pd.isna(row['KI']):  # Check if the value is NaN
+            return row['KI']
+
+        ki_values = row['KI'].split(';')
+        non_nan_values = []
+        for ki_value in ki_values:
+            compound_id, value = ki_value.split(': ')
+            if value != 'nan':
+                non_nan_values.append(float(value))
+
+        fixed_ki_values = []
+        for ki_value in ki_values:
+            compound_id, value = ki_value.split(': ')
+            if value == 'nan':
+                fixed_ki_values.append(f"{compound_id}: {avg_value}")
+            else:
+                fixed_ki_values.append(ki_value)
+        return ';'.join(fixed_ki_values)
+
+    all_ki_values = []
+    for ki in reaction['KI']:
+        if ki == '':
+            continue
+        ki_values = ki.split(';')
+        ki_values = [float(ki_value.split(': ')[1]) for ki_value in ki_values if ki_value.split(': ')[1] != 'nan']
+        all_ki_values.extend(ki_values)
+    overall_avg_value = np.mean(all_ki_values)
+
+    for i, row in reaction.iterrows():
+        if row['KI'] == '':  # Check if the value is NaN
+            continue
+        ki_values = row['KI'].split(';')
+        non_nan_values = [float(ki_value.split(': ')[1]) for ki_value in ki_values if ki_value.split(': ')[1] != 'nan']
+        if non_nan_values:
+            avg_value = np.mean(non_nan_values)
+            reaction.at[i, 'KI'] = replace_nan_with_avg(row, avg_value)
+        else:
+            reaction.at[i, 'KI'] = replace_nan_with_avg(row, overall_avg_value)
+
+    return reaction
+
+def removeNonCompounds(df):
+    # Convert 'Inhibitors' column to string type to handle NaN values
+    df['Inhibitors'] = df['Inhibitors'].astype(str)
+    df['KI'] = df['KI'].astype(str)
+
+    # Handle NaN values
+    df['Inhibitors'] = df['Inhibitors'].apply(lambda x: np.nan if x.strip() == 'nan' else x)
+    df['KI'] = df['KI'].apply(lambda x: np.nan if x.strip() == 'nan' else x)
+
+    # Apply the helper function to filter out non-compound values
+    df['Inhibitors'] = df['Inhibitors'].apply(filter_compounds)
+    df['KI'] = df['KI'].apply(filter_ki_compounds)
+
+    # Reset index
+    df.reset_index(drop=True, inplace=True)
+
+    return df
+
+# Helper function to filter out non-compound values
+def filter_compounds(inhibitors):
+    if pd.isna(inhibitors):
+        return np.nan
+    return ';'.join([i for i in inhibitors.split(';') if not i.strip().startswith(('D', 'G'))])
+
+# Helper function to filter out non-compound values in the "KI" column
+def filter_ki_compounds(ki):
+    if pd.isna(ki):
+        return np.nan
+    return ";".join([ki_pair for ki_pair in ki.split(';') if 'D' not in ki_pair.split('_')[0] and 'G' not in ki_pair.split('_')[0]])
+
+def removeDuplicates(df):
+    # Convert 'Inhibitors' column to string type to handle NaN values
+    df['Inhibitors'] = df['Inhibitors'].astype(str)
+    df['KI'] = df['KI'].astype(str)
+
+    # Handle NaN values
+    df['Inhibitors'] = df['Inhibitors'].apply(lambda x: np.nan if x.strip() == 'nan' else x)
+    df['KI'] = df['KI'].apply(lambda x: np.nan if x.strip() == 'nan' else x)
+
+    # Apply the helper function to filter out non-compound values and remove duplicates
+    df['Inhibitors'] = df['Inhibitors'].apply(filter_and_remove_duplicates)
+    df['KI'] = df['KI'].apply(filter_and_remove_duplicates)
+
+    # Reset index
+    df.reset_index(drop=True, inplace=True)
+
+    return df
+
+# Helper function to filter out non-compound values and remove duplicates
+def filter_and_remove_duplicates(column_data):
+    if pd.isna(column_data):
+        return np.nan
+    return ';'.join(set([item.strip() for item in column_data.split(';')]))
+
 def assign_metab_concs(sbm_df, metabconc_ref):
     for index, row in sbm_df.iterrows():
         if row['Type'] == 'Metabolite':
             matching_row = metabconc_ref[metabconc_ref['KEGG'] == row['Label']]
             if not matching_row.empty:
-                # Update 'StartingConc' in sbp with the concentration from mconc
+                # Update 'StartingConc' in sbm with the concentration from mconc
                 sbm_df.at[index, 'StartingConc'] = matching_row['Concentration'].iloc[0]
             else:
                 # If no matching row is found in mconc, set 'StartingConc' to 0.001
                 sbm_df.at[index, 'StartingConc'] = 0.001
     return sbm_df
 
+def clean_RXN(df):
+    df = fillna_kcat(df)
+    df = fix_nan_Km(df)
+    df = removeNonCompounds(df)
+    df = removeDuplicates(df)
+    df = fix_nan_KI(df)
+
+    return df
+
 # THIS NEEDS CHANGED TO BE UPDATED FOR CURRENT PRACTICES
 def main():
     print('this is running')
 
-    parsedRXNs, parsedSBM = iterate(reaction, sbp)
+    sbm, reaction = manualEC(sbm_og, reaction_og, inac)
+
+    parsedRXNs, parsedSBM = iterate(reaction, sbm)
+
+    parsedRXNs = clean_RXN(parsedRXNs)
 
     unique_substrates = extract_unique_values(parsedRXNs['Substrates'])
     unique_products = extract_unique_values(parsedRXNs['Products'])
-    unique_compounds = list(unique_substrates.union(unique_products))
+    unique_inhibitors = extract_unique_values(parsedRXNs['Inhibitors'])
+
+    # Take the union of unique substrates, products, and inhibitors
+    unique_compounds = list(unique_substrates.union(unique_products, unique_inhibitors))
 
     # Create a DataFrame for unique compounds
     compounds_df = pd.DataFrame({'Label': unique_compounds, 'Type': 'Metabolite'})
 
     # Concatenate with the existing SpeciesBaseMechanism DataFrame
     parsedSBM = pd.concat([parsedSBM, compounds_df], ignore_index=True)
-
     parsedSBM = assign_metab_concs(parsedSBM, metabconc_ref)
 
     # Edits the parsed Reaction.csv in place
