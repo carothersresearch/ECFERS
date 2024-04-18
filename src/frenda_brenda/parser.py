@@ -471,7 +471,9 @@ def fix_nan_KI(reaction):
 
     all_ki_values = []
     for ki in reaction['KI']:
-        if ki == '':
+        if isinstance(ki, str) and ki == '':
+            continue
+        if isinstance(ki, float) and np.isnan(ki):
             continue
         ki_values = ki.split(';')
         ki_values = [float(ki_value.split(': ')[1]) for ki_value in ki_values if ki_value.split(': ')[1] != 'nan']
@@ -479,7 +481,9 @@ def fix_nan_KI(reaction):
     overall_avg_value = np.mean(all_ki_values)
 
     for i, row in reaction.iterrows():
-        if row['KI'] == '':  # Check if the value is NaN
+        if isinstance(row['KI'], str) and row['KI'] == '':
+            continue
+        if isinstance(row['KI'], float) and np.isnan(row['KI']):
             continue
         ki_values = row['KI'].split(';')
         non_nan_values = [float(ki_value.split(': ')[1]) for ki_value in ki_values if ki_value.split(': ')[1] != 'nan']
@@ -490,7 +494,7 @@ def fix_nan_KI(reaction):
             reaction.at[i, 'KI'] = replace_nan_with_avg(row, overall_avg_value)
 
     return reaction
-
+    
 def removeNonCompounds(df):
     # Convert 'Inhibitors' column to string type to handle NaN values
     df['Inhibitors'] = df['Inhibitors'].astype(str)
@@ -557,14 +561,37 @@ def assign_metab_concs(sbm_df, metabconc_ref):
                 sbm_df.at[index, 'StartingConc'] = 0.001
     return sbm_df
 
-def clean_RXN(df):
+def drop_and_sum_duplicates(reaction, sbm):
+    # Create a mask to identify rows where Type is "Metabolite"
+    metabolite_mask = sbm['Type'] == 'Metabolite'
+
+    # Handle cases where Type is "Metabolite"
+    metabolite_sbm = sbm[metabolite_mask].copy()  # Create a copy to avoid SettingWithCopyWarning
+    metabolite_sbm.loc[:, 'StartingConc'] = metabolite_sbm.groupby(['Label'])['StartingConc'].transform('sum')
+    metabolite_sbm = metabolite_sbm.drop_duplicates(subset=['Label'])
+
+    # Handle cases where Type is "Enzyme"
+    enzyme_sbm = sbm[~metabolite_mask].copy()  # Create a copy to avoid SettingWithCopyWarning
+    enzyme_sbm.loc[:, 'StartingConc'] = enzyme_sbm.groupby(['EC'])['StartingConc'].transform('sum')
+    enzyme_sbm = enzyme_sbm.drop_duplicates(subset=['EC'])
+
+    # Concatenate the results
+    sbm = pd.concat([metabolite_sbm, enzyme_sbm])
+
+    # Drop all duplicates in Reaction based on both EC AND Reaction ID
+    reaction = reaction.drop_duplicates(subset=['EC', 'Reaction ID'])
+
+    return reaction, sbm
+
+def clean_RXN(df, sbm):
     df = fillna_kcat(df)
     df = fix_nan_Km(df)
     df = removeNonCompounds(df)
     df = removeDuplicates(df)
     df = fix_nan_KI(df)
+    df, sbm = drop_and_sum_duplicates(df, sbm)
 
-    return df
+    return df, sbm
 
 # THIS NEEDS CHANGED TO BE UPDATED FOR CURRENT PRACTICES
 def main():
@@ -574,7 +601,7 @@ def main():
 
     parsedRXNs, parsedSBM = iterate(reaction, sbm)
 
-    parsedRXNs = clean_RXN(parsedRXNs)
+    parsedRXNs, parsedSBM = clean_RXN(parsedRXNs, parsedSBM)
 
     unique_substrates = extract_unique_values(parsedRXNs['Substrates'])
     unique_products = extract_unique_values(parsedRXNs['Products'])

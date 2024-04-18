@@ -12,8 +12,9 @@ from brendapyrser import BRENDA
 from equilibrator_api import ComponentContribution
 from itertools import filterfalse
 
-# MAKE SURE THESE FILE PATHS ARE UPDATED AND THAT THE FILES EXIST IN THE REPO
 path = os.getcwd()
+
+chosenfile = pd.read_csv(sys.argv[1])
 
 with gzip.open(path+"/../thermo_calculations/kegg_enzymes.json.gz", "r") as f:
         ECs = {e['EC']:e['reaction_ids'] for e in json.load(f)}
@@ -21,8 +22,8 @@ with gzip.open(path+"/../thermo_calculations/kegg_enzymes.json.gz", "r") as f:
 with gzip.open(path+"/../thermo_calculations/kegg_reactions.json.gz", "r") as f:
         RXNs = {r['RID']:r['reaction'] for r in json.load(f)}
 
-reaction_og = pd.read_csv(path+'/Files/append_Reaction.csv')
-sbm_og = pd.read_csv(path+'/Files/append_SpeciesBaseMechanism.csv')
+reaction_og = pd.read_csv(path+'/Files/Reaction.csv')
+sbm_og = pd.read_csv(path+'/Files/SpeciesBaseMechanisms.csv')
 inac = pd.read_csv(path+'/Files/Inaccessible_IDs.csv')
 kcats = pd.read_csv(path+'/../kinetic_estimator/full_report_kcats.csv') #GET THIS FROM WHERE?
 kms = pd.read_csv(path+'/../kinetic_estimator/full_report_kms.csv') #GET THIS FROM WHERE?
@@ -37,6 +38,68 @@ compound_dict = {}
 
 class ECIndexError(Exception):
     pass
+
+
+LastLabel = reaction_og["Label"].iloc[-1]
+
+print(LastLabel)
+
+# Create reaction DataFrame
+reaction_toappend = pd.DataFrame(columns=['Accession Number', 'EC', 'Species', 'Label', 'Enzyme', 'Reaction ID',
+                                  'Mechanism', 'Substrates', 'Products', 'Km', 'Kcat', 'Inhibitors', 'KI'])
+# Create sbm DataFrame
+sbm_toappend = pd.DataFrame(columns=['Label', 'EC', 'Type', 'StartingConc', 'Conc', 'Mechanisms', 'Parameters'])
+
+# Function to generate Label values
+def generate_label():
+    global LastLabel
+    LastLabel = 'R' + str(int(LastLabel[1:]) + 1)
+    return LastLabel
+
+# Iterate over each row in the DataFrame
+for index, row in chosenfile.iterrows():
+    if row['Type'] == 'Enzyme':
+        # Add row to reaction DataFrame
+        reaction_toappend = reaction_toappend.append({
+            'Accession Number': '',
+            'EC': row['EC'],
+            'Species': row['Species'],
+            'Label': generate_label(),
+            'Enzyme': '',
+            'Reaction ID': '',
+            'Mechanism': '',
+            'Substrates': '',
+            'Products': '',
+            'Km': '',
+            'Kcat': '',
+            'Inhibitors': '',
+            'KI': ''
+        }, ignore_index=True)
+
+        # Add row to sbm DataFrame
+        sbm_toappend = sbm_toappend.append({
+            'Label': '',
+            'EC': row['EC'],
+            'Type': 'Enzyme',
+            'StartingConc': row['Concentration'],
+            'Conc': '',
+            'Mechanisms': '',
+            'Parameters': ''
+        }, ignore_index=True)
+
+        print(LastLabel)
+
+    elif row['Type'] == 'Metabolite':
+        # Add row to sbm DataFrame
+        sbm_toappend = sbm_toappend.append({
+            'Label': row['KEGG'],
+            'EC': '',
+            'Type': 'Metabolite',
+            'StartingConc': row['Concentration'],
+            'Conc': '',
+            'Mechanisms': '',
+            'Parameters': ''
+        }, ignore_index=True)
 
 def manualEC(sbm, reaction, inac):
     inac = inac.dropna()
@@ -465,7 +528,9 @@ def fix_nan_KI(reaction):
 
     all_ki_values = []
     for ki in reaction['KI']:
-        if ki == '':
+        if isinstance(ki, str) and ki == '':
+            continue
+        if isinstance(ki, float) and np.isnan(ki):
             continue
         ki_values = ki.split(';')
         ki_values = [float(ki_value.split(': ')[1]) for ki_value in ki_values if ki_value.split(': ')[1] != 'nan']
@@ -473,7 +538,9 @@ def fix_nan_KI(reaction):
     overall_avg_value = np.mean(all_ki_values)
 
     for i, row in reaction.iterrows():
-        if row['KI'] == '':  # Check if the value is NaN
+        if isinstance(row['KI'], str) and row['KI'] == '':
+            continue
+        if isinstance(row['KI'], float) and np.isnan(row['KI']):
             continue
         ki_values = row['KI'].split(';')
         non_nan_values = [float(ki_value.split(': ')[1]) for ki_value in ki_values if ki_value.split(': ')[1] != 'nan']
@@ -539,26 +606,53 @@ def filter_and_remove_duplicates(column_data):
         return np.nan
     return ';'.join(set([item.strip() for item in column_data.split(';')]))
 
-def clean_RXN(df):
+def drop_and_sum_duplicates(reaction, sbm):
+    # Create a mask to identify rows where Type is "Metabolite"
+    metabolite_mask = sbm['Type'] == 'Metabolite'
+
+    # Handle cases where Type is "Metabolite"
+    metabolite_sbm = sbm[metabolite_mask].copy()  # Create a copy to avoid SettingWithCopyWarning
+    metabolite_sbm.loc[:, 'StartingConc'] = metabolite_sbm.groupby(['Label'])['StartingConc'].transform('sum')
+    metabolite_sbm = metabolite_sbm.drop_duplicates(subset=['Label'])
+
+    # Handle cases where Type is "Enzyme"
+    enzyme_sbm = sbm[~metabolite_mask].copy()  # Create a copy to avoid SettingWithCopyWarning
+    enzyme_sbm.loc[:, 'StartingConc'] = enzyme_sbm.groupby(['EC'])['StartingConc'].transform('sum')
+    enzyme_sbm = enzyme_sbm.drop_duplicates(subset=['EC'])
+
+    # Concatenate the results
+    sbm = pd.concat([metabolite_sbm, enzyme_sbm])
+
+    # Drop all duplicates in Reaction based on both EC AND Reaction ID
+    reaction = reaction.drop_duplicates(subset=['EC', 'Reaction ID'])
+
+    return reaction, sbm
+
+
+def clean_RXN(df, sbm):
     df = fillna_kcat(df)
     df = fix_nan_Km(df)
     df = removeNonCompounds(df)
     df = removeDuplicates(df)
     df = fix_nan_KI(df)
+    df, sbm = drop_and_sum_duplicates(df, sbm)
 
-    return df
+    return df, sbm
 
 def main():
     print('this is running')
 
-    sbm, reaction = manualEC(sbm_og, reaction_og, inac)
+    sbm, reaction = manualEC(sbm_toappend, reaction_toappend, inac)
 
     parsedRXNs, parsedSBM = iterate(reaction, sbm)
 
-    parsedRXNs = clean_RXN(parsedRXNs)
+    s = pd.concat([sbm_og, parsedSBM])
+    r = pd.concat([reaction_og, parsedRXNs])
 
-    parsedRXNs.to_csv(path+'/Files/append_Reaction.csv', index=False)
-    parsedSBM.to_csv(path+'/Files/append_SpeciesBaseMechanism.csv', index=False)
+    r, s = clean_RXN(r, s)
+
+    r.to_csv(path+'/Files/appended_Reaction.csv', index=False)
+    s.to_csv(path+'/Files/appended_SpeciesBaseMechanism.csv', index=False)
 
 if __name__ == '__main__':
     main()
