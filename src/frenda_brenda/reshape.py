@@ -1,11 +1,12 @@
 import os
 import tellurium as te
 import pandas as pd
+import numpy as np
 import sys
 import os
 
 # load SBML model
-modelfile = os.getcwd()+'/240226MC_FULL.sbml'
+modelfile = os.getcwd()+'/240418MC.sbml'
 #modelfile = sys.argv[1]
 print(modelfile)
 r = te.loadSBMLModel(modelfile)
@@ -39,7 +40,9 @@ for index, row in s.iterrows():
 for index, row in rxn.iterrows():
     ECjoined = 'EC'+''.join(row['EC'].split('.'))
     label = row['Label']
-    compounds = ','.join([row['Substrates'], row['Products']])
+    subs = row['Substrates'].split('; ')
+    prods = row['Products'].split('; ')
+    compounds = ','.join(subs + prods)
     inhibitors = row['Inhibitors']
 
     km_list = []
@@ -54,10 +57,13 @@ for index, row in rxn.iterrows():
     kcr = r[(f'Kcat_R_{label}')]
     rxn.loc[index, 'Kcat'] == f'Kcat_F: {kcf}; Kcat_R: {kcr}'
 
-    for inhibitor in inhibitors.split(';'):
-        new_KI = r[(f'Ki_{compound}_{label}')]
-        ki_list.append(f'{compound}_KI: {new_KI}')
-    rxn.loc[index, 'KI'] == (';').join(ki_list)
+    if isinstance(inhibitors, float) and np.isnan(inhibitors):
+        continue
+    else:
+        for inhibitor in inhibitors.split(';'):
+            new_KI = r[(f'Ki_{inhibitor}_{label}')]
+            ki_list.append(f'{inhibitor}_KI: {new_KI}')
+        rxn.loc[index, 'KI'] == (';').join(ki_list)
 
 rxn.to_csv('FittedReaction.csv', index=False)
 s.to_csv('FittedSpeciesBaseMechanisms.csv', index=False)
