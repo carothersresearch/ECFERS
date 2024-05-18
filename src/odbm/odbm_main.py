@@ -185,10 +185,12 @@ class ModelBuilder:
         species['Label'] = label
         relative = species['Relative']
         
+        s_str = f"species {label};\n"
+
         if not pd.isnull(relative):
-            s_str = (label +'= ' + present + relative + '*'+str(species['StartingConc']) + '*dilution_factor; \n')
+            s_str += (label +'= ' + present + relative + '*'+str(species['StartingConc']) + '*dilution_factor; \n')
         else:
-            s_str = (label +'=' + present + str(species['StartingConc']) + '*dilution_factor; \n')
+            s_str += (label +'=' + present + str(species['StartingConc']) + '*dilution_factor; \n')
         
         if not pd.isnull(species['Conc']):
                 funs = species['Conc'].split(';')
@@ -310,6 +312,7 @@ class ModelBuilder:
         self.v_str += self.writeVariable('dilution_factor')
 
         for _, rxn in self.rxns.iterrows():
+            EC = 'EC'+rxn['EC'].replace('.','')
             try:
                 parameters = rxn['Parameters']
             except:
@@ -318,14 +321,15 @@ class ModelBuilder:
                 except:
                     kis = np.nan
                 ki = ';' + kis if not pd.isnull(kis) else ''
-                parameters = rxn['Km'] + '; ' + rxn['Kcat'] + ki
-            self.p_str += self.writeParameters(parameters, rxn['Label'])
+                parameters = rxn['Km'] + ki
+            self.p_str += self.writeParameters(rxn['Kcat'], rxn['Label'])
+            self.p_str += self.writeParameters(parameters, EC)
             self.r_str += self.writeReaction(rxn) + '\n'
 
             if not pd.isnull(rxn['KI']):
                 for i in rxn['Inhibitors'].split(';'):
                     if np.all([j not in i for j in ['D','G']]): 
-                        var = 'Gi_'+i+'_'+rxn['Label']
+                        var = 'Gi_'+i+'_'+EC
                         self.v_str += self.writeVariable(var, value = 0.5)
 
         return self.s_str + self.p_str + self.v_str + self.r_str

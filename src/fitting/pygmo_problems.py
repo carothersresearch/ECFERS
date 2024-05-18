@@ -2,6 +2,24 @@ import os
 import tellurium as te
 import numpy as np
 import pygmo as pg
+from copy import deepcopy
+
+class TimeoutError(Exception):
+    pass
+
+import signal
+import time
+class timeout:
+    def __init__(self, seconds=1, error_message='Timeout'):
+        self.seconds = seconds
+        self.error_message = error_message
+    def handle_timeout(self, signum, frame):
+        raise TimeoutError(self.error_message)
+    def __enter__(self):
+        signal.signal(signal.SIGALRM, self.handle_timeout)
+        signal.alarm(self.seconds)
+    def __exit__(self, type, value, traceback):
+        signal.alarm(0)
 
 class SBMLGlobalFit:
 
@@ -243,9 +261,11 @@ class SBMLGlobalFit_Multi:
         self.data = data
         self.metadata = metadata
         self.variables = variables # dict of labels and values
+        self.cvode_timepoints = 1000
 
         r = te.loadSBMLModel(self.model)
         self.species_labels = np.array(r.getFullStoichiometryMatrix().rownames)
+        self.global_parameter_labels = np.array(r.getGlobalParameterIds())
         self.cols = {}
         self.rows = {}
         self.data_cols = {}
@@ -259,7 +279,7 @@ class SBMLGlobalFit_Multi:
                 except:
                     pass
             self.cols[s] = measurements
-            self.rows[s] = [np.where(np.linspace(0, self.metadata['timepoints'][s][-1], 1000) < (t+0.1))[0][-1] for t in self.metadata['timepoints'][s]]
+            self.rows[s] = [np.where(np.linspace(0, self.metadata['timepoints'][s][-1], self.cvode_timepoints) < (t+0.1))[0][-1] for t in self.metadata['timepoints'][s]]
 
 
     def fitness(self, x):
@@ -272,59 +292,189 @@ class SBMLGlobalFit_Multi:
         from roadrunner import Config, RoadRunner
         Config.setValue(Config.ROADRUNNER_DISABLE_PYTHON_DYNAMIC_PROPERTIES, False)
         Config.setValue(Config.LOADSBMLOPTIONS_RECOMPILE, False) 
-        # Config.setValue(Config.LLJIT_OPTIMIZATION_LEVEL, 4)
+        Config.setValue(Config.LLJIT_OPTIMIZATION_LEVEL, 4)
 
+        # load model
         id = str(os.getpid())
-        try:
-            r = RoadRunner()
-            r.loadState(self.path_to_models+'/models/binaries/model_state_'+id+'.b')
-        except Exception as e:
-            print(e)
+        if os.path.isfile(self.path_to_models+'/models/binaries/model_state_'+id+'.b'):
+            with open(self.path_to_models+'/models/binaries/model_state_'+id+'.b', 'rb') as f:
+                r = RoadRunner()
+                r.loadStateS(f.read())
+        else:
             r = te.loadSBMLModel(self.model)
-            try:
-                r.saveState(self.path_to_models+'/models/binaries/model_state_'+id+'.b')
-            except Exception as e:
-                print('Could not save state')
-                print(e)
+            r.integrator.absolute_tolerance = 1e-8
+            r.integrator.relative_tolerance = 1e-8
+            r.integrator.maximum_num_steps = 2000
+            with open(self.path_to_models+'/models/binaries/model_state_'+id+'.b', 'wb') as f:
+                f.write(r.saveStateS())
+       
+        # set new parameters
+        for l, v in zip(self.parameter_labels,x):
+            if 'v' not in l:
+                r.setValue('init('+l+')',v)
+            else:
+                r.setValue('init('+l+')',v*1000)
 
-        # update parameters. this can be done once for all samples
-        for label, value in zip(self.parameter_labels,x):
-            r[label] = value
-            
-        # this part we have to do for each sample!
-        res = {}
+        # set variables and simulate
+        results = {sample:self.data[sample]*(-np.inf) for sample in self.metadata['sample_labels']}
+        rb = r.saveStateS()
         for sample in self.metadata['sample_labels']:
-            r.reset() # set concentrations back to t = 0 ("init"). parameters are kept the same
-
+            r2 = RoadRunner()
+            r2.loadStateS(rb)
             # set any variable
             for label, value in self.variables[sample].items():
-                if not np.isnan(value): 
-                    try:
-                        r[label] = value # we might need new assignment rules for heterologous enzymes
-                    except Exception as e:
-                        print('Could not set variable', label, 'to', value)
-                        print(e) 
+                if not np.isnan(value):
+                    if label not in self.species_labels:
+                        r2.setValue('init('+label+')', value) # we might need new assignment rules for heterologous enzymes
+                    else:
+                        # r2.removeInitialAssignment(label) theres some bug here? it seems to also mess up with over valuesS
+                        r2.setValue('['+label+']', value)
             try:
-                results = r.simulate(0,self.metadata['timepoints'][sample][-1],1000)[:,1:].__array__()
-            except:
-                results = self.data[sample]*(-np.inf)
-            res[sample] = results
-        return res
+                results[sample] = r2.simulate(0,self.metadata['timepoints'][sample][-1],self.cvode_timepoints)[:,1:].__array__()
+            except Exception as e:
+                print(e)
+                # break # stop if any fail
+        return results
                 
     def _residual(self,results,data,sample):
         cols = self.cols[sample]
         rows = self.rows[sample]
         dcols = self.data_cols[sample]
+        
+        if data.shape == results.shape:
+            error = (data[:,dcols]-results[:,dcols])
+        else:
+            error = (data[:,dcols]-results[:,cols][rows,:])
 
-        error = (data[:,dcols]-results[:,cols][rows,:])
         RMSE = np.sqrt(np.nansum(error**2, axis=0)/len(rows))
-        NRMSE = RMSE/(np.nanmax(data[:,dcols], axis=0) - np.nanmin(data[:,dcols], axis=0) + 1e6)
+        NRMSE = RMSE/(np.nanmax(data[:,dcols], axis=0) - np.nanmin(data[:,dcols], axis=0) + 1e-6)
         return np.nansum(NRMSE)
     
     def _unscale(self, x):
         unscaled = self.lowerb + (self.upperb - self.lowerb) * x
-        unscaled[unscaled<0] = self.lowerb[unscaled<0]
-        unscaled[unscaled>1] = self.lowerb[unscaled>1]
+        # unscaled[unscaled<0] = self.lowerb[unscaled<0]
+        # unscaled[unscaled>1] = self.lowerb[unscaled>1]
+        return unscaled
+    
+    def _scale(self, x):
+        return (x - self.lowerb) / (self.upperb - self.lowerb)
+
+    def get_bounds(self):
+        if self.scale:
+            lowerb = [0 for i in self.lowerb]
+            upperb = [1 for i in self.upperb]
+        else:
+            upperb = self.upperb
+            lowerb = self.lowerb    
+        return (lowerb, upperb)
+    
+    def get_name(self):
+        return 'Global Fitting of Multiple SBML Models'
+
+class SBMLGlobalFit_Multi_Fly:
+
+    def __init__(self, model, data, parameter_labels, lower_bounds, upper_bounds, metadata, variables = {}, scale = False):
+        self.model = model
+        self.path_to_models = model[:model.find('/models')]
+        self.parameter_labels = parameter_labels # only the ones that are going to be fitted
+        self.upperb = upper_bounds
+        self.lowerb = lower_bounds
+        self.scale = scale
+        self.data = data
+        self.metadata = metadata
+        self.variables = variables # dict of labels and values
+        self.cvode_timepoints = 1000
+
+        r = te.loadSBMLModel(self.model)
+        self.species_labels = np.array(r.getFullStoichiometryMatrix().rownames)
+        self.global_parameter_labels = np.array(r.getGlobalParameterIds())
+        self.cols = {}
+        self.rows = {}
+        self.data_cols = {}
+        for s in self.metadata['sample_labels']:
+            measurements = []
+            self.data_cols[s] = []
+            for i,m in enumerate(self.metadata['measurement_labels']):
+                try:    # model may not contain measurement species
+                    measurements.append(np.where(self.species_labels==m)[0][0])
+                    self.data_cols[s].append(i)
+                except:
+                    pass
+            self.cols[s] = measurements
+            self.rows[s] = [np.where(np.linspace(0, self.metadata['timepoints'][s][-1], self.cvode_timepoints) < (t+0.1))[0][-1] for t in self.metadata['timepoints'][s]]
+
+
+    def fitness(self, x):
+        if self.scale: x = self._unscale(x)
+        res_dict = self._simulate(x)
+        obj = np.nansum([self._residual(results, self.data[sample], sample) for sample, results in res_dict.items()])
+        return [obj]
+    
+    def _setup_rr(self): # run on engine
+        from roadrunner import Config, RoadRunner
+        Config.setValue(Config.ROADRUNNER_DISABLE_PYTHON_DYNAMIC_PROPERTIES, False)
+        Config.setValue(Config.LOADSBMLOPTIONS_RECOMPILE, False) 
+        Config.setValue(Config.LLJIT_OPTIMIZATION_LEVEL, 4)
+
+        r = te.loadSBMLModel(self.model)
+        r.integrator.absolute_tolerance = 1e-8
+        r.integrator.relative_tolerance = 1e-8
+        r.integrator.maximum_num_steps = 2000
+        self.r = r
+            
+    def _simulate(self, x):
+        from roadrunner import Config, RoadRunner
+        Config.setValue(Config.ROADRUNNER_DISABLE_PYTHON_DYNAMIC_PROPERTIES, False)
+        Config.setValue(Config.LOADSBMLOPTIONS_RECOMPILE, False) 
+        Config.setValue(Config.LLJIT_OPTIMIZATION_LEVEL, 4)
+        
+        r = self.r       
+        # set new parameters
+        for l, v in zip(self.parameter_labels,x):
+            if 'v' not in l:
+                r.setValue('init('+l+')',v)
+            else:
+                r.setValue('init('+l+')',v*1000)
+
+        # set variables and simulate
+        results = {sample:self.data[sample]*(-np.inf) for sample in self.metadata['sample_labels']}
+        rb = r.saveStateS()
+        for sample in self.metadata['sample_labels']:
+            r2 = RoadRunner()
+            r2.loadStateS(rb)
+            # set any variable
+            for label, value in self.variables[sample].items():
+                if not np.isnan(value):
+                    if label not in self.species_labels:
+                        r2.setValue('init('+label+')', value) # we might need new assignment rules for heterologous enzymes
+                    else:
+                        # r2.removeInitialAssignment(label) theres some bug here? it seems to also mess up with over valuesS
+                        r2.setValue('['+label+']', value)
+            try:
+                results[sample] = r2.simulate(0,self.metadata['timepoints'][sample][-1],self.cvode_timepoints)[:,1:].__array__()
+            except Exception as e:
+                print(e)
+                # break # stop if any fail
+        return results
+                
+    def _residual(self,results,data,sample):
+        cols = self.cols[sample]
+        rows = self.rows[sample]
+        dcols = self.data_cols[sample]
+        
+        if data.shape == results.shape:
+            error = (data[:,dcols]-results[:,dcols])
+        else:
+            error = (data[:,dcols]-results[:,cols][rows,:])
+
+        RMSE = np.sqrt(np.nansum(error**2, axis=0)/len(rows))
+        NRMSE = RMSE/(np.nanmax(data[:,dcols], axis=0) - np.nanmin(data[:,dcols], axis=0) + 1e-6)
+        return np.nansum(NRMSE)
+    
+    def _unscale(self, x):
+        unscaled = self.lowerb + (self.upperb - self.lowerb) * x
+        # unscaled[unscaled<0] = self.lowerb[unscaled<0]
+        # unscaled[unscaled>1] = self.lowerb[unscaled>1]
         return unscaled
     
     def _scale(self, x):
