@@ -432,7 +432,7 @@ class SBMLGlobalFit_Multi_Fly:
         Config.setValue(Config.LLJIT_OPTIMIZATION_LEVEL, 4)
         
         all_results = []
-        for r,ms, data, metadata, variables in zip(self.r, self.model_stuff, self.data, self, metadata, self.variables):       
+        for r,ms, data, metadata, variables in zip(self.r, self.model_stuff, self.data, self.metadata, self.variables):       
             # set new parameters
             for l, v in zip(self.parameter_labels,x):
                 if l in ms.parameter_labels: # only set parameters that belong to the model
