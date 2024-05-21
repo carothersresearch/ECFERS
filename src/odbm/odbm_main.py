@@ -276,8 +276,8 @@ class ModelBuilder:
         """
         v_str = ''
         if not pd.isnull(variable):
-            if variable not in self.v_str:
-                v_str += (variable +'=' + str(value) + '; \n')
+            if variable+' ' not in self.v_str:
+                v_str += (variable +' =' + str(value) + '; \n')
 
         return v_str
     
