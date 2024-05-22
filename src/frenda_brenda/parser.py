@@ -222,14 +222,19 @@ def grab_KM_prediction(EC, substrate):
         km = kms.loc[i, 'Km']
     except IndexError:
         print('EC ID ', EC ,' does not have corresponding kinetic parameters. Please use the kinetic estimator to find these values.')
+        km = np.nan
     return km
 
 def grab_Kcat_prediction(EC, substrate):
     condition = (kcats['enzyme'] == EC) & (kcats['substrates'] == substrate)
     matching_indices = kcats.index[condition]
 
-    i = matching_indices[0]
-    kcat = kcats.loc[i, 'kcats']
+    try:
+        i = matching_indices[0]
+        kcat = kcats.loc[i, 'kcats']
+    except IndexError:
+        print('EC ID ', EC ,' does not have corresponding kinetic parameters. Please use the kinetic estimator to find these values.')
+        kcat = np.nan
 
     return kcat
 
@@ -364,11 +369,11 @@ def iterate(reaction_df, sbm_df):
 
         try:
             extracted_df = assemble(ec, species)
+            sbm_df.iloc[index,0] = get_enzyme_name(brenda.reactions.get_by_id(ec))
         except ECIndexError:
             print('Could not index EC ', ec)
             continue
 
-        sbm_df.iloc[index,0] = get_enzyme_name(brenda.reactions.get_by_id(ec))
 
         # Add the 'Accession Number', 'EC', 'Species', and 'Label' from the original row to the extracted data
         extracted_df['Accession Number'] = row['Accession Number']
@@ -428,6 +433,17 @@ def fillna_kcat(df):
     return df
 
 def fix_nan_Km(df):
+    all_km_values = []
+    for km in df['Km']:
+        if isinstance(km, str) and km == '':
+            continue
+        if isinstance(km, float) and np.isnan(km):
+            continue
+        km_values = km.split('; ')
+        km_values = [float(km_value.split(': ')[1]) for km_value in km_values if km_value.split(': ')[1] != 'nan']
+        all_km_values.extend(km_values)
+    overall_avg_value = np.mean(all_km_values)
+
     def replace_nan_with_avg(row):
         km_values = row['Km'].split('; ')
         non_nan_values = []
@@ -435,7 +451,12 @@ def fix_nan_Km(df):
             compound_id, value = km_value.split(': ')
             if value != 'nan':
                 non_nan_values.append(float(value))
-        avg_value = np.mean(non_nan_values)
+
+        if non_nan_values:
+            avg_value = np.mean(non_nan_values)
+        else:
+            avg_value = overall_avg_value
+
         fixed_km_values = []
         for km_value in km_values:
             compound_id, value = km_value.split(': ')
@@ -494,7 +515,7 @@ def fix_nan_KI(reaction):
             reaction.at[i, 'KI'] = replace_nan_with_avg(row, overall_avg_value)
 
     return reaction
-    
+
 def removeNonCompounds(df):
     # Convert 'Inhibitors' column to string type to handle NaN values
     df['Inhibitors'] = df['Inhibitors'].astype(str)
