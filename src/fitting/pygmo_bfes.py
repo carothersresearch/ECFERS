@@ -42,7 +42,7 @@ def _ipy_bfe_func2(dv_path, prob, rank):
     return pickle.dumps(list(map(prob.fitness, dvs)))
 
 class pickleless_bfe(pg.ipyparallel_bfe):
-    def __init__(self, client_kwargs, view_kwargs, temp_dv_path, prob):
+    def __init__(self, client_kwargs, view_kwargs, temp_dv_path, prob:dict):
         self.client_kwargs = client_kwargs
         self.view_kwargs = view_kwargs
         self.temp_dv_path = temp_dv_path
@@ -63,14 +63,16 @@ class pickleless_bfe(pg.ipyparallel_bfe):
                 pg.ipyparallel_bfe._view.is_coalescing = False
                 self.client_size = len(rc.ids)
                 pg.ipyparallel_bfe._view.scatter("rank", rc.ids, flatten=True)
-                pg.ipyparallel_bfe._view.push({"prob": self.prob}, block = True)
-                pg.ipyparallel_bfe._view.apply_sync(lambda x: x.extract(SBMLGlobalFit_Multi_Fly)._setup_rr(), Reference("prob"))
+                for k,v in self.prob.items():
+                    prob_id = "prob_"+k
+                    pg.ipyparallel_bfe._view.push({prob_id: v}, block = True)
+                    pg.ipyparallel_bfe._view.apply_sync(lambda x: x.extract(SBMLGlobalFit_Multi_Fly)._setup_rr(), Reference(prob_id))
 
-    def __call__(self, prob, dvs):
+    def __call__(self, prob, dvs, mode = 'train'):
         import ipyparallel as ipp
         import pickle
         import numpy as np
-
+        prob_id = "prob_"+mode
         # Fetch the dimension and the fitness
         # dimension of the problem.
         ndim = prob.get_nx()
@@ -92,7 +94,7 @@ class pickleless_bfe(pg.ipyparallel_bfe):
 
         with pg.ipyparallel_bfe._view_lock:
 
-            ar = pg.ipyparallel_bfe._view.apply(_ipy_bfe_func2, self.temp_dv_path, ipp.Reference("prob"), ipp.Reference("rank"))
+            ar = pg.ipyparallel_bfe._view.apply(_ipy_bfe_func2, self.temp_dv_path, ipp.Reference(prob_id), ipp.Reference("rank"))
             # ret = ipp.AsyncMapResult(pg.ipyparallel_bfe._view.client, ar._children, ipp.client.map.Map())
             
         # Build the vector of fitness vectors as a 2D numpy array.

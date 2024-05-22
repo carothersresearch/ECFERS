@@ -210,8 +210,8 @@ class ModularRateLaw(Mechanism):
         allS = '*'.join(self.substrates)
         allP = '*'.join(self.products)
 
-        allKmS = '*'.join(['Km_'+s+'_'+self.label for s in self.substrates])
-        allKmP = '*'.join(['Km_'+p+'_'+self.label for p in self.products])
+        allKmS = '*'.join(['Km_'+s+'_'+self.enzyme[0] for s in self.substrates])
+        allKmP = '*'.join(['Km_'+p+'_'+self.enzyme[0] for p in self.products])
 
         kcatF = 'Kcat_F_' + self.label
         kcatR = 'Kcat_R_' + self.label
@@ -219,21 +219,21 @@ class ModularRateLaw(Mechanism):
         return '('+kcatF+'*('+ allS +')/('+ allKmS +') - '+ kcatR +'*('+ allP +')/('+ allKmP +'))'
     
     def denominator(self) -> str:
-        allKmS = ['Km_'+s+'_'+self.label for s in self.substrates]
-        allKmP = ['Km_'+p+'_'+self.label for p in self.products]
+        allKmS = ['Km_'+s+'_'+self.enzyme[0] for s in self.substrates]
+        allKmP = ['Km_'+p+'_'+self.enzyme[0] for p in self.products]
         allS = '*'.join(['(1+'+s+'/'+Km+')' for s, Km in zip(self.substrates, allKmS)])
         allP = '*'.join(['(1+'+p+'/'+Km+')' for p, Km in zip(self.products, allKmP)])
         return '('+ allS + ' + '+ allP + ' -1)'
     
     def inhibition_nc(self) -> str: # only activity
-        allKi = ['Ki_'+i+'_'+self.label for i in self.inhibitors] 
-        allGi = ['Gi_'+i+'_'+self.label for i in self.inhibitors] # degree of competition (1 = full c, 0 = full nc)
+        allKi = ['Ki_'+i+'_'+self.enzyme[0] for i in self.inhibitors] 
+        allGi = ['Gi_'+i+'_'+self.enzyme[0] for i in self.inhibitors] # degree of competition (1 = full c, 0 = full nc)
         fr = '*'.join(['(1-'+Gi+')/(1+'+i+'/'+Ki+')' for i, Ki, Gi in zip(self.inhibitors, allKi, allGi)])
         return fr
     
     def inhibition_c(self) -> str: # only binding
-        allKi = ['Ki_'+i+'_'+self.label for i in self.inhibitors] 
-        allGi = ['Gi_'+i+'_'+self.label for i in self.inhibitors] # degree of competition (1 = full c, 0 = full nc)
+        allKi = ['Ki_'+i+'_'+self.enzyme[0] for i in self.inhibitors] 
+        allGi = ['Gi_'+i+'_'+self.enzyme[0] for i in self.inhibitors] # degree of competition (1 = full c, 0 = full nc)
         dreg = '+'.join(['('+i+'*'+Gi+'/'+Ki+')' for i, Ki, Gi in zip(self.inhibitors, allKi, allGi)])
         return dreg
     
