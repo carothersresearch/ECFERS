@@ -253,8 +253,8 @@ class ModelBuilder:
                 else:
                     key = key+'_'+label
 
-                if key not in self.p_str:
-                    p_str += (key +'=' + str(value) + '; \n')
+                if key+' ' not in self.p_str:
+                    p_str += (key +' =' + str(value) + '; \n')
         else:
             if required:
                 raise('No parameters found for reaction '+label)
