@@ -285,14 +285,19 @@ def grab_KM_prediction(EC, substrate):
         km = kms.loc[i, 'Km']
     except IndexError:
         print('EC ID ', EC ,' does not have corresponding kinetic parameters. Please use the kinetic estimator to find these values.')
+        km = np.nan
     return km
 
 def grab_Kcat_prediction(EC, substrate):
     condition = (kcats['enzyme'] == EC) & (kcats['substrates'] == substrate)
     matching_indices = kcats.index[condition]
 
-    i = matching_indices[0]
-    kcat = kcats.loc[i, 'kcats']
+    try:
+        i = matching_indices[0]
+        kcat = kcats.loc[i, 'kcats']
+    except IndexError:
+        print('EC ID ', EC ,' does not have corresponding kinetic parameters. Please use the kinetic estimator to find these values.')
+        kcat = np.nan
 
     return kcat
 
