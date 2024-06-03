@@ -37,7 +37,7 @@ C00705,,Metabolite,0.001,,,,,v35
 C00078,,Metabolite,0.001,,,,,v36
 C01367,,Metabolite,0.001,,,,,v37
 C00147,,Metabolite,0.001,,,,,v38
-C00018,,Metabolite,0.001,,,,,v39
+C00018,,Metabolite,1.001,,,,,v39
 C05754,,Metabolite,0.001,,,,,v40
 C03735,,Metabolite,0.001,,,,,v41
 C14857,,Metabolite,0.001,,,,,v42
@@ -217,7 +217,7 @@ C00345,,Metabolite,3.8,,,,,v215
 C00081,,Metabolite,0.001,,,,,v216
 C00385,,Metabolite,0.001,,,,,v217
 C05401,,Metabolite,0.001,,,,,v218
-C00288,,Metabolite,0.001,,,,,v219
+C00288,,Metabolite,10.001,,,,,v219
 C00173,,Metabolite,0.001,,,,,v220
 C15812,,Metabolite,0.001,,,,,v221
 C02320,,Metabolite,0.001,,,,,v222
@@ -390,7 +390,7 @@ C00430,,Metabolite,0.001,,,,,v388
 C01344,,Metabolite,0.001,,,,,v389
 C06612,,Metabolite,0.001,,,,,v390
 C00669,,Metabolite,0.001,,,,,v391
-C00158,,Metabolite,0.001,,,,,v392
+C00158,,Metabolite,10.001,,,,,v392
 C02909,,Metabolite,0.001,,,,,v393
 C05649,,Metabolite,0.001,,,,,v394
 C03798,,Metabolite,0.001,,,,,v395
@@ -407,7 +407,7 @@ C00206,,Metabolite,0.001,,,,,v405
 C14089,,Metabolite,0.001,,,,,v406
 C00046,,Metabolite,0.001,,,,,v407
 C02496,,Metabolite,0.001,,,,,v408
-C00065,,Metabolite,0.001,,,,,v409
+C00065,,Metabolite,1.001,,,,,v409
 C00229,,Metabolite,0.001,,,,,v410
 C00972,,Metabolite,0.001,,,,,v411
 C04823,,Metabolite,0.001,,,,,v412
@@ -433,12 +433,12 @@ C00074,,Metabolite,0.18,,,,,v431
 C16634,,Metabolite,0.001,,,,,v432
 C00559,,Metabolite,0.001,,,,,v433
 C05947,,Metabolite,0.001,,,,,v434
-C00058,,Metabolite,0,,,,,v435
+C00058,,Metabolite,15,,,,,v435
 C00047,,Metabolite,0.001,,,,,v436
 C00673,,Metabolite,0.001,,,,,v437
 C01190,,Metabolite,0.001,,,,,v438
 C03082,,Metabolite,0.001,,,,,v439
-C00024,,Metabolite,0.61,,,,,v440
+C00024,,Metabolite,1.61,,,,,v440
 C00044,,Metabolite,0.001,,,,,v441
 C11824,,Metabolite,0.001,,,,,v442
 C00112,,Metabolite,0.001,,,,,v443
@@ -579,7 +579,7 @@ C00527,,Metabolite,0.001,,,,,v577
 C00534,,Metabolite,0.001,,,,,v578
 C16832,,Metabolite,0.001,,,,,v579
 C07293,,Metabolite,0.001,,,,,v580
-C00004,,Metabolite,0.083,,,,,v581
+C00004,,Metabolite,1.083,,,,,v581
 C00007,,Metabolite,0.001,,,,,v582
 C01641,,Metabolite,0.001,,,,,v583
 C00021,,Metabolite,0.001,,,,,v584
@@ -710,7 +710,7 @@ C04246,,Metabolite,0.001,,,,,v708
 C00094,,Metabolite,0.001,,,,,v709
 C05402,,Metabolite,0.001,,,,,v710
 C01637,,Metabolite,0.001,,,,,v711
-C00002,,Metabolite,0.001,,,,,v712
+C00002,,Metabolite,1.001,,,,,v712
 C06397,,Metabolite,0.001,,,,,v713
 C15972,,Metabolite,0.001,,,,,v714
 C02430,,Metabolite,0.001,,,,,v715
@@ -759,323 +759,325 @@ C00122,,Metabolite,0.001,,,,,v757
 C00025,,Metabolite,0.001,,,,,v758
 C01649,,Metabolite,0.001,,,,,v759
 C00217,,Metabolite,0.001,,,,,v760
-Aconitate hydratase,4.2.1.3,Enzyme,48.5,,,,,rel0
-Dna-directed rna polymerase,2.7.7.6,Enzyme,121.5,,,,,rel0
-Oxoglutarate dehydrogenase (succinyl-transferring),1.2.4.2,Enzyme,46.5,,,,,rel0
-Glyceraldehyde-3-phosphate dehydrogenase (phosphorylating),1.2.1.12,Enzyme,40,,,,,rel0
-Pyruvate dehydrogenase (acetyl-transferring),1.2.4.1,Enzyme,31,,,,,rel0
-Peptidylprolyl isomerase,5.2.1.8,Enzyme,74,,,,,rel0
-Carbamoyl-phosphate synthase (glutamine-hydrolysing),6.3.5.5,Enzyme,43.5,,,,,rel0
-Dihydrolipoyl dehydrogenase,1.8.1.4,Enzyme,32.5,,,,,rel0
-Succinate-coa ligase (adp-forming),6.2.1.5,Enzyme,54.5,,,,,rel0
-Phosphoglycerate kinase,2.7.2.3,Enzyme,25,,,,,rel0
-Alanine-trna ligase,6.1.1.7,Enzyme,26.5,,,,,rel0
-Phosphopyruvate hydratase,4.2.1.11,Enzyme,25.5,,,,,rel0
-Transketolase,2.2.1.1,Enzyme,27.5,,,,,rel0
-Dihydrolipoyllysine-residue acetyltransferase,2.3.1.12,Enzyme,26,,,,,rel0
-Ketol-acid reductoisomerase (nadp+),1.1.1.86,Enzyme,25,,,,,rel0
-Cysteine synthase,2.5.1.47,Enzyme,26.5,,,,,rel0
-Malate dehydrogenase,1.1.1.37,Enzyme,21,,,,,rel0
-Transaldolase,2.2.1.2,Enzyme,23,,,,,rel0
-Proline-trna ligase,6.1.1.15,Enzyme,21,,,,,rel0
-WP_000052796.1,1.11.1.26,Enzyme,24.5,,,,,rel0
-Isoleucine-trna ligase,6.1.1.5,Enzyme,22.5,,,,,rel0
-"Pyruvate, water dikinase",2.7.9.2,Enzyme,18,,,,,rel0
-Dihydrolipoyllysine-residue succinyltransferase,2.3.1.61,Enzyme,21.5,,,,,rel0
-Phosphoenolpyruvate carboxykinase (atp),4.1.1.49,Enzyme,20.5,,,,,rel0
-Glycine hydroxymethyltransferase,2.1.2.1,Enzyme,15.5,,,,,rel0
-Fumarate hydratase,4.2.1.2,Enzyme,16.5,,,,,rel0
-Phenylalanine-trna ligase,6.1.1.20,Enzyme,31,,,,,rel0
-WP_000785834.1,2.3.3.16,Enzyme,14.5,,,,,rel0
-Aspartate ammonia-lyase,4.3.1.1,Enzyme,18,,,,,rel0
-Cysteine desulfurase,2.8.1.7,Enzyme,22,,,,,rel0
-"Phosphogluconate dehydrogenase (nadp+-dependent, decarboxylating)",1.1.1.44,Enzyme,15,,,,,rel0
-Aspartate transaminase,2.6.1.1,Enzyme,22.5,,,,,rel0
-Serine-trna ligase,6.1.1.11,Enzyme,15.5,,,,,rel0
-Adenylosuccinate synthase,6.3.4.4,Enzyme,20,,,,,rel0
-Enoyl-[acyl-carrier-protein] reductase (nadh),1.3.1.9,Enzyme,20,,,,,rel0
-Catalase-peroxidase,1.11.1.21,Enzyme,13,,,,,rel0
-Leucine-trna ligase,6.1.1.4,Enzyme,15.5,,,,,rel0
-Glycerol kinase,2.7.1.30,Enzyme,21,,,,,rel0
-Phosphoenolpyruvate carboxylase,4.1.1.31,Enzyme,8.5,,,,,rel0
-Glycine-trna ligase,6.1.1.14,Enzyme,17.5,,,,,rel0
-"2,3,4,5-tetrahydropyridine-2,6-dicarboxylate n-succinyltransferase",2.3.1.117,Enzyme,15,,,,,rel0
-Phosphoenolpyruvate-protein phosphotransferase,2.7.3.9,Enzyme,18.5,,,,,rel0
-Glycine dehydrogenase (aminomethyl-transferring),1.4.4.2,Enzyme,13,,,,,rel0
-WP_000190506.1,7.1.2.2,Enzyme,31.5,,,,,rel0
-Fructose-bisphosphate aldolase,4.1.2.13,Enzyme,15.5,,,,,rel0
-Adenylate kinase,2.7.4.3,Enzyme,19,,,,,rel0
-WP_001293341.1,3.4.25.2,Enzyme,13.5,,,,,rel0
-Ctp synthase (glutamine hydrolysing),6.3.4.2,Enzyme,14,,,,,rel0
-Glutamine-fructose-6-phosphate transaminase (isomerizing),2.6.1.16,Enzyme,15.5,,,,,rel0
-Methionine adenosyltransferase,2.5.1.6,Enzyme,16,,,,,rel0
-Glutamate-trna ligase,6.1.1.17,Enzyme,14.5,,,,,rel0
-Cytosol nonspecific dipeptidase,3.4.13.18,Enzyme,15,,,,,rel0
-Pyruvate kinase,2.7.1.40,Enzyme,28.5,,,,,rel0
-Phosphate acetyltransferase,2.3.1.8,Enzyme,13.5,,,,,rel0
-WP_001295305.1,5.4.2.11,Enzyme,16.5,,,,,rel0
-Alpha-galactosidase,3.2.1.22,Enzyme,7,,,,,rel0
-Valine-trna ligase,6.1.1.9,Enzyme,10.5,,,,,rel0
-Imp dehydrogenase,1.1.1.205,Enzyme,11,,,,,rel0
-Dihydroxy-acid dehydratase,4.2.1.9,Enzyme,18.5,,,,,rel0
-Threonine-trna ligase,6.1.1.3,Enzyme,10.5,,,,,rel0
-WP_000737621.1,7.4.2.1,Enzyme,15.5,,,,,rel0
-WP_000695387.1,7.5.2.1,Enzyme,13,,,,,rel0
-Tryptophanase,4.1.99.1,Enzyme,9.5,,,,,rel0
-Asparagine-trna ligase,6.1.1.22,Enzyme,10.5,,,,,rel0
-Histidine-trna ligase,6.1.1.21,Enzyme,11.5,,,,,rel0
-Methionine-trna ligase,6.1.1.10,Enzyme,10,,,,,rel0
-Biotin carboxylase,6.3.4.14,Enzyme,10,,,,,rel0
-Tyrosine-trna ligase,6.1.1.1,Enzyme,10,,,,,rel0
-Nad(p)+ transhydrogenase (si-specific),1.6.1.1,Enzyme,8,,,,,rel0
-Beta-ketoacyl-[acyl-carrier-protein] synthase i,2.3.1.41,Enzyme,9.5,,,,,rel0
-Glutamine synthetase,6.3.1.2,Enzyme,7.5,,,,,rel0
-Gmp synthase (glutamine-hydrolysing),6.3.5.2,Enzyme,7,,,,,rel0
-"Alpha,alpha-phosphotrehalase",3.2.1.93,Enzyme,6.5,,,,,rel0
-WP_001295214.1,3.4.24.70,Enzyme,8,,,,,rel0
-Lysine-trna ligase,6.1.1.6,Enzyme,23.5,,,,,rel0
-Nucleoside-diphosphate kinase,2.7.4.6,Enzyme,10,,,,,rel0
-Superoxide dismutase,1.15.1.1,Enzyme,14,,,,,rel0
-Malate dehydrogenase (oxaloacetate-decarboxylating) (nadp+),1.1.1.40,Enzyme,15.5,,,,,rel0
-Argininosuccinate lyase,4.3.2.1,Enzyme,6.5,,,,,rel0
-Acetate-coa ligase,6.2.1.1,Enzyme,9,,,,,rel0
-Ribose-phosphate diphosphokinase,2.7.6.1,Enzyme,9,,,,,rel0
-WP_000522247.1,2.7.1.199,Enzyme,8,,,,,rel0
-Triose-phosphate isomerase,5.3.1.1,Enzyme,6.5,,,,,rel0
-Polyribonucleotide nucleotidyltransferase,2.7.7.8,Enzyme,4.5,,,,,rel0
-Membrane alanyl aminopeptidase,3.4.11.2,Enzyme,9.5,,,,,rel0
-Thioredoxin-disulfide reductase,1.8.1.9,Enzyme,9,,,,,rel0
-3-deoxy-8-phosphooctulonate synthase,2.5.1.55,Enzyme,9,,,,,rel0
-Argininosuccinate synthase,6.3.4.5,Enzyme,10.5,,,,,rel0
-"Phosphoglucomutase (alpha-d-glucose-1,6-bisphosphate-dependent)",5.4.2.2,Enzyme,7.5,,,,,rel0
-Glutamine-trna ligase,6.1.1.18,Enzyme,6.5,,,,,rel0
-Glycine c-acetyltransferase,2.3.1.29,Enzyme,9,,,,,rel0
-Phosphoserine transaminase,2.6.1.52,Enzyme,10,,,,,rel0
-"Glutamate-1-semialdehyde 2,1-aminomutase",5.4.3.8,Enzyme,7.5,,,,,rel0
-Branched-chain-amino-acid transaminase,2.6.1.42,Enzyme,7,,,,,rel0
-Aminomethyltransferase,2.1.2.10,Enzyme,7,,,,,rel0
-Acetate kinase,2.7.2.1,Enzyme,7.5,,,,,rel0
-Acetyl-coa carboxylase,6.4.1.2,Enzyme,9,,,,,rel0
-Purine-nucleoside phosphorylase,2.4.2.1,Enzyme,9,,,,,rel0
-"6,7-dimethyl-8-ribityllumazine synthase",2.5.1.78,Enzyme,5.5,,,,,rel0
-Adp-glyceromanno-heptose 6-epimerase,5.1.3.20,Enzyme,7,,,,,rel0
-WP_000444561.1,3.4.13.9,Enzyme,8,,,,,rel0
-Glucose-6-phosphate dehydrogenase (nadp+),1.1.1.49,Enzyme,8,,,,,rel0
-Arginine-trna ligase,6.1.1.19,Enzyme,8.5,,,,,rel0
-"6,7-dihydropteridine reductase",1.5.1.34,Enzyme,7,,,,,rel0
-WP_000917208.1,1.16.3.2,Enzyme,5.5,,,,,rel0
-D-sedoheptulose 7-phosphate isomerase,5.3.1.28,Enzyme,5,,,,,rel0
-Inorganic diphosphatase,3.6.1.1,Enzyme,8.5,,,,,rel0
-[acyl-carrier-protein] s-malonyltransferase,2.3.1.39,Enzyme,4,,,,,rel0
-L-threonine 3-dehydrogenase,1.1.1.103,Enzyme,5.5,,,,,rel0
-WP_000072067.1,5.6.2.2,Enzyme,7.5,,,,,rel0
-Galactitol-1-phosphate 5-dehydrogenase,1.1.1.251,Enzyme,5,,,,,rel0
-Uridine phosphorylase,2.4.2.3,Enzyme,5,,,,,rel0
-3-hydroxyacyl-[acyl-carrier-protein] dehydratase,4.2.1.59,Enzyme,6,,,,,rel0
-WP_000122253.1,3.4.21.92,Enzyme,12,,,,,rel0
-WP_001295469.1,4.3.3.7,Enzyme,5,,,,,rel0
-Pepb aminopeptidase,3.4.11.23,Enzyme,5.5,,,,,rel0
-S-ribosylhomocysteine lyase,4.4.1.21,Enzyme,3.5,,,,,rel0
-Beta-ketoacyl-[acyl-carrier-protein] synthase iii,2.3.1.180,Enzyme,4.5,,,,,rel0
-Tryptophan-trna ligase,6.1.1.2,Enzyme,5.5,,,,,rel0
-Nad+ synthase,6.3.1.5,Enzyme,4,,,,,rel0
-WP_000753946.1,3.4.21.107,Enzyme,7.5,,,,,rel0
-D-alanine-d-alanine ligase,6.3.2.4,Enzyme,7,,,,,rel0
-WP_001018194.1,3.4.11.18,Enzyme,3.5,,,,,rel0
-WP_000484965.1,3.1.13.1,Enzyme,6,,,,,rel0
-Aspartate-semialdehyde dehydrogenase,1.2.1.11,Enzyme,6,,,,,rel0
-Dna-directed dna polymerase,2.7.7.7,Enzyme,2.5,,,,,rel0
-Shikimate kinase,2.7.1.71,Enzyme,5.5,,,,,rel0
-Phosphoglucosamine mutase,5.4.2.10,Enzyme,6,,,,,rel0
-(e)-4-hydroxy-3-methylbut-2-enyl-diphosphate synthase (ferredoxin),1.17.7.1,Enzyme,4.5,,,,,rel0
-Phosphoribosylaminoimidazolecarboxamide formyltransferase,2.1.2.3,Enzyme,2.5,,,,,rel0
-Arginine decarboxylase,4.1.1.19,Enzyme,3.5,,,,,rel0
-2-dehydro-3-deoxy-phosphogluconate aldolase,4.1.2.14,Enzyme,3,,,,,rel0
-Ribose-5-phosphate isomerase,5.3.1.6,Enzyme,4.5,,,,,rel0
-Udp-4-amino-4-deoxy-l-arabinose aminotransferase,2.6.1.87,Enzyme,4,,,,,rel0
-L-fucose isomerase,5.3.1.25,Enzyme,4,,,,,rel0
-Cysteine-trna ligase,6.1.1.16,Enzyme,5,,,,,rel0
-6-phosphofructokinase,2.7.1.11,Enzyme,3,,,,,rel0
-Adenylosuccinate lyase,4.3.2.2,Enzyme,4.5,,,,,rel0
-Formyltetrahydrofolate deformylase,3.5.1.10,Enzyme,3.5,,,,,rel0
-Porphobilinogen synthase,4.2.1.24,Enzyme,1.5,,,,,rel0
-Inositol-phosphate phosphatase,3.1.3.25,Enzyme,3.5,,,,,rel0
-Isocitrate lyase,4.1.3.1,Enzyme,5.5,,,,,rel0
-Succinate dehydrogenase,1.3.5.1,Enzyme,5,,,,,rel0
-WP_000162740.1,2.8.4.3,Enzyme,3.5,,,,,rel0
-Phosphopentomutase,5.4.2.7,Enzyme,5,,,,,rel0
-"Dtdp-glucose 4,6-dehydratase",4.2.1.46,Enzyme,2,,,,,rel0
-3-oxoacyl-[acyl-carrier-protein] reductase,1.1.1.100,Enzyme,2.5,,,,,rel0
-Acetylornithine deacetylase,3.5.1.16,Enzyme,1,,,,,rel0
-Udp-glucuronic acid dehydrogenase (udp-4-keto-hexauronic acid,1.1.1.305,Enzyme,3,,,,,rel0
-Methylthioadenosine nucleosidase,3.2.2.16,Enzyme,2,,,,,rel0
-Acetolactate synthase,2.2.1.6,Enzyme,5,,,,,rel0
-3-deoxy-7-phosphoheptulonate synthase,2.5.1.54,Enzyme,5,,,,,rel0
-WP_000189159.1,1.5.1.38,Enzyme,3.5,,,,,rel0
-Glutathione synthase,6.3.2.3,Enzyme,5,,,,,rel0
-3-hydroxypropionate dehydrogenase (nadp+),1.1.1.298,Enzyme,1,,,,,rel0
-Nadh:quinone reductase (non-electrogenic),1.6.5.9,Enzyme,6,,,,,rel0
-Glycerophosphodiester phosphodiesterase,3.1.4.46,Enzyme,4.5,,,,,rel0
-Uracil phosphoribosyltransferase,2.4.2.9,Enzyme,3.5,,,,,rel0
-L-serine ammonia-lyase,4.3.1.17,Enzyme,2.5,,,,,rel0
-Pantoate-beta-alanine ligase (amp-forming),6.3.2.1,Enzyme,4.5,,,,,rel0
-Glycogen phosphorylase,2.4.1.1,Enzyme,2.5,,,,,rel0
-Hypoxanthine phosphoribosyltransferase,2.4.2.8,Enzyme,4,,,,,rel0
-WP_000790168.1,3.6.5.n1,Enzyme,5,,,,,rel0
-WP_001068682.1,1.11.1.24,Enzyme,3.5,,,,,rel0
-Beta-galactosidase,3.2.1.23,Enzyme,0.5,,,,,rel0
-2-hydroxy-3-oxopropionate reductase,1.1.1.60,Enzyme,1,,,,,rel0
-Malate dehydrogenase (oxaloacetate-decarboxylating),1.1.1.38,Enzyme,4.5,,,,,rel0
-Udp-n-acetylglucosamine 1-carboxyvinyltransferase,2.5.1.7,Enzyme,2.5,,,,,rel0
-Threonine ammonia-lyase,4.3.1.19,Enzyme,4.5,,,,,rel0
-WP_001300598.1,3.4.15.5,Enzyme,1,,,,,rel0
-WP_001297122.1,5.6.2.1,Enzyme,2.5,,,,,rel0
-Glutamate-cysteine ligase,6.3.2.2,Enzyme,2.5,,,,,rel0
-Acetylornithine transaminase,2.6.1.11,Enzyme,1,,,,,rel0
-Glutathione-disulfide reductase,1.8.1.7,Enzyme,1,,,,,rel0
-5-methyltetrahydropteroyltriglutamate-homocysteine s-methyltransferase,2.1.1.14,Enzyme,0.5,,,,,rel0
-Orotidine-5'-phosphate decarboxylase,4.1.1.23,Enzyme,2,,,,,rel0
-1-(5-phosphoribosyl)-5-[(5,5.3.1.16,Enzyme,1.5,,,,,rel0
-WP_000920840.1,5.1.3.29,Enzyme,1.5,,,,,rel0
-N-acetylneuraminate lyase,4.1.3.3,Enzyme,1.5,,,,,rel0
-Phosphoribosylformylglycinamidine synthase,6.3.5.3,Enzyme,2,,,,,rel0
-Assimilatory sulfite reductase (nadph),1.8.1.2,Enzyme,2.5,,,,,rel0
-Phosphoribosylaminoimidazolesuccinocarboxamide synthase,6.3.2.6,Enzyme,1.5,,,,,rel0
-Beta-glucosidase,3.2.1.21,Enzyme,3,,,,,rel0
-Histidinol-phosphatase,3.1.3.15,Enzyme,2.5,,,,,rel0
-Peptide deformylase,3.5.1.88,Enzyme,2.5,,,,,rel0
-WP_000869178.1,2.7.1.167,Enzyme,3,,,,,rel0
-Glucose-6-phosphate isomerase,5.3.1.9,Enzyme,3.5,,,,,rel0
-Leucyl aminopeptidase,3.4.11.1,Enzyme,2,,,,,rel0
-Fructose-bisphosphatase,3.1.3.11,Enzyme,5,,,,,rel0
-Ribulose-phosphate 3-epimerase,5.1.3.1,Enzyme,1.5,,,,,rel0
-Adenine phosphoribosyltransferase,2.4.2.7,Enzyme,2,,,,,rel0
-WP_000084590.1,4.98.1.1,Enzyme,2,,,,,rel0
-Betaine-aldehyde dehydrogenase,1.2.1.8,Enzyme,1,,,,,rel0
-WP_000116565.1,5.4.2.12,Enzyme,2,,,,,rel0
-Tagatose-bisphosphate aldolase,4.1.2.40,Enzyme,1,,,,,rel0
-"1,4-dihydroxy-2-naphthoyl-coa synthase",4.1.3.36,Enzyme,0.5,,,,,rel0
-Ribonucleoside-diphosphate reductase,1.17.4.1,Enzyme,1,,,,,rel0
-Gmp reductase,1.7.1.7,Enzyme,2.5,,,,,rel0
-Glutamate-5-semialdehyde dehydrogenase,1.2.1.41,Enzyme,7,,,,,rel0
-WP_000209826.1,1.5.1.41,Enzyme,2,,,,,rel0
-Xanthine phosphoribosyltransferase,2.4.2.22,Enzyme,2,,,,,rel0
-Riboflavin synthase,2.5.1.9,Enzyme,3.5,,,,,rel0
-Alcohol dehydrogenase (nadp+),1.1.1.2,Enzyme,0.5,,,,,rel0
-WP_001290123.1,3.4.11.9,Enzyme,3,,,,,rel0
-Phosphoglycerate dehydrogenase,1.1.1.95,Enzyme,1,,,,,rel0
-Acetylglutamate kinase,2.7.2.8,Enzyme,1.5,,,,,rel0
-Hydroxyacylglutathione hydrolase,3.1.2.6,Enzyme,1.5,,,,,rel0
-Phosphoribosylamine-glycine ligase,6.3.4.13,Enzyme,1,,,,,rel0
-Thymidylate synthase,2.1.1.45,Enzyme,1.5,,,,,rel0
-Mannose-6-phosphate isomerase,5.3.1.8,Enzyme,2,,,,,rel0
-Atp phosphoribosyltransferase,2.4.2.17,Enzyme,3,,,,,rel0
-WP_000673918.1,3.1.11.2,Enzyme,1,,,,,rel0
-Asparagine synthase (glutamine-hydrolysing),6.3.5.4,Enzyme,0.5,,,,,rel0
-Rna helicase,3.6.4.13,Enzyme,1.5,,,,,rel0
-Ump kinase,2.7.4.22,Enzyme,1.5,,,,,rel0
-Spermidine synthase,2.5.1.16,Enzyme,1.5,,,,,rel0
-WP_000981380.1,3.1.21.3,Enzyme,2.5,,,,,rel0
-"Dtdp-4-amino-4,6-dideoxy-d-glucose transaminase",2.6.1.33,Enzyme,1,,,,,rel0
-N-methyl-l-amino-acid oxidase,1.5.3.2,Enzyme,3,,,,,rel0
-Dutp diphosphatase,3.6.1.23,Enzyme,1.5,,,,,rel0
-Arsenate reductase (glutathione/glutaredoxin),1.20.4.1,Enzyme,1.5,,,,,rel0
-"Udp-n-acetylmuramoyl-l-alanyl-d-glutamate-2,6-diaminopimelate ligase",6.3.2.13,Enzyme,1.5,,,,,rel0
-Peptide-methionine (r)-s-oxide reductase,1.8.4.12,Enzyme,2,,,,,rel0
-Thiosulfate sulfurtransferase,2.8.1.1,Enzyme,2,,,,,rel0
-Alanine racemase,5.1.1.1,Enzyme,1,,,,,rel0
-Hydroxymethylbilane synthase,2.5.1.61,Enzyme,0.5,,,,,rel0
-Glutathione transferase,2.5.1.18,Enzyme,1,,,,,rel0
-Alcohol dehydrogenase,1.1.1.1,Enzyme,1,,,,,rel0
-Uroporphyrinogen decarboxylase,4.1.1.37,Enzyme,0,,,,,rel0
-WP_000397372.1,2.10.1.1,Enzyme,0,,,,,rel0
-Pyridoxine 5'-phosphate synthase,2.6.99.2,Enzyme,1,,,,,rel0
-Threonine synthase,4.2.3.1,Enzyme,0.5,,,,,rel0
-Orotate phosphoribosyltransferase,2.4.2.10,Enzyme,0.5,,,,,rel0
-Glucose-1-phosphate thymidylyltransferase,2.7.7.24,Enzyme,2,,,,,rel0
-6-phospho-beta-glucosidase,3.2.1.86,Enzyme,1,,,,,rel0
-Histidinol dehydrogenase,1.1.1.23,Enzyme,0.5,,,,,rel0
-Udp-n-acetylmuramoyl-l-alanine-d-glutamate ligase,6.3.2.9,Enzyme,1.5,,,,,rel0
-Dihydrofolate synthase,6.3.2.12,Enzyme,0.5,,,,,rel0
-WP_001166395.1,1.17.7.4,Enzyme,1.5,,,,,rel0
-WP_001219792.1,6.3.2.45,Enzyme,1,,,,,rel0
-Pyrroline-5-carboxylate reductase,1.5.1.2,Enzyme,1,,,,,rel0
-"Dtdp-4-dehydrorhamnose 3,5-epimerase",5.1.3.13,Enzyme,1,,,,,rel0
-Deoxyribose-phosphate aldolase,4.1.2.4,Enzyme,0.5,,,,,rel0
-L-methionine (r)-s-oxide reductase,1.8.4.14,Enzyme,1,,,,,rel0
-WP_000072420.1,1.6.5.10,Enzyme,0.5,,,,,rel0
-N-acetyl-gamma-glutamyl-phosphate reductase,1.2.1.38,Enzyme,2,,,,,rel0
-Udp-n-acetylmuramoyl-tripeptide-d-alanyl-d-alanine ligase,6.3.2.10,Enzyme,0.5,,,,,rel0
-Aromatic-amino-acid transaminase,2.6.1.57,Enzyme,2,,,,,rel0
-WP_000715216.1,5.3.4.1,Enzyme,1,,,,,rel0
-Lipoyl synthase,2.8.1.8,Enzyme,2.5,,,,,rel0
-N-acetylmuramic acid 6-phosphate etherase,4.2.1.126,Enzyme,1,,,,,rel0
-Dtmp kinase,2.7.4.9,Enzyme,1.5,,,,,rel0
-Aspartate carbamoyltransferase,2.1.3.2,Enzyme,1,,,,,rel0
-WP_000568432.1,3.4.19.5,Enzyme,2,,,,,rel0
-Sugar-phosphatase,3.1.3.23,Enzyme,1.5,,,,,rel0
-Uridine nucleosidase,3.2.2.3,Enzyme,1,,,,,rel0
-WP_001174737.1,3.6.1.66,Enzyme,0.5,,,,,rel0
-WP_000827411.1,3.1.26.12,Enzyme,0.5,,,,,rel0
-"3,4-dihydroxy-2-butanone-4-phosphate synthase",4.1.99.12,Enzyme,1.5,,,,,rel0
-WP_000940019.1,2.1.1.200,Enzyme,1,,,,,rel0
-Gtp cyclohydrolase i,3.5.4.16,Enzyme,0,,,,,rel0
-S-(hydroxymethyl)glutathione dehydrogenase,1.1.1.284,Enzyme,1,,,,,rel0
-Aspartate 1-decarboxylase,4.1.1.11,Enzyme,1,,,,,rel0
-D-lactate dehydrogenase,1.1.1.28,Enzyme,1,,,,,rel0
-Trna nucleotidyltransferase,2.7.7.56,Enzyme,0,,,,,rel0
-Agmatinase,3.5.3.11,Enzyme,2,,,,,rel0
-Dctp deaminase,3.5.4.13,Enzyme,0.5,,,,,rel0
-Utp-glucose-1-phosphate uridylyltransferase,2.7.7.9,Enzyme,1,,,,,rel0
-Ribonucleoside-triphosphate reductase (thioredoxin),1.17.4.2,Enzyme,0,,,,,rel0
-Sulfate adenylyltransferase,2.7.7.4,Enzyme,0.5,,,,,rel0
-WP_001124935.1,3.1.11.6,Enzyme,2,,,,,rel0
-WP_000809262.1,2.1.1.198,Enzyme,0,,,,,rel0
-"3'(2'),5'-bisphosphate nucleotidase",3.1.3.7,Enzyme,1,,,,,rel0
-Trna (guanine46-n7)-methyltransferase,2.1.1.33,Enzyme,0.5,,,,,rel0
-3-deoxy-manno-octulosonate cytidylyltransferase,2.7.7.38,Enzyme,1.5,,,,,rel0
-WP_000049367.1,2.8.4.4,Enzyme,1,,,,,rel0
-WP_001045520.1,2.1.1.186,Enzyme,1,,,,,rel0
-WP_000089698.1,5.4.99.25,Enzyme,1,,,,,rel0
-Udp-n-acetylmuramate-l-alanine ligase,6.3.2.8,Enzyme,0.5,,,,,rel0
-WP_001139294.1,2.3.1.191,Enzyme,0.5,,,,,rel0
-Glucose-1-phosphatase,3.1.3.10,Enzyme,1.5,,,,,rel0
-WP_001016666.1,1.3.1.98,Enzyme,0,,,,,rel0
-Aminoacyl-trna hydrolase,3.1.1.29,Enzyme,1,,,,,rel0
-Chorismate synthase,4.2.3.5,Enzyme,1,,,,,rel0
-Histidinol-phosphate transaminase,2.6.1.9,Enzyme,0,,,,,rel0
-WP_000068457.1,5.1.99.7,Enzyme,1,,,,,rel0
-Dihydroorotase,3.5.2.3,Enzyme,1.5,,,,,rel0
-Pyridoxal kinase,2.7.1.35,Enzyme,1,,,,,rel0
-3-deoxy-manno-octulosonate-8-phosphatase,3.1.3.45,Enzyme,1,,,,,rel0
-Methylglyoxal synthase,4.2.3.3,Enzyme,1,,,,,rel0
-5'-nucleotidase,3.1.3.5,Enzyme,0,,,,,rel0
-Gluconokinase,2.7.1.12,Enzyme,0.5,,,,,rel0
-WP_000543586.1,1.17.1.8,Enzyme,1,,,,,rel0
-3-phosphoshikimate 1-carboxyvinyltransferase,2.5.1.19,Enzyme,1,,,,,rel0
-Ferroxidase,1.16.3.1,Enzyme,0,,,,,rel0
-WP_001295704.1,2.1.1.298,Enzyme,2,,,,,rel0
-WP_000880195.1,4.3.2.10,Enzyme,2,,,,,rel0
-Phosphoadenylyl-sulfate reductase (thioredoxin),1.8.4.8,Enzyme,2.5,,,,,rel0
-3-methyl-2-oxobutanoate hydroxymethyltransferase,2.1.2.11,Enzyme,0.5,,,,,rel0
-Glutamate 5-kinase,2.7.2.11,Enzyme,0.5,,,,,rel0
-WP_001293282.1,2.1.1.185,Enzyme,0.5,,,,,rel0
-WP_000116297.1,2.1.1.191,Enzyme,0.5,,,,,rel0
-Nicotinate-nucleotide diphosphorylase (carboxylating),2.4.2.19,Enzyme,1,,,,,rel0
-16s rrna (guanine1207-n2)-methyltransferase,2.1.1.172,Enzyme,1,,,,,rel0
-WP_000444361.1,2.4.1.25,Enzyme,0.5,,,,,rel0
-Demethylmenaquinone methyltransferase,2.1.1.163,Enzyme,1,,,,,rel0
-All-trans-octaprenyl-diphosphate synthase,2.5.1.90,Enzyme,0.5,,,,,rel0
-Biotin synthase,2.8.1.6,Enzyme,0,,,,,rel0
-Dtdp-4-dehydrorhamnose reductase,1.1.1.133,Enzyme,0.5,,,,,rel0
-WP_000932839.1,2.1.1.170,Enzyme,0.5,,,,,rel0
-"2',3'-cyclic-nucleotide 2'-phosphodiesterase",3.1.4.16,Enzyme,2,,,,,rel0
-WP_001092082.1,3.4.16.4,Enzyme,0.5,,,,,rel0
-Homoserine dehydrogenase,1.1.1.3,Enzyme,0,,,,,rel0
-Phosphoribosylformylglycinamidine cyclo-ligase,6.3.3.1,Enzyme,0,,,,,rel0
-Amp nucleosidase,3.2.2.4,Enzyme,1,,,,,rel0
-WP_001213584.1,3.1.3.104,Enzyme,0,,,,,rel0
-L-serine ammonia-lyase,4.3.1.17,Enzyme,30,,,,Dictyostelium discoideum,rel0
-Pyruvate carboxylase,6.4.1.1,Enzyme,30,,,,Rhizobium etli,rel0
-Malate dehydrogenase,1.1.1.37,Enzyme,30,,,,Escherichia coli,rel0
-Formate dehydrogenase,1.17.1.9,Enzyme,30,,,,Starkeya novella,rel0
+C00305,,Metabolite,2,,,,,v761
+C00304,,Metabolite,1,,,,,v762
+Aconitate hydratase,4.2.1.3,Enzyme,0.017715569,,,,Escherichia coli,rel0
+Dna-directed rna polymerase,2.7.7.6,Enzyme,0.044380239,,,,Escherichia coli,rel0
+Oxoglutarate dehydrogenase (succinyl-transferring),1.2.4.2,Enzyme,0.01698503,,,,Escherichia coli,rel0
+Glyceraldehyde-3-phosphate dehydrogenase (phosphorylating),1.2.1.12,Enzyme,0.014610778,,,,Escherichia coli,rel0
+Pyruvate dehydrogenase (acetyl-transferring),1.2.4.1,Enzyme,0.011323353,,,,Escherichia coli,rel0
+Peptidylprolyl isomerase,5.2.1.8,Enzyme,0.02702994,,,,Escherichia coli,rel0
+Carbamoyl-phosphate synthase (glutamine-hydrolysing),6.3.5.5,Enzyme,0.015889222,,,,Escherichia coli,rel0
+Dihydrolipoyl dehydrogenase,1.8.1.4,Enzyme,0.011871257,,,,Escherichia coli,rel0
+Succinate-coa ligase (adp-forming),6.2.1.5,Enzyme,0.019907186,,,,Escherichia coli,rel0
+Phosphoglycerate kinase,2.7.2.3,Enzyme,0.009131737,,,,Escherichia coli,rel0
+Alanine-trna ligase,6.1.1.7,Enzyme,0.009679641,,,,Escherichia coli,rel0
+Phosphopyruvate hydratase,4.2.1.11,Enzyme,0.009314371,,,,Escherichia coli,rel0
+Transketolase,2.2.1.1,Enzyme,0.01004491,,,,Escherichia coli,rel0
+Dihydrolipoyllysine-residue acetyltransferase,2.3.1.12,Enzyme,0.009497006,,,,Escherichia coli,rel0
+Ketol-acid reductoisomerase (nadp+),1.1.1.86,Enzyme,0.009131737,,,,Escherichia coli,rel0
+Cysteine synthase,2.5.1.47,Enzyme,0.009679641,,,,Escherichia coli,rel0
+Malate dehydrogenase,1.1.1.37,Enzyme,0.013770659,,,,Escherichia coli,rel0
+Transaldolase,2.2.1.2,Enzyme,0.008401198,,,,Escherichia coli,rel0
+Proline-trna ligase,6.1.1.15,Enzyme,0.007670659,,,,Escherichia coli,rel0
+WP_000052796.1,1.11.1.26,Enzyme,0.008949102,,,,Escherichia coli,rel0
+Isoleucine-trna ligase,6.1.1.5,Enzyme,0.008218563,,,,Escherichia coli,rel0
+"Pyruvate, water dikinase",2.7.9.2,Enzyme,0.00657485,,,,Escherichia coli,rel0
+Dihydrolipoyllysine-residue succinyltransferase,2.3.1.61,Enzyme,0.007853293,,,,Escherichia coli,rel0
+Phosphoenolpyruvate carboxykinase (atp),4.1.1.49,Enzyme,0.007488024,,,,Escherichia coli,rel0
+Glycine hydroxymethyltransferase,2.1.2.1,Enzyme,0.005661677,,,,Escherichia coli,rel0
+Fumarate hydratase,4.2.1.2,Enzyme,0.006026946,,,,Escherichia coli,rel0
+Phenylalanine-trna ligase,6.1.1.20,Enzyme,0.011323353,,,,Escherichia coli,rel0
+WP_000785834.1,2.3.3.16,Enzyme,0.010592814,,,,Escherichia coli,rel0
+Aspartate ammonia-lyase,4.3.1.1,Enzyme,0.00657485,,,,Escherichia coli,rel0
+Cysteine desulfurase,2.8.1.7,Enzyme,0.008035928,,,,Escherichia coli,rel0
+"Phosphogluconate dehydrogenase (nadp+-dependent, decarboxylating)",1.1.1.44,Enzyme,0.005479042,,,,Escherichia coli,rel0
+Aspartate transaminase,2.6.1.1,Enzyme,0.008218563,,,,Escherichia coli,rel0
+Serine-trna ligase,6.1.1.11,Enzyme,0.005661677,,,,Escherichia coli,rel0
+Adenylosuccinate synthase,6.3.4.4,Enzyme,0.007305389,,,,Escherichia coli,rel0
+Enoyl-[acyl-carrier-protein] reductase (nadh),1.3.1.9,Enzyme,0.007305389,,,,Escherichia coli,rel0
+Catalase-peroxidase,1.11.1.21,Enzyme,0.004748503,,,,Escherichia coli,rel0
+Leucine-trna ligase,6.1.1.4,Enzyme,0.005661677,,,,Escherichia coli,rel0
+Glycerol kinase,2.7.1.30,Enzyme,0.007670659,,,,Escherichia coli,rel0
+Phosphoenolpyruvate carboxylase,4.1.1.31,Enzyme,0.00310479,,,,Escherichia coli,rel0
+Glycine-trna ligase,6.1.1.14,Enzyme,0.006392216,,,,Escherichia coli,rel0
+"2,3,4,5-tetrahydropyridine-2,6-dicarboxylate n-succinyltransferase",2.3.1.117,Enzyme,0.005479042,,,,Escherichia coli,rel0
+Phosphoenolpyruvate-protein phosphotransferase,2.7.3.9,Enzyme,0.006757485,,,,Escherichia coli,rel0
+Glycine dehydrogenase (aminomethyl-transferring),1.4.4.2,Enzyme,0.004748503,,,,Escherichia coli,rel0
+WP_000190506.1,7.1.2.2,Enzyme,0.011505988,,,,Escherichia coli,rel0
+Fructose-bisphosphate aldolase,4.1.2.13,Enzyme,0.005661677,,,,Escherichia coli,rel0
+Adenylate kinase,2.7.4.3,Enzyme,0.00694012,,,,Escherichia coli,rel0
+WP_001293341.1,3.4.25.2,Enzyme,0.004931138,,,,Escherichia coli,rel0
+Ctp synthase (glutamine hydrolysing),6.3.4.2,Enzyme,0.005113772,,,,Escherichia coli,rel0
+Glutamine-fructose-6-phosphate transaminase (isomerizing),2.6.1.16,Enzyme,0.005661677,,,,Escherichia coli,rel0
+Methionine adenosyltransferase,2.5.1.6,Enzyme,0.005844311,,,,Escherichia coli,rel0
+Glutamate-trna ligase,6.1.1.17,Enzyme,0.005296407,,,,Escherichia coli,rel0
+Cytosol nonspecific dipeptidase,3.4.13.18,Enzyme,0.005479042,,,,Escherichia coli,rel0
+Pyruvate kinase,2.7.1.40,Enzyme,0.01041018,,,,Escherichia coli,rel0
+Phosphate acetyltransferase,2.3.1.8,Enzyme,0.004931138,,,,Escherichia coli,rel0
+WP_001295305.1,5.4.2.11,Enzyme,0.006026946,,,,Escherichia coli,rel0
+Alpha-galactosidase,3.2.1.22,Enzyme,0.002556886,,,,Escherichia coli,rel0
+Valine-trna ligase,6.1.1.9,Enzyme,0.003835329,,,,Escherichia coli,rel0
+Imp dehydrogenase,1.1.1.205,Enzyme,0.004017964,,,,Escherichia coli,rel0
+Dihydroxy-acid dehydratase,4.2.1.9,Enzyme,0.006757485,,,,Escherichia coli,rel0
+Threonine-trna ligase,6.1.1.3,Enzyme,0.003835329,,,,Escherichia coli,rel0
+WP_000737621.1,7.4.2.1,Enzyme,0.005661677,,,,Escherichia coli,rel0
+WP_000695387.1,7.5.2.1,Enzyme,0.004748503,,,,Escherichia coli,rel0
+Tryptophanase,4.1.99.1,Enzyme,0.00347006,,,,Escherichia coli,rel0
+Asparagine-trna ligase,6.1.1.22,Enzyme,0.003835329,,,,Escherichia coli,rel0
+Histidine-trna ligase,6.1.1.21,Enzyme,0.004200599,,,,Escherichia coli,rel0
+Methionine-trna ligase,6.1.1.10,Enzyme,0.003652695,,,,Escherichia coli,rel0
+Biotin carboxylase,6.3.4.14,Enzyme,0.003652695,,,,Escherichia coli,rel0
+Tyrosine-trna ligase,6.1.1.1,Enzyme,0.003652695,,,,Escherichia coli,rel0
+Nad(p)+ transhydrogenase (si-specific),1.6.1.1,Enzyme,0.002922156,,,,Escherichia coli,rel0
+Beta-ketoacyl-[acyl-carrier-protein] synthase i,2.3.1.41,Enzyme,0.00347006,,,,Escherichia coli,rel0
+Glutamine synthetase,6.3.1.2,Enzyme,0.002739521,,,,Escherichia coli,rel0
+Gmp synthase (glutamine-hydrolysing),6.3.5.2,Enzyme,0.002556886,,,,Escherichia coli,rel0
+"Alpha,alpha-phosphotrehalase",3.2.1.93,Enzyme,0.002374251,,,,Escherichia coli,rel0
+WP_001295214.1,3.4.24.70,Enzyme,0.002922156,,,,Escherichia coli,rel0
+Lysine-trna ligase,6.1.1.6,Enzyme,0.008583832,,,,Escherichia coli,rel0
+Nucleoside-diphosphate kinase,2.7.4.6,Enzyme,0.003652695,,,,Escherichia coli,rel0
+Superoxide dismutase,1.15.1.1,Enzyme,0.005113772,,,,Escherichia coli,rel0
+Malate dehydrogenase (oxaloacetate-decarboxylating) (nadp+),1.1.1.40,Enzyme,0.005661677,,,,Escherichia coli,rel0
+Argininosuccinate lyase,4.3.2.1,Enzyme,0.002374251,,,,Escherichia coli,rel0
+Acetate-coa ligase,6.2.1.1,Enzyme,0.003287425,,,,Escherichia coli,rel0
+Ribose-phosphate diphosphokinase,2.7.6.1,Enzyme,0.003287425,,,,Escherichia coli,rel0
+WP_000522247.1,2.7.1.199,Enzyme,0.002922156,,,,Escherichia coli,rel0
+Triose-phosphate isomerase,5.3.1.1,Enzyme,0.002374251,,,,Escherichia coli,rel0
+Polyribonucleotide nucleotidyltransferase,2.7.7.8,Enzyme,0.001643713,,,,Escherichia coli,rel0
+Membrane alanyl aminopeptidase,3.4.11.2,Enzyme,0.00347006,,,,Escherichia coli,rel0
+Thioredoxin-disulfide reductase,1.8.1.9,Enzyme,0.003287425,,,,Escherichia coli,rel0
+3-deoxy-8-phosphooctulonate synthase,2.5.1.55,Enzyme,0.003287425,,,,Escherichia coli,rel0
+Argininosuccinate synthase,6.3.4.5,Enzyme,0.003835329,,,,Escherichia coli,rel0
+"Phosphoglucomutase (alpha-d-glucose-1,6-bisphosphate-dependent)",5.4.2.2,Enzyme,0.002739521,,,,Escherichia coli,rel0
+Glutamine-trna ligase,6.1.1.18,Enzyme,0.002374251,,,,Escherichia coli,rel0
+Glycine c-acetyltransferase,2.3.1.29,Enzyme,0.003287425,,,,Escherichia coli,rel0
+Phosphoserine transaminase,2.6.1.52,Enzyme,0.003652695,,,,Escherichia coli,rel0
+"Glutamate-1-semialdehyde 2,1-aminomutase",5.4.3.8,Enzyme,0.002739521,,,,Escherichia coli,rel0
+Branched-chain-amino-acid transaminase,2.6.1.42,Enzyme,0.002556886,,,,Escherichia coli,rel0
+Aminomethyltransferase,2.1.2.10,Enzyme,0.002556886,,,,Escherichia coli,rel0
+Acetate kinase,2.7.2.1,Enzyme,0.002739521,,,,Escherichia coli,rel0
+Acetyl-coa carboxylase,6.4.1.2,Enzyme,0.003287425,,,,Escherichia coli,rel0
+Purine-nucleoside phosphorylase,2.4.2.1,Enzyme,0.003287425,,,,Escherichia coli,rel0
+"6,7-dimethyl-8-ribityllumazine synthase",2.5.1.78,Enzyme,0.002008982,,,,Escherichia coli,rel0
+Adp-glyceromanno-heptose 6-epimerase,5.1.3.20,Enzyme,0.002556886,,,,Escherichia coli,rel0
+WP_000444561.1,3.4.13.9,Enzyme,0.002922156,,,,Escherichia coli,rel0
+Glucose-6-phosphate dehydrogenase (nadp+),1.1.1.49,Enzyme,0.002922156,,,,Escherichia coli,rel0
+Arginine-trna ligase,6.1.1.19,Enzyme,0.00310479,,,,Escherichia coli,rel0
+"6,7-dihydropteridine reductase",1.5.1.34,Enzyme,0.002556886,,,,Escherichia coli,rel0
+WP_000917208.1,1.16.3.2,Enzyme,0.002008982,,,,Escherichia coli,rel0
+D-sedoheptulose 7-phosphate isomerase,5.3.1.28,Enzyme,0.001826347,,,,Escherichia coli,rel0
+Inorganic diphosphatase,3.6.1.1,Enzyme,0.00310479,,,,Escherichia coli,rel0
+[acyl-carrier-protein] s-malonyltransferase,2.3.1.39,Enzyme,0.001461078,,,,Escherichia coli,rel0
+L-threonine 3-dehydrogenase,1.1.1.103,Enzyme,0.002008982,,,,Escherichia coli,rel0
+WP_000072067.1,5.6.2.2,Enzyme,0.002739521,,,,Escherichia coli,rel0
+Galactitol-1-phosphate 5-dehydrogenase,1.1.1.251,Enzyme,0.001826347,,,,Escherichia coli,rel0
+Uridine phosphorylase,2.4.2.3,Enzyme,0.001826347,,,,Escherichia coli,rel0
+3-hydroxyacyl-[acyl-carrier-protein] dehydratase,4.2.1.59,Enzyme,0.002191617,,,,Escherichia coli,rel0
+WP_000122253.1,3.4.21.92,Enzyme,0.004383234,,,,Escherichia coli,rel0
+WP_001295469.1,4.3.3.7,Enzyme,0.001826347,,,,Escherichia coli,rel0
+Pepb aminopeptidase,3.4.11.23,Enzyme,0.002008982,,,,Escherichia coli,rel0
+S-ribosylhomocysteine lyase,4.4.1.21,Enzyme,0.001278443,,,,Escherichia coli,rel0
+Beta-ketoacyl-[acyl-carrier-protein] synthase iii,2.3.1.180,Enzyme,0.001643713,,,,Escherichia coli,rel0
+Tryptophan-trna ligase,6.1.1.2,Enzyme,0.002008982,,,,Escherichia coli,rel0
+Nad+ synthase,6.3.1.5,Enzyme,0.001461078,,,,Escherichia coli,rel0
+WP_000753946.1,3.4.21.107,Enzyme,0.002739521,,,,Escherichia coli,rel0
+D-alanine-d-alanine ligase,6.3.2.4,Enzyme,0.002556886,,,,Escherichia coli,rel0
+WP_001018194.1,3.4.11.18,Enzyme,0.001278443,,,,Escherichia coli,rel0
+WP_000484965.1,3.1.13.1,Enzyme,0.002191617,,,,Escherichia coli,rel0
+Aspartate-semialdehyde dehydrogenase,1.2.1.11,Enzyme,0.002191617,,,,Escherichia coli,rel0
+Dna-directed dna polymerase,2.7.7.7,Enzyme,0.000913174,,,,Escherichia coli,rel0
+Shikimate kinase,2.7.1.71,Enzyme,0.002008982,,,,Escherichia coli,rel0
+Phosphoglucosamine mutase,5.4.2.10,Enzyme,0.002191617,,,,Escherichia coli,rel0
+(e)-4-hydroxy-3-methylbut-2-enyl-diphosphate synthase (ferredoxin),1.17.7.1,Enzyme,0.001643713,,,,Escherichia coli,rel0
+Phosphoribosylaminoimidazolecarboxamide formyltransferase,2.1.2.3,Enzyme,0.000913174,,,,Escherichia coli,rel0
+Arginine decarboxylase,4.1.1.19,Enzyme,0.001278443,,,,Escherichia coli,rel0
+2-dehydro-3-deoxy-phosphogluconate aldolase,4.1.2.14,Enzyme,0.001095808,,,,Escherichia coli,rel0
+Ribose-5-phosphate isomerase,5.3.1.6,Enzyme,0.001643713,,,,Escherichia coli,rel0
+Udp-4-amino-4-deoxy-l-arabinose aminotransferase,2.6.1.87,Enzyme,0.001461078,,,,Escherichia coli,rel0
+L-fucose isomerase,5.3.1.25,Enzyme,0.001461078,,,,Escherichia coli,rel0
+Cysteine-trna ligase,6.1.1.16,Enzyme,0.001826347,,,,Escherichia coli,rel0
+6-phosphofructokinase,2.7.1.11,Enzyme,0.001095808,,,,Escherichia coli,rel0
+Adenylosuccinate lyase,4.3.2.2,Enzyme,0.001643713,,,,Escherichia coli,rel0
+Formyltetrahydrofolate deformylase,3.5.1.10,Enzyme,0.001278443,,,,Escherichia coli,rel0
+Porphobilinogen synthase,4.2.1.24,Enzyme,0.000547904,,,,Escherichia coli,rel0
+Inositol-phosphate phosphatase,3.1.3.25,Enzyme,0.001278443,,,,Escherichia coli,rel0
+Isocitrate lyase,4.1.3.1,Enzyme,0.002008982,,,,Escherichia coli,rel0
+Succinate dehydrogenase,1.3.5.1,Enzyme,0.001826347,,,,Escherichia coli,rel0
+WP_000162740.1,2.8.4.3,Enzyme,0.001278443,,,,Escherichia coli,rel0
+Phosphopentomutase,5.4.2.7,Enzyme,0.001826347,,,,Escherichia coli,rel0
+"Dtdp-glucose 4,6-dehydratase",4.2.1.46,Enzyme,0.000730539,,,,Escherichia coli,rel0
+3-oxoacyl-[acyl-carrier-protein] reductase,1.1.1.100,Enzyme,0.000913174,,,,Escherichia coli,rel0
+Acetylornithine deacetylase,3.5.1.16,Enzyme,0.000365269,,,,Escherichia coli,rel0
+Udp-glucuronic acid dehydrogenase (udp-4-keto-hexauronic acid,1.1.1.305,Enzyme,0.001095808,,,,Escherichia coli,rel0
+Methylthioadenosine nucleosidase,3.2.2.16,Enzyme,0.000730539,,,,Escherichia coli,rel0
+Acetolactate synthase,2.2.1.6,Enzyme,0.001826347,,,,Escherichia coli,rel0
+3-deoxy-7-phosphoheptulonate synthase,2.5.1.54,Enzyme,0.001826347,,,,Escherichia coli,rel0
+WP_000189159.1,1.5.1.38,Enzyme,0.001278443,,,,Escherichia coli,rel0
+Glutathione synthase,6.3.2.3,Enzyme,0.001826347,,,,Escherichia coli,rel0
+3-hydroxypropionate dehydrogenase (nadp+),1.1.1.298,Enzyme,0.000365269,,,,Escherichia coli,rel0
+Nadh:quinone reductase (non-electrogenic),1.6.5.9,Enzyme,0.002191617,,,,Escherichia coli,rel0
+Glycerophosphodiester phosphodiesterase,3.1.4.46,Enzyme,0.001643713,,,,Escherichia coli,rel0
+Uracil phosphoribosyltransferase,2.4.2.9,Enzyme,0.001278443,,,,Escherichia coli,rel0
+L-serine ammonia-lyase,4.3.1.17,Enzyme,0.000913174,,,,Escherichia coli,rel0
+Pantoate-beta-alanine ligase (amp-forming),6.3.2.1,Enzyme,0.001643713,,,,Escherichia coli,rel0
+Glycogen phosphorylase,2.4.1.1,Enzyme,0.000913174,,,,Escherichia coli,rel0
+Hypoxanthine phosphoribosyltransferase,2.4.2.8,Enzyme,0.001461078,,,,Escherichia coli,rel0
+WP_000790168.1,3.6.5.n1,Enzyme,0.001826347,,,,Escherichia coli,rel0
+WP_001068682.1,1.11.1.24,Enzyme,0.001278443,,,,Escherichia coli,rel0
+Beta-galactosidase,3.2.1.23,Enzyme,0.000182635,,,,Escherichia coli,rel0
+2-hydroxy-3-oxopropionate reductase,1.1.1.60,Enzyme,0.000365269,,,,Escherichia coli,rel0
+Malate dehydrogenase (oxaloacetate-decarboxylating),1.1.1.38,Enzyme,0.001643713,,,,Escherichia coli,rel0
+Udp-n-acetylglucosamine 1-carboxyvinyltransferase,2.5.1.7,Enzyme,0.000913174,,,,Escherichia coli,rel0
+Threonine ammonia-lyase,4.3.1.19,Enzyme,0.001643713,,,,Escherichia coli,rel0
+WP_001300598.1,3.4.15.5,Enzyme,0.000365269,,,,Escherichia coli,rel0
+WP_001297122.1,5.6.2.1,Enzyme,0.000913174,,,,Escherichia coli,rel0
+Glutamate-cysteine ligase,6.3.2.2,Enzyme,0.000913174,,,,Escherichia coli,rel0
+Acetylornithine transaminase,2.6.1.11,Enzyme,0.000365269,,,,Escherichia coli,rel0
+Glutathione-disulfide reductase,1.8.1.7,Enzyme,0.000365269,,,,Escherichia coli,rel0
+5-methyltetrahydropteroyltriglutamate-homocysteine s-methyltransferase,2.1.1.14,Enzyme,0.000182635,,,,Escherichia coli,rel0
+Orotidine-5'-phosphate decarboxylase,4.1.1.23,Enzyme,0.000730539,,,,Escherichia coli,rel0
+1-(5-phosphoribosyl)-5-[(5,5.3.1.16,Enzyme,0.000547904,,,,Escherichia coli,rel0
+WP_000920840.1,5.1.3.29,Enzyme,0.000547904,,,,Escherichia coli,rel0
+N-acetylneuraminate lyase,4.1.3.3,Enzyme,0.000547904,,,,Escherichia coli,rel0
+Phosphoribosylformylglycinamidine synthase,6.3.5.3,Enzyme,0.000730539,,,,Escherichia coli,rel0
+Assimilatory sulfite reductase (nadph),1.8.1.2,Enzyme,0.000913174,,,,Escherichia coli,rel0
+Phosphoribosylaminoimidazolesuccinocarboxamide synthase,6.3.2.6,Enzyme,0.000547904,,,,Escherichia coli,rel0
+Beta-glucosidase,3.2.1.21,Enzyme,0.001095808,,,,Escherichia coli,rel0
+Histidinol-phosphatase,3.1.3.15,Enzyme,0.000913174,,,,Escherichia coli,rel0
+Peptide deformylase,3.5.1.88,Enzyme,0.000913174,,,,Escherichia coli,rel0
+WP_000869178.1,2.7.1.167,Enzyme,0.001095808,,,,Escherichia coli,rel0
+Glucose-6-phosphate isomerase,5.3.1.9,Enzyme,0.001278443,,,,Escherichia coli,rel0
+Leucyl aminopeptidase,3.4.11.1,Enzyme,0.000730539,,,,Escherichia coli,rel0
+Fructose-bisphosphatase,3.1.3.11,Enzyme,0.001826347,,,,Escherichia coli,rel0
+Ribulose-phosphate 3-epimerase,5.1.3.1,Enzyme,0.000547904,,,,Escherichia coli,rel0
+Adenine phosphoribosyltransferase,2.4.2.7,Enzyme,0.000730539,,,,Escherichia coli,rel0
+WP_000084590.1,4.98.1.1,Enzyme,0.000730539,,,,Escherichia coli,rel0
+Betaine-aldehyde dehydrogenase,1.2.1.8,Enzyme,0.000365269,,,,Escherichia coli,rel0
+WP_000116565.1,5.4.2.12,Enzyme,0.000730539,,,,Escherichia coli,rel0
+Tagatose-bisphosphate aldolase,4.1.2.40,Enzyme,0.000365269,,,,Escherichia coli,rel0
+"1,4-dihydroxy-2-naphthoyl-coa synthase",4.1.3.36,Enzyme,0.000182635,,,,Escherichia coli,rel0
+Ribonucleoside-diphosphate reductase,1.17.4.1,Enzyme,0.000365269,,,,Escherichia coli,rel0
+Gmp reductase,1.7.1.7,Enzyme,0.000913174,,,,Escherichia coli,rel0
+Glutamate-5-semialdehyde dehydrogenase,1.2.1.41,Enzyme,0.002556886,,,,Escherichia coli,rel0
+WP_000209826.1,1.5.1.41,Enzyme,0.000730539,,,,Escherichia coli,rel0
+Xanthine phosphoribosyltransferase,2.4.2.22,Enzyme,0.000730539,,,,Escherichia coli,rel0
+Riboflavin synthase,2.5.1.9,Enzyme,0.001278443,,,,Escherichia coli,rel0
+Alcohol dehydrogenase (nadp+),1.1.1.2,Enzyme,0.000182635,,,,Escherichia coli,rel0
+WP_001290123.1,3.4.11.9,Enzyme,0.001095808,,,,Escherichia coli,rel0
+Phosphoglycerate dehydrogenase,1.1.1.95,Enzyme,0.000365269,,,,Escherichia coli,rel0
+Acetylglutamate kinase,2.7.2.8,Enzyme,0.000547904,,,,Escherichia coli,rel0
+Hydroxyacylglutathione hydrolase,3.1.2.6,Enzyme,0.000547904,,,,Escherichia coli,rel0
+Phosphoribosylamine-glycine ligase,6.3.4.13,Enzyme,0.000365269,,,,Escherichia coli,rel0
+Thymidylate synthase,2.1.1.45,Enzyme,0.000547904,,,,Escherichia coli,rel0
+Mannose-6-phosphate isomerase,5.3.1.8,Enzyme,0.000730539,,,,Escherichia coli,rel0
+Atp phosphoribosyltransferase,2.4.2.17,Enzyme,0.001095808,,,,Escherichia coli,rel0
+WP_000673918.1,3.1.11.2,Enzyme,0.000365269,,,,Escherichia coli,rel0
+Asparagine synthase (glutamine-hydrolysing),6.3.5.4,Enzyme,0.000182635,,,,Escherichia coli,rel0
+Rna helicase,3.6.4.13,Enzyme,0.000547904,,,,Escherichia coli,rel0
+Ump kinase,2.7.4.22,Enzyme,0.000547904,,,,Escherichia coli,rel0
+Spermidine synthase,2.5.1.16,Enzyme,0.000547904,,,,Escherichia coli,rel0
+WP_000981380.1,3.1.21.3,Enzyme,0.000913174,,,,Escherichia coli,rel0
+"Dtdp-4-amino-4,6-dideoxy-d-glucose transaminase",2.6.1.33,Enzyme,0.000365269,,,,Escherichia coli,rel0
+N-methyl-l-amino-acid oxidase,1.5.3.2,Enzyme,0.001095808,,,,Escherichia coli,rel0
+Dutp diphosphatase,3.6.1.23,Enzyme,0.000547904,,,,Escherichia coli,rel0
+Arsenate reductase (glutathione/glutaredoxin),1.20.4.1,Enzyme,0.000547904,,,,Escherichia coli,rel0
+"Udp-n-acetylmuramoyl-l-alanyl-d-glutamate-2,6-diaminopimelate ligase",6.3.2.13,Enzyme,0.000547904,,,,Escherichia coli,rel0
+Peptide-methionine (r)-s-oxide reductase,1.8.4.12,Enzyme,0.000730539,,,,Escherichia coli,rel0
+Thiosulfate sulfurtransferase,2.8.1.1,Enzyme,0.000730539,,,,Escherichia coli,rel0
+Alanine racemase,5.1.1.1,Enzyme,0.000365269,,,,Escherichia coli,rel0
+Hydroxymethylbilane synthase,2.5.1.61,Enzyme,0.000182635,,,,Escherichia coli,rel0
+Glutathione transferase,2.5.1.18,Enzyme,0.000365269,,,,Escherichia coli,rel0
+Alcohol dehydrogenase,1.1.1.1,Enzyme,0.000365269,,,,Escherichia coli,rel0
+Uroporphyrinogen decarboxylase,4.1.1.37,Enzyme,0,,,,Escherichia coli,rel0
+WP_000397372.1,2.10.1.1,Enzyme,0,,,,Escherichia coli,rel0
+Pyridoxine 5'-phosphate synthase,2.6.99.2,Enzyme,0.000365269,,,,Escherichia coli,rel0
+Threonine synthase,4.2.3.1,Enzyme,0.000182635,,,,Escherichia coli,rel0
+Orotate phosphoribosyltransferase,2.4.2.10,Enzyme,0.000182635,,,,Escherichia coli,rel0
+Glucose-1-phosphate thymidylyltransferase,2.7.7.24,Enzyme,0.000730539,,,,Escherichia coli,rel0
+6-phospho-beta-glucosidase,3.2.1.86,Enzyme,0.000365269,,,,Escherichia coli,rel0
+Histidinol dehydrogenase,1.1.1.23,Enzyme,0.000182635,,,,Escherichia coli,rel0
+Udp-n-acetylmuramoyl-l-alanine-d-glutamate ligase,6.3.2.9,Enzyme,0.000547904,,,,Escherichia coli,rel0
+Dihydrofolate synthase,6.3.2.12,Enzyme,0.000182635,,,,Escherichia coli,rel0
+WP_001166395.1,1.17.7.4,Enzyme,0.000547904,,,,Escherichia coli,rel0
+WP_001219792.1,6.3.2.45,Enzyme,0.000365269,,,,Escherichia coli,rel0
+Pyrroline-5-carboxylate reductase,1.5.1.2,Enzyme,0.000365269,,,,Escherichia coli,rel0
+"Dtdp-4-dehydrorhamnose 3,5-epimerase",5.1.3.13,Enzyme,0.000365269,,,,Escherichia coli,rel0
+Deoxyribose-phosphate aldolase,4.1.2.4,Enzyme,0.000182635,,,,Escherichia coli,rel0
+L-methionine (r)-s-oxide reductase,1.8.4.14,Enzyme,0.000365269,,,,Escherichia coli,rel0
+WP_000072420.1,1.6.5.10,Enzyme,0.000182635,,,,Escherichia coli,rel0
+N-acetyl-gamma-glutamyl-phosphate reductase,1.2.1.38,Enzyme,0.000730539,,,,Escherichia coli,rel0
+Udp-n-acetylmuramoyl-tripeptide-d-alanyl-d-alanine ligase,6.3.2.10,Enzyme,0.000182635,,,,Escherichia coli,rel0
+Aromatic-amino-acid transaminase,2.6.1.57,Enzyme,0.000730539,,,,Escherichia coli,rel0
+WP_000715216.1,5.3.4.1,Enzyme,0.000365269,,,,Escherichia coli,rel0
+Lipoyl synthase,2.8.1.8,Enzyme,0.000913174,,,,Escherichia coli,rel0
+N-acetylmuramic acid 6-phosphate etherase,4.2.1.126,Enzyme,0.000365269,,,,Escherichia coli,rel0
+Dtmp kinase,2.7.4.9,Enzyme,0.000547904,,,,Escherichia coli,rel0
+Aspartate carbamoyltransferase,2.1.3.2,Enzyme,0.000365269,,,,Escherichia coli,rel0
+WP_000568432.1,3.4.19.5,Enzyme,0.000730539,,,,Escherichia coli,rel0
+Sugar-phosphatase,3.1.3.23,Enzyme,0.000547904,,,,Escherichia coli,rel0
+Uridine nucleosidase,3.2.2.3,Enzyme,0.000365269,,,,Escherichia coli,rel0
+WP_001174737.1,3.6.1.66,Enzyme,0.000182635,,,,Escherichia coli,rel0
+WP_000827411.1,3.1.26.12,Enzyme,0.000182635,,,,Escherichia coli,rel0
+"3,4-dihydroxy-2-butanone-4-phosphate synthase",4.1.99.12,Enzyme,0.000547904,,,,Escherichia coli,rel0
+WP_000940019.1,2.1.1.200,Enzyme,0.000365269,,,,Escherichia coli,rel0
+Gtp cyclohydrolase i,3.5.4.16,Enzyme,0,,,,Escherichia coli,rel0
+S-(hydroxymethyl)glutathione dehydrogenase,1.1.1.284,Enzyme,0.000365269,,,,Escherichia coli,rel0
+Aspartate 1-decarboxylase,4.1.1.11,Enzyme,0.000365269,,,,Escherichia coli,rel0
+D-lactate dehydrogenase,1.1.1.28,Enzyme,0.000365269,,,,Escherichia coli,rel0
+Trna nucleotidyltransferase,2.7.7.56,Enzyme,0,,,,Escherichia coli,rel0
+Agmatinase,3.5.3.11,Enzyme,0.000730539,,,,Escherichia coli,rel0
+Dctp deaminase,3.5.4.13,Enzyme,0.000182635,,,,Escherichia coli,rel0
+Utp-glucose-1-phosphate uridylyltransferase,2.7.7.9,Enzyme,0.000365269,,,,Escherichia coli,rel0
+Ribonucleoside-triphosphate reductase (thioredoxin),1.17.4.2,Enzyme,0,,,,Escherichia coli,rel0
+Sulfate adenylyltransferase,2.7.7.4,Enzyme,0.000182635,,,,Escherichia coli,rel0
+WP_001124935.1,3.1.11.6,Enzyme,0.000730539,,,,Escherichia coli,rel0
+WP_000809262.1,2.1.1.198,Enzyme,0,,,,Escherichia coli,rel0
+"3'(2'),5'-bisphosphate nucleotidase",3.1.3.7,Enzyme,0.000365269,,,,Escherichia coli,rel0
+Trna (guanine46-n7)-methyltransferase,2.1.1.33,Enzyme,0.000182635,,,,Escherichia coli,rel0
+3-deoxy-manno-octulosonate cytidylyltransferase,2.7.7.38,Enzyme,0.000547904,,,,Escherichia coli,rel0
+WP_000049367.1,2.8.4.4,Enzyme,0.000365269,,,,Escherichia coli,rel0
+WP_001045520.1,2.1.1.186,Enzyme,0.000365269,,,,Escherichia coli,rel0
+WP_000089698.1,5.4.99.25,Enzyme,0.000365269,,,,Escherichia coli,rel0
+Udp-n-acetylmuramate-l-alanine ligase,6.3.2.8,Enzyme,0.000182635,,,,Escherichia coli,rel0
+WP_001139294.1,2.3.1.191,Enzyme,0.000182635,,,,Escherichia coli,rel0
+Glucose-1-phosphatase,3.1.3.10,Enzyme,0.000547904,,,,Escherichia coli,rel0
+WP_001016666.1,1.3.1.98,Enzyme,0,,,,Escherichia coli,rel0
+Aminoacyl-trna hydrolase,3.1.1.29,Enzyme,0.000365269,,,,Escherichia coli,rel0
+Chorismate synthase,4.2.3.5,Enzyme,0.000365269,,,,Escherichia coli,rel0
+Histidinol-phosphate transaminase,2.6.1.9,Enzyme,0,,,,Escherichia coli,rel0
+WP_000068457.1,5.1.99.7,Enzyme,0.000365269,,,,Escherichia coli,rel0
+Dihydroorotase,3.5.2.3,Enzyme,0.000547904,,,,Escherichia coli,rel0
+Pyridoxal kinase,2.7.1.35,Enzyme,0.000365269,,,,Escherichia coli,rel0
+3-deoxy-manno-octulosonate-8-phosphatase,3.1.3.45,Enzyme,0.000365269,,,,Escherichia coli,rel0
+Methylglyoxal synthase,4.2.3.3,Enzyme,0.000365269,,,,Escherichia coli,rel0
+5'-nucleotidase,3.1.3.5,Enzyme,0,,,,Escherichia coli,rel0
+Gluconokinase,2.7.1.12,Enzyme,0.000182635,,,,Escherichia coli,rel0
+WP_000543586.1,1.17.1.8,Enzyme,0.000365269,,,,Escherichia coli,rel0
+3-phosphoshikimate 1-carboxyvinyltransferase,2.5.1.19,Enzyme,0.000365269,,,,Escherichia coli,rel0
+Ferroxidase,1.16.3.1,Enzyme,0,,,,Escherichia coli,rel0
+WP_001295704.1,2.1.1.298,Enzyme,0.000730539,,,,Escherichia coli,rel0
+WP_000880195.1,4.3.2.10,Enzyme,0.000730539,,,,Escherichia coli,rel0
+Phosphoadenylyl-sulfate reductase (thioredoxin),1.8.4.8,Enzyme,0.000913174,,,,Escherichia coli,rel0
+3-methyl-2-oxobutanoate hydroxymethyltransferase,2.1.2.11,Enzyme,0.000182635,,,,Escherichia coli,rel0
+Glutamate 5-kinase,2.7.2.11,Enzyme,0.000182635,,,,Escherichia coli,rel0
+WP_001293282.1,2.1.1.185,Enzyme,0.000182635,,,,Escherichia coli,rel0
+WP_000116297.1,2.1.1.191,Enzyme,0.000182635,,,,Escherichia coli,rel0
+Nicotinate-nucleotide diphosphorylase (carboxylating),2.4.2.19,Enzyme,0.000365269,,,,Escherichia coli,rel0
+16s rrna (guanine1207-n2)-methyltransferase,2.1.1.172,Enzyme,0.000365269,,,,Escherichia coli,rel0
+WP_000444361.1,2.4.1.25,Enzyme,0.000182635,,,,Escherichia coli,rel0
+Demethylmenaquinone methyltransferase,2.1.1.163,Enzyme,0.000365269,,,,Escherichia coli,rel0
+All-trans-octaprenyl-diphosphate synthase,2.5.1.90,Enzyme,0.000182635,,,,Escherichia coli,rel0
+Biotin synthase,2.8.1.6,Enzyme,0,,,,Escherichia coli,rel0
+Dtdp-4-dehydrorhamnose reductase,1.1.1.133,Enzyme,0.000182635,,,,Escherichia coli,rel0
+WP_000932839.1,2.1.1.170,Enzyme,0.000182635,,,,Escherichia coli,rel0
+"2',3'-cyclic-nucleotide 2'-phosphodiesterase",3.1.4.16,Enzyme,0.000730539,,,,Escherichia coli,rel0
+WP_001092082.1,3.4.16.4,Enzyme,0.000182635,,,,Escherichia coli,rel0
+Homoserine dehydrogenase,1.1.1.3,Enzyme,0,,,,Escherichia coli,rel0
+Phosphoribosylformylglycinamidine cyclo-ligase,6.3.3.1,Enzyme,0,,,,Escherichia coli,rel0
+Amp nucleosidase,3.2.2.4,Enzyme,0.000365269,,,,Escherichia coli,rel0
+WP_001213584.1,3.1.3.104,Enzyme,0,,,,Escherichia coli,rel0
+Isocitrate dehydrogenase (nadp+),1.1.1.42,Enzyme,0.010227545,,,,Escherichia coli,rel0
+L-serine ammonia-lyase,4.3.1.17,Enzyme,0.0366,,,,Dictyostelium discoideum,rel0
+Pyruvate carboxylase,6.4.1.1,Enzyme,0.0488,,,,Rhizobium etli,rel0
+Formate dehydrogenase,1.17.1.9,Enzyme,0.0122,,,,Starkeya novella,rel0
