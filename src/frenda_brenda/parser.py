@@ -12,7 +12,6 @@ from brendapyrser import BRENDA
 from equilibrator_api import ComponentContribution
 from itertools import filterfalse
 
-# MAKE SURE THESE FILE PATHS ARE UPDATED AND THAT THE FILES EXIST IN THE REPO
 path = os.getcwd()
 
 with gzip.open(path+"/../thermo_calculations/kegg_enzymes.json.gz", "r") as f:
@@ -24,9 +23,9 @@ with gzip.open(path+"/../thermo_calculations/kegg_reactions.json.gz", "r") as f:
 reaction_og = pd.read_csv(path+'/Files/Reaction.csv')
 sbm_og = pd.read_csv(path+'/Files/SpeciesBaseMechanisms.csv')
 inac = pd.read_csv(path+'/Files/Inaccessible_IDs.csv')
-kcats = pd.read_csv(path+'/../kinetic_estimator/full_report_kcats.csv') #GET THIS FROM WHERE?
-kms = pd.read_csv(path+'/../kinetic_estimator/full_report_kms.csv') #GET THIS FROM WHERE?
-kis = pd.read_csv(path+'/../kinetic_estimator/full_report_kis.csv') #GET THIS FROM WHERE?
+kcats = pd.read_csv(path+'/../kinetic_estimator/full_report_kcats.csv')
+kms = pd.read_csv(path+'/../kinetic_estimator/full_report_kms.csv')
+kis = pd.read_csv(path+'/../kinetic_estimator/full_report_kis.csv')
 metabconc_ref = pd.read_csv(path+'/Files/Metabolite_Concentrations.csv')
 dataFile = path+'/Files/brenda_download.txt'
 
@@ -49,7 +48,8 @@ def manualEC(sbm, reaction, inac):
                                 'StartingConc': row['Conc'],
                                 'Conc': np.nan,
                                 'Mechanisms': np.nan,
-                                'Parameters': np.nan}, index=[0])
+                                'Parameters': np.nan,
+                                'Species': np.nan}, index=[0])
         sbm_rows.append(sbm_row)
 
     if sbm_rows:
@@ -362,14 +362,13 @@ def iterate(reaction_df, sbm_df):
         ec = row['EC']
         species = row['Species']
 
-        print('Processing EC ',ec)
 
-        if np.isnan(species):
-            species = 'Escherichia coli'
+        print('Processing EC ',ec)
 
         try:
             extracted_df = assemble(ec, species)
             sbm_df.iloc[index,0] = get_enzyme_name(brenda.reactions.get_by_id(ec))
+            sbm_df.iloc[index,7] = row['Species']
         except ECIndexError:
             print('Could not index EC ', ec)
             continue

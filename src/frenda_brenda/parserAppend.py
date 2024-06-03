@@ -48,7 +48,7 @@ print(LastLabel)
 reaction_toappend = pd.DataFrame(columns=['Accession Number', 'EC', 'Species', 'Label', 'Enzyme', 'Reaction ID',
                                   'Mechanism', 'Substrates', 'Products', 'Km', 'Kcat', 'Inhibitors', 'KI'])
 # Create sbm DataFrame
-sbm_toappend = pd.DataFrame(columns=['Label', 'EC', 'Type', 'StartingConc', 'Conc', 'Mechanisms', 'Parameters'])
+sbm_toappend = pd.DataFrame(columns=['Label', 'EC', 'Type', 'StartingConc', 'Conc', 'Mechanisms', 'Parameters','Species'])
 
 # Function to generate Label values
 def generate_label():
@@ -84,7 +84,8 @@ for index, row in chosenfile.iterrows():
             'StartingConc': row['Concentration'],
             'Conc': '',
             'Mechanisms': '',
-            'Parameters': ''
+            'Parameters': '',
+            'Species': ''
         }, ignore_index=True)
 
         print(LastLabel)
@@ -98,7 +99,8 @@ for index, row in chosenfile.iterrows():
             'StartingConc': row['Concentration'],
             'Conc': '',
             'Mechanisms': '',
-            'Parameters': ''
+            'Parameters': '',
+            'Species': ''
         }, ignore_index=True)
 
 def manualEC(sbm, reaction, inac):
@@ -112,7 +114,8 @@ def manualEC(sbm, reaction, inac):
                                 'StartingConc': row['Conc'],
                                 'Conc': np.nan,
                                 'Mechanisms': np.nan,
-                                'Parameters': np.nan}, index=[0])
+                                'Parameters': np.nan,
+                                'Species': np.nan}, index = [0])
         sbm_rows.append(sbm_row)
 
     if sbm_rows:
@@ -427,11 +430,9 @@ def iterate(reaction_df, sbm_df):
 
         print('Processing EC ',ec)
 
-        if species == np.nan:
-            species = 'Escherichia coli'
-
         try:
             extracted_df = assemble(ec, species)
+            sbm_df.iloc[index,7] = row['Species']
         except ECIndexError:
             print('Could not index EC ', ec)
             continue
@@ -622,14 +623,14 @@ def drop_and_sum_duplicates(reaction, sbm):
 
     # Handle cases where Type is "Enzyme"
     enzyme_sbm = sbm[~metabolite_mask].copy()  # Create a copy to avoid SettingWithCopyWarning
-    enzyme_sbm.loc[:, 'StartingConc'] = enzyme_sbm.groupby(['EC'])['StartingConc'].transform('sum')
-    enzyme_sbm = enzyme_sbm.drop_duplicates(subset=['EC'])
+    enzyme_sbm.loc[:, 'StartingConc'] = enzyme_sbm.groupby(['EC', 'Species'])['StartingConc'].transform('sum')
+    enzyme_sbm = enzyme_sbm.drop_duplicates(subset=['EC', 'Species'])
 
     # Concatenate the results
     sbm = pd.concat([metabolite_sbm, enzyme_sbm])
 
-    # Drop all duplicates in Reaction based on both EC AND Reaction ID
-    reaction = reaction.drop_duplicates(subset=['EC', 'Reaction ID'])
+    # Drop all duplicates in Reaction based on both EC, Reaction ID, and Species
+    reaction = reaction.drop_duplicates(subset=['EC', 'Reaction ID', 'Species'])
 
     return reaction, sbm
 
