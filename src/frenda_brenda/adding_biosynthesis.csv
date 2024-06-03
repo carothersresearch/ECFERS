@@ -1,5 +1,15 @@
 ﻿Type,EC,KEGG,Species,Concentration
-Enzyme,4.3.1.17,,Dictyostelium discoideum,30
-Enzyme,6.4.1.1,,Rhizobium etli,30
-Enzyme,1.1.1.37,,Escherichia coli,30
-Enzyme,1.2.1.2,,Starkeya novella,30
+Enzyme,4.3.1.17,,Dictyostelium discoideum,36.6
+Enzyme,6.4.1.1,,Rhizobium etli,48.8
+Enzyme,1.1.1.37,,Escherichia coli,6.1
+Enzyme,1.2.1.2,,Starkeya novella,12.2
+Metabolite,,C00058,,15
+Metabolite,,C00004,,1
+Metabolite,,C00002,,1
+Metabolite,,C00065,,1
+Metabolite,,C00018,,1
+Metabolite,,C00305,,2
+Metabolite,,C00158,,10
+Metabolite,,C00288,,10
+Metabolite,,C00024,,1
+Metabolite,,C00304,,1
