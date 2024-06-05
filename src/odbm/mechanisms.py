@@ -205,13 +205,20 @@ class ModularRateLaw(Mechanism):
     nP = np.nan                        # number of required products 
     nI = np.nan                        # number of required inhibitors
     nE = 1
+    ignore = ['C00001','C00080'] # H2O, H+   
+
+    def _ignore_species(self, species):
+        return [s for s in species if s not in self.ignore]
 
     def numerator(self) -> str:
-        allS = '*'.join(self.substrates)
-        allP = '*'.join(self.products)
+        substrates = self._ignore_species(self.substrates)
+        products = self._ignore_species(self.products)
 
-        allKmS = '*'.join(['Km_'+s+'_'+self.enzyme[0] for s in self.substrates])
-        allKmP = '*'.join(['Km_'+p+'_'+self.enzyme[0] for p in self.products])
+        allS = '*'.join(substrates)
+        allP = '*'.join(products)
+
+        allKmS = '*'.join(['Km_'+s+'_'+self.enzyme[0] for s in substrates])
+        allKmP = '*'.join(['Km_'+p+'_'+self.enzyme[0] for p in products])
 
         kcatF = 'Kcat_F_' + self.label
         kcatR = 'Kcat_R_' + self.label
@@ -219,22 +226,27 @@ class ModularRateLaw(Mechanism):
         return '('+kcatF+'*('+ allS +')/('+ allKmS +') - '+ kcatR +'*('+ allP +')/('+ allKmP +'))'
     
     def denominator(self) -> str:
-        allKmS = ['Km_'+s+'_'+self.enzyme[0] for s in self.substrates]
-        allKmP = ['Km_'+p+'_'+self.enzyme[0] for p in self.products]
-        allS = '*'.join(['(1+'+s+'/'+Km+')' for s, Km in zip(self.substrates, allKmS)])
-        allP = '*'.join(['(1+'+p+'/'+Km+')' for p, Km in zip(self.products, allKmP)])
+        substrates = self._ignore_species(self.substrates)
+        products = self._ignore_species(self.products)
+
+        allKmS = ['Km_'+s+'_'+self.enzyme[0] for s in substrates]
+        allKmP = ['Km_'+p+'_'+self.enzyme[0] for p in products]
+        allS = '*'.join(['(1+'+s+'/'+Km+')' for s, Km in zip(substrates, allKmS)])
+        allP = '*'.join(['(1+'+p+'/'+Km+')' for p, Km in zip(products, allKmP)])
         return '('+ allS + ' + '+ allP + ' -1)'
     
     def inhibition_nc(self) -> str: # only activity
-        allKi = ['Ki_'+i+'_'+self.enzyme[0] for i in self.inhibitors] 
-        allGi = ['Gi_'+i+'_'+self.enzyme[0] for i in self.inhibitors] # degree of competition (1 = full c, 0 = full nc)
-        fr = '*'.join(['(1-'+Gi+')/(1+'+i+'/'+Ki+')' for i, Ki, Gi in zip(self.inhibitors, allKi, allGi)])
+        inhibitors = self._ignore_species(self.inhibitors)
+        allKi = ['Ki_'+i+'_'+self.enzyme[0] for i in inhibitors] 
+        allGi = ['Gi_'+i+'_'+self.enzyme[0] for i in inhibitors] # degree of competition (1 = full c, 0 = full nc)
+        fr = '*'.join(['(1-'+Gi+')/(1+'+i+'/'+Ki+')' for i, Ki, Gi in zip(inhibitors, allKi, allGi)])
         return fr
     
     def inhibition_c(self) -> str: # only binding
-        allKi = ['Ki_'+i+'_'+self.enzyme[0] for i in self.inhibitors] 
-        allGi = ['Gi_'+i+'_'+self.enzyme[0] for i in self.inhibitors] # degree of competition (1 = full c, 0 = full nc)
-        dreg = '+'.join(['('+i+'*'+Gi+'/'+Ki+')' for i, Ki, Gi in zip(self.inhibitors, allKi, allGi)])
+        inhibitors = self._ignore_species(self.inhibitors)
+        allKi = ['Ki_'+i+'_'+self.enzyme[0] for i in inhibitors] 
+        allGi = ['Gi_'+i+'_'+self.enzyme[0] for i in inhibitors] # degree of competition (1 = full c, 0 = full nc)
+        dreg = '+'.join(['('+i+'*'+Gi+'/'+Ki+')' for i, Ki, Gi in zip(inhibitors, allKi, allGi)])
         return dreg
     
     @overrides
