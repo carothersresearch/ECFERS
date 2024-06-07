@@ -210,7 +210,7 @@ class ModularRateLaw(Mechanism):
     def _ignore_species(self, species):
         return [s for s in species if s not in self.ignore]
 
-    def numerator(self) -> str:
+    def numerators(self) -> str:
         substrates = self._ignore_species(self.substrates)
         products = self._ignore_species(self.products)
 
@@ -223,7 +223,7 @@ class ModularRateLaw(Mechanism):
         kcatF = 'Kcat_F_' + self.label
         kcatR = 'Kcat_R_' + self.label
 
-        return '('+kcatF+'*('+ allS +')/('+ allKmS +') - '+ kcatR +'*('+ allP +')/('+ allKmP +'))'
+        return '('+kcatF+'*('+ allS +')/('+ allKmS +'))', '('+ kcatR +'*('+ allP +')/('+ allKmP +'))'
     
     def denominator(self) -> str:
         substrates = self._ignore_species(self.substrates)
@@ -252,17 +252,22 @@ class ModularRateLaw(Mechanism):
     @overrides
     def writeRate(self) -> str:
         u = self.enzyme[0]
-        T = self.numerator()
+        Tf, Tr = self.numerators()
         D = self.denominator()
 
         if len(self.inhibitors)>0:
             fr = self.inhibition_nc()
             Dreg = self.inhibition_c()
-            rate = self.label +' = '+ u + ' * ' + fr + ' * ' + T + '/(' + D + ' + ' + Dreg + ')'
 
+            rate_f = self.label +'_f = '+ u + ' * ' + fr + ' * ' + Tf + '/(' + D + ' + ' + Dreg + ')'
+            rate_r = self.label +'_r = '+ u + ' * ' + fr + ' * ' + Tr + '/(' + D + ' + ' + Dreg + ')'
+            
         else:
-            rate = self.label +' = '+ u + ' * ' + T + '/' + D
+            rate_f = self.label +'_f = '+ u + ' * ' + Tf + '/' + D
+            rate_r = self.label +'_r = '+ u + ' * ' + Tr + '/' + D
 
+        rate_net = self.label +' = '+self.label +'_f' + ' - ' + self.label +'_r'
+        rate = rate_f + '; \n' + rate_r + '; \n' + rate_net
         return rate
 
 class OrderedBisubstrateBiproduct(Mechanism):
