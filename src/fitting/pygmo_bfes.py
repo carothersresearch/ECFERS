@@ -38,6 +38,7 @@ def _ipy_bfe_func2(dv_path, prob, rank):
     import pickle
 
     dvs = load(dv_path+'/dvs_'+str(rank)+'.b')
+    print([str(rank), ])
 
     return pickle.dumps(list(map(prob.fitness, dvs)))
 
@@ -101,5 +102,5 @@ class pickleless_bfe(pg.ipyparallel_bfe):
         fvs = np.array(sum([pickle.loads(fv) for fv in ar.get()],[]))
         # Reshape it so that it is 1D.
         fvs.shape = (ndvs*nf,)
-
+        del ar, dvs, ipp
         return fvs

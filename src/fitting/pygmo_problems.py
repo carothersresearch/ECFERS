@@ -310,10 +310,10 @@ class SBMLGlobalFit_Multi:
        
         # set new parameters
         for l, v in zip(self.parameter_labels,x):
-            if 'v' not in l:
+            if 'Km' in l:
                 r.setValue('init('+l+')',v)
             else:
-                r.setValue('init('+l+')',v*1000)
+                r.setValue('init('+l+')',v)
 
         # set variables and simulate
         results = {sample:self.data[sample]*(-np.inf) for sample in self.metadata['sample_labels']}
@@ -327,8 +327,11 @@ class SBMLGlobalFit_Multi:
                     if label not in self.species_labels:
                         r2.setValue('init('+label+')', value) # we might need new assignment rules for heterologous enzymes
                     else:
+                        if 'EC' in label:
+                            r2.setValue('['+label+']', value*r2.getValue(self.parameter_labels[-1])) # this is a bit obtuse
+                        else:
                         # r2.removeInitialAssignment(label) theres some bug here? it seems to also mess up with over valuesS
-                        r2.setValue('['+label+']', value)
+                            r2.setValue('['+label+']', value)
             try:
                 results[sample] = r2.simulate(0,self.metadata['timepoints'][sample][-1],self.cvode_timepoints)[:,1:].__array__()
             except Exception as e:
@@ -373,10 +376,12 @@ class SBMLGlobalFit_Multi:
 
 class SBMLGlobalFit_Multi_Fly:
     class ModelStuff:
-        def __init__(self, model, metadata, cvode_timepoints):
+        def __init__(self, model, metadata, cvode_timepoints, parameter_labels, variables):
             r = te.loadSBMLModel(model)
             self.species_labels = np.array(r.getFullStoichiometryMatrix().rownames)
-            self.parameter_labels = np.array(r.getGlobalParameterIds())
+            self.r_parameter_labels = np.array(r.getGlobalParameterIds())
+            self.parameter_order = np.int32(np.squeeze(np.array([np.where(p == self.r_parameter_labels) for p in parameter_labels if p in self.r_parameter_labels])))
+            self.variable_order = {sample:np.int32(np.squeeze(np.array([np.where(p == self.r_parameter_labels) for p in var.keys() if p in self.r_parameter_labels]))) for sample,var in variables.items()}
             self.cols = {}
             self.rows = {}
             self.data_cols = {}
@@ -391,32 +396,42 @@ class SBMLGlobalFit_Multi_Fly:
                         pass
                 self.cols[s] = measurements
                 self.rows[s] = [np.where(np.linspace(0, metadata['timepoints'][s][-1], cvode_timepoints) < (t+0.1))[0][-1] for t in metadata['timepoints'][s]]
+            del r
 
     def __init__(self, model:list, data:list, parameter_labels, lower_bounds, upper_bounds, metadata:list, variables:list, scale = False):
         self.model = model # now a list of models
         self.parameter_labels = parameter_labels # all parameters across all models, only the ones that are going to be fitted
-        self.upperb = upper_bounds # for all parameters
-        self.lowerb = lower_bounds # fol all parameters
+        self.set_bounds(upper_bounds, lower_bounds)
         self.scale = scale
         self.data = data # now a list of data
         self.metadata = metadata # now a list of metadas
         self.variables = variables # # now a list of dict of labels and values
+
         self.cvode_timepoints = 1000
 
-        self.model_stuff = [self.ModelStuff(m, md, self.cvode_timepoints) for m,md in zip(self.model, self.metadata)]
+        self.model_stuff = [self.ModelStuff(m, md, self.cvode_timepoints, self.parameter_labels, var) for m,md,var in zip(self.model, self.metadata, self.variables)]
 
     def fitness(self, x):
         if self.scale: x = self._unscale(x)
         res = self._simulate(x)
         obj = np.nansum([[self._residual(results, data[sample], sample, ms) for sample, results in resdict.items()] for data,ms,resdict in zip(self.data,self.model_stuff,res)])
+        del res
         return [obj]
     
     def _setup_rr(self): # run on engine
-        from roadrunner import Config, RoadRunner
-        Config.setValue(Config.ROADRUNNER_DISABLE_PYTHON_DYNAMIC_PROPERTIES, False)
+        from roadrunner import Config, RoadRunner, Logger
+        Logger.disableLogging()
+        Config.setValue(Config.ROADRUNNER_DISABLE_PYTHON_DYNAMIC_PROPERTIES, True)
         Config.setValue(Config.LOADSBMLOPTIONS_RECOMPILE, False) 
         Config.setValue(Config.LLJIT_OPTIMIZATION_LEVEL, 4)
-
+        Config.setValue(Config.LLVM_SYMBOL_CACHE, True)
+        Config.setValue(Config.LOADSBMLOPTIONS_OPTIMIZE_GVN, True)
+        Config.setValue(Config.LOADSBMLOPTIONS_OPTIMIZE_CFG_SIMPLIFICATION, True)
+        Config.setValue(Config.LOADSBMLOPTIONS_OPTIMIZE_INSTRUCTION_COMBINING, True)
+        Config.setValue(Config.LOADSBMLOPTIONS_OPTIMIZE_DEAD_INST_ELIMINATION, True)
+        Config.setValue(Config.LOADSBMLOPTIONS_OPTIMIZE_DEAD_CODE_ELIMINATION, True)
+        Config.setValue(Config.LOADSBMLOPTIONS_OPTIMIZE_INSTRUCTION_SIMPLIFIER, True)
+        Config.setValue(Config.SIMULATEOPTIONS_COPY_RESULT, True)
         self.r = []
         for m in self.model:
             r = te.loadSBMLModel(m)
@@ -426,41 +441,37 @@ class SBMLGlobalFit_Multi_Fly:
             self.r.append(r)
             
     def _simulate(self, x):
-        from roadrunner import Config, RoadRunner
-        Config.setValue(Config.ROADRUNNER_DISABLE_PYTHON_DYNAMIC_PROPERTIES, False)
+        from roadrunner import Config, RoadRunner, Logger
+        Logger.disableLogging()
+        Config.setValue(Config.ROADRUNNER_DISABLE_PYTHON_DYNAMIC_PROPERTIES, True)
         Config.setValue(Config.LOADSBMLOPTIONS_RECOMPILE, False) 
         Config.setValue(Config.LLJIT_OPTIMIZATION_LEVEL, 4)
-        
-        all_results = []
-        for r,ms, data, metadata, variables in zip(self.r, self.model_stuff, self.data, self.metadata, self.variables):       
-            # set new parameters
-            for l, v in zip(self.parameter_labels,x):
-                if l in ms.parameter_labels: # only set parameters that belong to the model
-                    if 'v' not in l:
-                        r.setValue('init('+l+')',v)
-                    else:
-                        r.setValue('init('+l+')',v*1000)
+        Config.setValue(Config.LLVM_SYMBOL_CACHE, True)
+        Config.setValue(Config.LOADSBMLOPTIONS_OPTIMIZE_GVN, True)
+        Config.setValue(Config.LOADSBMLOPTIONS_OPTIMIZE_CFG_SIMPLIFICATION, True)
+        Config.setValue(Config.LOADSBMLOPTIONS_OPTIMIZE_INSTRUCTION_COMBINING, True)
+        Config.setValue(Config.LOADSBMLOPTIONS_OPTIMIZE_DEAD_INST_ELIMINATION, True)
+        Config.setValue(Config.LOADSBMLOPTIONS_OPTIMIZE_DEAD_CODE_ELIMINATION, True)
+        Config.setValue(Config.LOADSBMLOPTIONS_OPTIMIZE_INSTRUCTION_SIMPLIFIER, True)
+        Config.setValue(Config.SIMULATEOPTIONS_COPY_RESULT, True)
 
-            # set variables and simulate
+        all_results = []
+        for r,ms, data, metadata, variables in zip(self.r, self.model_stuff, self.data, self.metadata, self.variables):
+            # this is suboptimal as it only needs to happen once...
+            variables = {sample:{k:v for k,v in var.items() if k in ms.r_parameter_labels} for sample,var in variables.items()}
+
             results = {sample:data[sample]*(-np.inf) for sample in metadata['sample_labels']}
-            rb = r.saveStateS()
             for sample in metadata['sample_labels']:
-                r2 = RoadRunner()
-                r2.loadStateS(rb)
-                # set any variable
-                for label, value in variables[sample].items():
-                    if not np.isnan(value):
-                        if label not in ms.species_labels:
-                            r2.setValue('init('+label+')', value) # we might need new assignment rules for heterologous enzymes
-                        else:
-                            # r2.removeInitialAssignment(label) theres some bug here? it seems to also mess up with over valuesS
-                            r2.setValue('['+label+']', value)
+                r.model.setGlobalParameterValues([*ms.parameter_order, *ms.variable_order[sample]], [*x, *variables[sample].values()])
+                r.reset()
                 try:
-                    results[sample] = r2.simulate(0,metadata['timepoints'][sample][-1],self.cvode_timepoints)[:,1:].__array__()
+                    results[sample] = r.simulate(0,metadata['timepoints'][sample][-1],self.cvode_timepoints)[:,1:].__array__()
                 except Exception as e:
                     print(e)
                     # break # stop if any fail
+                r.resetToOrigin()
             all_results.append(results)
+        del Config, RoadRunner, Logger, results
         return all_results
                 
     def _residual(self,results,data,sample,modelstuff):
@@ -470,12 +481,14 @@ class SBMLGlobalFit_Multi_Fly:
         
         if data.shape == results.shape:
             error = (data[:,dcols]-results[:,dcols])
+            d_error = (np.diff(data[:,dcols],axis=0)-np.diff(results[:,dcols],axis=0))
         else:
             error = (data[:,dcols]-results[:,cols][rows,:])
+            d_error = (np.diff(data[:,dcols],axis=0)-np.diff(results[:,cols][rows,:],axis=0))
 
-        RMSE = np.sqrt(np.nansum(error**2, axis=0)/len(rows))
-        NRMSE = RMSE/(np.nanmax(data[:,dcols], axis=0) - np.nanmin(data[:,dcols], axis=0) + 1e-6)
-        return np.nansum(NRMSE)
+        RMSE = np.concatenate([np.sqrt(np.nansum(error**2, axis=0)/np.count_nonzero(~np.isnan(error))), np.sqrt(np.nansum(d_error**2, axis=0)/np.count_nonzero(~np.isnan(d_error)))])
+        # NRMSE = RMSE/(np.nanmax(data[:,dcols], axis=0) - np.nanmin(data[:,dcols], axis=0) + 1e-6)
+        return RMSE
     
     def _unscale(self, x):
         unscaled = self.lowerb + (self.upperb - self.lowerb) * x
@@ -497,3 +510,7 @@ class SBMLGlobalFit_Multi_Fly:
     
     def get_name(self):
         return 'Global Fitting of Multiple SBML Models'
+    
+    def set_bounds(self, upper_bounds, lower_bounds):
+        self.upperb = upper_bounds # for all parameters
+        self.lowerb = lower_bounds # fol all parameters
