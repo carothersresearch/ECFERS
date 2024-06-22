@@ -226,6 +226,11 @@ class ModelBuilder:
         else: eq_str = ''
 
         rate_str = M.writeRate()
+        
+        # if any variables are already defined, skip them
+        rate_vars = rate_str.split('; \n')
+        rate_str = '; \n'.join([v for v in rate_vars if v not in self.r_str])
+
         for mod in m[1:]:
             MOD = self.mech_dict[mod.strip()](rxn)
             rate_str = MOD.apply(rate_str)
@@ -329,8 +334,10 @@ class ModelBuilder:
             if not pd.isnull(rxn['KI']):
                 for i in rxn['Inhibitors'].split(';'):
                     if np.all([j not in i for j in ['D','G']]): 
-                        var = 'Gi_'+i+'_'+EC
-                        self.v_str += self.writeVariable(var, value = 0.5)
+                        var = 'Gnc_'+i+'_'+EC
+                        self.v_str += self.writeVariable(var, value = 1)
+                        var = 'Gc_'+i+'_'+EC
+                        self.v_str += self.writeVariable(var, value = 1)
 
         return self.s_str + self.p_str + self.v_str + self.r_str
 
