@@ -53,6 +53,7 @@
       <species id="EC63413" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="EC23316" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="EC11142" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="EC1442" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="C12214" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="C00111" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="C00345" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
@@ -304,7 +305,6 @@
       <species id="C11440" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="C01639" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="C03125" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="EC1442" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="C05379" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="EC6411" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="EC11719" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
@@ -360,6 +360,7 @@
       <parameter id="p_EC63413" value="1" constant="true"/>
       <parameter id="p_EC23316" value="1" constant="true"/>
       <parameter id="p_EC11142" value="1" constant="true"/>
+      <parameter id="p_EC1442" value="1" constant="true"/>
       <parameter id="v1" value="1" constant="true"/>
       <parameter id="v2" value="1" constant="true"/>
       <parameter id="v3" value="1" constant="true"/>
@@ -610,6 +611,7 @@
       <parameter id="v248" value="1" constant="true"/>
       <parameter id="v249" value="1" constant="true"/>
       <parameter id="v250" value="1" constant="true"/>
+      <parameter id="v252" value="1" constant="true"/>
       <parameter id="Kcat_F_R1" value="1.292204517" constant="true"/>
       <parameter id="Kcat_R_R1" value="0.832305128" constant="true"/>
       <parameter id="Km_C00085_EC5319" value="0.2" constant="true"/>
@@ -3692,7 +3694,7 @@
             <times/>
             <ci> p_EC23116 </ci>
             <ci> rel0 </ci>
-            <cn type="integer"> 0 </cn>
+            <cn> 0.001 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3703,7 +3705,7 @@
             <times/>
             <ci> p_EC6213 </ci>
             <ci> rel0 </ci>
-            <cn type="integer"> 0 </cn>
+            <cn> 0.001 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3924,6 +3926,17 @@
             <ci> p_EC11142 </ci>
             <ci> rel0 </ci>
             <cn> 0.010227545 </cn>
+            <ci> dilution_factor </ci>
+          </apply>
+        </math>
+      </initialAssignment>
+      <initialAssignment symbol="EC1442">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> p_EC1442 </ci>
+            <ci> rel0 </ci>
+            <cn> 0.004748503 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -6433,6 +6446,16 @@
           <apply>
             <times/>
             <ci> v250 </ci>
+            <cn> 0.001 </cn>
+            <ci> dilution_factor </ci>
+          </apply>
+        </math>
+      </initialAssignment>
+      <initialAssignment symbol="C05379">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> v252 </ci>
             <cn> 0.001 </cn>
             <ci> dilution_factor </ci>
           </apply>
