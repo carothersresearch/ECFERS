@@ -398,7 +398,7 @@ class SBMLGlobalFit_Multi_Fly:
                 self.rows[s] = [np.where(np.linspace(0, metadata['timepoints'][s][-1], cvode_timepoints) < (t+0.1))[0][-1] for t in metadata['timepoints'][s]]
             del r
 
-    def __init__(self, model:list, data:list, parameter_labels, lower_bounds, upper_bounds, metadata:list, variables:list, scale = False):
+    def __init__(self, model:list, data:list, parameter_labels, lower_bounds, upper_bounds, metadata:list, variables:list, scale = False, dlambda=1):
         self.model = model # now a list of models
         self.parameter_labels = parameter_labels # all parameters across all models, only the ones that are going to be fitted
         self.set_bounds(upper_bounds, lower_bounds)
@@ -410,6 +410,7 @@ class SBMLGlobalFit_Multi_Fly:
         self.cvode_timepoints = 1000
 
         self.model_stuff = [self.ModelStuff(m, md, self.cvode_timepoints, self.parameter_labels, var) for m,md,var in zip(self.model, self.metadata, self.variables)]
+        self.dlambda = dlambda
 
     def fitness(self, x):
         if self.scale: x = self._unscale(x)
@@ -458,12 +459,19 @@ class SBMLGlobalFit_Multi_Fly:
         all_results = []
         for r,ms, data, metadata, variables in zip(self.r, self.model_stuff, self.data, self.metadata, self.variables):
             # this is suboptimal as it only needs to happen once...
-            variables = {sample:{k:v for k,v in var.items() if k in ms.r_parameter_labels} for sample,var in variables.items()}
+            p_variables = {sample:{k:v for k,v in var.items() if k in ms.r_parameter_labels} for sample,var in variables.items()}
 
             results = {sample:data[sample]*(-np.inf) for sample in metadata['sample_labels']}
             for sample in metadata['sample_labels']:
-                r.model.setGlobalParameterValues([*ms.parameter_order, *ms.variable_order[sample]], [*x, *variables[sample].values()])
+                r.model.setGlobalParameterValues([*ms.parameter_order, *ms.variable_order[sample]], [*x, *p_variables[sample].values()])
                 r.reset()
+
+                # set init concentrations
+                for label, value in variables[sample].items():
+                    if not np.isnan(value):
+                        if label in ms.species_labels:
+                            r.setValue('['+label+']', value)
+
                 try:
                     results[sample] = r.simulate(0,metadata['timepoints'][sample][-1],self.cvode_timepoints)[:,1:].__array__()
                 except Exception as e:
@@ -486,7 +494,7 @@ class SBMLGlobalFit_Multi_Fly:
             error = (data[:,dcols]-results[:,cols][rows,:])
             d_error = (np.diff(data[:,dcols],axis=0)-np.diff(results[:,cols][rows,:],axis=0))
 
-        RMSE = np.concatenate([np.sqrt(np.nansum(error**2, axis=0)/np.count_nonzero(~np.isnan(error))), np.sqrt(np.nansum(d_error**2, axis=0)/np.count_nonzero(~np.isnan(d_error)))])
+        RMSE = np.concatenate([np.sqrt(np.nansum(error**2, axis=0)/np.count_nonzero(~np.isnan(error))), self.dlambda*np.sqrt(np.nansum(d_error**2, axis=0)/np.count_nonzero(~np.isnan(d_error)))])
         # NRMSE = RMSE/(np.nanmax(data[:,dcols], axis=0) - np.nanmin(data[:,dcols], axis=0) + 1e-6)
         return RMSE
     
