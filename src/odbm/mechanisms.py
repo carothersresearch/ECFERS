@@ -254,20 +254,20 @@ class ModularRateLaw(Mechanism):
         u = self.enzyme[0]
         Tf, Tr = self.numerators()
 
-        D = self.label +'_D = ' + self.denominator()
+        D = self.label +'_D := ' + self.denominator()
 
         if len(self.inhibitors)>0:
-            fr = u +'_fr = ' + self.inhibition_nc()
-            Dreg = u +'_Dreg = ' + self.inhibition_c()
+            fr = u +'_fr := ' + self.inhibition_nc()
+            Dreg = u +'_Dreg := ' + self.inhibition_c()
 
-            rate_f = self.label +'_f = '+ u + ' * ' + u +'_fr' + ' * ' + Tf + '/(' + self.label +'_D' + ' + ' + u +'_Dreg' + ')'
-            rate_r = self.label +'_r = '+ u + ' * ' + u +'_fr' + ' * ' + Tr + '/(' + self.label +'_D' + ' + ' + u +'_Dreg' + ')'
+            rate_f = self.label +'_f := '+ u + ' * ' + u +'_fr' + ' * ' + Tf + '/(' + self.label +'_D' + ' + ' + u +'_Dreg' + ')'
+            rate_r = self.label +'_r := '+ u + ' * ' + u +'_fr' + ' * ' + Tr + '/(' + self.label +'_D' + ' + ' + u +'_Dreg' + ')'
             rate_net = self.label +' = '+self.label +'_f' + ' - ' + self.label +'_r'
             rate = fr + '; \n' + Dreg + '; \n' + D + '; \n' +  rate_f + '; \n' + rate_r + '; \n' + rate_net
 
         else:
-            rate_f = self.label +'_f = '+ u + ' * ' + Tf + '/' + self.label +'_D'
-            rate_r = self.label +'_r = '+ u + ' * ' + Tr + '/' + self.label +'_D'
+            rate_f = self.label +'_f := '+ u + ' * ' + Tf + '/' + self.label +'_D'
+            rate_r = self.label +'_r := '+ u + ' * ' + Tr + '/' + self.label +'_D'
             rate_net = self.label +' = '+self.label +'_f' + ' - ' + self.label +'_r'
             rate = D + '; \n' +  rate_f + '; \n' + rate_r + '; \n' + rate_net
 
