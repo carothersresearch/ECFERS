@@ -1837,6 +1837,7 @@
       <parameter id="Km_C00024_EC23316" value="0.052596927" constant="true"/>
       <parameter id="Km_C00001_EC23316" value="0.965167284" constant="true"/>
       <parameter id="Km_C00036_EC23316" value="0.069584779" constant="true"/>
+      <parameter id="Ki_C00158HCT_EC23316" value="0.206155464" constant="true"/>
       <parameter id="Kcat_F_R166" value="7.96974461447619" constant="true"/>
       <parameter id="Kcat_R_R166" value="1.35043190233333" constant="true"/>
       <parameter id="Km_C00008_EC6411" value="0.060795698" constant="true"/>
@@ -2790,6 +2791,8 @@
       <parameter id="Gc_C00080_EC11142" value="1" constant="true"/>
       <parameter id="Gnc_C05379_EC11142" value="1" constant="true"/>
       <parameter id="Gc_C05379_EC11142" value="1" constant="true"/>
+      <parameter id="Gnc_C00158HCT_EC23316" value="1" constant="true"/>
+      <parameter id="Gc_C00158HCT_EC23316" value="1" constant="true"/>
       <parameter id="Gnc_C00022_EC6411" value="1" constant="true"/>
       <parameter id="Gc_C00022_EC6411" value="1" constant="true"/>
       <parameter id="Gnc_C00036_EC6411" value="1" constant="true"/>
@@ -3386,6 +3389,8 @@
       <parameter id="R164_D" constant="false"/>
       <parameter id="R164_f" constant="false"/>
       <parameter id="R164_r" constant="false"/>
+      <parameter id="EC23316_fr" constant="false"/>
+      <parameter id="EC23316_Dreg" constant="false"/>
       <parameter id="R165_D" constant="false"/>
       <parameter id="R165_f" constant="false"/>
       <parameter id="R165_r" constant="false"/>
@@ -42084,6 +42089,52 @@
           </apply>
         </math>
       </assignmentRule>
+      <assignmentRule variable="EC23316_fr">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <plus/>
+            <ci> Gnc_C00158HCT_EC23316 </ci>
+            <apply>
+              <times/>
+              <apply>
+                <minus/>
+                <cn type="integer"> 1 </cn>
+                <ci> Gnc_C00158HCT_EC23316 </ci>
+              </apply>
+              <apply>
+                <divide/>
+                <cn type="integer"> 1 </cn>
+                <apply>
+                  <plus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <divide/>
+                    <ci> C00158HCT </ci>
+                    <ci> Ki_C00158HCT_EC23316 </ci>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="EC23316_Dreg">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <apply>
+              <minus/>
+              <cn type="integer"> 1 </cn>
+              <ci> Gc_C00158HCT_EC23316 </ci>
+            </apply>
+            <apply>
+              <divide/>
+              <ci> C00158HCT </ci>
+              <ci> Ki_C00158HCT_EC23316 </ci>
+            </apply>
+          </apply>
+        </math>
+      </assignmentRule>
       <assignmentRule variable="R165_D">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
@@ -42144,6 +42195,7 @@
             <apply>
               <times/>
               <ci> EC23316 </ci>
+              <ci> EC23316_fr </ci>
               <apply>
                 <divide/>
                 <apply>
@@ -42159,7 +42211,11 @@
                 </apply>
               </apply>
             </apply>
-            <ci> R165_D </ci>
+            <apply>
+              <plus/>
+              <ci> R165_D </ci>
+              <ci> EC23316_Dreg </ci>
+            </apply>
           </apply>
         </math>
       </assignmentRule>
@@ -42170,6 +42226,7 @@
             <apply>
               <times/>
               <ci> EC23316 </ci>
+              <ci> EC23316_fr </ci>
               <apply>
                 <divide/>
                 <apply>
@@ -42185,7 +42242,11 @@
                 </apply>
               </apply>
             </apply>
-            <ci> R165_D </ci>
+            <apply>
+              <plus/>
+              <ci> R165_D </ci>
+              <ci> EC23316_Dreg </ci>
+            </apply>
           </apply>
         </math>
       </assignmentRule>
