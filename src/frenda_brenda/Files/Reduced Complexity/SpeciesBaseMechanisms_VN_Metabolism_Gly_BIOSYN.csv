@@ -48,6 +48,9 @@ Phosphoribosylamine-glycine ligase,6.3.4.13,Enzyme,0.000365269,,,,Escherichia co
 Citrate synthase,2.3.3.16,Enzyme,0.005296407,,,,Escherichia coli,rel0
 Isocitrate dehydrogenase (nadp+),1.1.1.42,Enzyme,0.010227545,,,,Escherichia coli,rel0
 Glycine dehydrogenase (aminomethyl-transferring),1.4.4.2,Enzyme,0.004748503,,,,Escherichia coli,rel0
+L-serine ammonia-lyase,4.3.1.17,Enzyme,0.0366,,,,Dictyostelium discoideum,rel1
+Pyruvate carboxylase,6.4.1.1,Enzyme,0.0488,,,,Rhizobium etli,rel1
+Formate dehydrogenase,1.17.1.9,Enzyme,0.0122,,,,Starkeya novella,rel1
 C12214,,Metabolite,0.011,,,,,v1
 C00111,,Metabolite,0.37,,,,,v2
 C00345,,Metabolite,3.8,,,,,v3
@@ -300,3 +303,4 @@ C11440,,Metabolite,0.001,,,,,v248
 C01639,,Metabolite,0.001,,,,,v249
 C03125,,Metabolite,0.001,,,,,v250
 C05379,,Metabolite,0.001,,,,,v252
+C00033,,Metabolite,0.001,,,,,v253

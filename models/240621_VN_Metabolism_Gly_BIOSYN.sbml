@@ -54,6 +54,8 @@
       <species id="EC23316" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="EC11142" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="EC1442" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="EC6411" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="EC11719" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="C12214" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="C00111" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="C00345" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
@@ -306,8 +308,7 @@
       <species id="C01639" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="C03125" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="C05379" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="EC6411" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="EC11719" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00033" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
     </listOfSpecies>
     <listOfParameters>
       <parameter id="p_EC5319" value="1" constant="true"/>
@@ -361,6 +362,9 @@
       <parameter id="p_EC23316" value="1" constant="true"/>
       <parameter id="p_EC11142" value="1" constant="true"/>
       <parameter id="p_EC1442" value="1" constant="true"/>
+      <parameter id="rel1" value="1" constant="true"/>
+      <parameter id="p_EC6411" value="1" constant="true"/>
+      <parameter id="p_EC11719" value="1" constant="true"/>
       <parameter id="v1" value="1" constant="true"/>
       <parameter id="v2" value="1" constant="true"/>
       <parameter id="v3" value="1" constant="true"/>
@@ -612,6 +616,7 @@
       <parameter id="v249" value="1" constant="true"/>
       <parameter id="v250" value="1" constant="true"/>
       <parameter id="v252" value="1" constant="true"/>
+      <parameter id="v253" value="1" constant="true"/>
       <parameter id="Kcat_F_R1" value="1.292204517" constant="true"/>
       <parameter id="Kcat_R_R1" value="0.832305128" constant="true"/>
       <parameter id="Km_C00085_EC5319" value="0.2" constant="true"/>
@@ -1852,15 +1857,21 @@
       <parameter id="Ki_C00022_EC6411" value="0.670731664" constant="true"/>
       <parameter id="Ki_C00036_EC6411" value="0.202194154" constant="true"/>
       <parameter id="Ki_C00288_EC6411" value="1.142170787" constant="true"/>
-      <parameter id="Kcat_F_R167" value="3.007160006" constant="true"/>
-      <parameter id="Kcat_R_R167" value="467.479811568" constant="true"/>
-      <parameter id="Kcat_F_R168" value="12.1695376695" constant="true"/>
-      <parameter id="Kcat_R_R168" value="26.700187375" constant="true"/>
+      <parameter id="Kcat_F_R167" value="12.1695376695" constant="true"/>
+      <parameter id="Kcat_R_R167" value="26.700187375" constant="true"/>
       <parameter id="Km_C00058_EC11719" value="6.299069881" constant="true"/>
       <parameter id="Km_C00003_EC11719" value="0.179658741" constant="true"/>
       <parameter id="Km_C00080_EC11719" value="3.996599674" constant="true"/>
       <parameter id="Km_C00011_EC11719" value="3.174462318" constant="true"/>
       <parameter id="Km_C00004_EC11719" value="0.080049999" constant="true"/>
+      <parameter id="Kcat_F_R168" value="3.547282326" constant="true"/>
+      <parameter id="Kcat_R_R168" value="16.004088045" constant="true"/>
+      <parameter id="Kcat_F_R169" value="3.547282326" constant="true"/>
+      <parameter id="Kcat_R_R169" value="1.10709272" constant="true"/>
+      <parameter id="Kcat_F_R170" value="36.4226246568293" constant="true"/>
+      <parameter id="Kcat_R_R170" value="17.86179164" constant="true"/>
+      <parameter id="Kcat_F_R171" value="1.10709272" constant="true"/>
+      <parameter id="Kcat_R_R171" value="16.004088045" constant="true"/>
       <parameter id="Gnc_C01172_EC5319" value="1" constant="true"/>
       <parameter id="Gc_C01172_EC5319" value="1" constant="true"/>
       <parameter id="Gnc_C00092_EC5319" value="1" constant="true"/>
@@ -3405,6 +3416,15 @@
       <parameter id="R168_D" constant="false"/>
       <parameter id="R168_f" constant="false"/>
       <parameter id="R168_r" constant="false"/>
+      <parameter id="R169_D" constant="false"/>
+      <parameter id="R169_f" constant="false"/>
+      <parameter id="R169_r" constant="false"/>
+      <parameter id="R170_D" constant="false"/>
+      <parameter id="R170_f" constant="false"/>
+      <parameter id="R170_r" constant="false"/>
+      <parameter id="R171_D" constant="false"/>
+      <parameter id="R171_f" constant="false"/>
+      <parameter id="R171_r" constant="false"/>
     </listOfParameters>
     <listOfInitialAssignments>
       <initialAssignment symbol="EC5319">
@@ -3874,8 +3894,8 @@
           <apply>
             <times/>
             <ci> p_EC43117 </ci>
-            <ci> rel0 </ci>
-            <cn> 0.000913174 </cn>
+            <ci> rel1 </ci>
+            <cn> 0.0366 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -3942,6 +3962,28 @@
             <ci> p_EC1442 </ci>
             <ci> rel0 </ci>
             <cn> 0.004748503 </cn>
+            <ci> dilution_factor </ci>
+          </apply>
+        </math>
+      </initialAssignment>
+      <initialAssignment symbol="EC6411">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> p_EC6411 </ci>
+            <ci> rel1 </ci>
+            <cn> 0.0488 </cn>
+            <ci> dilution_factor </ci>
+          </apply>
+        </math>
+      </initialAssignment>
+      <initialAssignment symbol="EC11719">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> p_EC11719 </ci>
+            <ci> rel1 </ci>
+            <cn> 0.0122 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -6461,6 +6503,16 @@
           <apply>
             <times/>
             <ci> v252 </ci>
+            <cn> 0.001 </cn>
+            <ci> dilution_factor </ci>
+          </apply>
+        </math>
+      </initialAssignment>
+      <initialAssignment symbol="C00033">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> v253 </ci>
             <cn> 0.001 </cn>
             <ci> dilution_factor </ci>
           </apply>
@@ -42642,121 +42694,6 @@
                   <cn type="integer"> 1 </cn>
                   <apply>
                     <divide/>
-                    <ci> C00003 </ci>
-                    <ci> Km_C00003_EC11137 </ci>
-                  </apply>
-                </apply>
-                <apply>
-                  <plus/>
-                  <cn type="integer"> 1 </cn>
-                  <apply>
-                    <divide/>
-                    <ci> C00149 </ci>
-                    <ci> Km_C00149_EC11137 </ci>
-                  </apply>
-                </apply>
-              </apply>
-              <apply>
-                <times/>
-                <apply>
-                  <plus/>
-                  <cn type="integer"> 1 </cn>
-                  <apply>
-                    <divide/>
-                    <ci> C00004 </ci>
-                    <ci> Km_C00004_EC11137 </ci>
-                  </apply>
-                </apply>
-                <apply>
-                  <plus/>
-                  <cn type="integer"> 1 </cn>
-                  <apply>
-                    <divide/>
-                    <ci> C00036 </ci>
-                    <ci> Km_C00036_EC11137 </ci>
-                  </apply>
-                </apply>
-              </apply>
-            </apply>
-            <cn type="integer"> 1 </cn>
-          </apply>
-        </math>
-      </assignmentRule>
-      <assignmentRule variable="R167_f">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <divide/>
-            <apply>
-              <times/>
-              <ci> EC11137 </ci>
-              <ci> EC11137_fr </ci>
-              <apply>
-                <divide/>
-                <apply>
-                  <times/>
-                  <ci> Kcat_F_R167 </ci>
-                  <ci> C00003 </ci>
-                  <ci> C00149 </ci>
-                </apply>
-                <apply>
-                  <times/>
-                  <ci> Km_C00003_EC11137 </ci>
-                  <ci> Km_C00149_EC11137 </ci>
-                </apply>
-              </apply>
-            </apply>
-            <apply>
-              <plus/>
-              <ci> R167_D </ci>
-              <ci> EC11137_Dreg </ci>
-            </apply>
-          </apply>
-        </math>
-      </assignmentRule>
-      <assignmentRule variable="R167_r">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <divide/>
-            <apply>
-              <times/>
-              <ci> EC11137 </ci>
-              <ci> EC11137_fr </ci>
-              <apply>
-                <divide/>
-                <apply>
-                  <times/>
-                  <ci> Kcat_R_R167 </ci>
-                  <ci> C00004 </ci>
-                  <ci> C00036 </ci>
-                </apply>
-                <apply>
-                  <times/>
-                  <ci> Km_C00004_EC11137 </ci>
-                  <ci> Km_C00036_EC11137 </ci>
-                </apply>
-              </apply>
-            </apply>
-            <apply>
-              <plus/>
-              <ci> R167_D </ci>
-              <ci> EC11137_Dreg </ci>
-            </apply>
-          </apply>
-        </math>
-      </assignmentRule>
-      <assignmentRule variable="R168_D">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <minus/>
-            <apply>
-              <plus/>
-              <apply>
-                <times/>
-                <apply>
-                  <plus/>
-                  <cn type="integer"> 1 </cn>
-                  <apply>
-                    <divide/>
                     <ci> C00058 </ci>
                     <ci> Km_C00058_EC11719 </ci>
                   </apply>
@@ -42797,7 +42734,7 @@
           </apply>
         </math>
       </assignmentRule>
-      <assignmentRule variable="R168_f">
+      <assignmentRule variable="R167_f">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <divide/>
@@ -42808,7 +42745,7 @@
                 <divide/>
                 <apply>
                   <times/>
-                  <ci> Kcat_F_R168 </ci>
+                  <ci> Kcat_F_R167 </ci>
                   <ci> C00058 </ci>
                   <ci> C00003 </ci>
                 </apply>
@@ -42819,11 +42756,11 @@
                 </apply>
               </apply>
             </apply>
-            <ci> R168_D </ci>
+            <ci> R167_D </ci>
           </apply>
         </math>
       </assignmentRule>
-      <assignmentRule variable="R168_r">
+      <assignmentRule variable="R167_r">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <divide/>
@@ -42834,7 +42771,7 @@
                 <divide/>
                 <apply>
                   <times/>
-                  <ci> Kcat_R_R168 </ci>
+                  <ci> Kcat_R_R167 </ci>
                   <ci> C00011 </ci>
                   <ci> C00004 </ci>
                 </apply>
@@ -42845,7 +42782,367 @@
                 </apply>
               </apply>
             </apply>
-            <ci> R168_D </ci>
+            <ci> R167_D </ci>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="R168_D">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <apply>
+              <plus/>
+              <cn type="integer"> 1 </cn>
+              <apply>
+                <divide/>
+                <ci> C00065 </ci>
+                <ci> Km_C00065_EC43117 </ci>
+              </apply>
+              <apply>
+                <times/>
+                <apply>
+                  <plus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <divide/>
+                    <ci> C00014 </ci>
+                    <ci> Km_C00014_EC43117 </ci>
+                  </apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <divide/>
+                    <ci> C00022 </ci>
+                    <ci> Km_C00022_EC43117 </ci>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <cn type="integer"> 1 </cn>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="R168_f">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <divide/>
+            <apply>
+              <times/>
+              <ci> EC43117 </ci>
+              <ci> EC43117_fr </ci>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <ci> Kcat_F_R168 </ci>
+                  <ci> C00065 </ci>
+                </apply>
+                <ci> Km_C00065_EC43117 </ci>
+              </apply>
+            </apply>
+            <apply>
+              <plus/>
+              <ci> R168_D </ci>
+              <ci> EC43117_Dreg </ci>
+            </apply>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="R168_r">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <divide/>
+            <apply>
+              <times/>
+              <ci> EC43117 </ci>
+              <ci> EC43117_fr </ci>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <ci> Kcat_R_R168 </ci>
+                  <ci> C00014 </ci>
+                  <ci> C00022 </ci>
+                </apply>
+                <apply>
+                  <times/>
+                  <ci> Km_C00014_EC43117 </ci>
+                  <ci> Km_C00022_EC43117 </ci>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <plus/>
+              <ci> R168_D </ci>
+              <ci> EC43117_Dreg </ci>
+            </apply>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="R169_D">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <apply>
+              <plus/>
+              <cn type="integer"> 1 </cn>
+              <apply>
+                <divide/>
+                <ci> C00065 </ci>
+                <ci> Km_C00065_EC43117 </ci>
+              </apply>
+              <cn type="integer"> 1 </cn>
+              <apply>
+                <divide/>
+                <ci> C02218 </ci>
+                <ci> Km_C02218_EC43117 </ci>
+              </apply>
+            </apply>
+            <cn type="integer"> 1 </cn>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="R169_f">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <divide/>
+            <apply>
+              <times/>
+              <ci> EC43117 </ci>
+              <ci> EC43117_fr </ci>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <ci> Kcat_F_R169 </ci>
+                  <ci> C00065 </ci>
+                </apply>
+                <ci> Km_C00065_EC43117 </ci>
+              </apply>
+            </apply>
+            <apply>
+              <plus/>
+              <ci> R169_D </ci>
+              <ci> EC43117_Dreg </ci>
+            </apply>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="R169_r">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <divide/>
+            <apply>
+              <times/>
+              <ci> EC43117 </ci>
+              <ci> EC43117_fr </ci>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <ci> Kcat_R_R169 </ci>
+                  <ci> C02218 </ci>
+                </apply>
+                <ci> Km_C02218_EC43117 </ci>
+              </apply>
+            </apply>
+            <apply>
+              <plus/>
+              <ci> R169_D </ci>
+              <ci> EC43117_Dreg </ci>
+            </apply>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="R170_D">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <apply>
+              <plus/>
+              <cn type="integer"> 1 </cn>
+              <apply>
+                <divide/>
+                <ci> C05167 </ci>
+                <ci> Km_C05167_EC43117 </ci>
+              </apply>
+              <apply>
+                <times/>
+                <apply>
+                  <plus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <divide/>
+                    <ci> C00014 </ci>
+                    <ci> Km_C00014_EC43117 </ci>
+                  </apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <divide/>
+                    <ci> C00161 </ci>
+                    <ci> Km_C00161_EC43117 </ci>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <cn type="integer"> 1 </cn>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="R170_f">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <divide/>
+            <apply>
+              <times/>
+              <ci> EC43117 </ci>
+              <ci> EC43117_fr </ci>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <ci> Kcat_F_R170 </ci>
+                  <ci> C05167 </ci>
+                </apply>
+                <ci> Km_C05167_EC43117 </ci>
+              </apply>
+            </apply>
+            <apply>
+              <plus/>
+              <ci> R170_D </ci>
+              <ci> EC43117_Dreg </ci>
+            </apply>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="R170_r">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <divide/>
+            <apply>
+              <times/>
+              <ci> EC43117 </ci>
+              <ci> EC43117_fr </ci>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <ci> Kcat_R_R170 </ci>
+                  <ci> C00014 </ci>
+                  <ci> C00161 </ci>
+                </apply>
+                <apply>
+                  <times/>
+                  <ci> Km_C00014_EC43117 </ci>
+                  <ci> Km_C00161_EC43117 </ci>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <plus/>
+              <ci> R170_D </ci>
+              <ci> EC43117_Dreg </ci>
+            </apply>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="R171_D">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <apply>
+              <plus/>
+              <cn type="integer"> 1 </cn>
+              <apply>
+                <divide/>
+                <ci> C02218 </ci>
+                <ci> Km_C02218_EC43117 </ci>
+              </apply>
+              <apply>
+                <times/>
+                <apply>
+                  <plus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <divide/>
+                    <ci> C00014 </ci>
+                    <ci> Km_C00014_EC43117 </ci>
+                  </apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <divide/>
+                    <ci> C00022 </ci>
+                    <ci> Km_C00022_EC43117 </ci>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <cn type="integer"> 1 </cn>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="R171_f">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <divide/>
+            <apply>
+              <times/>
+              <ci> EC43117 </ci>
+              <ci> EC43117_fr </ci>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <ci> Kcat_F_R171 </ci>
+                  <ci> C02218 </ci>
+                </apply>
+                <ci> Km_C02218_EC43117 </ci>
+              </apply>
+            </apply>
+            <apply>
+              <plus/>
+              <ci> R171_D </ci>
+              <ci> EC43117_Dreg </ci>
+            </apply>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="R171_r">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <divide/>
+            <apply>
+              <times/>
+              <ci> EC43117 </ci>
+              <ci> EC43117_fr </ci>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <ci> Kcat_R_R171 </ci>
+                  <ci> C00014 </ci>
+                  <ci> C00022 </ci>
+                </apply>
+                <apply>
+                  <times/>
+                  <ci> Km_C00014_EC43117 </ci>
+                  <ci> Km_C00022_EC43117 </ci>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <plus/>
+              <ci> R171_D </ci>
+              <ci> EC43117_Dreg </ci>
+            </apply>
           </apply>
         </math>
       </assignmentRule>
@@ -46398,28 +46695,6 @@
       </reaction>
       <reaction id="R167" reversible="true">
         <listOfReactants>
-          <speciesReference species="C00003" stoichiometry="1" constant="true"/>
-          <speciesReference species="C00149" stoichiometry="1" constant="true"/>
-          <speciesReference species="EC11137" stoichiometry="1" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="EC11137" stoichiometry="1" constant="true"/>
-          <speciesReference species="C00004" stoichiometry="1" constant="true"/>
-          <speciesReference species="C00036" stoichiometry="1" constant="true"/>
-          <speciesReference species="C00080" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-        <kineticLaw>
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <apply>
-              <minus/>
-              <ci> R167_f </ci>
-              <ci> R167_r </ci>
-            </apply>
-          </math>
-        </kineticLaw>
-      </reaction>
-      <reaction id="R168" reversible="true">
-        <listOfReactants>
           <speciesReference species="C00058" stoichiometry="1" constant="true"/>
           <speciesReference species="C00003" stoichiometry="1" constant="true"/>
           <speciesReference species="EC11719" stoichiometry="1" constant="true"/>
@@ -46434,8 +46709,89 @@
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <minus/>
+              <ci> R167_f </ci>
+              <ci> R167_r </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R168" reversible="true">
+        <listOfReactants>
+          <speciesReference species="C00065" stoichiometry="1" constant="true"/>
+          <speciesReference species="EC43117" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="EC43117" stoichiometry="1" constant="true"/>
+          <speciesReference species="C00014" stoichiometry="1" constant="true"/>
+          <speciesReference species="C00022" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
               <ci> R168_f </ci>
               <ci> R168_r </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R169" reversible="true">
+        <listOfReactants>
+          <speciesReference species="C00065" stoichiometry="1" constant="true"/>
+          <speciesReference species="EC43117" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="EC43117" stoichiometry="1" constant="true"/>
+          <speciesReference species="C00001" stoichiometry="1" constant="true"/>
+          <speciesReference species="C02218" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <ci> R169_f </ci>
+              <ci> R169_r </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R170" reversible="true">
+        <listOfReactants>
+          <speciesReference species="C05167" stoichiometry="1" constant="true"/>
+          <speciesReference species="EC43117" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="EC43117" stoichiometry="1" constant="true"/>
+          <speciesReference species="C00014" stoichiometry="1" constant="true"/>
+          <speciesReference species="C00161" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <ci> R170_f </ci>
+              <ci> R170_r </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R171" reversible="true">
+        <listOfReactants>
+          <speciesReference species="C00001" stoichiometry="1" constant="true"/>
+          <speciesReference species="C02218" stoichiometry="1" constant="true"/>
+          <speciesReference species="EC43117" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="EC43117" stoichiometry="1" constant="true"/>
+          <speciesReference species="C00014" stoichiometry="1" constant="true"/>
+          <speciesReference species="C00022" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <ci> R171_f </ci>
+              <ci> R171_r </ci>
             </apply>
           </math>
         </kineticLaw>
