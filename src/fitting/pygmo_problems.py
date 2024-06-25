@@ -470,8 +470,10 @@ class SBMLGlobalFit_Multi_Fly:
                 for label, value in variables[sample].items():
                     if not np.isnan(value):
                         if label in ms.species_labels:
-                            r.setValue('['+label+']', value)
-
+                            if 'EC' not in label:
+                                r.setValue('['+label+']', value)
+                            else: 
+                                r.setValue('['+label+']', value*p_variables[sample]['dilution_factor']*x[-1]) # this is a bit obtuse: [plasmid] * DF * rel1
                 try:
                     results[sample] = r.simulate(0,metadata['timepoints'][sample][-1],self.cvode_timepoints)[:,1:].__array__()
                 except Exception as e:
