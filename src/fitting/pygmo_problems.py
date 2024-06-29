@@ -381,7 +381,9 @@ class SBMLGlobalFit_Multi_Fly:
             self.species_labels = np.array(r.getFullStoichiometryMatrix().rownames)
             self.r_parameter_labels = np.array(r.getGlobalParameterIds())
             self.parameter_order = np.int32(np.squeeze(np.array([np.where(p == self.r_parameter_labels) for p in parameter_labels if p in self.r_parameter_labels])))
+            self.parameter_present = [p in self.r_parameter_labels for p in parameter_labels]
             self.variable_order = {sample:np.int32(np.squeeze(np.array([np.where(p == self.r_parameter_labels) for p in var.keys() if p in self.r_parameter_labels]))) for sample,var in variables.items()}
+            self.variable_present = {sample:[p in self.r_parameter_labels for p in var.keys()] for sample,var in variables.items()}
             self.cols = {}
             self.rows = {}
             self.data_cols = {}
@@ -415,7 +417,7 @@ class SBMLGlobalFit_Multi_Fly:
     def fitness(self, x):
         if self.scale: x = self._unscale(x)
         res = self._simulate(x)
-        obj = np.nansum([[self._residual(results, data[sample], sample, ms) for sample, results in resdict.items()] for data,ms,resdict in zip(self.data,self.model_stuff,res)])
+        obj = np.nansum([np.nansum([self._residual(results, data[sample], sample, ms) for sample, results in resdict.items()]) for data,ms,resdict in zip(self.data,self.model_stuff,res)])
         del res
         return [obj]
     
@@ -458,12 +460,10 @@ class SBMLGlobalFit_Multi_Fly:
 
         all_results = []
         for r,ms, data, metadata, variables in zip(self.r, self.model_stuff, self.data, self.metadata, self.variables):
-            # this is suboptimal as it only needs to happen once...
-            p_variables = {sample:{k:v for k,v in var.items() if k in ms.r_parameter_labels} for sample,var in variables.items()}
 
             results = {sample:data[sample]*(-np.inf) for sample in metadata['sample_labels']}
             for sample in metadata['sample_labels']:
-                r.model.setGlobalParameterValues([*ms.parameter_order, *ms.variable_order[sample]], [*x, *p_variables[sample].values()])
+                r.model.setGlobalParameterValues([*ms.parameter_order, *ms.variable_order[sample]], [*x[ms.parameter_present], *np.array(list(variables[sample].values()))[ms.variable_present[sample]]])
                 r.reset()
 
                 # set init concentrations
@@ -473,7 +473,7 @@ class SBMLGlobalFit_Multi_Fly:
                             if 'EC' not in label:
                                 r.setValue('['+label+']', value)
                             else: 
-                                r.setValue('['+label+']', value*p_variables[sample]['dilution_factor']*x[-1]) # this is a bit obtuse: [plasmid] * DF * rel1
+                                r.setValue('['+label+']', value*variables[sample]['dilution_factor']*x[-1]) # this is a bit obtuse: [plasmid] * DF * rel1
                 try:
                     results[sample] = r.simulate(0,metadata['timepoints'][sample][-1],self.cvode_timepoints)[:,1:].__array__()
                 except Exception as e:
@@ -499,6 +499,126 @@ class SBMLGlobalFit_Multi_Fly:
         RMSE = np.concatenate([np.sqrt(np.nansum(error**2, axis=0)/np.count_nonzero(~np.isnan(error))), self.dlambda*np.sqrt(np.nansum(d_error**2, axis=0)/np.count_nonzero(~np.isnan(d_error)))])
         # NRMSE = RMSE/(np.nanmax(data[:,dcols], axis=0) - np.nanmin(data[:,dcols], axis=0) + 1e-6)
         return RMSE
+    
+    def _unscale(self, x):
+        unscaled = self.lowerb + (self.upperb - self.lowerb) * x
+        # unscaled[unscaled<0] = self.lowerb[unscaled<0]
+        # unscaled[unscaled>1] = self.lowerb[unscaled>1]
+        return unscaled
+    
+    def _scale(self, x):
+        return (x - self.lowerb) / (self.upperb - self.lowerb)
+
+    def get_bounds(self):
+        if self.scale:
+            lowerb = [0 for i in self.lowerb]
+            upperb = [1 for i in self.upperb]
+        else:
+            upperb = self.upperb
+            lowerb = self.lowerb    
+        return (lowerb, upperb)
+    
+    def get_name(self):
+        return 'Global Fitting of Multiple SBML Models'
+    
+    def set_bounds(self, upper_bounds, lower_bounds):
+        self.upperb = upper_bounds # for all parameters
+        self.lowerb = lower_bounds # fol all parameters
+
+class SBML_Overproduction_Multi_Fly:
+    class ModelStuff:
+        def __init__(self, model, parameter_labels, variables):
+            r = te.loadSBMLModel(model)
+            self.species_labels = np.array(r.getFullStoichiometryMatrix().rownames)
+            self.r_parameter_labels = np.array(r.getGlobalParameterIds())
+            self.parameter_order = np.int32(np.squeeze(np.array([np.where(p == self.r_parameter_labels) for p in parameter_labels if p in self.r_parameter_labels])))
+            self.parameter_present = [p in self.r_parameter_labels for p in parameter_labels]
+            self.variable_order = {sample:np.int32(np.squeeze(np.array([np.where(p == self.r_parameter_labels) for p in var.keys() if p in self.r_parameter_labels]))) for sample,var in variables.items()}
+            self.variable_present = {sample:[p in self.r_parameter_labels for p in var.keys()] for sample,var in variables.items()}
+            del r
+
+    def __init__(self, model:list, overproduction_function, parameter_labels, lower_bounds, upper_bounds, metadata:list, variables:list, scale = False, dlambda=1):
+        self.model = model # now a list of models
+        self.parameter_labels = parameter_labels # all parameters across all models, only the ones that are going to be fitted
+        self.set_bounds(upper_bounds, lower_bounds)
+        self.scale = scale
+        self.overproduction_function = overproduction_function 
+        self.metadata = metadata # now a list of metadas
+        self.variables = variables # # now a list of dict of labels and values
+
+        self.cvode_timepoints = 1000
+
+        self.model_stuff = [self.ModelStuff(m, self.parameter_labels, var) for m,var in zip(self.model, self.variables)]
+
+    def fitness(self, x):
+        if self.scale: x = self._unscale(x)
+        res = self._simulate(x)
+        obj = np.nansum([np.nansum([self.overproduction_function(results) for _, results in resdict.items()]) for resdict in res])
+        del res
+        return [obj]
+    
+    def _setup_rr(self): # run on engine
+        from roadrunner import Config, RoadRunner, Logger
+        Logger.disableLogging()
+        Config.setValue(Config.ROADRUNNER_DISABLE_PYTHON_DYNAMIC_PROPERTIES, True)
+        Config.setValue(Config.LOADSBMLOPTIONS_RECOMPILE, False) 
+        Config.setValue(Config.LLJIT_OPTIMIZATION_LEVEL, 4)
+        Config.setValue(Config.LLVM_SYMBOL_CACHE, True)
+        Config.setValue(Config.LOADSBMLOPTIONS_OPTIMIZE_GVN, True)
+        Config.setValue(Config.LOADSBMLOPTIONS_OPTIMIZE_CFG_SIMPLIFICATION, True)
+        Config.setValue(Config.LOADSBMLOPTIONS_OPTIMIZE_INSTRUCTION_COMBINING, True)
+        Config.setValue(Config.LOADSBMLOPTIONS_OPTIMIZE_DEAD_INST_ELIMINATION, True)
+        Config.setValue(Config.LOADSBMLOPTIONS_OPTIMIZE_DEAD_CODE_ELIMINATION, True)
+        Config.setValue(Config.LOADSBMLOPTIONS_OPTIMIZE_INSTRUCTION_SIMPLIFIER, True)
+        Config.setValue(Config.SIMULATEOPTIONS_COPY_RESULT, True)
+        self.r = []
+        for m in self.model:
+            r = te.loadSBMLModel(m)
+            r.integrator.absolute_tolerance = 1e-8
+            r.integrator.relative_tolerance = 1e-8
+            r.integrator.maximum_num_steps = 2000
+            self.r.append(r)
+            
+    def _simulate(self, x):
+        from roadrunner import Config, RoadRunner, Logger
+        Logger.disableLogging()
+        Config.setValue(Config.ROADRUNNER_DISABLE_PYTHON_DYNAMIC_PROPERTIES, True)
+        Config.setValue(Config.LOADSBMLOPTIONS_RECOMPILE, False) 
+        Config.setValue(Config.LLJIT_OPTIMIZATION_LEVEL, 4)
+        Config.setValue(Config.LLVM_SYMBOL_CACHE, True)
+        Config.setValue(Config.LOADSBMLOPTIONS_OPTIMIZE_GVN, True)
+        Config.setValue(Config.LOADSBMLOPTIONS_OPTIMIZE_CFG_SIMPLIFICATION, True)
+        Config.setValue(Config.LOADSBMLOPTIONS_OPTIMIZE_INSTRUCTION_COMBINING, True)
+        Config.setValue(Config.LOADSBMLOPTIONS_OPTIMIZE_DEAD_INST_ELIMINATION, True)
+        Config.setValue(Config.LOADSBMLOPTIONS_OPTIMIZE_DEAD_CODE_ELIMINATION, True)
+        Config.setValue(Config.LOADSBMLOPTIONS_OPTIMIZE_INSTRUCTION_SIMPLIFIER, True)
+        Config.setValue(Config.SIMULATEOPTIONS_COPY_RESULT, True)
+
+        all_results = []
+        for r,ms, metadata, variables in zip(self.r, self.model_stuff, self.metadata, self.variables):
+
+            results = {sample:[0] for sample in metadata['sample_labels']}
+            for sample in metadata['sample_labels']:
+                r.model.setGlobalParameterValues([*ms.parameter_order, *ms.variable_order[sample]], [*x[ms.parameter_present], *np.array(list(variables[sample].values()))[ms.variable_present[sample]]])
+                r.reset()
+
+                # set init concentrations
+                for label, value in variables[sample].items():
+                    if not np.isnan(value):
+                        if label in ms.species_labels:
+                            if 'EC' not in label:
+                                r.setValue('['+label+']', value)
+                            else: 
+                                r.setValue('['+label+']', value*variables[sample]['dilution_factor']*x[-1]) # this is a bit obtuse: [plasmid] * DF * rel1
+                try:
+                    results[sample] = r.simulate(0,metadata['timepoints'][sample][-1],self.cvode_timepoints)[:,1:].__array__()
+                except Exception as e:
+                    print(e)
+                    # break # stop if any fail
+                r.resetToOrigin()
+            all_results.append(results)
+        del Config, RoadRunner, Logger, results
+        return all_results
     
     def _unscale(self, x):
         unscaled = self.lowerb + (self.upperb - self.lowerb) * x
