@@ -67,7 +67,7 @@ C04006,,Metabolite,0.001,,,,,v65
 C00864,,Metabolite,0.001,,,,,v66
 C00233,,Metabolite,0.001,,,,,v67
 C01450,,Metabolite,0.001,,,,,v68
-C00001,,Metabolite,0.001,,,,,v69
+C00001,,Metabolite,10,,,,,v69
 C04039,,Metabolite,0.001,,,,,v70
 C03263,,Metabolite,0.001,,,,,v71
 C03451,,Metabolite,0.001,,,,,v72
@@ -468,7 +468,7 @@ C00531,,Metabolite,0.001,,,,,v466
 C00055,,Metabolite,0.001,,,,,v467
 C14800,,Metabolite,0.001,,,,,v468
 C00493,,Metabolite,0.001,,,,,v469
-C00011,,Metabolite,0.001,,,,,v470
+C00011,,Metabolite,10,,,,,v470
 C05378,,Metabolite,0.001,,,,,v471
 C01648,,Metabolite,0.001,,,,,v472
 C14847,,Metabolite,0.001,,,,,v473

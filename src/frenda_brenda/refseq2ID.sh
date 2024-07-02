@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Input CSV file and column number (1-based index)
-input_file="Files/proteome_exe.csv"
+input_file="Files/proteome_exe_TXTL.csv"
 column_number1=1
 column_number2=2
 
@@ -12,8 +12,8 @@ column_data2=$(cut -d ',' -f $column_number2 "$input_file")
 IFS=$'\n' read -d '' -r -a values1 <<< "$column_data1"
 IFS=$'\n' read -d '' -r -a values2 <<< "$column_data2"
 
-output_file1="Files/Reaction.csv"
-output_file2="Files/SpeciesBaseMechanisms.csv"
+output_file1="Files/Reaction_TXTL.csv"
+output_file2="Files/SpeciesBaseMechanisms_TXTL.csv"
 inaccessible_file="Files/Inaccessible_IDs.csv"
 
 # Add header line to the output files
