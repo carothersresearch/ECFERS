@@ -644,3 +644,102 @@ class SBML_Overproduction_Multi_Fly:
     def set_bounds(self, upper_bounds, lower_bounds):
         self.upperb = upper_bounds # for all parameters
         self.lowerb = lower_bounds # fol all parameters
+
+
+class SBML_Barebone_Multi_Fly:
+    class ModelStuff:
+        def __init__(self, model, parameter_labels, variables):
+            r = te.loadSBMLModel(model)
+            self.species_labels = np.array(r.getFullStoichiometryMatrix().rownames)
+            self.r_parameter_labels = np.array(r.getGlobalParameterIds())
+            self.parameter_order = np.int32(np.squeeze(np.array([np.where(p == self.r_parameter_labels) for p in parameter_labels if p in self.r_parameter_labels])))
+            self.parameter_present = [p in self.r_parameter_labels for p in parameter_labels]
+            self.variable_order = {sample:np.int32(np.squeeze(np.array([np.where(p == self.r_parameter_labels) for p in var.keys() if p in self.r_parameter_labels]))) for sample,var in variables.items()}
+            self.variable_present = {sample:[p in self.r_parameter_labels for p in var.keys()] for sample,var in variables.items()}
+            del r
+
+    def __init__(self, model:list, parameter_labels, timepoint, variables:list):
+        self.model = model # now a list of models
+        self.timepoint = timepoint
+        self.parameter_labels = parameter_labels # all parameters across all models, only the ones that are going to be fitted
+        self.variables = variables # list of dict of labels and values. use this for species
+        self.cvode_timepoints = 1000
+        self.model_stuff = [self.ModelStuff(m, self.parameter_labels, var) for m,var in zip(self.model, self.variables)]
+
+    def _setup_rr(self): # run on engine
+        from roadrunner import Config, RoadRunner, Logger
+        Logger.disableLogging()
+        Config.setValue(Config.ROADRUNNER_DISABLE_PYTHON_DYNAMIC_PROPERTIES, True)
+        Config.setValue(Config.LOADSBMLOPTIONS_RECOMPILE, False) 
+        Config.setValue(Config.LLJIT_OPTIMIZATION_LEVEL, 4)
+        Config.setValue(Config.LLVM_SYMBOL_CACHE, True)
+        Config.setValue(Config.LOADSBMLOPTIONS_OPTIMIZE_GVN, True)
+        Config.setValue(Config.LOADSBMLOPTIONS_OPTIMIZE_CFG_SIMPLIFICATION, True)
+        Config.setValue(Config.LOADSBMLOPTIONS_OPTIMIZE_INSTRUCTION_COMBINING, True)
+        Config.setValue(Config.LOADSBMLOPTIONS_OPTIMIZE_DEAD_INST_ELIMINATION, True)
+        Config.setValue(Config.LOADSBMLOPTIONS_OPTIMIZE_DEAD_CODE_ELIMINATION, True)
+        Config.setValue(Config.LOADSBMLOPTIONS_OPTIMIZE_INSTRUCTION_SIMPLIFIER, True)
+        Config.setValue(Config.SIMULATEOPTIONS_COPY_RESULT, True)
+        self.r = []
+        for m in self.model:
+            r = te.loadSBMLModel(m)
+            r.integrator.absolute_tolerance = 1e-8
+            r.integrator.relative_tolerance = 1e-8
+            r.integrator.maximum_num_steps = 2000
+            self.r.append(r)
+            
+    def _simulate(self, x, variables):
+        from roadrunner import Config, RoadRunner, Logger
+        Logger.disableLogging()
+        Config.setValue(Config.ROADRUNNER_DISABLE_PYTHON_DYNAMIC_PROPERTIES, True)
+        Config.setValue(Config.LOADSBMLOPTIONS_RECOMPILE, False) 
+        Config.setValue(Config.LLJIT_OPTIMIZATION_LEVEL, 4)
+        Config.setValue(Config.LLVM_SYMBOL_CACHE, True)
+        Config.setValue(Config.LOADSBMLOPTIONS_OPTIMIZE_GVN, True)
+        Config.setValue(Config.LOADSBMLOPTIONS_OPTIMIZE_CFG_SIMPLIFICATION, True)
+        Config.setValue(Config.LOADSBMLOPTIONS_OPTIMIZE_INSTRUCTION_COMBINING, True)
+        Config.setValue(Config.LOADSBMLOPTIONS_OPTIMIZE_DEAD_INST_ELIMINATION, True)
+        Config.setValue(Config.LOADSBMLOPTIONS_OPTIMIZE_DEAD_CODE_ELIMINATION, True)
+        Config.setValue(Config.LOADSBMLOPTIONS_OPTIMIZE_INSTRUCTION_SIMPLIFIER, True)
+        Config.setValue(Config.SIMULATEOPTIONS_COPY_RESULT, True)
+
+        all_results = []
+        for r,ms,v in zip(self.r, self.model_stuff, variables):
+
+            # this sets the "parameters"
+            r.model.setGlobalParameterValues([*ms.parameter_order, *ms.variable_order], [*x[ms.parameter_present], *np.array(list(v.values()))[ms.variable_present]])
+            r.reset()
+
+            # this sets species inital concentrations
+            for label, value in v.items():
+                if not np.isnan(value):
+                    if label in ms.species_labels:
+                        r.setValue('['+label+']', value)
+            try:
+                results = r.simulate(0,self.timepoint,self.cvode_timepoints)
+            except Exception as e:
+                print(e)
+                # break # stop if any fail
+            r.resetToOrigin()
+            all_results.append(results)
+        del Config, RoadRunner, Logger, results
+        return all_results
+
+    def _calculate_metrics(self, x, variables): # x is an array of parameter values, variables is a list of dictionaries
+        all_results =  self._simulate(x, variables) # this returns a list of results
+
+        all_metrics = []
+        for result in all_results:
+            # Maggie's magic
+            metrics = []
+            all_metrics.append(metrics)
+
+        return all_metrics
+
+    # gotta keep these around but we dont use them
+    def fitness(self, x):
+        return [1]
+
+    def get_bounds(self):
+        return ([0 for i in self.parameter_labels], [1 for i in self.parameter_labels])
+    
