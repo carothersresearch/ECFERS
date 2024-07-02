@@ -688,7 +688,7 @@ class SBML_Barebone_Multi_Fly:
             r.integrator.maximum_num_steps = 2000
             self.r.append(r)
             
-    def _simulate(self, x, variables):
+    def _simulate(self, x):
         from roadrunner import Config, RoadRunner, Logger
         Logger.disableLogging()
         Config.setValue(Config.ROADRUNNER_DISABLE_PYTHON_DYNAMIC_PROPERTIES, True)
@@ -704,7 +704,7 @@ class SBML_Barebone_Multi_Fly:
         Config.setValue(Config.SIMULATEOPTIONS_COPY_RESULT, True)
 
         all_results = []
-        for r,ms,v in zip(self.r, self.model_stuff, variables):
+        for r,ms,v in zip(self.r, self.model_stuff, self.variables):
 
             # this sets the "parameters"
             r.model.setGlobalParameterValues([*ms.parameter_order, *ms.variable_order], [*x[ms.parameter_present], *np.array(list(v.values()))[ms.variable_present]])
@@ -725,8 +725,8 @@ class SBML_Barebone_Multi_Fly:
         del Config, RoadRunner, Logger, results
         return all_results
 
-    def _calculate_metrics(self, x, variables): # x is an array of parameter values, variables is a list of dictionaries
-        all_results =  self._simulate(x, variables) # this returns a list of results
+    def _calculate_metrics(self, x): # x is an array of parameter values, variables is a list of dictionaries
+        all_results =  self._simulate(x) # this returns a list of results
 
         all_metrics = []
         for result in all_results:
