@@ -328,6 +328,8 @@ class ModelBuilder:
                 ki = ';' + kis if not pd.isnull(kis) else ''
                 parameters = rxn['Km'] + ki
             self.p_str += self.writeParameters(rxn['Kcat'], rxn['Label'])
+            self.p_str += self.writeParameters(rxn['Keq'], rxn['Label'])
+            self.p_str += self.writeVariable('Kcat_V_'+rxn['Label'], 1)
             self.p_str += self.writeParameters(parameters, EC)
             self.r_str += self.writeReaction(rxn) + '\n'
 
