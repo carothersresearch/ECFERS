@@ -64,6 +64,14 @@ class ModelBuilder:
         self.species = species
         self.rxns = reactions
 
+        self.rxn_species = [] 
+        for cell in sum([list(self.rxns[m]) for m in ['Substrates','Products','Inhibitors']],[]):
+            if type(cell) is str:
+                ids = cell.replace(' ','').split(';')
+                for i in ids:
+                    if i not in species:
+                        self.rxn_species.append(i)
+
     def addMechanism(self, new_mechanism: Mechanism):
         """Adds a new Mechanism to the internal mechanism dictionary 
 
@@ -90,7 +98,8 @@ class ModelBuilder:
                 # maybe check inputs??
 
         if not self.species['Label'].str.contains(Label).any(): # if this species does not already exist
-            self.species = self.species.append(args,ignore_index = True) 
+            if Label in self.rxn_species:
+                self.species = self.species.append(args,ignore_index = True) 
         else:
             raise('This species already exists in dataframe.')
 
@@ -309,11 +318,13 @@ class ModelBuilder:
                         self.applyMechanism(m,s)
 
         for _, sp in S.iterrows():
-            self.s_str += self.writeSpecies(sp)
-            self.s_str += self.writeParameters(sp['Parameters'], sp['Label'], required = False)
-            self.v_str += self.writeVariable(sp['Relative'])
-            if sp['Type'] == 'Enzyme':
-                self.v_str += self.writeVariable('p_'+'EC'+sp['EC'].replace('.',''))
+            if (sp['Label'] in self.rxn_species) or (sp['Type'] == 'Enzyme'):
+                self.s_str += self.writeSpecies(sp)
+                self.s_str += self.writeParameters(sp['Parameters'], sp['Label'], required = False)
+                self.v_str += self.writeVariable(sp['Relative'])
+                if sp['Type'] == 'Enzyme':
+                    self.v_str += self.writeVariable('p_'+'EC'+sp['EC'].replace('.',''))
+                    
         self.v_str += self.writeVariable('dilution_factor')
 
         for _, rxn in self.rxns.iterrows():
