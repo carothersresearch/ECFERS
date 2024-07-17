@@ -1,6 +1,8 @@
 # ECFERS
  Exploring Cell-Free Enzyme Reaction Systems 
 
+ hello!
+
 ## FRENDA: Fast Retrieval of ENzyme DAta
 Given a list of EC numbers, parses through BRENDA to generate a spreadsheet of relevant reaction data ready to feed into **ODBM**. Uses KEGG ID's to standardize chemical compounds, enzyme names, and reaction IDs. If a kinetic parameter is unavailable, it uses the predicted data found in *other folders*.
 
