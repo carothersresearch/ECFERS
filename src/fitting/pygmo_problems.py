@@ -648,23 +648,20 @@ class SBML_Overproduction_Multi_Fly:
 
 class SBML_Barebone_Multi_Fly:
     class ModelStuff:
-        def __init__(self, model, parameter_labels, variables):
+        def __init__(self, model, parameter_labels):
             r = te.loadSBMLModel(model)
             self.species_labels = np.array(r.getFullStoichiometryMatrix().rownames)
             self.r_parameter_labels = np.array(r.getGlobalParameterIds())
             self.parameter_order = np.int32(np.squeeze(np.array([np.where(p == self.r_parameter_labels) for p in parameter_labels if p in self.r_parameter_labels])))
             self.parameter_present = [p in self.r_parameter_labels for p in parameter_labels]
-            self.variable_order = {sample:np.int32(np.squeeze(np.array([np.where(p == self.r_parameter_labels) for p in var.keys() if p in self.r_parameter_labels]))) for sample,var in variables.items()}
-            self.variable_present = {sample:[p in self.r_parameter_labels for p in var.keys()] for sample,var in variables.items()}
             del r
 
-    def __init__(self, model:list, parameter_labels, timepoint, variables:list):
+    def __init__(self, model:list, parameter_labels, timepoint):
         self.model = model # now a list of models
         self.timepoint = timepoint
         self.parameter_labels = parameter_labels # all parameters across all models, only the ones that are going to be fitted
-        self.variables = variables # list of dict of labels and values. use this for species
         self.cvode_timepoints = 1000
-        self.model_stuff = [self.ModelStuff(m, self.parameter_labels, var) for m,var in zip(self.model, self.variables)]
+        self.model_stuff = [self.ModelStuff(m, self.parameter_labels) for m in self.model]
 
     def _setup_rr(self): # run on engine
         from roadrunner import Config, RoadRunner, Logger
@@ -704,17 +701,13 @@ class SBML_Barebone_Multi_Fly:
         Config.setValue(Config.SIMULATEOPTIONS_COPY_RESULT, True)
 
         all_results = []
-        for r,ms,v in zip(self.r, self.model_stuff, self.variables):
+        for r,ms in zip(self.r, self.model_stuff):
 
             # this sets the "parameters"
-            r.model.setGlobalParameterValues([*ms.parameter_order, *ms.variable_order], [*x[ms.parameter_present], *np.array(list(v.values()))[ms.variable_present]])
+            r.model.setGlobalParameterValues([*ms.parameter_order], [*x[ms.parameter_present]])
             r.reset()
 
             # this sets species inital concentrations
-            for label, value in v.items():
-                if not np.isnan(value):
-                    if label in ms.species_labels:
-                        r.setValue('['+label+']', value)
             try:
                 results = r.simulate(0,self.timepoint,self.cvode_timepoints)
             except Exception as e:
@@ -730,9 +723,54 @@ class SBML_Barebone_Multi_Fly:
 
         all_metrics = []
         for result in all_results:
-            # Maggie's magic
-            metrics = []
-            all_metrics.append(metrics)
+            # result is a numpy array 
+            # make a dataframe of the simulation results
+            df_un = pd.DataFrame(result, columns=result.colnames)
+            columns_to_keep = ['time'] + [col for col in df_un.columns if col.startswith('[C')]
+            df = df_un[columns_to_keep]
+            
+            # create a list to store each row as a dictionary
+            rows = []
+            
+            for compound in df.columns:
+                if compound == 'time':
+                    continue
+                # calculate the initial concentration
+                initialconc = df[compound].iloc[0]
+                # calculate the final concentration
+                finalconc = df[compound].iloc[-1]
+                # calculates change in malate from start to finish
+                deltatot = finalconc - initialconc
+                # finds the minimum concentration and time at minima
+                minconc = min(df[compound])
+                mintime = df['time'][df[compound].idxmin()]
+                # finds the maximum concentration and time at maximum
+                maxconc = max(df[compound])
+                maxtime = df['time'][df[compound].idxmax()]
+                # calculates change in malate from start to max
+                deltamax = maxconc - initialconc
+                # calculates half of produced malate
+                halfmax = deltamax / 2
+                # finds the concentration and time closest to half max
+                df_closest = df.iloc[(df[compound] - (initialconc + halfmax)).abs().argsort()[:1]]
+                halftime = df_closest['time'].iloc[0]
+                halfconc = df_closest[compound].iloc[0]
+                # append the calculated metrics to the list of rows
+                rows.append({'Species': compound,
+                             'Final Concentration': finalconc,
+                             'Min Conc': minconc,
+                             'Max Conc': maxconc,
+                             'Min Time': mintime,
+                             'Max Time': maxtime,
+                             'Total Production': deltatot,
+                             'Production to Max': deltamax,
+                             'Half Max Time': halftime,
+                             'Half Max Conc': halfconc})
+
+        # create a dataframe from the list of rows
+        df_final = pd.DataFrame(rows)
+            
+        all_metrics.append(df_final)
 
         return all_metrics
 
