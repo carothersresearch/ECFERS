@@ -140,7 +140,7 @@ class mkcook_bfe(pg.ipyparallel_bfe):
                 pg.ipyparallel_bfe._view.push({'prob': self.prob}, block = True)
                 pg.ipyparallel_bfe._view.apply_sync(lambda x: x.extract(SBML_Barebone_Multi_Fly)._setup_rr(), Reference('prob'))
 
-    def __call__(self, prob, dvs, mode = 'train'):
+    def __call__(self, prob, dvs):
         import ipyparallel as ipp
         import pickle
         import numpy as np
