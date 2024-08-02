@@ -104,3 +104,73 @@ class pickleless_bfe(pg.ipyparallel_bfe):
         fvs.shape = (ndvs*nf,)
         del ar, dvs, ipp
         return fvs
+
+def _ipy_bfe_metrics(dv_path, prob, rank):
+    # The function that will be invoked
+    # by the individual processes/nodes of mp/ipy bfe.
+    import pickle
+
+    dvs = load(dv_path+'/dvs_'+str(rank)+'.b')
+    print([str(rank), ])
+
+    return pickle.dumps(list(map(prob._calculate_metrics, dvs)))
+
+class mkcook_bfe(pg.ipyparallel_bfe):
+    def __init__(self, client_kwargs, view_kwargs, temp_dv_path, prob):
+        self.client_kwargs = client_kwargs
+        self.view_kwargs = view_kwargs
+        self.temp_dv_path = temp_dv_path
+        self.client_size = None
+        self.prob = prob
+        super().__init__()
+
+    def init_view(self,client_args=[], client_kwargs={}, view_args=[], view_kwargs={}):
+        self.client_kwargs = client_kwargs
+        self.view_kwargs = view_kwargs
+        with pg.ipyparallel_bfe._view_lock:
+            if pg.ipyparallel_bfe._view is None:
+                # Create the new view.
+                from ipyparallel import Client, Reference
+                rc = Client(*client_args, **self.client_kwargs)
+                rc[:].use_cloudpickle()
+                pg.ipyparallel_bfe._view = rc.broadcast_view(*view_args, **self.view_kwargs)
+                pg.ipyparallel_bfe._view.is_coalescing = False
+                self.client_size = len(rc.ids)
+                pg.ipyparallel_bfe._view.scatter("rank", rc.ids, flatten=True)
+                pg.ipyparallel_bfe._view.push({'prob': self.prob}, block = True)
+                pg.ipyparallel_bfe._view.apply_sync(lambda x: x.extract(SBML_Barebone_Multi_Fly)._setup_rr(), Reference('prob'))
+
+    def __call__(self, prob, dvs, mode = 'train'):
+        import ipyparallel as ipp
+        import pickle
+        import numpy as np
+        # Fetch the dimension and the fitness
+        # dimension of the problem.
+        ndim = prob.get_nx()
+        nf = prob.get_nf()
+
+        # Compute the total number of decision
+        # vectors represented by dvs.
+        ndvs = len(dvs) // ndim
+        # Reshape dvs so that it represents
+        # ndvs decision vectors of dimension ndim
+        # each.
+        dvs.shape = (ndvs, ndim)
+
+        # Save dvs in a binary file
+        for i in range(self.client_size):
+            # pick dvs based on engine rank
+            start, end = get_partition(ndvs, i, self.client_size)
+            save(self.temp_dv_path+'/dvs_'+str(i)+'.b', dvs[start:end,:])
+
+        with pg.ipyparallel_bfe._view_lock:
+
+            ar = pg.ipyparallel_bfe._view.apply(_ipy_bfe_metrics, self.temp_dv_path, ipp.Reference('prob'), ipp.Reference("rank"))
+            # ret = ipp.AsyncMapResult(pg.ipyparallel_bfe._view.client, ar._children, ipp.client.map.Map())
+            
+        # Build the vector of fitness vectors as a 2D numpy array.
+        fvs = np.array(sum([pickle.loads(fv) for fv in ar.get()],[]))
+        # Reshape it so that it is 1D.
+        fvs.shape = (ndvs*nf,)
+        del ar, dvs, ipp
+        return fvs
