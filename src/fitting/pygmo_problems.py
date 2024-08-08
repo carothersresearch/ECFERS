@@ -656,12 +656,13 @@ class SBML_Barebone_Multi_Fly:
             self.parameter_present = [p in self.r_parameter_labels for p in parameter_labels]
             del r
 
-    def __init__(self, model:list, parameter_labels, timepoint):
+    def __init__(self, model:list, parameter_labels, timepoint, num_metrics):
         self.model = model # now a list of models
         self.timepoint = timepoint
         self.parameter_labels = parameter_labels # all parameters across all models, only the ones that are going to be fitted
         self.cvode_timepoints = 1000
         self.model_stuff = [self.ModelStuff(m, self.parameter_labels) for m in self.model]
+        self.num_metrics = num_metrics
 
     def _setup_rr(self): # run on engine
         from roadrunner import Config, RoadRunner, Logger
@@ -712,72 +713,92 @@ class SBML_Barebone_Multi_Fly:
                 results = r.simulate(0,self.timepoint,self.cvode_timepoints)
             except Exception as e:
                 print(e)
+                results = np.nan
                 # break # stop if any fail
             r.resetToOrigin()
             all_results.append(results)
         del Config, RoadRunner, Logger, results
         return all_results
 
-    def _calculate_metrics(self, x): # x is an array of parameter values, variables is a list of dictionaries
-        all_results =  self._simulate(x) # this returns a list of results
-
+    def _calculate_metrics(self, x): 
+        import pandas as pd
+        import numpy as np
+        
+        all_results = self._simulate(x)  # This returns a list of results
         all_metrics = []
+
         for result in all_results:
-            # result is a numpy array 
-            # make a dataframe of the simulation results
-            df_un = pd.DataFrame(result, columns=result.colnames)
-            columns_to_keep = ['time'] + [col for col in df_un.columns if col.startswith('[C')]
-            df = df_un[columns_to_keep]
-            
-            # create a list to store each row as a dictionary
-            rows = []
-            
-            for compound in df.columns:
-                if compound == 'time':
-                    continue
-                # calculate the initial concentration
-                initialconc = df[compound].iloc[0]
-                # calculate the final concentration
-                finalconc = df[compound].iloc[-1]
-                # calculates change in malate from start to finish
-                deltatot = finalconc - initialconc
-                # finds the minimum concentration and time at minima
-                minconc = min(df[compound])
-                mintime = df['time'][df[compound].idxmin()]
-                # finds the maximum concentration and time at maximum
-                maxconc = max(df[compound])
-                maxtime = df['time'][df[compound].idxmax()]
-                # calculates change in malate from start to max
-                deltamax = maxconc - initialconc
-                # calculates half of produced malate
-                halfmax = deltamax / 2
-                # finds the concentration and time closest to half max
-                df_closest = df.iloc[(df[compound] - (initialconc + halfmax)).abs().argsort()[:1]]
-                halftime = df_closest['time'].iloc[0]
-                halfconc = df_closest[compound].iloc[0]
-                # append the calculated metrics to the list of rows
-                rows.append({'Species': compound,
-                             'Final Concentration': finalconc,
-                             'Min Conc': minconc,
-                             'Max Conc': maxconc,
-                             'Min Time': mintime,
-                             'Max Time': maxtime,
-                             'Total Production': deltatot,
-                             'Production to Max': deltamax,
-                             'Half Max Time': halftime,
-                             'Half Max Conc': halfconc})
+            # Check if the result is np.nan
+            if np.isnan(result).all():
+                # Append a row of NaN values if the result is np.nan
+                rows = []
 
-        # create a dataframe from the list of rows
-        df_final = pd.DataFrame(rows)
-            
-        all_metrics.append(df_final)
+                for i in range(int(self.num_metrics/9)):
+                    rows.append({ 'Final Concentration': np.nan,
+                                        'Min Conc': np.nan,
+                                        'Max Conc': np.nan,
+                                        'Min Time': np.nan,
+                                        'Max Time': np.nan,
+                                        'Total Production': np.nan,
+                                        'Production to Max': np.nan,
+                                        'Half Max Time': np.nan,
+                                        'Half Max Conc': np.nan })
+            else:
+                # result is a numpy array 
+                # make a dataframe of the simulation results
+                df_un = pd.DataFrame(result, columns=result.colnames)
+                columns_to_keep = ['time'] + [col for col in df_un.columns if col.startswith('[C')]
+                df = df_un[columns_to_keep]
+                
+                # create a list to store each row as a dictionary
+                rows = []
+                
+                for compound in df.columns:
+                    if compound == 'time':
+                        continue
+                    # calculate the initial concentration
+                    initialconc = df[compound].iloc[0]
+                    # calculate the final concentration
+                    finalconc = df[compound].iloc[-1]
+                    # calculates change in malate from start to finish
+                    deltatot = finalconc - initialconc
+                    # finds the minimum concentration and time at minima
+                    minconc = min(df[compound])
+                    mintime = df['time'][df[compound].idxmin()]
+                    # finds the maximum concentration and time at maximum
+                    maxconc = max(df[compound])
+                    maxtime = df['time'][df[compound].idxmax()]
+                    # calculates change in malate from start to max
+                    deltamax = maxconc - initialconc
+                    # calculates half of produced malate
+                    halfmax = deltamax / 2
+                    # finds the concentration and time closest to half max
+                    df_closest = df.iloc[(df[compound] - (initialconc + halfmax)).abs().argsort()[:1]]
+                    halftime = df_closest['time'].iloc[0]
+                    halfconc = df_closest[compound].iloc[0]
+                    # append the calculated metrics to the list of rows
+                    rows.append({'Final Concentration': finalconc,
+                                'Min Conc': minconc,
+                                'Max Conc': maxconc,
+                                'Min Time': mintime,
+                                'Max Time': maxtime,
+                                'Total Production': deltatot,
+                                'Production to Max': deltamax,
+                                'Half Max Time': halftime,
+                                'Half Max Conc': halfconc})
 
-        return all_metrics
+            # create a dataframe from the list of rows
+            df_final = pd.DataFrame(rows)
+            all_metrics.extend(df_final.to_numpy())
+            
+        return np.array(all_metrics).reshape(-1)
 
     # gotta keep these around but we dont use them
     def fitness(self, x):
-        return [1]
+        return self._calculate_metrics(x)
 
     def get_bounds(self):
         return ([0 for i in self.parameter_labels], [1 for i in self.parameter_labels])
     
+    def get_nobj(self):
+        return self.num_metrics

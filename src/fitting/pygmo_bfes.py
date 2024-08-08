@@ -113,7 +113,7 @@ def _ipy_bfe_metrics(dv_path, prob, rank):
     dvs = load(dv_path+'/dvs_'+str(rank)+'.b')
     print([str(rank), ])
 
-    return pickle.dumps(list(map(prob._calculate_metrics, dvs)))
+    return pickle.dumps(list(map(prob.fitness, dvs)))
 
 class mkcook_bfe(pg.ipyparallel_bfe):
     def __init__(self, client_kwargs, view_kwargs, temp_dv_path, prob):
