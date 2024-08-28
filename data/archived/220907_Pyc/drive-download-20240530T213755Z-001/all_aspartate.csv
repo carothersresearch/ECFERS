@@ -1,0 +1,40 @@
+"F:\2204-2304\RC\220902_Pyc\220905-rerun\es-20x-1.d"," -ESI EIC(132.0302) Scan Frag=175.0V es-20x-1.d "
+"F:\2204-2304\RC\220902_Pyc\220905-rerun\es-20x-1.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"F:\2204-2304\RC\220902_Pyc\220905-rerun\es-20x-1.d" ,"1" ,3.577,3.883,4.504,2779.50,41303.27,100.00,100.00,100.00,0.270,,0.00,0.00,,,,,15.00,168.91,0.44,3318.37,,60.23,  ,664.1093,,,,,,,,,,,,
+
+"F:\2204-2304\RC\220902_Pyc\220905-rerun\es-20x-2.d"," -ESI EIC(132.0302) Scan Frag=175.0V es-20x-2.d "
+"F:\2204-2304\RC\220902_Pyc\220905-rerun\es-20x-2.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"F:\2204-2304\RC\220902_Pyc\220905-rerun\es-20x-2.d" ,"1" ,3.580,3.870,4.506,3362.39,34710.75,100.00,100.00,100.00,0.172,,0.00,0.00,,,,,72.56,65.88,0.45,2540.13,,,  ,248.9664,,,,,,,,,,,,
+
+"F:\2204-2304\RC\220902_Pyc\220905-rerun\es-20x-3.d"," -ESI EIC(132.0302) Scan Frag=175.0V es-20x-3.d "
+"F:\2204-2304\RC\220902_Pyc\220905-rerun\es-20x-3.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"F:\2204-2304\RC\220902_Pyc\220905-rerun\es-20x-3.d" ,"1" ,3.580,3.899,4.177,2064.03,20928.11,100.00,100.00,100.00,0.202,,0.00,0.00,,,,,55.88,308.03,0.69,2253.21,,,  ,424.5580,,,,,,,,,,,,
+
+"F:\2204-2304\RC\220902_Pyc\220905-rerun\es-20x-4.d"," -ESI EIC(132.0302) Scan Frag=175.0V es-20x-4.d "
+"F:\2204-2304\RC\220902_Pyc\220905-rerun\es-20x-4.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"F:\2204-2304\RC\220902_Pyc\220905-rerun\es-20x-4.d" ,"1" ,3.580,3.919,4.507,1449.98,13753.50,100.00,100.00,100.00,0.207,,0.00,381.65,,,,,24.31,211.04,0.55,0.00,,,  ,248.9664,,,,,,,,,,,,
+
+"F:\2204-2304\RC\220902_Pyc\220905-rerun\es-20x-5.d"," -ESI EIC(132.0302) Scan Frag=175.0V es-20x-5.d "
+"F:\2204-2304\RC\220902_Pyc\220905-rerun\es-20x-5.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"F:\2204-2304\RC\220902_Pyc\220905-rerun\es-20x-5.d" ,"1" ,3.584,3.925,4.510,1030.97,8144.84,100.00,100.00,100.00,0.132,,316.28,400.21,,,,,79.50,180.67,0.46,0.00,,,  ,424.5580,,,,,,,,,,,,
+
+"F:\2204-2304\RC\220902_Pyc\220905-rerun\ns-20x-1.d"," -ESI EIC(132.0302) Scan Frag=175.0V ns-20x-1.d "
+"F:\2204-2304\RC\220902_Pyc\220905-rerun\ns-20x-1.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"F:\2204-2304\RC\220902_Pyc\220905-rerun\ns-20x-1.d" ,"1" ,3.581,3.941,4.507,758.23,8738.02,100.00,100.00,100.00,0.221,,0.00,0.00,,,,,0.00,238.06,0.97,1158.00,,,  ,424.5580,,,,,,,,,,,,
+
+"F:\2204-2304\RC\220902_Pyc\220905-rerun\ns-20x-2.d"," -ESI EIC(132.0302) Scan Frag=175.0V ns-20x-2.d "
+"F:\2204-2304\RC\220902_Pyc\220905-rerun\ns-20x-2.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"F:\2204-2304\RC\220902_Pyc\220905-rerun\ns-20x-2.d" ,"1" ,3.577,3.947,4.503,1481.91,13104.82,100.00,100.00,100.00,0.183,,0.00,433.88,,,,,22.88,99.56,0.32,2468.86,,,  ,424.5580,,,,,,,,,,,,
+
+"F:\2204-2304\RC\220902_Pyc\220905-rerun\ns-20x-3.d"," -ESI EIC(132.0302) Scan Frag=175.0V ns-20x-3.d "
+"F:\2204-2304\RC\220902_Pyc\220905-rerun\ns-20x-3.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"F:\2204-2304\RC\220902_Pyc\220905-rerun\ns-20x-3.d" ,"1" ,3.581,3.933,4.507,742.98,6715.03,100.00,100.00,100.00,0.151,,0.00,442.65,,,,,39.44,158.84,0.79,1115.86,,,  ,424.5580,,,,,,,,,,,,
+
+"F:\2204-2304\RC\220902_Pyc\220905-rerun\ns-20x-4.d"," -ESI EIC(132.0302) Scan Frag=175.0V ns-20x-4.d "
+"F:\2204-2304\RC\220902_Pyc\220905-rerun\ns-20x-4.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"F:\2204-2304\RC\220902_Pyc\220905-rerun\ns-20x-4.d" ,"1" ,3.713,4.206,4.550,773,7484,100.00,100.00,100.00,0.837,,0,0,0,0,,773,,,MM,,,,,M,,,,,,,,
+
+"F:\2204-2304\RC\220902_Pyc\220905-rerun\ns-20x-5.d"," -ESI EIC(132.0302) Scan Frag=175.0V ns-20x-5.d "
+"F:\2204-2304\RC\220902_Pyc\220905-rerun\ns-20x-5.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"F:\2204-2304\RC\220902_Pyc\220905-rerun\ns-20x-5.d" ,"1" ,3.580,4.032,4.427,389.16,4462.58,100.00,100.00,100.00,0.191,,0.00,0.00,,,,,28.94,22.25,0.49,719.86,,,  ,424.5580,,,,,,,,,,,,
+

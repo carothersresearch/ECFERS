@@ -1,0 +1,102 @@
+"F:\2204-2304\RC\221025_malic_enzyme\8hr\00-1.d"," -ESI EIC(147.0299) Scan Frag=175.0V 00-1.d "
+"F:\2204-2304\RC\221025_malic_enzyme\8hr\00-1.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"F:\2204-2304\RC\221025_malic_enzyme\8hr\00-1.d" ,"1" ,3.833,4.116,5.674,255365.45,3388169.42,100.00,100.00,100.00,1.841,,1378.32,24782.89,1378.32,-7591.95,,255365.86,,64.61,MM,,,,,M,,,,,,,,
+
+"F:\2204-2304\RC\221025_malic_enzyme\8hr\00-2.d"," -ESI EIC(147.0299) Scan Frag=175.0V 00-2.d "
+"F:\2204-2304\RC\221025_malic_enzyme\8hr\00-2.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"F:\2204-2304\RC\221025_malic_enzyme\8hr\00-2.d" ,"1" ,3.845,4.066,5.585,316797.08,2860533.89,100.00,100.00,100.00,1.741,,2447.28,23799.61,2447.28,3252.60,,319346.97,,80.16,MM,,,,,M,,,,,,,,
+
+"F:\2204-2304\RC\221025_malic_enzyme\8hr\00-3.d"," -ESI EIC(147.0299) Scan Frag=175.0V 00-3.d "
+"F:\2204-2304\RC\221025_malic_enzyme\8hr\00-3.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"F:\2204-2304\RC\221025_malic_enzyme\8hr\00-3.d" ,"1" ,3.710,5.122,5.456,73035.65,2093905.30,100.00,100.00,100.00,0.478,,0.00,27750.55,,,,,347.88,26556.76,2.21,72800.32,,18.48,  ,191.0144,,,,,,,,,,,,
+
+"F:\2204-2304\RC\221025_malic_enzyme\0p-1.d"," -ESI EIC(147.0299) Scan Frag=175.0V 0p-1.d "
+"F:\2204-2304\RC\221025_malic_enzyme\0p-1.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"F:\2204-2304\RC\221025_malic_enzyme\0p-1.d" ,"1" ,3.610,4.647,5.463,46600.45,1855803.82,100.00,100.00,100.00,0.664,,1055.67,9254.44,,,,,776.56,9576.33,1.84,60010.35,,,  ,191.0139,,,,,,,,,,,,
+
+"F:\2204-2304\RC\221025_malic_enzyme\8hr\0P-1.d"," -ESI EIC(147.0299) Scan Frag=175.0V 0P-1.d "
+"F:\2204-2304\RC\221025_malic_enzyme\8hr\0P-1.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"F:\2204-2304\RC\221025_malic_enzyme\8hr\0P-1.d" ,"1" ,3.699,5.026,5.552,19282.70,1385342.15,100.00,100.00,100.00,1.197,,0.00,3066.92,,,,,256.69,2469.86,4.25,24607.28,,,  ,191.0144,,,,,,,,,,,,
+
+"F:\2204-2304\RC\221025_malic_enzyme\0p-2.d"," -ESI EIC(147.0299) Scan Frag=175.0V 0p-2.d "
+"F:\2204-2304\RC\221025_malic_enzyme\0p-2.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"F:\2204-2304\RC\221025_malic_enzyme\0p-2.d" ,"1" ,3.608,4.798,5.461,3989.83,113011.46,100.00,100.00,100.00,0.532,,708.14,2245.92,,,,,266.72,1490.63,0.71,3744.12,,,  ,191.0139,,,,,,,,,,,,
+
+"F:\2204-2304\RC\221025_malic_enzyme\8hr\0P-2.d"," -ESI EIC(147.0299) Scan Frag=175.0V 0P-2.d "
+"F:\2204-2304\RC\221025_malic_enzyme\8hr\0P-2.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"F:\2204-2304\RC\221025_malic_enzyme\8hr\0P-2.d" ,"1" ,3.608,4.050,4.545,109388.71,899834.46,100.00,100.00,64.57,0.137,,0.00,0.00,,,,,167.41,1517.67,0.96,188668.14,,,  ,248.9701,,,,,,,,,,,,
+"F:\2204-2304\RC\221025_malic_enzyme\8hr\0P-2.d" ,"2" ,4.545,5.046,5.514,17421.82,493761.55,54.87,15.93,35.43,0.472,,0.00,6544.45,,,,,1517.67,4723.87,0.68,22604.89,,,  ,191.0144,,,,,,,,,,,,
+
+"F:\2204-2304\RC\221025_malic_enzyme\0p-3.d"," -ESI EIC(147.0299) Scan Frag=175.0V 0p-3.d "
+"F:\2204-2304\RC\221025_malic_enzyme\0p-3.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"F:\2204-2304\RC\221025_malic_enzyme\0p-3.d" ,"1" ,3.612,4.862,5.464,574.37,25915.64,100.00,100.00,100.00,0.734,,233.79,835.99,,,,,228.97,664.77,0.95,1424.72,,,  ,248.9694,,,,,,,,,,,,
+
+"F:\2204-2304\RC\221025_malic_enzyme\8hr\0P-3.d"," -ESI EIC(147.0299) Scan Frag=175.0V 0P-3.d "
+"F:\2204-2304\RC\221025_malic_enzyme\8hr\0P-3.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"F:\2204-2304\RC\221025_malic_enzyme\8hr\0P-3.d" ,"1" ,3.609,4.070,4.562,129966.11,1343730.47,100.00,100.00,66.13,0.172,,0.00,1402.92,,,,,126.16,1465.88,0.94,258589.36,,,  ,147.0234,,,,,,,,,,,,
+"F:\2204-2304\RC\221025_malic_enzyme\8hr\0P-3.d" ,"2" ,4.562,5.015,5.514,35882.14,688260.19,51.22,27.61,33.87,0.320,,1402.92,7064.77,,,,,1465.88,5397.05,0.67,36764.59,,,  ,191.0144,,,,,,,,,,,,
+
+"F:\2204-2304\RC\221025_malic_enzyme\t0-1.d"," -ESI EIC(147.0299) Scan Frag=175.0V t0-1.d "
+"F:\2204-2304\RC\221025_malic_enzyme\t0-1.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"F:\2204-2304\RC\221025_malic_enzyme\t0-1.d" ,"1" ,3.610,4.581,5.463,100007.55,2618021.52,100.00,100.00,100.00,0.436,,1501.02,9741.24,,,,,930.16,10162.41,0.97,93714.02,,,  ,191.0139,,,,,,,,,,,,
+
+"F:\2204-2304\RC\221025_malic_enzyme\8hr\T0-1.d"," -ESI EIC(147.0299) Scan Frag=175.0V T0-1.d "
+"F:\2204-2304\RC\221025_malic_enzyme\8hr\T0-1.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"F:\2204-2304\RC\221025_malic_enzyme\8hr\T0-1.d" ,"1" ,3.710,5.059,5.457,45704.26,2145042.20,100.00,100.00,100.00,0.782,,0.00,27805.01,,,,,335.22,24916.28,1.91,72440.88,,,  ,191.0144,,,,,,,,,,,,
+
+"F:\2204-2304\RC\221025_malic_enzyme\t0-2.d"," -ESI EIC(147.0299) Scan Frag=175.0V t0-2.d "
+"F:\2204-2304\RC\221025_malic_enzyme\t0-2.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"F:\2204-2304\RC\221025_malic_enzyme\t0-2.d" ,"1" ,3.612,4.580,5.464,108230.28,2919480.39,100.00,100.00,100.00,0.450,,0.00,12915.44,,,,,646.63,12707.38,1.03,104055.33,,,  ,191.0139,,,,,,,,,,,,
+
+"F:\2204-2304\RC\221025_malic_enzyme\8hr\T0-2.d"," -ESI EIC(147.0299) Scan Frag=175.0V T0-2.d "
+"F:\2204-2304\RC\221025_malic_enzyme\8hr\T0-2.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"F:\2204-2304\RC\221025_malic_enzyme\8hr\T0-2.d" ,"1" ,3.608,4.039,4.520,152271.48,1066255.75,100.00,100.00,57.51,0.117,,0.00,2107.93,,,,,577.41,1629.47,0.94,201733.34,,,  ,248.9701,,,,,,,,,,,,
+"F:\2204-2304\RC\221025_malic_enzyme\8hr\T0-2.d" ,"2" ,4.520,5.031,5.514,37266.78,787669.46,73.87,24.47,42.49,0.352,,2107.93,15220.97,,,,,1629.47,8998.48,0.67,34865.21,,,  ,191.0144,,,,,,,,,,,,
+
+"F:\2204-2304\RC\221025_malic_enzyme\t0-3.d"," -ESI EIC(147.0299) Scan Frag=175.0V t0-3.d "
+"F:\2204-2304\RC\221025_malic_enzyme\t0-3.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"F:\2204-2304\RC\221025_malic_enzyme\t0-3.d" ,"1" ,3.610,4.583,5.462,108490.80,2861896.70,100.00,100.00,100.00,0.440,,0.00,13972.11,,,,,354.41,12144.51,1.05,97391.13,,,  ,191.0139,,,,,,,,,,,,
+
+"F:\2204-2304\RC\221025_malic_enzyme\8hr\T0-3.d"," -ESI EIC(147.0299) Scan Frag=175.0V T0-3.d "
+"F:\2204-2304\RC\221025_malic_enzyme\8hr\T0-3.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"F:\2204-2304\RC\221025_malic_enzyme\8hr\T0-3.d" ,"1" ,3.711,5.016,5.458,29325.67,1669742.36,100.00,100.00,100.00,0.949,,0.00,7499.61,,,,,230.38,6870.38,4.82,30423.46,,,  ,191.0144,,,,,,,,,,,,
+
+"F:\2204-2304\RC\221025_malic_enzyme\tp-1.d"," -ESI EIC(147.0299) Scan Frag=175.0V tp-1.d "
+"F:\2204-2304\RC\221025_malic_enzyme\tp-1.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"F:\2204-2304\RC\221025_malic_enzyme\tp-1.d" ,"1" ,3.608,4.860,5.461,13372.89,539401.25,100.00,100.00,100.00,0.623,,388.00,4763.36,,,,,215.34,5451.46,0.94,18539.83,,,  ,191.0139,,,,,,,,,,,,
+
+"F:\2204-2304\RC\221025_malic_enzyme\8hr\TP-1.d"," -ESI EIC(147.0299) Scan Frag=175.0V TP-1.d "
+"F:\2204-2304\RC\221025_malic_enzyme\8hr\TP-1.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"F:\2204-2304\RC\221025_malic_enzyme\8hr\TP-1.d" ,"1" ,3.609,4.068,4.773,154363.54,1581740.10,100.00,100.00,56.10,0.171,,568.25,0.00,,,,,180.50,0.00,0.93,328950.34,,,  ,147.0234,,,,,,,,,,,,
+"F:\2204-2304\RC\221025_malic_enzyme\8hr\TP-1.d" ,"2" ,4.773,5.136,5.515,38234.56,1237970.33,78.27,24.77,43.90,0.516,,0.00,19108.21,,,,,0.00,8252.85,0.77,43069.05,,,  ,191.0144,,,,,,,,,,,,
+
+"F:\2204-2304\RC\221025_malic_enzyme\tp-2.d"," -ESI EIC(147.0299) Scan Frag=175.0V tp-2.d "
+"F:\2204-2304\RC\221025_malic_enzyme\tp-2.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"F:\2204-2304\RC\221025_malic_enzyme\tp-2.d" ,"1" ,3.610,4.800,5.463,13465.66,292043.28,100.00,100.00,100.00,0.361,,357.02,1575.02,,,,,109.00,1201.50,1.49,13817.37,,,  ,191.0139,,,,,,,,,,,,
+
+"F:\2204-2304\RC\221025_malic_enzyme\8hr\TP-2.d"," -ESI EIC(147.0299) Scan Frag=175.0V TP-2.d "
+"F:\2204-2304\RC\221025_malic_enzyme\8hr\TP-2.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"F:\2204-2304\RC\221025_malic_enzyme\8hr\TP-2.d" ,"1" ,3.608,4.040,4.532,229627.71,629509.37,59.26,100.00,37.21,0.046,,1092.88,0.00,,,,,21319.44,21319.44,1.11,363173.78,,,  ,147.0234,,,,,,,,,,,,
+"F:\2204-2304\RC\221025_malic_enzyme\8hr\TP-2.d" ,"2" ,4.532,4.965,5.513,53114.56,1062229.71,100.00,23.13,62.79,0.333,,0.00,19142.22,,,,,21319.44,21319.44,0.33,81422.22,,,  ,191.0144,,,,,,,,,,,,
+
+"F:\2204-2304\RC\221025_malic_enzyme\tp-3.d"," -ESI EIC(147.0299) Scan Frag=175.0V tp-3.d "
+"F:\2204-2304\RC\221025_malic_enzyme\tp-3.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"F:\2204-2304\RC\221025_malic_enzyme\tp-3.d" ,"1" ,3.610,4.864,5.462,476.86,22094.42,100.00,100.00,100.00,0.720,,343.00,0.00,,,,,71.31,292.64,1.85,1041.35,,,  ,248.9694,,,,,,,,,,,,
+
+"F:\2204-2304\RC\221025_malic_enzyme\8hr\TP-3.d"," -ESI EIC(147.0299) Scan Frag=175.0V TP-3.d "
+"F:\2204-2304\RC\221025_malic_enzyme\8hr\TP-3.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"F:\2204-2304\RC\221025_malic_enzyme\8hr\TP-3.d" ,"1" ,3.606,4.046,4.665,220379.75,520185.73,31.72,100.00,24.08,0.039,,0.00,0.00,,,,,23267.75,23267.75,2.24,387946.66,,,  ,147.0304,,,,,,,,,,,,
+"F:\2204-2304\RC\221025_malic_enzyme\8hr\TP-3.d" ,"2" ,4.665,4.919,5.512,106154.14,1640008.19,100.00,48.17,75.92,0.257,,0.00,21675.38,,,,,23267.75,23267.75,0.56,110835.87,,,  ,191.0144,,,,,,,,,,,,
+
+"F:\2204-2304\RC\221025_malic_enzyme\zero1.d"," -ESI EIC(147.0299) Scan Frag=175.0V zero1.d "
+"F:\2204-2304\RC\221025_malic_enzyme\zero1.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"F:\2204-2304\RC\221025_malic_enzyme\zero1.d" ,"1" ,3.708,4.606,5.459,103337.45,1939596.68,100.00,100.00,100.00,0.313,,1816.88,12264.48,,,,,14253.16,13112.41,0.73,91151.80,,,  ,191.0139,,,,,,,,,,,,
+
+"F:\2204-2304\RC\221025_malic_enzyme\zero2.d"," -ESI EIC(147.0299) Scan Frag=175.0V zero2.d "
+"F:\2204-2304\RC\221025_malic_enzyme\zero2.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"F:\2204-2304\RC\221025_malic_enzyme\zero2.d" ,"1" ,3.610,4.588,5.462,104770.46,2988516.03,100.00,100.00,100.00,0.475,,0.00,13873.92,,,,,840.56,13086.70,1.04,96688.21,,,  ,191.0139,,,,,,,,,,,,
+
+"F:\2204-2304\RC\221025_malic_enzyme\zero3.d"," -ESI EIC(147.0299) Scan Frag=175.0V zero3.d "
+"F:\2204-2304\RC\221025_malic_enzyme\zero3.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"F:\2204-2304\RC\221025_malic_enzyme\zero3.d" ,"1" ,3.607,4.588,5.459,105337.21,2747386.93,100.00,100.00,100.00,0.435,,1230.31,12918.01,,,,,875.03,12758.78,1.01,99076.35,,,  ,191.0139,,,,,,,,,,,,
+
