@@ -5,4 +5,5 @@ src/frenda_brenda/Files/brenda_download.txt
 __pycache__/
 .*
 models/binaries/
+models/binaries2/
 *dat_big

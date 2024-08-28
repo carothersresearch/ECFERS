@@ -1,0 +1,38 @@
+# Initialize concentrations 
+species C00003;
+C00003= v338*0.001*dilution_factor; 
+species C00004;
+C00004= v581*1.083*dilution_factor; 
+species C00036;
+C00036= v359*0.0*dilution_factor; 
+species C00080;
+C00080= v593*0.0001*dilution_factor; 
+species C00149;
+C00149= v539*1.7*dilution_factor; 
+species EC11137;
+EC11137= p_EC11137*rel0*0.013770659*dilution_factor; 
+
+# Initialize parameters 
+Kcat_F_R61 =3.0071600060000003; 
+Kcat_R_R61 =467.479811568; 
+
+Km_C00004_EC11137 =0.061; 
+Km_C00036_EC11137 =0.0445; 
+Km_C00080_EC11137 =1.627506971; 
+Km_C00003_EC11137 =0.105280019; 
+Km_C00149_EC11137 =0.00012; 
+
+
+# Initialize variables 
+v338 =1;
+v581 =1; 
+v359 =1; 
+v593 =1; 
+v539 =1; 
+rel0 =1; 
+p_EC11137 =1; 
+dilution_factor =1; 
+# Define specified reactions 
+
+R61 : C00003 + C00149 + EC11137 -> EC11137 + C00004 + C00036 + C00080; 
+R61 = EC11137 * (Kcat_F_R61*(C00003*C00149)/(Km_C00003_EC11137*Km_C00149_EC11137) - Kcat_R_R61*(C00004*C00036)/(Km_C00004_EC11137*Km_C00036_EC11137))/((1+C00003/Km_C00003_EC11137)*(1+C00149/Km_C00149_EC11137) + (1+C00004/Km_C00004_EC11137)*(1+C00036/Km_C00036_EC11137) -1); 

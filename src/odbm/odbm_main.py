@@ -64,6 +64,14 @@ class ModelBuilder:
         self.species = species
         self.rxns = reactions
 
+        self.rxn_species = [] 
+        for cell in sum([list(self.rxns[m]) for m in ['Substrates','Products','Inhibitors']],[]):
+            if type(cell) is str:
+                ids = cell.replace(' ','').split(';')
+                for i in ids:
+                    if i not in species:
+                        self.rxn_species.append(i)
+
     def addMechanism(self, new_mechanism: Mechanism):
         """Adds a new Mechanism to the internal mechanism dictionary 
 
@@ -90,7 +98,8 @@ class ModelBuilder:
                 # maybe check inputs??
 
         if not self.species['Label'].str.contains(Label).any(): # if this species does not already exist
-            self.species = self.species.append(args,ignore_index = True) 
+            if Label in self.rxn_species:
+                self.species = self.species.append(args,ignore_index = True) 
         else:
             raise('This species already exists in dataframe.')
 
@@ -226,6 +235,11 @@ class ModelBuilder:
         else: eq_str = ''
 
         rate_str = M.writeRate()
+        
+        # if any variables are already defined, skip them
+        rate_vars = rate_str.split('; \n')
+        rate_str = '; \n'.join([v for v in rate_vars if v not in self.r_str])
+
         for mod in m[1:]:
             MOD = self.mech_dict[mod.strip()](rxn)
             rate_str = MOD.apply(rate_str)
@@ -304,11 +318,13 @@ class ModelBuilder:
                         self.applyMechanism(m,s)
 
         for _, sp in S.iterrows():
-            self.s_str += self.writeSpecies(sp)
-            self.s_str += self.writeParameters(sp['Parameters'], sp['Label'], required = False)
-            self.v_str += self.writeVariable(sp['Relative'])
-            if sp['Type'] == 'Enzyme':
-                self.v_str += self.writeVariable('p_'+'EC'+sp['EC'].replace('.',''))
+            if (sp['Label'] in self.rxn_species) or (sp['Type'] == 'Enzyme'):
+                self.s_str += self.writeSpecies(sp)
+                self.s_str += self.writeParameters(sp['Parameters'], sp['Label'], required = False)
+                self.v_str += self.writeVariable(sp['Relative'])
+                if sp['Type'] == 'Enzyme':
+                    self.v_str += self.writeVariable('p_'+'EC'+sp['EC'].replace('.',''))
+                    
         self.v_str += self.writeVariable('dilution_factor')
 
         for _, rxn in self.rxns.iterrows():
@@ -323,14 +339,18 @@ class ModelBuilder:
                 ki = ';' + kis if not pd.isnull(kis) else ''
                 parameters = rxn['Km'] + ki
             self.p_str += self.writeParameters(rxn['Kcat'], rxn['Label'])
+            self.p_str += self.writeParameters(rxn['Keq'], rxn['Label'])
+            self.p_str += self.writeVariable('Kcat_V_'+rxn['Label'], 1)
             self.p_str += self.writeParameters(parameters, EC)
             self.r_str += self.writeReaction(rxn) + '\n'
 
             if not pd.isnull(rxn['KI']):
                 for i in rxn['Inhibitors'].split(';'):
                     if np.all([j not in i for j in ['D','G']]): 
-                        var = 'Gi_'+i+'_'+EC
-                        self.v_str += self.writeVariable(var, value = 0.5)
+                        var = 'Gnc_'+i+'_'+EC
+                        self.v_str += self.writeVariable(var, value = 1)
+                        var = 'Gc_'+i+'_'+EC
+                        self.v_str += self.writeVariable(var, value = 1)
 
         return self.s_str + self.p_str + self.v_str + self.r_str
 

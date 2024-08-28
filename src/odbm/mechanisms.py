@@ -210,6 +210,17 @@ class ModularRateLaw(Mechanism):
     def _ignore_species(self, species):
         return [s for s in species if s not in self.ignore]
 
+    def haldane_kcats(self):
+        substrates = self._ignore_species(self.substrates)
+        products = self._ignore_species(self.products)
+
+        allKmS = '*'.join(['Km_'+s+'_'+self.enzyme[0] for s in substrates])
+        allKmP = '*'.join(['Km_'+p+'_'+self.enzyme[0] for p in products])
+        Keq = 'Keq_' + self.label
+        kcat_F = 'Kcat_V_' + self.label +'*('+Keq+'*('+ allKmS +')/('+ allKmP +'))^(0.5)'
+        kcat_R = 'Kcat_V_' + self.label +'*('+Keq+'*('+ allKmS +')/('+ allKmP +'))^(-0.5)'
+        return kcat_F, kcat_R
+
     def numerators(self) -> str:
         substrates = self._ignore_species(self.substrates)
         products = self._ignore_species(self.products)
@@ -220,8 +231,8 @@ class ModularRateLaw(Mechanism):
         allKmS = '*'.join(['Km_'+s+'_'+self.enzyme[0] for s in substrates])
         allKmP = '*'.join(['Km_'+p+'_'+self.enzyme[0] for p in products])
 
-        kcatF = 'Kcat_F_' + self.label
-        kcatR = 'Kcat_R_' + self.label
+        kcatF = 'hKcat_F_' + self.label
+        kcatR = 'hKcat_R_' + self.label
 
         return '('+kcatF+'*('+ allS +')/('+ allKmS +'))', '('+ kcatR +'*('+ allP +')/('+ allKmP +'))'
     
@@ -238,36 +249,43 @@ class ModularRateLaw(Mechanism):
     def inhibition_nc(self) -> str: # only activity
         inhibitors = self._ignore_species(self.inhibitors)
         allKi = ['Ki_'+i+'_'+self.enzyme[0] for i in inhibitors] 
-        allGi = ['Gi_'+i+'_'+self.enzyme[0] for i in inhibitors] # degree of competition (1 = full c, 0 = full nc)
-        fr = '*'.join(['(1-'+Gi+')/(1+'+i+'/'+Ki+')' for i, Ki, Gi in zip(inhibitors, allKi, allGi)])
+        allGnc = ['Gnc_'+i+'_'+self.enzyme[0] for i in inhibitors] # degree of inhibition (1 = no inh c, 0 = full inh)
+        fr = '*'.join(['('+Gnc+'+(1-'+Gnc+')*(1/(1+'+i+'/'+Ki+')))' for i, Ki, Gnc in zip(inhibitors, allKi, allGnc)])
         return fr
     
     def inhibition_c(self) -> str: # only binding
         inhibitors = self._ignore_species(self.inhibitors)
         allKi = ['Ki_'+i+'_'+self.enzyme[0] for i in inhibitors] 
-        allGi = ['Gi_'+i+'_'+self.enzyme[0] for i in inhibitors] # degree of competition (1 = full c, 0 = full nc)
-        dreg = '+'.join(['('+i+'*'+Gi+'/'+Ki+')' for i, Ki, Gi in zip(inhibitors, allKi, allGi)])
+        allGc = ['Gc_'+i+'_'+self.enzyme[0] for i in inhibitors] # degree of inhibition (1 = no inh c, 0 = full inh)
+        dreg = '+'.join(['(1-'+Gc+')*('+i+'/'+Ki+')' for i, Ki, Gc in zip(inhibitors, allKi, allGc)])
         return dreg
     
     @overrides
     def writeRate(self) -> str:
+        kcat_F, kcat_R = self.haldane_kcats()
+        hkcat_F = 'hKcat_F_' + self.label+ ' := '+kcat_F
+        hkcat_R = 'hKcat_R_' + self.label+ ' := '+kcat_R
+
         u = self.enzyme[0]
         Tf, Tr = self.numerators()
-        D = self.denominator()
+
+        D = self.label +'_D := ' + self.denominator()
 
         if len(self.inhibitors)>0:
-            fr = self.inhibition_nc()
-            Dreg = self.inhibition_c()
+            fr = u +'_fr := ' + self.inhibition_nc()
+            Dreg = u +'_Dreg := ' + self.inhibition_c()
 
-            rate_f = self.label +'_f = '+ u + ' * ' + fr + ' * ' + Tf + '/(' + D + ' + ' + Dreg + ')'
-            rate_r = self.label +'_r = '+ u + ' * ' + fr + ' * ' + Tr + '/(' + D + ' + ' + Dreg + ')'
-            
+            rate_f = self.label +'_f := '+ u + ' * ' + u +'_fr' + ' * ' + Tf + '/(' + self.label +'_D' + ' + ' + u +'_Dreg' + ')'
+            rate_r = self.label +'_r := '+ u + ' * ' + u +'_fr' + ' * ' + Tr + '/(' + self.label +'_D' + ' + ' + u +'_Dreg' + ')'
+            rate_net = self.label +' = '+self.label +'_f' + ' - ' + self.label +'_r'
+            rate = fr + '; \n' + Dreg + '; \n' + D + '; \n' +  hkcat_F + '; \n' +  hkcat_R + '; \n' +  rate_f + '; \n' + rate_r + '; \n' + rate_net
+
         else:
-            rate_f = self.label +'_f = '+ u + ' * ' + Tf + '/' + D
-            rate_r = self.label +'_r = '+ u + ' * ' + Tr + '/' + D
+            rate_f = self.label +'_f := '+ u + ' * ' + Tf + '/' + self.label +'_D'
+            rate_r = self.label +'_r := '+ u + ' * ' + Tr + '/' + self.label +'_D'
+            rate_net = self.label +' = '+self.label +'_f' + ' - ' + self.label +'_r'
+            rate = D + '; \n' +  hkcat_F + '; \n' +  hkcat_R + '; \n' +  rate_f + '; \n' + rate_r + '; \n' + rate_net
 
-        rate_net = self.label +' = '+self.label +'_f' + ' - ' + self.label +'_r'
-        rate = rate_f + '; \n' + rate_r + '; \n' + rate_net
         return rate
 
 class OrderedBisubstrateBiproduct(Mechanism):

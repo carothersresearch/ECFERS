@@ -1,0 +1,93 @@
+Label,EC,Type,StartingConc,Conc,Mechanisms,Parameters,Species,Relative
+Dna-directed rna polymerase,2.7.7.6,Enzyme,0.067026945,,,,Escherichia coli,rel0
+WP_000049367.1,2.8.4.4,Enzyme,0.000913174,,,,Escherichia coli,rel0
+WP_001295704.1,2.1.1.298,Enzyme,0.000365269,,,,Escherichia coli,rel0
+WP_000790168.1,3.6.5.n1,Enzyme,0.001643713,,,,Escherichia coli,rel0
+Alanine-trna ligase,6.1.1.7,Enzyme,0.015158683,,,,Escherichia coli,rel0
+Isoleucine-trna ligase,6.1.1.5,Enzyme,0.012236527,,,,Escherichia coli,rel0
+Proline-trna ligase,6.1.1.15,Enzyme,0.012601796,,,,Escherichia coli,rel0
+Phenylalanine-trna ligase,6.1.1.20,Enzyme,0.014976047,,,,Escherichia coli,rel0
+Serine-trna ligase,6.1.1.11,Enzyme,0.008766467,,,,Escherichia coli,rel0
+Leucine-trna ligase,6.1.1.4,Enzyme,0.008035928,,,,Escherichia coli,rel0
+Glutamate-trna ligase,6.1.1.17,Enzyme,0.007853293,,,,Escherichia coli,rel0
+Glycine-trna ligase,6.1.1.14,Enzyme,0.011871258,,,,Escherichia coli,rel0
+Valine-trna ligase,6.1.1.9,Enzyme,0.005296407,,,,Escherichia coli,rel0
+Asparagine-trna ligase,6.1.1.22,Enzyme,0.00694012,,,,Escherichia coli,rel0
+Threonine-trna ligase,6.1.1.3,Enzyme,0.005844311,,,,Escherichia coli,rel0
+Histidine-trna ligase,6.1.1.21,Enzyme,0.00657485,,,,Escherichia coli,rel0
+Methionine-trna ligase,6.1.1.10,Enzyme,0.006392216,,,,Escherichia coli,rel0
+Lysine-trna ligase,6.1.1.6,Enzyme,0.015158683,,,,Escherichia coli,rel0
+Tyrosine-trna ligase,6.1.1.1,Enzyme,0.005113772,,,,Escherichia coli,rel0
+Glutamine-trna ligase,6.1.1.18,Enzyme,0.004017964,,,,Escherichia coli,rel0
+Arginine-trna ligase,6.1.1.19,Enzyme,0.003835329,,,,Escherichia coli,rel0
+Tryptophan-trna ligase,6.1.1.2,Enzyme,0.002556886,,,,Escherichia coli,rel0
+Cysteine-trna ligase,6.1.1.16,Enzyme,0.002739521,,,,Escherichia coli,rel0
+C00078,,Metabolite,0.001,,,,,v1
+C02987,,Metabolite,0.001,,,,,v2
+C03512,,Metabolite,0.001,,,,,v3
+C00044,,Metabolite,0.001,,,,,v4
+C16636,,Metabolite,0.001,,,,,v5
+C02047,,Metabolite,0.001,,,,,v6
+C00123,,Metabolite,0.001,,,,,v7
+C01649,,Metabolite,0.001,,,,,v8
+C00013,,Metabolite,0,,,,,v9
+C00188,,Metabolite,0.001,,,,,v10
+C01653,,Metabolite,0.001,,,,,v11
+C00097,,Metabolite,0.001,,,,,v12
+C01640,,Metabolite,0.001,,,,,v13
+C00075,,Metabolite,0.001,,,,,v14
+C00064,,Metabolite,0.001,,,,,v15
+C03402,,Metabolite,0.001,,,,,v16
+C02992,,Metabolite,0.001,,,,,v17
+C06481,,Metabolite,0.001,,,,,v18
+C00079,,Metabolite,0.001,,,,,v19
+C00047,,Metabolite,0.001,,,,,v20
+C00183,,Metabolite,0.001,,,,,v21
+C00073,,Metabolite,0.001,,,,,v22
+C01646,,Metabolite,0.001,,,,,v23
+C02988,,Metabolite,0.001,,,,,v24
+C01648,,Metabolite,0.001,,,,,v25
+C01645,,Metabolite,0.001,,,,,v26
+C00148,,Metabolite,0.001,,,,,v27
+C01650,,Metabolite,0.001,,,,,v28
+C00037,,Metabolite,0.001,,,,,v29
+C02839,,Metabolite,0.001,,,,,v30
+C01637,,Metabolite,0.001,,,,,v31
+C05335,,Metabolite,0.001,,,,,v32
+C05336,,Metabolite,0.001,,,,,v33
+C01635,,Metabolite,0.001,,,,,v34
+C00002,,Metabolite,0.001,,,,,v35
+C00041,,Metabolite,0.001,,,,,v36
+C01641,,Metabolite,0.001,,,,,v37
+C01644,,Metabolite,0.001,,,,,v38
+C02554,,Metabolite,0.001,,,,,v39
+C02412,,Metabolite,0.001,,,,,v40
+C01647,,Metabolite,0.001,,,,,v41
+C00201,,Metabolite,0.001,,,,,v42
+C02282,,Metabolite,0.001,,,,,v43
+C03125,,Metabolite,0.001,,,,,v44
+C00065,,Metabolite,0.001,,,,,v45
+C01651,,Metabolite,0.001,,,,,v46
+C00063,,Metabolite,0.001,,,,,v47
+C00046,,Metabolite,0.001,,,,,v48
+C00062,,Metabolite,0.001,,,,,v49
+C01639,,Metabolite,0.001,,,,,v50
+C02163,,Metabolite,0.001,,,,,v51
+C00082,,Metabolite,0.001,,,,,v52
+C00135,,Metabolite,0.001,,,,,v53
+C01643,,Metabolite,0.001,,,,,v54
+C03127,,Metabolite,0.001,,,,,v55
+C00152,,Metabolite,0.001,,,,,v56
+C00025,,Metabolite,0.001,,,,,v57
+C00787,,Metabolite,0.001,,,,,v58
+C01652,,Metabolite,0.001,,,,,v59
+C01636,,Metabolite,0.001,,,,,v60
+C03511,,Metabolite,0.001,,,,,v61
+C02553,,Metabolite,0.001,,,,,v62
+C01931,,Metabolite,0.001,,,,,v63
+C00020,,Metabolite,0.001,,,,,v64
+C00407,,Metabolite,0.001,,,,,v65
+C00886,,Metabolite,0.001,,,,,v66
+C02702,,Metabolite,0.001,,,,,v67
+C01642,,Metabolite,0.001,,,,,v68
+C02430,,Metabolite,0.001,,,,,v69

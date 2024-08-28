@@ -12,6 +12,7 @@ def save(file, array):
             f.write(magic_string)
             f.write(header)
             f.write(array.data)
+    del array, header, magic_string
 
 def pack(array):
     size=len(array.shape)
