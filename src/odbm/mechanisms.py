@@ -48,7 +48,11 @@ class Mechanism(EnforceOverrides):
     def __init__(self,rxn: pd.DataFrame):
 
         try:
-            self.enzyme = 'EC'+rxn['EC'].replace('.','')
+            if rxn['Accession Number'] == 'Heterologous':
+                EC = 'hEC'+rxn['EC'].replace('.','')
+            else:
+                EC = 'eEC'+rxn['EC'].replace('.','')
+            self.enzyme = EC
             self.substrates = rxn['Substrates']
             self.products = rxn['Products']
             self.inhibitors = rxn['Inhibitors']
@@ -143,7 +147,7 @@ class Mechanism(EnforceOverrides):
         self.products = list(map(fmt, self.products))
         self.substrates = list(map(fmt, self.substrates))
         self.inhibitors = list(map(fmt, self.inhibitors)) if not pd.isnull(self.Ki) else self.inhibitors
-        self.enzyme = list(map(fmt, self.enzyme))
+        self.enzyme = self.enzyme
         #self.cofactors = list(map(fmt, self.cofactors))
 
     def writeEquation(self) -> str:

@@ -400,12 +400,13 @@ class SBMLGlobalFit_Multi_Fly:
                 self.rows[s] = [np.where(np.linspace(0, metadata['timepoints'][s][-1], cvode_timepoints) < (t+0.1))[0][-1] for t in metadata['timepoints'][s]]
             del r
 
-    def __init__(self, model:list, data:list, parameter_labels, lower_bounds, upper_bounds, metadata:list, variables:list, scale = False, dlambda=1):
+    def __init__(self, model:list, data:list, data_weights:list, parameter_labels, lower_bounds, upper_bounds, metadata:list, variables:list, scale = False, dlambda=1):
         self.model = model # now a list of models
         self.parameter_labels = parameter_labels # all parameters across all models, only the ones that are going to be fitted
         self.set_bounds(upper_bounds, lower_bounds)
         self.scale = scale
         self.data = data # now a list of data
+        self.data_weights = data_weights
         self.metadata = metadata # now a list of metadas
         self.variables = variables # # now a list of dict of labels and values
 
@@ -417,7 +418,7 @@ class SBMLGlobalFit_Multi_Fly:
     def fitness(self, x):
         if self.scale: x = self._unscale(x)
         res = self._simulate(x)
-        obj = np.nansum([np.nansum([self._residual(results, data[sample], sample, ms) for sample, results in resdict.items()]) for data,ms,resdict in zip(self.data,self.model_stuff,res)])
+        obj = np.nansum([np.nansum([self._residual(results, data[sample], weights[sample], sample, ms) for sample, results in resdict.items()]) for data,weights,ms,resdict in zip(self.data,self.weights,self.model_stuff,res)])
         del res
         return [obj]
     
@@ -470,10 +471,7 @@ class SBMLGlobalFit_Multi_Fly:
                 for label, value in variables[sample].items():
                     if not np.isnan(value):
                         if label in ms.species_labels:
-                            if 'EC' not in label:
-                                r.setValue('['+label+']', value)
-                            else: 
-                                r.setValue('['+label+']', value*variables[sample]['dilution_factor']*x[-1]) # this is a bit obtuse: [plasmid] * DF * rel1
+                            r.setValue('['+label+']', value)
                 try:
                     results[sample] = r.simulate(0,metadata['timepoints'][sample][-1],self.cvode_timepoints)[:,1:].__array__()
                 except Exception as e:
@@ -484,17 +482,17 @@ class SBMLGlobalFit_Multi_Fly:
         del Config, RoadRunner, Logger, results
         return all_results
                 
-    def _residual(self,results,data,sample,modelstuff):
+    def _residual(self,results,data,weights,sample,modelstuff):
         cols = modelstuff.cols[sample]
         rows = modelstuff.rows[sample]
         dcols = modelstuff.data_cols[sample]
         
         if data.shape == results.shape:
-            error = (data[:,dcols]-results[:,dcols])
-            d_error = (np.diff(data[:,dcols],axis=0)-np.diff(results[:,dcols],axis=0))
+            error = (data[:,dcols]-results[:,dcols])*weights[:,dcols]
+            d_error = (np.diff(data[:,dcols],axis=0)-np.diff(results[:,dcols],axis=0))*((weights[:,dcols]*np.roll(weights[:,dcols],1,axis=0))[:-1,:])
         else:
-            error = (data[:,dcols]-results[:,cols][rows,:])
-            d_error = (np.diff(data[:,dcols],axis=0)-np.diff(results[:,cols][rows,:],axis=0))
+            error = (data[:,dcols]-results[:,cols][rows,:])*weights[:,dcols]
+            d_error = (np.diff(data[:,dcols],axis=0)-np.diff(results[:,cols][rows,:],axis=0))*((weights[:,dcols]*np.roll(weights[:,dcols],1,axis=0))[:-1,:])
 
         RMSE = np.concatenate([np.sqrt(np.nansum(error**2, axis=0)/np.count_nonzero(~np.isnan(error))), self.dlambda*np.sqrt(np.nansum(d_error**2, axis=0)/np.count_nonzero(~np.isnan(d_error)))])
         # NRMSE = RMSE/(np.nanmax(data[:,dcols], axis=0) - np.nanmin(data[:,dcols], axis=0) + 1e-6)

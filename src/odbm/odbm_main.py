@@ -185,8 +185,11 @@ class ModelBuilder:
         Returns:
             str: initialized species
         """        
-        if species['Type'] == 'Enzyme':
-            label = 'EC'+species['EC'].replace('.','')
+        if species['Type'] == 'Endogenous Enzyme':
+            label = 'eEC'+species['EC'].replace('.','')
+            present = 'p_'+label+'*'
+        elif species['Type'] == 'Heterologous Enzyme':
+            label = 'hEC'+species['EC'].replace('.','')
             present = 'p_'+label+'*'
         else:
             label = fmt(species['Label'])
@@ -318,17 +321,23 @@ class ModelBuilder:
                         self.applyMechanism(m,s)
 
         for _, sp in S.iterrows():
-            if (sp['Label'] in self.rxn_species) or (sp['Type'] == 'Enzyme'):
+            if (sp['Label'] in self.rxn_species) or ('Enzyme' in sp['Type']):
                 self.s_str += self.writeSpecies(sp)
                 self.s_str += self.writeParameters(sp['Parameters'], sp['Label'], required = False)
                 self.v_str += self.writeVariable(sp['Relative'])
-                if sp['Type'] == 'Enzyme':
-                    self.v_str += self.writeVariable('p_'+'EC'+sp['EC'].replace('.',''))
+                if sp['Type'] == 'Endogenous Enzyme':
+                    self.v_str += self.writeVariable('p_e'+'EC'+sp['EC'].replace('.',''))
+                if sp['Type'] == 'Heterologous Enzyme':
+                    self.v_str += self.writeVariable('p_h'+'EC'+sp['EC'].replace('.',''))
                     
         self.v_str += self.writeVariable('dilution_factor')
 
         for _, rxn in self.rxns.iterrows():
-            EC = 'EC'+rxn['EC'].replace('.','')
+            if rxn['Accession Number'] == 'Heterologous':
+                EC = 'hEC'+rxn['EC'].replace('.','')
+            else:
+                EC = 'eEC'+rxn['EC'].replace('.','')
+                
             try:
                 parameters = rxn['Parameters']
             except:
