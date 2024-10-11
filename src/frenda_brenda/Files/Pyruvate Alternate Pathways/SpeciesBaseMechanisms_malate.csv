@@ -1,0 +1,302 @@
+Label,EC,Type,StartingConc,Conc,Mechanisms,Parameters,Species,Relative
+Glucose-6-phosphate isomerase,5.3.1.9,Enzyme,0.001278443,,,,Escherichia coli,rel0
+6-phosphofructokinase,2.7.1.11,Enzyme,0.001095808,,,,Escherichia coli,rel0
+Fructose-bisphosphatase,3.1.3.11,Enzyme,0.001826347,,,,Escherichia coli,rel0
+Fructose-bisphosphate aldolase,4.1.2.13,Enzyme,0.005661677,,,,Escherichia coli,rel0
+Triose-phosphate isomerase,5.3.1.1,Enzyme,0.002374251,,,,Escherichia coli,rel0
+Phosphoglycerate kinase,2.7.2.3,Enzyme,0.009131737,,,,Escherichia coli,rel0
+Phosphopyruvate hydratase,4.2.1.11,Enzyme,0.009314371,,,,Escherichia coli,rel0
+"Pyruvate, water dikinase",2.7.9.2,Enzyme,0.00657485,,,,Escherichia coli,rel0
+Pyruvate kinase,2.7.1.40,Enzyme,0.01041018,,,,Escherichia coli,rel0
+Pyruvate dehydrogenase (acetyl-transferring),1.2.4.1,Enzyme,0.011323353,,,,Escherichia coli,rel0
+Aconitate hydratase,4.2.1.3,Enzyme,0.017715569,,,,Escherichia coli,rel0
+Oxoglutarate dehydrogenase (succinyl-transferring),1.2.4.2,Enzyme,0.01698503,,,,Escherichia coli,rel0
+Succinate-coa ligase (adp-forming),6.2.1.5,Enzyme,0.019907186,,,,Escherichia coli,rel0
+Succinate dehydrogenase,1.3.5.1,Enzyme,0.001826347,,,,Escherichia coli,rel0
+Fumarate hydratase,4.2.1.2,Enzyme,0.006026946,,,,Escherichia coli,rel0
+Malate dehydrogenase,1.1.1.37,Enzyme,0.007670659,,,,Escherichia coli,rel0
+"Phosphogluconate dehydrogenase (nadp+-dependent, decarboxylating)",1.1.1.44,Enzyme,0.005479042,,,,Escherichia coli,rel0
+Ribulose-phosphate 3-epimerase,5.1.3.1,Enzyme,0.000547904,,,,Escherichia coli,rel0
+Ribose-5-phosphate isomerase,5.3.1.6,Enzyme,0.001643713,,,,Escherichia coli,rel0
+Transketolase,2.2.1.1,Enzyme,0.01004491,,,,Escherichia coli,rel0
+Transaldolase,2.2.1.2,Enzyme,0.008401198,,,,Escherichia coli,rel0
+3-oxoacyl-[acyl-carrier-protein] reductase,1.1.1.100,Enzyme,0.000913174,,,,Escherichia coli,rel0
+Enoyl-[acyl-carrier-protein] reductase (nadh),1.3.1.9,Enzyme,0.007305389,,,,Escherichia coli,rel0
+Beta-ketoacyl-[acyl-carrier-protein] synthase iii,2.3.1.180,Enzyme,0.001643713,,,,Escherichia coli,rel0
+[acyl-carrier-protein] s-malonyltransferase,2.3.1.39,Enzyme,0.001461078,,,,Escherichia coli,rel0
+Beta-ketoacyl-[acyl-carrier-protein] synthase i,2.3.1.41,Enzyme,0.00347006,,,,Escherichia coli,rel0
+Acetyl-coa c-acyltransferase,2.3.1.16,Enzyme,0.001,,,,Escherichia coli,rel0
+Long-chain-fatty-acid-coa ligase,6.2.1.3,Enzyme,0.001,,,,Escherichia coli,rel0
+Acetyl-coa carboxylase,6.4.1.2,Enzyme,0.003287425,,,,Escherichia coli,rel0
+Biotin carboxylase,6.3.4.14,Enzyme,0.003652695,,,,Escherichia coli,rel0
+3-hydroxyacyl-[acyl-carrier-protein] dehydratase,4.2.1.59,Enzyme,0.002191617,,,,Escherichia coli,rel0
+Glycogen phosphorylase,2.4.1.1,Enzyme,0.000913174,,,,Escherichia coli,rel0
+"Phosphoglucomutase (alpha-d-glucose-1,6-bisphosphate-dependent)",5.4.2.2,Enzyme,0.002739521,,,,Escherichia coli,rel0
+Dihydrolipoyl dehydrogenase,1.8.1.4,Enzyme,0.011871257,,,,Escherichia coli,rel0
+Glycine hydroxymethyltransferase,2.1.2.1,Enzyme,0.005661677,,,,Escherichia coli,rel0
+Serine-trna ligase,6.1.1.11,Enzyme,0.005661677,,,,Escherichia coli,rel0
+Glycine-trna ligase,6.1.1.14,Enzyme,0.006392216,,,,Escherichia coli,rel0
+Membrane alanyl aminopeptidase,3.4.11.2,Enzyme,0.00347006,,,,Escherichia coli,rel0
+Glycine c-acetyltransferase,2.3.1.29,Enzyme,0.003287425,,,,Escherichia coli,rel0
+Aminomethyltransferase,2.1.2.10,Enzyme,0.002556886,,,,Escherichia coli,rel0
+Pepb aminopeptidase,3.4.11.23,Enzyme,0.002008982,,,,Escherichia coli,rel0
+Glutathione synthase,6.3.2.3,Enzyme,0.001826347,,,,Escherichia coli,rel0
+L-serine ammonia-lyase,4.3.1.17,Enzyme,0.000913174,,,,Escherichia coli,rel0
+Threonine ammonia-lyase,4.3.1.19,Enzyme,0.001643713,,,,Escherichia coli,rel0
+Leucyl aminopeptidase,3.4.11.1,Enzyme,0.000730539,,,,Escherichia coli,rel0
+Phosphoribosylamine-glycine ligase,6.3.4.13,Enzyme,0.000365269,,,,Escherichia coli,rel0
+Citrate synthase,2.3.3.16,Enzyme,0.005296407,,,,Escherichia coli,rel0
+Isocitrate dehydrogenase (nadp+),1.1.1.42,Enzyme,0.010227545,,,,Escherichia coli,rel0
+Glycine dehydrogenase (aminomethyl-transferring),1.4.4.2,Enzyme,0.004748503,,,,Escherichia coli,rel0
+C12214,,Metabolite,0.011,,,,,v1
+C00111,,Metabolite,0.37,,,,,v2
+C00345,,Metabolite,3.8,,,,,v3
+C00005,,Metabolite,0.12,,,,,v4
+C00020,,Metabolite,0.011,,,,,v5
+C00390,,Metabolite,0.011,,,,,v6
+C01172,,Metabolite,0.011,,,,,v7
+C00201,,Metabolite,0.011,,,,,v8
+C05747,,Metabolite,0.011,,,,,v9
+C05760,,Metabolite,0.011,,,,,v10
+C04688,,Metabolite,0.011,,,,,v11
+C00122,,Metabolite,0.011,,,,,v12
+C05378,,Metabolite,0.011,,,,,v13
+C05223,,Metabolite,0.011,,,,,v14
+C05749,,Metabolite,0.011,,,,,v15
+C00013,,Metabolite,0.01,,,,,v16
+C05345,,Metabolite,3.8,,,,,v17
+C05381,,Metabolite,0.011,,,,,v18
+C00103,,Metabolite,0.011,,,,,v19
+C05746,,Metabolite,0.011,,,,,v20
+C00322,,Metabolite,0.011,,,,,v21
+C05259,,Metabolite,0.011,,,,,v22
+C00002,,Metabolite,0.011,,,,,v23
+C00229,,Metabolite,0.011,,,,,v24
+C00136,,Metabolite,0.01,,,,,v25
+C05748,,Metabolite,0.011,,,,,v26
+C00347,,Metabolite,0.011,,,,,v27
+C16470,,Metabolite,0.011,,,,,v28
+C00249,,Metabolite,0.011,,,,,v29
+C00369,,Metabolite,0.011,,,,,v30
+C03069,,Metabolite,0.011,,,,,v31
+C00236,,Metabolite,0.01,,,,,v32
+C00011,,Metabolite,0.011,,,,,v33
+C00026,,Metabolite,0.44,,,,,v34
+C16219,,Metabolite,0.011,,,,,v35
+C04633,,Metabolite,0.011,,,,,v36
+C00081,,Metabolite,0.011,,,,,v37
+C03344,,Metabolite,0.011,,,,,v38
+C03356,,Metabolite,0.011,,,,,v39
+C16389,,Metabolite,0.011,,,,,v40
+C00035,,Metabolite,0.011,,,,,v41
+C00447,,Metabolite,0.011,,,,,v42
+C00008,,Metabolite,0.011,,,,,v43
+C05270,,Metabolite,0.011,,,,,v44
+C16339,,Metabolite,0.011,,,,,v45
+C00003,,Metabolite,0.011,,,,,v46
+C16335,,Metabolite,0.011,,,,,v47
+C00118,,Metabolite,0.011,,,,,v48
+C00044,,Metabolite,0.011,,,,,v49
+C05764,,Metabolite,0.011,,,,,v50
+C03735,,Metabolite,0.011,,,,,v51
+C06157,,Metabolite,0.011,,,,,v52
+C13378,,Metabolite,0.011,,,,,v53
+C05274,,Metabolite,0.011,,,,,v54
+C05755,,Metabolite,0.011,,,,,v55
+C00577,,Metabolite,0.011,,,,,v56
+C16169,,Metabolite,0.011,,,,,v57
+C16334,,Metabolite,0.011,,,,,v58
+C00279,,Metabolite,0.01,,,,,v59
+C00042,,Metabolite,7.1692,,,,,v60
+C01832,,Metabolite,0.011,,,,,v61
+C16338,,Metabolite,0.011,,,,,v62
+C04419,,Metabolite,0.011,,,,,v63
+C05752,,Metabolite,0.011,,,,,v64
+C00668,,Metabolite,0.011,,,,,v65
+C00001,,Metabolite,0.011,,,,,v66
+C03785,,Metabolite,0.011,,,,,v67
+C00286,,Metabolite,0.011,,,,,v68
+C00085,,Metabolite,0.011,,,,,v69
+C00022,,Metabolite,0.01,,,,,v70
+C05269,,Metabolite,0.011,,,,,v71
+C00197,,Metabolite,1.5,,,,,v72
+C02232,,Metabolite,0.011,,,,,v73
+C05754,,Metabolite,0.011,,,,,v74
+C05265,,Metabolite,0.011,,,,,v75
+C01094,,Metabolite,0.011,,,,,v76
+C00531,,Metabolite,0.011,,,,,v77
+C16254,,Metabolite,0.011,,,,,v78
+C00112,,Metabolite,0.011,,,,,v79
+C04246,,Metabolite,0.011,,,,,v80
+C00100,,Metabolite,0.011,,,,,v81
+C00490,,Metabolite,0.011,,,,,v82
+C16220,,Metabolite,0.011,,,,,v83
+C00685,,Metabolite,0.011,,,,,v84
+C05758,,Metabolite,0.011,,,,,v85
+C01097,,Metabolite,0.011,,,,,v86
+C00068,,Metabolite,0.011,,,,,v87
+C05763,,Metabolite,0.011,,,,,v88
+C00015,,Metabolite,0.011,,,,,v89
+C01944,,Metabolite,0.011,,,,,v90
+C00006,,Metabolite,0.0021,,,,,v91
+C07118,,Metabolite,0.011,,,,,v92
+C16173,,Metabolite,0.011,,,,,v93
+C00173,,Metabolite,0.011,,,,,v94
+C01271,,Metabolite,0.011,,,,,v95
+C04620,,Metabolite,0.011,,,,,v96
+C05761,,Metabolite,0.011,,,,,v97
+C00010,,Metabolite,1.4,,,,,v98
+C00620,,Metabolite,0.011,,,,,v99
+C12215,,Metabolite,0.011,,,,,v100
+C00199,,Metabolite,0.5,,,,,v101
+C00158,,Metabolite,0.011,,,,,v102
+C16331,,Metabolite,0.011,,,,,v103
+C05753,,Metabolite,0.011,,,,,v104
+C16330,,Metabolite,0.011,,,,,v105
+C00091,,Metabolite,0.23,,,,,v106
+C00009,,Metabolite,0.011,,,,,v107
+C05759,,Metabolite,0.011,,,,,v108
+C00149,,Metabolite,1.7,,,,,v109
+C00311,,Metabolite,0.011,,,,,v110
+C00693,,Metabolite,0.011,,,,,v111
+C05757,,Metabolite,0.011,,,,,v112
+C03939,,Metabolite,0.011,,,,,v113
+C05261,,Metabolite,0.011,,,,,v114
+C05756,,Metabolite,0.011,,,,,v115
+C00075,,Metabolite,0.011,,,,,v116
+C04619,,Metabolite,0.011,,,,,v117
+C01209,,Metabolite,0.011,,,,,v118
+C16255,,Metabolite,0.011,,,,,v119
+C00131,,Metabolite,0.011,,,,,v120
+C05751,,Metabolite,0.011,,,,,v121
+C00104,,Metabolite,0.011,,,,,v122
+C01171,,Metabolite,0.011,,,,,v123
+C05263,,Metabolite,0.011,,,,,v124
+C05745,,Metabolite,0.011,,,,,v125
+C00354,,Metabolite,15,,,,,v126
+C05382,,Metabolite,0.01,,,,,v127
+C05762,,Metabolite,0.011,,,,,v128
+C05125,,Metabolite,0.011,,,,,v129
+C00288,,Metabolite,0.011,,,,,v130
+C00083,,Metabolite,0.011,,,,,v131
+C02593,,Metabolite,0.011,,,,,v132
+C00063,,Metabolite,0.011,,,,,v133
+C00512,,Metabolite,0.011,,,,,v134
+C16466,,Metabolite,0.011,,,,,v135
+C00206,,Metabolite,0.011,,,,,v136
+C00231,,Metabolite,0.5,,,,,v137
+C15972,,Metabolite,0.011,,,,,v138
+C00399,,Metabolite,0.011,,,,,v139
+C00080,,Metabolite,0.0001,,,,,v140
+C05267,,Metabolite,0.011,,,,,v141
+C00361,,Metabolite,0.011,,,,,v142
+C00264,,Metabolite,0.011,,,,,v143
+C06250,,Metabolite,0.011,,,,,v144
+C00004,,Metabolite,0.083,,,,,v145
+C00417,,Metabolite,0.011,,,,,v146
+C05750,,Metabolite,0.011,,,,,v147
+C00527,,Metabolite,0.011,,,,,v148
+C00024,,Metabolite,0.61,,,,,v149
+C00036,,Metabolite,0.01,,,,,v150
+C00631,,Metabolite,0.01,,,,,v151
+C00117,,Metabolite,0.5,,,,,v152
+C00092,,Metabolite,5,,,,,v153
+C00718,,Metabolite,0.011,,,,,v154
+C16471,,Metabolite,0.011,,,,,v155
+C00040,,Metabolite,0.011,,,,,v156
+C00154,,Metabolite,0.011,,,,,v157
+C04618,,Metabolite,0.011,,,,,v158
+C00454,,Metabolite,0.011,,,,,v159
+C00074,,Metabolite,0.18,,,,,v160
+C16376,,Metabolite,0.011,,,,,v161
+C04309,,Metabolite,0.011,,,,,v162
+C05744,,Metabolite,0.011,,,,,v163
+C00988,,Metabolite,0.011,,,,,v164
+C13199,,Metabolite,0.011,,,,,v165
+C00665,,Metabolite,0.011,,,,,v166
+C00736,,Metabolite,0.011,,,,,v167
+C01478,,Metabolite,0.011,,,,,v168
+C02086,,Metabolite,0.011,,,,,v169
+C06232,,Metabolite,0.011,,,,,v170
+C11215,,Metabolite,0.011,,,,,v171
+C20679,,Metabolite,0.011,,,,,v172
+C00284,,Metabolite,0.011,,,,,v173
+C00127,,Metabolite,0.011,,,,,v174
+C01159,,Metabolite,0.011,,,,,v175
+C18713,,Metabolite,0.011,,,,,v176
+C00451,,Metabolite,0.011,,,,,v177
+C00742,,Metabolite,0.011,,,,,v178
+C16487,,Metabolite,0.011,,,,,v179
+C00209,,Metabolite,0.011,,,,,v180
+C00025,,Metabolite,0.011,,,,,v181
+C00041,,Metabolite,0.011,,,,,v182
+C00302,,Metabolite,0.011,,,,,v183
+C00389,,Metabolite,0.011,,,,,v184
+C01401,,Metabolite,0.011,,,,,v185
+C05625,,Metabolite,0.011,,,,,v186
+C00048,,Metabolite,0.011,,,,,v187
+C00168,,Metabolite,0.011,,,,,v188
+C00712,,Metabolite,0.011,,,,,v189
+C00383,,Metabolite,0.011,,,,,v190
+C02575,,Metabolite,0.011,,,,,v191
+C04284,,Metabolite,0.011,,,,,v192
+C00552,,Metabolite,0.011,,,,,v193
+C00704,,Metabolite,0.011,,,,,v194
+C00741,,Metabolite,0.011,,,,,v195
+C02441,,Metabolite,0.011,,,,,v196
+C11592,,Metabolite,0.011,,,,,v197
+C01112,,Metabolite,0.011,,,,,v198
+C02426,,Metabolite,0.011,,,,,v199
+C07182,,Metabolite,0.011,,,,,v200
+C11165,,Metabolite,0.011,,,,,v201
+C03444,,Metabolite,0.011,,,,,v202
+C00120,,Metabolite,0.011,,,,,v203
+C01213,,Metabolite,0.011,,,,,v204
+C05682,,Metabolite,0.011,,,,,v205
+C00363,,Metabolite,0.011,,,,,v206
+C01182,,Metabolite,0.011,,,,,v207
+C01231,,Metabolite,0.011,,,,,v208
+C00014,,Metabolite,0.011,,,,,v209
+C00037,,Metabolite,0.011,,,,,v210
+C00051,,Metabolite,0.011,,,,,v211
+C00065,,Metabolite,0.011,,,,,v212
+C00097,,Metabolite,0.011,,,,,v213
+C00101,,Metabolite,0.011,,,,,v214
+C00109,,Metabolite,0.011,,,,,v215
+C00143,,Metabolite,0.011,,,,,v216
+C00161,,Metabolite,0.011,,,,,v217
+C00188,,Metabolite,0.011,,,,,v218
+C00248,,Metabolite,0.011,,,,,v219
+C00445,,Metabolite,0.011,,,,,v220
+C00579,,Metabolite,0.011,,,,,v221
+C00669,,Metabolite,0.011,,,,,v222
+C01217,,Metabolite,0.011,,,,,v223
+C01242,,Metabolite,0.011,,,,,v224
+C01419,,Metabolite,0.011,,,,,v225
+C01642,,Metabolite,0.011,,,,,v226
+C01650,,Metabolite,0.011,,,,,v227
+C02051,,Metabolite,0.011,,,,,v228
+C02218,,Metabolite,0.011,,,,,v229
+C02412,,Metabolite,0.011,,,,,v230
+C02553,,Metabolite,0.011,,,,,v231
+C02972,,Metabolite,0.011,,,,,v232
+C03090,,Metabolite,0.011,,,,,v233
+C03479,,Metabolite,0.011,,,,,v234
+C03508,,Metabolite,0.011,,,,,v235
+C03838,,Metabolite,0.011,,,,,v236
+C04377,,Metabolite,0.011,,,,,v237
+C05167,,Metabolite,0.011,,,,,v238
+C05726,,Metabolite,0.011,,,,,v239
+C05729,,Metabolite,0.011,,,,,v240
+C06481,,Metabolite,0.011,,,,,v241
+C15973,,Metabolite,0.011,,,,,v242
+C16237,,Metabolite,0.011,,,,,v243
+C16636,,Metabolite,0.011,,,,,v244
+C16832,,Metabolite,0.011,,,,,v245
+C11439,,Metabolite,0.001,,,,,v246
+C00058,,Metabolite,0.001,,,,,v247
+C11440,,Metabolite,0.001,,,,,v248
+C01639,,Metabolite,0.001,,,,,v249
+C03125,,Metabolite,0.001,,,,,v250
+C00147,,Metabolite,0.001,,,,,v251
+C05379,,Metabolite,0.001,,,,,v252
