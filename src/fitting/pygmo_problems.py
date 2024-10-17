@@ -379,6 +379,8 @@ class SBMLGlobalFit_Multi_Fly:
         def __init__(self, model, metadata, cvode_timepoints, parameter_labels, variables):
             r = te.loadSBMLModel(model)
             self.species_labels = np.array(r.getFullStoichiometryMatrix().rownames)
+            self.species_init = {k:v for k,v in zip(self.species_labels,r.model.getFloatingSpeciesInitConcentrations())}
+            self.species_to_v = {k:v for k,v in zip([s for s in r.getFloatingSpeciesIds() if 'EC' not in s],[p for p in parameter_labels if 'v' in p])}
             self.r_parameter_labels = np.array(r.getGlobalParameterIds())
             self.parameter_order = np.int32(np.squeeze(np.array([np.where(p == self.r_parameter_labels) for p in parameter_labels if p in self.r_parameter_labels])))
             self.parameter_present = [p in self.r_parameter_labels for p in parameter_labels]
@@ -400,11 +402,12 @@ class SBMLGlobalFit_Multi_Fly:
                 self.rows[s] = [np.where(np.linspace(0, metadata['timepoints'][s][-1], cvode_timepoints) < (t+0.1))[0][-1] for t in metadata['timepoints'][s]]
             del r
 
-    def __init__(self, model:list, data:list, data_weights:list, parameter_labels, lower_bounds, upper_bounds, metadata:list, variables:list, scale = False, dlambda=1):
+    def __init__(self, model:list, data:list, data_weights:list, parameter_labels, lower_bounds, upper_bounds, metadata:list, variables:list, scale = False, log=None, elambda = 1, dlambda=1, llambda=1, rmse = 'sum'):
         self.model = model # now a list of models
         self.parameter_labels = parameter_labels # all parameters across all models, only the ones that are going to be fitted
         self.set_bounds(upper_bounds, lower_bounds)
         self.scale = scale
+        self.log = log
         self.data = data # now a list of data
         self.data_weights = data_weights
         self.metadata = metadata # now a list of metadas
@@ -414,13 +417,28 @@ class SBMLGlobalFit_Multi_Fly:
 
         self.model_stuff = [self.ModelStuff(m, md, self.cvode_timepoints, self.parameter_labels, var) for m,md,var in zip(self.model, self.metadata, self.variables)]
         self.dlambda = dlambda
+        self.llambda = llambda
+        self.elambda = elambda
+        self.rmse = rmse
+
+
+        self.current_parameters = None
+        self.current_results = None
+        self.current_fitness = None
 
     def fitness(self, x):
         if self.scale: x = self._unscale(x)
+        if self.log: x = np.array([10**v if k else v for k,v in zip(self.log,x)])
         res = self._simulate(x)
-        obj = np.nansum([np.nansum([self._residual(results, data[sample], weights[sample], sample, ms) for sample, results in resdict.items()]) for data,weights,ms,resdict in zip(self.data,self.weights,self.model_stuff,res)])
+        self.current_d_erorr=[]
+        self.current_error=[]
+        self.current_log_erorr=[]
+        if self.rmse == 'sum':
+            self.current_fitness = np.nansum([np.nansum([self._residual(results, data[sample], weights[sample], sample, ms) for sample, results in resdict.items()]) for data,weights,ms,resdict in zip(self.data,self.data_weights,self.model_stuff,res)])
+        if self.rmse == 'mean':
+            self.current_fitness = np.nanmean([np.nanmean([self._residual(results, data[sample], weights[sample], sample, ms) for sample, results in resdict.items()]) for data,weights,ms,resdict in zip(self.data,self.data_weights,self.model_stuff,res)])
         del res
-        return [obj]
+        return [self.current_fitness]
     
     def _setup_rr(self): # run on engine
         from roadrunner import Config, RoadRunner, Logger
@@ -460,18 +478,20 @@ class SBMLGlobalFit_Multi_Fly:
         Config.setValue(Config.SIMULATEOPTIONS_COPY_RESULT, True)
 
         all_results = []
-        for r,ms, data, metadata, variables in zip(self.r, self.model_stuff, self.data, self.metadata, self.variables):
-
-            results = {sample:data[sample]*(-np.inf) for sample in metadata['sample_labels']}
+        for r,ms, metadata, variables in zip(self.r, self.model_stuff, self.metadata, self.variables):
+            results = {sample:np.ones((self.cvode_timepoints,len(ms.species_labels)))*1e12 for sample in metadata['sample_labels']}
             for sample in metadata['sample_labels']:
-                r.model.setGlobalParameterValues([*ms.parameter_order, *ms.variable_order[sample]], [*x[ms.parameter_present], *np.array(list(variables[sample].values()))[ms.variable_present[sample]]])
-                r.reset()
-
-                # set init concentrations
+                
+                x_dict = {k:v for k,v in zip(self.parameter_labels,x)}
                 for label, value in variables[sample].items():
                     if not np.isnan(value):
                         if label in ms.species_labels:
-                            r.setValue('['+label+']', value)
+                            x_dict[ms.species_to_v[label]]=(value+x_dict[ms.species_to_v[label]]*ms.species_init[label]*variables[sample]['dilution_factor'])/(ms.species_init[label]*variables[sample]['dilution_factor'])
+
+                x2 = np.array(list(x_dict.values()))
+                r.model.setGlobalParameterValues([*ms.parameter_order, *ms.variable_order[sample]], [*x2[ms.parameter_present], *np.array(list(variables[sample].values()))[ms.variable_present[sample]]])
+                r.reset()
+
                 try:
                     results[sample] = r.simulate(0,metadata['timepoints'][sample][-1],self.cvode_timepoints)[:,1:].__array__()
                 except Exception as e:
@@ -480,7 +500,10 @@ class SBMLGlobalFit_Multi_Fly:
                 r.resetToOrigin()
             all_results.append(results)
         del Config, RoadRunner, Logger, results
-        return all_results
+
+        self.current_parameters = x
+        self.current_results = all_results
+        return self.current_results
                 
     def _residual(self,results,data,weights,sample,modelstuff):
         cols = modelstuff.cols[sample]
@@ -490,12 +513,20 @@ class SBMLGlobalFit_Multi_Fly:
         if data.shape == results.shape:
             error = (data[:,dcols]-results[:,dcols])*weights[:,dcols]
             d_error = (np.diff(data[:,dcols],axis=0)-np.diff(results[:,dcols],axis=0))*((weights[:,dcols]*np.roll(weights[:,dcols],1,axis=0))[:-1,:])
+            log_error = np.log(data[:,dcols]+1e-12)-np.log(results[:,dcols]+1e-12)*weights[:,dcols]
         else:
             error = (data[:,dcols]-results[:,cols][rows,:])*weights[:,dcols]
             d_error = (np.diff(data[:,dcols],axis=0)-np.diff(results[:,cols][rows,:],axis=0))*((weights[:,dcols]*np.roll(weights[:,dcols],1,axis=0))[:-1,:])
+            log_error = np.log(data[:,dcols]+1e-12)-np.log(results[:,cols][rows,:]+1e-12)*weights[:,dcols]
 
-        RMSE = np.concatenate([np.sqrt(np.nansum(error**2, axis=0)/np.count_nonzero(~np.isnan(error))), self.dlambda*np.sqrt(np.nansum(d_error**2, axis=0)/np.count_nonzero(~np.isnan(d_error)))])
+        RMSE = np.concatenate([self.elambda*np.sqrt(np.nansum(error**2, axis=0)/np.count_nonzero(~np.isnan(error))),
+                                self.dlambda*np.sqrt(np.nansum(d_error**2, axis=0)/np.count_nonzero(~np.isnan(d_error))),
+                                  self.llambda*np.sqrt(np.nansum(log_error**2, axis=0)/np.count_nonzero(~np.isnan(log_error)))])
+        
         # NRMSE = RMSE/(np.nanmax(data[:,dcols], axis=0) - np.nanmin(data[:,dcols], axis=0) + 1e-6)
+        self.current_d_erorr.append(d_error)
+        self.current_error.append(error)
+        self.current_log_erorr.append(log_error)
         return RMSE
     
     def _unscale(self, x):

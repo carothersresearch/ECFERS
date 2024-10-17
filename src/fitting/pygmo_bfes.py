@@ -63,7 +63,7 @@ class pickleless_bfe(pg.ipyparallel_bfe):
                 pg.ipyparallel_bfe._view = rc.broadcast_view(*view_args, **self.view_kwargs)
                 pg.ipyparallel_bfe._view.is_coalescing = False
                 self.client_size = len(rc.ids)
-                pg.ipyparallel_bfe._view.scatter("rank", rc.ids, flatten=True)
+                pg.ipyparallel_bfe._view.scatter("rank", range(len(rc.ids)), flatten=True)
                 for k,v in self.prob.items():
                     prob_id = "prob_"+k
                     pg.ipyparallel_bfe._view.push({prob_id: v}, block = True)
