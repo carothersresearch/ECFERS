@@ -321,7 +321,7 @@ class ModelBuilder:
                         self.applyMechanism(m,s)
 
         for _, sp in S.iterrows():
-            if (sp['Label'] in self.rxn_species) or ('Enzyme' in sp['Type']):
+            if (sp['Label'] in self.rxn_species) or (('Enzyme' in sp['Type'] and (sp['Label'] in self.rxns['Enzyme'].values))):
                 self.s_str += self.writeSpecies(sp)
                 self.s_str += self.writeParameters(sp['Parameters'], sp['Label'], required = False)
                 self.v_str += self.writeVariable(sp['Relative'])

@@ -121,14 +121,19 @@ class Mechanism(EnforceOverrides):
 
         # substrates
         if str(self.substrates) != 'nan':
-            self.substrates = self.substrates.split(';')
+            self.substrate_stoichiometries = list(map(lambda x: x.split(' ')[0], self.substrates.split('; ')))
+            self.substrates = list(map(lambda x: x.split(' ')[1], self.substrates.split('; ')))
         else:
-            self.substrates = []
+            self.substrates, self.substrate_stoichiometries = [], []
         if len(self.substrates) != self.nS and np.isnan(self.nS) == False:
             raise InputError(str(len(self.substrates))+' substrate(s) found for a '+ str(self.nS) + ' substrate mechanism in reaction '+self.label)
 
         # products 
-        self.products = self.products.split(';')
+        if str(self.products) != 'nan':
+            self.product_stoichiometries = list(map(lambda x: x.split(' ')[0], self.products.split('; ')))
+            self.products = list(map(lambda x: x.split(' ')[1], self.products.split('; ')))
+        else:
+            self.products, self.products_stoichiometries = [], []
         if (not np.isnan(self.nP)) and (len(self.products) != self.nP):
             raise InputError(str(len(self.products))+' product(s) ('+str(self.products)+') found for a '+ str(self.nP) + ' product mechanism in reaction '+self.label)
     
@@ -146,6 +151,8 @@ class Mechanism(EnforceOverrides):
 
         self.products = list(map(fmt, self.products))
         self.substrates = list(map(fmt, self.substrates))
+        self.product_stoichiometries = list(map(fmt, self.product_stoichiometries))
+        self.substrate_stoichiometries = list(map(fmt, self.substrate_stoichiometries))
         self.inhibitors = list(map(fmt, self.inhibitors)) if not pd.isnull(self.Ki) else self.inhibitors
         self.enzyme = self.enzyme
         #self.cofactors = list(map(fmt, self.cofactors))
@@ -159,18 +166,14 @@ class Mechanism(EnforceOverrides):
         rxn_str (str) reaction equation in string format
         """
         
-        allS = ' + '.join(self.substrates)
+        allS = ' + '.join([n + ' ' + S for n,S in zip(self.substrate_stoichiometries, self.substrates)])  
         allE = ' + '.join(self.enzyme)
-        allP = ' + '.join(self.products)
+        allP = ' + '.join([n + ' ' + P for n,P in zip(self.product_stoichiometries, self.products)])
 
         if self.enzyme != 'nan' and self.enzyme != []:
             rxn_str = allS + ' + ' + allE + ' -> ' + allE + ' + '  + allP
         else: 
             rxn_str = allS + ' -> ' + allP
-
-        self.stoich = [getStoich(s)[0] for s in self.substrates]
-        self.substrates = [getStoich(s)[1] for s in self.substrates]
-        self.products = [getStoich(s)[1] for s in self.products]
 
         return self.label +' : '+rxn_str
     
@@ -211,29 +214,32 @@ class ModularRateLaw(Mechanism):
     nE = 1
     ignore = ['C00001','C00080'] # H2O, H+   
 
-    def _ignore_species(self, species):
-        return [s for s in species if s not in self.ignore]
+    def _ignore_species(self, species, stoichiometries = None):
+        if stoichiometries:
+            return [s for s,c in zip(species, stoichiometries) if s not in self.ignore], [c for s,c in zip(species, stoichiometries) if s not in self.ignore]
+        else:
+            return [s for s in species if s not in self.ignore]
 
     def haldane_kcats(self):
-        substrates = self._ignore_species(self.substrates)
-        products = self._ignore_species(self.products)
+        substrates, n_subs = self._ignore_species(self.substrates, self.substrate_stoichiometries)
+        products, n_prods = self._ignore_species(self.products, self.product_stoichiometries)
 
-        allKmS = '*'.join(['Km_'+s+'_'+self.enzyme[0] for s in substrates])
-        allKmP = '*'.join(['Km_'+p+'_'+self.enzyme[0] for p in products])
+        allKmS = '*'.join(['(Km_'+s+'_'+self.enzyme[0]+'^'+n+')' for s,n in zip(substrates, n_subs)])
+        allKmP = '*'.join(['(Km_'+p+'_'+self.enzyme[0]+'^'+n+')' for p,n in zip(products,n_prods)])
         Keq = 'Keq_' + self.label
         kcat_F = 'Kcat_V_' + self.label +'*('+Keq+'*('+ allKmS +')/('+ allKmP +'))^(0.5)'
         kcat_R = 'Kcat_V_' + self.label +'*('+Keq+'*('+ allKmS +')/('+ allKmP +'))^(-0.5)'
         return kcat_F, kcat_R
 
     def numerators(self) -> str:
-        substrates = self._ignore_species(self.substrates)
-        products = self._ignore_species(self.products)
+        substrates, n_subs = self._ignore_species(self.substrates, self.substrate_stoichiometries)
+        products, n_prods = self._ignore_species(self.products, self.product_stoichiometries)
 
-        allS = '*'.join(substrates)
-        allP = '*'.join(products)
+        allS = '*'.join(['('+s+'^'+n+')' for s,n in zip(substrates, n_subs)])
+        allP = '*'.join(['('+p+'^'+n+')' for p,n in zip(products, n_prods)])
 
-        allKmS = '*'.join(['Km_'+s+'_'+self.enzyme[0] for s in substrates])
-        allKmP = '*'.join(['Km_'+p+'_'+self.enzyme[0] for p in products])
+        allKmS = '*'.join(['(Km_'+s+'_'+self.enzyme[0]+'^'+n+')' for s,n in zip(substrates, n_subs)])
+        allKmP = '*'.join(['(Km_'+p+'_'+self.enzyme[0]+'^'+n+')' for p,n in zip(products,n_prods)])
 
         kcatF = 'hKcat_F_' + self.label
         kcatR = 'hKcat_R_' + self.label
@@ -241,13 +247,13 @@ class ModularRateLaw(Mechanism):
         return '('+kcatF+'*('+ allS +')/('+ allKmS +'))', '('+ kcatR +'*('+ allP +')/('+ allKmP +'))'
     
     def denominator(self) -> str:
-        substrates = self._ignore_species(self.substrates)
-        products = self._ignore_species(self.products)
+        substrates, n_subs = self._ignore_species(self.substrates, self.substrate_stoichiometries)
+        products, n_prods = self._ignore_species(self.products, self.product_stoichiometries)
 
         allKmS = ['Km_'+s+'_'+self.enzyme[0] for s in substrates]
         allKmP = ['Km_'+p+'_'+self.enzyme[0] for p in products]
-        allS = '*'.join(['(1+'+s+'/'+Km+')' for s, Km in zip(substrates, allKmS)])
-        allP = '*'.join(['(1+'+p+'/'+Km+')' for p, Km in zip(products, allKmP)])
+        allS = '*'.join(['((1+'+s+'/'+Km+')^'+n+')' for s, Km, n in zip(substrates, allKmS, n_subs)])
+        allP = '*'.join(['((1+'+p+'/'+Km+')^'+n+')' for p, Km, n in zip(products, allKmP, n_prods)])
         return '('+ allS + ' + '+ allP + ' -1)'
     
     def inhibition_nc(self) -> str: # only activity
