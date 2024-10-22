@@ -1,0 +1,184 @@
+Rxn #,Rxn Name,BiGG Descriptive Name [alternative],Elementary Rxn Indices,,Rxn Type,Rxn,Notes,dG'o (kJ/mol),dG'o uncertainty (kJ/mol),dG'o (unitless),dG'o uncertainty (unitless),dG'm (kJ/mol),dG'm uncertainty (kJ/mol),dG'm (unitless),dG'm uncertainty (unitless)
+1,ACALD,Acetaldehyde dehydrogenase (acetylating),1,2,random-order MM,acald_c + nad_c + coa_c ---> accoa_c + h_c + nadh_c,,-9.738153574,1.733033239,-3.930522937,0.699488547,7.376683961,1.733033239,2.977384294,0.699488547
+2,ACKr,Acetate kinase,3,4,random-order MM,ac_c + atp_c ---> actp_c + adp_c ,,18.11136068,0.560769061,7.310124862,0.226338149,18.11136068,0.560769061,7.310124862,0.226338149
+3,ACONTa,"Aconitase (half-reaction A, Citrate hydro-lyase)",5,6,random-order MM,cit_c  ---> acon_C_c + h2o_c ,,10.87048842,1.157128688,4.387557022,0.467041397,10.87048842,1.157128688,4.387557022,0.467041397
+4,ACONTb,"Aconitase (half-reaction B, Isocitrate hydro-lyase)",7,8,random-order MM,acon_C_c + h2o_c ---> icit_c,,-0.114402506,1.157958347,-0.04617525,0.467376265,-0.114402506,1.157958347,-0.04617525,0.467376265
+5,ADK1,Adenylate kinase,9,10,random-order MM,amp_c + atp_c  ---> 2 adp_c,,0.492993142,0.163041781,0.198982367,0.065807081,0.492993142,0.163041781,0.198982367,0.065807081
+6,AKGDH,2-Oxogluterate dehydrogenase,11,12,random-order MM,akg_c + nad_c + coa_c ---> co2_c + nadh_c + succoa_c,,-27.81527117,3.752845428,-11.22682657,1.514727091,-27.81527117,3.752845428,-11.22682657,1.514727091
+7,ALCD2x,Alcohol dehydrogenase (ethanol),13,14,random-order MM,etoh_c + nad_c  ---> acald_c + h_c + nadh_c,,21.98860919,0.329931275,8.875063649,0.133167179,21.98860919,0.329931275,8.875063649,0.133167179
+8,ATPM,ATP maintenance requirement,15,16,random-order MM,atp_c + h2o_c ---> adp_c + h_c + pi_c,,-22.24653908,0.310468975,-8.979169556,0.125311787,-39.36137661,0.310468975,-15.88707679,0.125311787
+9,CS,Citrate synthase,17,18,random-order MM,accoa_c + h2o_c + oaa_c ---> cit_c + h_c + coa_c,,-44.73143307,1.516916769,-18.05454415,0.612259409,-44.73143307,1.516916769,-18.05454415,0.612259409
+10,CYTBD2pp_H,Cytochrome oxidase bd (ubiquinol-8: 2 protons),19,20,random-order MM,4 h_c +  o2_c + 2 q8h2_c ---> 2 h2o_c + 2 q8_c + 4 h_e,,-191.4672025,12.74789519,-77.28017694,5.145317751,-174.352365,12.74789519,-70.37226971,5.145317751
+11,ENO,Enolase,21,22,random-order MM,2pg_c ---> h2o_c + pep_c,,-4.312166625,0.311114378,-1.740480852,0.125572285,-4.312166625,0.311114378,-1.740480852,0.125572285
+12,FBA,Fructose-bisphosphate aldolase,23,24,random-order MM,fdp_c ---> dhap_c + g3p_c,,20.01088775,1.193612444,8.076813814,0.481767006,2.896050219,1.193612444,1.168906582,0.481767006
+13,FBP,Fructose-bisphosphatase,25,26,random-order MM,fdp_c + h2o_c ---> f6p_c + pi_c,,-10.15194053,0.706126448,-4.097536028,0.285007438,-27.26677807,0.706126448,-11.00544326,0.285007438
+14,FRUpts2pp_ex,Fructose transport via PEP:Pyr PTS (f6p generating),27,28,random-order MM,pep_c + fru_e ---> f6p_c + pyr_c,,-42.84464931,1.515482921,-17.29299867,0.611680678,-42.84464931,1.515482921,-17.29299867,0.611680678
+15,FUM,Fumarase,29,30,random-order MM,fum_c + h2o_c ---> mal_L_c,,-3.44382821,0.283904514,-1.390001263,0.114589814,-3.44382821,0.283904514,-1.390001263,0.114589814
+16,G6PDH2r,Glucose 6-phosphate dehydrogenase,31,32,random-order MM,g6p_c + nadp_c ---> 6pgl_c + h_c + nadph_c,,-2.951539806,1.348461013,-1.191303343,0.544267134,-2.951539806,1.348461013,-1.191303343,0.544267134
+17,GAPD,Glyceraldehyde-3-phosphate dehydrogenase,33,34,random-order MM,g3p_c + nad_c + pi_c ---> 13dpg_c + h_c + nadh_c,,7.127480923,1.30048219,2.876800724,0.524901876,24.24231846,1.30048219,9.784707955,0.524901876
+18,GLCptspp_ex_exi,D-glucose transport via PEP:Pyr PTS,35,36,random-order MM,pep_c + glc_D_e  ---> g6p_c + pyr_c,,-44.09671375,0.615841129,-17.79835813,0.24856639,-44.09671375,0.615841129,-17.79835813,0.24856639
+19,GLNS,Glutamine synthetase,37,38,random-order MM,atp_c + glu_L_c + nh4_c ---> adp_c + gln_L_c + h_c + pi_c,,-10.83151238,0.843930442,-4.371825474,0.340628019,-10.83151238,0.843930442,-4.371825474,0.340628019
+20,GLUDy,Glutamate dehydrogenase (NADP),39,40,random-order MM,glu_L_c + h2o_c + nadp_c ---> akg_c + h_c + nadph_c + nh4_c,,38.15926507,0.382243769,15.40187937,0.154281599,21.04442753,0.382243769,8.493972135,0.154281599
+21,GLUN,Glutaminase,41,42,random-order MM,gln_L_c + h2o_c ---> glu_L_c + nh4_c,,-11.41502669,0.877334668,-4.607344082,0.354110665,-28.52986423,0.877334668,-11.51525131,0.354110665
+22,GLUSy,Glutamate synthase (NADPH),43,44,random-order MM,akg_c + gln_L_c + h_c + nadph_c ---> 2 glu_L_c + nadp_c,,-49.57429176,0.962872932,-20.00922345,0.388635702,-49.57429176,0.962872932,-20.00922345,0.388635702
+23,GND,Phosphogluconate dehydrogenase,45,46,random-order MM,6pgc_c + nadp_c ---> co2_c + nadph_c + ru5p_D_c,,10.59408801,3.240969028,4.275996019,1.308123045,-6.520749525,3.240969028,-2.631911212,1.308123045
+24,ICDHyr,Isocitrate dehydrogenase (NADP),47,48,random-order MM,icit_c + nadp_c ---> akg_c + co2_c + nadph_c,,5.676875622,3.251617768,2.291306013,1.312421099,-11.43796191,3.251617768,-4.616601218,1.312421099
+25,ICL,Isocitrate lyase,49,50,random-order MM,icit_c ---> glx_c + succ_c,,8.621292168,1.378718309,3.479734259,0.556479614,-8.493545367,1.378718309,-3.428172972,0.556479614
+26,LDH_D,D-lactate dehydrogenase,51,52,random-order MM,lac_D_c + nad_c +  ---> h_c + nadh_c + pyr_c,,24.48543394,2.115327838,9.88283446,0.853790662,24.48543394,2.115327838,9.88283446,0.853790662
+27,MALS,Malate synthase,53,54,random-order MM,accoa_c + glx_c + h2o_c ---> h_c + mal_L_c,,-39.98002411,2.15158899,-16.13677589,0.868426423,-39.98002411,2.15158899,-16.13677589,0.868426423
+28,MDH,Malate dehydrogenase,55,56,random-order MM,mal_L_c + nad_c ---> h_c + nadh_c + oaa_c,,30.5110213,0.311091363,12.31488784,0.125562996,30.5110213,0.311091363,12.31488784,0.125562996
+29,ME1,Malic enzyme (NAD),57,58,random-order MM,mal_L_c + nad_c ---> co2_c + nadh_c + pyr_c,,12.99473736,3.181776975,5.244948423,1.284231891,-4.120100179,3.181776975,-1.662958808,1.284231891
+30,ME2,Malic enzyme (NADP),59,60,random-order MM,mal_L_c + nadp_c ---> co2_c + nadph_c + pyr_c,,13.03942185,3.200934138,5.262984022,1.291964124,-4.075415686,3.200934138,-1.64492321,1.291964124
+31,NADH16pp_H,NADH dehydrogenase (ubiquinone-8 & 3 protons),61,62,random-order MM,h_c + nadh_c + q8_c ---> nad_c + q8h2_c,,-134.2744035,6.173016335,-54.19596425,2.491558807,-134.2744035,6.173016335,-54.19596425,2.491558807
+32,NADTRHD,NAD transhydrogenase,63,64,random-order MM,nad_c + nadph_c ---> nadh_c + nadp_c,,-0.044684493,0.342594668,-0.018035598,0.13827839,-0.044684493,0.342594668,-0.018035598,0.13827839
+33,PDH,Pyruvate dehydrogenase,65,66,random-order MM,nad_c + pyr_c + coa_c ---> accoa_c + co2_c + nadh_c,,-27.83855813,3.361541388,-11.23622568,1.356788577,-27.83855813,3.361541388,-11.23622568,1.356788577
+34,PFKA,Phosphofructokinase,67,68,random-order MM,atp_c + f6p_c ---> adp_c + fdp_c + h_c,,-12.09459854,0.688296293,-4.881633528,0.277810814,-12.09459854,0.688296293,-4.881633528,0.277810814
+35,PFL,Pyruvate formate lyase,69,70,random-order MM,pyr_c + coa_c ---> accoa_c + for_c,,-13.61821409,1.86353871,-5.496596702,0.752163291,-13.61821409,1.86353871,-5.496596702,0.752163291
+36,PGI,Glucose-6-phosphate isomerase,71,72,random-order MM,g6p_c ---> f6p_c,,2.040987961,0.390451856,0.823785529,0.157594555,2.040987961,0.390451856,0.823785529,0.157594555
+37,PGK,Phosphoglycerate kinase,73,74,random-order MM,3pg_c + atp_c ---> 13dpg_c + adp_c,,19.97618679,0.450255979,8.062807778,0.181732753,19.97618679,0.450255979,8.062807778,0.181732753
+38,PGL,6-phosphogluconolactonase,75,76,random-order MM,6pgl_c + h2o_c ---> 6pgc_c + h_c,,-21.28248069,1.692636793,-8.59005538,0.683183695,-21.28248069,1.692636793,-8.59005538,0.683183695
+39,PGM,Phosphoglycerate mutase,77,78,random-order MM,2pg_c ---> 3pg_c,,-3.73294591,0.368192691,-1.506695228,0.148610289,-3.73294591,0.368192691,-1.506695228,0.148610289
+40,PPC,Phosphoenolpyruvate carboxylase,79,80,random-order MM,co2_c + h2o_c + pep_c ---> h_c + oaa_c + pi_c,,-36.27101566,3.175222867,-14.63974232,1.281586516,-36.27101566,3.175222867,-14.63974232,1.281586516
+41,PPCK,Phosphoenolpyruvate carboxykinase,81,82,random-order MM,atp_c + oaa_c ---> adp_c + co2_c + pep_c,,14.02447659,3.183688634,5.660572765,1.285003477,-3.090360948,3.183688634,-1.247334466,1.285003477
+42,PPS,Phosphoenolpyruvate synthase,83,84,random-order MM,atp_c + h2o_c + pyr_c ---> amp_c + 2 h_c + pep_c + pi_c,,8.80122831,0.508119536,3.552360259,0.205087697,-8.313609224,0.508119536,-3.355546973,0.205087697
+43,PTAr,Phosphotransacetylase,85,86,random-order MM,accoa_c + pi_c ---> actp_c + coa_c,,3.340424867,1.572865464,1.348265506,0.634841475,3.340424867,1.572865464,1.348265506,0.634841475
+44,PYKF,Pyruvate kinase,87,88,random-order MM,adp_c + h_c + pep_c ---> atp_c + pyr_c,,-31.54076053,0.432151873,-12.73051218,0.174425556,-31.54076053,0.432151873,-12.73051218,0.174425556
+45,RPE,Ribulose 5-phosphate 3-epimerase,89,90,random-order MM,ru5p_D_c  ---> xu5p_D_c,,-3.378020272,1.177194678,-1.3634398,0.475140451,-3.378020272,1.177194678,-1.3634398,0.475140451
+46,RPI,Ribose-5-phosphate isomerase,91,92,random-order MM,r5p_c ---> ru5p_D_c,,4.331270506,1.671316662,1.748191579,0.674578443,4.331270506,1.671316662,1.748191579,0.674578443
+47,SUCDi,Succinate dehydrogenase,93,94,random-order MM,q8_c + succ_c ---> fum_c + q8h2_c,,-71.07659592,6.495180674,-28.68800419,2.621591088,-17,1.55,-6.861556395,0.625612495
+48,SUCOAS,Succinyl-CoA synthetase (ADP-forming),95,96,random-order MM,atp_c + succ_c + coa_c ---> adp_c + pi_c + succoa_c,,1.772933602,2.570521724,0.71559317,1.037516457,1.772933602,2.570521724,0.71559317,1.037516457
+49,TALA,Transaldolase,97,98,random-order MM,g3p_c + s7p_c  ---> e4p_c + f6p_c,,-6.775545929,1.381543145,-2.734752382,0.557619776,-6.775545929,1.381543145,-2.734752382,0.557619776
+50,THD2pp_H,NAD(P) transhydrogenase,99,100,random-order MM,nadh_c + nadp_c ---> nad_c + nadph_c,,0.044684493,0.342594668,0.018035598,0.13827839,0.044684493,0.342594668,0.018035598,0.13827839
+51,TKT1,Transketolase,101,102,random-order MM,r5p_c + xu5p_D_c ---> g3p_c + s7p_c,,-0.372253511,2.047401776,-0.150249321,0.826374279,-0.372253511,2.047401776,-0.150249321,0.826374279
+52,TKT2,Transketolase,103,104,random-order MM,e4p_c + xu5p_D_c ---> f6p_c + g3p_c,,-8.292643511,1.191626932,-3.347084771,0.480965612,-8.292643511,1.191626932,-3.347084771,0.480965612
+53,TPI,Triose-phosphate isomerase,105,106,random-order MM,dhap_c ---> g3p_c,,3.211771981,1.192808096,1.296338505,0.481442354,3.211771981,1.192808096,1.296338505,0.481442354
+54,HEX1,Hexokinase,107,108,random-order MM,atp_c + glc_D_e ---> adp_c + g6p_c + h_c,,-12.55595323,0.440714973,-5.06784595,0.177881802,-12.55595323,0.440714973,-5.06784595,0.177881802
+55,EDA,2-dehydro-3-deoxy-phosphogluconate aldolase,109,110,random-order MM,2ddg6p_c ---> g3p_c + pyr_c,,14.52577724,1.25264515,5.86290822,0.505593844,-2.589060291,1.25264515,-1.044999012,0.505593844
+56,EDD,6-phosphogluconate dehydratase,111,112,random-order MM,6pgc_c ---> 2ddg6p_c + h2o_c,,-44.29324929,1.759728777,-17.87768399,0.710263426,-44.29324929,1.759728777,-17.87768399,0.710263426
+57,MDH2,Malate dehydrogenase (ubiiquinone),113,114,random-order MM,mal_L_c + q8_c ---> oaa_c + q8h2_c,,-103.7633822,6.180194104,-41.88107641,2.494455904,-103.7633822,6.180194104,-41.88107641,2.494455904
+58,R5PP,Ribose 5-phosphate phosphatase,115,116,random-order MM,h2o_c + r5p_c ---> pi_c + rib_D_c,,0.310471267,2.049667396,0.125312712,0.827288731,-16.80436627,2.049667396,-6.782594519,0.827288731
+59,ACS,Acetyl-CoA synthetase,117,118,random-order MM,ac_c + atp_c ---> accoa_c + amp_c + ppi_c,,-1.969552813,1.536319934,-0.794952806,0.620090933,-1.969552813,1.536319934,-0.794952806,0.620090933
+60,PPA,Inorganic diphosphatase,119,120,random-order MM,h2o_c + ppi_c ---> 2 h_c + 2 pi_c,,-5.999043595,0.194827892,-2.421339761,0.078636622,-23.11388113,0.194827892,-9.329246993,0.078636622
+61,ACALD_comp_inhib_by_amp_c,,121,122,inhibition,,,,,,,,,,
+62,FBA_mixed_comp_inhibit_by_dhap_c,,123,124,inhibition,,,,,,,,,,
+63,FBA_mixed_uncomp_inhibit_by_dhap_c,,125,126,inhibition,,,,,,,,,,
+64,FBP_mixed_comp_inhibit_by_adp_c,,127,128,inhibition,,,,,,,,,,
+65,FBP_mixed_uncomp_inhibit_by_adp_c,,129,130,inhibition,,,,,,,,,,
+66,FBP_mixed_comp_inhibit_by_amp_c,,131,132,inhibition,,,,,,,,,,
+67,FBP_mixed_uncomp_inhibit_by_amp_c,,133,134,inhibition,,,,,,,,,,
+68,FBP_mixed_comp_inhibit_by_pep_c,,135,136,inhibition,,,,,,,,,,
+69,FBP_mixed_uncomp_inhibit_by_pep_c,,137,138,inhibition,,,,,,,,,,
+70,FBP_com_inhib_by_pi_c,,139,140,inhibition,,,,,,,,,,
+71,FUM_comp_inhib_by_cit_c,,141,142,inhibition,,,,,,,,,,
+72,G6PDH2r_comp_inhib_by_nadh_c,,143,144,inhibition,,,,,,,,,,
+73,G6PDH2r_mixed_comp_inhibit_by_nadph_c,,145,146,inhibition,,,,,,,,,,
+74,G6PDH2r_mixed_uncomp_inhibit_by_nadph_c,,147,148,inhibition,,,,,,,,,,
+75,GLUN_mixed_comp_inhibit_by_adp_c,,149,150,inhibition,,,,,,,,,,
+76,GLUN_mixed_uncomp_inhibit_by_adp_c,,151,152,inhibition,,,,,,,,,,
+77,GLUN_mixed_comp_inhibit_by_atp_c,,153,154,inhibition,,,,,,,,,,
+78,GLUN_mixed_uncomp_inhibit_by_atp_c,,155,156,inhibition,,,,,,,,,,
+79,GLUN_comp_inhib_by_glu_L_c,,157,158,inhibition,,,,,,,,,,
+80,GLUN_mixed_comp_inhibit_by_nad_c,,159,160,inhibition,,,,,,,,,,
+81,GLUN_mixed_uncomp_inhibit_by_nad_c,,161,162,inhibition,,,,,,,,,,
+82,GLUN_mixed_comp_inhibit_by_nadh_c,,163,164,inhibition,,,,,,,,,,
+83,GLUN_mixed_uncomp_inhibit_by_nadh_c,,165,166,inhibition,,,,,,,,,,
+84,GLUN_mixed_comp_inhibit_by_nadp_c,,167,168,inhibition,,,,,,,,,,
+85,GLUN_mixed_uncomp_inhibit_by_nadp_c,,169,170,inhibition,,,,,,,,,,
+86,GLUN_mixed_comp_inhibit_by_nadph_c,,171,172,inhibition,,,,,,,,,,
+87,GLUN_mixed_uncomp_inhibit_by_nadph_c,,173,174,inhibition,,,,,,,,,,
+88,GLUN_mixed_comp_inhibit_by_pi_c,,175,176,inhibition,,,,,,,,,,
+89,GLUN_mixed_uncomp_inhibit_by_pi_c,,177,178,inhibition,,,,,,,,,,
+90,GLUSy_mixed_comp_inhibit_by_glu_L_c,,179,180,inhibition,,,,,,,,,,
+91,GLUSy_mixed_uncomp_inhibit_by_glu_L_c,,181,182,inhibition,,,,,,,,,,
+92,GND_comp_inhib_by_atp_c,,183,184,inhibition,,,,,,,,,,
+93,GND_mixed_comp_inhibit_by_fdp_c,,185,186,inhibition,,,,,,,,,,
+94,GND_mixed_uncomp_inhibit_by_fdp_c,,187,188,inhibition,,,,,,,,,,
+95,GND_comp_inhib_by_nadp_c,,189,190,inhibition,,,,,,,,,,
+96,GND_mixed_comp_inhibit_by_ru5p_D_c,,191,192,inhibition,,,,,,,,,,
+97,GND_mixed_uncomp_inhibit_by_ru5p_D_c,,193,194,inhibition,,,,,,,,,,
+98,ICDHyr_comp_inhib_by_glx_c,,195,196,inhibition,,,,,,,,,,
+99,ICDHyr_comp_inhib_by_oaa_c,,197,198,inhibition,,,,,,,,,,
+100,ICDHyr_mixed_comp_inhibit_by_pep_c,,199,200,inhibition,,,,,,,,,,
+101,ICDHyr_mixed_uncomp_inhibit_by_pep_c,,201,202,inhibition,,,,,,,,,,
+102,ICL_mixed_comp_inhibit_by_akg_c,,203,204,inhibition,,,,,,,,,,
+103,ICL_mixed_uncomp_inhibit_by_akg_c,,205,206,inhibition,,,,,,,,,,
+104,ICL_mixed_comp_inhibit_by_icit_c,,207,208,inhibition,,,,,,,,,,
+105,ICL_mixed_uncomp_inhibit_by_icit_c,,209,210,inhibition,,,,,,,,,,
+106,ICL_comp_inhib_by_pep_c,,211,212,inhibition,,,,,,,,,,
+107,ICL_mixed_comp_inhibit_by_succ_c,,213,214,inhibition,,,,,,,,,,
+108,ICL_mixed_uncomp_inhibit_by_succ_c,,215,216,inhibition,,,,,,,,,,
+109,LDH_D_mixed_comp_inhibit_by_atp_c,,217,218,inhibition,,,,,,,,,,
+110,LDH_D_mixed_uncomp_inhibit_by_atp_c,,219,220,inhibition,,,,,,,,,,
+111,PGI_mixed_comp_inhibit_by_6pgc_c,,221,222,inhibition,,,,,,,,,,
+112,PGI_mixed_uncomp_inhibit_by_6pgc_c,,223,224,inhibition,,,,,,,,,,
+113,PGI_comp_inhib_by_pep_c,,225,226,inhibition,,,,,,,,,,
+114,PPC_mixed_comp_inhibit_by_mal_L_c,,227,228,inhibition,,,,,,,,,,
+115,PPC_mixed_uncomp_inhibit_by_mal_L_c,,229,230,inhibition,,,,,,,,,,
+116,PPCK_mixed_comp_inhibit_by_atp_c,,231,232,inhibition,,,,,,,,,,
+117,PPCK_mixed_uncomp_inhibit_by_atp_c,,233,234,inhibition,,,,,,,,,,
+118,PPCK_mixed_comp_inhibit_by_pep_c,,235,236,inhibition,,,,,,,,,,
+119,PPCK_mixed_uncomp_inhibit_by_pep_c,,237,238,inhibition,,,,,,,,,,
+120,PPS_mixed_comp_inhibit_by_adp_c,,239,240,inhibition,,,,,,,,,,
+121,PPS_mixed_uncomp_inhibit_by_adp_c,,241,242,inhibition,,,,,,,,,,
+122,PPS_mixed_comp_inhibit_by_akg_c,,243,244,inhibition,,,,,,,,,,
+123,PPS_mixed_uncomp_inhibit_by_akg_c,,245,246,inhibition,,,,,,,,,,
+124,PPS_mixed_comp_inhibit_by_amp_c,,247,248,inhibition,,,,,,,,,,
+125,PPS_mixed_uncomp_inhibit_by_amp_c,,249,250,inhibition,,,,,,,,,,
+126,PPS_mixed_comp_inhibit_by_oaa_c,,251,252,inhibition,,,,,,,,,,
+127,PPS_mixed_uncomp_inhibit_by_oaa_c,,253,254,inhibition,,,,,,,,,,
+128,PPS_mixed_comp_inhibit_by_pep_c,,255,256,inhibition,,,,,,,,,,
+129,PPS_mixed_uncomp_inhibit_by_pep_c,,257,258,inhibition,,,,,,,,,,
+130,PTAr_mixed_comp_inhibit_by_adp_c,,259,260,inhibition,,,,,,,,,,
+131,PTAr_mixed_uncomp_inhibit_by_adp_c,,261,262,inhibition,,,,,,,,,,
+132,PTAr_mixed_comp_inhibit_by_atp_c,,263,264,inhibition,,,,,,,,,,
+133,PTAr_mixed_uncomp_inhibit_by_atp_c,,265,266,inhibition,,,,,,,,,,
+134,PTAr_mixed_comp_inhibit_by_nadh_c,,267,268,inhibition,,,,,,,,,,
+135,PTAr_mixed_uncomp_inhibit_by_nadh_c,,269,270,inhibition,,,,,,,,,,
+136,PTAr_mixed_comp_inhibit_by_nadph_c,,271,272,inhibition,,,,,,,,,,
+137,PTAr_mixed_uncomp_inhibit_by_nadph_c,,273,274,inhibition,,,,,,,,,,
+138,PTAr_mixed_comp_inhibit_by_pep_c,,275,276,inhibition,,,,,,,,,,
+139,PTAr_mixed_uncomp_inhibit_by_pep_c,,277,278,inhibition,,,,,,,,,,
+140,PTAr_mixed_comp_inhibit_by_pyr_c,,279,280,inhibition,,,,,,,,,,
+141,PTAr_mixed_uncomp_inhibit_by_pyr_c,,281,282,inhibition,,,,,,,,,,
+142,PYKF_mixed_comp_inhibit_by_atp_c,,283,284,inhibition,,,,,,,,,,
+143,PYKF_mixed_uncomp_inhibit_by_atp_c,,285,286,inhibition,,,,,,,,,,
+144,PYKF_mixed_comp_inhibit_by_succoa_c,,287,288,inhibition,,,,,,,,,,
+145,PYKF_mixed_uncomp_inhibit_by_succoa_c,,289,290,inhibition,,,,,,,,,,
+146,RPI_mixed_comp_inhibit_by_amp_c,,291,292,inhibition,,,,,,,,,,
+147,RPI_mixed_uncomp_inhibit_by_amp_c,,293,294,inhibition,,,,,,,,,,
+148,TALA_comp_inhib_by_pi_c,,295,296,inhibition,,,,,,,,,,
+149,EDA_comp_inhib_by_6pgc_c,,297,298,inhibition,,,,,,,,,,
+150,EDA_mixed_comp_inhibit_by_g3p_c,,299,300,inhibition,,,,,,,,,,
+151,EDA_mixed_uncomp_inhibit_by_g3p_c,,301,302,inhibition,,,,,,,,,,
+152,CS_comp_inhib_by_akg_c,,303,304,inhibition,,,,,,,,,,
+153,ICDHyr_comp_inhib_by_akg_c,,305,306,inhibition,,,,,,,,,,
+154,ICDHyr_comp_inhib_by_3pg_c,,307,308,inhibition,,,,,,,,,,
+155,ICL_comp_inhib_by_3pg_c,,309,310,inhibition,,,,,,,,,,
+156,MDH_comp_inhib_by_accoa_c,,311,312,inhibition,,,,,,,,,,
+157,ME1_comp_inhib_by_accoa_c,,313,314,inhibition,,,,,,,,,,
+158,ME2_comp_inhib_by_accoa_c,,315,316,inhibition,,,,,,,,,,
+159,PDH_comp_inhib_by_pyr_c,,317,318,inhibition,,,,,,,,,,
+160,PFKA_comp_inhib_by_pep_c,,319,320,inhibition,,,,,,,,,,
+161,thl1,Acetyl-CoA C-acetyltransferase (thiolase),321,322,random-order MM,2 acetyl-CoA ---> acetoacetyl-CoA + CoA,,23.23646814,1.000371285,9.378725679,0.403770823,23.23646814,1.000371285,9.378725679,0.403770823
+162,thl2,,323,324,random-order MM,,Unused in this model,23.23646814,1.000371285,9.378725679,0.403770823,23.23646814,1.000371285,9.378725679,0.403770823
+163,thl3,,325,326,random-order MM,,Unused in this model,23.23646814,1.000371285,9.378725679,0.403770823,23.23646814,1.000371285,9.378725679,0.403770823
+164,thl6,,327,328,random-order MM,,Unused in this model,23.23646814,1.000371285,9.378725679,0.403770823,23.23646814,1.000371285,9.378725679,0.403770823
+165,thl4ab,,329,330,random-order MM,,Unused in this model,23.23646814,1.000371285,9.378725679,0.403770823,23.23646814,1.000371285,9.378725679,0.403770823
+166,hbd2,3-hydroxyacyl-CoA dehydrogenase,331,332,random-order MM,acetoacetyl-CoA + NADH + H ---> 3-hydroxybutanoyl-CoA + NAD+,,-19.50245282,0.988213183,-7.871598814,0.398863558,-19.50245282,0.988213183,-7.871598814,0.398863558
+167,hbd3,,333,334,random-order MM,,Unused in this model,-19.50245282,0.988213183,-7.871598814,0.398863558,-19.50245282,0.988213183,-7.871598814,0.398863558
+168,hbd4,,335,336,random-order MM,,Unused in this model,-19.50245282,0.988213183,-7.871598814,0.398863558,-19.50245282,0.988213183,-7.871598814,0.398863558
+169,hbd6,,337,338,random-order MM,,Unused in this model,-19.50245282,0.988213183,-7.871598814,0.398863558,-19.50245282,0.988213183,-7.871598814,0.398863558
+170,hbd7,,339,340,random-order MM,,Unused in this model,-19.50245282,0.988213183,-7.871598814,0.398863558,-19.50245282,0.988213183,-7.871598814,0.398863558
+171,crt1,3-hydroxyacyl-CoA dehydratase (3-hydroxybutanoyl-CoA),341,342,random-order MM,3-hydroxybutanoyl-CoA ---> crotonyl-CoA + H20,,-0.737697418,1.493566431,-0.297750143,0.602834723,-0.737697418,1.493566431,-0.297750143,0.602834723
+172,crt9,,343,344,random-order MM,,Unused in this model,-0.737697418,1.493566431,-0.297750143,0.602834723,-0.737697418,1.493566431,-0.297750143,0.602834723
+173,crt10,,345,346,random-order MM,,Unused in this model,-0.737697418,1.493566431,-0.297750143,0.602834723,-0.737697418,1.493566431,-0.297750143,0.602834723
+174,crt11,,347,348,random-order MM,,Unused in this model,-0.737697418,1.493566431,-0.297750143,0.602834723,-0.737697418,1.493566431,-0.297750143,0.602834723
+175,crt12,,349,350,random-order MM,,Unused in this model,-0.737697418,1.493566431,-0.297750143,0.602834723,-0.737697418,1.493566431,-0.297750143,0.602834723
+176,ter1,Acyl-CoA dehydrogenase (butanoyl-CoA),351,352,random-order MM,crotonyl-CoA + NADH + H ---> butyryl-CoA + NAD+,,-60.59806548,1.397076733,-24.45864963,0.563889458,-60.59806548,1.397076733,-24.45864963,0.563889458
+177,ter3,,353,354,random-order MM,,Unused in this model,-60.59806548,1.397076733,-24.45864963,0.563889458,-60.59806548,1.397076733,-24.45864963,0.563889458
+178,ter5,,355,356,random-order MM,,Unused in this model,-60.59806548,1.397076733,-24.45864963,0.563889458,-60.59806548,1.397076733,-24.45864963,0.563889458
+179,ter6,,357,358,random-order MM,,Unused in this model,-60.59806548,1.397076733,-24.45864963,0.563889458,-60.59806548,1.397076733,-24.45864963,0.563889458
+180,adhE1,[bifunctional aldehyde/alcohol dehydrogenase - aldehyde],359,360,random-order MM,butyryl-CoA + NADH ---> butyraldehyde + CoA + NAD+,Shares enzyme abundance with Rxn 181,5.865510727,2.93665224,2.367443096,1.185294409,-9.8,5.6,-3.955485451,2.260277401
+181,adhE2,[bifunctional aldehyde/alcohol dehydrogenase - alcohol],361,362,random-order MM,butyraldehyde + NADH ---> butanol + NAD+,Shares enzyme abundance with Rxn 180,-24.62162833,2.449747998,-9.93780537,0.988769649,-24.62162833,2.449747998,-9.93780537,0.988769649
+182,CO2_l_g_eq,CO2 liquid-gas transfer,363,364,fast equilibrium,co2_g ---> co2_c,,,,,,,,0.1863,0
+183,O2_l_g_eq,O2 liquid-gas transfer,365,366,fast equilibrium,o2_g ---> o2_c,,,,,,,,3.442,0
