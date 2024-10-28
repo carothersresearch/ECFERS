@@ -65,7 +65,14 @@ class ModelBuilder:
         self.rxns = reactions
 
         self.rxn_species = [] 
-        for cell in sum([list(self.rxns[m]) for m in ['Substrates','Products','Inhibitors']],[]):
+        for cell in sum([list(self.rxns[m]) for m in ['Substrates','Products']],[]):
+            if type(cell) is str:
+                ids = list(map(lambda x: x.split(' ')[1], cell.split('; ')))
+                for i in ids:
+                    if i not in species:
+                        self.rxn_species.append(i)
+
+        for cell in sum([list(self.rxns[m]) for m in ['Inhibitors']],[]):
             if type(cell) is str:
                 ids = cell.replace(' ','').split(';')
                 for i in ids:
