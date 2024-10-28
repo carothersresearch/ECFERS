@@ -1080,7 +1080,12 @@ C06037,,Metabolite,0.001,,,,,v1254
 C16618,,Metabolite,0.001,,,,,v1255
 C03785,,Metabolite,0.001,,,,,v1256
 C01177,,Metabolite,0.001,,,,,v1258
-C00158HCT,,Metabolite,0.001,,,,,v1259
+C00158HCT,,Metabolite,0.00001,,,,,v1259
+C00007,,Metabolite,0.001,,,,,v1260
+C00088,,Metabolite,0.001,,,,,v1261
+C00244,,Metabolite,0.001,,,,,v1262
+C01417,,Metabolite,0.001,,,,,v1263
+C00154,,Metabolite,0.001,,,,,v1264
 Aconitate hydratase,4.2.1.3,Endogenous Enzyme,0.000365269,,,,Escherichia coli,rel0
 Oxoglutarate dehydrogenase (succinyl-transferring),1.2.4.2,Endogenous Enzyme,0.01698503,,,,Escherichia coli,rel0
 Glyceraldehyde-3-phosphate dehydrogenase (phosphorylating),1.2.1.12,Endogenous Enzyme,0.014610778,,,,Escherichia coli,rel0

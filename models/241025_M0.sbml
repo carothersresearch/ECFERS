@@ -1,0 +1,3150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version2/core" level="3" version="2">
+  <model metaid="__main" id="__main">
+    <listOfCompartments>
+      <compartment sboTerm="SBO:0000410" id="default_compartment" spatialDimensions="3" size="1" constant="true"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="C00001" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C11592" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00177" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00014" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C01326" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C01327" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00011" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00209" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C19935" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00003" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C02218" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00010" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00036" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00022" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00065" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00024" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00009" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00741" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00149" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00284" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00008" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00004" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00080" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00698" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00161" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C02441" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C05167" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00002" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00007" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00088" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00244" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C01417" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="eEC11137" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="hEC11137" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="hEC43117" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="hEC6411" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="hEC11719" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00058" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+    </listOfSpecies>
+    <listOfParameters>
+      <parameter id="v69" value="1" constant="true"/>
+      <parameter id="dilution_factor" value="1" constant="true"/>
+      <parameter id="v148" value="1" constant="true"/>
+      <parameter id="v171" value="1" constant="true"/>
+      <parameter id="v180" value="1" constant="true"/>
+      <parameter id="v189" value="1" constant="true"/>
+      <parameter id="v204" value="1" constant="true"/>
+      <parameter id="v219" value="1" constant="true"/>
+      <parameter id="v233" value="1" constant="true"/>
+      <parameter id="v255" value="1" constant="true"/>
+      <parameter id="v338" value="1" constant="true"/>
+      <parameter id="v340" value="1" constant="true"/>
+      <parameter id="v346" value="1" constant="true"/>
+      <parameter id="v359" value="1" constant="true"/>
+      <parameter id="v386" value="1" constant="true"/>
+      <parameter id="v409" value="1" constant="true"/>
+      <parameter id="v440" value="1" constant="true"/>
+      <parameter id="v483" value="1" constant="true"/>
+      <parameter id="v526" value="1" constant="true"/>
+      <parameter id="v539" value="1" constant="true"/>
+      <parameter id="v545" value="1" constant="true"/>
+      <parameter id="v555" value="1" constant="true"/>
+      <parameter id="v581" value="1" constant="true"/>
+      <parameter id="v593" value="1" constant="true"/>
+      <parameter id="v608" value="1" constant="true"/>
+      <parameter id="v613" value="1" constant="true"/>
+      <parameter id="v680" value="1" constant="true"/>
+      <parameter id="v691" value="1" constant="true"/>
+      <parameter id="v712" value="1" constant="true"/>
+      <parameter id="v777" value="1" constant="true"/>
+      <parameter id="v825" value="1" constant="true"/>
+      <parameter id="v873" value="1" constant="true"/>
+      <parameter id="v900" value="1" constant="true"/>
+      <parameter id="v931" value="1" constant="true"/>
+      <parameter id="v1036" value="1" constant="true"/>
+      <parameter id="v1068" value="1" constant="true"/>
+      <parameter id="v1085" value="1" constant="true"/>
+      <parameter id="v1089" value="1" constant="true"/>
+      <parameter id="v1172" value="1" constant="true"/>
+      <parameter id="v1199" value="1" constant="true"/>
+      <parameter id="v1214" value="1" constant="true"/>
+      <parameter id="v1217" value="1" constant="true"/>
+      <parameter id="v1235" value="1" constant="true"/>
+      <parameter id="v1260" value="1" constant="true"/>
+      <parameter id="v1261" value="1" constant="true"/>
+      <parameter id="v1262" value="1" constant="true"/>
+      <parameter id="v1263" value="1" constant="true"/>
+      <parameter id="p_eEC11137" value="1" constant="true"/>
+      <parameter id="rel0" value="1" constant="true"/>
+      <parameter id="p_hEC11137" value="1" constant="true"/>
+      <parameter id="rel1" value="1" constant="true"/>
+      <parameter id="p_hEC43117" value="1" constant="true"/>
+      <parameter id="rel2" value="1" constant="true"/>
+      <parameter id="p_hEC6411" value="1" constant="true"/>
+      <parameter id="rel3" value="1" constant="true"/>
+      <parameter id="p_hEC11719" value="1" constant="true"/>
+      <parameter id="rel4" value="1" constant="true"/>
+      <parameter id="Kcat_F_R406" value="3.547282326" constant="true"/>
+      <parameter id="Kcat_R_R406" value="16.004088045" constant="true"/>
+      <parameter id="Keq_R406" value="194010.336726332" constant="true"/>
+      <parameter id="Kcat_V_R406" value="1" constant="true"/>
+      <parameter id="Km_C00014_hEC43117" value="2.321814537" constant="true"/>
+      <parameter id="Km_C00022_hEC43117" value="0.786924958" constant="true"/>
+      <parameter id="Km_C00065_hEC43117" value="0.995956302" constant="true"/>
+      <parameter id="Ki_C00001_hEC43117" value="1.243283153" constant="true"/>
+      <parameter id="Ki_C00014_hEC43117" value="2.321814537" constant="true"/>
+      <parameter id="Ki_C00022_hEC43117" value="0.786924958" constant="true"/>
+      <parameter id="Ki_C00065_hEC43117" value="0.995956302" constant="true"/>
+      <parameter id="Ki_C00161_hEC43117" value="1.3902921916" constant="true"/>
+      <parameter id="Ki_C02218_hEC43117" value="1.603482008" constant="true"/>
+      <parameter id="Ki_C05167_hEC43117" value="1.3902921916" constant="true"/>
+      <parameter id="Kcat_F_R197" value="12.1695376695" constant="true"/>
+      <parameter id="Kcat_R_R197" value="26.700187375" constant="true"/>
+      <parameter id="Keq_R197" value="336.023145735391" constant="true"/>
+      <parameter id="Kcat_V_R197" value="1" constant="true"/>
+      <parameter id="Km_C00058_hEC11719" value="6.299069881" constant="true"/>
+      <parameter id="Km_C00003_hEC11719" value="0.179658741" constant="true"/>
+      <parameter id="Km_C00080_hEC11719" value="3.996599674" constant="true"/>
+      <parameter id="Km_C00011_hEC11719" value="3.174462318" constant="true"/>
+      <parameter id="Km_C00004_hEC11719" value="0.080049999" constant="true"/>
+      <parameter id="Ki_C00004_hEC11719" value="0.080049991607666" constant="true"/>
+      <parameter id="Ki_C00007_hEC11719" value="0.187619805335999" constant="true"/>
+      <parameter id="Ki_C00088_hEC11719" value="4.8674693107605" constant="true"/>
+      <parameter id="Ki_C00177_hEC11719" value="5.53771591186523" constant="true"/>
+      <parameter id="Ki_C00244_hEC11719" value="1.59694957733154" constant="true"/>
+      <parameter id="Ki_C00284_hEC11719" value="0.207695990800857" constant="true"/>
+      <parameter id="Ki_C00698_hEC11719" value="9.22450923919678" constant="true"/>
+      <parameter id="Ki_C01326_hEC11719" value="5.01863193511963" constant="true"/>
+      <parameter id="Ki_C01327_hEC11719" value="4.79637002944946" constant="true"/>
+      <parameter id="Ki_C01417_hEC11719" value="5.55147838592529" constant="true"/>
+      <parameter id="Ki_C02441_hEC11719" value="0.156437411904335" constant="true"/>
+      <parameter id="Ki_C19935_hEC11719" value="0.132737785577774" constant="true"/>
+      <parameter id="Kcat_F_R269" value="3.007160006" constant="true"/>
+      <parameter id="Kcat_R_R269" value="467.479811568" constant="true"/>
+      <parameter id="Keq_R269" value="2.26148694092433e-05" constant="true"/>
+      <parameter id="Kcat_V_R269" value="1" constant="true"/>
+      <parameter id="Km_C00004_hEC11137" value="0.061" constant="true"/>
+      <parameter id="Km_C00036_hEC11137" value="0.0445" constant="true"/>
+      <parameter id="Km_C00080_hEC11137" value="1.627506971" constant="true"/>
+      <parameter id="Km_C00003_hEC11137" value="0.105280019" constant="true"/>
+      <parameter id="Km_C00149_hEC11137" value="0.00012" constant="true"/>
+      <parameter id="Ki_C00002_hEC11137" value="0.045088965" constant="true"/>
+      <parameter id="Ki_C00003_hEC11137" value="0.105280019" constant="true"/>
+      <parameter id="Ki_C00004_hEC11137" value="0.034674671" constant="true"/>
+      <parameter id="Ki_C00010_hEC11137" value="0.03518714" constant="true"/>
+      <parameter id="Ki_C00024_hEC11137" value="0.036240213" constant="true"/>
+      <parameter id="Ki_C00036_hEC11137" value="0.066584691" constant="true"/>
+      <parameter id="Ki_C00080_hEC11137" value="1.627506971" constant="true"/>
+      <parameter id="Ki_C00149_hEC11137" value="0.161660373" constant="true"/>
+      <parameter id="Ki_C00209_hEC11137" value="0.177507535" constant="true"/>
+      <parameter id="Ki_C00741_hEC11137" value="0.211944282" constant="true"/>
+      <parameter id="Ki_C02441_hEC11137" value="0.095263213" constant="true"/>
+      <parameter id="Ki_C11592_hEC11137" value="0.236085279363636" constant="true"/>
+      <parameter id="Kcat_F_R345" value="7.96974461447619" constant="true"/>
+      <parameter id="Kcat_R_R345" value="1.35043190233333" constant="true"/>
+      <parameter id="Keq_R345" value="18.2460668967717" constant="true"/>
+      <parameter id="Kcat_V_R345" value="1" constant="true"/>
+      <parameter id="Km_C00008_hEC6411" value="0.060795698" constant="true"/>
+      <parameter id="Km_C00009_hEC6411" value="1.167335033" constant="true"/>
+      <parameter id="Km_C00036_hEC6411" value="0.202194154" constant="true"/>
+      <parameter id="Km_C00002_hEC6411" value="0.069778137" constant="true"/>
+      <parameter id="Km_C00022_hEC6411" value="9.7" constant="true"/>
+      <parameter id="Km_C00011_hEC6411" value="10.8" constant="true"/>
+      <parameter id="Ki_C00002_hEC6411" value="0.069778137" constant="true"/>
+      <parameter id="Ki_C00008_hEC6411" value="0.060795698" constant="true"/>
+      <parameter id="Ki_C00009_hEC6411" value="1.167335033" constant="true"/>
+      <parameter id="Ki_C00011_hEC6411" value="1.142170787" constant="true"/>
+      <parameter id="Ki_C00022_hEC6411" value="0.670731664" constant="true"/>
+      <parameter id="Ki_C00036_hEC6411" value="0.202194154" constant="true"/>
+      <parameter id="Gnc_C05167_hEC43117" value="1" constant="true"/>
+      <parameter id="Gc_C05167_hEC43117" value="1" constant="true"/>
+      <parameter id="Gnc_C00001_hEC43117" value="1" constant="true"/>
+      <parameter id="Gc_C00001_hEC43117" value="1" constant="true"/>
+      <parameter id="Gnc_C00022_hEC43117" value="1" constant="true"/>
+      <parameter id="Gc_C00022_hEC43117" value="1" constant="true"/>
+      <parameter id="Gnc_C00065_hEC43117" value="1" constant="true"/>
+      <parameter id="Gc_C00065_hEC43117" value="1" constant="true"/>
+      <parameter id="Gnc_C00161_hEC43117" value="1" constant="true"/>
+      <parameter id="Gc_C00161_hEC43117" value="1" constant="true"/>
+      <parameter id="Gnc_C02218_hEC43117" value="1" constant="true"/>
+      <parameter id="Gc_C02218_hEC43117" value="1" constant="true"/>
+      <parameter id="Gnc_C00014_hEC43117" value="1" constant="true"/>
+      <parameter id="Gc_C00014_hEC43117" value="1" constant="true"/>
+      <parameter id="Gnc_C00244_hEC11719" value="1" constant="true"/>
+      <parameter id="Gc_C00244_hEC11719" value="1" constant="true"/>
+      <parameter id="Gnc_C19935_hEC11719" value="1" constant="true"/>
+      <parameter id="Gc_C19935_hEC11719" value="1" constant="true"/>
+      <parameter id="Gnc_C00004_hEC11719" value="1" constant="true"/>
+      <parameter id="Gc_C00004_hEC11719" value="1" constant="true"/>
+      <parameter id="Gnc_C00177_hEC11719" value="1" constant="true"/>
+      <parameter id="Gc_C00177_hEC11719" value="1" constant="true"/>
+      <parameter id="Gnc_C01326_hEC11719" value="1" constant="true"/>
+      <parameter id="Gc_C01326_hEC11719" value="1" constant="true"/>
+      <parameter id="Gnc_C00284_hEC11719" value="1" constant="true"/>
+      <parameter id="Gc_C00284_hEC11719" value="1" constant="true"/>
+      <parameter id="Gnc_C00007_hEC11719" value="1" constant="true"/>
+      <parameter id="Gc_C00007_hEC11719" value="1" constant="true"/>
+      <parameter id="Gnc_C01417_hEC11719" value="1" constant="true"/>
+      <parameter id="Gc_C01417_hEC11719" value="1" constant="true"/>
+      <parameter id="Gnc_C00088_hEC11719" value="1" constant="true"/>
+      <parameter id="Gc_C00088_hEC11719" value="1" constant="true"/>
+      <parameter id="Gnc_C00698_hEC11719" value="1" constant="true"/>
+      <parameter id="Gc_C00698_hEC11719" value="1" constant="true"/>
+      <parameter id="Gnc_C01327_hEC11719" value="1" constant="true"/>
+      <parameter id="Gc_C01327_hEC11719" value="1" constant="true"/>
+      <parameter id="Gnc_C02441_hEC11719" value="1" constant="true"/>
+      <parameter id="Gc_C02441_hEC11719" value="1" constant="true"/>
+      <parameter id="Gnc_C02441_hEC11137" value="1" constant="true"/>
+      <parameter id="Gc_C02441_hEC11137" value="1" constant="true"/>
+      <parameter id="Gnc_C00003_hEC11137" value="1" constant="true"/>
+      <parameter id="Gc_C00003_hEC11137" value="1" constant="true"/>
+      <parameter id="Gnc_C00004_hEC11137" value="1" constant="true"/>
+      <parameter id="Gc_C00004_hEC11137" value="1" constant="true"/>
+      <parameter id="Gnc_C00024_hEC11137" value="1" constant="true"/>
+      <parameter id="Gc_C00024_hEC11137" value="1" constant="true"/>
+      <parameter id="Gnc_C00036_hEC11137" value="1" constant="true"/>
+      <parameter id="Gc_C00036_hEC11137" value="1" constant="true"/>
+      <parameter id="Gnc_C00010_hEC11137" value="1" constant="true"/>
+      <parameter id="Gc_C00010_hEC11137" value="1" constant="true"/>
+      <parameter id="Gnc_C00149_hEC11137" value="1" constant="true"/>
+      <parameter id="Gc_C00149_hEC11137" value="1" constant="true"/>
+      <parameter id="Gnc_C00741_hEC11137" value="1" constant="true"/>
+      <parameter id="Gc_C00741_hEC11137" value="1" constant="true"/>
+      <parameter id="Gnc_C11592_hEC11137" value="1" constant="true"/>
+      <parameter id="Gc_C11592_hEC11137" value="1" constant="true"/>
+      <parameter id="Gnc_C00002_hEC11137" value="1" constant="true"/>
+      <parameter id="Gc_C00002_hEC11137" value="1" constant="true"/>
+      <parameter id="Gnc_C00209_hEC11137" value="1" constant="true"/>
+      <parameter id="Gc_C00209_hEC11137" value="1" constant="true"/>
+      <parameter id="Gnc_C00080_hEC11137" value="1" constant="true"/>
+      <parameter id="Gc_C00080_hEC11137" value="1" constant="true"/>
+      <parameter id="Gnc_C00022_hEC6411" value="1" constant="true"/>
+      <parameter id="Gc_C00022_hEC6411" value="1" constant="true"/>
+      <parameter id="Gnc_C00036_hEC6411" value="1" constant="true"/>
+      <parameter id="Gc_C00036_hEC6411" value="1" constant="true"/>
+      <parameter id="Gnc_C00002_hEC6411" value="1" constant="true"/>
+      <parameter id="Gc_C00002_hEC6411" value="1" constant="true"/>
+      <parameter id="Gnc_C00009_hEC6411" value="1" constant="true"/>
+      <parameter id="Gc_C00009_hEC6411" value="1" constant="true"/>
+      <parameter id="Gnc_C00008_hEC6411" value="1" constant="true"/>
+      <parameter id="Gc_C00008_hEC6411" value="1" constant="true"/>
+      <parameter id="Gnc_C00011_hEC6411" value="1" constant="true"/>
+      <parameter id="Gc_C00011_hEC6411" value="1" constant="true"/>
+      <parameter id="hEC43117_fr" constant="false"/>
+      <parameter id="hEC43117_Dreg" constant="false"/>
+      <parameter id="R406_D" constant="false"/>
+      <parameter id="hKcat_F_R406" constant="false"/>
+      <parameter id="hKcat_R_R406" constant="false"/>
+      <parameter id="R406_f" constant="false"/>
+      <parameter id="R406_r" constant="false"/>
+      <parameter id="hEC11719_fr" constant="false"/>
+      <parameter id="hEC11719_Dreg" constant="false"/>
+      <parameter id="R197_D" constant="false"/>
+      <parameter id="hKcat_F_R197" constant="false"/>
+      <parameter id="hKcat_R_R197" constant="false"/>
+      <parameter id="R197_f" constant="false"/>
+      <parameter id="R197_r" constant="false"/>
+      <parameter id="hEC11137_fr" constant="false"/>
+      <parameter id="hEC11137_Dreg" constant="false"/>
+      <parameter id="R269_D" constant="false"/>
+      <parameter id="hKcat_F_R269" constant="false"/>
+      <parameter id="hKcat_R_R269" constant="false"/>
+      <parameter id="R269_f" constant="false"/>
+      <parameter id="R269_r" constant="false"/>
+      <parameter id="hEC6411_fr" constant="false"/>
+      <parameter id="hEC6411_Dreg" constant="false"/>
+      <parameter id="R345_D" constant="false"/>
+      <parameter id="hKcat_F_R345" constant="false"/>
+      <parameter id="hKcat_R_R345" constant="false"/>
+      <parameter id="R345_f" constant="false"/>
+      <parameter id="R345_r" constant="false"/>
+    </listOfParameters>
+    <listOfInitialAssignments>
+      <initialAssignment symbol="C00001">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> v873 </ci>
+            <cn> 0.001 </cn>
+            <ci> dilution_factor </ci>
+          </apply>
+        </math>
+      </initialAssignment>
+      <initialAssignment symbol="C11592">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> v148 </ci>
+            <cn> 0.001 </cn>
+            <ci> dilution_factor </ci>
+          </apply>
+        </math>
+      </initialAssignment>
+      <initialAssignment symbol="C00177">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> v1214 </ci>
+            <cn> 0.001 </cn>
+            <ci> dilution_factor </ci>
+          </apply>
+        </math>
+      </initialAssignment>
+      <initialAssignment symbol="C00014">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> v825 </ci>
+            <cn> 0.001 </cn>
+            <ci> dilution_factor </ci>
+          </apply>
+        </math>
+      </initialAssignment>
+      <initialAssignment symbol="C01326">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> v931 </ci>
+            <cn> 0.001 </cn>
+            <ci> dilution_factor </ci>
+          </apply>
+        </math>
+      </initialAssignment>
+      <initialAssignment symbol="C01327">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> v1172 </ci>
+            <cn> 0.001 </cn>
+            <ci> dilution_factor </ci>
+          </apply>
+        </math>
+      </initialAssignment>
+      <initialAssignment symbol="C00011">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> v219 </ci>
+            <cn> 10.001 </cn>
+            <ci> dilution_factor </ci>
+          </apply>
+        </math>
+      </initialAssignment>
+      <initialAssignment symbol="C00209">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> v233 </ci>
+            <cn> 0.001 </cn>
+            <ci> dilution_factor </ci>
+          </apply>
+        </math>
+      </initialAssignment>
+      <initialAssignment symbol="C19935">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> v255 </ci>
+            <cn> 0.001 </cn>
+            <ci> dilution_factor </ci>
+          </apply>
+        </math>
+      </initialAssignment>
+      <initialAssignment symbol="C00003">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> v1068 </ci>
+            <cn> 0.001 </cn>
+            <ci> dilution_factor </ci>
+          </apply>
+        </math>
+      </initialAssignment>
+      <initialAssignment symbol="C02218">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> v340 </ci>
+            <cn> 0.001 </cn>
+            <ci> dilution_factor </ci>
+          </apply>
+        </math>
+      </initialAssignment>
+      <initialAssignment symbol="C00010">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> v1199 </ci>
+            <cn> 1.4 </cn>
+            <ci> dilution_factor </ci>
+          </apply>
+        </math>
+      </initialAssignment>
+      <initialAssignment symbol="C00036">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> v359 </ci>
+            <cn> 0.0011 </cn>
+            <ci> dilution_factor </ci>
+          </apply>
+        </math>
+      </initialAssignment>
+      <initialAssignment symbol="C00022">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> v386 </ci>
+            <cn> 0.0011 </cn>
+            <ci> dilution_factor </ci>
+          </apply>
+        </math>
+      </initialAssignment>
+      <initialAssignment symbol="C00065">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> v900 </ci>
+            <cn> 0.001 </cn>
+            <ci> dilution_factor </ci>
+          </apply>
+        </math>
+      </initialAssignment>
+      <initialAssignment symbol="C00024">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> v1085 </ci>
+            <cn> 0.61 </cn>
+            <ci> dilution_factor </ci>
+          </apply>
+        </math>
+      </initialAssignment>
+      <initialAssignment symbol="C00009">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> v1217 </ci>
+            <cn> 0.001 </cn>
+            <ci> dilution_factor </ci>
+          </apply>
+        </math>
+      </initialAssignment>
+      <initialAssignment symbol="C00741">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> v526 </ci>
+            <cn> 0.001 </cn>
+            <ci> dilution_factor </ci>
+          </apply>
+        </math>
+      </initialAssignment>
+      <initialAssignment symbol="C00149">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> v539 </ci>
+            <cn> 1.7 </cn>
+            <ci> dilution_factor </ci>
+          </apply>
+        </math>
+      </initialAssignment>
+      <initialAssignment symbol="C00284">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> v545 </ci>
+            <cn> 0.001 </cn>
+            <ci> dilution_factor </ci>
+          </apply>
+        </math>
+      </initialAssignment>
+      <initialAssignment symbol="C00008">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> v777 </ci>
+            <cn> 0.001 </cn>
+            <ci> dilution_factor </ci>
+          </apply>
+        </math>
+      </initialAssignment>
+      <initialAssignment symbol="C00004">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> v1089 </ci>
+            <cn> 0.083 </cn>
+            <ci> dilution_factor </ci>
+          </apply>
+        </math>
+      </initialAssignment>
+      <initialAssignment symbol="C00080">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> v1036 </ci>
+            <cn> 0.0001 </cn>
+            <ci> dilution_factor </ci>
+          </apply>
+        </math>
+      </initialAssignment>
+      <initialAssignment symbol="C00698">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> v608 </ci>
+            <cn> 0.001 </cn>
+            <ci> dilution_factor </ci>
+          </apply>
+        </math>
+      </initialAssignment>
+      <initialAssignment symbol="C00161">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> v613 </ci>
+            <cn> 0.001 </cn>
+            <ci> dilution_factor </ci>
+          </apply>
+        </math>
+      </initialAssignment>
+      <initialAssignment symbol="C02441">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> v680 </ci>
+            <cn> 0.001 </cn>
+            <ci> dilution_factor </ci>
+          </apply>
+        </math>
+      </initialAssignment>
+      <initialAssignment symbol="C05167">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> v691 </ci>
+            <cn> 0.001 </cn>
+            <ci> dilution_factor </ci>
+          </apply>
+        </math>
+      </initialAssignment>
+      <initialAssignment symbol="C00002">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> v1235 </ci>
+            <cn> 0.001 </cn>
+            <ci> dilution_factor </ci>
+          </apply>
+        </math>
+      </initialAssignment>
+      <initialAssignment symbol="C00007">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> v1260 </ci>
+            <cn> 0.001 </cn>
+            <ci> dilution_factor </ci>
+          </apply>
+        </math>
+      </initialAssignment>
+      <initialAssignment symbol="C00088">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> v1261 </ci>
+            <cn> 0.001 </cn>
+            <ci> dilution_factor </ci>
+          </apply>
+        </math>
+      </initialAssignment>
+      <initialAssignment symbol="C00244">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> v1262 </ci>
+            <cn> 0.001 </cn>
+            <ci> dilution_factor </ci>
+          </apply>
+        </math>
+      </initialAssignment>
+      <initialAssignment symbol="C01417">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> v1263 </ci>
+            <cn> 0.001 </cn>
+            <ci> dilution_factor </ci>
+          </apply>
+        </math>
+      </initialAssignment>
+      <initialAssignment symbol="eEC11137">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> p_eEC11137 </ci>
+            <ci> rel0 </ci>
+            <cn> 0.007670659 </cn>
+            <ci> dilution_factor </ci>
+          </apply>
+        </math>
+      </initialAssignment>
+      <initialAssignment symbol="hEC11137">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> p_hEC11137 </ci>
+            <ci> rel1 </ci>
+            <cn> 0.0061 </cn>
+            <ci> dilution_factor </ci>
+          </apply>
+        </math>
+      </initialAssignment>
+      <initialAssignment symbol="hEC43117">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> p_hEC43117 </ci>
+            <ci> rel2 </ci>
+            <cn> 0.0366 </cn>
+            <ci> dilution_factor </ci>
+          </apply>
+        </math>
+      </initialAssignment>
+      <initialAssignment symbol="hEC6411">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> p_hEC6411 </ci>
+            <ci> rel3 </ci>
+            <cn> 0.0488 </cn>
+            <ci> dilution_factor </ci>
+          </apply>
+        </math>
+      </initialAssignment>
+      <initialAssignment symbol="hEC11719">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> p_hEC11719 </ci>
+            <ci> rel4 </ci>
+            <cn> 0.0122 </cn>
+            <ci> dilution_factor </ci>
+          </apply>
+        </math>
+      </initialAssignment>
+    </listOfInitialAssignments>
+    <listOfRules>
+      <assignmentRule variable="hEC43117_fr">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <apply>
+              <plus/>
+              <ci> Gnc_C00014_hEC43117 </ci>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn type="integer"> 1 </cn>
+                  <ci> Gnc_C00014_hEC43117 </ci>
+                </apply>
+                <apply>
+                  <divide/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> C00014 </ci>
+                      <ci> Ki_C00014_hEC43117 </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <plus/>
+              <ci> Gnc_C00022_hEC43117 </ci>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn type="integer"> 1 </cn>
+                  <ci> Gnc_C00022_hEC43117 </ci>
+                </apply>
+                <apply>
+                  <divide/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> C00022 </ci>
+                      <ci> Ki_C00022_hEC43117 </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <plus/>
+              <ci> Gnc_C00065_hEC43117 </ci>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn type="integer"> 1 </cn>
+                  <ci> Gnc_C00065_hEC43117 </ci>
+                </apply>
+                <apply>
+                  <divide/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> C00065 </ci>
+                      <ci> Ki_C00065_hEC43117 </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <plus/>
+              <ci> Gnc_C00161_hEC43117 </ci>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn type="integer"> 1 </cn>
+                  <ci> Gnc_C00161_hEC43117 </ci>
+                </apply>
+                <apply>
+                  <divide/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> C00161 </ci>
+                      <ci> Ki_C00161_hEC43117 </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <plus/>
+              <ci> Gnc_C02218_hEC43117 </ci>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn type="integer"> 1 </cn>
+                  <ci> Gnc_C02218_hEC43117 </ci>
+                </apply>
+                <apply>
+                  <divide/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> C02218 </ci>
+                      <ci> Ki_C02218_hEC43117 </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <plus/>
+              <ci> Gnc_C05167_hEC43117 </ci>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn type="integer"> 1 </cn>
+                  <ci> Gnc_C05167_hEC43117 </ci>
+                </apply>
+                <apply>
+                  <divide/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> C05167 </ci>
+                      <ci> Ki_C05167_hEC43117 </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="hEC43117_Dreg">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <plus/>
+            <apply>
+              <times/>
+              <apply>
+                <minus/>
+                <cn type="integer"> 1 </cn>
+                <ci> Gc_C00014_hEC43117 </ci>
+              </apply>
+              <apply>
+                <divide/>
+                <ci> C00014 </ci>
+                <ci> Ki_C00014_hEC43117 </ci>
+              </apply>
+            </apply>
+            <apply>
+              <times/>
+              <apply>
+                <minus/>
+                <cn type="integer"> 1 </cn>
+                <ci> Gc_C00022_hEC43117 </ci>
+              </apply>
+              <apply>
+                <divide/>
+                <ci> C00022 </ci>
+                <ci> Ki_C00022_hEC43117 </ci>
+              </apply>
+            </apply>
+            <apply>
+              <times/>
+              <apply>
+                <minus/>
+                <cn type="integer"> 1 </cn>
+                <ci> Gc_C00065_hEC43117 </ci>
+              </apply>
+              <apply>
+                <divide/>
+                <ci> C00065 </ci>
+                <ci> Ki_C00065_hEC43117 </ci>
+              </apply>
+            </apply>
+            <apply>
+              <times/>
+              <apply>
+                <minus/>
+                <cn type="integer"> 1 </cn>
+                <ci> Gc_C00161_hEC43117 </ci>
+              </apply>
+              <apply>
+                <divide/>
+                <ci> C00161 </ci>
+                <ci> Ki_C00161_hEC43117 </ci>
+              </apply>
+            </apply>
+            <apply>
+              <times/>
+              <apply>
+                <minus/>
+                <cn type="integer"> 1 </cn>
+                <ci> Gc_C02218_hEC43117 </ci>
+              </apply>
+              <apply>
+                <divide/>
+                <ci> C02218 </ci>
+                <ci> Ki_C02218_hEC43117 </ci>
+              </apply>
+            </apply>
+            <apply>
+              <times/>
+              <apply>
+                <minus/>
+                <cn type="integer"> 1 </cn>
+                <ci> Gc_C05167_hEC43117 </ci>
+              </apply>
+              <apply>
+                <divide/>
+                <ci> C05167 </ci>
+                <ci> Ki_C05167_hEC43117 </ci>
+              </apply>
+            </apply>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="R406_D">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <apply>
+              <plus/>
+              <apply>
+                <power/>
+                <apply>
+                  <plus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <divide/>
+                    <ci> C00065 </ci>
+                    <ci> Km_C00065_hEC43117 </ci>
+                  </apply>
+                </apply>
+                <cn type="integer"> 1 </cn>
+              </apply>
+              <apply>
+                <times/>
+                <apply>
+                  <power/>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> C00014 </ci>
+                      <ci> Km_C00014_hEC43117 </ci>
+                    </apply>
+                  </apply>
+                  <cn type="integer"> 1 </cn>
+                </apply>
+                <apply>
+                  <power/>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> C00022 </ci>
+                      <ci> Km_C00022_hEC43117 </ci>
+                    </apply>
+                  </apply>
+                  <cn type="integer"> 1 </cn>
+                </apply>
+              </apply>
+            </apply>
+            <cn type="integer"> 1 </cn>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="hKcat_F_R406">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> Kcat_V_R406 </ci>
+            <apply>
+              <power/>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <ci> Keq_R406 </ci>
+                  <apply>
+                    <power/>
+                    <ci> Km_C00065_hEC43117 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <times/>
+                  <apply>
+                    <power/>
+                    <ci> Km_C00014_hEC43117 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <power/>
+                    <ci> Km_C00022_hEC43117 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                </apply>
+              </apply>
+              <cn> 0.5 </cn>
+            </apply>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="hKcat_R_R406">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> Kcat_V_R406 </ci>
+            <apply>
+              <power/>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <ci> Keq_R406 </ci>
+                  <apply>
+                    <power/>
+                    <ci> Km_C00065_hEC43117 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <times/>
+                  <apply>
+                    <power/>
+                    <ci> Km_C00014_hEC43117 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <power/>
+                    <ci> Km_C00022_hEC43117 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                </apply>
+              </apply>
+              <cn> -0.5 </cn>
+            </apply>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="R406_f">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <divide/>
+            <apply>
+              <times/>
+              <ci> hEC43117 </ci>
+              <ci> hEC43117_fr </ci>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <ci> hKcat_F_R406 </ci>
+                  <apply>
+                    <power/>
+                    <ci> C00065 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <power/>
+                  <ci> Km_C00065_hEC43117 </ci>
+                  <cn type="integer"> 1 </cn>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <plus/>
+              <ci> R406_D </ci>
+              <ci> hEC43117_Dreg </ci>
+            </apply>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="R406_r">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <divide/>
+            <apply>
+              <times/>
+              <ci> hEC43117 </ci>
+              <ci> hEC43117_fr </ci>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <ci> hKcat_R_R406 </ci>
+                  <apply>
+                    <power/>
+                    <ci> C00014 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <power/>
+                    <ci> C00022 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <times/>
+                  <apply>
+                    <power/>
+                    <ci> Km_C00014_hEC43117 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <power/>
+                    <ci> Km_C00022_hEC43117 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <plus/>
+              <ci> R406_D </ci>
+              <ci> hEC43117_Dreg </ci>
+            </apply>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="hEC11719_fr">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <apply>
+              <plus/>
+              <ci> Gnc_C00004_hEC11719 </ci>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn type="integer"> 1 </cn>
+                  <ci> Gnc_C00004_hEC11719 </ci>
+                </apply>
+                <apply>
+                  <divide/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> C00004 </ci>
+                      <ci> Ki_C00004_hEC11719 </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <plus/>
+              <ci> Gnc_C00007_hEC11719 </ci>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn type="integer"> 1 </cn>
+                  <ci> Gnc_C00007_hEC11719 </ci>
+                </apply>
+                <apply>
+                  <divide/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> C00007 </ci>
+                      <ci> Ki_C00007_hEC11719 </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <plus/>
+              <ci> Gnc_C00088_hEC11719 </ci>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn type="integer"> 1 </cn>
+                  <ci> Gnc_C00088_hEC11719 </ci>
+                </apply>
+                <apply>
+                  <divide/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> C00088 </ci>
+                      <ci> Ki_C00088_hEC11719 </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <plus/>
+              <ci> Gnc_C00177_hEC11719 </ci>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn type="integer"> 1 </cn>
+                  <ci> Gnc_C00177_hEC11719 </ci>
+                </apply>
+                <apply>
+                  <divide/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> C00177 </ci>
+                      <ci> Ki_C00177_hEC11719 </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <plus/>
+              <ci> Gnc_C00244_hEC11719 </ci>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn type="integer"> 1 </cn>
+                  <ci> Gnc_C00244_hEC11719 </ci>
+                </apply>
+                <apply>
+                  <divide/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> C00244 </ci>
+                      <ci> Ki_C00244_hEC11719 </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <plus/>
+              <ci> Gnc_C00284_hEC11719 </ci>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn type="integer"> 1 </cn>
+                  <ci> Gnc_C00284_hEC11719 </ci>
+                </apply>
+                <apply>
+                  <divide/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> C00284 </ci>
+                      <ci> Ki_C00284_hEC11719 </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <plus/>
+              <ci> Gnc_C00698_hEC11719 </ci>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn type="integer"> 1 </cn>
+                  <ci> Gnc_C00698_hEC11719 </ci>
+                </apply>
+                <apply>
+                  <divide/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> C00698 </ci>
+                      <ci> Ki_C00698_hEC11719 </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <plus/>
+              <ci> Gnc_C01326_hEC11719 </ci>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn type="integer"> 1 </cn>
+                  <ci> Gnc_C01326_hEC11719 </ci>
+                </apply>
+                <apply>
+                  <divide/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> C01326 </ci>
+                      <ci> Ki_C01326_hEC11719 </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <plus/>
+              <ci> Gnc_C01327_hEC11719 </ci>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn type="integer"> 1 </cn>
+                  <ci> Gnc_C01327_hEC11719 </ci>
+                </apply>
+                <apply>
+                  <divide/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> C01327 </ci>
+                      <ci> Ki_C01327_hEC11719 </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <plus/>
+              <ci> Gnc_C01417_hEC11719 </ci>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn type="integer"> 1 </cn>
+                  <ci> Gnc_C01417_hEC11719 </ci>
+                </apply>
+                <apply>
+                  <divide/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> C01417 </ci>
+                      <ci> Ki_C01417_hEC11719 </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <plus/>
+              <ci> Gnc_C02441_hEC11719 </ci>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn type="integer"> 1 </cn>
+                  <ci> Gnc_C02441_hEC11719 </ci>
+                </apply>
+                <apply>
+                  <divide/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> C02441 </ci>
+                      <ci> Ki_C02441_hEC11719 </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <plus/>
+              <ci> Gnc_C19935_hEC11719 </ci>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn type="integer"> 1 </cn>
+                  <ci> Gnc_C19935_hEC11719 </ci>
+                </apply>
+                <apply>
+                  <divide/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> C19935 </ci>
+                      <ci> Ki_C19935_hEC11719 </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="hEC11719_Dreg">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <plus/>
+            <apply>
+              <times/>
+              <apply>
+                <minus/>
+                <cn type="integer"> 1 </cn>
+                <ci> Gc_C00004_hEC11719 </ci>
+              </apply>
+              <apply>
+                <divide/>
+                <ci> C00004 </ci>
+                <ci> Ki_C00004_hEC11719 </ci>
+              </apply>
+            </apply>
+            <apply>
+              <times/>
+              <apply>
+                <minus/>
+                <cn type="integer"> 1 </cn>
+                <ci> Gc_C00007_hEC11719 </ci>
+              </apply>
+              <apply>
+                <divide/>
+                <ci> C00007 </ci>
+                <ci> Ki_C00007_hEC11719 </ci>
+              </apply>
+            </apply>
+            <apply>
+              <times/>
+              <apply>
+                <minus/>
+                <cn type="integer"> 1 </cn>
+                <ci> Gc_C00088_hEC11719 </ci>
+              </apply>
+              <apply>
+                <divide/>
+                <ci> C00088 </ci>
+                <ci> Ki_C00088_hEC11719 </ci>
+              </apply>
+            </apply>
+            <apply>
+              <times/>
+              <apply>
+                <minus/>
+                <cn type="integer"> 1 </cn>
+                <ci> Gc_C00177_hEC11719 </ci>
+              </apply>
+              <apply>
+                <divide/>
+                <ci> C00177 </ci>
+                <ci> Ki_C00177_hEC11719 </ci>
+              </apply>
+            </apply>
+            <apply>
+              <times/>
+              <apply>
+                <minus/>
+                <cn type="integer"> 1 </cn>
+                <ci> Gc_C00244_hEC11719 </ci>
+              </apply>
+              <apply>
+                <divide/>
+                <ci> C00244 </ci>
+                <ci> Ki_C00244_hEC11719 </ci>
+              </apply>
+            </apply>
+            <apply>
+              <times/>
+              <apply>
+                <minus/>
+                <cn type="integer"> 1 </cn>
+                <ci> Gc_C00284_hEC11719 </ci>
+              </apply>
+              <apply>
+                <divide/>
+                <ci> C00284 </ci>
+                <ci> Ki_C00284_hEC11719 </ci>
+              </apply>
+            </apply>
+            <apply>
+              <times/>
+              <apply>
+                <minus/>
+                <cn type="integer"> 1 </cn>
+                <ci> Gc_C00698_hEC11719 </ci>
+              </apply>
+              <apply>
+                <divide/>
+                <ci> C00698 </ci>
+                <ci> Ki_C00698_hEC11719 </ci>
+              </apply>
+            </apply>
+            <apply>
+              <times/>
+              <apply>
+                <minus/>
+                <cn type="integer"> 1 </cn>
+                <ci> Gc_C01326_hEC11719 </ci>
+              </apply>
+              <apply>
+                <divide/>
+                <ci> C01326 </ci>
+                <ci> Ki_C01326_hEC11719 </ci>
+              </apply>
+            </apply>
+            <apply>
+              <times/>
+              <apply>
+                <minus/>
+                <cn type="integer"> 1 </cn>
+                <ci> Gc_C01327_hEC11719 </ci>
+              </apply>
+              <apply>
+                <divide/>
+                <ci> C01327 </ci>
+                <ci> Ki_C01327_hEC11719 </ci>
+              </apply>
+            </apply>
+            <apply>
+              <times/>
+              <apply>
+                <minus/>
+                <cn type="integer"> 1 </cn>
+                <ci> Gc_C01417_hEC11719 </ci>
+              </apply>
+              <apply>
+                <divide/>
+                <ci> C01417 </ci>
+                <ci> Ki_C01417_hEC11719 </ci>
+              </apply>
+            </apply>
+            <apply>
+              <times/>
+              <apply>
+                <minus/>
+                <cn type="integer"> 1 </cn>
+                <ci> Gc_C02441_hEC11719 </ci>
+              </apply>
+              <apply>
+                <divide/>
+                <ci> C02441 </ci>
+                <ci> Ki_C02441_hEC11719 </ci>
+              </apply>
+            </apply>
+            <apply>
+              <times/>
+              <apply>
+                <minus/>
+                <cn type="integer"> 1 </cn>
+                <ci> Gc_C19935_hEC11719 </ci>
+              </apply>
+              <apply>
+                <divide/>
+                <ci> C19935 </ci>
+                <ci> Ki_C19935_hEC11719 </ci>
+              </apply>
+            </apply>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="R197_D">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <apply>
+              <plus/>
+              <apply>
+                <times/>
+                <apply>
+                  <power/>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> C00003 </ci>
+                      <ci> Km_C00003_hEC11719 </ci>
+                    </apply>
+                  </apply>
+                  <cn type="integer"> 1 </cn>
+                </apply>
+                <apply>
+                  <power/>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> C00058 </ci>
+                      <ci> Km_C00058_hEC11719 </ci>
+                    </apply>
+                  </apply>
+                  <cn type="integer"> 1 </cn>
+                </apply>
+              </apply>
+              <apply>
+                <times/>
+                <apply>
+                  <power/>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> C00004 </ci>
+                      <ci> Km_C00004_hEC11719 </ci>
+                    </apply>
+                  </apply>
+                  <cn type="integer"> 1 </cn>
+                </apply>
+                <apply>
+                  <power/>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> C00011 </ci>
+                      <ci> Km_C00011_hEC11719 </ci>
+                    </apply>
+                  </apply>
+                  <cn type="integer"> 1 </cn>
+                </apply>
+              </apply>
+            </apply>
+            <cn type="integer"> 1 </cn>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="hKcat_F_R197">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> Kcat_V_R197 </ci>
+            <apply>
+              <power/>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <ci> Keq_R197 </ci>
+                  <apply>
+                    <power/>
+                    <ci> Km_C00003_hEC11719 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <power/>
+                    <ci> Km_C00058_hEC11719 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <times/>
+                  <apply>
+                    <power/>
+                    <ci> Km_C00004_hEC11719 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <power/>
+                    <ci> Km_C00011_hEC11719 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                </apply>
+              </apply>
+              <cn> 0.5 </cn>
+            </apply>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="hKcat_R_R197">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> Kcat_V_R197 </ci>
+            <apply>
+              <power/>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <ci> Keq_R197 </ci>
+                  <apply>
+                    <power/>
+                    <ci> Km_C00003_hEC11719 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <power/>
+                    <ci> Km_C00058_hEC11719 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <times/>
+                  <apply>
+                    <power/>
+                    <ci> Km_C00004_hEC11719 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <power/>
+                    <ci> Km_C00011_hEC11719 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                </apply>
+              </apply>
+              <cn> -0.5 </cn>
+            </apply>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="R197_f">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <divide/>
+            <apply>
+              <times/>
+              <ci> hEC11719 </ci>
+              <ci> hEC11719_fr </ci>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <ci> hKcat_F_R197 </ci>
+                  <apply>
+                    <power/>
+                    <ci> C00003 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <power/>
+                    <ci> C00058 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <times/>
+                  <apply>
+                    <power/>
+                    <ci> Km_C00003_hEC11719 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <power/>
+                    <ci> Km_C00058_hEC11719 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <plus/>
+              <ci> R197_D </ci>
+              <ci> hEC11719_Dreg </ci>
+            </apply>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="R197_r">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <divide/>
+            <apply>
+              <times/>
+              <ci> hEC11719 </ci>
+              <ci> hEC11719_fr </ci>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <ci> hKcat_R_R197 </ci>
+                  <apply>
+                    <power/>
+                    <ci> C00004 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <power/>
+                    <ci> C00011 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <times/>
+                  <apply>
+                    <power/>
+                    <ci> Km_C00004_hEC11719 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <power/>
+                    <ci> Km_C00011_hEC11719 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <plus/>
+              <ci> R197_D </ci>
+              <ci> hEC11719_Dreg </ci>
+            </apply>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="hEC11137_fr">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <apply>
+              <plus/>
+              <ci> Gnc_C00002_hEC11137 </ci>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn type="integer"> 1 </cn>
+                  <ci> Gnc_C00002_hEC11137 </ci>
+                </apply>
+                <apply>
+                  <divide/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> C00002 </ci>
+                      <ci> Ki_C00002_hEC11137 </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <plus/>
+              <ci> Gnc_C00003_hEC11137 </ci>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn type="integer"> 1 </cn>
+                  <ci> Gnc_C00003_hEC11137 </ci>
+                </apply>
+                <apply>
+                  <divide/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> C00003 </ci>
+                      <ci> Ki_C00003_hEC11137 </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <plus/>
+              <ci> Gnc_C00004_hEC11137 </ci>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn type="integer"> 1 </cn>
+                  <ci> Gnc_C00004_hEC11137 </ci>
+                </apply>
+                <apply>
+                  <divide/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> C00004 </ci>
+                      <ci> Ki_C00004_hEC11137 </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <plus/>
+              <ci> Gnc_C00010_hEC11137 </ci>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn type="integer"> 1 </cn>
+                  <ci> Gnc_C00010_hEC11137 </ci>
+                </apply>
+                <apply>
+                  <divide/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> C00010 </ci>
+                      <ci> Ki_C00010_hEC11137 </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <plus/>
+              <ci> Gnc_C00024_hEC11137 </ci>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn type="integer"> 1 </cn>
+                  <ci> Gnc_C00024_hEC11137 </ci>
+                </apply>
+                <apply>
+                  <divide/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> C00024 </ci>
+                      <ci> Ki_C00024_hEC11137 </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <plus/>
+              <ci> Gnc_C00036_hEC11137 </ci>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn type="integer"> 1 </cn>
+                  <ci> Gnc_C00036_hEC11137 </ci>
+                </apply>
+                <apply>
+                  <divide/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> C00036 </ci>
+                      <ci> Ki_C00036_hEC11137 </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <plus/>
+              <ci> Gnc_C00149_hEC11137 </ci>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn type="integer"> 1 </cn>
+                  <ci> Gnc_C00149_hEC11137 </ci>
+                </apply>
+                <apply>
+                  <divide/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> C00149 </ci>
+                      <ci> Ki_C00149_hEC11137 </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <plus/>
+              <ci> Gnc_C00209_hEC11137 </ci>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn type="integer"> 1 </cn>
+                  <ci> Gnc_C00209_hEC11137 </ci>
+                </apply>
+                <apply>
+                  <divide/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> C00209 </ci>
+                      <ci> Ki_C00209_hEC11137 </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <plus/>
+              <ci> Gnc_C00741_hEC11137 </ci>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn type="integer"> 1 </cn>
+                  <ci> Gnc_C00741_hEC11137 </ci>
+                </apply>
+                <apply>
+                  <divide/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> C00741 </ci>
+                      <ci> Ki_C00741_hEC11137 </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <plus/>
+              <ci> Gnc_C02441_hEC11137 </ci>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn type="integer"> 1 </cn>
+                  <ci> Gnc_C02441_hEC11137 </ci>
+                </apply>
+                <apply>
+                  <divide/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> C02441 </ci>
+                      <ci> Ki_C02441_hEC11137 </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <plus/>
+              <ci> Gnc_C11592_hEC11137 </ci>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn type="integer"> 1 </cn>
+                  <ci> Gnc_C11592_hEC11137 </ci>
+                </apply>
+                <apply>
+                  <divide/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> C11592 </ci>
+                      <ci> Ki_C11592_hEC11137 </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="hEC11137_Dreg">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <plus/>
+            <apply>
+              <times/>
+              <apply>
+                <minus/>
+                <cn type="integer"> 1 </cn>
+                <ci> Gc_C00002_hEC11137 </ci>
+              </apply>
+              <apply>
+                <divide/>
+                <ci> C00002 </ci>
+                <ci> Ki_C00002_hEC11137 </ci>
+              </apply>
+            </apply>
+            <apply>
+              <times/>
+              <apply>
+                <minus/>
+                <cn type="integer"> 1 </cn>
+                <ci> Gc_C00003_hEC11137 </ci>
+              </apply>
+              <apply>
+                <divide/>
+                <ci> C00003 </ci>
+                <ci> Ki_C00003_hEC11137 </ci>
+              </apply>
+            </apply>
+            <apply>
+              <times/>
+              <apply>
+                <minus/>
+                <cn type="integer"> 1 </cn>
+                <ci> Gc_C00004_hEC11137 </ci>
+              </apply>
+              <apply>
+                <divide/>
+                <ci> C00004 </ci>
+                <ci> Ki_C00004_hEC11137 </ci>
+              </apply>
+            </apply>
+            <apply>
+              <times/>
+              <apply>
+                <minus/>
+                <cn type="integer"> 1 </cn>
+                <ci> Gc_C00010_hEC11137 </ci>
+              </apply>
+              <apply>
+                <divide/>
+                <ci> C00010 </ci>
+                <ci> Ki_C00010_hEC11137 </ci>
+              </apply>
+            </apply>
+            <apply>
+              <times/>
+              <apply>
+                <minus/>
+                <cn type="integer"> 1 </cn>
+                <ci> Gc_C00024_hEC11137 </ci>
+              </apply>
+              <apply>
+                <divide/>
+                <ci> C00024 </ci>
+                <ci> Ki_C00024_hEC11137 </ci>
+              </apply>
+            </apply>
+            <apply>
+              <times/>
+              <apply>
+                <minus/>
+                <cn type="integer"> 1 </cn>
+                <ci> Gc_C00036_hEC11137 </ci>
+              </apply>
+              <apply>
+                <divide/>
+                <ci> C00036 </ci>
+                <ci> Ki_C00036_hEC11137 </ci>
+              </apply>
+            </apply>
+            <apply>
+              <times/>
+              <apply>
+                <minus/>
+                <cn type="integer"> 1 </cn>
+                <ci> Gc_C00149_hEC11137 </ci>
+              </apply>
+              <apply>
+                <divide/>
+                <ci> C00149 </ci>
+                <ci> Ki_C00149_hEC11137 </ci>
+              </apply>
+            </apply>
+            <apply>
+              <times/>
+              <apply>
+                <minus/>
+                <cn type="integer"> 1 </cn>
+                <ci> Gc_C00209_hEC11137 </ci>
+              </apply>
+              <apply>
+                <divide/>
+                <ci> C00209 </ci>
+                <ci> Ki_C00209_hEC11137 </ci>
+              </apply>
+            </apply>
+            <apply>
+              <times/>
+              <apply>
+                <minus/>
+                <cn type="integer"> 1 </cn>
+                <ci> Gc_C00741_hEC11137 </ci>
+              </apply>
+              <apply>
+                <divide/>
+                <ci> C00741 </ci>
+                <ci> Ki_C00741_hEC11137 </ci>
+              </apply>
+            </apply>
+            <apply>
+              <times/>
+              <apply>
+                <minus/>
+                <cn type="integer"> 1 </cn>
+                <ci> Gc_C02441_hEC11137 </ci>
+              </apply>
+              <apply>
+                <divide/>
+                <ci> C02441 </ci>
+                <ci> Ki_C02441_hEC11137 </ci>
+              </apply>
+            </apply>
+            <apply>
+              <times/>
+              <apply>
+                <minus/>
+                <cn type="integer"> 1 </cn>
+                <ci> Gc_C11592_hEC11137 </ci>
+              </apply>
+              <apply>
+                <divide/>
+                <ci> C11592 </ci>
+                <ci> Ki_C11592_hEC11137 </ci>
+              </apply>
+            </apply>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="R269_D">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <apply>
+              <plus/>
+              <apply>
+                <times/>
+                <apply>
+                  <power/>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> C00003 </ci>
+                      <ci> Km_C00003_hEC11137 </ci>
+                    </apply>
+                  </apply>
+                  <cn type="integer"> 1 </cn>
+                </apply>
+                <apply>
+                  <power/>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> C00149 </ci>
+                      <ci> Km_C00149_hEC11137 </ci>
+                    </apply>
+                  </apply>
+                  <cn type="integer"> 1 </cn>
+                </apply>
+              </apply>
+              <apply>
+                <times/>
+                <apply>
+                  <power/>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> C00004 </ci>
+                      <ci> Km_C00004_hEC11137 </ci>
+                    </apply>
+                  </apply>
+                  <cn type="integer"> 1 </cn>
+                </apply>
+                <apply>
+                  <power/>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> C00036 </ci>
+                      <ci> Km_C00036_hEC11137 </ci>
+                    </apply>
+                  </apply>
+                  <cn type="integer"> 1 </cn>
+                </apply>
+              </apply>
+            </apply>
+            <cn type="integer"> 1 </cn>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="hKcat_F_R269">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> Kcat_V_R269 </ci>
+            <apply>
+              <power/>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <ci> Keq_R269 </ci>
+                  <apply>
+                    <power/>
+                    <ci> Km_C00003_hEC11137 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <power/>
+                    <ci> Km_C00149_hEC11137 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <times/>
+                  <apply>
+                    <power/>
+                    <ci> Km_C00004_hEC11137 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <power/>
+                    <ci> Km_C00036_hEC11137 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                </apply>
+              </apply>
+              <cn> 0.5 </cn>
+            </apply>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="hKcat_R_R269">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> Kcat_V_R269 </ci>
+            <apply>
+              <power/>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <ci> Keq_R269 </ci>
+                  <apply>
+                    <power/>
+                    <ci> Km_C00003_hEC11137 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <power/>
+                    <ci> Km_C00149_hEC11137 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <times/>
+                  <apply>
+                    <power/>
+                    <ci> Km_C00004_hEC11137 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <power/>
+                    <ci> Km_C00036_hEC11137 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                </apply>
+              </apply>
+              <cn> -0.5 </cn>
+            </apply>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="R269_f">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <divide/>
+            <apply>
+              <times/>
+              <ci> hEC11137 </ci>
+              <ci> hEC11137_fr </ci>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <ci> hKcat_F_R269 </ci>
+                  <apply>
+                    <power/>
+                    <ci> C00003 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <power/>
+                    <ci> C00149 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <times/>
+                  <apply>
+                    <power/>
+                    <ci> Km_C00003_hEC11137 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <power/>
+                    <ci> Km_C00149_hEC11137 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <plus/>
+              <ci> R269_D </ci>
+              <ci> hEC11137_Dreg </ci>
+            </apply>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="R269_r">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <divide/>
+            <apply>
+              <times/>
+              <ci> hEC11137 </ci>
+              <ci> hEC11137_fr </ci>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <ci> hKcat_R_R269 </ci>
+                  <apply>
+                    <power/>
+                    <ci> C00004 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <power/>
+                    <ci> C00036 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <times/>
+                  <apply>
+                    <power/>
+                    <ci> Km_C00004_hEC11137 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <power/>
+                    <ci> Km_C00036_hEC11137 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <plus/>
+              <ci> R269_D </ci>
+              <ci> hEC11137_Dreg </ci>
+            </apply>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="hEC6411_fr">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <apply>
+              <plus/>
+              <ci> Gnc_C00002_hEC6411 </ci>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn type="integer"> 1 </cn>
+                  <ci> Gnc_C00002_hEC6411 </ci>
+                </apply>
+                <apply>
+                  <divide/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> C00002 </ci>
+                      <ci> Ki_C00002_hEC6411 </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <plus/>
+              <ci> Gnc_C00008_hEC6411 </ci>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn type="integer"> 1 </cn>
+                  <ci> Gnc_C00008_hEC6411 </ci>
+                </apply>
+                <apply>
+                  <divide/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> C00008 </ci>
+                      <ci> Ki_C00008_hEC6411 </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <plus/>
+              <ci> Gnc_C00009_hEC6411 </ci>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn type="integer"> 1 </cn>
+                  <ci> Gnc_C00009_hEC6411 </ci>
+                </apply>
+                <apply>
+                  <divide/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> C00009 </ci>
+                      <ci> Ki_C00009_hEC6411 </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <plus/>
+              <ci> Gnc_C00011_hEC6411 </ci>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn type="integer"> 1 </cn>
+                  <ci> Gnc_C00011_hEC6411 </ci>
+                </apply>
+                <apply>
+                  <divide/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> C00011 </ci>
+                      <ci> Ki_C00011_hEC6411 </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <plus/>
+              <ci> Gnc_C00022_hEC6411 </ci>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn type="integer"> 1 </cn>
+                  <ci> Gnc_C00022_hEC6411 </ci>
+                </apply>
+                <apply>
+                  <divide/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> C00022 </ci>
+                      <ci> Ki_C00022_hEC6411 </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <plus/>
+              <ci> Gnc_C00036_hEC6411 </ci>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <cn type="integer"> 1 </cn>
+                  <ci> Gnc_C00036_hEC6411 </ci>
+                </apply>
+                <apply>
+                  <divide/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> C00036 </ci>
+                      <ci> Ki_C00036_hEC6411 </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="hEC6411_Dreg">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <plus/>
+            <apply>
+              <times/>
+              <apply>
+                <minus/>
+                <cn type="integer"> 1 </cn>
+                <ci> Gc_C00002_hEC6411 </ci>
+              </apply>
+              <apply>
+                <divide/>
+                <ci> C00002 </ci>
+                <ci> Ki_C00002_hEC6411 </ci>
+              </apply>
+            </apply>
+            <apply>
+              <times/>
+              <apply>
+                <minus/>
+                <cn type="integer"> 1 </cn>
+                <ci> Gc_C00008_hEC6411 </ci>
+              </apply>
+              <apply>
+                <divide/>
+                <ci> C00008 </ci>
+                <ci> Ki_C00008_hEC6411 </ci>
+              </apply>
+            </apply>
+            <apply>
+              <times/>
+              <apply>
+                <minus/>
+                <cn type="integer"> 1 </cn>
+                <ci> Gc_C00009_hEC6411 </ci>
+              </apply>
+              <apply>
+                <divide/>
+                <ci> C00009 </ci>
+                <ci> Ki_C00009_hEC6411 </ci>
+              </apply>
+            </apply>
+            <apply>
+              <times/>
+              <apply>
+                <minus/>
+                <cn type="integer"> 1 </cn>
+                <ci> Gc_C00011_hEC6411 </ci>
+              </apply>
+              <apply>
+                <divide/>
+                <ci> C00011 </ci>
+                <ci> Ki_C00011_hEC6411 </ci>
+              </apply>
+            </apply>
+            <apply>
+              <times/>
+              <apply>
+                <minus/>
+                <cn type="integer"> 1 </cn>
+                <ci> Gc_C00022_hEC6411 </ci>
+              </apply>
+              <apply>
+                <divide/>
+                <ci> C00022 </ci>
+                <ci> Ki_C00022_hEC6411 </ci>
+              </apply>
+            </apply>
+            <apply>
+              <times/>
+              <apply>
+                <minus/>
+                <cn type="integer"> 1 </cn>
+                <ci> Gc_C00036_hEC6411 </ci>
+              </apply>
+              <apply>
+                <divide/>
+                <ci> C00036 </ci>
+                <ci> Ki_C00036_hEC6411 </ci>
+              </apply>
+            </apply>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="R345_D">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <apply>
+              <plus/>
+              <apply>
+                <times/>
+                <apply>
+                  <power/>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> C00002 </ci>
+                      <ci> Km_C00002_hEC6411 </ci>
+                    </apply>
+                  </apply>
+                  <cn type="integer"> 1 </cn>
+                </apply>
+                <apply>
+                  <power/>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> C00022 </ci>
+                      <ci> Km_C00022_hEC6411 </ci>
+                    </apply>
+                  </apply>
+                  <cn type="integer"> 1 </cn>
+                </apply>
+                <apply>
+                  <power/>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> C00011 </ci>
+                      <ci> Km_C00011_hEC6411 </ci>
+                    </apply>
+                  </apply>
+                  <cn type="integer"> 1 </cn>
+                </apply>
+              </apply>
+              <apply>
+                <times/>
+                <apply>
+                  <power/>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> C00008 </ci>
+                      <ci> Km_C00008_hEC6411 </ci>
+                    </apply>
+                  </apply>
+                  <cn type="integer"> 1 </cn>
+                </apply>
+                <apply>
+                  <power/>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> C00009 </ci>
+                      <ci> Km_C00009_hEC6411 </ci>
+                    </apply>
+                  </apply>
+                  <cn type="integer"> 1 </cn>
+                </apply>
+                <apply>
+                  <power/>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> C00036 </ci>
+                      <ci> Km_C00036_hEC6411 </ci>
+                    </apply>
+                  </apply>
+                  <cn type="integer"> 1 </cn>
+                </apply>
+              </apply>
+            </apply>
+            <cn type="integer"> 1 </cn>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="hKcat_F_R345">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> Kcat_V_R345 </ci>
+            <apply>
+              <power/>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <ci> Keq_R345 </ci>
+                  <apply>
+                    <power/>
+                    <ci> Km_C00002_hEC6411 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <power/>
+                    <ci> Km_C00022_hEC6411 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <power/>
+                    <ci> Km_C00011_hEC6411 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <times/>
+                  <apply>
+                    <power/>
+                    <ci> Km_C00008_hEC6411 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <power/>
+                    <ci> Km_C00009_hEC6411 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <power/>
+                    <ci> Km_C00036_hEC6411 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                </apply>
+              </apply>
+              <cn> 0.5 </cn>
+            </apply>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="hKcat_R_R345">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> Kcat_V_R345 </ci>
+            <apply>
+              <power/>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <ci> Keq_R345 </ci>
+                  <apply>
+                    <power/>
+                    <ci> Km_C00002_hEC6411 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <power/>
+                    <ci> Km_C00022_hEC6411 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <power/>
+                    <ci> Km_C00011_hEC6411 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <times/>
+                  <apply>
+                    <power/>
+                    <ci> Km_C00008_hEC6411 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <power/>
+                    <ci> Km_C00009_hEC6411 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <power/>
+                    <ci> Km_C00036_hEC6411 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                </apply>
+              </apply>
+              <cn> -0.5 </cn>
+            </apply>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="R345_f">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <divide/>
+            <apply>
+              <times/>
+              <ci> hEC6411 </ci>
+              <ci> hEC6411_fr </ci>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <ci> hKcat_F_R345 </ci>
+                  <apply>
+                    <power/>
+                    <ci> C00002 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <power/>
+                    <ci> C00022 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <power/>
+                    <ci> C00011 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <times/>
+                  <apply>
+                    <power/>
+                    <ci> Km_C00002_hEC6411 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <power/>
+                    <ci> Km_C00022_hEC6411 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <power/>
+                    <ci> Km_C00011_hEC6411 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <plus/>
+              <ci> R345_D </ci>
+              <ci> hEC6411_Dreg </ci>
+            </apply>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="R345_r">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <divide/>
+            <apply>
+              <times/>
+              <ci> hEC6411 </ci>
+              <ci> hEC6411_fr </ci>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <ci> hKcat_R_R345 </ci>
+                  <apply>
+                    <power/>
+                    <ci> C00008 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <power/>
+                    <ci> C00009 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <power/>
+                    <ci> C00036 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <times/>
+                  <apply>
+                    <power/>
+                    <ci> Km_C00008_hEC6411 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <power/>
+                    <ci> Km_C00009_hEC6411 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <power/>
+                    <ci> Km_C00036_hEC6411 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <plus/>
+              <ci> R345_D </ci>
+              <ci> hEC6411_Dreg </ci>
+            </apply>
+          </apply>
+        </math>
+      </assignmentRule>
+    </listOfRules>
+    <listOfReactions>
+      <reaction id="R406" reversible="true">
+        <listOfReactants>
+          <speciesReference species="C00065" stoichiometry="1" constant="true"/>
+          <speciesReference species="hEC43117" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="hEC43117" stoichiometry="1" constant="true"/>
+          <speciesReference species="C00014" stoichiometry="1" constant="true"/>
+          <speciesReference species="C00022" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <ci> R406_f </ci>
+              <ci> R406_r </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R197" reversible="true">
+        <listOfReactants>
+          <speciesReference species="C00003" stoichiometry="1" constant="true"/>
+          <speciesReference species="C00058" stoichiometry="1" constant="true"/>
+          <speciesReference species="hEC11719" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="hEC11719" stoichiometry="1" constant="true"/>
+          <speciesReference species="C00004" stoichiometry="1" constant="true"/>
+          <speciesReference species="C00011" stoichiometry="1" constant="true"/>
+          <speciesReference species="C00080" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <ci> R197_f </ci>
+              <ci> R197_r </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R269" reversible="true">
+        <listOfReactants>
+          <speciesReference species="C00003" stoichiometry="1" constant="true"/>
+          <speciesReference species="C00149" stoichiometry="1" constant="true"/>
+          <speciesReference species="hEC11137" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="hEC11137" stoichiometry="1" constant="true"/>
+          <speciesReference species="C00004" stoichiometry="1" constant="true"/>
+          <speciesReference species="C00036" stoichiometry="1" constant="true"/>
+          <speciesReference species="C00080" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <ci> R269_f </ci>
+              <ci> R269_r </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R345" reversible="true">
+        <listOfReactants>
+          <speciesReference species="C00002" stoichiometry="1" constant="true"/>
+          <speciesReference species="C00022" stoichiometry="1" constant="true"/>
+          <speciesReference species="C00011" stoichiometry="1" constant="true"/>
+          <speciesReference species="hEC6411" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="hEC6411" stoichiometry="1" constant="true"/>
+          <speciesReference species="C00008" stoichiometry="1" constant="true"/>
+          <speciesReference species="C00009" stoichiometry="1" constant="true"/>
+          <speciesReference species="C00036" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <ci> R345_f </ci>
+              <ci> R345_r </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>
