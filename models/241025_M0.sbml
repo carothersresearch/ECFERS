@@ -20,6 +20,7 @@
       <species id="C00036" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="C00022" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="C00065" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C00058" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="C00024" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="C00009" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="C00741" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
@@ -42,56 +43,42 @@
       <species id="hEC43117" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="hEC6411" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="hEC11719" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="C00058" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
     </listOfSpecies>
     <listOfParameters>
-      <parameter id="v69" value="1" constant="true"/>
+      <parameter id="v60" value="1" constant="true"/>
       <parameter id="dilution_factor" value="1" constant="true"/>
-      <parameter id="v148" value="1" constant="true"/>
-      <parameter id="v171" value="1" constant="true"/>
-      <parameter id="v180" value="1" constant="true"/>
-      <parameter id="v189" value="1" constant="true"/>
-      <parameter id="v204" value="1" constant="true"/>
-      <parameter id="v219" value="1" constant="true"/>
-      <parameter id="v233" value="1" constant="true"/>
-      <parameter id="v255" value="1" constant="true"/>
-      <parameter id="v338" value="1" constant="true"/>
-      <parameter id="v340" value="1" constant="true"/>
-      <parameter id="v346" value="1" constant="true"/>
-      <parameter id="v359" value="1" constant="true"/>
-      <parameter id="v386" value="1" constant="true"/>
-      <parameter id="v409" value="1" constant="true"/>
-      <parameter id="v440" value="1" constant="true"/>
-      <parameter id="v483" value="1" constant="true"/>
-      <parameter id="v526" value="1" constant="true"/>
-      <parameter id="v539" value="1" constant="true"/>
-      <parameter id="v545" value="1" constant="true"/>
-      <parameter id="v555" value="1" constant="true"/>
-      <parameter id="v581" value="1" constant="true"/>
-      <parameter id="v593" value="1" constant="true"/>
-      <parameter id="v608" value="1" constant="true"/>
+      <parameter id="v129" value="1" constant="true"/>
+      <parameter id="v151" value="1" constant="true"/>
+      <parameter id="v159" value="1" constant="true"/>
+      <parameter id="v167" value="1" constant="true"/>
+      <parameter id="v182" value="1" constant="true"/>
+      <parameter id="v195" value="1" constant="true"/>
+      <parameter id="v208" value="1" constant="true"/>
+      <parameter id="v227" value="1" constant="true"/>
+      <parameter id="v301" value="1" constant="true"/>
+      <parameter id="v303" value="1" constant="true"/>
+      <parameter id="v308" value="1" constant="true"/>
+      <parameter id="v319" value="1" constant="true"/>
+      <parameter id="v345" value="1" constant="true"/>
+      <parameter id="v365" value="1" constant="true"/>
+      <parameter id="v390" value="1" constant="true"/>
+      <parameter id="v394" value="1" constant="true"/>
+      <parameter id="v433" value="1" constant="true"/>
+      <parameter id="v474" value="1" constant="true"/>
+      <parameter id="v485" value="1" constant="true"/>
+      <parameter id="v491" value="1" constant="true"/>
+      <parameter id="v498" value="1" constant="true"/>
+      <parameter id="v519" value="1" constant="true"/>
+      <parameter id="v528" value="1" constant="true"/>
+      <parameter id="v543" value="1" constant="true"/>
+      <parameter id="v546" value="1" constant="true"/>
+      <parameter id="v604" value="1" constant="true"/>
       <parameter id="v613" value="1" constant="true"/>
-      <parameter id="v680" value="1" constant="true"/>
-      <parameter id="v691" value="1" constant="true"/>
-      <parameter id="v712" value="1" constant="true"/>
-      <parameter id="v777" value="1" constant="true"/>
-      <parameter id="v825" value="1" constant="true"/>
-      <parameter id="v873" value="1" constant="true"/>
-      <parameter id="v900" value="1" constant="true"/>
-      <parameter id="v931" value="1" constant="true"/>
-      <parameter id="v1036" value="1" constant="true"/>
-      <parameter id="v1068" value="1" constant="true"/>
-      <parameter id="v1085" value="1" constant="true"/>
-      <parameter id="v1089" value="1" constant="true"/>
-      <parameter id="v1172" value="1" constant="true"/>
-      <parameter id="v1199" value="1" constant="true"/>
-      <parameter id="v1214" value="1" constant="true"/>
-      <parameter id="v1217" value="1" constant="true"/>
-      <parameter id="v1235" value="1" constant="true"/>
-      <parameter id="v1260" value="1" constant="true"/>
-      <parameter id="v1261" value="1" constant="true"/>
-      <parameter id="v1262" value="1" constant="true"/>
-      <parameter id="v1263" value="1" constant="true"/>
+      <parameter id="v632" value="1" constant="true"/>
+      <parameter id="v673" value="1" constant="true"/>
+      <parameter id="v674" value="1" constant="true"/>
+      <parameter id="v675" value="1" constant="true"/>
+      <parameter id="v676" value="1" constant="true"/>
       <parameter id="p_eEC11137" value="1" constant="true"/>
       <parameter id="rel0" value="1" constant="true"/>
       <parameter id="p_hEC11137" value="1" constant="true"/>
@@ -282,8 +269,8 @@
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <times/>
-            <ci> v873 </ci>
-            <cn> 0.001 </cn>
+            <ci> v60 </ci>
+            <cn type="integer"> 10 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -292,7 +279,7 @@
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <times/>
-            <ci> v148 </ci>
+            <ci> v129 </ci>
             <cn> 0.001 </cn>
             <ci> dilution_factor </ci>
           </apply>
@@ -302,7 +289,7 @@
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <times/>
-            <ci> v1214 </ci>
+            <ci> v151 </ci>
             <cn> 0.001 </cn>
             <ci> dilution_factor </ci>
           </apply>
@@ -312,7 +299,7 @@
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <times/>
-            <ci> v825 </ci>
+            <ci> v159 </ci>
             <cn> 0.001 </cn>
             <ci> dilution_factor </ci>
           </apply>
@@ -322,7 +309,7 @@
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <times/>
-            <ci> v931 </ci>
+            <ci> v167 </ci>
             <cn> 0.001 </cn>
             <ci> dilution_factor </ci>
           </apply>
@@ -332,7 +319,7 @@
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <times/>
-            <ci> v1172 </ci>
+            <ci> v182 </ci>
             <cn> 0.001 </cn>
             <ci> dilution_factor </ci>
           </apply>
@@ -342,7 +329,7 @@
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <times/>
-            <ci> v219 </ci>
+            <ci> v195 </ci>
             <cn> 10.001 </cn>
             <ci> dilution_factor </ci>
           </apply>
@@ -352,7 +339,7 @@
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <times/>
-            <ci> v233 </ci>
+            <ci> v208 </ci>
             <cn> 0.001 </cn>
             <ci> dilution_factor </ci>
           </apply>
@@ -362,7 +349,7 @@
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <times/>
-            <ci> v255 </ci>
+            <ci> v227 </ci>
             <cn> 0.001 </cn>
             <ci> dilution_factor </ci>
           </apply>
@@ -372,7 +359,7 @@
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <times/>
-            <ci> v1068 </ci>
+            <ci> v301 </ci>
             <cn> 0.001 </cn>
             <ci> dilution_factor </ci>
           </apply>
@@ -382,7 +369,7 @@
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <times/>
-            <ci> v340 </ci>
+            <ci> v303 </ci>
             <cn> 0.001 </cn>
             <ci> dilution_factor </ci>
           </apply>
@@ -392,7 +379,7 @@
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <times/>
-            <ci> v1199 </ci>
+            <ci> v308 </ci>
             <cn> 1.4 </cn>
             <ci> dilution_factor </ci>
           </apply>
@@ -402,7 +389,7 @@
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <times/>
-            <ci> v359 </ci>
+            <ci> v319 </ci>
             <cn> 0.0011 </cn>
             <ci> dilution_factor </ci>
           </apply>
@@ -412,7 +399,7 @@
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <times/>
-            <ci> v386 </ci>
+            <ci> v345 </ci>
             <cn> 0.0011 </cn>
             <ci> dilution_factor </ci>
           </apply>
@@ -422,8 +409,18 @@
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <times/>
-            <ci> v900 </ci>
-            <cn> 0.001 </cn>
+            <ci> v365 </ci>
+            <cn> 1.001 </cn>
+            <ci> dilution_factor </ci>
+          </apply>
+        </math>
+      </initialAssignment>
+      <initialAssignment symbol="C00058">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> v390 </ci>
+            <cn type="integer"> 15 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -432,8 +429,8 @@
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <times/>
-            <ci> v1085 </ci>
-            <cn> 0.61 </cn>
+            <ci> v394 </ci>
+            <cn> 1.61 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -442,7 +439,7 @@
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <times/>
-            <ci> v1217 </ci>
+            <ci> v433 </ci>
             <cn> 0.001 </cn>
             <ci> dilution_factor </ci>
           </apply>
@@ -452,7 +449,7 @@
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <times/>
-            <ci> v526 </ci>
+            <ci> v474 </ci>
             <cn> 0.001 </cn>
             <ci> dilution_factor </ci>
           </apply>
@@ -462,7 +459,7 @@
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <times/>
-            <ci> v539 </ci>
+            <ci> v485 </ci>
             <cn> 1.7 </cn>
             <ci> dilution_factor </ci>
           </apply>
@@ -472,7 +469,7 @@
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <times/>
-            <ci> v545 </ci>
+            <ci> v491 </ci>
             <cn> 0.001 </cn>
             <ci> dilution_factor </ci>
           </apply>
@@ -482,7 +479,7 @@
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <times/>
-            <ci> v777 </ci>
+            <ci> v498 </ci>
             <cn> 0.001 </cn>
             <ci> dilution_factor </ci>
           </apply>
@@ -492,8 +489,8 @@
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <times/>
-            <ci> v1089 </ci>
-            <cn> 0.083 </cn>
+            <ci> v519 </ci>
+            <cn> 1.083 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -502,7 +499,7 @@
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <times/>
-            <ci> v1036 </ci>
+            <ci> v528 </ci>
             <cn> 0.0001 </cn>
             <ci> dilution_factor </ci>
           </apply>
@@ -512,7 +509,7 @@
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <times/>
-            <ci> v608 </ci>
+            <ci> v543 </ci>
             <cn> 0.001 </cn>
             <ci> dilution_factor </ci>
           </apply>
@@ -522,7 +519,7 @@
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <times/>
-            <ci> v613 </ci>
+            <ci> v546 </ci>
             <cn> 0.001 </cn>
             <ci> dilution_factor </ci>
           </apply>
@@ -532,7 +529,7 @@
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <times/>
-            <ci> v680 </ci>
+            <ci> v604 </ci>
             <cn> 0.001 </cn>
             <ci> dilution_factor </ci>
           </apply>
@@ -542,7 +539,7 @@
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <times/>
-            <ci> v691 </ci>
+            <ci> v613 </ci>
             <cn> 0.001 </cn>
             <ci> dilution_factor </ci>
           </apply>
@@ -552,8 +549,8 @@
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <times/>
-            <ci> v1235 </ci>
-            <cn> 0.001 </cn>
+            <ci> v632 </ci>
+            <cn> 1.001 </cn>
             <ci> dilution_factor </ci>
           </apply>
         </math>
@@ -562,7 +559,7 @@
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <times/>
-            <ci> v1260 </ci>
+            <ci> v673 </ci>
             <cn> 0.001 </cn>
             <ci> dilution_factor </ci>
           </apply>
@@ -572,7 +569,7 @@
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <times/>
-            <ci> v1261 </ci>
+            <ci> v674 </ci>
             <cn> 0.001 </cn>
             <ci> dilution_factor </ci>
           </apply>
@@ -582,7 +579,7 @@
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <times/>
-            <ci> v1262 </ci>
+            <ci> v675 </ci>
             <cn> 0.001 </cn>
             <ci> dilution_factor </ci>
           </apply>
@@ -592,7 +589,7 @@
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <times/>
-            <ci> v1263 </ci>
+            <ci> v676 </ci>
             <cn> 0.001 </cn>
             <ci> dilution_factor </ci>
           </apply>
