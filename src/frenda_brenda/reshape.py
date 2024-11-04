@@ -6,14 +6,17 @@ import sys
 import os
 
 # load SBML model
-modelfile = os.getcwd()+'/240418MC.sbml'
+modelfile = os.getcwd()+'/results/240707_VNMetGly_Keq_PSOs/240621_VN_Metabolism_Gly_Keq_fitted.sbml'
 #modelfile = sys.argv[1]
 print(modelfile)
 r = te.loadSBMLModel(modelfile)
 
 
-reaction = pd.read_csv(sys.argv[2])
-sbm = pd.read_csv(sys.argv[3])
+# reaction = pd.read_csv(sys.argv[2])
+# sbm = pd.read_csv(sys.argv[3])
+
+reaction = pd.read_csv('src/frenda_brenda/Files/Reduced Complexity/Reaction_VN_Metabolism_Gly_Keq.csv')
+sbm = pd.read_csv('src/frenda_brenda/Files/Reduced Complexity/SpeciesBaseMechanisms_VN_Metabolism_Gly.csv')
 
 rxn = reaction.copy()
 s = sbm.copy()
@@ -49,7 +52,7 @@ for index, row in rxn.iterrows():
     ki_list = []
 
     for compound in compounds.split(','):
-        new_KM = r[(f'Km_{compound}_{label}')]
+        new_KM = r[(f'Km_{compound}_{ECjoined}')]
         km_list.append(f'Km_{compound}: {new_KM}')
     rxn.loc[index, 'Km'] == (';').join(km_list)
 
@@ -61,7 +64,7 @@ for index, row in rxn.iterrows():
         continue
     else:
         for inhibitor in inhibitors.split(';'):
-            new_KI = r[(f'Ki_{inhibitor}_{label}')]
+            new_KI = r[(f'Ki_{inhibitor}_{ECjoined}')]
             ki_list.append(f'{inhibitor}_KI: {new_KI}')
         rxn.loc[index, 'KI'] == (';').join(ki_list)
 
