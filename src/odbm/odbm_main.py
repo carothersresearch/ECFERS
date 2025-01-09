@@ -6,6 +6,8 @@ from src.odbm.utils import extractParams, fmt
 
 from src.odbm.mechanisms import *
 
+from copy import deepcopy
+
 # from src.parameter_balancing.balancer import RRBalancer
 
 class ModelBuilder:
@@ -305,7 +307,7 @@ class ModelBuilder:
 
         return v_str
     
-    def compile(self) -> str:
+    def compile(self, enzyme_degradation = True) -> str:
         """
         Iterates through all species and reactions and generates an Antimony string
 
@@ -339,12 +341,14 @@ class ModelBuilder:
                     
         self.v_str += self.writeVariable('dilution_factor')
 
+        enzyme_rxns_dict = {}
         for _, rxn in self.rxns.iterrows():
             if rxn['Accession Number'] == 'Heterologous':
                 EC = 'hEC'+rxn['EC'].replace('.','')
             else:
                 EC = 'eEC'+rxn['EC'].replace('.','')
-                
+            if EC not in enzyme_rxns_dict.keys(): enzyme_rxns_dict[EC] = deepcopy(rxn)
+
             try:
                 parameters = rxn['Parameters']
             except:
@@ -367,6 +371,15 @@ class ModelBuilder:
                         self.v_str += self.writeVariable(var, value = 1)
                         var = 'Gc_'+i+'_'+EC
                         self.v_str += self.writeVariable(var, value = 1)
+        
+        if enzyme_degradation:
+            for EC,rxn in enzyme_rxns_dict.items():
+                rxn['Mechanism'] = 'EED'
+                self.r_str += self.writeReaction(rxn) + '\n'
+                try:
+                    self.p_str += self.writeParameters(rxn['Kdeg'], rxn['Label'])
+                except:
+                    self.p_str += self.writeVariable('kdeg_'+EC, 1e-4) # 2 hr half life -> almost 1e-4 s^-1
 
         return self.s_str + self.p_str + self.v_str + self.r_str
 

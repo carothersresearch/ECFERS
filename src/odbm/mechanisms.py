@@ -298,6 +298,24 @@ class ModularRateLaw(Mechanism):
 
         return rate
 
+class EnzymeExponentialDecay(Mechanism):
+    """
+    Based on: https://academic.oup.com/bioinformatics/article/26/12/1528/281177#393582847
+    """
+    name = 'EED'
+    required_params = None # could check some other ways but skipping check for now
+    nS = np.nan                        # number of required substrates 
+    nP = np.nan                        # number of required products 
+    nI = np.nan                        # number of required inhibitors
+    nE = np.nan
+
+    @overrides
+    def writeEquation(self) -> str:
+        return 'D_'+self.enzyme[0] +' : '+self.enzyme[0] + ' -> ' 
+    @overrides
+    def writeRate(self) -> str:
+        return 'D_'+self.enzyme[0] +' = '+ 'kdeg_'+self.enzyme[0]+'*'+self.enzyme[0]
+
 class OrderedBisubstrateBiproduct(Mechanism):
     # ordered bisubstrate-biproduct
     # must have two substrates and two products
@@ -558,7 +576,7 @@ class HillCofactor(Modifier):
 
 
 
-MECHANISMS = [  MichaelisMenten, ModularRateLaw, OrderedBisubstrateBiproduct, MassAction, simplifiedOBB, ConstantRate, Exponential,
+MECHANISMS = [  MichaelisMenten, ModularRateLaw, EnzymeExponentialDecay, OrderedBisubstrateBiproduct, MassAction, simplifiedOBB, ConstantRate, Exponential,
                         MonoMassAction, TX_MM,
                         LinearCofactor, HillCofactor, ProductInhibition, SimpleProductInhibition
                     ]
