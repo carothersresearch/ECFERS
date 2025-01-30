@@ -1,0 +1,65 @@
+Label,EC,Type,StartingConc,Conc,Mechanisms,Parameters,Species,Relative
+,4.3.1.17,Endogenous Enzyme,0.000913174,,,,Escherichia coli,rel0
+,1.2.4.1,Endogenous Enzyme,0.011323353,,,,Escherichia coli,rel0
+,2.3.3.16,Endogenous Enzyme,0.010592814,,,,Escherichia coli,rel0
+,4.2.1.3,Endogenous Enzyme,0.017715569,,,,Escherichia coli,rel0
+,1.1.1.42,Endogenous Enzyme,0.010227545,,,,Escherichia coli,rel0
+,1.2.4.2,Endogenous Enzyme,0.01698503,,,,Escherichia coli,rel0
+,6.2.1.5,Endogenous Enzyme,0.019907186,,,,Escherichia coli,rel0
+,1.3.5.1,Endogenous Enzyme,0.001826347,,,,Escherichia coli,rel0
+,4.2.1.2,Endogenous Enzyme,0.006026946,,,,Escherichia coli,rel0
+,1.1.1.37,Endogenous Enzyme,0.013770659,,,,Escherichia coli,rel0
+,2.1.2.1,Endogenous Enzyme,0.005661677,,,,Escherichia coli,rel0
+C15972,,Metabolite,0.001,,,,,v1
+C00037,,Metabolite,0.001,,,,,v2
+C00161,,Metabolite,0.001,,,,,v3
+C00001,,Metabolite,0.001,,,,,v4
+C00322,,Metabolite,0.001,,,,,v5
+C00311,,Metabolite,0.001,,,,,v6
+C11592,,Metabolite,0.001,,,,,v7
+C06157,,Metabolite,0.001,,,,,v8
+C05379,,Metabolite,0.001,,,,,v9
+C00014,,Metabolite,0.001,,,,,v10
+C00383,,Metabolite,0.001,,,,,v11
+C00399,,Metabolite,0.001,,,,,v12
+C00022,,Metabolite,0,,,,,v13
+C02218,,Metabolite,0.001,,,,,v14
+C00158,,Metabolite,0.001,,,,,v15
+C00004,,Metabolite,0.083,,,,,v16
+C00417,,Metabolite,0.001,,,,,v17
+C02575,,Metabolite,0.001,,,,,v18
+C00209,,Metabolite,0.001,,,,,v19
+C16255,,Metabolite,0.001,,,,,v20
+C00143,,Metabolite,0.001,,,,,v21
+C00010,,Metabolite,1.4,,,,,v22
+C00527,,Metabolite,0.001,,,,,v23
+C00024,,Metabolite,0.61,,,,,v24
+C00036,,Metabolite,0,,,,,v25
+C05125,,Metabolite,0.001,,,,,v26
+C00002,,Metabolite,0.001,,,,,v27
+C00741,,Metabolite,0.001,,,,,v28
+C04377,,Metabolite,0.001,,,,,v29
+C02441,,Metabolite,0.001,,,,,v30
+C00149,,Metabolite,1.7,,,,,v31
+C00068,,Metabolite,0.001,,,,,v32
+C00006,,Metabolite,0.0021,,,,,v33
+C00390,,Metabolite,0.001,,,,,v34
+C00005,,Metabolite,0.12,,,,,v35
+C00042,,Metabolite,7.1692,,,,,v36
+C04284,,Metabolite,0.001,,,,,v37
+C00122,,Metabolite,0.001,,,,,v38
+C01217,,Metabolite,0.001,,,,,v39
+C00003,,Metabolite,0.001,,,,,v40
+C00065,,Metabolite,0.001,,,,,v41
+C00080,,Metabolite,0.0001,,,,,v42
+C00026,,Metabolite,0.44,,,,,v43
+C00008,,Metabolite,0.001,,,,,v44
+C05381,,Metabolite,0.001,,,,,v45
+C00011,,Metabolite,0.001,,,,,v46
+C00101,,Metabolite,0.001,,,,,v47
+C00531,,Metabolite,0.001,,,,,v48
+C00009,,Metabolite,0.001,,,,,v49
+C00490,,Metabolite,0.001,,,,,v50
+C16254,,Metabolite,0.001,,,,,v51
+C00091,,Metabolite,0.23,,,,,v52
+C05167,,Metabolite,0.001,,,,,v53
